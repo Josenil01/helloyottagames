@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Separando Sílabas - Níveis de Dificuldade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #fdf4ff;
+            touch-action: manipulation;
+            overflow-x: hidden;
+        }
+        .font-game {
+            font-family: 'Luckiest Guy', cursive;
+            letter-spacing: 2px;
+        }
+        .screen {
+            display: none;
+            min-height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        .active-screen {
+            display: flex;
+        }
+        .syllable-card {
+            cursor: grab;
+            transition: all 0.2s;
+            user-select: none;
+        }
+        .syllable-card:active {
+            cursor: grabbing;
+            transform: scale(1.1);
+        }
+        .slot {
+            transition: all 0.3s;
+            min-width: 80px;
+        }
+        .correct {
+            background-color: #4ade80 !important;
+            border-color: #166534 !important;
+            color: white;
+            animation: bounce 0.5s ease;
+        }
+        .incorrect {
+            background-color: #f87171 !important;
+            border-color: #991b1b !important;
+            color: white;
+            animation: shake 0.4s ease;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        .level-card {
+            transition: transform 0.2s;
+        }
+        .level-card:not(.locked):hover {
+            transform: translateY(-5px);
+        }
+        .locked {
+            filter: grayscale(1);
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TELA INICIAL -->
+    <div id="screen-start" class="screen active-screen justify-center bg-gradient-to-b from-purple-400 to-purple-600 text-white">
+        <h1 class="text-6xl md:text-8xl font-game mb-8 drop-shadow-xl text-center leading-tight">SEPARANDO<br>SÍLABAS</h1>
+        <div class="w-64 h-64 bg-white rounded-3xl flex items-center justify-center border-8 border-yellow-300 shadow-2xl mb-12 overflow-hidden rotate-3">
+            <img src="https://images.unsplash.com/photo-1594904351111-a072f80b1a71?w=400&q=80" alt="Livros" class="w-full h-full object-cover">
+        </div>
+        <button onclick="showScreen('screen-levels')" class="bg-yellow-400 hover:bg-yellow-500 text-purple-900 font-game text-4xl px-12 py-4 rounded-full shadow-lg transform transition hover:scale-110 active:scale-95 border-b-8 border-yellow-600">
+            JOGAR!
+        </button>
+    </div>
+
+    <!-- TELA DE SELEÇÃO DE NÍVEIS -->
+    <div id="screen-levels" class="screen bg-purple-50">
+        <div class="max-w-4xl w-full">
+            <div class="flex justify-between items-center mb-8">
+                <button onclick="showScreen('screen-start')" class="text-purple-600 font-bold bg-white px-4 py-2 rounded-xl shadow-sm border-2 border-purple-100">← VOLTAR</button>
+                <h2 class="text-4xl font-game text-purple-600">FASES</h2>
+                <div class="w-10"></div>
+            </div>
+            
+            <div id="levels-container" class="space-y-12">
+                <!-- Seções geradas por JS (Fácil, Médio, Difícil) -->
+            </div>
+        </div>
+    </div>
+
+    <!-- TELA DO JOGO -->
+    <div id="screen-game" class="screen">
+        <div class="w-full max-w-5xl">
+            <!-- Header do Jogo -->
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
+                <button onclick="showScreen('screen-levels')" class="bg-white hover:bg-gray-100 px-6 py-2 rounded-xl font-bold border-2 border-purple-200 text-purple-600 shadow-sm">MENU</button>
+                
+                <div class="flex-1 w-full px-4">
+                    <div class="flex justify-between mb-1 text-sm font-bold text-purple-600">
+                        <span id="progress-text">Fase 1 de 12</span>
+                        <span id="percentage-text">0%</span>
+                    </div>
+                    <div class="w-full bg-purple-200 rounded-full h-5 border-2 border-white shadow-inner overflow-hidden">
+                        <div id="progress-bar" class="bg-yellow-400 h-full transition-all duration-500" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-end">
+                    <div class="text-sm font-bold text-purple-400 uppercase" id="difficulty-label">Fácil</div>
+                    <div class="text-xl font-game text-purple-600 bg-white px-6 py-1 rounded-full border-2 border-purple-100 shadow-sm" id="level-indicator">FASE 1</div>
+                </div>
+            </div>
+
+            <!-- Área de Jogo Principal -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8 bg-white p-6 md:p-10 rounded-[3rem] shadow-2xl border-b-8 border-purple-100">
+                <!-- Imagem -->
+                <div class="w-full md:w-2/5 flex flex-col items-center">
+                    <div class="bg-purple-50 rounded-[2rem] border-4 border-dashed border-purple-200 w-full aspect-square flex items-center justify-center overflow-hidden shadow-inner">
+                        <img id="word-image" src="" alt="Objeto" class="w-full h-full object-cover">
+                    </div>
+                    <div id="word-hint" class="mt-4 text-3xl font-game text-purple-300 opacity-50 uppercase tracking-widest"></div>
+                </div>
+
+                <!-- Slots de Sílabas -->
+                <div class="w-full md:w-3/5 text-center">
+                    <div class="mb-6 text-purple-400 font-bold uppercase tracking-wider">Arraste as sílabas na ordem correta:</div>
+                    <div class="flex flex-wrap justify-center gap-4" id="slots-container"></div>
+                </div>
+            </div>
+
+            <!-- Banco de Sílabas -->
+            <div id="syllables-bank" class="flex flex-wrap justify-center gap-4 mt-8 p-8 bg-purple-100 rounded-[2rem] border-4 border-white shadow-xl min-h-[120px]"></div>
+        </div>
+    </div>
+
+    <!-- Modal de Vitória -->
+    <div id="win-modal" class="fixed inset-0 bg-purple-900/80 flex items-center justify-center hidden z-50 backdrop-blur-sm">
+        <div class="bg-white p-10 rounded-[3rem] text-center shadow-2xl border-8 border-yellow-400 max-w-sm mx-4 transform scale-110">
+            <h2 class="text-5xl font-game text-purple-600 mb-2">MUITO BEM!</h2>
+            <div class="text-7xl mb-6">🏆</div>
+            <p class="text-xl font-bold text-gray-600 mb-8" id="win-message">Sílaba por sílaba, você conseguiu!</p>
+            <button onclick="handleNextLevel()" class="bg-green-500 hover:bg-green-600 text-white font-game text-3xl py-4 px-12 rounded-full shadow-lg border-b-8 border-green-700 active:border-b-0 active:translate-y-1 transition-all">
+                PRÓXIMO ➔
+            </button>
+        </div>
+    </div>
+
+    <script>
+       /**
+ * Configuração dos níveis do jogo.
+ * Fácil: Palavras de 2 sílabas.
+ * Médio: Palavras de 3 sílabas.
+ * Difícil: Palavras de 4 sílabas.
+ */
+const levels = [
+    // FASE FÁCIL (2 Sílabas)
+    { difficulty: 'Fácil', word: 'BOLA', syllables: ['BO', 'LA'], img: '' },
+    { difficulty: 'Fácil', word: 'CASA', syllables: ['CA', 'SA'], img: '[Image of Casa]' },
+    { difficulty: 'Fácil', word: 'GATO', syllables: ['GA', 'TO'], img: '[Image of Gato]' },
+    { difficulty: 'Fácil', word: 'PATO', syllables: ['PA', 'TO'], img: '[Image of Pato]' },
+    { difficulty: 'Fácil', word: 'MESA', syllables: ['ME', 'SA'], img: '' },
+    { difficulty: 'Fácil', word: 'DADO', syllables: ['DA', 'DO'], img: '' },
+    { difficulty: 'Fácil', word: 'BOLO', syllables: ['BO', 'LO'], img: '' },
+    { difficulty: 'Fácil', word: 'SAPO', syllables: ['SA', 'PO'], img: '[Image of Sapo]' },
+    { difficulty: 'Fácil', word: 'LAGO', syllables: ['LA', 'GO'], img: '' },
+    { difficulty: 'Fácil', word: 'FOGO', syllables: ['FO', 'GO'], img: '' },
+    { difficulty: 'Fácil', word: 'URSO', syllables: ['UR', 'SO'], img: '' },
+    { difficulty: 'Fácil', word: 'RATO', syllables: ['RA', 'TO'], img: '' },
+
+    // FASE MÉDIA (3 Sílabas)
+    { difficulty: 'Médio', word: 'MACACO', syllables: ['MA', 'CA', 'CO'], img: '' },
+    { difficulty: 'Médio', word: 'SAPATO', syllables: ['SA', 'PA', 'TO'], img: '' },
+    { difficulty: 'Médio', word: 'GIRAFA', syllables: ['GI', 'RA', 'FA'], img: '' },
+    { difficulty: 'Médio', word: 'CANETA', syllables: ['CA', 'NE', 'TA'], img: '' },
+    { difficulty: 'Médio', word: 'JANELA', syllables: ['JA', 'NE', 'LA'], img: '' },
+    { difficulty: 'Médio', word: 'CAVALO', syllables: ['CA', 'VA', 'LO'], img: '[Image of Cavalo]' },
+    { difficulty: 'Médio', word: 'TOMATE', syllables: ['TO', 'MA', 'TE'], img: '' },
+    { difficulty: 'Médio', word: 'PANELA', syllables: ['PA', 'NE', 'LA'], img: '' },
+    { difficulty: 'Médio', word: 'PIPOCA', syllables: ['PI', 'PO', 'CA'], img: '' },
+    { difficulty: 'Médio', word: 'PETECA', syllables: ['PE', 'TE', 'CA'], img: '' },
+    { difficulty: 'Médio', word: 'CABANA', syllables: ['CA', 'BA', 'NA'], img: '' },
+    { difficulty: 'Médio', word: 'SALADA', syllables: ['SA', 'LA', 'DA'], img: '' },
+
+    // FASE DIFÍCIL (4 Sílabas)
+    { difficulty: 'Difícil', word: 'MELANCIA', syllables: ['ME', 'LAN', 'CI', 'A'], img: '' },
+    { difficulty: 'Difícil', word: 'ELEFANTE', syllables: ['E', 'LE', 'FAN', 'TE'], img: '[Image of Elefante]' },
+    { difficulty: 'Difícil', word: 'BICICLETA', syllables: ['BI', 'CI', 'CLE', 'TA'], img: '[Image of Bicicleta]' },
+    { difficulty: 'Difícil', word: 'BORBOLETA', syllables: ['BOR', 'BO', 'LE', 'TA'], img: '' },
+    { difficulty: 'Difícil', word: 'TELEFONE', syllables: ['TE', 'LE', 'FO', 'NE'], img: '' },
+    { difficulty: 'Difícil', word: 'ABACAXI', syllables: ['A', 'BA', 'CA', 'XI'], img: '' },
+    { difficulty: 'Difícil', word: 'GELADEIRA', syllables: ['GE', 'LA', 'DEI', 'RA'], img: '' },
+    { difficulty: 'Difícil', word: 'TELEVISÃO', syllables: ['TE', 'LE', 'VI', 'SÃO'], img: '' },
+    { difficulty: 'Difícil', word: 'COMPUTADOR', syllables: ['COM', 'PU', 'TA', 'DOR'], img: '' },
+    { difficulty: 'Difícil', word: 'ABACATE', syllables: ['A', 'BA', 'CA', 'TE'], img: '' },
+    { difficulty: 'Difícil', word: 'CHOCOLATE', syllables: ['CHO', 'CO', 'LA', 'TE'], img: '[Image of Chocolate]' },
+    { difficulty: 'Difícil', word: 'ESPERANÇA', syllables: ['ES', 'PE', 'RAN', 'ÇA'], img: '' }
+];
+
+        let currentLevelIdx = 0;
+        let unlockedLevels = 1;
+        let syllableState = [];
+        let selectedSyllable = null;
+
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active-screen'));
+            document.getElementById(screenId).classList.add('active-screen');
+            if(screenId === 'screen-levels') renderLevelsGrid();
+        }
+
+        function renderLevelsGrid() {
+            const container = document.getElementById('levels-container');
+            container.innerHTML = '';
+            
+            const groups = {
+                'Fácil': { color: 'text-green-500', levels: levels.slice(0, 12), startIdx: 0 },
+                'Médio': { color: 'text-orange-500', levels: levels.slice(12, 24), startIdx: 12 },
+                'Difícil': { color: 'text-red-500', levels: levels.slice(24, 36), startIdx: 24 }
+            };
+
+            for (const [phaseName, info] of Object.entries(groups)) {
+                const section = document.createElement('div');
+                section.innerHTML = `
+                    <h3 class="text-2xl font-game ${info.color} mb-4 uppercase tracking-wider">${phaseName}</h3>
+                    <div class="grid grid-cols-4 gap-4" id="grid-${phaseName}"></div>
+                `;
+                container.appendChild(section);
+
+                const grid = section.querySelector(`#grid-${phaseName}`);
+                
+                info.levels.forEach((lvl, relativeIdx) => {
+                    const realIdx = info.startIdx + relativeIdx;
+                    const isLocked = realIdx >= unlockedLevels;
+                    
+                    const card = document.createElement('button');
+                    card.className = `level-card aspect-square rounded-[1.5rem] flex flex-col items-center justify-center text-3xl font-game shadow-md transition ${isLocked ? 'locked bg-gray-200 text-gray-400' : 'bg-white text-purple-600 border-4 border-purple-100 hover:border-purple-400'}`;
+                    
+                    card.innerHTML = `
+                        <span class="text-xs uppercase opacity-60">${isLocked ? '🔒' : 'Fase'}</span>
+                        <span>${realIdx + 1}</span>
+                    `;
+                    
+                    if (!isLocked) {
+                        card.onclick = () => startLevel(realIdx);
+                    }
+                    grid.appendChild(card);
+                });
+            }
+        }
+
+        function startLevel(index) {
+            currentLevelIdx = index;
+            showScreen('screen-game');
+            initLevel();
+        }
+
+        function initLevel() {
+            const data = levels[currentLevelIdx];
+            const slotsContainer = document.getElementById('slots-container');
+            const syllablesBank = document.getElementById('syllables-bank');
+            
+            document.getElementById('level-indicator').innerText = `FASE ${currentLevelIdx + 1}`;
+            document.getElementById('difficulty-label').innerText = data.difficulty;
+            document.getElementById('progress-text').innerText = `Total: ${currentLevelIdx + 1} de 12`;
+            updateProgressBar();
+            
+            slotsContainer.innerHTML = '';
+            syllablesBank.innerHTML = '';
+            syllableState = new Array(data.syllables.length).fill(null);
+            document.getElementById('win-modal').classList.add('hidden');
+            
+            document.getElementById('word-image').src = data.img;
+            document.getElementById('word-hint').innerText = data.word;
+
+            data.syllables.forEach((syl, i) => {
+                const slot = document.createElement('div');
+                slot.className = 'slot h-20 md:h-24 px-4 border-4 border-purple-50 rounded-3xl flex items-center justify-center text-2xl md:text-3xl font-game text-purple-600 bg-purple-50/50 shadow-inner';
+                slot.dataset.index = i;
+                slot.dataset.target = syl;
+                
+                slot.ondragover = (e) => e.preventDefault();
+                slot.ondrop = (e) => {
+                    const text = e.dataTransfer.getData('text');
+                    const id = e.dataTransfer.getData('id');
+                    handleSyllablePlacement(slot, text, id);
+                };
+
+                slot.onclick = () => {
+                    if (selectedSyllable) {
+                        handleSyllablePlacement(slot, selectedSyllable.text, selectedSyllable.id);
+                        deselectSyllable();
+                    }
+                };
+                
+                slotsContainer.appendChild(slot);
+            });
+
+            const shuffledSyllables = [...data.syllables].sort(() => Math.random() - 0.5);
+            shuffledSyllables.forEach((syl, i) => {
+                const box = document.createElement('div');
+                const id = `s-${i}`;
+                box.id = id;
+                box.className = 'syllable-card min-w-[70px] px-6 h-16 bg-white border-4 border-yellow-300 rounded-2xl flex items-center justify-center text-2xl md:text-3xl font-game text-purple-700 shadow-lg';
+                box.innerText = syl;
+                box.draggable = true;
+                
+                box.ondragstart = (e) => {
+                    e.dataTransfer.setData('text', syl);
+                    e.dataTransfer.setData('id', id);
+                };
+                
+                box.onclick = (e) => {
+                    e.stopPropagation();
+                    if (selectedSyllable?.id === id) {
+                        deselectSyllable();
+                    } else {
+                        selectSyllable(box, syl, id);
+                    }
+                };
+
+                syllablesBank.appendChild(box);
+            });
+        }
+
+        function selectSyllable(el, text, id) {
+            deselectSyllable();
+            selectedSyllable = { el, text, id };
+            el.classList.add('ring-4', 'ring-purple-500', 'scale-110', 'rotate-2');
+        }
+
+        function deselectSyllable() {
+            if (selectedSyllable) {
+                selectedSyllable.el.classList.remove('ring-4', 'ring-purple-500', 'scale-110', 'rotate-2');
+                selectedSyllable = null;
+            }
+        }
+
+        function handleSyllablePlacement(slot, text, id) {
+            const index = parseInt(slot.dataset.index);
+            const target = slot.dataset.target;
+
+            if (text === target) {
+                slot.innerText = text;
+                slot.className = 'slot h-20 md:h-24 px-6 border-4 rounded-3xl flex items-center justify-center text-3xl font-game correct shadow-lg';
+                
+                const syllableEl = document.getElementById(id);
+                if (syllableEl) syllableEl.style.visibility = 'hidden';
+                
+                syllableState[index] = text;
+                updateProgressBar();
+                checkWin();
+            } else {
+                const oldClass = slot.className;
+                const oldText = slot.innerText;
+                slot.innerText = text;
+                slot.className = 'slot h-20 md:h-24 px-6 border-4 rounded-3xl flex items-center justify-center text-3xl font-game incorrect shadow-lg';
+                
+                setTimeout(() => {
+                    if (!syllableState[index]) {
+                        slot.innerText = oldText;
+                        slot.className = oldClass;
+                    }
+                }, 600);
+            }
+        }
+
+        function updateProgressBar() {
+            const correctInLevel = syllableState.filter(s => s !== null).length;
+            const totalInLevel = syllableState.length;
+            
+            const baseProgress = (currentLevelIdx / 12) * 100;
+            const subProgress = (correctInLevel / totalInLevel) * (100 / 12);
+            const totalProgress = baseProgress + subProgress;
+            
+            document.getElementById('progress-bar').style.width = `${totalProgress}%`;
+            document.getElementById('percentage-text').innerText = `${Math.round(totalProgress)}%`;
+        }
+
+        function checkWin() {
+            if (syllableState.every(s => s !== null)) {
+                if (currentLevelIdx + 1 === unlockedLevels && unlockedLevels < 12) {
+                    unlockedLevels++;
+                }
+                setTimeout(() => {
+                    document.getElementById('win-modal').classList.remove('hidden');
+                }, 600);
+            }
+        }
+
+        function handleNextLevel() {
+            if (currentLevelIdx < 11) {
+                currentLevelIdx++;
+                initLevel();
+            } else {
+                showScreen('screen-levels');
+            }
+        }
+
+        window.onclick = () => deselectSyllable();
+    </script>
+</body>
+</html>

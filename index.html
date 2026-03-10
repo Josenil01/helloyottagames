@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Yotta Games 🎮</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            margin: 0;
+        }
+        .game-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .game-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+        }
+        .game-card .emoji {
+            font-size: 3.5rem;
+        }
+        .game-card .title {
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 1.3rem;
+            color: #4a3072;
+        }
+        .game-card .description {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.4;
+        }
+        h1 {
+            font-family: 'Luckiest Guy', cursive;
+            color: white;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+        }
+        .subtitle {
+            color: rgba(255,255,255,0.85);
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen flex flex-col items-center py-10 px-4">
+        <!-- Header -->
+        <div class="text-center mb-10">
+            <h1 class="text-5xl md:text-6xl mb-3">🎮 Hello Yotta Games</h1>
+            <p class="subtitle text-xl md:text-2xl">Jogos Educativos para Aprender Brincando!</p>
+        </div>
+
+        <!-- Games Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl w-full">
+
+            <!-- Digitado -->
+            <a href="Digitado/index.html" class="game-card">
+                <div class="emoji">⌨️</div>
+                <div class="title">Digitado</div>
+                <div class="description">Digite a palavra do emoji! Desafio de digitação com emojis divertidos.</div>
+            </a>
+
+            <!-- Maiúsculo vs Minúsculo -->
+            <a href="Maisculo%20vs%20Minusculo/index.html" class="game-card">
+                <div class="emoji">🔤</div>
+                <div class="title">Maiúsculo vs Minúsculo</div>
+                <div class="description">Aprenda a diferença entre letras maiúsculas e minúsculas!</div>
+            </a>
+
+            <!-- Monster Typer I -->
+            <a href="monster_typer%20I/index.html" class="game-card">
+                <div class="emoji">👾</div>
+                <div class="title">Monster Typer I</div>
+                <div class="description">Aprenda a digitar a letra inicial! Derrote os monstros digitando.</div>
+            </a>
+
+            <!-- Monster Typer II -->
+            <a href="monster_typer%20II/index.html" class="game-card">
+                <div class="emoji">👹</div>
+                <div class="title">Monster Typer II</div>
+                <div class="description">Teclado de monstros! O desafio de digitação continua.</div>
+            </a>
+
+            <!-- Sílabas -->
+            <a href="syllables/index.html" class="game-card">
+                <div class="emoji">✂️</div>
+                <div class="title">Separando Sílabas</div>
+                <div class="description">Aprenda a separar sílabas com níveis de dificuldade crescente!</div>
+            </a>
+
+            <!-- Vogais -->
+            <a href="vowel/vowel.html" class="game-card">
+                <div class="emoji">🔠</div>
+                <div class="title">Complete com Vogais</div>
+                <div class="description">Complete a palavra escolhendo a vogal correta!</div>
+            </a>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-12 text-center text-white opacity-70 text-sm">
+            <p>© 2026 Hello Yotta Games — Aprendendo com diversão! 🚀</p>
+        </div>
+    </div>
+</body>
+</html>

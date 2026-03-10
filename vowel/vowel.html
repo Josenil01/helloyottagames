@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete a Palavra - Vogais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #e0f2fe;
+            background-image: radial-gradient(circle at 50% 50%, #f0f9ff 0%, #bae6fd 100%);
+            touch-action: manipulation;
+            overflow-x: hidden;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .font-game {
+            font-family: 'Luckiest Guy', cursive;
+            letter-spacing: 2px;
+        }
+        .screen {
+            display: none;
+            min-height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            position: relative;
+            z-index: 10;
+        }
+        .active-screen {
+            display: flex;
+        }
+        
+        /* Animações */
+        @keyframes success-pop {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); color: #22c55e; }
+            100% { transform: scale(1); }
+        }
+        .correct-anim {
+            animation: success-pop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px) rotate(-5deg); color: #ef4444; }
+            75% { transform: translateX(10px) rotate(5deg); }
+        }
+        .shake-anim {
+            animation: shake 0.4s ease;
+        }
+
+        /* Cartões de Nível */
+        .level-card, .mode-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .level-card:not(.locked):hover, .mode-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .locked {
+            filter: grayscale(1);
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        /* Estilo dos Botões de Vogais */
+        .vowel-btn {
+            transition: all 0.1s ease;
+            position: relative;
+        }
+        .vowel-btn:active, .vowel-btn.active-press {
+            transform: translateY(6px);
+            box-shadow: 0 0px 0 rgba(0,0,0,0) !important;
+        }
+
+        /* Bandeirolas de Score */
+        .flag {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 50px;
+            color: white;
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 1.5rem;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+        }
+        .flag-pole {
+            width: 4px;
+            height: 70px;
+            background-color: #334155;
+            position: absolute;
+            left: 0;
+            top: -10px;
+            border-radius: 2px;
+        }
+
+        /* Silhueta de Fundo Estilo Parque (Opcional) */
+        .bg-silhouette {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40vh;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23bae6fd" fill-opacity="0.5" d="M0,256L48,245.3C96,235,192,213,288,218.7C384,224,480,256,576,261.3C672,267,768,245,864,224C960,203,1056,181,1152,186.7C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path><circle cx="300" cy="150" r="100" stroke="%23bae6fd" stroke-width="8" fill="none" opacity="0.5"/><line x1="300" y1="50" x2="300" y2="250" stroke="%23bae6fd" stroke-width="8" opacity="0.5"/><line x1="200" y1="150" x2="400" y2="150" stroke="%23bae6fd" stroke-width="8" opacity="0.5"/><line x1="229" y1="79" x2="371" y2="221" stroke="%23bae6fd" stroke-width="8" opacity="0.5"/><line x1="229" y1="221" x2="371" y2="79" stroke="%23bae6fd" stroke-width="8" opacity="0.5"/></svg>');
+            background-size: cover;
+            background-position: bottom;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        #word-gap {
+            border-bottom: 6px solid #94a3b8;
+            min-width: 50px;
+            display: inline-block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-silhouette"></div>
+
+    <!-- TELA INICIAL -->
+    <div id="screen-start" class="screen active-screen justify-center text-center">
+        <h1 class="text-6xl md:text-8xl font-game text-blue-600 mb-4 drop-shadow-md leading-tight" style="-webkit-text-stroke: 2px white;">COMPLETE A<br>PALAVRA</h1>
+        <div class="w-64 h-64 bg-white rounded-[3rem] flex items-center justify-center border-8 border-yellow-400 shadow-2xl mb-12 rotate-3 overflow-hidden p-6 relative">
+            <div class="absolute inset-0 bg-blue-50 opacity-50"></div>
+            <img src="https://images.unsplash.com/photo-1552422535-c45813c61732?auto=format&fit=crop&w=400&q=80" alt="Piano" class="w-full h-full object-contain relative z-10 drop-shadow-md">
+        </div>
+        <button onclick="showScreen('screen-mode')" class="bg-yellow-400 hover:bg-yellow-500 text-yellow-900 font-game text-4xl px-16 py-5 rounded-full shadow-[0_8px_0_#ca8a04] transform transition active:translate-y-2 active:shadow-none">
+            JOGAR!
+        </button>
+    </div>
+
+    <!-- TELA DE SELEÇÃO DE MODO -->
+    <div id="screen-mode" class="screen justify-center">
+        <h2 class="text-5xl font-game text-blue-600 mb-12 text-center drop-shadow-sm" style="-webkit-text-stroke: 1px white;">COMO VAMOS JOGAR?</h2>
+        <div class="flex flex-col md:flex-row gap-8 w-full max-w-4xl px-4">
+            <button onclick="setMode('infantil')" class="mode-card flex-1 bg-white p-10 rounded-[3rem] border-4 border-blue-200 text-center shadow-xl">
+                <div class="text-7xl mb-6">👶</div>
+                <div class="text-4xl font-game text-blue-600 mb-3">INFANTIL</div>
+                <p class="text-gray-500 font-bold text-lg">Letras Grandes<br>(MAIÚSCULAS)</p>
+            </button>
+
+            <button onclick="setMode('fundamental')" class="mode-card flex-1 bg-white p-10 rounded-[3rem] border-4 border-purple-200 text-center shadow-xl">
+                <div class="text-7xl mb-6">🎒</div>
+                <div class="text-4xl font-game text-purple-600 mb-3">ESCOLA</div>
+                <p class="text-gray-500 font-bold text-lg">Maiúsculas e Minúsculas<br>(Pian _)</p>
+            </button>
+        </div>
+        <button onclick="showScreen('screen-start')" class="mt-12 text-blue-600 font-bold text-xl hover:text-blue-800 transition">Voltar ao início</button>
+    </div>
+
+    <!-- TELA DE SELEÇÃO DE NÍVEIS -->
+    <div id="screen-levels" class="screen">
+        <div class="max-w-4xl w-full">
+            <div class="flex justify-between items-center mb-10">
+                <button onclick="showScreen('screen-mode')" class="bg-white text-blue-600 font-bold px-6 py-3 rounded-2xl shadow-sm border-2 border-blue-100 hover:bg-blue-50">← VOLTAR</button>
+                <h2 class="text-5xl font-game text-blue-600 drop-shadow-sm" style="-webkit-text-stroke: 1px white;">NÍVEIS</h2>
+                <div class="w-24"></div>
+            </div>
+            <div id="levels-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"></div>
+        </div>
+    </div>
+
+    <!-- TELA DO JOGO -->
+    <div id="screen-game" class="screen w-full">
+        <!-- Bandeirinhas de Score no Topo -->
+        <div class="absolute top-0 left-0 w-full flex justify-center gap-12 pt-4">
+            <div class="relative">
+                <div class="flag-pole"></div>
+                <div class="flag bg-blue-600 shadow-md">
+                    <span id="score-points">0</span>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="flag-pole"></div>
+                <div class="flag bg-red-500 shadow-md">
+                    <span id="score-phase">1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full max-w-5xl mt-16 flex flex-col h-full justify-between items-center pb-8">
+            <div class="w-full flex justify-between items-center mb-8 px-4">
+                <button onclick="quitGame()" class="bg-white px-6 py-2 rounded-xl font-bold border-2 border-blue-200 text-blue-600 shadow-sm hover:bg-blue-50 transition-colors">SAIR</button>
+                <div class="flex flex-col items-end">
+                    <div class="text-2xl font-game text-blue-600" id="level-title">NÍVEL 1</div>
+                </div>
+            </div>
+
+            <!-- Área Principal: Imagem + Palavra -->
+            <div class="flex flex-col md:flex-row items-center justify-center w-full gap-8 md:gap-16 my-auto">
+                <!-- Imagem -->
+                <div class="w-56 h-56 md:w-80 md:h-80 shrink-0 bg-white p-4 md:p-6 rounded-[2rem] border-4 border-blue-200 shadow-xl flex items-center justify-center">
+                    <img id="display-image" src="" alt="Objeto" class="w-full h-full object-contain drop-shadow-xl transform transition hover:scale-105">
+                </div>
+
+                <!-- Palavra incompleta -->
+                <div class="text-6xl md:text-[6rem] font-bold text-gray-800 flex items-baseline tracking-widest mt-8 md:mt-0">
+                    <span id="word-prefix"></span>
+                    <span id="word-gap" class="text-transparent mx-2 relative top-[-5px]">_</span>
+                    <span id="word-suffix"></span>
+                </div>
+            </div>
+
+            <!-- Botões das Vogais (Teclado Virtual) -->
+            <div class="w-full max-w-3xl mt-12">
+                <div class="flex justify-center gap-3 md:gap-6 px-4">
+                    <button id="btn-A" onclick="checkVowel('A')" class="vowel-btn flex-1 aspect-square max-w-[110px] bg-[#9333ea] text-white font-game text-5xl md:text-6xl rounded-2xl shadow-[0_8px_0_#5b21b6]">A</button>
+                    <button id="btn-E" onclick="checkVowel('E')" class="vowel-btn flex-1 aspect-square max-w-[110px] bg-[#ef4444] text-white font-game text-5xl md:text-6xl rounded-2xl shadow-[0_8px_0_#b91c1c]">E</button>
+                    <button id="btn-I" onclick="checkVowel('I')" class="vowel-btn flex-1 aspect-square max-w-[110px] bg-[#84cc16] text-white font-game text-5xl md:text-6xl rounded-2xl shadow-[0_8px_0_#4d7c0f]">I</button>
+                    <button id="btn-O" onclick="checkVowel('O')" class="vowel-btn flex-1 aspect-square max-w-[110px] bg-[#3b82f6] text-white font-game text-5xl md:text-6xl rounded-2xl shadow-[0_8px_0_#1d4ed8]">O</button>
+                    <button id="btn-U" onclick="checkVowel('U')" class="vowel-btn flex-1 aspect-square max-w-[110px] bg-[#ec4899] text-white font-game text-5xl md:text-6xl rounded-2xl shadow-[0_8px_0_#be185d]">U</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE VITÓRIA -->
+    <div id="win-modal" class="fixed inset-0 bg-blue-900/80 flex items-center justify-center hidden z-50 backdrop-blur-sm">
+        <div class="bg-white p-12 rounded-[3rem] text-center shadow-2xl border-8 border-yellow-400 max-w-sm mx-4 transform scale-105">
+            <h2 class="text-5xl font-game text-blue-600 mb-4 drop-shadow-sm" id="modal-title">NÍVEL CONCLUÍDO!</h2>
+            <div class="text-8xl mb-6">🏆</div>
+            <p class="text-xl font-bold text-gray-600 mb-8" id="modal-msg">Você foi incrível!</p>
+            <button onclick="showScreen('screen-levels')" class="bg-green-500 hover:bg-green-600 text-white font-game text-4xl py-4 px-12 rounded-full shadow-[0_8px_0_#166534] active:translate-y-2 active:shadow-none transition-all w-full">
+                CONTINUAR
+            </button>
+        </div>
+    </div>
+
+    <script>
+        /**
+ * gameData: Daataa taphaa sadarkaa sadiitti qoodame.
+ * Sadarkaa 1: Dubbachiiftuu dhuma irratti.
+ * Sadarkaa 2: Dubbachiiftuu gidduu irratti.
+ * Sadarkaa 3: Qormaata makame.
+ */
+const gameData = [
+    {
+        name: "Nivel 1",
+        desc: "Fácil",
+        phases: [
+            { prefix: 'PIAN', vowel: 'O', suffix: '', img: 'https://images.unsplash.com/photo-1552422535-c45813c61732?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'GAT', vowel: 'O', suffix: '', img: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'BÔL', vowel: 'O', suffix: '', img: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'SAP', vowel: 'O', suffix: '', img: 'https://images.unsplash.com/photo-1559190394-df5a28aab5c5?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'UV', vowel: 'A', suffix: '', img: 'https://images.unsplash.com/photo-1596363505729-4190a9506133?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'RAT', vowel: 'O', suffix: '', img: 'https://images.unsplash.com/photo-1550931454-06ca9b54c868?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'MES', vowel: 'A', suffix: '', img: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'CAS', vowel: 'A', suffix: '', img: 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'BOL', vowel: 'A', suffix: '', img: 'https://images.unsplash.com/photo-1589487391730-58f20eb2c308?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'DAD', vowel: 'O', suffix: '', img: 'https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'FOG', vowel: 'O', suffix: '', img: 'https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'LAG', vowel: 'O', suffix: '', img: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'URS', vowel: 'O', suffix: '', img: 'https://images.unsplash.com/photo-1589656966895-2f33e7653819?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'NAVI', vowel: 'O', suffix: '', img: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'FRUT', vowel: 'A', suffix: '', img: 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'HORT', vowel: 'A', suffix: '', img: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'BANC', vowel: 'O', suffix: '', img: 'https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'CARR', vowel: 'O', suffix: '', img: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'DENT', vowel: 'E', suffix: '', img: 'https://images.unsplash.com/photo-1593059075398-33306864bc22?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'ESCOL', vowel: 'A', suffix: '', img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=400&q=80' }
+        ]
+    },
+    {
+        name: "Nivel 2",
+        desc: "Médio",
+        phases: [
+            { prefix: 'B', vowel: 'O', suffix: 'LA', img: 'https://images.unsplash.com/photo-1589487391730-58f20eb2c308?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'P', vowel: 'A', suffix: 'TO', img: 'https://images.unsplash.com/photo-1555848962-6e79363ec58f?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'D', vowel: 'A', suffix: 'DO', img: 'https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'L', vowel: 'U', suffix: 'A', img: 'https://images.unsplash.com/photo-1532693322450-2cb5c511067d?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'F', vowel: 'O', suffix: 'CA', img: 'https://images.unsplash.com/photo-1590409026402-98421832049e?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'M', vowel: 'A', suffix: 'LA', img: 'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'V', vowel: 'E', suffix: 'LA', img: 'https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'S', vowel: 'E', suffix: 'TA', img: 'https://images.unsplash.com/photo-1512149177596-f817c7ef5d4c?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'C', vowel: 'O', suffix: 'PO', img: 'https://images.unsplash.com/photo-1516132414167-73b3068e6462?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'T', vowel: 'E', suffix: 'LA', img: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'L', vowel: 'A', suffix: 'TA', img: 'https://images.unsplash.com/photo-1534233266917-58c28b50a1c1?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'R', vowel: 'O', suffix: 'DA', img: 'https://images.unsplash.com/photo-1550524514-96369df493d1?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'B', vowel: 'O', suffix: 'TA', img: 'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'F', vowel: 'A', suffix: 'CA', img: 'https://images.unsplash.com/photo-1533038590840-1cde6b66b721?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'L', vowel: 'U', suffix: 'VA', img: 'https://images.unsplash.com/photo-1520624911081-0a699c274291?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'D', vowel: 'O', suffix: 'CE', img: 'https://images.unsplash.com/photo-1582231370716-e7057f8462d2?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'N', vowel: 'O', suffix: 'ITE', img: 'https://images.unsplash.com/photo-1472552947729-959456c218a7?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'P', vowel: 'O', suffix: 'NTE', img: 'https://images.unsplash.com/photo-1449034446853-66c86144b0ad?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'T', vowel: 'O', suffix: 'RRE', img: 'https://images.unsplash.com/photo-1543349689-9a4d426bee8e?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'M', vowel: 'U', suffix: 'RO', img: 'https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=400&q=80' }
+        ]
+    },
+    {
+        name: "Nivel 3",
+        desc: "Dificil",
+        phases: [
+            { prefix: 'P', vowel: 'E', suffix: 'IXE', img: 'https://images.unsplash.com/photo-1524704654690-b56c05c78a00?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'URS', vowel: 'O', suffix: '', img: 'https://images.unsplash.com/photo-1589656966895-2f33e7653819?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'L', vowel: 'E', suffix: 'ÃO', img: 'https://images.unsplash.com/photo-1614027164847-1b2809eb1895?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'Z', vowel: 'E', suffix: 'BRA', img: 'https://images.unsplash.com/photo-1526095179574-86e545346ae6?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'T', vowel: 'A', suffix: 'TU', img: 'https://images.unsplash.com/photo-1550953683-189f7f023755?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'A', vowel: 'G', suffix: 'UA', img: 'https://images.unsplash.com/photo-1438449805896-28a666819a20?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'C', vowel: 'A', suffix: 'IXA', img: 'https://images.unsplash.com/photo-1506458959157-962f8c705d33?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'I', vowel: 'N', suffix: 'DIO', img: 'https://images.unsplash.com/photo-1596404021273-047b369c09d3?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'O', vowel: 'L', suffix: 'HO', img: 'https://images.unsplash.com/photo-1544760314-519bb617754b?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'S', vowel: 'O', suffix: 'NO', img: 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'V', vowel: 'I', suffix: 'DA', img: 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'A', vowel: 'R', suffix: 'ROZ', img: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'J', vowel: 'O', suffix: 'IA', img: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'L', vowel: 'E', suffix: 'ITE', img: 'https://images.unsplash.com/photo-1563636619-e91000f21fca?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'N', vowel: 'O', suffix: 'ME', img: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'O', vowel: 'L', suffix: 'EO', img: 'https://images.unsplash.com/photo-1526649661456-89c7ed4d00b8?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'R', vowel: 'U', suffix: 'A', img: 'https://images.unsplash.com/photo-1518391846015-55a9cb000b21?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'V', vowel: 'A', suffix: 'LE', img: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'G', vowel: 'O', suffix: 'TA', img: 'https://images.unsplash.com/photo-1496062031456-07b8f162a322?auto=format&fit=crop&w=400&q=80' },
+            { prefix: 'H', vowel: 'I', suffix: 'NO', img: 'https://images.unsplash.com/photo-1442504024177-81ad85177363?auto=format&fit=crop&w=400&q=80' }
+        ]
+    }
+];
+
+        let unlockedLevels = 1;
+        let activeLevelIdx = 0;
+        let activePhaseIdx = 0;
+        let canType = false;
+        let gameMode = 'infantil';
+        let score = 0;
+
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active-screen'));
+            document.getElementById(screenId).classList.add('active-screen');
+            document.getElementById('win-modal').classList.add('hidden');
+            
+            if (screenId === 'screen-levels') {
+                renderLevelsGrid();
+            }
+        }
+
+        function setMode(mode) {
+            gameMode = mode;
+            showScreen('screen-levels');
+        }
+
+        function renderLevelsGrid() {
+            const grid = document.getElementById('levels-grid');
+            grid.innerHTML = '';
+            
+            gameData.forEach((level, index) => {
+                const isLocked = index + 1 > unlockedLevels;
+                const card = document.createElement('div');
+                card.className = `level-card bg-white p-8 rounded-[2.5rem] flex flex-col items-center justify-center text-center border-4 ${isLocked ? 'locked border-gray-200' : 'border-blue-200 cursor-pointer shadow-lg'}`;
+                
+                card.innerHTML = `
+                    <div class="text-5xl mb-4">${isLocked ? '🔒' : '⭐'}</div>
+                    <div class="text-3xl font-game text-blue-600 mb-1">${level.name}</div>
+                    <div class="text-lg font-bold text-gray-400">${isLocked ? 'Bloqueado' : level.desc}</div>
+                `;
+                
+                if (!isLocked) card.onclick = () => startLevel(index);
+                grid.appendChild(card);
+            });
+        }
+
+        function startLevel(index) {
+            activeLevelIdx = index;
+            activePhaseIdx = 0;
+            score = 0;
+            updateScores();
+            showScreen('screen-game');
+            initPhase();
+        }
+
+        function formatText(text) {
+            if (!text) return "";
+            if (gameMode === 'infantil') {
+                return text.toUpperCase();
+            } else {
+                return text.toLowerCase();
+            }
+        }
+
+        function initPhase() {
+            const data = gameData[activeLevelIdx].phases[activePhaseIdx];
+            const prefixEl = document.getElementById('word-prefix');
+            const suffixEl = document.getElementById('word-suffix');
+            const gapEl = document.getElementById('word-gap');
+            const displayImg = document.getElementById('display-image');
+            
+            canType = true;
+            document.getElementById('level-title').innerText = gameData[activeLevelIdx].name;
+            updateScores();
+            displayImg.src = data.img;
+
+            // Formatação baseada no modo
+            let displayPrefix = data.prefix;
+            let displaySuffix = data.suffix;
+
+            if (gameMode === 'fundamental') {
+                // Capitaliza apenas a primeira letra da palavra real
+                if (displayPrefix.length > 0) {
+                    displayPrefix = displayPrefix.charAt(0).toUpperCase() + displayPrefix.slice(1).toLowerCase();
+                    displaySuffix = displaySuffix.toLowerCase();
+                } else if (displaySuffix.length > 0) {
+                    // O gap é a primeira letra (raro neste jogo, mas tratando)
+                    displaySuffix = displaySuffix.toLowerCase(); 
+                }
+            }
+
+            prefixEl.innerText = displayPrefix;
+            suffixEl.innerText = displaySuffix;
+            
+            // Estilos iniciais do Gap
+            gapEl.innerText = '_';
+            gapEl.className = 'text-transparent mx-2 relative top-[-5px] border-b-8 border-gray-400 min-w-[50px] md:min-w-[80px] inline-block text-center transition-all duration-200';
+            
+            if(gameMode === 'infantil') {
+                prefixEl.classList.add('uppercase');
+                suffixEl.classList.add('uppercase');
+            } else {
+                prefixEl.classList.remove('uppercase');
+                suffixEl.classList.remove('uppercase');
+            }
+        }
+
+        function updateScores() {
+            document.getElementById('score-points').innerText = score * 10;
+            document.getElementById('score-phase').innerText = activePhaseIdx + 1;
+        }
+
+        function quitGame() {
+            showScreen('screen-levels');
+        }
+
+        // Suporte para clique nos botões virtuais
+        function checkVowel(vowel) {
+            if (!canType) return;
+            
+            // Efeito visual no botão pressionado
+            const btn = document.getElementById(`btn-${vowel}`);
+            if(btn) {
+                btn.classList.add('active-press');
+                setTimeout(() => btn.classList.remove('active-press'), 150);
+            }
+
+            const data = gameData[activeLevelIdx].phases[activePhaseIdx];
+            const gapEl = document.getElementById('word-gap');
+
+            if (vowel === data.vowel) {
+                // ACERTOU
+                canType = false;
+                score++;
+                updateScores();
+                
+                // Formatação do acerto dependendo do modo
+                let displayVowel = vowel;
+                if(gameMode === 'fundamental' && data.prefix.length > 0) {
+                    displayVowel = vowel.toLowerCase();
+                } else if (gameMode === 'fundamental' && data.prefix.length === 0) {
+                     displayVowel = vowel.toUpperCase();
+                }
+
+                gapEl.innerText = displayVowel;
+                gapEl.classList.remove('text-transparent', 'border-gray-400', 'border-b-8', 'shake-anim', 'top-[-5px]');
+                gapEl.classList.add('text-green-500', 'border-transparent', 'correct-anim');
+                
+                setTimeout(nextPhase, 1200);
+            } else {
+                // ERROU
+                gapEl.classList.remove('shake-anim');
+                void gapEl.offsetWidth; // Reflow
+                gapEl.classList.add('shake-anim');
+            }
+        }
+
+        // Suporte para teclado físico
+        window.addEventListener('keydown', (e) => {
+            if (!document.getElementById('screen-game').classList.contains('active-screen') || !canType) return;
+            
+            const typedKey = e.key.toUpperCase();
+            if (['A', 'E', 'I', 'O', 'U'].includes(typedKey)) {
+                checkVowel(typedKey);
+            }
+        });
+
+        function nextPhase() {
+            activePhaseIdx++;
+            if (activePhaseIdx < gameData[activeLevelIdx].phases.length) {
+                initPhase();
+            } else {
+                // Fim de nível
+                if (activeLevelIdx + 1 === unlockedLevels && unlockedLevels < gameData.length) {
+                    unlockedLevels++;
+                }
+                const isFinalLevel = activeLevelIdx + 1 === gameData.length;
+                document.getElementById('modal-title').innerText = isFinalLevel ? "JOGO CONCLUÍDO!" : "NÍVEL CONCLUÍDO!";
+                document.getElementById('win-modal').classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

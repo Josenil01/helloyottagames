@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenda a Digitar - Letra Inicial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f0fdfa;
+            touch-action: manipulation;
+            overflow-x: hidden;
+            margin: 0;
+        }
+        .font-game {
+            font-family: 'Luckiest Guy', cursive;
+            letter-spacing: 2px;
+        }
+        .screen {
+            display: none;
+            min-height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        .active-screen {
+            display: flex;
+        }
+        .letter-big {
+            font-size: clamp(5rem, 18vw, 10rem);
+            line-height: 1;
+            transition: all 0.3s;
+            user-select: none;
+            white-space: nowrap;
+        }
+        
+        /* Animações */
+        @keyframes success-pop {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); color: #22c55e; }
+            100% { transform: scale(1); }
+        }
+        .correct-anim {
+            animation: success-pop 0.5s ease;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-15px); color: #ef4444; }
+            75% { transform: translateX(15px); }
+        }
+        .shake-anim {
+            animation: shake 0.4s ease;
+        }
+
+        .level-card, .mode-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .level-card:not(.locked):hover, .mode-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .locked {
+            filter: grayscale(1);
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        /* Timer UI */
+        .timer-container {
+            width: 100%;
+            height: 12px;
+            background-color: #e2e8f0;
+            border-radius: 999px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+        #timer-bar {
+            height: 100%;
+            width: 100%;
+            background-color: #14b8a6;
+            transition: width 0.1s linear, background-color 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TELA INICIAL -->
+    <div id="screen-start" class="screen active-screen justify-center bg-gradient-to-b from-teal-400 to-blue-500 text-white text-center">
+        <h1 class="text-6xl md:text-8xl font-game mb-8 drop-shadow-xl leading-tight">QUAL É A<br>LETRA?</h1>
+        <div class="w-64 h-64 bg-white rounded-full flex items-center justify-center border-8 border-yellow-300 shadow-2xl mb-12 overflow-hidden rotate-3">
+            <span class="text-teal-500 font-game text-8xl">A a</span>
+        </div>
+        <button onclick="showScreen('screen-mode')" class="bg-yellow-400 hover:bg-yellow-500 text-teal-900 font-game text-4xl px-12 py-4 rounded-full shadow-lg transform transition hover:scale-110 active:scale-95 border-b-8 border-yellow-600">
+            COMEÇAR!
+        </button>
+    </div>
+
+    <!-- TELA DE SELEÇÃO DE MODO -->
+    <div id="screen-mode" class="screen bg-teal-50 justify-center">
+        <h2 class="text-4xl font-game text-teal-600 mb-12 text-center">QUEM VAI JOGAR?</h2>
+        <div class="flex flex-col md:flex-row gap-8 w-full max-w-4xl px-4">
+            <button onclick="setMode('infantil')" class="mode-card flex-1 bg-white p-8 rounded-[3rem] border-4 border-teal-200 text-center shadow-xl">
+                <div class="text-6xl mb-4">👶</div>
+                <div class="text-3xl font-game text-teal-600 mb-2">INFANTIL</div>
+                <p class="text-teal-400 font-bold">Letras Grandes<br>(MAIÚSCULAS)</p>
+            </button>
+
+            <button onclick="setMode('fundamental')" class="mode-card flex-1 bg-white p-8 rounded-[3rem] border-4 border-purple-200 text-center shadow-xl">
+                <div class="text-6xl mb-4">🎒</div>
+                <div class="text-3xl font-game text-purple-600 mb-2">FUNDAMENTAL I</div>
+                <p class="text-purple-400 font-bold">Maiúsculas e Minúsculas<br>(A a - abelha)</p>
+            </button>
+        </div>
+        <button onclick="showScreen('screen-start')" class="mt-12 text-teal-600 font-bold underline">Voltar ao início</button>
+    </div>
+
+    <!-- TELA DE SELEÇÃO DE NÍVEIS -->
+    <div id="screen-levels" class="screen bg-teal-50">
+        <div class="max-w-4xl w-full">
+            <div class="flex justify-between items-center mb-8">
+                <button onclick="showScreen('screen-mode')" class="bg-white text-teal-600 font-bold px-4 py-2 rounded-xl shadow-sm border-2 border-teal-100">← VOLTAR</button>
+                <h2 class="text-4xl font-game text-teal-600">ESCOLHA O NÍVEL</h2>
+                <div class="w-20"></div>
+            </div>
+            <div id="levels-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"></div>
+        </div>
+    </div>
+
+    <!-- TELA DO JOGO -->
+    <div id="screen-game" class="screen">
+        <div class="w-full max-w-5xl">
+            <div class="flex justify-between items-center mb-4">
+                <button onclick="quitGame()" class="bg-white px-6 py-2 rounded-xl font-bold border-2 border-teal-200 text-teal-600 shadow-sm hover:bg-teal-50 transition-colors">SAIR</button>
+                <div class="flex flex-col items-end">
+                    <div class="text-xl font-game text-teal-600" id="level-title">NÍVEL 1</div>
+                    <div class="text-sm font-bold text-teal-400" id="phase-counter">FASE 1 / 8</div>
+                </div>
+            </div>
+
+            <!-- Timer Bar -->
+            <div class="timer-container">
+                <div id="timer-bar"></div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-around bg-white p-6 md:p-12 rounded-[4rem] shadow-2xl border-b-8 border-teal-100 relative min-h-[500px] gap-4">
+                <div class="w-64 h-64 md:w-80 md:h-80 bg-teal-50 rounded-[3rem] border-4 border-dashed border-teal-200 flex items-center justify-center overflow-hidden shrink-0">
+                    <img id="display-image" src="" alt="Objeto" class="w-full h-full object-cover">
+                </div>
+
+                <div class="flex flex-col items-center mt-4 md:mt-0 text-center">
+                    <div id="big-letter-display" class="letter-big font-game text-teal-500 drop-shadow-lg">?</div>
+                    <p class="text-teal-300 font-bold text-3xl mt-4 uppercase tracking-widest" id="word-name">------</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <div class="inline-flex items-center gap-3 bg-teal-100 text-teal-800 px-8 py-4 rounded-full shadow-sm">
+                    <span class="text-3xl">⌨️</span>
+                    <p class="text-xl font-bold" id="instruction-text">Carregue na tecla correta!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE VITÓRIA -->
+    <div id="win-modal" class="fixed inset-0 bg-teal-900/90 flex items-center justify-center hidden z-50 backdrop-blur-sm">
+        <div class="bg-white p-12 rounded-[3rem] text-center shadow-2xl border-8 border-yellow-400 max-w-sm mx-4 transform scale-105">
+            <h2 class="text-5xl font-game text-teal-600 mb-4" id="modal-title">NÍVEL CONCLUÍDO!</h2>
+            <div class="text-8xl mb-6">🌟</div>
+            <p class="text-xl font-bold text-gray-600 mb-8" id="modal-msg">Muito bem!</p>
+            <button onclick="showScreen('screen-levels')" class="bg-green-500 hover:bg-green-600 text-white font-game text-3xl py-4 px-12 rounded-full shadow-lg border-b-8 border-green-700 active:translate-y-1 active:border-b-0 transition-all">
+                CONTINUAR
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const gameData = [
+    {
+        name: "Nível 1",
+        phases: [
+            { letter: 'A', word: 'ABELHA', img: 'https://images.unsplash.com/photo-1558536097-7fa203901b7f?w=600&q=80' },
+            { letter: 'A', word: 'ANEL', img: 'https://images.unsplash.com/photo-1598560912005-594685ae2ac6?w=600&q=80' },
+            { letter: 'A', word: 'AVIÃO', img: 'https://images.unsplash.com/photo-1524338198831-9705030467ed?w=600&q=80' },
+            { letter: 'A', word: 'ABACAXI', img: 'https://images.unsplash.com/photo-1550258114-68bd29973847?w=600&q=80' },
+            { letter: 'A', word: 'ARANHA', img: 'https://images.unsplash.com/photo-1534120247760-c44c3e4a62f1?w=600&q=80' },
+            { letter: 'B', word: 'BOLA', img: 'https://images.unsplash.com/photo-1589487391730-58f20eb2c308?w=600&q=80' },
+            { letter: 'B', word: 'BALA', img: 'https://images.unsplash.com/photo-1582041236130-1b706d1296d3?w=600&q=80' },
+            { letter: 'B', word: 'BONECA', img: 'https://images.unsplash.com/photo-1559454403-b8fb88521f11?w=600&q=80' },
+            { letter: 'B', word: 'BALEIA', img: 'https://images.unsplash.com/photo-1568430462989-44163eb1752f?w=600&q=80' },
+            { letter: 'B', word: 'BOTA', img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80' },
+            { letter: 'C', word: 'CASA', img: 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=600&q=80' },
+            { letter: 'C', word: 'CARRO', img: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&q=80' },
+            { letter: 'C', word: 'COELHO', img: 'https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=600&q=80' },
+            { letter: 'C', word: 'COBRA', img: 'https://images.unsplash.com/photo-1531386151447-fd762710f4ca?w=600&q=80' },
+            { letter: 'C', word: 'CAMA', img: 'https://images.unsplash.com/photo-1505693419148-ad30b381e8f0?w=600&q=80' },
+            { letter: 'D', word: 'DADO', img: 'https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?w=600&q=80' },
+            { letter: 'D', word: 'DENTE', img: 'https://images.unsplash.com/photo-1593059075398-33306864bc22?w=600&q=80' },
+            { letter: 'D', word: 'DOCE', img: 'https://images.unsplash.com/photo-1581798459219-318e76aecc7b?w=600&q=80' },
+            { letter: 'D', word: 'DINOSSAURO', img: 'https://images.unsplash.com/photo-1517926967795-31923cb99003?w=600&q=80' },
+            { letter: 'D', word: 'DEDO', img: 'https://images.unsplash.com/photo-1550928431-ee0ec6db30d3?w=600&q=80' },
+            { letter: 'E', word: 'ELEFANTE', img: 'https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=600&q=80' },
+            { letter: 'E', word: 'ESTRELA', img: 'https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?w=600&q=80' },
+            { letter: 'E', word: 'ESCOVA', img: 'https://images.unsplash.com/photo-1590113840744-8d96339cc909?w=600&q=80' },
+            { letter: 'E', word: 'ESPELHO', img: 'https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&q=80' },
+            { letter: 'E', word: 'ESQUILO', img: 'https://images.unsplash.com/photo-1507666405821-4226ca3db2b9?w=600&q=80' },
+            { letter: 'F', word: 'FOCA', img: 'https://images.unsplash.com/photo-1590409026402-98421832049e?w=600&q=80' },
+            { letter: 'F', word: 'FOGO', img: 'https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?w=600&q=80' },
+            { letter: 'F', word: 'FACA', img: 'https://images.unsplash.com/photo-1602484082531-97b7796d195c?w=600&q=80' },
+            { letter: 'F', word: 'FLOR', img: 'https://images.unsplash.com/photo-1490750967868-8824627c246a?w=600&q=80' },
+            { letter: 'F', word: 'FORMIGA', img: 'https://images.unsplash.com/photo-1551046180-8742f1530965?w=600&q=80' },
+            { letter: 'G', word: 'GATO', img: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&q=80' },
+            { letter: 'G', word: 'GALINHA', img: 'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=600&q=80' },
+            { letter: 'G', word: 'GELO', img: 'https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=600&q=80' },
+            { letter: 'G', word: 'GIRAFA', img: 'https://images.unsplash.com/photo-1501032359160-5dca9c92f41c?w=600&q=80' },
+            { letter: 'G', word: 'GAIOLA', img: 'https://images.unsplash.com/photo-1533512900330-8488e08502a3?w=600&q=80' },
+            { letter: 'H', word: 'HIPOPÓTAMO', img: 'https://images.unsplash.com/photo-1549421263-549487c64547?w=600&q=80' },
+            { letter: 'H', word: 'HARPA', img: 'https://images.unsplash.com/photo-1583091924510-4828b17792ec?w=600&q=80' },
+            { letter: 'H', word: 'HÉLICE', img: 'https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=600&q=80' },
+            { letter: 'H', word: 'HELICÓPTERO', img: 'https://images.unsplash.com/photo-1471478331149-c72f17e33c73?w=600&q=80' },
+            { letter: 'H', word: 'HOMEM', img: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80' }
+        ]
+    },
+    {
+        name: "Nível 2",
+        phases: [
+            { letter: 'I', word: 'IGREJA', img: 'https://images.unsplash.com/photo-1548705085-101177834f47?w=600&q=80' },
+            { letter: 'I', word: 'ILHA', img: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80' },
+            { letter: 'I', word: 'IOIÔ', img: 'https://images.unsplash.com/photo-1582260654067-1606774c8340?w=600&q=80' },
+            { letter: 'I', word: 'ÍMÃ', img: 'https://images.unsplash.com/photo-1590483736622-39da8caf3501?w=600&q=80' },
+            { letter: 'I', word: 'INVERNO', img: 'https://images.unsplash.com/photo-1457269449834-928af64c684d?w=600&q=80' },
+            { letter: 'J', word: 'JACARÉ', img: 'https://images.unsplash.com/photo-1549241520-425e3dfc01cd?w=600&q=80' },
+            { letter: 'J', word: 'JANELA', img: 'https://images.unsplash.com/photo-1517457373958-b7bdd5582fec?w=600&q=80' },
+            { letter: 'J', word: 'JOGO', img: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&q=80' },
+            { letter: 'J', word: 'JARRO', img: 'https://images.unsplash.com/photo-1534005391054-d92207908c69?w=600&q=80' },
+            { letter: 'J', word: 'JACA', img: 'https://images.unsplash.com/photo-1594911776001-9f66827052a2?w=600&q=80' },
+            { letter: 'K', word: 'KIWI', img: 'https://images.unsplash.com/photo-1618897996318-5a901fa6ca39?w=600&q=80' },
+            { letter: 'K', word: 'KART', img: 'https://images.unsplash.com/photo-1547447134-cd3f5c716030?w=600&q=80' },
+            { letter: 'K', word: 'KOMBI', img: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&q=80' },
+            { letter: 'K', word: 'KARAOKÊ', img: 'https://images.unsplash.com/photo-1516280440614-37939bb912cd?w=600&q=80' },
+            { letter: 'K', word: 'KUNG-FU', img: 'https://images.unsplash.com/photo-1552072805-2a9039d00e57?w=600&q=80' },
+            { letter: 'L', word: 'LEÃO', img: 'https://images.unsplash.com/photo-1614027164847-1b2809eb1895?w=600&q=80' },
+            { letter: 'L', word: 'LIVRO', img: 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=600&q=80' },
+            { letter: 'L', word: 'LUA', img: 'https://images.unsplash.com/photo-1532693322450-2cb5c511067d?w=600&q=80' },
+            { letter: 'L', word: 'LÁPIS', img: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80' },
+            { letter: 'L', word: 'LARANJA', img: 'https://images.unsplash.com/photo-1582979512210-99b6a53386f9?w=600&q=80' },
+            { letter: 'M', word: 'MACACO', img: 'https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=600&q=80' },
+            { letter: 'M', word: 'MALA', img: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&q=80' },
+            { letter: 'M', word: 'MÃO', img: 'https://images.unsplash.com/photo-1518134704515-538604771231?w=600&q=80' },
+            { letter: 'M', word: 'MILHO', img: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=600&q=80' },
+            { letter: 'M', word: 'MORANGO', img: 'https://images.unsplash.com/photo-1518635017498-87f514b751ba?w=600&q=80' },
+            { letter: 'N', word: 'NAVIO', img: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80' },
+            { letter: 'N', word: 'NINHO', img: 'https://images.unsplash.com/photo-1555526316-2495d4ed79d5?w=600&q=80' },
+            { letter: 'N', word: 'NUVEM', img: 'https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?w=600&q=80' },
+            { letter: 'N', word: 'NARIZ', img: 'https://images.unsplash.com/photo-1516195851888-6f1a981a862e?w=600&q=80' },
+            { letter: 'N', word: 'NEVE', img: 'https://images.unsplash.com/photo-1418985991508-e47386d96a71?w=600&q=80' },
+            { letter: 'O', word: 'OVO', img: 'https://images.unsplash.com/photo-1587486918502-3447958eeea0?w=600&q=80' },
+            { letter: 'O', word: 'OLHO', img: 'https://images.unsplash.com/photo-1544760314-519bb617754b?w=600&q=80' },
+            { letter: 'O', word: 'ONÇA', img: 'https://images.unsplash.com/photo-1574044199047-0e6988891f14?w=600&q=80' },
+            { letter: 'O', word: 'OURO', img: 'https://images.unsplash.com/photo-1610375461242-a1b1812672a1?w=600&q=80' },
+            { letter: 'O', word: 'ORELHA', img: 'https://images.unsplash.com/photo-1583091924510-4828b17792ec?w=600&q=80' },
+            { letter: 'P', word: 'PATO', img: 'https://images.unsplash.com/photo-1555848962-6e79363ec58f?w=600&q=80' },
+            { letter: 'P', word: 'PEIXE', img: 'https://images.unsplash.com/photo-1524704654690-b56c05c78a00?w=600&q=80' },
+            { letter: 'P', word: 'PIPA', img: 'https://images.unsplash.com/photo-1528659555132-7204910b8093?w=600&q=80' },
+            { letter: 'P', word: 'PORCO', img: 'https://images.unsplash.com/photo-1544225071-cc4428dd1a4c?w=600&q=80' },
+            { letter: 'P', word: 'PÃO', img: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80' }
+        ]
+    },
+    {
+        name: "Nível 3",
+        phases: [
+            { letter: 'Q', word: 'QUEIJO', img: 'https://images.unsplash.com/photo-1486297678162-ad2a19b05830?w=600&q=80' },
+            { letter: 'Q', word: 'QUADRO', img: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&q=80' },
+            { letter: 'Q', word: 'QUIABO', img: 'https://images.unsplash.com/photo-1602166668700-1f95d52b1ec3?w=600&q=80' },
+            { letter: 'Q', word: 'QUINDIM', img: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=600&q=80' },
+            { letter: 'Q', word: 'QUATI', img: 'https://images.unsplash.com/photo-1563220475-385c7c29e276?w=600&q=80' },
+            { letter: 'R', word: 'RATO', img: 'https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=600&q=80' },
+            { letter: 'R', word: 'REI', img: 'https://images.unsplash.com/photo-1580974511812-477092659951?w=600&q=80' },
+            { letter: 'R', word: 'RIO', img: 'https://images.unsplash.com/photo-1437482012496-100b1a9ec662?w=600&q=80' },
+            { letter: 'R', word: 'RODA', img: 'https://images.unsplash.com/photo-1550524514-96369df493d1?w=600&q=80' },
+            { letter: 'R', word: 'ROBÔ', img: 'https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=600&q=80' },
+            { letter: 'S', word: 'SAPO', img: 'https://images.unsplash.com/photo-1559190394-df5a28aab5c5?w=600&q=80' },
+            { letter: 'S', word: 'SOL', img: 'https://images.unsplash.com/photo-1533903345306-15d1c30952de?w=600&q=80' },
+            { letter: 'S', word: 'SOPA', img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&q=80' },
+            { letter: 'S', word: 'SINO', img: 'https://images.unsplash.com/photo-1541014741259-df549fa0bc67?w=600&q=80' },
+            { letter: 'S', word: 'SOFÁ', img: 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&q=80' },
+            { letter: 'T', word: 'TATU', img: 'https://images.unsplash.com/photo-1550953683-189f7f023755?w=600&q=80' },
+            { letter: 'T', word: 'TREM', img: 'https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=600&q=80' },
+            { letter: 'T', word: 'TARTARUGA', img: 'https://images.unsplash.com/photo-1541088195439-994f71a0678e?w=600&q=80' },
+            { letter: 'T', word: 'TEIA', img: 'https://images.unsplash.com/photo-1582046808794-0808b284857b?w=600&q=80' },
+            { letter: 'T', word: 'TIJOLO', img: 'https://images.unsplash.com/photo-1590132801249-1d60dfcd5999?w=600&q=80' },
+            { letter: 'U', word: 'URSO', img: 'https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=600&q=80' },
+            { letter: 'U', word: 'UVA', img: 'https://images.unsplash.com/photo-1596363505729-4190a9506133?w=600&q=80' },
+            { letter: 'U', word: 'URUBU', img: 'https://images.unsplash.com/photo-1547846543-982c764e526a?w=600&q=80' },
+            { letter: 'U', word: 'UNHA', img: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80' },
+            { letter: 'U', word: 'UMBIGO', img: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80' },
+            { letter: 'V', word: 'VACA', img: 'https://images.unsplash.com/photo-1543160401-2092199b9991?w=600&q=80' },
+            { letter: 'V', word: 'VELA', img: 'https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&q=80' },
+            { letter: 'V', word: 'VIOLÃO', img: 'https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=600&q=80' },
+            { letter: 'V', word: 'VASO', img: 'https://images.unsplash.com/photo-1534005391054-d92207908c69?w=600&q=80' },
+            { letter: 'V', word: 'VENTO', img: 'https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?w=600&q=80' },
+            { letter: 'X', word: 'XÍCARA', img: 'https://images.unsplash.com/photo-1544787210-2213d242750e?w=600&q=80' },
+            { letter: 'X', word: 'XALE', img: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=600&q=80' },
+            { letter: 'X', word: 'XADREZ', img: 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=600&q=80' },
+            { letter: 'X', word: 'XAROPE', img: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&q=80' },
+            { letter: 'X', word: 'XILOFONE', img: 'https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=600&q=80' },
+            { letter: 'Z', word: 'ZEBRA', img: 'https://images.unsplash.com/photo-1526095179574-86e545346ae6?w=600&q=80' },
+            { letter: 'Z', word: 'ZERO', img: 'https://images.unsplash.com/photo-1589131008225-873935513d2e?w=600&q=80' },
+            { letter: 'Z', word: 'ZÍPER', img: 'https://images.unsplash.com/photo-1584949514123-474cfa705df3?w=600&q=80' },
+            { letter: 'Z', word: 'ZANGÃO', img: 'https://images.unsplash.com/photo-1558536097-7fa203901b7f?w=600&q=80' },
+            { letter: 'Z', word: 'ZOOLÓGICO', img: 'https://images.unsplash.com/photo-1534567153574-2b12153a87f0?w=600&q=80' }
+        ]
+    }
+];
+        let unlockedLevels = 1;
+        let activeLevelIdx = 0;
+        let activePhaseIdx = 0;
+        let canType = false;
+        let gameMode = 'infantil';
+        let currentPhases = []; // Armazena a lista embaralhada do nível atual
+        
+        let timeLeft = 100;
+        let timerInterval = null;
+        const PHASE_TIME = 10000;
+
+        function showScreen(screenId) {
+            stopTimer();
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active-screen'));
+            document.getElementById(screenId).classList.add('active-screen');
+            document.getElementById('win-modal').classList.add('hidden');
+            
+            if (screenId === 'screen-levels') {
+                renderLevelsGrid();
+            }
+        }
+
+        function setMode(mode) {
+            gameMode = mode;
+            showScreen('screen-levels');
+        }
+
+        // Função para embaralhar array (Fisher-Yates)
+        function shuffleArray(array) {
+            let shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
+        function renderLevelsGrid() {
+            const grid = document.getElementById('levels-grid');
+            grid.innerHTML = '';
+            
+            gameData.forEach((level, index) => {
+                const isLocked = index + 1 > unlockedLevels;
+                const card = document.createElement('div');
+                card.className = `level-card bg-white p-6 rounded-[2.5rem] flex flex-col items-center justify-center text-center border-4 ${isLocked ? 'locked border-gray-200' : 'border-teal-100 cursor-pointer shadow-md'}`;
+                
+                card.innerHTML = `
+                    <div class="text-4xl mb-2">${isLocked ? '🔒' : '⭐'}</div>
+                    <div class="text-2xl font-game text-teal-600">${level.name}</div>
+                    <div class="text-sm font-bold text-teal-300">${isLocked ? 'Bloqueado' : level.phases.length + ' Fases'}</div>
+                `;
+                
+                if (!isLocked) card.onclick = () => startLevel(index);
+                grid.appendChild(card);
+            });
+        }
+
+        function startLevel(index) {
+            activeLevelIdx = index;
+            activePhaseIdx = 0;
+            // Embaralha as fases do nível selecionado dinamicamente
+            currentPhases = shuffleArray(gameData[index].phases);
+            showScreen('screen-game');
+            initPhase();
+        }
+
+        function initPhase() {
+            const data = currentPhases[activePhaseIdx];
+            const bigLetter = document.getElementById('big-letter-display');
+            const wordName = document.getElementById('word-name');
+            const displayImg = document.getElementById('display-image');
+            
+            canType = true;
+            document.getElementById('level-title').innerText = gameData[activeLevelIdx].name;
+            // Contador dinâmico baseado no total de fases do nível atual
+            document.getElementById('phase-counter').innerText = `FASE ${activePhaseIdx + 1} / ${currentPhases.length}`;
+            displayImg.src = data.img;
+
+            if (gameMode === 'infantil') {
+                bigLetter.innerText = data.letter.toUpperCase();
+                bigLetter.classList.add('font-game');
+                wordName.innerText = data.word.toUpperCase();
+                wordName.classList.remove('tracking-normal');
+                wordName.classList.add('tracking-widest');
+            } else {
+                bigLetter.innerText = data.letter.toUpperCase() + " " + data.letter.toLowerCase();
+                bigLetter.classList.remove('font-game');
+                
+                const wordLower = data.word.charAt(0).toUpperCase() + data.word.slice(1).toLowerCase();
+                wordName.innerText = wordLower;
+                wordName.classList.remove('tracking-widest');
+                wordName.classList.add('tracking-normal');
+            }
+            
+            bigLetter.className = 'letter-big text-teal-500 drop-shadow-lg';
+            if(gameMode === 'infantil') bigLetter.classList.add('font-game');
+            
+            bigLetter.style.color = '';
+            resetTimer();
+        }
+
+        function resetTimer() {
+            stopTimer();
+            timeLeft = 100;
+            updateTimerUI();
+            
+            const step = 100;
+            const decrement = (step / PHASE_TIME) * 100;
+            
+            timerInterval = setInterval(() => {
+                timeLeft -= decrement;
+                if (timeLeft <= 0) {
+                    timeLeft = 0;
+                    handleTimeOut();
+                }
+                updateTimerUI();
+            }, step);
+        }
+
+        function stopTimer() {
+            if (timerInterval) clearInterval(timerInterval);
+        }
+
+        function updateTimerUI() {
+            const bar = document.getElementById('timer-bar');
+            bar.style.width = `${timeLeft}%`;
+            
+            if (timeLeft > 50) bar.style.backgroundColor = '#14b8a6';
+            else if (timeLeft > 20) bar.style.backgroundColor = '#facc15';
+            else bar.style.backgroundColor = '#ef4444';
+        }
+
+        function handleTimeOut() {
+            stopTimer();
+            const bigLetter = document.getElementById('big-letter-display');
+            bigLetter.classList.remove('shake-anim');
+            void bigLetter.offsetWidth;
+            bigLetter.classList.add('shake-anim');
+            
+            setTimeout(() => {
+                if (document.getElementById('screen-game').classList.contains('active-screen')) {
+                    resetTimer();
+                }
+            }, 500);
+        }
+
+        function quitGame() {
+            stopTimer();
+            showScreen('screen-levels');
+        }
+
+        window.addEventListener('keydown', (e) => {
+            if (!document.getElementById('screen-game').classList.contains('active-screen') || !canType) return;
+            
+            const typedKey = e.key.toUpperCase();
+            // Compara com a letra correta da fase embaralhada
+            const targetKey = currentPhases[activePhaseIdx].letter.toUpperCase();
+            const bigLetter = document.getElementById('big-letter-display');
+
+            if (typedKey === targetKey) {
+                canType = false;
+                stopTimer();
+                bigLetter.classList.remove('shake-anim');
+                bigLetter.classList.add('correct-anim');
+                bigLetter.style.color = '#22c55e';
+                setTimeout(nextPhase, 1100);
+            } else {
+                if (e.key.length === 1 && /[a-zA-Záàâãéèêíïóôõúüç]/.test(e.key)) {
+                    bigLetter.classList.remove('shake-anim');
+                    void bigLetter.offsetWidth;
+                    bigLetter.classList.add('shake-anim');
+                }
+            }
+        });
+
+        function nextPhase() {
+            activePhaseIdx++;
+            // Verifica se ainda há fases no nível atual usando a lista dinâmica
+            if (activePhaseIdx < currentPhases.length) {
+                initPhase();
+            } else {
+                stopTimer();
+                if (activeLevelIdx + 1 === unlockedLevels && unlockedLevels < gameData.length) {
+                    unlockedLevels++;
+                }
+                const isFinalLevel = activeLevelIdx + 1 === gameData.length;
+                document.getElementById('modal-title').innerText = isFinalLevel ? "JOGO CONCLUÍDO!" : "NÍVEL CONCLUÍDO!";
+                document.getElementById('win-modal').classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

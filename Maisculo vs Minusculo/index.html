@@ -1,0 +1,468 @@
+import React, { useState, useEffect } from 'react';
+
+// Dicionário do Alfabeto com distratores (letras parecidas para dificultar e gerar aprendizado)
+const ALPHABET_DATA = [
+  { u: 'A', l: 'a', d_u: ['E', 'O', 'R'], d_l: ['e', 'o', 'c'] },
+  { u: 'B', l: 'b', d_u: ['D', 'P', 'R'], d_l: ['d', 'p', 'q'] }, // Clássica confusão b/d/p/q
+  { u: 'C', l: 'c', d_u: ['G', 'O', 'E'], d_l: ['e', 'o', 'a'] },
+  { u: 'D', l: 'd', d_u: ['B', 'O', 'P'], d_l: ['b', 'p', 'q'] },
+  { u: 'E', l: 'e', d_u: ['F', 'C', 'B'], d_l: ['c', 'a', 'o'] },
+  { u: 'F', l: 'f', d_u: ['E', 'P', 'T'], d_l: ['t', 'l', 'j'] },
+  { u: 'G', l: 'g', d_u: ['C', 'O', 'Q'], d_l: ['q', 'p', 'd'] },
+  { u: 'H', l: 'h', d_u: ['M', 'N', 'A'], d_l: ['n', 'm', 'b'] },
+  { u: 'I', l: 'i', d_u: ['J', 'L', 'T'], d_l: ['j', 'l', 't'] },
+  { u: 'J', l: 'j', d_u: ['I', 'L', 'U'], d_l: ['i', 'l', 'f'] },
+  { u: 'K', l: 'k', d_u: ['X', 'Y', 'H'], d_l: ['x', 'y', 'h'] },
+  { u: 'L', l: 'l', d_u: ['I', 'J', 'T'], d_l: ['i', 't', 'j'] },
+  { u: 'M', l: 'm', d_u: ['N', 'W', 'H'], d_l: ['n', 'w', 'u'] }, // Confusão m/n/w
+  { u: 'N', l: 'n', d_u: ['M', 'V', 'Z'], d_l: ['m', 'u', 'v'] },
+  { u: 'O', l: 'o', d_u: ['Q', 'C', 'D'], d_l: ['c', 'a', 'e'] },
+  { u: 'P', l: 'p', d_u: ['R', 'B', 'D'], d_l: ['q', 'b', 'd'] },
+  { u: 'Q', l: 'q', d_u: ['O', 'C', 'G'], d_l: ['p', 'd', 'b'] },
+  { u: 'R', l: 'r', d_u: ['P', 'B', 'K'], d_l: ['n', 'm', 's'] },
+  { u: 'S', l: 's', d_u: ['C', 'Z', 'J'], d_l: ['c', 'z', 'a'] },
+  { u: 'T', l: 't', d_u: ['I', 'F', 'J'], d_l: ['f', 'l', 'i'] },
+  { u: 'U', l: 'u', d_u: ['V', 'J', 'O'], d_l: ['v', 'n', 'w'] },
+  { u: 'V', l: 'v', d_u: ['U', 'Y', 'W'], d_l: ['u', 'w', 'y'] },
+  { u: 'W', l: 'w', d_u: ['M', 'V', 'U'], d_l: ['m', 'v', 'u'] },
+  { u: 'X', l: 'x', d_u: ['Y', 'K', 'Z'], d_l: ['y', 'k', 'z'] },
+  { u: 'Y', l: 'y', d_u: ['V', 'X', 'U'], d_l: ['v', 'x', 'u'] },
+  { u: 'Z', l: 'z', d_u: ['S', 'N', 'X'], d_l: ['s', 'x', 'c'] }
+];
+
+// Fases do jogo
+const PHASES = [
+  [0, 1, 2, 3, 4],       // Fase 1: A até E
+  [5, 6, 7, 8, 9],       // Fase 2: F até J
+  [10, 11, 12, 13, 14],  // Fase 3: K até O
+  [15, 16, 17, 18, 19],  // Fase 4: P até T
+  [20, 21, 22, 23, 24, 25] // Fase 5: U até Z
+];
+
+export default function App() {
+  // Estados de Navegação
+  const [gameState, setGameState] = useState('cover'); 
+  const [mode, setMode] = useState('upperToLower'); // 'upperToLower' (Maiúscula -> minúscula) ou 'lowerToUpper'
+  
+  // Controle de Fases Desbloqueadas
+  const [unlockedPhases, setUnlockedPhases] = useState({
+    upperToLower: 1,
+    lowerToUpper: 1
+  });
+  
+  // Estados da Partida Atual
+  const [currentPhase, setCurrentPhase] = useState(1);
+  const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
+  const [options, setOptions] = useState([]);
+  const [wrongAnswers, setWrongAnswers] = useState([]); // Letras erradas
+  const [isSuccess, setIsSuccess] = useState(false); // Animação de acerto
+  const [startTime, setStartTime] = useState(0);
+  const [metrics, setMetrics] = useState([]);
+  
+  // Novo estado para a zona de arrastar e soltar (Drag & Drop)
+  const [isDragOver, setIsDragOver] = useState(false);
+
+  // Embaralha um array
+  const shuffleArray = (array) => {
+    return array.sort(() => Math.random() - 0.5);
+  };
+
+  // Gera as opções de botões para a letra atual
+  const generateOptions = (letterData, currentMode) => {
+    let correctAns, distractors;
+    
+    if (currentMode === 'upperToLower') {
+      correctAns = letterData.l;
+      distractors = [...letterData.d_l];
+    } else {
+      correctAns = letterData.u;
+      distractors = [...letterData.d_u];
+    }
+
+    const selectedDistractors = shuffleArray(distractors).slice(0, 2);
+    const finalOptions = shuffleArray([correctAns, ...selectedDistractors]);
+    
+    setOptions(finalOptions);
+    setWrongAnswers([]);
+    setIsSuccess(false);
+    setIsDragOver(false);
+  };
+
+  // Iniciar uma Fase específica
+  const startPhase = (phaseNumber) => {
+    setCurrentPhase(phaseNumber);
+    setCurrentLetterIndex(0);
+    setMetrics([]);
+    
+    const phaseLettersIndices = PHASES[phaseNumber - 1];
+    const firstLetterData = ALPHABET_DATA[phaseLettersIndices[0]];
+    generateOptions(firstLetterData, mode);
+
+    setGameState('playing');
+    setStartTime(Date.now());
+  };
+
+  // Lógica principal de checar a resposta (agora usada pelo clique e pelo drop)
+  const checkAnswer = (option) => {
+    if (isSuccess || wrongAnswers.includes(option)) return;
+
+    const phaseLettersIndices = PHASES[currentPhase - 1];
+    const currentLetterData = ALPHABET_DATA[phaseLettersIndices[currentLetterIndex]];
+    const correctAns = mode === 'upperToLower' ? currentLetterData.l : currentLetterData.u;
+
+    if (option === correctAns) {
+      // Acertou!
+      setIsSuccess(true);
+      const endTime = Date.now();
+      const timeTaken = ((endTime - startTime) / 1000).toFixed(1); 
+      
+      const targetDisplay = mode === 'upperToLower' ? currentLetterData.u : currentLetterData.l;
+      setMetrics(prev => [...prev, { letter: targetDisplay, time: timeTaken }]);
+
+      // Tempo maior de animação para mostrar o encaixe e a conexão
+      setTimeout(() => {
+        if (currentLetterIndex + 1 < phaseLettersIndices.length) {
+          const nextIndex = currentLetterIndex + 1;
+          setCurrentLetterIndex(nextIndex);
+          generateOptions(ALPHABET_DATA[phaseLettersIndices[nextIndex]], mode);
+          setStartTime(Date.now());
+        } else {
+          if (currentPhase === unlockedPhases[mode] && currentPhase < PHASES.length) {
+            setUnlockedPhases(prev => ({
+              ...prev,
+              [mode]: prev[mode] + 1
+            }));
+          }
+          setGameState('phaseComplete');
+        }
+      }, 1500); // 1.5s para apreciar a animação
+      
+    } else {
+      // Errou
+      setWrongAnswers(prev => [...prev, option]);
+    }
+  };
+
+  // --- Handlers de Drag and Drop ---
+  const handleDragStart = (e, option) => {
+    e.dataTransfer.setData('text/plain', option);
+    e.dataTransfer.effectAllowed = 'move';
+  };
+
+  const handleDragOver = (e) => {
+    e.preventDefault(); // Necessário para permitir o drop
+    e.dataTransfer.dropEffect = 'move';
+    if (!isDragOver) setIsDragOver(true);
+  };
+
+  const handleDragLeave = (e) => {
+    e.preventDefault();
+    setIsDragOver(false);
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    setIsDragOver(false);
+    const droppedOption = e.dataTransfer.getData('text/plain');
+    if (droppedOption) {
+      checkAnswer(droppedOption);
+    }
+  };
+
+  // ------------------------------------------------------------------------
+  // TELA 1: CAPA
+  // ------------------------------------------------------------------------
+  if (gameState === 'cover') {
+    return (
+      <div className="min-h-screen bg-indigo-400 flex flex-col items-center justify-center p-4 font-sans relative overflow-hidden">
+        <div className="absolute top-10 left-10 text-6xl opacity-30 animate-bounce">A</div>
+        <div className="absolute top-20 right-20 text-7xl opacity-30 font-bold font-serif">b</div>
+        <div className="absolute bottom-20 left-20 text-8xl opacity-30 text-yellow-300 rotate-12">C</div>
+        <div className="absolute bottom-10 right-10 text-6xl opacity-30 font-serif -rotate-12">a</div>
+
+        <div className="bg-white/95 p-10 rounded-[3rem] shadow-2xl flex flex-col items-center text-center z-10 max-w-lg w-full border-8 border-indigo-200">
+          <div className="text-8xl mb-4">🧩</div>
+          <h1 className="text-5xl font-extrabold text-indigo-600 mb-2 tracking-tight leading-tight">
+            ABC<br/><span className="text-4xl text-indigo-400">Pares Perfeitos</span>
+          </h1>
+          <p className="text-gray-500 mb-8 text-lg font-medium">Encaixe as letras maiúsculas e minúsculas!</p>
+          
+          <button 
+            onClick={() => setGameState('modeSelect')}
+            className="w-full py-5 px-8 bg-pink-500 hover:bg-pink-600 text-white rounded-[2rem] text-3xl font-black transition-transform transform hover:scale-105 shadow-[0_8px_0_rgb(190,24,93)] hover:shadow-[0_4px_0_rgb(190,24,93)] hover:translate-y-1 active:shadow-none active:translate-y-2"
+          >
+            JOGAR
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // ------------------------------------------------------------------------
+  // TELA 2: SELEÇÃO DE MODO
+  // ------------------------------------------------------------------------
+  if (gameState === 'modeSelect') {
+    return (
+      <div className="min-h-screen bg-pink-100 flex flex-col items-center justify-center p-4 font-sans">
+        <div className="bg-white p-8 rounded-3xl shadow-xl max-w-md w-full text-center relative border-4 border-pink-200">
+          <button 
+            onClick={() => setGameState('cover')}
+            className="absolute top-4 left-4 text-gray-400 hover:text-gray-600 font-bold text-sm bg-gray-100 px-3 py-1 rounded-full"
+          >
+            ◀ Voltar
+          </button>
+
+          <h1 className="text-3xl font-bold text-pink-600 mb-2 mt-6">Como vamos jogar?</h1>
+          <p className="text-gray-500 mb-8">Escolha o seu desafio!</p>
+          
+          <div className="space-y-4">
+            <button 
+              onClick={() => { setMode('upperToLower'); setGameState('phaseSelect'); }}
+              className="w-full py-6 px-6 bg-blue-400 hover:bg-blue-500 text-white rounded-2xl text-2xl font-bold transition-transform transform hover:scale-105 shadow-md flex justify-between items-center"
+            >
+              <span className="text-4xl">A ➡️ a</span>
+              <span className="text-base text-left bg-white/20 px-3 py-2 rounded-xl">Encontrar a<br/>minúscula</span>
+            </button>
+            
+            <button 
+              onClick={() => { setMode('lowerToUpper'); setGameState('phaseSelect'); }}
+              className="w-full py-6 px-6 bg-orange-400 hover:bg-orange-500 text-white rounded-2xl text-2xl font-bold transition-transform transform hover:scale-105 shadow-md flex justify-between items-center"
+            >
+              <span className="text-4xl font-serif">a ➡️ A</span>
+              <span className="text-base text-left bg-white/20 px-3 py-2 rounded-xl">Encontrar a<br/>Maiúscula</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ------------------------------------------------------------------------
+  // TELA 3: MAPA DE FASES
+  // ------------------------------------------------------------------------
+  if (gameState === 'phaseSelect') {
+    const maxUnlocked = unlockedPhases[mode];
+
+    return (
+      <div className="min-h-screen bg-green-100 flex flex-col items-center justify-center p-4 font-sans">
+        <div className="bg-white p-8 rounded-3xl shadow-xl max-w-md w-full text-center relative border-4 border-green-300">
+          <button 
+            onClick={() => setGameState('modeSelect')}
+            className="absolute top-4 left-4 text-gray-400 hover:text-gray-600 font-bold text-sm bg-gray-100 px-3 py-1 rounded-full"
+          >
+            ◀ Modos
+          </button>
+
+          <h1 className="text-3xl font-bold text-green-600 mb-2 mt-6">Trilha do ABC</h1>
+          <p className="text-gray-500 mb-6 bg-green-50 rounded-lg p-2 font-semibold">
+            Modo: {mode === 'upperToLower' ? 'A ➡️ a (Encontre a minúscula)' : 'a ➡️ A (Encontre a Maiúscula)'}
+          </p>
+
+          <div className="grid grid-cols-1 gap-4">
+            {PHASES.map((_, index) => {
+              const phaseNum = index + 1;
+              const isUnlocked = phaseNum <= maxUnlocked;
+
+              const firstLetter = ALPHABET_DATA[PHASES[index][0]].u;
+              const lastLetter = ALPHABET_DATA[PHASES[index][PHASES[index].length - 1]].u;
+
+              return (
+                <button
+                  key={phaseNum}
+                  onClick={() => isUnlocked && startPhase(phaseNum)}
+                  className={`py-4 px-6 rounded-2xl text-xl font-bold flex items-center justify-between transition-all ${
+                    isUnlocked 
+                      ? 'bg-green-400 hover:bg-green-500 text-white shadow-[0_4px_0_rgb(22,163,74)] hover:translate-y-1 hover:shadow-none' 
+                      : 'bg-gray-200 text-gray-400 cursor-not-allowed border-2 border-dashed border-gray-300'
+                  }`}
+                >
+                  <span className="flex flex-col items-start">
+                    <span>Fase {phaseNum}</span>
+                    {isUnlocked && <span className="text-sm font-normal bg-white/20 px-2 py-0.5 rounded mt-1">Letras {firstLetter} até {lastLetter}</span>}
+                  </span>
+                  <span className="text-3xl">{isUnlocked ? '⭐' : '🔒'}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ------------------------------------------------------------------------
+  // TELA 4: FIM DE FASE (BOLETIM)
+  // ------------------------------------------------------------------------
+  if (gameState === 'phaseComplete') {
+    const totalTime = metrics.reduce((acc, curr) => acc + parseFloat(curr.time), 0).toFixed(1);
+    const hasNextPhase = currentPhase < PHASES.length;
+    
+    return (
+      <div className="min-h-screen bg-yellow-100 flex flex-col items-center justify-center p-4 font-sans">
+        <div className="bg-white p-8 rounded-3xl shadow-xl max-w-md w-full text-center border-4 border-yellow-300">
+          <div className="text-6xl mb-4 animate-bounce">🏆</div>
+          <h1 className="text-4xl font-bold text-yellow-500 mb-2">Fase {currentPhase} Concluída!</h1>
+          
+          <div className="bg-gray-50 rounded-xl p-4 mb-6 mt-6 shadow-inner">
+            <h2 className="text-xl font-bold text-gray-700 mb-4 border-b pb-2">Suas Estrelas</h2>
+            <div className="flex flex-wrap justify-center gap-3">
+              {metrics.map((m, i) => (
+                <div key={i} className="flex flex-col items-center bg-white p-3 rounded-xl shadow border border-gray-100">
+                  <span className="text-3xl font-bold text-indigo-600 mb-1">{m.letter}</span>
+                  <span className="text-xs text-gray-400 font-bold">{m.time}s</span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-6 pt-4 border-t flex justify-between items-center font-bold text-gray-800 text-xl">
+              <span>Tempo Rápido:</span>
+              <span className="text-green-600">{totalTime}s</span>
+            </div>
+          </div>
+
+          <div className="space-y-3">
+            {hasNextPhase && (
+              <button 
+                onClick={() => startPhase(currentPhase + 1)}
+                className="w-full py-4 px-6 bg-yellow-400 hover:bg-yellow-500 text-white rounded-2xl text-xl font-bold shadow-[0_6px_0_rgb(202,138,4)] hover:shadow-none hover:translate-y-1 transition-all"
+              >
+                Próxima Fase ➡️
+              </button>
+            )}
+            <button 
+              onClick={() => setGameState('phaseSelect')}
+              className="w-full py-3 px-6 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-2xl text-lg font-bold transition-colors"
+            >
+              Voltar à Trilha
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ------------------------------------------------------------------------
+  // TELA 5: O JOGO (GAMEPLAY MAIN - ARRASTAR E SOLTAR)
+  // ------------------------------------------------------------------------
+  const phaseLettersIndices = PHASES[currentPhase - 1];
+  const currentLetterData = ALPHABET_DATA[phaseLettersIndices[currentLetterIndex]];
+  
+  // Letra que já está na tela
+  const targetDisplay = mode === 'upperToLower' ? currentLetterData.u : currentLetterData.l;
+  // Letra que precisamos encontrar/encaixar
+  const correctMatchDisplay = mode === 'upperToLower' ? currentLetterData.l : currentLetterData.u;
+
+  return (
+    <div className="min-h-screen bg-sky-200 flex flex-col items-center justify-center p-4 font-sans">
+      
+      <button 
+        onClick={() => setGameState('phaseSelect')}
+        className="absolute top-4 left-4 text-sky-700 hover:text-sky-900 font-bold bg-white/50 hover:bg-white px-4 py-2 rounded-full transition-colors z-20"
+      >
+        ⏸ Pausar / Sair
+      </button>
+
+      {/* Barra de progresso da Fase */}
+      <div className="absolute top-20 w-full max-w-2xl px-4">
+        <div className="flex justify-between text-sky-800 font-bold mb-2 text-lg">
+          <span>Fase {currentPhase}</span>
+          <span>{currentLetterIndex + 1} / {phaseLettersIndices.length}</span>
+        </div>
+        <div className="w-full bg-sky-100 rounded-full h-4 shadow-inner overflow-hidden border-2 border-white">
+          <div 
+            className="bg-green-400 h-full transition-all duration-500 rounded-full" 
+            style={{ width: `${(currentLetterIndex / phaseLettersIndices.length) * 100}%` }}
+          ></div>
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center justify-center w-full max-w-2xl mt-12">
+        
+        <div className="text-sky-700 text-xl uppercase tracking-widest font-extrabold mb-6 bg-white/60 px-6 py-2 rounded-full text-center">
+          Arraste a peça correta para a caixa!
+        </div>
+
+        {/* --- ÁREA DE COMBINAÇÃO (ALVO + DROPZONE) --- */}
+        <div className="flex flex-row items-center justify-center gap-4 md:gap-8 mb-12 w-full">
+          
+          {/* Peça Fixa */}
+          <div className="bg-white p-6 md:p-8 rounded-[2rem] shadow-xl flex items-center justify-center w-32 h-40 md:w-48 md:h-56 border-8 border-sky-300 relative z-10 transition-transform">
+            <div className={`text-[6rem] md:text-[8rem] leading-none font-bold text-indigo-600 drop-shadow-md ${mode === 'lowerToUpper' ? 'font-serif' : 'font-sans'}`}>
+              {targetDisplay}
+            </div>
+          </div>
+
+          {/* Ícone de Conexão */}
+          <div className="flex flex-col items-center justify-center">
+             <div className={`text-4xl md:text-6xl font-bold transition-all duration-500 ${isSuccess ? 'text-green-500 scale-125' : 'text-sky-400'}`}>
+                {isSuccess ? '🔗' : '➕'}
+             </div>
+             {isSuccess && <span className="text-green-600 font-bold mt-2 animate-bounce">Conectado!</span>}
+          </div>
+
+          {/* Caixinha de Combinação (Dropzone) */}
+          <div 
+            onDragOver={handleDragOver}
+            onDragLeave={handleDragLeave}
+            onDrop={handleDrop}
+            className={`flex items-center justify-center w-32 h-40 md:w-48 md:h-56 rounded-[2rem] border-8 transition-all duration-300 relative overflow-hidden ${
+              isSuccess 
+                ? 'bg-green-400 border-green-500 shadow-xl scale-110' 
+                : isDragOver 
+                  ? 'bg-sky-100 border-sky-400 border-dashed scale-105'
+                  : 'bg-sky-50 border-sky-300 border-dashed'
+            }`}
+          >
+            {isSuccess ? (
+              // Animação de sucesso quando a letra é encaixada
+              <div className="absolute inset-0 bg-green-400 flex flex-col items-center justify-center z-10 animate-pulse">
+                 <span className={`text-[6rem] md:text-[8rem] leading-none font-bold text-white drop-shadow-md ${mode === 'upperToLower' ? 'font-serif' : 'font-sans'}`}>
+                    {correctMatchDisplay}
+                 </span>
+                 <div className="absolute top-2 right-2 text-2xl">⭐</div>
+                 <div className="absolute bottom-2 left-2 text-2xl">⭐</div>
+              </div>
+            ) : (
+              // Estado vazio / esperando a letra
+              <span className={`text-6xl text-sky-300 font-black opacity-50 ${isDragOver ? 'animate-ping' : ''}`}>?</span>
+            )}
+          </div>
+
+        </div>
+
+        {/* --- OPÇÕES PARA ARRASTAR --- */}
+        <div className="grid grid-cols-3 gap-4 md:gap-8 w-full px-4">
+          {options.map((opt, i) => {
+            const isWrong = wrongAnswers.includes(opt);
+            
+            // Estilização base do botão arrastável
+            let btnClass = "bg-white text-indigo-500 hover:bg-indigo-50 border-b-8 border-gray-200 hover:border-indigo-200 hover:-translate-y-1 cursor-grab active:cursor-grabbing";
+            
+            if (isWrong) {
+              btnClass = "bg-red-100 text-red-400 border-b-8 border-red-200 opacity-50 cursor-not-allowed transform translate-y-2";
+            } else if (isSuccess && opt === correctMatchDisplay) {
+              // A peça certa "some" ou fica desabilitada pois já foi para a caixa
+              btnClass = "bg-green-100 text-green-300 border-b-8 border-green-200 opacity-0 scale-50 pointer-events-none";
+            } else if (isSuccess) {
+              btnClass = "bg-gray-100 text-gray-300 border-b-8 border-gray-200 opacity-50 cursor-not-allowed";
+            }
+
+            return (
+              <button
+                key={i}
+                draggable={!isWrong && !isSuccess}
+                onDragStart={(e) => handleDragStart(e, opt)}
+                onClick={() => checkAnswer(opt)} // Mantemos o click como fallback para toques rápidos em telas pequenas
+                disabled={isWrong || isSuccess}
+                title="Arraste me para a caixa!"
+                className={`py-6 md:py-8 rounded-[2rem] text-5xl md:text-7xl font-bold transition-all duration-300 flex items-center justify-center shadow-md ${btnClass} ${mode === 'upperToLower' ? 'font-serif' : 'font-sans'}`}
+              >
+                {opt}
+              </button>
+            );
+          })}
+        </div>
+        
+      </div>
+    </div>
+  );
+}
