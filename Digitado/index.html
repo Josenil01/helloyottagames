@@ -10,11 +10,21 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@500;700;800&display=swap" rel="stylesheet">
     <style>
+        * { box-sizing: border-box; }
+        html, body {
+          margin: 0;
+          padding: 0;
+          overflow-x: hidden;
+          max-width: 100%;
+        }
         body {
-            font-family: 'Quicksand', sans-serif;
-            margin: 0;
-            touch-action: manipulation;
-            overflow-x: hidden;
+          font-family: 'Quicksand', sans-serif;
+          touch-action: manipulation;
+        }
+        #root {
+          min-height: 100vh;
+          min-height: 100dvh;
+          width: 100%;
         }
     </style>
 </head>
