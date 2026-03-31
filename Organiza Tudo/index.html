@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo - Organiza Tudo!</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- React e ReactDOM -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  
+  <!-- Babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <style>
+    /* Animações Personalizadas */
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-8px) rotate(-5deg); }
+      75% { transform: translateX(8px) rotate(5deg); }
+    }
+    .shake-anim {
+      animation: shake 0.3s ease-in-out;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0.5); opacity: 0; }
+      70% { transform: scale(1.2); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .pop-anim {
+      animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .float-anim {
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    /* Esconder scrollbar na área dos items */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-sky-50 font-sans selection:bg-none">
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    // --- DADOS DO JOGO ---
+    const LEVELS = [
+      {
+        id: 1,
+        title: "Cores Divertidas",
+        instruction: "Guarde os objetos na caixa da mesma cor!",
+        type: "color",
+        zones: [
+          { id: 'red', label: 'Vermelho', color: 'bg-red-400', border: 'border-red-500', shadow: 'shadow-red-200' },
+          { id: 'blue', label: 'Azul', color: 'bg-blue-400', border: 'border-blue-500', shadow: 'shadow-blue-200' },
+          { id: 'yellow', label: 'Amarelo', color: 'bg-yellow-400', border: 'border-yellow-500', shadow: 'shadow-yellow-200' }
+        ],
+        items: [
+          { id: 'r1', emoji: '🍎', category: 'red' },
+          { id: 'r2', emoji: '🚗', category: 'red' },
+          { id: 'r3', emoji: '🎈', category: 'red' },
+          { id: 'b1', emoji: '🐳', category: 'blue' },
+          { id: 'b2', emoji: '👖', category: 'blue' },
+          { id: 'b3', emoji: '🧢', category: 'blue' },
+          { id: 'y1', emoji: '⭐', category: 'yellow' },
+          { id: 'y2', emoji: '🍌', category: 'yellow' },
+          { id: 'y3', emoji: '🌻', category: 'yellow' },
+        ]
+      },
+      {
+        id: 2,
+        title: "Mundo das Formas",
+        instruction: "Separe os objetos pela sua forma geométrica!",
+        type: "shape",
+        zones: [
+          { id: 'circle', label: 'Círculos', icon: '⭕', color: 'bg-pink-400', border: 'border-pink-500', shadow: 'shadow-pink-200' },
+          { id: 'square', label: 'Quadrados', icon: '⏹️', color: 'bg-emerald-400', border: 'border-emerald-500', shadow: 'shadow-emerald-200' },
+          { id: 'triangle', label: 'Triângulos', icon: '🔺', color: 'bg-purple-400', border: 'border-purple-500', shadow: 'shadow-purple-200' }
+        ],
+        items: [
+          { id: 'c1', emoji: '⚽', category: 'circle' },
+          { id: 'c2', emoji: '🍩', category: 'circle' },
+          { id: 'c3', emoji: '🪙', category: 'circle' },
+          { id: 's1', emoji: '📦', category: 'square' },
+          { id: 's2', emoji: '🖼️', category: 'square' },
+          { id: 's3', emoji: '🎁', category: 'square' },
+          { id: 't1', emoji: '🍕', category: 'triangle' },
+          { id: 't2', emoji: '⛺', category: 'triangle' },
+          { id: 't3', emoji: '📐', category: 'triangle' },
+        ]
+      },
+      {
+        id: 3,
+        title: "Mistura Maluca",
+        instruction: "Guarde cada coisa na sua caixa correta!",
+        type: "theme",
+        zones: [
+          { id: 'animal', label: 'Animais', icon: '🐶', color: 'bg-orange-400', border: 'border-orange-500', shadow: 'shadow-orange-200' },
+          { id: 'fruit', label: 'Frutas', icon: '🍉', color: 'bg-lime-400', border: 'border-lime-500', shadow: 'shadow-lime-200' },
+          { id: 'vehicle', label: 'Veículos', icon: '🚗', color: 'bg-cyan-400', border: 'border-cyan-500', shadow: 'shadow-cyan-200' }
+        ],
+        items: [
+          { id: 'a1', emoji: '🐱', category: 'animal' },
+          { id: 'a2', emoji: '🐘', category: 'animal' },
+          { id: 'a3', emoji: '🐢', category: 'animal' },
+          { id: 'f1', emoji: '🍇', category: 'fruit' },
+          { id: 'f2', emoji: '🍓', category: 'fruit' },
+          { id: 'f3', emoji: '🍍', category: 'fruit' },
+          { id: 'v1', emoji: '🚓', category: 'vehicle' },
+          { id: 'v2', emoji: '🚀', category: 'vehicle' },
+          { id: 'v3', emoji: '🚁', category: 'vehicle' },
+        ]
+      },
+      {
+        id: 4,
+        title: "Natureza Mágica",
+        instruction: "Separe os elementos da natureza!",
+        type: "nature",
+        zones: [
+          { id: 'water', label: 'Água', icon: '💧', color: 'bg-blue-400', border: 'border-blue-500', shadow: 'shadow-blue-200' },
+          { id: 'fire', label: 'Fogo', icon: '🔥', color: 'bg-red-500', border: 'border-red-600', shadow: 'shadow-red-200' },
+          { id: 'earth', label: 'Terra', icon: '🌱', color: 'bg-amber-600', border: 'border-amber-700', shadow: 'shadow-amber-200' }
+        ],
+        items: [
+          { id: 'w1', emoji: '🧊', category: 'water' }, { id: 'w2', emoji: '🌊', category: 'water' }, { id: 'w3', emoji: '🌧️', category: 'water' },
+          { id: 'f1', emoji: '🌋', category: 'fire' }, { id: 'f2', emoji: '🧨', category: 'fire' }, { id: 'f3', emoji: '🎇', category: 'fire' },
+          { id: 'e1', emoji: '🪨', category: 'earth' }, { id: 'e2', emoji: '🪴', category: 'earth' }, { id: 'e3', emoji: '🌲', category: 'earth' },
+        ]
+      },
+      {
+        id: 5,
+        title: "Guarda-Roupa",
+        instruction: "Onde usamos cada peça de roupa?",
+        type: "clothing",
+        zones: [
+          { id: 'head', label: 'Cabeça', icon: '🧢', color: 'bg-indigo-400', border: 'border-indigo-500', shadow: 'shadow-indigo-200' },
+          { id: 'body', label: 'Corpo', icon: '👕', color: 'bg-teal-400', border: 'border-teal-500', shadow: 'shadow-teal-200' },
+          { id: 'feet', label: 'Pés', icon: '👟', color: 'bg-rose-400', border: 'border-rose-500', shadow: 'shadow-rose-200' }
+        ],
+        items: [
+          { id: 'h1', emoji: '🎩', category: 'head' }, { id: 'h2', emoji: '👑', category: 'head' }, { id: 'h3', emoji: '🪖', category: 'head' },
+          { id: 'b1', emoji: '👗', category: 'body' }, { id: 'b2', emoji: '🧥', category: 'body' }, { id: 'b3', emoji: '🦺', category: 'body' },
+          { id: 'ft1', emoji: '👢', category: 'feet' }, { id: 'ft2', emoji: '🧦', category: 'feet' }, { id: 'ft3', emoji: '🩴', category: 'feet' },
+        ]
+      },
+      {
+        id: 6,
+        title: "Hora do Lanche",
+        instruction: "Separe as comidas e bebidas!",
+        type: "food",
+        zones: [
+          { id: 'sweet', label: 'Doces', icon: '🍩', color: 'bg-fuchsia-400', border: 'border-fuchsia-500', shadow: 'shadow-fuchsia-200' },
+          { id: 'salty', label: 'Salgados', icon: '🍕', color: 'bg-orange-500', border: 'border-orange-600', shadow: 'shadow-orange-200' },
+          { id: 'drink', label: 'Bebidas', icon: '🥤', color: 'bg-cyan-300', border: 'border-cyan-400', shadow: 'shadow-cyan-100' }
+        ],
+        items: [
+          { id: 'sw1', emoji: '🍫', category: 'sweet' }, { id: 'sw2', emoji: '🍬', category: 'sweet' }, { id: 'sw3', emoji: '🍪', category: 'sweet' },
+          { id: 'sl1', emoji: '🍔', category: 'salty' }, { id: 'sl2', emoji: '🍟', category: 'salty' }, { id: 'sl3', emoji: '🌭', category: 'salty' },
+          { id: 'd1', emoji: '🧃', category: 'drink' }, { id: 'd2', emoji: '☕', category: 'drink' }, { id: 'd3', emoji: '🥛', category: 'drink' },
+        ]
+      }
+    ];
+
+    function App() {
+      // Estados de Navegação
+      const [gameState, setGameState] = useState('cover'); 
+      const [unlockedLevels, setUnlockedLevels] = useState(1);
+      
+      // Estados da Partida Atual
+      const [currentLevel, setCurrentLevel] = useState(null);
+      const [pendingItems, setPendingItems] = useState([]);
+      const [sortedItems, setSortedItems] = useState({});
+      
+      // Estados de Interação
+      const [draggedItem, setDraggedItem] = useState(null);
+      const [selectedItem, setSelectedItem] = useState(null);
+      const [dragOverZone, setDragOverZone] = useState(null);
+      const [shakeZone, setShakeZone] = useState(null);
+      
+      const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
+
+      const startLevel = (levelId) => {
+        const levelData = LEVELS.find(l => l.id === levelId);
+        setCurrentLevel(levelData);
+        setPendingItems(shuffleArray(levelData.items));
+        
+        // Inicializa as caixas vazias
+        const initialSorted = {};
+        levelData.zones.forEach(zone => {
+          initialSorted[zone.id] = [];
+        });
+        setSortedItems(initialSorted);
+        
+        setSelectedItem(null);
+        setDraggedItem(null);
+        setGameState('playing');
+      };
+
+      // --- LÓGICA DE VALIDAÇÃO ---
+      const handleAttempt = (item, zoneId) => {
+        if (!item) return;
+
+        if (item.category === zoneId) {
+          // Acertou!
+          setSortedItems(prev => ({
+            ...prev,
+            [zoneId]: [...prev[zoneId], item]
+          }));
+          
+          setPendingItems(prev => {
+            const newPending = prev.filter(i => i.id !== item.id);
+            // Verifica se ganhou a fase
+            if (newPending.length === 0) {
+              setTimeout(() => {
+                if (currentLevel.id === unlockedLevels && currentLevel.id < LEVELS.length) {
+                  setUnlockedLevels(prev => prev + 1);
+                }
+                setGameState('levelComplete');
+              }, 800);
+            }
+            return newPending;
+          });
+          
+          setSelectedItem(null);
+        } else {
+          // Errou
+          setShakeZone(zoneId);
+          setTimeout(() => setShakeZone(null), 400);
+          setSelectedItem(null); 
+        }
+      };
+
+      // --- EVENTOS DRAG AND DROP CORRIGIDOS ---
+      const onDragStart = (e, item) => {
+        setDraggedItem(item);
+        setSelectedItem(item);
+        e.dataTransfer.effectAllowed = 'move';
+        // Guarda os dados para garantir que o navegador os reconhece corretamente
+        e.dataTransfer.setData('application/json', JSON.stringify(item));
+      };
+
+      const onDragOver = (e, zoneId) => {
+        e.preventDefault(); // Obrigatório para permitir que o item caia aqui
+        e.dataTransfer.dropEffect = 'move';
+        if (dragOverZone !== zoneId) setDragOverZone(zoneId);
+      };
+
+      const onDragLeave = (e) => {
+        e.preventDefault();
+        setDragOverZone(null);
+      };
+
+      const onDrop = (e, zoneId) => {
+        e.preventDefault();
+        setDragOverZone(null);
+        
+        try {
+          const itemData = e.dataTransfer.getData('application/json');
+          if (itemData) {
+            const item = JSON.parse(itemData);
+            handleAttempt(item, zoneId);
+          } else if (draggedItem) {
+            handleAttempt(draggedItem, zoneId);
+          }
+        } catch (err) {
+          if (draggedItem) handleAttempt(draggedItem, zoneId);
+        }
+        setDraggedItem(null);
+      };
+
+      // --- EVENTOS DE CLIQUE (Para Touch/Mobile) ---
+      const handleItemClick = (item) => {
+        setSelectedItem(item);
+      };
+
+      const handleZoneClick = (zoneId) => {
+        if (selectedItem) {
+          handleAttempt(selectedItem, zoneId);
+        }
+      };
+
+      // ------------------------------------------------------------------------
+      // TELA 1: CAPA
+      // ------------------------------------------------------------------------
+      if (gameState === 'cover') {
+        return (
+          <div className="min-h-screen bg-sky-400 flex flex-col items-center justify-center p-4 relative overflow-hidden">
+            <div className="absolute top-10 left-10 text-6xl opacity-30 float-anim">🍎</div>
+            <div className="absolute top-32 right-16 text-6xl opacity-30 float-anim" style={{animationDelay: '1s'}}>⚽</div>
+            <div className="absolute bottom-20 left-20 text-7xl opacity-30 float-anim" style={{animationDelay: '2s'}}>🚗</div>
+            <div className="absolute bottom-10 right-20 text-6xl opacity-30 float-anim" style={{animationDelay: '0.5s'}}>🎨</div>
+
+            <div className="bg-white/95 p-10 rounded-[3rem] shadow-2xl flex flex-col items-center text-center z-10 max-w-lg w-full border-8 border-sky-300">
+              <div className="text-[6rem] mb-4">📦</div>
+              <h1 className="text-5xl font-extrabold text-sky-600 mb-2 tracking-tight leading-tight">
+                Organiza<br/><span className="text-4xl text-sky-400">Tudo!</span>
+              </h1>
+              <p className="text-gray-500 mb-8 text-lg font-medium">Vamos aprender a separar as coisas pela cor, forma e tema!</p>
+              
+              <button 
+                onClick={() => setGameState('levelSelect')}
+                className="w-full py-5 px-8 bg-green-400 hover:bg-green-500 text-white rounded-[2rem] text-3xl font-black transition-all transform hover:scale-105 shadow-[0_8px_0_rgb(34,197,94)] hover:shadow-[0_4px_0_rgb(34,197,94)] hover:translate-y-1 active:shadow-none active:translate-y-2"
+              >
+                JOGAR
+              </button>
+            </div>
+          </div>
+        );
+      }
+
+      // ------------------------------------------------------------------------
+      // TELA 2: SELEÇÃO DE FASE
+      // ------------------------------------------------------------------------
+      if (gameState === 'levelSelect') {
+        return (
+          <div className="min-h-screen bg-emerald-100 flex flex-col items-center justify-center p-4">
+            <div className="bg-white p-8 rounded-3xl shadow-xl max-w-md w-full text-center relative border-4 border-emerald-300">
+              <button 
+                onClick={() => setGameState('cover')}
+                className="absolute top-4 left-4 text-gray-400 hover:text-gray-600 font-bold text-sm bg-gray-100 px-3 py-1 rounded-full"
+              >
+                ◀ Início
+              </button>
+
+              <h1 className="text-3xl font-bold text-emerald-600 mb-2 mt-6">Escolhe a Fase</h1>
+              <p className="text-gray-500 mb-6 bg-emerald-50 rounded-lg p-2 font-semibold">
+                Vamos arrumar a bagunça!
+              </p>
+
+              <div className="grid grid-cols-1 gap-4">
+                {LEVELS.map((level) => {
+                  const isUnlocked = level.id <= unlockedLevels;
+                  
+                  return (
+                    <button
+                      key={level.id}
+                      onClick={() => isUnlocked && startLevel(level.id)}
+                      className={`py-4 px-6 rounded-2xl text-xl font-bold flex items-center justify-between transition-all ${
+                        isUnlocked 
+                          ? 'bg-emerald-400 hover:bg-emerald-500 text-white shadow-[0_4px_0_rgb(16,185,129)] hover:translate-y-1 hover:shadow-none' 
+                          : 'bg-gray-200 text-gray-400 cursor-not-allowed border-2 border-dashed border-gray-300'
+                      }`}
+                    >
+                      <span className="flex flex-col items-start text-left">
+                        <span>Fase {level.id}</span>
+                        {isUnlocked && <span className="text-sm font-normal bg-white/20 px-2 py-0.5 rounded mt-1">{level.title}</span>}
+                      </span>
+                      <span className="text-3xl">{isUnlocked ? '⭐' : '🔒'}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        );
+      }
+
+      // ------------------------------------------------------------------------
+      // TELA 3: FASE CONCLUÍDA
+      // ------------------------------------------------------------------------
+      if (gameState === 'levelComplete') {
+        const hasNextPhase = currentLevel.id < LEVELS.length;
+        
+        return (
+          <div className="min-h-screen bg-yellow-100 flex flex-col items-center justify-center p-4">
+            <div className="bg-white p-8 rounded-3xl shadow-xl max-w-md w-full text-center border-4 border-yellow-300">
+              <div className="text-6xl mb-4 pop-anim">🎉</div>
+              <h1 className="text-4xl font-bold text-yellow-500 mb-2">Fase {currentLevel.id} Concluída!</h1>
+              <p className="text-gray-600 text-lg mb-8">Parabéns! Arrumaste tudo direitinho!</p>
+
+              <div className="space-y-3">
+                {hasNextPhase && (
+                  <button 
+                    onClick={() => startLevel(currentLevel.id + 1)}
+                    className="w-full py-4 px-6 bg-yellow-400 hover:bg-yellow-500 text-white rounded-2xl text-xl font-bold shadow-[0_6px_0_rgb(202,138,4)] hover:shadow-none hover:translate-y-1 transition-all"
+                  >
+                    Próxima Fase ➡️
+                  </button>
+                )}
+                <button 
+                  onClick={() => setGameState('levelSelect')}
+                  className="w-full py-3 px-6 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-2xl text-lg font-bold transition-colors"
+                >
+                  Voltar às Fases
+                </button>
+              </div>
+            </div>
+          </div>
+        );
+      }
+
+      // ------------------------------------------------------------------------
+      // TELA 4: JOGABILIDADE
+      // ------------------------------------------------------------------------
+      return (
+        <div className="min-h-screen bg-indigo-50 flex flex-col items-center p-4 pb-20 md:pb-4 font-sans relative">
+          
+          <button 
+            onClick={() => setGameState('levelSelect')}
+            className="absolute top-4 left-4 text-indigo-500 hover:text-indigo-700 font-bold bg-white/50 hover:bg-white px-4 py-2 rounded-full transition-colors z-20"
+          >
+            ⏸ Sair
+          </button>
+
+          <div className="mt-16 mb-6 text-center">
+            <h2 className="text-3xl font-extrabold text-indigo-700 mb-2">{currentLevel.title}</h2>
+            <div className="inline-block bg-white/80 px-6 py-2 rounded-full text-indigo-600 font-bold shadow-sm">
+              {currentLevel.instruction}
+            </div>
+            <p className="text-xs text-indigo-400 mt-2 font-semibold uppercase tracking-wider">Arraste a peça ou toque na peça e depois na caixa!</p>
+          </div>
+
+          {/* ÁREA DAS CAIXAS (DROPZONES) */}
+          <div className="flex flex-row flex-wrap justify-center gap-4 md:gap-8 w-full max-w-4xl mb-auto">
+            {currentLevel.zones.map((zone) => {
+              const itemsInZone = sortedItems[zone.id] || [];
+              const isHovered = dragOverZone === zone.id;
+              const isShaking = shakeZone === zone.id;
+              const canClickDrop = selectedItem !== null;
+              
+              const totalInZone = currentLevel.items.filter(i => i.category === zone.id).length;
+              const isFull = itemsInZone.length === totalInZone;
+
+              return (
+                <div 
+                  key={zone.id}
+                  className={`flex flex-col items-center w-28 md:w-40 transition-transform ${isShaking ? 'shake-anim' : ''} ${isHovered || canClickDrop ? 'scale-105' : ''}`}
+                  onDragOver={(e) => onDragOver(e, zone.id)}
+                  onDragLeave={onDragLeave}
+                  onDrop={(e) => onDrop(e, zone.id)}
+                  onClick={() => handleZoneClick(zone.id)}
+                >
+                  <div className="bg-white px-3 py-1 rounded-t-xl text-sm md:text-base font-bold text-gray-700 shadow-sm z-10 -mb-2 border-2 border-gray-100 flex items-center justify-between w-[95%] pointer-events-none">
+                    <div className="flex items-center gap-1">
+                      {zone.icon && <span>{zone.icon}</span>}
+                      <span className="hidden md:inline">{zone.label}</span>
+                    </div>
+                    <div className={`text-xs md:text-sm px-2 py-0.5 rounded-full font-black ${isFull ? 'bg-green-100 text-green-600' : 'bg-gray-100 text-gray-400'}`}>
+                      {itemsInZone.length}/{totalInZone}
+                    </div>
+                  </div>
+                  
+                  {/* Adicionado 'relative' e os elementos de dentro agora têm 'pointer-events-none' */}
+                  <div className={`relative w-full h-36 md:h-48 rounded-2xl border-4 flex flex-wrap content-start p-2 gap-1 overflow-hidden transition-all duration-300 ${zone.color} ${zone.border} ${zone.shadow} shadow-inner ${isHovered ? 'brightness-110 border-dashed' : 'border-solid'} ${canClickDrop && !isHovered ? 'ring-4 ring-white/50 cursor-pointer' : ''}`}>
+                    
+                    {itemsInZone.map((item, idx) => (
+                      <div key={idx} className="pointer-events-none w-10 h-10 md:w-14 md:h-14 bg-white/30 rounded-lg flex items-center justify-center text-2xl md:text-4xl pop-anim">
+                        {item.emoji}
+                      </div>
+                    ))}
+                    
+                    {itemsInZone.length === 0 && !isHovered && (
+                      <div className="pointer-events-none w-full h-full flex items-center justify-center opacity-30 text-white font-bold text-xl">
+                        Vazio
+                      </div>
+                    )}
+                    {isHovered && (
+                      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white/20 text-5xl rounded-2xl z-10">
+                        📥
+                      </div>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* ÁREA DA BAGUNÇA (ITENS PARA ARRASTAR) */}
+          <div className="w-full max-w-4xl mt-8">
+            <div className="bg-white/60 backdrop-blur-sm rounded-[2rem] border-4 border-white p-6 shadow-lg min-h-[160px]">
+              <h3 className="text-gray-500 font-bold uppercase tracking-widest text-sm mb-4 text-center">Bagunça para Arrumar</h3>
+              
+              <div className="flex flex-wrap justify-center gap-3 md:gap-4 no-scrollbar">
+                {pendingItems.map((item) => {
+                  const isSelected = selectedItem && selectedItem.id === item.id;
+                  
+                  return (
+                    <div
+                      key={item.id}
+                      draggable="true"
+                      onDragStart={(e) => onDragStart(e, item)}
+                      onClick={() => handleItemClick(item)}
+                      className={`w-16 h-16 md:w-20 md:h-20 bg-white rounded-2xl shadow-md flex items-center justify-center text-4xl md:text-5xl cursor-grab active:cursor-grabbing transition-all hover:scale-110 hover:-translate-y-2 ${
+                        isSelected ? 'ring-4 ring-indigo-400 scale-110 -translate-y-2' : 'border-b-4 border-gray-200'
+                      }`}
+                    >
+                      {item.emoji}
+                    </div>
+                  );
+                })}
+
+                {pendingItems.length === 0 && (
+                  <div className="w-full text-center text-gray-400 font-bold py-4">
+                    Tudo arrumado! 🎉
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>
