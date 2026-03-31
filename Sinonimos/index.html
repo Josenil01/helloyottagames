@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploradores de Sinônimos</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Fontes Divertidas -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  
+  <!-- React e ReactDOM -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  
+  <!-- Babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      user-select: none;
+      background-color: #dcfce7;
+    }
+    
+    /* Animações */
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-8px) rotate(-3deg); }
+      75% { transform: translateX(8px) rotate(3deg); }
+    }
+    .shake-anim { animation: shake 0.4s ease-in-out; }
+
+    @keyframes popIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      80% { transform: scale(1.1); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .pop-anim { animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+
+    @keyframes lineDraw {
+      0% { stroke-dasharray: 0, 1000; }
+      100% { stroke-dasharray: 1000, 0; }
+    }
+    .line-anim { animation: lineDraw 0.5s ease-out forwards; }
+
+    @keyframes leafFloat {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(10deg); }
+    }
+    .leaf-anim { animation: leafFloat 4s ease-in-out infinite; }
+
+    .jungle-bg {
+      background: linear-gradient(180deg, #bbf7d0 0%, #4ade80 100%);
+      position: relative;
+    }
+  </style>
+</head>
+<body class="selection:bg-none overflow-x-hidden">
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    // --- DADOS DO JOGO (Agora com 4 Mecânicas e 12 Fases!) ---
+    const LEVELS = [
+      // MECÂNICA 1: Associação (Arrastar)
+      { id: 1, type: 'match', target: 'FELIZ', answer: 'CONTENTE', options: ['CONTENTE', 'TRISTE', 'ZANGADO'], emoji: '😄', instruction: 'Encontre a palavra que significa o mesmo!' },
+      { id: 2, type: 'match', target: 'RÁPIDO', answer: 'VELOZ', options: ['LENTO', 'VELOZ', 'PESADO'], emoji: '🐆', instruction: 'Qual destas palavras também significa rápido?' },
+      { id: 3, type: 'match', target: 'SALTO', answer: 'PULO', options: ['PASSO', 'CORRIDA', 'PULO'], emoji: '🦘', instruction: 'O que é o mesmo que um salto?' },
+      
+      // MECÂNICA 2: Ligar os Pontos (NOVA)
+      { id: 4, type: 'connect', leftWords: ['CASA', 'PULAR', 'GAROTO'], rightWords: ['MENINO', 'LAR', 'SALTAR'], matches: { 'CASA': 'LAR', 'PULAR': 'SALTAR', 'GAROTO': 'MENINO' }, emoji: '🔗', instruction: 'Toque na palavra da esquerda e depois no seu sinônimo na direita para ligá-las!' },
+      { id: 5, type: 'connect', leftWords: ['GRANDE', 'BEM', 'CEDO'], rightWords: ['BOM', 'ENORME', 'LOGO'], matches: { 'GRANDE': 'ENORME', 'BEM': 'BOM', 'CEDO': 'LOGO' }, emoji: '🧩', instruction: 'Ligue os pares de sinônimos tocando neles!' },
+      { id: 6, type: 'connect', leftWords: ['INÍCIO', 'LENTO', 'FÁCIL'], rightWords: ['SIMPLES', 'COMEÇO', 'DEVAGAR'], matches: { 'INÍCIO': 'COMEÇO', 'LENTO': 'DEVAGAR', 'FÁCIL': 'SIMPLES' }, emoji: '🎯', instruction: 'Encontre os 3 pares! Ligue as palavras iguais!' },
+
+      // MECÂNICA 3: O Intruso
+      { id: 7, type: 'intruder', words: ['LINDO', 'BONITO', 'BELO', 'FEIO'], answer: 'FEIO', emoji: '🕵️‍♂️', instruction: 'Atenção! Clique na palavra INTRUSA (a que é diferente das outras)!' },
+      { id: 8, type: 'intruder', words: ['GRANDE', 'ENORME', 'GIGANTE', 'PEQUENO'], answer: 'PEQUENO', emoji: '🐘', instruction: 'Ache o intruso! Qual destas não pertence ao grupo?' },
+      { id: 9, type: 'intruder', words: ['GULOSO', 'FURIOSO', 'ZANGADO', 'IRRITADO'], answer: 'GULOSO', emoji: '😡', instruction: 'Três palavras são iguais. Qual é a intrusa?' },
+
+      // MECÂNICA 4: Construtor de Frases
+      { id: 10, type: 'sentence', preText: 'O cachorro é muito ', boldText: 'ESPERTO', postText: '.', answer: 'INTELIGENTE', options: ['INTELIGENTE', 'DORMINHOCO', 'LIGEIRO'], emoji: '🐶', instruction: 'Mude a palavra destacada sem alterar a frase!' },
+      { id: 11, type: 'sentence', preText: 'A sopa está muito ', boldText: 'SABOROSA', postText: '!', answer: 'DELICIOSA', options: ['QUENTE', 'DELICIOSA', 'SALGADA'], emoji: '🍲', instruction: 'Mude a palavra destacada sem alterar a frase!' },
+      { id: 12, type: 'sentence', preText: 'Aquele castelo é ', boldText: 'ANTIGO', postText: '.', answer: 'VELHO', options: ['NOVO', 'GIGANTE', 'VELHO'], emoji: '🏰', instruction: 'Mude a palavra destacada sem alterar a frase!' },
+    ];
+
+    function App() {
+      // Estados globais
+      const [gameState, setGameState] = useState('cover'); 
+      const [currentPhaseIndex, setCurrentPhaseIndex] = useState(0);
+      const [stars, setStars] = useState(0);
+      
+      // Estados interativos
+      const [draggedOption, setDraggedOption] = useState(null);
+      const [isSuccess, setIsSuccess] = useState(false);
+      const [shakeWrong, setShakeWrong] = useState(null); // Agora guarda o valor específico para animar apenas o botão errado
+      const [wrongAnswers, setWrongAnswers] = useState([]);
+
+      // Estados para a mecânica de "Ligar Pontos"
+      const [selectedLeft, setSelectedLeft] = useState(null);
+      const [solvedPairs, setSolvedPairs] = useState([]);
+
+      const level = LEVELS[currentPhaseIndex];
+
+      const startGame = () => {
+        setGameState('playing');
+        setCurrentPhaseIndex(0);
+        setStars(0);
+        resetTurn();
+      };
+
+      const resetTurn = () => {
+        setIsSuccess(false);
+        setWrongAnswers([]);
+        setDraggedOption(null);
+        setSelectedLeft(null);
+        setSolvedPairs([]);
+        setShakeWrong(null);
+      };
+
+      // Função genérica de vitória
+      const handleWin = () => {
+        setIsSuccess(true);
+        setStars(prev => prev + 1);
+        setTimeout(() => {
+          if (currentPhaseIndex + 1 < LEVELS.length) {
+            setCurrentPhaseIndex(prev => prev + 1);
+            resetTurn();
+          } else {
+            setGameState('complete');
+          }
+        }, 2500);
+      };
+
+      // Lógica de Validação: Match, Intruder, Sentence
+      const checkAnswer = (value) => {
+        if (isSuccess || wrongAnswers.includes(value)) return;
+
+        if (value === level.answer) {
+          handleWin();
+        } else {
+          setWrongAnswers(prev => [...prev, value]);
+          setShakeWrong(value);
+          setTimeout(() => setShakeWrong(null), 400);
+        }
+      };
+
+      // Lógica de Validação: Ligar Pontos
+      const handleConnectRight = (rightWord) => {
+        if (!selectedLeft) {
+          alert("Escolha primeiro uma palavra da coluna da esquerda!");
+          return;
+        }
+        
+        if (level.matches[selectedLeft] === rightWord) {
+          // Acertou o par
+          const newSolved = [...solvedPairs, selectedLeft];
+          setSolvedPairs(newSolved);
+          setSelectedLeft(null);
+          
+          // Verifica se terminou todas as 3 ligações
+          if (newSolved.length === level.leftWords.length) {
+            handleWin();
+          }
+        } else {
+          // Errou a ligação
+          setShakeWrong(rightWord);
+          setTimeout(() => setShakeWrong(null), 400);
+          setSelectedLeft(null); // Limpa a seleção para a criança tentar novamente do zero
+        }
+      };
+
+      // --- Drag & Drop Handlers (usado nas mecânicas 1 e 4) ---
+      const handleDragStart = (e, value) => {
+        setDraggedOption(value);
+        e.dataTransfer.setData('text/plain', value);
+      };
+      const handleDragOver = (e) => e.preventDefault();
+      const handleDrop = (e) => {
+        e.preventDefault();
+        const value = e.dataTransfer.getData('text/plain');
+        if (value) checkAnswer(value);
+      };
+
+      // ------------------------------------------------------------------------
+      // TELA 1: CAPA
+      // ------------------------------------------------------------------------
+      if (gameState === 'cover') {
+        return (
+          <div className="min-h-screen jungle-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
+            <div className="absolute top-10 left-10 text-6xl opacity-40 leaf-anim">🌿</div>
+            <div className="absolute top-32 right-10 text-7xl opacity-40 leaf-anim" style={{animationDelay: '1s'}}>🦜</div>
+            <div className="absolute bottom-10 left-20 text-6xl opacity-40 leaf-anim" style={{animationDelay: '2s'}}>🐒</div>
+
+            <div className="bg-white p-10 rounded-[3rem] shadow-2xl flex flex-col items-center text-center z-10 max-w-xl w-full border-8 border-emerald-600 mb-10">
+              <div className="text-8xl mb-4">🧭</div>
+              <h1 className="text-5xl font-black text-emerald-800 mb-2 tracking-tight uppercase">
+                Exploradores de<br/><span className="text-5xl text-emerald-500">Sinônimos</span>
+              </h1>
+              <p className="text-gray-600 mb-8 text-xl font-bold px-4">
+                Prepare-se para uma aventura na selva das palavras que significam o mesmo!
+              </p>
+              
+              <button 
+                onClick={startGame}
+                className="w-full py-5 px-8 bg-amber-500 hover:bg-amber-600 text-white rounded-3xl text-3xl font-black transition-all transform hover:scale-105 shadow-[0_8px_0_rgb(217,119,6)] hover:translate-y-1 active:shadow-none active:translate-y-2 uppercase"
+              >
+                Iniciar Aventura!
+              </button>
+            </div>
+          </div>
+        );
+      }
+
+      // ------------------------------------------------------------------------
+      // TELA 3: FINAL
+      // ------------------------------------------------------------------------
+      if (gameState === 'complete') {
+        return (
+          <div className="min-h-screen jungle-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
+            <div className="bg-white p-10 rounded-[3rem] shadow-2xl flex flex-col items-center text-center z-10 max-w-lg w-full border-8 border-emerald-600">
+              <div className="text-8xl mb-4 pop-anim">🏆</div>
+              <h1 className="text-5xl font-black text-emerald-800 mb-2 uppercase">
+                Você é um Mestre!
+              </h1>
+              <p className="text-gray-600 mb-6 text-xl font-bold">Você descobriu todos os sinônimos!</p>
+              
+              <div className="bg-emerald-100 border-4 border-emerald-400 rounded-3xl p-6 mb-8 w-full flex flex-col items-center">
+                <span className="text-emerald-800 font-bold uppercase mb-2">Estrelas de Explorador</span>
+                <div className="flex items-center text-6xl font-black text-amber-500">
+                  <span className="mr-4">⭐</span> x{stars}
+                </div>
+              </div>
+
+              <button 
+                onClick={startGame}
+                className="w-full py-5 px-8 bg-emerald-600 hover:bg-emerald-700 text-white rounded-3xl text-2xl font-black transition-all transform hover:scale-105 shadow-[0_8px_0_rgb(5,150,105)] hover:translate-y-1 active:shadow-none active:translate-y-2 uppercase"
+              >
+                Jogar Novamente
+              </button>
+            </div>
+          </div>
+        );
+      }
+
+      // ------------------------------------------------------------------------
+      // TELA 2: JOGABILIDADE (Múltiplas Mecânicas)
+      // ------------------------------------------------------------------------
+      return (
+        <div className="min-h-screen w-full flex flex-col relative jungle-bg text-emerald-900">
+          
+          {/* CABEÇALHO */}
+          <div className="w-full flex justify-between items-center p-6 z-10 bg-white/30 backdrop-blur-sm shadow-sm rounded-b-3xl">
+            <div className="flex flex-col">
+              <h2 className="text-2xl md:text-3xl font-black uppercase text-emerald-800">
+                Fase {level.id} de {LEVELS.length}
+              </h2>
+              <span className="text-sm font-bold text-emerald-700">{level.instruction}</span>
+            </div>
+            
+            <div className="flex items-center text-3xl font-black text-amber-500 drop-shadow-md">
+              <span className="mr-2">x{stars}</span>
+              <span>⭐</span>
+            </div>
+          </div>
+
+          <div className="flex-1 flex flex-col items-center justify-center p-4 z-10 w-full max-w-5xl mx-auto">
+            
+            {/* ------------------------------------------------------------ */}
+            {/* MECÂNICA 1: MATCH (Arrastar e Largar)                          */}
+            {/* ------------------------------------------------------------ */}
+            {level.type === 'match' && (
+              <div className="flex flex-col items-center w-full">
+                <div className="flex flex-col items-center mb-12">
+                  <div className="text-6xl mb-4 pop-anim">{level.emoji}</div>
+                  <div className="bg-white rounded-[2rem] border-8 border-emerald-600 p-8 shadow-xl text-center mb-4">
+                    <span className="text-4xl md:text-6xl font-black text-emerald-800 tracking-wider">
+                      {level.target}
+                    </span>
+                  </div>
+                  <div className="text-5xl font-black text-emerald-700 mb-4">=</div>
+                  
+                  <div 
+                    className={`rounded-[2rem] border-8 w-64 md:w-80 h-32 md:h-40 shadow-xl flex items-center justify-center transition-all ${
+                      isSuccess ? 'bg-amber-400 border-amber-500 pop-anim' : 'bg-white/50 border-emerald-600 border-dashed backdrop-blur-sm'
+                    } ${shakeWrong ? 'shake-anim border-red-500 bg-red-100/80' : ''}`}
+                    onDragOver={handleDragOver}
+                    onDrop={handleDrop}
+                  >
+                    {isSuccess ? (
+                      <span className="text-3xl md:text-5xl font-black text-white drop-shadow-md">
+                        {level.answer}
+                      </span>
+                    ) : (
+                      <span className="text-emerald-700/40 text-2xl font-black animate-pulse uppercase text-center px-4">
+                        Arraste o<br/>sinônimo aqui!
+                      </span>
+                    )}
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap justify-center gap-4 md:gap-8 w-full">
+                  {level.options.map((opt, i) => {
+                    const isWrong = wrongAnswers.includes(opt);
+                    let btnClass = "bg-emerald-700 hover:bg-emerald-600 border-b-8 border-emerald-900 text-white cursor-grab active:cursor-grabbing hover:-translate-y-2";
+                    
+                    if (isWrong) {
+                      btnClass = "bg-gray-400 border-b-8 border-gray-500 text-gray-200 opacity-50 cursor-not-allowed transform translate-y-2";
+                    } else if (isSuccess) {
+                      btnClass = "bg-emerald-700 opacity-0 pointer-events-none"; 
+                    }
+
+                    return (
+                      <button
+                        key={i}
+                        draggable={!isWrong && !isSuccess}
+                        onDragStart={(e) => handleDragStart(e, opt)}
+                        onClick={() => checkAnswer(opt)} 
+                        disabled={isWrong || isSuccess}
+                        className={`px-6 py-4 md:px-10 md:py-6 rounded-2xl md:rounded-[2rem] flex items-center justify-center transition-all duration-300 shadow-xl ${btnClass} ${shakeWrong === opt ? 'shake-anim' : ''}`}
+                      >
+                        <span className="text-2xl md:text-4xl font-black tracking-widest uppercase">
+                          {opt}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* ------------------------------------------------------------ */}
+            {/* MECÂNICA 2: CONNECT (Ligar os Pontos) NOVA!                    */}
+            {/* ------------------------------------------------------------ */}
+            {level.type === 'connect' && (
+              <div className="flex flex-col items-center w-full">
+                <div className="text-[5rem] mb-4 pop-anim">{level.emoji}</div>
+                
+                <div className="bg-white/80 backdrop-blur-sm p-4 md:p-8 rounded-[3rem] border-8 border-emerald-600 shadow-2xl w-full max-w-4xl relative">
+                  
+                  <div className="flex justify-between h-[360px] md:h-[420px] relative w-full">
+                    
+                    {/* Coluna da Esquerda */}
+                    <div className="flex flex-col justify-around w-[35%] z-10">
+                      {level.leftWords.map((word) => {
+                        const isSolved = solvedPairs.includes(word);
+                        const isSelected = selectedLeft === word;
+                        
+                        let btnClass = "bg-emerald-100 hover:bg-emerald-200 border-b-8 border-emerald-300 text-emerald-900 transition-all hover:-translate-y-1 shadow-md";
+                        if (isSolved) {
+                          btnClass = "bg-green-500 border-b-8 border-green-700 text-white opacity-90 cursor-default scale-105 shadow-xl";
+                        } else if (isSelected) {
+                          btnClass = "bg-amber-300 border-b-8 border-amber-500 text-amber-900 ring-4 ring-amber-400 scale-105";
+                        }
+
+                        return (
+                          <button
+                            key={`L-${word}`}
+                            onClick={() => !isSolved && setSelectedLeft(word)}
+                            className={`h-20 md:h-24 rounded-2xl flex items-center justify-center px-2 md:px-6 ${btnClass}`}
+                          >
+                            <span className="text-lg md:text-3xl font-black uppercase tracking-wider">{word}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                    {/* Canvas do SVG para desenhar as linhas no meio */}
+                    <svg className="absolute top-0 bottom-0 left-[35%] w-[30%] h-full pointer-events-none z-0">
+                      {solvedPairs.map((leftWord) => {
+                        const rightWord = level.matches[leftWord];
+                        const leftIndex = level.leftWords.indexOf(leftWord);
+                        const rightIndex = level.rightWords.indexOf(rightWord);
+                        
+                        // justify-around distribui matematicamente o centro dos itens em 16.6%, 50% e 83.3% exatos!
+                        const y1 = ['16.66%', '50%', '83.33%'][leftIndex];
+                        const y2 = ['16.66%', '50%', '83.33%'][rightIndex];
+                        
+                        return (
+                          <g key={`line-${leftWord}`}>
+                            <line x1="0%" y1={y1} x2="100%" y2={y2} stroke="#22c55e" strokeWidth="6" strokeLinecap="round" className="line-anim" />
+                            <circle cx="0%" cy={y1} r="8" fill="#15803d" className="pop-anim" />
+                            <circle cx="100%" cy={y2} r="8" fill="#15803d" className="pop-anim" />
+                          </g>
+                        );
+                      })}
+                    </svg>
+
+                    {/* Coluna da Direita */}
+                    <div className="flex flex-col justify-around w-[35%] z-10">
+                      {level.rightWords.map((word) => {
+                        const isSolved = Object.keys(level.matches).find(l => level.matches[l] === word && solvedPairs.includes(l));
+                        const isShaking = shakeWrong === word;
+
+                        let btnClass = "bg-emerald-600 hover:bg-emerald-500 border-b-8 border-emerald-800 text-white transition-all hover:-translate-y-1 shadow-md";
+                        if (isSolved) {
+                          btnClass = "bg-green-500 border-b-8 border-green-700 text-white opacity-90 cursor-default scale-105 shadow-xl";
+                        } else if (isShaking) {
+                          btnClass = "bg-red-400 border-b-8 border-red-600 text-white";
+                        }
+
+                        return (
+                          <button
+                            key={`R-${word}`}
+                            onClick={() => !isSolved && handleConnectRight(word)}
+                            className={`h-20 md:h-24 rounded-2xl flex items-center justify-center px-2 md:px-6 ${btnClass} ${isShaking ? 'shake-anim' : ''}`}
+                          >
+                            <span className="text-lg md:text-3xl font-black uppercase tracking-wider">{word}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* ------------------------------------------------------------ */}
+            {/* MECÂNICA 3: INTRUDER (Encontrar a palavra diferente)           */}
+            {/* ------------------------------------------------------------ */}
+            {level.type === 'intruder' && (
+              <div className="flex flex-col items-center w-full">
+                <div className="text-[6rem] md:text-[8rem] mb-8 pop-anim drop-shadow-xl">{level.emoji}</div>
+                
+                <div className="bg-white/80 backdrop-blur-sm p-6 md:p-10 rounded-[3rem] border-8 border-emerald-600 shadow-2xl w-full max-w-3xl">
+                  <div className="grid grid-cols-2 gap-4 md:gap-6">
+                    {level.words.map((word, i) => {
+                      const isCorrectAnswer = word === level.answer; 
+                      const isClickedAndNotIntruder = wrongAnswers.includes(word);
+                      const isShaking = shakeWrong === word;
+                      
+                      let btnClass = "bg-amber-400 hover:bg-amber-500 border-b-8 border-amber-600 text-amber-900 hover:-translate-y-2";
+                      
+                      if (isSuccess && isCorrectAnswer) {
+                        btnClass = "bg-green-500 border-b-8 border-green-700 text-white pop-anim ring-8 ring-green-300";
+                      } else if (isSuccess && !isCorrectAnswer) {
+                        btnClass = "bg-gray-300 border-b-8 border-gray-400 text-gray-500 opacity-50";
+                      } else if (isClickedAndNotIntruder) {
+                        btnClass = "bg-red-400 border-b-8 border-red-600 text-white opacity-80 cursor-not-allowed";
+                      }
+
+                      return (
+                        <button
+                          key={i}
+                          onClick={() => checkAnswer(word)}
+                          disabled={isClickedAndNotIntruder || isSuccess}
+                          className={`h-24 md:h-36 rounded-2xl md:rounded-[2rem] flex items-center justify-center transition-all duration-300 shadow-lg ${btnClass} ${isShaking ? 'shake-anim' : ''}`}
+                        >
+                          <span className="text-2xl md:text-4xl font-black tracking-widest">
+                            {word}
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* ------------------------------------------------------------ */}
+            {/* MECÂNICA 4: SENTENCE (Substituir a palavra na frase)           */}
+            {/* ------------------------------------------------------------ */}
+            {level.type === 'sentence' && (
+              <div className="flex flex-col items-center w-full">
+                <div className="text-[5rem] mb-4 pop-anim">{level.emoji}</div>
+                
+                <div className="bg-white rounded-[2rem] border-8 border-emerald-600 p-8 md:p-12 shadow-xl text-center mb-12 max-w-4xl w-full leading-relaxed">
+                  <span className="text-3xl md:text-5xl font-bold text-gray-700">
+                    {level.preText}
+                  </span>
+                  
+                  <span 
+                    className={`inline-block mx-2 px-6 py-2 rounded-2xl border-4 align-middle transition-all ${
+                      isSuccess 
+                        ? 'bg-amber-400 border-amber-500 text-amber-900 pop-anim' 
+                        : 'bg-emerald-100 border-emerald-500 border-dashed text-emerald-800'
+                    } ${shakeWrong ? 'shake-anim border-red-500 bg-red-100 text-red-700' : ''}`}
+                    onDragOver={handleDragOver}
+                    onDrop={handleDrop}
+                    onClick={() => {
+                       if(!isSuccess) alert("Toque ou arraste uma das opções verdes aqui para dentro!");
+                    }}
+                  >
+                    {isSuccess ? (
+                      <span className="font-black text-3xl md:text-5xl uppercase">{level.answer}</span>
+                    ) : (
+                      <span className="font-black text-3xl md:text-5xl uppercase line-through opacity-60">
+                        {level.boldText}
+                      </span>
+                    )}
+                  </span>
+                  
+                  <span className="text-3xl md:text-5xl font-bold text-gray-700">
+                    {level.postText}
+                  </span>
+                </div>
+
+                <div className="flex flex-wrap justify-center gap-4 md:gap-8 w-full">
+                  {level.options.map((opt, i) => {
+                    const isWrong = wrongAnswers.includes(opt);
+                    let btnClass = "bg-emerald-600 hover:bg-emerald-500 border-b-8 border-emerald-800 text-white cursor-grab active:cursor-grabbing hover:-translate-y-2";
+                    
+                    if (isWrong) {
+                      btnClass = "bg-gray-400 border-b-8 border-gray-500 text-gray-200 opacity-50 cursor-not-allowed transform translate-y-2";
+                    } else if (isSuccess) {
+                      btnClass = "bg-emerald-600 opacity-0 pointer-events-none";
+                    }
+
+                    return (
+                      <button
+                        key={i}
+                        draggable={!isWrong && !isSuccess}
+                        onDragStart={(e) => handleDragStart(e, opt)}
+                        onClick={() => checkAnswer(opt)} 
+                        disabled={isWrong || isSuccess}
+                        className={`px-6 py-4 md:px-8 md:py-5 rounded-2xl md:rounded-[2rem] flex items-center justify-center transition-all duration-300 shadow-xl ${btnClass} ${shakeWrong === opt ? 'shake-anim' : ''}`}
+                      >
+                        <span className="text-xl md:text-3xl font-black uppercase tracking-wider">
+                          {opt}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+          </div>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>

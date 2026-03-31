@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fábrica de Rimas</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Fontes Divertidas -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  
+  <!-- React e ReactDOM -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  
+  <!-- Babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      user-select: none;
+      background-color: #1e293b; /* slate-800 */
+    }
+    
+    /* Animações */
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-8px) rotate(-3deg); }
+      75% { transform: translateX(8px) rotate(3deg); }
+    }
+    .shake-anim { animation: shake 0.4s ease-in-out; }
+
+    @keyframes popIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      80% { transform: scale(1.1); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .pop-anim { animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+
+    @keyframes lineDraw {
+      0% { stroke-dasharray: 0, 1000; }
+      100% { stroke-dasharray: 1000, 0; }
+    }
+    .line-anim { animation: lineDraw 0.5s ease-out forwards; }
+
+    @keyframes gearSpin {
+      100% { transform: rotate(360deg); }
+    }
+    .gear-anim { animation: gearSpin 8s linear infinite; }
+    .gear-anim-reverse { animation: gearSpin 10s linear infinite reverse; }
+
+    /* Fundo da Fábrica */
+    .factory-bg {
+      background: linear-gradient(180deg, #334155 0%, #0f172a 100%);
+      position: relative;
+    }
+  </style>
+</head>
+<body class="selection:bg-none overflow-x-hidden text-slate-100">
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    // --- DADOS DO JOGO: FÁBRICA DE RIMAS ---
+    const LEVELS = [
+      // MECÂNICA 1: Associação (Arrastar a rima)
+      { id: 1, type: 'match', target: 'GATO', answer: 'RATO', options: ['RATO', 'MALA', 'FOGO'], emoji: '🐱', instruction: 'Encontre a palavra que RIMA (termina com o mesmo som)!' },
+      { id: 2, type: 'match', target: 'MÃO', answer: 'PÃO', options: ['PÃO', 'BOLA', 'CASA'], emoji: '🖐️', instruction: 'O que rima com essa palavra?' },
+      { id: 3, type: 'match', target: 'COLA', answer: 'BOLA', options: ['SAPATO', 'BOLA', 'LIVRO'], emoji: '🧴', instruction: 'Arraste a palavra que tem o som final igual!' },
+      
+      // MECÂNICA 2: Ligar os Pontos (Ligar rimas)
+      { id: 4, type: 'connect', leftWords: ['FOGO', 'PATO', 'MALA'], rightWords: ['SALA', 'JOGO', 'GATO'], matches: { 'FOGO': 'JOGO', 'PATO': 'GATO', 'MALA': 'SALA' }, emoji: '🔗', instruction: 'Toque em uma palavra e depois na que RIMA com ela para ligá-las!' },
+      { id: 5, type: 'connect', leftWords: ['FADA', 'MOLA', 'LUA'], rightWords: ['COLA', 'RUA', 'ESPADA'], matches: { 'FADA': 'ESPADA', 'MOLA': 'COLA', 'LUA': 'RUA' }, emoji: '⚙️', instruction: 'Ligue os pares de rimas!' },
+      { id: 6, type: 'connect', leftWords: ['PENTE', 'DEDO', 'MESA'], rightWords: ['MEDO', 'DENTE', 'PRINCESA'], matches: { 'PENTE': 'DENTE', 'DEDO': 'MEDO', 'MESA': 'PRINCESA' }, emoji: '🎯', instruction: 'Encontre os 3 pares com sons parecidos!' },
+
+      // MECÂNICA 3: O Intruso (Descobrir a palavra que NÃO rima)
+      { id: 7, type: 'intruder', words: ['PANELA', 'JANELA', 'CANELA', 'PORTA'], answer: 'PORTA', emoji: '🚪', instruction: 'Atenção! Três palavras rimam. Clique na INTRUSA (a que NÃO rima)!' },
+      { id: 8, type: 'intruder', words: ['AVIÃO', 'CAMINHÃO', 'CARRO', 'FEIJÃO'], answer: 'CARRO', emoji: '🚗', instruction: 'Qual destas palavras tem o som final diferente das outras?' },
+      { id: 9, type: 'intruder', words: ['MOLA', 'COLA', 'BOLA', 'DADO'], answer: 'DADO', emoji: '🎲', instruction: 'Encontre a palavra que estraga a rima!' },
+
+      // MECÂNICA 4: Construtor de Frases (Rimar para completar o verso)
+      { id: 10, type: 'sentence', preText: 'Lá na casa da vizinha, tem uma linda ', boldText: 'GATA', postText: '.', answer: 'GALINHA', options: ['GALINHA', 'PATA', 'CADELA'], emoji: '🐔', instruction: 'Escolha a palavra que RIMA com "vizinha" para completar o poema!' },
+      { id: 11, type: 'sentence', preText: 'O macaco brincalhão, escorregou e caiu no ', boldText: 'BURACO', postText: '.', answer: 'CHÃO', options: ['CHÃO', 'MATO', 'LAGO'], emoji: '🐒', instruction: 'Escolha a palavra que RIMA com "brincalhão"!' },
+      { id: 12, type: 'sentence', preText: 'Fui à feira comprar uva, e acabei tomando ', boldText: 'VENTO', postText: '.', answer: 'CHUVA', options: ['CHUVA', 'SOL', 'SUSTO'], emoji: '🍇', instruction: 'O que rima com "uva"? Arraste para consertar o verso!' },
+    ];
+
+    function App() {
+      // Estados globais
+      const [gameState, setGameState] = useState('cover'); 
+      const [currentPhaseIndex, setCurrentPhaseIndex] = useState(0);
+      const [stars, setStars] = useState(0);
+      
+      // Estados interativos
+      const [draggedOption, setDraggedOption] = useState(null);
+      const [isSuccess, setIsSuccess] = useState(false);
+      const [shakeWrong, setShakeWrong] = useState(null); 
+      const [wrongAnswers, setWrongAnswers] = useState([]);
+
+      // Estados para a mecânica de "Ligar Pontos"
+      const [selectedLeft, setSelectedLeft] = useState(null);
+      const [solvedPairs, setSolvedPairs] = useState([]);
+
+      const level = LEVELS[currentPhaseIndex];
+
+      const startGame = () => {
+        setGameState('playing');
+        setCurrentPhaseIndex(0);
+        setStars(0);
+        resetTurn();
+      };
+
+      const resetTurn = () => {
+        setIsSuccess(false);
+        setWrongAnswers([]);
+        setDraggedOption(null);
+        setSelectedLeft(null);
+        setSolvedPairs([]);
+        setShakeWrong(null);
+      };
+
+      // Função genérica de vitória
+      const handleWin = () => {
+        setIsSuccess(true);
+        setStars(prev => prev + 1);
+        setTimeout(() => {
+          if (currentPhaseIndex + 1 < LEVELS.length) {
+            setCurrentPhaseIndex(prev => prev + 1);
+            resetTurn();
+          } else {
+            setGameState('complete');
+          }
+        }, 2500);
+      };
+
+      // Lógica de Validação: Match, Intruder, Sentence
+      const checkAnswer = (value) => {
+        if (isSuccess || wrongAnswers.includes(value)) return;
+
+        if (value === level.answer) {
+          handleWin();
+        } else {
+          setWrongAnswers(prev => [...prev, value]);
+          setShakeWrong(value);
+          setTimeout(() => setShakeWrong(null), 400);
+        }
+      };
+
+      // Lógica de Validação: Ligar Pontos
+      const handleConnectRight = (rightWord) => {
+        if (!selectedLeft) {
+          alert("Escolha primeiro uma palavra da coluna da esquerda!");
+          return;
+        }
+        
+        if (level.matches[selectedLeft] === rightWord) {
+          const newSolved = [...solvedPairs, selectedLeft];
+          setSolvedPairs(newSolved);
+          setSelectedLeft(null);
+          
+          if (newSolved.length === level.leftWords.length) {
+            handleWin();
+          }
+        } else {
+          setShakeWrong(rightWord);
+          setTimeout(() => setShakeWrong(null), 400);
+          setSelectedLeft(null); 
+        }
+      };
+
+      // --- Drag & Drop Handlers ---
+      const handleDragStart = (e, value) => {
+        setDraggedOption(value);
+        e.dataTransfer.setData('text/plain', value);
+      };
+      const handleDragOver = (e) => e.preventDefault();
+      const handleDrop = (e) => {
+        e.preventDefault();
+        const value = e.dataTransfer.getData('text/plain');
+        if (value) checkAnswer(value);
+      };
+
+      // ------------------------------------------------------------------------
+      // TELA 1: CAPA
+      // ------------------------------------------------------------------------
+      if (gameState === 'cover') {
+        return (
+          <div className="min-h-screen factory-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
+            {/* Decoração Industrial */}
+            <div className="absolute top-10 left-10 text-6xl opacity-30 gear-anim">⚙️</div>
+            <div className="absolute top-32 right-10 text-7xl opacity-30 gear-anim-reverse" style={{animationDelay: '1s'}}>⚙️</div>
+            <div className="absolute bottom-10 left-20 text-6xl opacity-30 gear-anim" style={{animationDelay: '2s'}}>🔩</div>
+            <div className="absolute bottom-32 right-32 text-4xl opacity-30 gear-anim-reverse" style={{animationDelay: '0.5s'}}>🔧</div>
+
+            <div className="bg-slate-800/80 backdrop-blur-md p-10 rounded-[3rem] shadow-[0_0_50px_rgba(249,115,22,0.3)] flex flex-col items-center text-center z-10 max-w-xl w-full border-4 border-slate-600 mb-10">
+              <div className="text-8xl mb-4">🏭</div>
+              <h1 className="text-5xl font-black text-slate-100 mb-2 tracking-tight uppercase drop-shadow-lg">
+                Fábrica de<br/><span className="text-5xl text-orange-400">Rimas</span>
+              </h1>
+              <p className="text-slate-300 mb-8 text-xl font-bold px-4 drop-shadow-md">
+                Entre na linha de montagem e junte as palavras que terminam com o mesmo som!
+              </p>
+              
+              <button 
+                onClick={startGame}
+                className="w-full py-5 px-8 bg-orange-500 hover:bg-orange-600 text-white rounded-3xl text-3xl font-black transition-all transform hover:scale-105 shadow-[0_8px_0_rgb(194,65,12)] hover:translate-y-1 active:shadow-none active:translate-y-2 uppercase"
+              >
+                Ligar Máquinas!
+              </button>
+            </div>
+          </div>
+        );
+      }
+
+      // ------------------------------------------------------------------------
+      // TELA 3: FINAL
+      // ------------------------------------------------------------------------
+      if (gameState === 'complete') {
+        return (
+          <div className="min-h-screen factory-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
+            <div className="bg-slate-800/80 backdrop-blur-md p-10 rounded-[3rem] shadow-[0_0_50px_rgba(249,115,22,0.3)] flex flex-col items-center text-center z-10 max-w-lg w-full border-4 border-slate-600">
+              <div className="text-8xl mb-4 pop-anim">🏆</div>
+              <h1 className="text-5xl font-black text-white mb-2 uppercase drop-shadow-lg">
+                Trabalho Perfeito!
+              </h1>
+              <p className="text-slate-300 mb-6 text-xl font-bold">Você fabricou todas as rimas!</p>
+              
+              <div className="bg-slate-900 border-4 border-slate-600 rounded-3xl p-6 mb-8 w-full flex flex-col items-center">
+                <span className="text-slate-400 font-bold uppercase mb-2">Engrenagens Douradas</span>
+                <div className="flex items-center text-6xl font-black text-amber-400">
+                  <span className="mr-4">⚙️</span> x{stars}
+                </div>
+              </div>
+
+              <button 
+                onClick={startGame}
+                className="w-full py-5 px-8 bg-orange-500 hover:bg-orange-600 text-white rounded-3xl text-2xl font-black transition-all transform hover:scale-105 shadow-[0_8px_0_rgb(194,65,12)] hover:translate-y-1 active:shadow-none active:translate-y-2 uppercase"
+              >
+                Trabalhar Novamente
+              </button>
+            </div>
+          </div>
+        );
+      }
+
+      // ------------------------------------------------------------------------
+      // TELA 2: JOGABILIDADE (Múltiplas Mecânicas)
+      // ------------------------------------------------------------------------
+      return (
+        <div className="min-h-screen w-full flex flex-col relative factory-bg text-white">
+          
+          {/* CABEÇALHO */}
+          <div className="w-full flex justify-between items-center p-6 z-10 bg-slate-900/50 backdrop-blur-sm shadow-lg rounded-b-3xl border-b border-slate-700">
+            <div className="flex flex-col">
+              <h2 className="text-2xl md:text-3xl font-black uppercase text-slate-200 drop-shadow-md">
+                Fase {level.id} de {LEVELS.length}
+              </h2>
+              <span className="text-sm font-bold text-slate-400">{level.instruction}</span>
+            </div>
+            
+            <div className="flex items-center text-3xl font-black text-amber-400 drop-shadow-md">
+              <span className="mr-2">x{stars}</span>
+              <span className="gear-anim">⚙️</span>
+            </div>
+          </div>
+
+          <div className="flex-1 flex flex-col items-center justify-center p-4 z-10 w-full max-w-5xl mx-auto">
+            
+            {/* ------------------------------------------------------------ */}
+            {/* MECÂNICA 1: MATCH (Arrastar e Largar)                          */}
+            {/* ------------------------------------------------------------ */}
+            {level.type === 'match' && (
+              <div className="flex flex-col items-center w-full">
+                <div className="flex flex-col items-center mb-12">
+                  <div className="text-6xl mb-4 pop-anim drop-shadow-xl">{level.emoji}</div>
+                  
+                  {/* Palavra Alvo (Design Industrial) */}
+                  <div className="bg-slate-800 rounded-[2rem] border-4 border-slate-500 p-8 shadow-[0_10px_0_rgba(71,85,105,1)] text-center mb-8 relative overflow-hidden">
+                    <div className="absolute -top-4 -left-4 text-slate-600 opacity-30 text-6xl gear-anim">⚙️</div>
+                    <span className="text-4xl md:text-6xl font-black text-white tracking-wider relative z-10">
+                      {level.target}
+                    </span>
+                  </div>
+                  
+                  {/* Dropzone */}
+                  <div 
+                    className={`rounded-[2rem] border-4 w-64 md:w-80 h-32 md:h-40 shadow-xl flex items-center justify-center transition-all ${
+                      isSuccess ? 'bg-emerald-500 border-emerald-400 pop-anim shadow-[0_0_40px_rgba(16,185,129,0.5)]' : 'bg-slate-900/50 border-orange-500 border-dashed backdrop-blur-sm'
+                    } ${shakeWrong ? 'shake-anim border-red-500 bg-red-900/50' : ''}`}
+                    onDragOver={handleDragOver}
+                    onDrop={handleDrop}
+                  >
+                    {isSuccess ? (
+                      <span className="text-3xl md:text-5xl font-black text-white drop-shadow-md">
+                        {level.answer}
+                      </span>
+                    ) : (
+                      <span className="text-orange-400/60 text-2xl font-black animate-pulse uppercase text-center px-4">
+                        Arraste a<br/>rima aqui!
+                      </span>
+                    )}
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap justify-center gap-4 md:gap-8 w-full">
+                  {level.options.map((opt, i) => {
+                    const isWrong = wrongAnswers.includes(opt);
+                    let btnClass = "bg-orange-500 hover:bg-orange-400 border-b-8 border-orange-700 text-white cursor-grab active:cursor-grabbing hover:-translate-y-2";
+                    
+                    if (isWrong) {
+                      btnClass = "bg-slate-700 border-b-8 border-slate-900 text-slate-500 opacity-50 cursor-not-allowed transform translate-y-2";
+                    } else if (isSuccess) {
+                      btnClass = "bg-orange-500 opacity-0 pointer-events-none"; 
+                    }
+
+                    return (
+                      <button
+                        key={i}
+                        draggable={!isWrong && !isSuccess}
+                        onDragStart={(e) => handleDragStart(e, opt)}
+                        onClick={() => checkAnswer(opt)} 
+                        disabled={isWrong || isSuccess}
+                        className={`px-6 py-4 md:px-10 md:py-6 rounded-2xl md:rounded-[2rem] flex items-center justify-center transition-all duration-300 shadow-xl ${btnClass} ${shakeWrong === opt ? 'shake-anim' : ''}`}
+                      >
+                        <span className="text-2xl md:text-4xl font-black tracking-widest uppercase">
+                          {opt}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* ------------------------------------------------------------ */}
+            {/* MECÂNICA 2: CONNECT (Ligar os Pontos)                          */}
+            {/* ------------------------------------------------------------ */}
+            {level.type === 'connect' && (
+              <div className="flex flex-col items-center w-full">
+                <div className="text-[5rem] mb-4 pop-anim">{level.emoji}</div>
+                
+                <div className="bg-slate-800 p-4 md:p-8 rounded-[3rem] border-4 border-slate-600 shadow-2xl w-full max-w-4xl relative">
+                  
+                  <div className="flex justify-between h-[360px] md:h-[420px] relative w-full">
+                    
+                    {/* Coluna da Esquerda */}
+                    <div className="flex flex-col justify-around w-[35%] z-10">
+                      {level.leftWords.map((word) => {
+                        const isSolved = solvedPairs.includes(word);
+                        const isSelected = selectedLeft === word;
+                        
+                        let btnClass = "bg-slate-700 hover:bg-slate-600 border-b-4 border-slate-900 text-slate-200 transition-all hover:-translate-y-1 shadow-md";
+                        if (isSolved) {
+                          btnClass = "bg-emerald-500 border-b-4 border-emerald-700 text-white opacity-90 cursor-default scale-105";
+                        } else if (isSelected) {
+                          btnClass = "bg-orange-500 border-b-4 border-orange-700 text-white ring-4 ring-orange-300 scale-105";
+                        }
+
+                        return (
+                          <button
+                            key={`L-${word}`}
+                            onClick={() => !isSolved && setSelectedLeft(word)}
+                            className={`h-20 md:h-24 rounded-2xl flex items-center justify-center px-2 md:px-6 ${btnClass}`}
+                          >
+                            <span className="text-lg md:text-3xl font-black uppercase tracking-wider">{word}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                    {/* Canvas do SVG para desenhar as linhas no meio */}
+                    <svg className="absolute top-0 bottom-0 left-[35%] w-[30%] h-full pointer-events-none z-0">
+                      {solvedPairs.map((leftWord) => {
+                        const rightWord = level.matches[leftWord];
+                        const leftIndex = level.leftWords.indexOf(leftWord);
+                        const rightIndex = level.rightWords.indexOf(rightWord);
+                        
+                        const y1 = ['16.66%', '50%', '83.33%'][leftIndex];
+                        const y2 = ['16.66%', '50%', '83.33%'][rightIndex];
+                        
+                        return (
+                          <g key={`line-${leftWord}`}>
+                            <line x1="0%" y1={y1} x2="100%" y2={y2} stroke="#f97316" strokeWidth="6" strokeLinecap="round" className="line-anim" />
+                            <circle cx="0%" cy={y1} r="8" fill="#c2410c" className="pop-anim" />
+                            <circle cx="100%" cy={y2} r="8" fill="#c2410c" className="pop-anim" />
+                          </g>
+                        );
+                      })}
+                    </svg>
+
+                    {/* Coluna da Direita */}
+                    <div className="flex flex-col justify-around w-[35%] z-10">
+                      {level.rightWords.map((word) => {
+                        const isSolved = Object.keys(level.matches).find(l => level.matches[l] === word && solvedPairs.includes(l));
+                        const isShaking = shakeWrong === word;
+
+                        let btnClass = "bg-slate-700 hover:bg-slate-600 border-b-4 border-slate-900 text-slate-200 transition-all hover:-translate-y-1 shadow-md";
+                        if (isSolved) {
+                          btnClass = "bg-emerald-500 border-b-4 border-emerald-700 text-white opacity-90 cursor-default scale-105";
+                        } else if (isShaking) {
+                          btnClass = "bg-red-500 border-b-4 border-red-700 text-white";
+                        }
+
+                        return (
+                          <button
+                            key={`R-${word}`}
+                            onClick={() => !isSolved && handleConnectRight(word)}
+                            className={`h-20 md:h-24 rounded-2xl flex items-center justify-center px-2 md:px-6 ${btnClass} ${isShaking ? 'shake-anim' : ''}`}
+                          >
+                            <span className="text-lg md:text-3xl font-black uppercase tracking-wider">{word}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* ------------------------------------------------------------ */}
+            {/* MECÂNICA 3: INTRUDER (Encontrar a palavra diferente)           */}
+            {/* ------------------------------------------------------------ */}
+            {level.type === 'intruder' && (
+              <div className="flex flex-col items-center w-full">
+                <div className="text-[6rem] md:text-[8rem] mb-8 pop-anim drop-shadow-xl">{level.emoji}</div>
+                
+                <div className="bg-slate-800 p-6 md:p-10 rounded-[3rem] border-4 border-slate-600 shadow-2xl w-full max-w-3xl relative overflow-hidden">
+                  <div className="absolute top-0 right-0 text-slate-700 opacity-20 text-8xl gear-anim">⚙️</div>
+                  <div className="grid grid-cols-2 gap-4 md:gap-6 relative z-10">
+                    {level.words.map((word, i) => {
+                      const isCorrectAnswer = word === level.answer; 
+                      const isClickedAndNotIntruder = wrongAnswers.includes(word);
+                      const isShaking = shakeWrong === word;
+                      
+                      let btnClass = "bg-orange-400 hover:bg-orange-500 border-b-8 border-orange-600 text-orange-950 hover:-translate-y-2";
+                      
+                      if (isSuccess && isCorrectAnswer) {
+                        btnClass = "bg-emerald-500 border-b-8 border-emerald-700 text-white pop-anim ring-8 ring-emerald-300";
+                      } else if (isSuccess && !isCorrectAnswer) {
+                        btnClass = "bg-slate-700 border-b-8 border-slate-900 text-slate-500 opacity-50";
+                      } else if (isClickedAndNotIntruder) {
+                        btnClass = "bg-red-500 border-b-8 border-red-800 text-white opacity-80 cursor-not-allowed";
+                      }
+
+                      return (
+                        <button
+                          key={i}
+                          onClick={() => checkAnswer(word)}
+                          disabled={isClickedAndNotIntruder || isSuccess}
+                          className={`h-24 md:h-36 rounded-2xl md:rounded-[2rem] flex items-center justify-center transition-all duration-300 shadow-lg ${btnClass} ${isShaking ? 'shake-anim' : ''}`}
+                        >
+                          <span className="text-2xl md:text-4xl font-black tracking-widest">
+                            {word}
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* ------------------------------------------------------------ */}
+            {/* MECÂNICA 4: SENTENCE (Substituir a palavra na frase)           */}
+            {/* ------------------------------------------------------------ */}
+            {level.type === 'sentence' && (
+              <div className="flex flex-col items-center w-full">
+                <div className="text-[5rem] mb-4 pop-anim">{level.emoji}</div>
+                
+                <div className="bg-slate-800 rounded-[2rem] border-4 border-slate-600 p-8 md:p-12 shadow-2xl text-center mb-12 max-w-4xl w-full leading-relaxed relative overflow-hidden">
+                  <div className="absolute -bottom-10 -left-10 text-slate-700 opacity-30 text-8xl gear-anim">⚙️</div>
+                  <span className="text-3xl md:text-5xl font-bold text-slate-200 relative z-10">
+                    {level.preText}
+                  </span>
+                  
+                  <span 
+                    className={`inline-block mx-2 px-6 py-2 rounded-2xl border-4 align-middle transition-all relative z-10 ${
+                      isSuccess 
+                        ? 'bg-emerald-500 border-emerald-300 text-white pop-anim' 
+                        : 'bg-slate-900 border-orange-400 border-dashed text-orange-300'
+                    } ${shakeWrong ? 'shake-anim border-red-500 bg-red-900/50 text-red-200' : ''}`}
+                    onDragOver={handleDragOver}
+                    onDrop={handleDrop}
+                    onClick={() => {
+                       if(!isSuccess) alert("Toque ou arraste uma das opções de baixo aqui para dentro!");
+                    }}
+                  >
+                    {isSuccess ? (
+                      <span className="font-black text-3xl md:text-5xl uppercase">{level.answer}</span>
+                    ) : (
+                      <span className="font-black text-3xl md:text-5xl uppercase line-through opacity-60">
+                        {level.boldText}
+                      </span>
+                    )}
+                  </span>
+                  
+                  <span className="text-3xl md:text-5xl font-bold text-slate-200 relative z-10">
+                    {level.postText}
+                  </span>
+                </div>
+
+                <div className="flex flex-wrap justify-center gap-4 md:gap-8 w-full">
+                  {level.options.map((opt, i) => {
+                    const isWrong = wrongAnswers.includes(opt);
+                    let btnClass = "bg-orange-500 hover:bg-orange-400 border-b-8 border-orange-700 text-white cursor-grab active:cursor-grabbing hover:-translate-y-2 shadow-lg";
+                    
+                    if (isWrong) {
+                      btnClass = "bg-slate-700 border-b-8 border-slate-900 text-slate-500 opacity-50 cursor-not-allowed transform translate-y-2";
+                    } else if (isSuccess) {
+                      btnClass = "bg-orange-500 opacity-0 pointer-events-none";
+                    }
+
+                    return (
+                      <button
+                        key={i}
+                        draggable={!isWrong && !isSuccess}
+                        onDragStart={(e) => handleDragStart(e, opt)}
+                        onClick={() => checkAnswer(opt)} 
+                        disabled={isWrong || isSuccess}
+                        className={`px-6 py-4 md:px-8 md:py-5 rounded-2xl md:rounded-[2rem] flex items-center justify-center transition-all duration-300 ${btnClass} ${shakeWrong === opt ? 'shake-anim' : ''}`}
+                      >
+                        <span className="text-xl md:text-3xl font-black uppercase tracking-wider">
+                          {opt}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+          </div>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>

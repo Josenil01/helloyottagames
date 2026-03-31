@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detetives da Ortografia</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Fontes Divertidas -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  
+  <!-- React e ReactDOM -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  
+  <!-- Babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      user-select: none;
+      background-color: #0f172a; /* slate-900 */
+    }
+    
+    /* Animações */
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-8px) rotate(-3deg); }
+      75% { transform: translateX(8px) rotate(3deg); }
+    }
+    .shake-anim { animation: shake 0.4s ease-in-out; }
+
+    @keyframes popIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      80% { transform: scale(1.1); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .pop-anim { animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+
+    @keyframes lineDraw {
+      0% { stroke-dasharray: 0, 1000; }
+      100% { stroke-dasharray: 1000, 0; }
+    }
+    .line-anim { animation: lineDraw 0.5s ease-out forwards; }
+
+    @keyframes spyFloat {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(5deg); }
+    }
+    .float-anim { animation: spyFloat 4s ease-in-out infinite; }
+
+    /* Fundo Detetive / Mistério */
+    .detective-bg {
+      background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+      position: relative;
+    }
+  </style>
+</head>
+<body class="selection:bg-none overflow-x-hidden text-slate-200">
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    // --- DADOS DO JOGO: DETETIVES DA ORTOGRAFIA ---
+    const LEVELS = [
+      // MECÂNICA 1: Associação (Arrastar a letra correta)
+      { id: 1, type: 'match', target: 'CAI__A', answer: 'X', options: ['X', 'CH', 'SS'], emoji: '📦', instruction: 'É com X ou CH? Arraste a letra certa para consertar a palavra!' },
+      { id: 2, type: 'match', target: 'PÁ__ARO', answer: 'SS', options: ['S', 'SS', 'Ç'], emoji: '🐦', instruction: 'Como se escreve pássaro? Arraste a opção correta!' },
+      { id: 3, type: 'match', target: 'RELÓ__IO', answer: 'G', options: ['G', 'J', 'CH'], emoji: '⌚', instruction: 'Relógio é com G ou com J? Descubra!' },
+      
+      // MECÂNICA 2: Ligar os Pontos (Ligar a palavra incompleta à completa)
+      { id: 4, type: 'connect', leftWords: ['CAI__A', 'FLE__A', 'BAI__O'], rightWords: ['FLECHA', 'BAIXO', 'CAIXA'], matches: { 'CAI__A': 'CAIXA', 'FLE__A': 'FLECHA', 'BAI__O': 'BAIXO' }, emoji: '🔗', instruction: 'Ligue a palavra com letras faltando à sua forma escrita corretamente!' },
+      { id: 5, type: 'connect', leftWords: ['VA__OURA', 'CA__A', 'O__O'], rightWords: ['OSSO', 'VASSOURA', 'CASA'], matches: { 'VA__OURA': 'VASSOURA', 'CA__A': 'CASA', 'O__O': 'OSSO' }, emoji: '🧹', instruction: 'S ou SS? Ligue as palavras e resolva o mistério!' },
+      { id: 6, type: 'connect', leftWords: ['__ELO', '__ACARÉ', 'MÁ__ICO'], rightWords: ['JACARÉ', 'MÁGICO', 'GELO'], matches: { '__ELO': 'GELO', '__ACARÉ': 'JACARÉ', 'MÁ__ICO': 'MÁGICO' }, emoji: '🐊', instruction: 'Encontre os 3 pares escondidos usando G ou J!' },
+
+      // MECÂNICA 3: O Intruso (Descobrir a palavra escrita ERRADA)
+      { id: 7, type: 'intruder', words: ['XÍCARA', 'ENXADA', 'XUVEIRO', 'CAIXA'], answer: 'XUVEIRO', emoji: '🚿', instruction: 'Atenção, detetive! Qual dessas palavras está escrita ERRADA (é a intrusa)?' },
+      { id: 8, type: 'intruder', words: ['PÁSSARO', 'OSSO', 'PÊCEGO', 'MASSA'], answer: 'PÊCEGO', emoji: '🍑', instruction: 'Tem uma palavra com a ortografia incorreta! Descubra qual é!' },
+      { id: 9, type: 'intruder', words: ['GELO', 'GIRAFA', 'JELADEIRA', 'JACARÉ'], answer: 'JELADEIRA', emoji: '🧊', instruction: 'Inspecione bem! Qual palavra foi escrita pelo vilão com a letra errada?' },
+
+      // MECÂNICA 4: Construtor de Frases (Substituir o erro ortográfico)
+      { id: 10, type: 'sentence', preText: 'Eu tomei um ', boldText: 'XÁ', postText: ' de camomila.', answer: 'CHÁ', options: ['CHÁ', 'XÁ', 'XIA'], emoji: '☕', instruction: 'Substitua a palavra incorreta pela escrita corretamente!' },
+      { id: 11, type: 'sentence', preText: 'A ', boldText: 'BRUCHA', postText: ' voa na vassoura mágica.', answer: 'BRUXA', options: ['BRUSHA', 'BRUCHA', 'BRUXA'], emoji: '🧹', instruction: 'Ops, tem um erro ortográfico! Arraste a palavra corrigida para a frase!' },
+      { id: 12, type: 'sentence', preText: 'Aquele menino é muito ', boldText: 'CORAGOSO', postText: '.', answer: 'CORAJOSO', options: ['CORAGOSO', 'CORAJOSO', 'CORAJOZO'], emoji: '🦸', instruction: 'Como se escreve? Conserte o erro na frase!' },
+    ];
+
+    function App() {
+      const [gameState, setGameState] = useState('cover'); 
+      const [currentPhaseIndex, setCurrentPhaseIndex] = useState(0);
+      const [stars, setStars] = useState(0);
+      
+      const [draggedOption, setDraggedOption] = useState(null);
+      const [isSuccess, setIsSuccess] = useState(false);
+      const [shakeWrong, setShakeWrong] = useState(null); 
+      const [wrongAnswers, setWrongAnswers] = useState([]);
+
+      const [selectedLeft, setSelectedLeft] = useState(null);
+      const [solvedPairs, setSolvedPairs] = useState([]);
+
+      const level = LEVELS[currentPhaseIndex];
+
+      const startGame = () => {
+        setGameState('playing');
+        setCurrentPhaseIndex(0);
+        setStars(0);
+        resetTurn();
+      };
+
+      const resetTurn = () => {
+        setIsSuccess(false);
+        setWrongAnswers([]);
+        setDraggedOption(null);
+        setSelectedLeft(null);
+        setSolvedPairs([]);
+        setShakeWrong(null);
+      };
+
+      const handleWin = () => {
+        setIsSuccess(true);
+        setStars(prev => prev + 1);
+        setTimeout(() => {
+          if (currentPhaseIndex + 1 < LEVELS.length) {
+            setCurrentPhaseIndex(prev => prev + 1);
+            resetTurn();
+          } else {
+            setGameState('complete');
+          }
+        }, 2500);
+      };
+
+      const checkAnswer = (value) => {
+        if (isSuccess || wrongAnswers.includes(value)) return;
+
+        if (value === level.answer) {
+          handleWin();
+        } else {
+          setWrongAnswers(prev => [...prev, value]);
+          setShakeWrong(value);
+          setTimeout(() => setShakeWrong(null), 400);
+        }
+      };
+
+      const handleConnectRight = (rightWord) => {
+        if (!selectedLeft) {
+          alert("Detetive, escolha primeiro uma palavra da coluna da esquerda!");
+          return;
+        }
+        
+        if (level.matches[selectedLeft] === rightWord) {
+          const newSolved = [...solvedPairs, selectedLeft];
+          setSolvedPairs(newSolved);
+          setSelectedLeft(null);
+          
+          if (newSolved.length === level.leftWords.length) {
+            handleWin();
+          }
+        } else {
+          setShakeWrong(rightWord);
+          setTimeout(() => setShakeWrong(null), 400);
+          setSelectedLeft(null); 
+        }
+      };
+
+      const handleDragStart = (e, value) => {
+        setDraggedOption(value);
+        e.dataTransfer.setData('text/plain', value);
+      };
+      const handleDragOver = (e) => e.preventDefault();
+      const handleDrop = (e) => {
+        e.preventDefault();
+        const value = e.dataTransfer.getData('text/plain');
+        if (value) checkAnswer(value);
+      };
+
+      // ------------------------------------------------------------------------
+      // TELA 1: CAPA
+      // ------------------------------------------------------------------------
+      if (gameState === 'cover') {
+        return (
+          <div className="min-h-screen detective-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
+            {/* Decoração Detetive */}
+            <div className="absolute top-10 left-10 text-6xl opacity-30 float-anim">🔦</div>
+            <div className="absolute top-32 right-10 text-7xl opacity-30 float-anim" style={{animationDelay: '1s'}}>👣</div>
+            <div className="absolute bottom-10 left-20 text-6xl opacity-30 float-anim" style={{animationDelay: '2s'}}>🔎</div>
+            <div className="absolute bottom-32 right-32 text-6xl opacity-30 float-anim" style={{animationDelay: '0.5s'}}>🕵️‍♂️</div>
+
+            <div className="bg-slate-800/80 backdrop-blur-sm p-10 rounded-[3rem] shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col items-center text-center z-10 max-w-xl w-full border-4 border-amber-500 mb-10">
+              <div className="text-8xl mb-4">🔍</div>
+              <h1 className="text-5xl font-black text-white mb-2 tracking-tight uppercase">
+                Detetives da<br/><span className="text-5xl text-amber-500">Ortografia</span>
+              </h1>
+              <p className="text-slate-300 mb-8 text-xl font-bold px-4">
+                Pegue sua lupa e seu bloquinho! Vamos investigar as letras e descobrir como as palavras são escritas de verdade!
+              </p>
+              
+              <button 
+                onClick={startGame}
+                className="w-full py-5 px-8 bg-emerald-600 hover:bg-emerald-500 text-white rounded-3xl text-3xl font-black transition-all transform hover:scale-105 shadow-[0_8px_0_rgb(5,150,105)] hover:translate-y-1 active:shadow-none active:translate-y-2 uppercase"
+              >
+                Iniciar Investigação!
+              </button>
+            </div>
+          </div>
+        );
+      }
+
+      // ------------------------------------------------------------------------
+      // TELA 3: FINAL
+      // ------------------------------------------------------------------------
+      if (gameState === 'complete') {
+        return (
+          <div className="min-h-screen detective-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
+            <div className="bg-slate-800/90 backdrop-blur-sm p-10 rounded-[3rem] shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col items-center text-center z-10 max-w-lg w-full border-4 border-amber-500">
+              <div className="text-8xl mb-4 pop-anim">🎖️</div>
+              <h1 className="text-5xl font-black text-white mb-2 uppercase">
+                Mestre Detetive!
+              </h1>
+              <p className="text-slate-300 mb-6 text-xl font-bold">Você resolveu todos os mistérios da ortografia!</p>
+              
+              <div className="bg-slate-900 border-4 border-slate-700 rounded-3xl p-6 mb-8 w-full flex flex-col items-center">
+                <span className="text-slate-400 font-bold uppercase mb-2">Lupas Coletadas</span>
+                <div className="flex items-center text-6xl font-black text-amber-500">
+                  <span className="mr-4">🔍</span> x{stars}
+                </div>
+              </div>
+
+              <button 
+                onClick={startGame}
+                className="w-full py-5 px-8 bg-emerald-600 hover:bg-emerald-500 text-white rounded-3xl text-2xl font-black transition-all transform hover:scale-105 shadow-[0_8px_0_rgb(5,150,105)] hover:translate-y-1 active:shadow-none active:translate-y-2 uppercase"
+              >
+                Novo Caso
+              </button>
+            </div>
+          </div>
+        );
+      }
+
+      // ------------------------------------------------------------------------
+      // TELA 2: JOGABILIDADE (Múltiplas Mecânicas)
+      // ------------------------------------------------------------------------
+      return (
+        <div className="min-h-screen w-full flex flex-col relative detective-bg text-slate-100">
+          
+          {/* CABEÇALHO */}
+          <div className="w-full flex justify-between items-center p-6 z-10 bg-slate-900/90 backdrop-blur-md shadow-xl rounded-b-3xl border-b-2 border-slate-700">
+            <div className="flex flex-col">
+              <h2 className="text-2xl md:text-3xl font-black uppercase text-amber-500 drop-shadow-md">
+                Caso {level.id} de {LEVELS.length}
+              </h2>
+              <span className="text-sm font-bold text-slate-300">{level.instruction}</span>
+            </div>
+            
+            <div className="flex items-center text-3xl font-black text-amber-500 drop-shadow-md">
+              <span className="mr-2">x{stars}</span>
+              <span className="pop-anim">🔍</span>
+            </div>
+          </div>
+
+          <div className="flex-1 flex flex-col items-center justify-center p-4 z-10 w-full max-w-5xl mx-auto">
+            
+            {/* ------------------------------------------------------------ */}
+            {/* MECÂNICA 1: MATCH (Arrastar e Largar)                          */}
+            {/* ------------------------------------------------------------ */}
+            {level.type === 'match' && (
+              <div className="flex flex-col items-center w-full">
+                <div className="flex flex-col items-center mb-12">
+                  <div className="text-6xl mb-4 pop-anim drop-shadow-xl">{level.emoji}</div>
+                  
+                  {/* Palavra Alvo (Design Mistério) */}
+                  <div className="bg-slate-800 rounded-[2rem] border-4 border-slate-600 p-8 shadow-xl text-center mb-4 relative">
+                    <span className="text-4xl md:text-6xl font-black text-white tracking-wider relative z-10">
+                      {level.target}
+                    </span>
+                  </div>
+                  
+                  <div className="text-5xl font-black text-slate-500 mb-4">+</div>
+                  
+                  {/* Dropzone */}
+                  <div 
+                    className={`rounded-[2rem] border-4 w-64 md:w-80 h-32 md:h-40 shadow-xl flex items-center justify-center transition-all ${
+                      isSuccess ? 'bg-emerald-600 border-emerald-400 pop-anim shadow-[0_0_30px_rgba(16,185,129,0.5)] text-white' : 'bg-slate-900/50 border-amber-500 border-dashed backdrop-blur-sm text-amber-500'
+                    } ${shakeWrong ? 'shake-anim border-red-500 bg-red-900/80' : ''}`}
+                    onDragOver={handleDragOver}
+                    onDrop={handleDrop}
+                  >
+                    {isSuccess ? (
+                      <span className="text-4xl md:text-6xl font-black drop-shadow-md">
+                        {level.answer}
+                      </span>
+                    ) : (
+                      <span className="opacity-60 text-xl md:text-2xl font-black animate-pulse uppercase text-center px-4">
+                        Arraste a<br/>letra aqui!
+                      </span>
+                    )}
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap justify-center gap-4 md:gap-8 w-full">
+                  {level.options.map((opt, i) => {
+                    const isWrong = wrongAnswers.includes(opt);
+                    let btnClass = "bg-amber-500 hover:bg-amber-400 border-b-8 border-amber-700 text-slate-900 cursor-grab active:cursor-grabbing hover:-translate-y-2";
+                    
+                    if (isWrong) {
+                      btnClass = "bg-slate-700 border-b-8 border-slate-800 text-slate-500 opacity-50 cursor-not-allowed transform translate-y-2";
+                    } else if (isSuccess) {
+                      btnClass = "bg-amber-500 opacity-0 pointer-events-none"; 
+                    }
+
+                    return (
+                      <button
+                        key={i}
+                        draggable={!isWrong && !isSuccess}
+                        onDragStart={(e) => handleDragStart(e, opt)}
+                        onClick={() => checkAnswer(opt)} 
+                        disabled={isWrong || isSuccess}
+                        className={`px-8 py-4 md:px-12 md:py-6 rounded-2xl md:rounded-[2rem] flex items-center justify-center transition-all duration-300 shadow-xl ${btnClass} ${shakeWrong === opt ? 'shake-anim' : ''}`}
+                      >
+                        <span className="text-3xl md:text-5xl font-black tracking-widest uppercase">
+                          {opt}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* ------------------------------------------------------------ */}
+            {/* MECÂNICA 2: CONNECT (Ligar os Pontos)                          */}
+            {/* ------------------------------------------------------------ */}
+            {level.type === 'connect' && (
+              <div className="flex flex-col items-center w-full">
+                <div className="text-[5rem] mb-4 pop-anim">{level.emoji}</div>
+                
+                <div className="bg-slate-800/90 p-4 md:p-8 rounded-[3rem] border-4 border-slate-600 shadow-2xl w-full max-w-4xl relative">
+                  
+                  <div className="flex justify-between h-[360px] md:h-[420px] relative w-full">
+                    
+                    {/* Coluna da Esquerda */}
+                    <div className="flex flex-col justify-around w-[35%] z-10">
+                      {level.leftWords.map((word) => {
+                        const isSolved = solvedPairs.includes(word);
+                        const isSelected = selectedLeft === word;
+                        
+                        let btnClass = "bg-slate-700 hover:bg-slate-600 border-b-4 border-slate-800 text-slate-200 transition-all hover:-translate-y-1 shadow-md";
+                        if (isSolved) {
+                          btnClass = "bg-emerald-600 border-b-4 border-emerald-800 text-white opacity-90 cursor-default scale-105";
+                        } else if (isSelected) {
+                          btnClass = "bg-amber-500 border-b-4 border-amber-700 text-slate-900 ring-4 ring-amber-300 scale-105";
+                        }
+
+                        return (
+                          <button
+                            key={`L-${word}`}
+                            onClick={() => !isSolved && setSelectedLeft(word)}
+                            className={`h-20 md:h-24 rounded-2xl flex items-center justify-center px-2 md:px-6 ${btnClass}`}
+                          >
+                            <span className="text-lg md:text-2xl lg:text-3xl font-black uppercase tracking-wider">{word}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                    {/* Canvas do SVG para desenhar as linhas no meio */}
+                    <svg className="absolute top-0 bottom-0 left-[35%] w-[30%] h-full pointer-events-none z-0">
+                      {solvedPairs.map((leftWord) => {
+                        const rightWord = level.matches[leftWord];
+                        const leftIndex = level.leftWords.indexOf(leftWord);
+                        const rightIndex = level.rightWords.indexOf(rightWord);
+                        
+                        const y1 = ['16.66%', '50%', '83.33%'][leftIndex];
+                        const y2 = ['16.66%', '50%', '83.33%'][rightIndex];
+                        
+                        return (
+                          <g key={`line-${leftWord}`}>
+                            <line x1="0%" y1={y1} x2="100%" y2={y2} stroke="#f59e0b" strokeWidth="6" strokeLinecap="round" className="line-anim" />
+                            <circle cx="0%" cy={y1} r="8" fill="#d97706" className="pop-anim" />
+                            <circle cx="100%" cy={y2} r="8" fill="#d97706" className="pop-anim" />
+                          </g>
+                        );
+                      })}
+                    </svg>
+
+                    {/* Coluna da Direita */}
+                    <div className="flex flex-col justify-around w-[35%] z-10">
+                      {level.rightWords.map((word) => {
+                        const isSolved = Object.keys(level.matches).find(l => level.matches[l] === word && solvedPairs.includes(l));
+                        const isShaking = shakeWrong === word;
+
+                        let btnClass = "bg-slate-700 hover:bg-slate-600 border-b-4 border-slate-800 text-slate-200 transition-all hover:-translate-y-1 shadow-md";
+                        if (isSolved) {
+                          btnClass = "bg-emerald-600 border-b-4 border-emerald-800 text-white opacity-90 cursor-default scale-105";
+                        } else if (isShaking) {
+                          btnClass = "bg-red-600 border-b-4 border-red-800 text-white";
+                        }
+
+                        return (
+                          <button
+                            key={`R-${word}`}
+                            onClick={() => !isSolved && handleConnectRight(word)}
+                            className={`h-20 md:h-24 rounded-2xl flex items-center justify-center px-1 md:px-4 ${btnClass} ${isShaking ? 'shake-anim' : ''}`}
+                          >
+                            <span className="text-base md:text-xl lg:text-3xl font-black uppercase tracking-wider">{word}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* ------------------------------------------------------------ */}
+            {/* MECÂNICA 3: INTRUDER (Encontrar a palavra ERRADA)              */}
+            {/* ------------------------------------------------------------ */}
+            {level.type === 'intruder' && (
+              <div className="flex flex-col items-center w-full">
+                <div className="text-[6rem] md:text-[8rem] mb-8 pop-anim drop-shadow-xl">{level.emoji}</div>
+                
+                <div className="bg-slate-800/90 p-6 md:p-10 rounded-[3rem] border-4 border-slate-600 shadow-2xl w-full max-w-3xl relative overflow-hidden">
+                  <div className="grid grid-cols-2 gap-4 md:gap-6 relative z-10">
+                    {level.words.map((word, i) => {
+                      const isCorrectAnswer = word === level.answer; // O acerto é achar a errada!
+                      const isClickedAndNotIntruder = wrongAnswers.includes(word);
+                      const isShaking = shakeWrong === word;
+                      
+                      let btnClass = "bg-slate-700 hover:bg-slate-600 border-b-8 border-slate-900 text-amber-400 hover:-translate-y-2";
+                      
+                      if (isSuccess && isCorrectAnswer) {
+                        btnClass = "bg-emerald-600 border-b-8 border-emerald-800 text-white pop-anim ring-8 ring-emerald-400";
+                      } else if (isSuccess && !isCorrectAnswer) {
+                        btnClass = "bg-slate-800 border-b-8 border-slate-900 text-slate-600 opacity-50";
+                      } else if (isClickedAndNotIntruder) {
+                        btnClass = "bg-red-600 border-b-8 border-red-800 text-white opacity-80 cursor-not-allowed";
+                      }
+
+                      return (
+                        <button
+                          key={i}
+                          onClick={() => checkAnswer(word)}
+                          disabled={isClickedAndNotIntruder || isSuccess}
+                          className={`h-24 md:h-36 rounded-2xl md:rounded-[2rem] flex items-center justify-center transition-all duration-300 shadow-lg ${btnClass} ${isShaking ? 'shake-anim' : ''}`}
+                        >
+                          <span className="text-xl md:text-4xl font-black tracking-widest">
+                            {word}
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* ------------------------------------------------------------ */}
+            {/* MECÂNICA 4: SENTENCE (Substituir a palavra errada)             */}
+            {/* ------------------------------------------------------------ */}
+            {level.type === 'sentence' && (
+              <div className="flex flex-col items-center w-full">
+                <div className="text-[5rem] mb-4 pop-anim">{level.emoji}</div>
+                
+                <div className="bg-slate-800 rounded-[2rem] border-4 border-slate-600 p-8 md:p-12 shadow-2xl text-center mb-12 max-w-4xl w-full leading-relaxed relative overflow-hidden">
+                  <span className="text-3xl md:text-5xl font-bold text-slate-200 relative z-10">
+                    {level.preText}
+                  </span>
+                  
+                  <span 
+                    className={`inline-block mx-2 px-6 py-2 rounded-2xl border-4 align-middle transition-all relative z-10 ${
+                      isSuccess 
+                        ? 'bg-emerald-600 border-emerald-400 text-white pop-anim shadow-lg' 
+                        : 'bg-slate-900 border-amber-500 border-dashed text-amber-500'
+                    } ${shakeWrong ? 'shake-anim border-red-500 bg-red-900/80 text-red-200' : ''}`}
+                    onDragOver={handleDragOver}
+                    onDrop={handleDrop}
+                    onClick={() => {
+                       if(!isSuccess) alert("Toque ou arraste uma das opções amarelas aqui para dentro para consertar a frase!");
+                    }}
+                  >
+                    {isSuccess ? (
+                      <span className="font-black text-2xl md:text-5xl uppercase">{level.answer}</span>
+                    ) : (
+                      <span className="font-black text-2xl md:text-5xl uppercase line-through opacity-60 text-red-400 decoration-red-500 decoration-4">
+                        {level.boldText}
+                      </span>
+                    )}
+                  </span>
+                  
+                  <span className="text-3xl md:text-5xl font-bold text-slate-200 relative z-10">
+                    {level.postText}
+                  </span>
+                </div>
+
+                <div className="flex flex-wrap justify-center gap-4 md:gap-8 w-full">
+                  {level.options.map((opt, i) => {
+                    const isWrong = wrongAnswers.includes(opt);
+                    let btnClass = "bg-amber-500 hover:bg-amber-400 border-b-8 border-amber-700 text-slate-900 cursor-grab active:cursor-grabbing hover:-translate-y-2 shadow-lg";
+                    
+                    if (isWrong) {
+                      btnClass = "bg-slate-700 border-b-8 border-slate-800 text-slate-500 opacity-50 cursor-not-allowed transform translate-y-2";
+                    } else if (isSuccess) {
+                      btnClass = "bg-amber-500 opacity-0 pointer-events-none";
+                    }
+
+                    return (
+                      <button
+                        key={i}
+                        draggable={!isWrong && !isSuccess}
+                        onDragStart={(e) => handleDragStart(e, opt)}
+                        onClick={() => checkAnswer(opt)} 
+                        disabled={isWrong || isSuccess}
+                        className={`px-4 py-4 md:px-8 md:py-5 rounded-2xl md:rounded-[2rem] flex items-center justify-center transition-all duration-300 ${btnClass} ${shakeWrong === opt ? 'shake-anim' : ''}`}
+                      >
+                        <span className="text-xl md:text-3xl font-black uppercase tracking-wider">
+                          {opt}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+          </div>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>
