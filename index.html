@@ -75,139 +75,148 @@
     <div class="min-h-screen flex flex-col items-center py-10 px-4">
       <!-- Header -->
       <div class="text-center mb-10">
-        <h1 class="text-5xl md:text-6xl mb-3">🎮 Hello Yotta Games</h1>
+        <h1 class="text-5xl md:text-6xl mb-3 drop-shadow-lg animate-bounce">🎮 Hello Yotta Games</h1>
         <p class="subtitle text-xl md:text-2xl">
           Jogos Educativos para Aprender Brincando!
         </p>
+        <!-- Filtros de Categoria -->
+        <div id="category-filters" class="mt-4 flex justify-center gap-3">
+          <button class="category-btn bg-white/20 rounded-full px-4 py-1 text-sm font-bold text-white shadow border-2 border-transparent hover:border-white focus:border-white focus:outline-none transition" data-category="all">Todos</button>
+          <button class="category-btn bg-white/20 rounded-full px-4 py-1 text-sm font-bold text-white shadow border-2 border-pink-200 hover:border-pink-400 focus:border-pink-400 focus:outline-none transition" data-category="portugues">Português</button>
+          <button class="category-btn bg-white/20 rounded-full px-4 py-1 text-sm font-bold text-white shadow border-2 border-teal-200 hover:border-teal-400 focus:border-teal-400 focus:outline-none transition" data-category="matematica">Matemática</button>
+          <button class="category-btn bg-white/20 rounded-full px-4 py-1 text-sm font-bold text-white shadow border-2 border-yellow-200 hover:border-yellow-400 focus:border-yellow-400 focus:outline-none transition" data-category="logica">Lógica</button>
+        </div>
       </div>
 
       <!-- Games Grid -->
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl w-full"
+        id="games-grid"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full mt-6"
       >
         <!-- Digitado -->
-        <a href="Digitado/index.html" class="game-card">
+        <a href="Digitado/index.html" class="game-card border-2 border-blue-200 hover:border-blue-400 shadow-lg" data-category="portugues logica">
           <div class="emoji">⌨️</div>
           <div class="title">Digitado</div>
           <div class="description">
-            Digite a palavra do emoji! Desafio de digitação com emojis
-            divertidos.
+            Teste sua digitação! Veja o emoji, digite a palavra correta e avance de fase. Diversão e agilidade com emojis!
           </div>
         </a>
 
         <!-- Maiúsculo vs Minúsculo -->
-        <a href="Maisculo%20vs%20Minusculo/index.html" class="game-card">
+        <a href="Maisculo%20vs%20Minusculo/index.html" class="game-card border-2 border-purple-200 hover:border-purple-400 shadow-lg" data-category="portugues">
           <div class="emoji">🔤</div>
           <div class="title">Maiúsculo vs Minúsculo</div>
           <div class="description">
-            Aprenda a diferença entre letras maiúsculas e minúsculas!
+            Descubra e combine letras maiúsculas e minúsculas, treinando a percepção visual e a alfabetização!
           </div>
         </a>
 
         <!-- Monster Typer I -->
-        <a href="monster_typer%20I/index.html" class="game-card">
+        <a href="monster_typer%20I/index.html" class="game-card border-2 border-green-200 hover:border-green-400 shadow-lg" data-category="portugues logica">
           <div class="emoji">👾</div>
           <div class="title">Monster Typer I</div>
           <div class="description">
-            Aprenda a digitar a letra inicial! Derrote os monstros digitando.
+            Digite a letra inicial das palavras para derrotar monstros! Pratique digitação e raciocínio rápido.
           </div>
         </a>
 
         <!-- Monster Typer II -->
-        <a href="monster_typer%20II/index.html" class="game-card">
+        <a href="monster_typer%20II/index.html" class="game-card border-2 border-pink-200 hover:border-pink-400 shadow-lg" data-category="portugues logica">
           <div class="emoji">👹</div>
           <div class="title">Monster Typer II</div>
           <div class="description">
-            Teclado de monstros! O desafio de digitação continua.
+            O desafio continua! Digite letras e palavras para vencer monstros ainda mais rápidos e espertos.
           </div>
         </a>
 
         <!-- Sílabas -->
-        <a href="syllables/index.html" class="game-card">
+        <a href="syllables/index.html" class="game-card border-2 border-yellow-200 hover:border-yellow-400 shadow-lg" data-category="portugues">
           <div class="emoji">✂️</div>
           <div class="title">Separando Sílabas</div>
           <div class="description">
-            Aprenda a separar sílabas com níveis de dificuldade crescente!
+            Separe as sílabas corretamente e avance nos níveis! Ideal para aprender a estrutura das palavras.
           </div>
         </a>
 
         <!-- Vogais -->
-        <a href="vowel/vowel.html" class="game-card">
+        <a href="vowel/vowel.html" class="game-card border-2 border-cyan-200 hover:border-cyan-400 shadow-lg" data-category="portugues">
           <div class="emoji">🔠</div>
           <div class="title">Complete com Vogais</div>
           <div class="description">
-            Complete a palavra escolhendo a vogal correta!
+            Complete as palavras escolhendo a vogal certa! Exercite ortografia e leitura de forma divertida.
           </div>
         </a>
         <!-- Acentos -->
-        <a href="Fabrica de Acentos/index.html" class="game-card">
+        <a href="Fabrica de Acentos/index.html" class="game-card border-2 border-red-200 hover:border-red-400 shadow-lg" data-category="portugues">
           <div class="emoji">🔠</div>
           <div class="title">Fábrica de Acentos</div>
           <div class="description">
-            Aprenda a usar acentos com o nosso jogo divertido!
+            Treine o uso correto dos acentos nas palavras! Aprenda brincando com desafios de ortografia.
           </div>
         </a>
         <!-- Organiza Tudo -->
-        <a href="Organiza Tudo/index.html" class="game-card">
+        <a href="Organiza Tudo/index.html" class="game-card border-2 border-orange-200 hover:border-orange-400 shadow-lg" data-category="portugues logica">
           <div class="emoji">🔠</div>
           <div class="title">Organiza Tudo</div>
           <div class="description">
-            Aprenda a organizar palavras com o nosso jogo divertido!
+            Organize as letras e forme palavras! Desenvolva lógica e vocabulário brincando.
           </div>
         </a>
 
         <!-- Matemática Pirata -->
-        <a href="Matematica Pirata/index.html" class="game-card">
-          <div class="emoji">🔠</div>
+        <a href="Matematica Pirata/index.html" class="game-card border-2 border-teal-200 hover:border-teal-400 shadow-lg" data-category="matematica logica">
+          <div class="emoji">🏴‍☠️</div>
           <div class="title">Matemática Pirata</div>
           <div class="description">
-            Aprenda matemática com o nosso jogo divertido!
+            Resolva desafios matemáticos em alto-mar! Some, subtraia e encontre o tesouro dos piratas.
           </div>
         </a>
         <!-- Caçadores de Coletivos -->
-        <a href="Caçadores de Coletivos/index.html" class="game-card">
-          <div class="emoji">🔠</div>
+        <a href="Caçadores de Coletivos/index.html" class="game-card border-2 border-lime-200 hover:border-lime-400 shadow-lg" data-category="portugues">
+          <div class="emoji">🕵️‍♂️</div>
           <div class="title">Caçadores de Coletivos</div>
           <div class="description">
-            Aprenda a identificar coletivos com o nosso jogo divertido!
+            Encontre o coletivo correto para cada grupo! Pratique gramática de forma interativa.
           </div>
         </a>
         <!-- Detetives da Ortografia -->
-        <a href="Detetives da Ortografia/index.html" class="game-card">
-          <div class="emoji">🔠</div>
+        <a href="Detetives da Ortografia/index.html" class="game-card border-2 border-fuchsia-200 hover:border-fuchsia-400 shadow-lg" data-category="portugues">
+          <div class="emoji">🕵️‍♀️</div>
           <div class="title">Detetives da Ortografia</div>
           <div class="description">
-            Aprenda a ortografia com o nosso jogo divertido!
+            Investigue e corrija palavras! Torne-se um detetive da ortografia e melhore sua escrita.
           </div>
-          <!-- Sinonimos -->
-        <a href="Sinonimos/index.html" class="game-card">
-          <div class="emoji">🔠</div>
+        </a>
+        <!-- Sinônimos -->
+        <a href="Sinonimos/index.html" class="game-card border-2 border-emerald-200 hover:border-emerald-400 shadow-lg" data-category="portugues">
+          <div class="emoji">🔁</div>
           <div class="title">Sinônimos</div>
           <div class="description">
-            Aprenda sinônimos com o nosso jogo divertido!
+            Descubra palavras com significados parecidos! Enriqueça seu vocabulário brincando com sinônimos.
           </div>
-          <!-- Galaxia dos Opostos -->
-        <a href="Galaxia dos Opostos/index.html" class="game-card">
-          <div class="emoji">🔠</div>
+        </a>
+        <!-- Galáxia dos Opostos -->
+        <a href="Galaxia dos Opostos/index.html" class="game-card border-2 border-indigo-200 hover:border-indigo-400 shadow-lg" data-category="portugues logica">
+          <div class="emoji">🌌</div>
           <div class="title">Galáxia dos Opostos</div>
           <div class="description">
-            Aprenda a identificar opostos com o nosso jogo divertido!
+            Encontre o oposto das palavras e viaje pela galáxia dos antônimos!
           </div>
         </a>
-        <!-- Fabrica de Rimas  -->
-        <a href="Fabrica de Rimas/index.html" class="game-card">
-          <div class="emoji">🔠</div>
+        <!-- Fábrica de Rimas  -->
+        <a href="Fábrica de Rimas/index.html" class="game-card border-2 border-rose-200 hover:border-rose-400 shadow-lg" data-category="portugues">
+          <div class="emoji">🎤</div>
           <div class="title">Fábrica de Rimas</div>
           <div class="description">
-            Aprenda a criar rimas com o nosso jogo divertido!
+            Crie rimas divertidas! Complete versos e desenvolva criatividade com as palavras.
           </div>
         </a>
-          <!-- Escola de Magia VSA   -->
-        <a href="Escola de Magia VSA/index.html" class="game-card">
-          <div class="emoji">🔠</div>
+        <!-- Escola de Magia VSA   -->
+        <a href="Escola de Magia VSA/index.html" class="game-card border-2 border-violet-200 hover:border-violet-400 shadow-lg" data-category="portugues">
+          <div class="emoji">🧙‍♂️</div>
           <div class="title">Escola de Magia VSA</div>
           <div class="description">
-            Aprenda classes gramaticais com o nosso jogo divertido!
+            Aprenda sobre classes gramaticais com magia! Descubra substantivos, verbos e adjetivos de forma encantada.
           </div>
         </a>
 
@@ -217,6 +226,28 @@
       <div class="mt-12 text-center text-white opacity-70 text-sm">
         <p>© 2026 Hello Yotta Games — Aprendendo com diversão! 🚀</p>
       </div>
+
+    <!-- Script de Filtro de Categorias -->
+    <script>
+      const filterButtons = document.querySelectorAll('.category-btn');
+      const cards = document.querySelectorAll('.game-card');
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const cat = btn.getAttribute('data-category');
+          filterButtons.forEach(b => b.classList.remove('ring', 'ring-4', 'ring-white'));
+          btn.classList.add('ring', 'ring-4', 'ring-white');
+          cards.forEach(card => {
+            if (cat === 'all' || card.getAttribute('data-category').includes(cat)) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+      // Ativar filtro "Todos" por padrão
+      document.querySelector('.category-btn[data-category="all"]').click();
+    </script>
     </div>
   </body>
 </html>
