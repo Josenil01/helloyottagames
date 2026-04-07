@@ -4,182 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trem da Soma e Subtracao</title>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Fredoka:wght@500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet" />
     <style>
-      :root { --ink:#1f2937; --ok:#166534; --bad:#b91c1c; }
       * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        min-height: 100vh;
-        font-family: "Fredoka", sans-serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at 8% 8%, #ffffffaa, transparent 34%),
-          radial-gradient(circle at 88% 4%, #93c5fd66, transparent 35%),
-          linear-gradient(135deg, #fde68a, #86efac);
-      }
-      .home { position: fixed; top: 14px; left: 14px; text-decoration: none; background: #fffffff0; color: #111827; padding: 10px 14px; border-radius: 999px; font-weight: 700; }
-      .wrap { max-width: 900px; margin: 0 auto; padding: 68px 16px 24px; }
-      .card { background: #ffffffd9; border: 3px solid #fff; border-radius: 24px; padding: 18px; box-shadow: 0 14px 34px #0000001f; }
-      h1 { margin: 0; text-align: center; font: 800 clamp(1.9rem, 6vw, 3.1rem) "Baloo 2", cursive; }
-      .subtitle { text-align: center; margin: 6px 0 16px; font-weight: 700; }
-      .btn { border: none; border-radius: 999px; padding: 10px 16px; font-weight: 700; cursor: pointer; }
-      .primary { background: #2563eb; color: #fff; }
-      .phase-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
-      .phase-btn { border: 2px solid #cbd5e1; border-radius: 14px; padding: 10px; background: #f8fafc; font-weight: 700; }
-      .phase-btn[disabled] { opacity: .45; }
-      .hud { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 12px; }
-      .chip { background: #1f2937; color: #fff; padding: 6px 12px; border-radius: 999px; font-weight: 700; }
-      .question { text-align: center; font: 800 clamp(2rem, 7vw, 3.7rem) "Baloo 2", cursive; margin: 12px 0; }
-      .choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 10px; }
-      .choice { border: none; border-radius: 12px; padding: 12px; font: 800 1.3rem "Baloo 2", cursive; color: #fff; background: linear-gradient(145deg, #60a5fa, #2563eb); cursor: pointer; }
-      .feedback { min-height: 28px; text-align: center; margin-top: 10px; font-weight: 700; }
-      .ok { color: var(--ok); }
-      .bad { color: var(--bad); }
+      body { margin: 0; min-height: 100vh; font-family: "Baloo 2", cursive; background: linear-gradient(140deg, #fde68a, #86efac); color: #1f2937; }
+      .home { position: fixed; top: 12px; left: 12px; text-decoration: none; background: #fffffff0; padding: 8px 12px; border-radius: 999px; font-size: 1.4rem; }
+      .wrap { max-width: 900px; margin: 0 auto; padding: 64px 16px 20px; }
+      .card { background: #ffffffde; border-radius: 24px; border: 3px solid #fff; padding: 16px; box-shadow: 0 14px 30px #00000024; }
       .center { text-align: center; }
-      .starline { font-size: 1.1rem; }
-      .tiny { font-size: .9rem; opacity: .85; }
+      .big { font-size: clamp(2rem, 7vw, 3.6rem); }
+      .mid { font-size: clamp(1.2rem, 4vw, 2rem); }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 10px; }
+      .lvl, .opt { border: none; border-radius: 14px; padding: 12px 8px; font-family: inherit; font-size: 1.5rem; cursor: pointer; }
+      .lvl { background: #f1f5f9; border: 2px solid #cbd5e1; }
+      .lvl[disabled] { opacity: .35; }
+      .opt { color: #fff; background: linear-gradient(145deg, #60a5fa, #2563eb); box-shadow: 0 8px 16px #1d4ed855; }
+      .hud { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+      .chip { background: #1f2937; color: #fff; border-radius: 999px; padding: 4px 10px; font-size: 1.1rem; }
+      .fb { min-height: 30px; text-align: center; font-size: 1.4rem; }
     </style>
   </head>
   <body>
-    <a class="home" href="../index.html">Inicio</a>
-    <main class="wrap">
-      <section id="app" class="card"></section>
-    </main>
-
+    <a class="home" href="../index.html">🏠</a>
+    <main class="wrap"><section id="app" class="card"></section></main>
     <script>
-      const LEVELS = [
-        { a: 8, op: '+', b: '?', res: 13, answer: 5 },
-        { a: 14, op: '-', b: '?', res: 9, answer: 5 },
-        { a: '?', op: '+', b: 7, res: 15, answer: 8 },
-        { a: 20, op: '-', b: 6, res: '?', answer: 14 },
-        { a: 18, op: '+', b: '?', res: 25, answer: 7 },
-        { a: '?', op: '-', b: 4, res: 11, answer: 15 },
-        { a: 33, op: '-', b: '?', res: 21, answer: 12 },
-        { a: 19, op: '+', b: '?', res: 30, answer: 11 }
-      ];
-
-      const STORAGE = 'train-math-progress-v1';
+      const LEVELS = [[1, '+', 1], [2, '+', 1], [3, '+', 1], [4, '+', 1], [5, '+', 2], [6, '+', 3], [8, '-', 2], [9, '-', 3], [7, '+', 5], [12, '-', 4], [9, '+', 8], [15, '-', 6]];
+      const SKEY = 'g1-train-v2';
       const app = document.getElementById('app');
-      let state = 'cover';
-      let current = 0;
-      let attempts = 0;
-      let score = 0;
-      let progress = loadProgress();
+      let state = 'cover', i = 0, tries = 0, score = 0;
+      const pg = load();
 
-      function loadProgress() {
-        const base = { unlocked: 1, stars: Array(LEVELS.length).fill(0) };
+      function load() {
+        const b = { unlocked: 1, stars: Array(LEVELS.length).fill(0) };
         try {
-          const data = JSON.parse(localStorage.getItem(STORAGE));
-          if (!data) return base;
-          return {
-            unlocked: Math.min(LEVELS.length, Math.max(1, Number(data.unlocked || 1))),
-            stars: Array.isArray(data.stars) ? data.stars.slice(0, LEVELS.length).map((v) => Number(v || 0)) : base.stars
-          };
-        } catch {
-          return base;
-        }
+          const d = JSON.parse(localStorage.getItem(SKEY));
+          if (!d) return b;
+          return { unlocked: Math.min(LEVELS.length, Math.max(1, Number(d.unlocked || 1))), stars: Array.isArray(d.stars) ? d.stars.slice(0, LEVELS.length).map((x) => Number(x || 0)) : b.stars };
+        } catch { return b; }
       }
+      function save() { localStorage.setItem(SKEY, JSON.stringify(pg)); }
+      function medal() { const t = pg.stars.reduce((a, b) => a + b, 0), m = LEVELS.length * 3; return t >= m * 0.85 ? '🥇' : t >= m * 0.6 ? '🥈' : '🥉'; }
+      function mkOptions(ans) { const s = new Set([ans]); while (s.size < 3) s.add(Math.max(0, ans + (Math.floor(Math.random() * 7) - 3))); return [...s].sort(() => Math.random() - 0.5); }
+      function earnedByTry(n) { return n === 1 ? 3 : n === 2 ? 2 : 1; }
 
-      function saveProgress() { localStorage.setItem(STORAGE, JSON.stringify(progress)); }
-      function medalFromStars(total) {
-        const max = LEVELS.length * 3;
-        if (total >= max * 0.85) return 'Ouro';
-        if (total >= max * 0.6) return 'Prata';
-        return 'Bronze';
+      function render() { if (state === 'cover') return cover(); if (state === 'select') return select(); play(); }
+      function cover() {
+        app.innerHTML = `<p class="center big">🚂➕➖</p><p class="center big">${medal()}</p><p class="center"><button id="go" class="lvl" style="font-size:2.2rem">▶️</button></p>`;
+        document.getElementById('go').onclick = () => { state = 'select'; render(); };
       }
-
-      function options(answer) {
-        const set = new Set([answer]);
-        while (set.size < 4) set.add(Math.max(0, answer + (Math.floor(Math.random() * 11) - 5)));
-        return [...set].sort(() => Math.random() - 0.5);
-      }
-
-      function render() {
-        if (state === 'cover') return renderCover();
-        if (state === 'select') return renderSelect();
-        if (state === 'play') return renderPlay();
-      }
-
-      function renderCover() {
-        app.innerHTML = `
-          <h1>Trem da Soma e Subtracao</h1>
-          <p class="subtitle">Resolva contas e avance pelos trilhos.</p>
-          <p class="center starline">Medalha atual: <strong>${medalFromStars(progress.stars.reduce((a, b) => a + b, 0))}</strong></p>
-          <p class="center"><button id="goSelect" class="btn primary">Jogar</button></p>
-        `;
-        document.getElementById('goSelect').onclick = () => { state = 'select'; render(); };
-      }
-
-      function renderSelect() {
-        const totalStars = progress.stars.reduce((a, b) => a + b, 0);
-        app.innerHTML = `
-          <h1>Selecionar Fase</h1>
-          <p class="subtitle">Desbloqueie as fases acertando no menor numero de tentativas.</p>
-          <p class="center starline">Estrelas: <strong>${totalStars}/${LEVELS.length * 3}</strong> | Medalha: <strong>${medalFromStars(totalStars)}</strong></p>
-          <div class="phase-grid">
-            ${LEVELS.map((_, i) => `
-              <button class="phase-btn" data-i="${i}" ${i + 1 > progress.unlocked ? 'disabled' : ''}>
-                Fase ${i + 1}<br><span class="tiny">${'⭐'.repeat(progress.stars[i] || 0) || '---'}</span>
-              </button>
-            `).join('')}
-          </div>
-          <p class="center" style="margin-top:12px"><button id="back" class="btn">Voltar</button></p>
-        `;
-        app.querySelectorAll('.phase-btn').forEach((btn) => {
-          btn.onclick = () => {
-            current = Number(btn.dataset.i);
-            attempts = 0;
-            state = 'play';
-            render();
-          };
-        });
+      function select() {
+        app.innerHTML = `<p class="center mid">🚂 ⭐ ${pg.stars.reduce((a,b)=>a+b,0)}/${LEVELS.length*3}</p><div class="grid">${LEVELS.map((_, k) => `<button class="lvl" data-k="${k}" ${k + 1 > pg.unlocked ? 'disabled' : ''}>${k + 1}<br>${'⭐'.repeat(pg.stars[k] || 0) || '▫️'}</button>`).join('')}</div><p class="center" style="margin-top:10px"><button id="back" class="lvl">◀️</button></p>`;
+        app.querySelectorAll('.lvl[data-k]').forEach((b) => b.onclick = () => { i = Number(b.dataset.k); tries = 0; state = 'play'; render(); });
         document.getElementById('back').onclick = () => { state = 'cover'; render(); };
       }
-
-      function renderPlay() {
-        const level = LEVELS[current];
-        app.innerHTML = `
-          <h1>Fase ${current + 1}</h1>
-          <div class="hud">
-            <span class="chip">Pontuacao: ${score}</span>
-            <span class="chip">Tentativas: ${attempts}</span>
-            <span class="chip">Estrelas na fase: ${progress.stars[current] || 0}</span>
-          </div>
-          <div class="question">${level.a} ${level.op} ${level.b} = ${level.res}</div>
-          <div class="choices">${options(level.answer).map((v) => `<button class="choice" data-v="${v}">${v}</button>`).join('')}</div>
-          <div id="feedback" class="feedback"></div>
-          <p class="center" style="margin-top:10px"><button id="menu" class="btn">Menu de fases</button></p>
-        `;
-
-        app.querySelectorAll('.choice').forEach((btn) => {
-          btn.onclick = () => {
-            attempts += 1;
-            const picked = Number(btn.dataset.v);
-            const fb = document.getElementById('feedback');
-            if (picked === level.answer) {
-              const earned = attempts === 1 ? 3 : attempts === 2 ? 2 : 1;
-              progress.stars[current] = Math.max(progress.stars[current] || 0, earned);
-              progress.unlocked = Math.max(progress.unlocked, Math.min(LEVELS.length, current + 2));
-              saveProgress();
-              score += 10 + earned;
-              fb.className = 'feedback ok';
-              fb.textContent = `Acertou! +${10 + earned} pontos e ${earned} estrela(s).`;
-              setTimeout(() => { state = 'select'; render(); }, 850);
-            } else {
-              score = Math.max(0, score - 1);
-              fb.className = 'feedback bad';
-              fb.textContent = 'Nao foi dessa vez. Tente outra resposta.';
-            }
-            const hud = app.querySelector('.hud');
-            hud.children[0].textContent = `Pontuacao: ${score}`;
-            hud.children[1].textContent = `Tentativas: ${attempts}`;
-          };
+      function play() {
+        const [a, op, b] = LEVELS[i], ans = op === '+' ? a + b : a - b;
+        app.innerHTML = `<div class="hud"><span class="chip">${i + 1}/${LEVELS.length}</span><span class="chip">⭐ ${pg.stars[i] || 0}</span><span class="chip">🏅 ${score}</span></div><p class="center big">${a} ${op} ${b} = ?</p><div class="grid">${mkOptions(ans).map((n) => `<button class="opt" data-n="${n}">${n}</button>`).join('')}</div><div id="fb" class="fb"></div><p class="center" style="margin-top:10px"><button id="menu" class="lvl">📚</button></p>`;
+        app.querySelectorAll('.opt').forEach((btn) => btn.onclick = () => {
+          tries += 1;
+          const n = Number(btn.dataset.n), fb = document.getElementById('fb');
+          if (n === ans) {
+            const e = earnedByTry(tries);
+            pg.stars[i] = Math.max(pg.stars[i], e);
+            pg.unlocked = Math.max(pg.unlocked, Math.min(LEVELS.length, i + 2));
+            save();
+            score += 8 + e;
+            fb.textContent = '✅ ' + '⭐'.repeat(e);
+            setTimeout(() => { state = 'select'; render(); }, 600);
+          } else fb.textContent = '❌';
         });
-
         document.getElementById('menu').onclick = () => { state = 'select'; render(); };
       }
-
       render();
     </script>
   </body>

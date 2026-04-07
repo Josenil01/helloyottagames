@@ -4,238 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Defesa do Castelo Matematico</title>
-    <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet" />
     <style>
-      :root { --ok:#15803d; --bad:#b91c1c; }
       * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        min-height: 100vh;
-        color: #0f172a;
-        font-family: "Nunito", sans-serif;
-        background: radial-gradient(circle at 90% 10%, #fde04766, transparent 35%), linear-gradient(180deg, #dbeafe, #93c5fd);
-      }
-      .home { position: fixed; top: 14px; left: 14px; text-decoration: none; background: #ffffffea; color: #0f172a; padding: 10px 14px; border-radius: 999px; font-weight: 800; }
-      .wrap { max-width: 900px; margin: 0 auto; padding: 68px 16px 24px; }
-      .card { background: #ffffffd9; border: 3px solid #fff; border-radius: 20px; padding: 16px; box-shadow: 0 12px 30px #0000001f; }
-      h1 { margin: 0; text-align: center; font-family: "Titan One", cursive; font-size: clamp(1.9rem, 6vw, 3.1rem); }
-      .subtitle,.center { text-align: center; }
-      .btn { border: none; border-radius: 999px; padding: 10px 16px; font-weight: 800; cursor: pointer; }
-      .primary { background: #0284c7; color: #fff; }
-      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
-      .phase { border: 2px solid #cbd5e1; border-radius: 12px; background: #f8fafc; font-weight: 800; padding: 10px; }
-      .phase[disabled] { opacity: .45; }
-      .hud { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
-      .chip { background: #334155; color: white; border-radius: 999px; padding: 6px 12px; font-weight: 900; }
-      .timer { margin: 10px auto; width: min(420px, 100%); height: 14px; border-radius: 999px; overflow: hidden; background: #cbd5e1; }
+      body { margin: 0; min-height: 100vh; font-family: "Baloo 2", cursive; color: #0f172a; background: linear-gradient(180deg, #dbeafe, #93c5fd); }
+      .home { position: fixed; top: 12px; left: 12px; text-decoration: none; background: #ffffffec; color: #111827; padding: 8px 12px; border-radius: 999px; font-size: 1.4rem; }
+      .wrap { max-width: 900px; margin: 0 auto; padding: 64px 16px 20px; }
+      .card { background: #ffffffde; border-radius: 24px; border: 3px solid #fff; padding: 16px; box-shadow: 0 14px 30px #00000024; }
+      .center { text-align: center; }
+      .big { font-size: clamp(2rem, 7vw, 3.6rem); }
+      .mid { font-size: clamp(1.2rem, 4vw, 2rem); }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 10px; }
+      .lvl, .opt { border: none; border-radius: 14px; padding: 12px 8px; font-family: inherit; font-size: 1.5rem; cursor: pointer; }
+      .lvl { background: #f1f5f9; border: 2px solid #cbd5e1; }
+      .lvl[disabled] { opacity: .35; }
+      .opt { color: #fff; background: linear-gradient(145deg, #f97316, #ea580c); box-shadow: 0 8px 16px #ea580c55; }
+      .hud { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+      .chip { background: #334155; color: #fff; border-radius: 999px; padding: 4px 10px; font-size: 1.1rem; }
+      .fb { min-height: 30px; text-align: center; font-size: 1.4rem; }
+      .timer { margin: 8px auto 12px; width: min(420px, 100%); height: 14px; border-radius: 999px; overflow: hidden; background: #cbd5e1; }
       .fill { height: 100%; width: 100%; background: linear-gradient(90deg, #22c55e, #f59e0b, #ef4444); }
-      .question { text-align: center; font-size: clamp(1.8rem, 8vw, 3.4rem); font-weight: 900; }
-      .choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
-      .choice { border: none; border-radius: 12px; padding: 12px 8px; background: linear-gradient(145deg, #f97316, #ea580c); color: #fff; font-size: 1.2rem; font-weight: 900; cursor: pointer; }
-      .feedback { min-height: 30px; text-align: center; margin-top: 10px; font-weight: 800; }
-      .ok { color: var(--ok); }
-      .bad { color: var(--bad); }
-      .tiny { font-size: .9rem; opacity: .9; }
     </style>
   </head>
   <body>
-    <a class="home" href="../index.html">Inicio</a>
+    <a class="home" href="../index.html">🏠</a>
     <main class="wrap"><section id="app" class="card"></section></main>
-
     <script>
-      const LEVELS = [
-        { maxA: 15, rounds: 3, time: 120 },
-        { maxA: 20, rounds: 4, time: 110 },
-        { maxA: 25, rounds: 4, time: 100 },
-        { maxA: 30, rounds: 5, time: 95 },
-        { maxA: 35, rounds: 5, time: 90 },
-        { maxA: 40, rounds: 6, time: 85 },
-        { maxA: 50, rounds: 6, time: 80 },
-        { maxA: 60, rounds: 7, time: 75 }
-      ];
-      const STORAGE = 'castelo-progress-v1';
+      const LEVELS = [[2, '+', 1], [3, '+', 2], [5, '+', 1], [6, '+', 2], [7, '+', 2], [8, '-', 3], [9, '-', 4], [10, '-', 5], [8, '+', 5], [14, '-', 6], [9, '+', 7], [16, '-', 7]];
+      const SPEED = [90, 90, 85, 85, 80, 80, 75, 75, 70, 70, 65, 65];
+      const SKEY = 'g1-castelo-v2';
       const app = document.getElementById('app');
-      let state = 'cover';
-      let levelIndex = 0;
-      let progress = loadProgress();
-      let score = 0;
+      let state = 'cover', i = 0, tries = 0, score = 0, timer = 100, tid = null;
+      const pg = load();
 
-      let round = 1;
-      let lives = 3;
-      let timer = 100;
-      let timerId = null;
-      let currentQ = null;
-      let misses = 0;
-
-      function loadProgress() {
-        const base = { unlocked: 1, stars: Array(LEVELS.length).fill(0) };
+      function load() {
+        const b = { unlocked: 1, stars: Array(LEVELS.length).fill(0) };
         try {
-          const data = JSON.parse(localStorage.getItem(STORAGE));
-          if (!data) return base;
-          return { unlocked: Math.min(LEVELS.length, Math.max(1, Number(data.unlocked || 1))), stars: Array.isArray(data.stars) ? data.stars.slice(0, LEVELS.length).map((v) => Number(v || 0)) : base.stars };
-        } catch { return base; }
+          const d = JSON.parse(localStorage.getItem(SKEY));
+          if (!d) return b;
+          return { unlocked: Math.min(LEVELS.length, Math.max(1, Number(d.unlocked || 1))), stars: Array.isArray(d.stars) ? d.stars.slice(0, LEVELS.length).map((x) => Number(x || 0)) : b.stars };
+        } catch { return b; }
       }
-      function saveProgress() { localStorage.setItem(STORAGE, JSON.stringify(progress)); }
-      function medal(total) {
-        const max = LEVELS.length * 3;
-        if (total >= max * 0.85) return 'Ouro';
-        if (total >= max * 0.6) return 'Prata';
-        return 'Bronze';
-      }
+      function save() { localStorage.setItem(SKEY, JSON.stringify(pg)); }
+      function stopTimer() { if (tid) clearInterval(tid); }
+      function medal() { const t = pg.stars.reduce((a, b) => a + b, 0), m = LEVELS.length * 3; return t >= m * 0.85 ? '🥇' : t >= m * 0.6 ? '🥈' : '🥉'; }
+      function mkOptions(ans) { const s = new Set([ans]); while (s.size < 3) s.add(Math.max(0, ans + (Math.floor(Math.random() * 7) - 3))); return [...s].sort(() => Math.random() - 0.5); }
+      function earnedByTry(n) { return n === 1 ? 3 : n === 2 ? 2 : 1; }
 
-      function makeQuestion(maxA) {
-        const op = Math.random() < 0.5 ? '+' : '-';
-        let a = 0; let b = 0;
-        if (op === '+') {
-          a = Math.floor(Math.random() * maxA) + 1;
-          b = Math.floor(Math.random() * maxA) + 1;
-        } else {
-          a = Math.floor(Math.random() * maxA) + 5;
-          b = Math.floor(Math.random() * a) + 1;
-        }
-        return { a, b, op, answer: op === '+' ? a + b : a - b };
-      }
-
-      function options(answer) {
-        const set = new Set([answer]);
-        while (set.size < 4) set.add(Math.max(0, answer + (Math.floor(Math.random() * 13) - 6)));
-        return [...set].sort(() => Math.random() - 0.5);
-      }
-
-      function render() {
-        if (state === 'cover') return cover();
-        if (state === 'select') return select();
-        return play();
-      }
-
+      function render() { if (state === 'cover') return cover(); if (state === 'select') return select(); play(); }
       function cover() {
-        const total = progress.stars.reduce((a, b) => a + b, 0);
-        app.innerHTML = `
-          <h1>Defesa do Castelo Matematico</h1>
-          <p class="subtitle">Resolva contas rapidas para proteger o castelo.</p>
-          <p class="center">Medalha atual: <strong>${medal(total)}</strong></p>
-          <p class="center"><button id="start" class="btn primary">Defender</button></p>
-        `;
-        document.getElementById('start').onclick = () => { state = 'select'; render(); };
+        app.innerHTML = `<p class="center big">🏰⚔️➕➖</p><p class="center big">${medal()}</p><p class="center"><button id="go" class="lvl" style="font-size:2.2rem">▶️</button></p>`;
+        document.getElementById('go').onclick = () => { state = 'select'; render(); };
       }
-
       function select() {
-        const total = progress.stars.reduce((a, b) => a + b, 0);
-        app.innerHTML = `
-          <h1>Escolha a Onda</h1>
-          <p class="subtitle">Conclua uma onda para liberar a proxima.</p>
-          <p class="center tiny">Estrelas: <strong>${total}/${LEVELS.length * 3}</strong> | Medalha: <strong>${medal(total)}</strong></p>
-          <div class="grid">${LEVELS.map((_, i) => `<button class="phase" data-i="${i}" ${i + 1 > progress.unlocked ? 'disabled' : ''}>Onda ${i + 1}<br>${'⭐'.repeat(progress.stars[i] || 0) || '---'}</button>`).join('')}</div>
-          <p class="center" style="margin-top:12px"><button id="back" class="btn">Voltar</button></p>
-        `;
-        app.querySelectorAll('.phase').forEach((btn) => btn.onclick = () => {
-          levelIndex = Number(btn.dataset.i);
-          round = 1;
-          lives = 3;
-          misses = 0;
-          state = 'play';
-          render();
-        });
+        stopTimer();
+        app.innerHTML = `<p class="center mid">🏰 ⭐ ${pg.stars.reduce((a,b)=>a+b,0)}/${LEVELS.length*3}</p><div class="grid">${LEVELS.map((_, k) => `<button class="lvl" data-k="${k}" ${k + 1 > pg.unlocked ? 'disabled' : ''}>${k + 1}<br>${'⭐'.repeat(pg.stars[k] || 0) || '▫️'}</button>`).join('')}</div><p class="center" style="margin-top:10px"><button id="back" class="lvl">◀️</button></p>`;
+        app.querySelectorAll('.lvl[data-k]').forEach((b) => b.onclick = () => { i = Number(b.dataset.k); tries = 0; state = 'play'; render(); });
         document.getElementById('back').onclick = () => { state = 'cover'; render(); };
       }
-
       function play() {
-        const lvl = LEVELS[levelIndex];
-        app.innerHTML = `
-          <h1>Onda ${levelIndex + 1}</h1>
-          <div class="hud">
-            <span class="chip" id="cRound">Rodada ${round}/${lvl.rounds}</span>
-            <span class="chip" id="cLives">Vidas: ${lives}</span>
-            <span class="chip" id="cScore">Pontos: ${score}</span>
-          </div>
-          <div class="timer"><div id="fill" class="fill"></div></div>
-          <div id="q" class="question"></div>
-          <div id="choices" class="choices"></div>
-          <div id="feedback" class="feedback"></div>
-          <p class="center" style="margin-top:10px"><button id="menu" class="btn">Menu de ondas</button></p>
-        `;
+        const [a, op, b] = LEVELS[i], ans = op === '+' ? a + b : a - b;
+        timer = 100;
+        app.innerHTML = `<div class="hud"><span class="chip">${i + 1}/${LEVELS.length}</span><span class="chip">⭐ ${pg.stars[i] || 0}</span><span class="chip">🏅 ${score}</span></div><div class="timer"><div id="fill" class="fill"></div></div><p class="center big">🏰 ${a} ${op} ${b} = ?</p><div class="grid">${mkOptions(ans).map((n) => `<button class="opt" data-n="${n}">${n}</button>`).join('')}</div><div id="fb" class="fb"></div><p class="center" style="margin-top:10px"><button id="menu" class="lvl">📚</button></p>`;
 
-        const qEl = document.getElementById('q');
-        const choicesEl = document.getElementById('choices');
-        const feedback = document.getElementById('feedback');
         const fill = document.getElementById('fill');
-
-        function drawQuestion() {
-          if (lives <= 0) return finish(false);
-          if (round > lvl.rounds) return finish(true);
-          currentQ = makeQuestion(lvl.maxA);
-          qEl.textContent = `${currentQ.a} ${currentQ.op} ${currentQ.b}`;
-          choicesEl.innerHTML = '';
-          options(currentQ.answer).forEach((v) => {
-            const b = document.createElement('button');
-            b.className = 'choice';
-            b.textContent = v;
-            b.onclick = () => choose(v);
-            choicesEl.appendChild(b);
-          });
-          document.getElementById('cRound').textContent = `Rodada ${round}/${lvl.rounds}`;
-          startTimer(lvl.time);
-        }
-
-        function startTimer(speed) {
-          clearInterval(timerId);
-          timer = 100;
-          fill.style.width = '100%';
-          timerId = setInterval(() => {
-            timer -= 1;
-            fill.style.width = `${timer}%`;
-            if (timer <= 0) {
-              clearInterval(timerId);
-              lose('Tempo esgotado!');
-            }
-          }, speed);
-        }
-
-        function choose(v) {
-          if (!currentQ) return;
-          clearInterval(timerId);
-          if (v === currentQ.answer) {
-            score += 8 + Math.floor(timer / 15);
-            round += 1;
-            feedback.className = 'feedback ok';
-            feedback.textContent = 'Defesa perfeita!';
-            document.getElementById('cScore').textContent = `Pontos: ${score}`;
-            setTimeout(drawQuestion, 500);
-          } else {
-            lose('Resposta errada!');
+        stopTimer();
+        tid = setInterval(() => {
+          timer -= 1;
+          fill.style.width = timer + '%';
+          if (timer <= 0) {
+            stopTimer();
+            document.getElementById('fb').textContent = '⏰';
+            setTimeout(() => { state = 'select'; render(); }, 600);
           }
-        }
+        }, SPEED[i]);
 
-        function lose(msg) {
-          lives -= 1;
-          misses += 1;
-          feedback.className = 'feedback bad';
-          feedback.textContent = msg;
-          document.getElementById('cLives').textContent = `Vidas: ${lives}`;
-          setTimeout(drawQuestion, 550);
-        }
-
-        function finish(win) {
-          clearInterval(timerId);
-          choicesEl.innerHTML = '';
-          if (win) {
-            const earned = misses === 0 ? 3 : misses <= 2 ? 2 : 1;
-            progress.stars[levelIndex] = Math.max(progress.stars[levelIndex], earned);
-            progress.unlocked = Math.max(progress.unlocked, Math.min(LEVELS.length, levelIndex + 2));
-            saveProgress();
-            feedback.className = 'feedback ok';
-            feedback.textContent = `O castelo sobreviveu! ${earned} estrela(s).`;
-          } else {
-            feedback.className = 'feedback bad';
-            feedback.textContent = 'O castelo caiu. Tente novamente.';
-          }
-          qEl.textContent = win ? 'Vitoria!' : 'Derrota';
-        }
-
-        document.getElementById('menu').onclick = () => { clearInterval(timerId); state = 'select'; render(); };
-        drawQuestion();
+        app.querySelectorAll('.opt').forEach((btn) => btn.onclick = () => {
+          tries += 1;
+          const n = Number(btn.dataset.n), fb = document.getElementById('fb');
+          if (n === ans) {
+            stopTimer();
+            const e = earnedByTry(tries);
+            pg.stars[i] = Math.max(pg.stars[i], e);
+            pg.unlocked = Math.max(pg.unlocked, Math.min(LEVELS.length, i + 2));
+            save();
+            score += 8 + e;
+            fb.textContent = '✅ ' + '⭐'.repeat(e);
+            setTimeout(() => { state = 'select'; render(); }, 600);
+          } else fb.textContent = '❌';
+        });
+        document.getElementById('menu').onclick = () => { stopTimer(); state = 'select'; render(); };
       }
-
       render();
     </script>
   </body>

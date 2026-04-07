@@ -4,186 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Laboratorio das Pocoes</title>
-    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet" />
     <style>
-      :root { --ok:#86efac; --bad:#fda4af; }
       * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        min-height: 100vh;
-        color: #f8fafc;
-        font-family: "Nunito", sans-serif;
-        background: radial-gradient(circle at 10% 20%, #22d3ee44, transparent 35%), radial-gradient(circle at 85% 15%, #f472b644, transparent 35%), linear-gradient(140deg, #111827, #312e81);
-      }
-      .home { position: fixed; top: 14px; left: 14px; text-decoration: none; background: #ffffffee; color: #111827; border-radius: 999px; padding: 10px 14px; font-weight: 800; }
-      main { max-width: 900px; margin: 0 auto; padding: 68px 16px 24px; }
-      .card { background: #ffffff14; border: 2px solid #ffffff2b; border-radius: 20px; padding: 18px; }
-      h1 { margin: 0; text-align: center; font-family: "Chewy", cursive; font-size: clamp(1.9rem, 6vw, 3rem); }
-      .subtitle, .center { text-align: center; }
-      .btn { border: none; border-radius: 999px; padding: 10px 16px; font-weight: 800; cursor: pointer; }
-      .primary { background: #22d3ee; color: #062336; }
-      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
-      .phase { border: 2px solid #c4b5fd66; border-radius: 12px; padding: 10px; background: #0f172a88; color: white; font-weight: 800; }
-      .phase[disabled] { opacity: .42; }
-      .hud { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
-      .chip { background: #02061780; border-radius: 999px; padding: 6px 12px; font-weight: 800; }
-      .beaker { margin: 12px auto; width: min(420px, 100%); background: #0f172a; border: 4px solid #e2e8f0; border-radius: 0 0 30px 30px; overflow: hidden; }
-      .liquid { height: 120px; display: flex; align-items: center; justify-content: center; background: linear-gradient(180deg, #22d3ee, #0ea5e9); font-size: clamp(1.2rem, 4vw, 1.8rem); font-weight: 900; }
-      .target { text-align: center; font-weight: 800; }
-      .actions { margin-top: 12px; display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
-      .act { border: none; border-radius: 12px; padding: 11px 8px; font-size: 1rem; font-weight: 900; color: #031525; cursor: pointer; background: linear-gradient(145deg, #67e8f9, #22d3ee); }
-      .finish { background: linear-gradient(145deg, #bef264, #84cc16); }
-      .feedback { min-height: 28px; text-align: center; margin-top: 10px; font-weight: 800; }
-      .ok { color: var(--ok); }
-      .bad { color: var(--bad); }
-      .tiny { font-size: .9rem; opacity: .9; }
+      body { margin: 0; min-height: 100vh; font-family: "Baloo 2", cursive; color: #f8fafc; background: linear-gradient(145deg, #111827, #312e81); }
+      .home { position: fixed; top: 12px; left: 12px; text-decoration: none; background: #ffffffec; color: #111827; padding: 8px 12px; border-radius: 999px; font-size: 1.4rem; }
+      .wrap { max-width: 900px; margin: 0 auto; padding: 64px 16px 20px; }
+      .card { background: #ffffff12; border: 2px solid #ffffff2b; border-radius: 24px; padding: 16px; }
+      .center { text-align: center; }
+      .big { font-size: clamp(2rem, 7vw, 3.6rem); }
+      .mid { font-size: clamp(1.2rem, 4vw, 2rem); }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 10px; }
+      .lvl, .opt { border: none; border-radius: 14px; padding: 12px 8px; font-family: inherit; font-size: 1.5rem; cursor: pointer; }
+      .lvl { background: #0f172a; color: #fff; border: 2px solid #c4b5fd66; }
+      .lvl[disabled] { opacity: .35; }
+      .opt { color: #031525; background: linear-gradient(145deg, #67e8f9, #22d3ee); box-shadow: 0 8px 16px #22d3ee55; }
+      .hud { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+      .chip { background: #02061780; color: #fff; border-radius: 999px; padding: 4px 10px; font-size: 1.1rem; }
+      .fb { min-height: 30px; text-align: center; font-size: 1.4rem; }
     </style>
   </head>
   <body>
-    <a class="home" href="../index.html">Inicio</a>
-    <main><section id="app" class="card"></section></main>
-
+    <a class="home" href="../index.html">🏠</a>
+    <main class="wrap"><section id="app" class="card"></section></main>
     <script>
-      const LEVELS = [
-        { start: 5, target: 14, ideal: 1 }, { start: 17, target: 9, ideal: 1 }, { start: 8, target: 20, ideal: 2 },
-        { start: 23, target: 16, ideal: 1 }, { start: 31, target: 25, ideal: 1 }, { start: 12, target: 28, ideal: 2 },
-        { start: 40, target: 19, ideal: 2 }, { start: 22, target: 37, ideal: 2 }
-      ];
-      const STORAGE = 'pocoes-progress-v1';
+      const LEVELS = [[2, 1], [3, 1], [4, 2], [5, 2], [6, 3], [7, 3], [8, 4], [9, 4], [10, 5], [12, 6], [14, 7], [16, 8]];
+      const SKEY = 'g1-pocoes-v2';
       const app = document.getElementById('app');
-      let state = 'cover';
-      let current = 0;
-      let score = 0;
-      let moves = 0;
-      let value = 0;
-      let progress = loadProgress();
+      let state = 'cover', i = 0, tries = 0, score = 0;
+      const pg = load();
 
-      function loadProgress() {
-        const base = { unlocked: 1, stars: Array(LEVELS.length).fill(0) };
+      function load() {
+        const b = { unlocked: 1, stars: Array(LEVELS.length).fill(0) };
         try {
-          const data = JSON.parse(localStorage.getItem(STORAGE));
-          if (!data) return base;
-          return { unlocked: Math.min(LEVELS.length, Math.max(1, Number(data.unlocked || 1))), stars: Array.isArray(data.stars) ? data.stars.slice(0, LEVELS.length).map((v) => Number(v || 0)) : base.stars };
-        } catch { return base; }
+          const d = JSON.parse(localStorage.getItem(SKEY));
+          if (!d) return b;
+          return { unlocked: Math.min(LEVELS.length, Math.max(1, Number(d.unlocked || 1))), stars: Array.isArray(d.stars) ? d.stars.slice(0, LEVELS.length).map((x) => Number(x || 0)) : b.stars };
+        } catch { return b; }
       }
-      function saveProgress() { localStorage.setItem(STORAGE, JSON.stringify(progress)); }
-      function medal(total) {
-        const max = LEVELS.length * 3;
-        if (total >= max * 0.85) return 'Ouro';
-        if (total >= max * 0.6) return 'Prata';
-        return 'Bronze';
-      }
+      function save() { localStorage.setItem(SKEY, JSON.stringify(pg)); }
+      function medal() { const t = pg.stars.reduce((a, b) => a + b, 0), m = LEVELS.length * 3; return t >= m * 0.85 ? '🥇' : t >= m * 0.6 ? '🥈' : '🥉'; }
+      function mkOptions(ans) { const s = new Set([ans]); while (s.size < 3) s.add(Math.max(0, ans + (Math.floor(Math.random() * 7) - 3))); return [...s].sort(() => Math.random() - 0.5); }
+      function earnedByTry(n) { return n === 1 ? 3 : n === 2 ? 2 : 1; }
 
-      function buildSteps(diff) {
-        const abs = Math.abs(diff);
-        return [1, 2, Math.max(3, Math.floor(abs / 2)), Math.max(4, abs)];
-      }
-
-      function render() {
-        if (state === 'cover') return cover();
-        if (state === 'select') return select();
-        return play();
-      }
-
+      function render() { if (state === 'cover') return cover(); if (state === 'select') return select(); play(); }
       function cover() {
-        const total = progress.stars.reduce((a, b) => a + b, 0);
-        app.innerHTML = `
-          <h1>Laboratorio das Pocoes</h1>
-          <p class="subtitle">Ajuste as gotas com adicao e subtracao.</p>
-          <p class="center">Medalha atual: <strong>${medal(total)}</strong></p>
-          <p class="center"><button id="start" class="btn primary">Entrar no laboratorio</button></p>
-        `;
-        document.getElementById('start').onclick = () => { state = 'select'; render(); };
+        app.innerHTML = `<p class="center big">🧪➕➖</p><p class="center big">${medal()}</p><p class="center"><button id="go" class="lvl" style="font-size:2.2rem">▶️</button></p>`;
+        document.getElementById('go').onclick = () => { state = 'select'; render(); };
       }
-
       function select() {
-        const total = progress.stars.reduce((a, b) => a + b, 0);
-        app.innerHTML = `
-          <h1>Receitas</h1>
-          <p class="subtitle">Desbloqueie receitas em sequencia.</p>
-          <p class="center tiny">Estrelas: <strong>${total}/${LEVELS.length * 3}</strong> | Medalha: <strong>${medal(total)}</strong></p>
-          <div class="grid">${LEVELS.map((_, i) => `<button class="phase" data-i="${i}" ${i + 1 > progress.unlocked ? 'disabled' : ''}>Receita ${i + 1}<br>${'⭐'.repeat(progress.stars[i] || 0) || '---'}</button>`).join('')}</div>
-          <p class="center" style="margin-top:12px"><button id="back" class="btn">Voltar</button></p>
-        `;
-        app.querySelectorAll('.phase').forEach((btn) => btn.onclick = () => { current = Number(btn.dataset.i); state = 'play'; render(); });
+        app.innerHTML = `<p class="center mid">🧪 ⭐ ${pg.stars.reduce((a,b)=>a+b,0)}/${LEVELS.length*3}</p><div class="grid">${LEVELS.map((_, k) => `<button class="lvl" data-k="${k}" ${k + 1 > pg.unlocked ? 'disabled' : ''}>${k + 1}<br>${'⭐'.repeat(pg.stars[k] || 0) || '▫️'}</button>`).join('')}</div><p class="center" style="margin-top:10px"><button id="back" class="lvl">◀️</button></p>`;
+        app.querySelectorAll('.lvl[data-k]').forEach((b) => b.onclick = () => { i = Number(b.dataset.k); tries = 0; state = 'play'; render(); });
         document.getElementById('back').onclick = () => { state = 'cover'; render(); };
       }
-
       function play() {
-        const level = LEVELS[current];
-        value = level.start;
-        moves = 0;
-        const steps = buildSteps(level.target - level.start);
-
-        app.innerHTML = `
-          <h1>Receita ${current + 1}</h1>
-          <div class="hud">
-            <span class="chip">Pontos: ${score}</span>
-            <span class="chip">Movimentos: ${moves}</span>
-            <span class="chip">Estrelas da receita: ${progress.stars[current] || 0}</span>
-          </div>
-          <div class="beaker"><div id="liquid" class="liquid">Frasco: ${value} gotas</div></div>
-          <p class="target">Meta: ${level.target} gotas</p>
-          <div class="actions" id="actions"></div>
-          <div id="feedback" class="feedback"></div>
-          <p class="center" style="margin-top:10px"><button id="menu" class="btn">Menu de receitas</button></p>
-        `;
-
-        const actions = document.getElementById('actions');
-        const liquid = document.getElementById('liquid');
-        const feedback = document.getElementById('feedback');
-
-        function updateHud() {
-          liquid.textContent = `Frasco: ${value} gotas`;
-          const chips = app.querySelectorAll('.chip');
-          chips[1].textContent = `Movimentos: ${moves}`;
-          chips[0].textContent = `Pontos: ${score}`;
-        }
-
-        function apply(delta) {
-          value += delta;
-          moves += 1;
-          updateHud();
-        }
-
-        steps.forEach((s) => {
-          const add = document.createElement('button');
-          add.className = 'act';
-          add.textContent = `+${s}`;
-          add.onclick = () => apply(s);
-          actions.appendChild(add);
-
-          const sub = document.createElement('button');
-          sub.className = 'act';
-          sub.textContent = `-${s}`;
-          sub.onclick = () => apply(-s);
-          actions.appendChild(sub);
+        const [a, b] = LEVELS[i], op = i < 6 ? '+' : '-', ans = op === '+' ? a + b : a - b;
+        app.innerHTML = `<div class="hud"><span class="chip">${i + 1}/${LEVELS.length}</span><span class="chip">⭐ ${pg.stars[i] || 0}</span><span class="chip">🏅 ${score}</span></div><p class="center big">🧪 ${a} ${op} ${b} = ?</p><div class="grid">${mkOptions(ans).map((n) => `<button class="opt" data-n="${n}">${n}</button>`).join('')}</div><div id="fb" class="fb"></div><p class="center" style="margin-top:10px"><button id="menu" class="lvl">📚</button></p>`;
+        app.querySelectorAll('.opt').forEach((btn) => btn.onclick = () => {
+          tries += 1;
+          const n = Number(btn.dataset.n), fb = document.getElementById('fb');
+          if (n === ans) {
+            const e = earnedByTry(tries);
+            pg.stars[i] = Math.max(pg.stars[i], e);
+            pg.unlocked = Math.max(pg.unlocked, Math.min(LEVELS.length, i + 2));
+            save();
+            score += 8 + e;
+            fb.textContent = '✅ ' + '⭐'.repeat(e);
+            setTimeout(() => { state = 'select'; render(); }, 600);
+          } else fb.textContent = '❌';
         });
-
-        const finish = document.createElement('button');
-        finish.className = 'act finish';
-        finish.textContent = 'Finalizar receita';
-        finish.onclick = () => {
-          if (value === level.target) {
-            const over = Math.max(0, moves - level.ideal);
-            const earned = over === 0 ? 3 : over <= 2 ? 2 : 1;
-            progress.stars[current] = Math.max(progress.stars[current], earned);
-            progress.unlocked = Math.max(progress.unlocked, Math.min(LEVELS.length, current + 2));
-            saveProgress();
-            score += 10 + earned;
-            feedback.className = 'feedback ok';
-            feedback.textContent = `Receita perfeita! ${earned} estrela(s).`;
-            setTimeout(() => { state = 'select'; render(); }, 850);
-          } else {
-            feedback.className = 'feedback bad';
-            feedback.textContent = `Ainda nao bateu a meta. Faltam ${Math.abs(level.target - value)} gotas.`;
-          }
-        };
-        actions.appendChild(finish);
-
         document.getElementById('menu').onclick = () => { state = 'select'; render(); };
       }
-
       render();
     </script>
   </body>
