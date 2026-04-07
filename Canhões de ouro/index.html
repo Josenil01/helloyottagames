@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canhões de Ouro - Matemática!</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <style>
+    body { font-family: 'Fredoka', sans-serif; user-select: none; }
+
+    .sea-bg {
+      background: linear-gradient(180deg, #4299E1 0%, #2B6CB0 100%);
+    }
+
+    .cannon-ball {
+      position: fixed;
+      width: 24px;
+      height: 24px;
+      background: radial-gradient(circle at 30% 30%, #4b5563, #000);
+      border-radius: 50%;
+      z-index: 100;
+      pointer-events: none;
+      display: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    @keyframes recoil {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(-20px); }
+    }
+    .cannon-recoil { animation: recoil 0.3s ease-in-out; }
+
+    @keyframes barrel-explode {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.5) rotate(20deg); opacity: 0.8; }
+      100% { transform: scale(0); opacity: 0; }
+    }
+    .explode { animation: barrel-explode 0.5s ease-out forwards; }
+
+    .ship-float { animation: float 4s infinite ease-in-out; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0.5deg); }
+      50% { transform: translateY(-12px) rotate(-0.5deg); }
+    }
+
+    /* Scrollbar personalizada para o mapa de níveis */
+    .custom-scroll::-webkit-scrollbar { width: 8px; }
+    .custom-scroll::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); border-radius: 10px; }
+    .custom-scroll::-webkit-scrollbar-thumb { background: #312e81; border-radius: 10px; }
+  </style>
+</head>
+<body class="bg-sky-200 overflow-hidden">
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect, useRef } = React;
+
+    const STORAGE_KEY = 'canhoes_pirata_v1_save';
+
+    const LEVELS = [
+      { id: 1, n1: 2, n2: 3, op: '+', ans: 5, options: [4, 5, 6], task: "Somar as moedas" },
+      { id: 2, n1: 7, n2: 2, op: '-', ans: 5, options: [5, 4, 3], task: "Subtrair as joias" },
+      { id: 3, n1: 5, n2: 5, op: '+', ans: 10, options: [10, 5, 0], task: "Tesouro Dobrado" },
+      { id: 4, n1: 10, n2: 4, op: '+', ans: 14, options: [12, 14, 16], task: "Dezenas e Unidades" },
+      { id: 5, n1: 15, n2: 5, op: '-', ans: 10, options: [10, 5, 20], task: "Esvaziar o barril" },
+      { id: 6, n1: 3, n2: null, op: '+', ans: 8, missing: 'n2', options: [4, 5, 6], task: "Quem falta no canhão?" },
+      { id: 7, n1: 12, n2: 6, op: '+', ans: 18, options: [18, 17, 19], task: "O grande tesouro" },
+      { id: 8, n1: 9, n2: 4, op: '-', ans: 5, options: [4, 5, 6], task: "Limpar o convés" },
+      { id: 9, n1: 8, n2: 7, op: '+', ans: 15, options: [14, 15, 16], task: "Joias Brilhantes" },
+      { id: 10, n1: 20, n2: 10, op: '-', ans: 10, options: [10, 0, 30], task: "Ataque Pesado" }
+    ];
+
+    function App() {
+      // --- Estados Principais ---
+      const [gameState, setGameState] = useState('cover'); // cover, selection, playing, level_complete
+      const [levelIdx, setLevelIdx] = useState(0);
+      const [score, setScore] = useState(0);
+      const [firing, setFiring] = useState(false);
+      const [hit, setHit] = useState(false);
+      const [wrong, setWrong] = useState([]);
+
+      // --- Estados de Progresso (Com Salvamento) ---
+      const [unlockedLevel, setUnlockedLevel] = useState(1);
+      const [starsByLevel, setStarsByLevel] = useState(Array(LEVELS.length).fill(0));
+
+      const ballRef = useRef(null);
+      const cannonRef = useRef(null);
+      const targetRef = useRef(null);
+
+      const level = LEVELS[levelIdx];
+
+      // Carregar progresso ao iniciar
+      useEffect(() => {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          const data = JSON.parse(saved);
+          setUnlockedLevel(data.unlockedLevel || 1);
+          setStarsByLevel(data.starsByLevel || Array(LEVELS.length).fill(0));
+          setScore(data.score || 0);
+        }
+      }, []);
+
+      // Salvar progresso sempre que mudar
+      useEffect(() => {
+        if (gameState !== 'cover') {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify({
+            unlockedLevel,
+            starsByLevel,
+            score
+          }));
+        }
+      }, [unlockedLevel, starsByLevel, score]);
+
+      const playTone = (freq, type = 'sine', duration = 0.1) => {
+        try {
+          const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = type;
+          osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+          gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
+          osc.connect(gain); gain.connect(audioCtx.destination);
+          osc.start(); osc.stop(audioCtx.currentTime + duration);
+        } catch(e) {}
+      };
+
+      const checkAnswer = (val) => {
+        if (firing || hit) return;
+        const expected = level.missing ? (level.missing === 'n2' ? level.ans - level.n1 : level.ans - level.n2) : level.ans;
+
+        if (val === expected) {
+          animateShot();
+        } else {
+          setWrong(prev => [...prev, val]);
+          playTone(150, 'sawtooth', 0.3);
+        }
+      };
+
+      const animateShot = () => {
+        setFiring(true);
+        playTone(100, 'sine', 0.5);
+
+        const ball = ballRef.current;
+        const cannon = cannonRef.current.getBoundingClientRect();
+        const target = targetRef.current.getBoundingClientRect();
+
+        const startX = cannon.right - 10;
+        const startY = cannon.top + cannon.height / 2;
+        const endX = target.left + target.width / 2;
+        const endY = target.top + target.height / 2;
+
+        ball.style.display = 'block';
+        const startTime = performance.now();
+        const duration = 900;
+        const peakHeight = 180;
+
+        function update(time) {
+          const elapsed = time - startTime;
+          const t = Math.min(elapsed / duration, 1);
+          const x = startX + (endX - startX) * t;
+          const y = startY + (endY - startY) * t - Math.sin(t * Math.PI) * peakHeight;
+          ball.style.left = `${x}px`;
+          ball.style.top = `${y}px`;
+
+          if (t < 1) {
+            requestAnimationFrame(update);
+          } else {
+            ball.style.display = 'none';
+            setHit(true);
+            playTone(400, 'square', 0.2);
+
+            // Lógica de Estrelas (3 estrelas se não errou nada, 2 se errou 1, 1 se errou mais)
+            const earnedStars = Math.max(1, 3 - wrong.length);
+
+            setTimeout(() => {
+              // Atualizar Progresso
+              const newStars = [...starsByLevel];
+              newStars[levelIdx] = Math.max(newStars[levelIdx], earnedStars);
+              setStarsByLevel(newStars);
+
+              if (levelIdx + 1 === unlockedLevel && unlockedLevel < LEVELS.length) {
+                setUnlockedLevel(unlockedLevel + 1);
+              }
+
+              setScore(s => s + (earnedStars * 10));
+              setGameState('level_complete');
+            }, 1000);
+          }
+        }
+        requestAnimationFrame(update);
+      };
+
+      const VisualItems = ({ count }) => {
+        if (count >= 10) {
+          return (
+            <div className="flex flex-wrap justify-center gap-1 max-w-[120px]">
+              {Array.from({ length: Math.floor(count/10) }).map((_, i) => <span key={`t-${i}`} className="text-3xl md:text-4xl drop-shadow">🧰</span>)}
+              {Array.from({ length: count % 10 }).map((_, i) => <span key={`o-${i}`} className="text-xl md:text-2xl drop-shadow">🪙</span>)}
+            </div>
+          );
+        }
+        return (
+          <div className="flex flex-wrap justify-center gap-1 max-w-[120px]">
+            {Array.from({ length: count }).map((_, i) => <span key={i} className="text-2xl md:text-3xl drop-shadow">💎</span>)}
+          </div>
+        );
+      };
+
+      // --- TELA DE CAPA ---
+      if (gameState === 'cover') {
+        return (
+          <div className="h-screen flex flex-col items-center justify-center p-6 text-center bg-sky-300">
+            <div className="mb-8 text-[8rem] md:text-[10rem] animate-bounce">🏴‍☠️</div>
+            <h1 className="text-5xl md:text-7xl font-black text-indigo-900 mb-4 uppercase tracking-tighter">Canhões de Ouro</h1>
+            <p className="text-xl md:text-2xl text-indigo-700 font-bold mb-10">O Mapa do Tesouro espera por ti!</p>
+            <button
+              onClick={() => { playTone(500); setGameState('selection'); }}
+              className="bg-yellow-400 text-indigo-900 px-12 py-6 rounded-full text-3xl md:text-4xl font-black shadow-[0_10px_0_#b45309] hover:translate-y-1 hover:shadow-[0_5px_0_#b45309] active:translate-y-2 active:shadow-none transition-all uppercase"
+            >
+              Abrir Mapa
+            </button>
+          </div>
+        );
+      }
+
+      // --- TELA DE SELECÇÃO DE NÍVEIS ---
+      if (gameState === 'selection') {
+        return (
+          <div className="h-screen flex flex-col items-center p-6 bg-sky-300">
+             <div className="w-full max-w-4xl flex justify-between items-center mb-8">
+                <button onClick={() => setGameState('cover')} className="bg-indigo-900 text-white p-4 rounded-full shadow-lg">🏠</button>
+                <h2 className="text-4xl font-black text-indigo-900 uppercase">Mapa das Ilhas</h2>
+                <div className="bg-yellow-400 px-6 py-2 rounded-full border-4 border-yellow-700 font-black text-xl text-yellow-900">
+                  💰 {score}
+                </div>
+             </div>
+
+             <div className="flex-1 w-full max-w-4xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 overflow-y-auto p-4 custom-scroll">
+                {LEVELS.map((lvl, idx) => {
+                  const isLocked = idx + 1 > unlockedLevel;
+                  const stars = starsByLevel[idx];
+                  return (
+                    <button
+                      key={lvl.id}
+                      disabled={isLocked}
+                      onClick={() => { setLevelIdx(idx); setWrong([]); setFiring(false); setHit(false); setGameState('playing'); }}
+                      className={`
+                        relative flex flex-col items-center justify-center p-6 rounded-[2rem] transition-all aspect-square border-b-8
+                        ${isLocked ? 'bg-gray-400 border-gray-600 grayscale opacity-60' : 'bg-white border-indigo-200 hover:-translate-y-2 shadow-xl'}
+                      `}
+                    >
+                      <span className="text-4xl font-black text-indigo-900 mb-2">{idx + 1}</span>
+                      <div className="flex gap-1">
+                        {[1, 2, 3].map(s => (
+                          <span key={s} className={`text-xl ${s <= stars ? 'opacity-100' : 'opacity-20'}`}>⭐</span>
+                        ))}
+                      </div>
+                      {isLocked && <div className="absolute inset-0 flex items-center justify-center text-4xl">🔒</div>}
+                    </button>
+                  );
+                })}
+             </div>
+          </div>
+        );
+      }
+
+      // --- TELA DE NÍVEL CONCLUÍDO ---
+      if (gameState === 'level_complete') {
+        const stars = Math.max(1, 3 - wrong.length);
+        return (
+          <div className="h-screen flex flex-col items-center justify-center p-6 text-center bg-indigo-900/90 text-white backdrop-blur-md">
+            <div className="mb-6 text-9xl animate-bounce">⚓</div>
+            <h1 className="text-5xl font-black mb-2">Ilha Conquistada!</h1>
+            <div className="flex gap-4 mb-8 justify-center">
+                {[1, 2, 3].map(s => (
+                  <span key={s} className={`text-6xl ${s <= stars ? 'scale-125' : 'opacity-20 grayscale'}`}>⭐</span>
+                ))}
+            </div>
+            <p className="text-2xl mb-12">Ganhaste {stars * 10} moedas de ouro!</p>
+
+            <div className="flex gap-6">
+              <button
+                onClick={() => setGameState('selection')}
+                className="bg-zinc-700 text-white px-8 py-5 rounded-3xl text-2xl font-black shadow-[0_8px_0_#000]"
+              >
+                Mapa
+              </button>
+              <button
+                onClick={() => {
+                   if (levelIdx + 1 < LEVELS.length) {
+                      setLevelIdx(levelIdx + 1);
+                      setWrong([]); setFiring(false); setHit(false); setGameState('playing');
+                   } else {
+                      setGameState('selection');
+                   }
+                }}
+                className="bg-yellow-400 text-indigo-900 px-12 py-5 rounded-3xl text-3xl font-black shadow-[0_8px_0_#b45309]"
+              >
+                Próximo!
+              </button>
+            </div>
+          </div>
+        );
+      }
+
+      // --- TELA DE JOGO ---
+      return (
+        <div className="h-screen w-full flex flex-col relative overflow-hidden bg-sky-200">
+
+          <div ref={ballRef} className="cannon-ball"></div>
+
+          {/* HUD Superior */}
+          <div className="p-4 md:p-6 flex justify-between items-center z-10">
+            <button onClick={() => setGameState('selection')} className="bg-white/90 px-5 py-2 rounded-full border-4 border-indigo-900 font-black text-lg">
+              ◀ Sair
+            </button>
+            <div className="bg-yellow-400 px-6 py-2 rounded-full border-4 border-yellow-700 font-black text-xl text-yellow-900 shadow-md">
+              💰 {score}
+            </div>
+          </div>
+
+          {/* ÁREA DA EQUAÇÃO */}
+          <div className="flex-1 flex flex-col items-center justify-center gap-4 px-4 -mt-12">
+            <div className="bg-white/95 p-4 md:p-8 rounded-[2.5rem] border-8 border-indigo-900 shadow-2xl flex items-center gap-3 md:gap-6 justify-center max-w-full">
+              <div className="flex flex-col items-center">
+                <VisualItems count={level.n1} />
+                <span className="text-3xl md:text-5xl font-black mt-2 text-indigo-900">{level.n1}</span>
+              </div>
+
+              <span className="text-4xl md:text-6xl font-black text-sky-500">{level.op}</span>
+
+              <div className="flex flex-col items-center">
+                {level.missing === 'n2' ? (
+                  <div className="w-14 h-14 md:w-20 md:h-20 border-4 border-dashed border-indigo-300 rounded-2xl flex items-center justify-center text-4xl text-indigo-200 animate-pulse">?</div>
+                ) : (
+                  <>
+                    <VisualItems count={level.n2} />
+                    <span className="text-3xl md:text-5xl font-black mt-2 text-indigo-900">{level.n2}</span>
+                  </>
+                )}
+              </div>
+
+              <span className="text-4xl md:text-6xl font-black text-sky-500">=</span>
+
+              <div className="flex flex-col items-center">
+                {(!level.missing) ? (
+                  <div className="w-14 h-14 md:w-20 md:h-20 border-4 border-dashed border-indigo-300 rounded-2xl flex items-center justify-center text-4xl text-indigo-200 animate-pulse">?</div>
+                ) : (
+                  <>
+                    <VisualItems count={level.ans} />
+                    <span className="text-3xl md:text-5xl font-black mt-2 text-indigo-900">{level.ans}</span>
+                  </>
+                )}
+              </div>
+            </div>
+
+            <div className="bg-indigo-900 text-white px-8 py-2 rounded-full font-bold uppercase tracking-widest text-sm md:text-base shadow-lg">
+              {level.task}
+            </div>
+          </div>
+
+          {/* ÁREA DO MAR E ACÇÃO */}
+          <div className="h-[42vh] md:h-[48vh] sea-bg relative border-t-8 border-white/20">
+
+            {/* NAVIO */}
+            <div className={`absolute bottom-24 left-4 md:left-20 ship-float ${firing ? 'cannon-recoil' : ''}`}>
+                <div className="relative w-[180px] md:w-[240px]">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="drop-shadow-2xl">
+                        <path d="M20 140 Q100 180 180 140 L165 170 Q100 190 35 170 Z" fill="#78350f" stroke="#451a03" strokeWidth="2"/>
+                        <circle cx="50" cy="155" r="5" fill="#333" /><circle cx="80" cy="160" r="5" fill="#333" /><circle cx="120" cy="160" r="5" fill="#333" /><circle cx="150" cy="155" r="5" fill="#333" />
+                        <rect x="95" y="40" width="8" height="110" fill="#451a03" />
+                        <rect x="90" y="35" width="18" height="12" fill="#5c2d12" />
+                        <path d="M50 50 Q100 40 150 50 L145 130 Q100 120 55 130 Z" fill="#f3f4f6" stroke="#9ca3af" strokeWidth="1"/>
+                        <circle cx="100" cy="85" r="14" fill="white" />
+                        <path d="M96 92 Q100 95 104 92" fill="none" stroke="black" strokeWidth="1.5"/>
+                        <path d="M86 78 Q100 70 114 78 L114 84 Q100 76 86 84 Z" fill="#ef4444" />
+                        <rect x="103" y="10" width="35" height="22" fill="black" rx="2" /><circle cx="118" cy="21" r="5" fill="white" /><rect x="99" y="5" width="4" height="40" fill="#451a03" />
+                    </svg>
+                    <div ref={cannonRef} className="absolute top-[135px] right-[-10px] w-12 md:w-16 h-6 md:h-8 bg-zinc-800 rounded-r-full border-2 border-zinc-900 shadow-lg z-20">
+                         {firing && <div className="absolute -right-8 -top-4 text-4xl md:text-5xl animate-pulse">💥</div>}
+                    </div>
+                </div>
+            </div>
+
+            {/* ALVO */}
+            <div ref={targetRef} className={`absolute bottom-28 right-8 md:right-32 text-6xl md:text-8xl transition-all duration-300 ${hit ? 'explode' : ''}`}>
+              {hit ? '💥' : '🛢️'}
+            </div>
+
+            {/* BOTÕES */}
+            <div className="absolute bottom-6 left-0 right-0 flex justify-center gap-4 md:gap-8 px-4">
+              {level.options.map((opt, i) => (
+                <button
+                  key={i}
+                  disabled={wrong.includes(opt) || firing || hit}
+                  onClick={() => checkAnswer(opt)}
+                  className={`
+                    w-20 h-20 md:w-28 md:h-28 rounded-full flex items-center justify-center text-4xl md:text-6xl font-black transition-all
+                    ${wrong.includes(opt) ? 'bg-red-500/50 opacity-50 translate-y-4 shadow-none' : 'bg-zinc-800 text-white shadow-[0_10px_0_#000] hover:-translate-y-2 active:translate-y-1 active:shadow-none'}
+                    ${firing || hit ? 'opacity-70 grayscale cursor-not-allowed' : ''}
+                  `}
+                >
+                  {opt}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>
