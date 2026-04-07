@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piratas do Troco</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Nunito:wght@700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root { --ok:#86efac; --bad:#fca5a5; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Nunito", sans-serif;
+        color: #fff;
+        background: radial-gradient(circle at 15% 10%, #22d3ee44, transparent 35%), linear-gradient(180deg, #1e3a8a, #0b132b);
+      }
+      .home { position: fixed; top: 14px; left: 14px; text-decoration: none; background: #ffffffec; color: #111827; border-radius: 999px; padding: 10px 14px; font-weight: 800; }
+      .wrap { max-width: 900px; margin: 0 auto; padding: 68px 16px 24px; }
+      .card { background: #ffffff14; border: 2px solid #5bc0be80; border-radius: 20px; padding: 18px; backdrop-filter: blur(2px); }
+      h1 { margin: 0; text-align: center; color: #fde68a; font-family: "Bungee", cursive; font-size: clamp(1.8rem, 6vw, 3rem); }
+      .subtitle { text-align: center; margin: 6px 0 14px; font-weight: 700; }
+      .btn { border: none; border-radius: 999px; padding: 10px 16px; font-weight: 800; cursor: pointer; }
+      .primary { background: #14b8a6; color: #062b28; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
+      .phase { border: 2px solid #93c5fd80; border-radius: 12px; background: #0f172a80; color: #fff; padding: 10px; font-weight: 800; }
+      .phase[disabled] { opacity: .4; }
+      .hud { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-bottom: 12px; }
+      .chip { background: #00000066; border-radius: 999px; padding: 6px 12px; font-weight: 800; }
+      .question { text-align: center; font-size: clamp(1.1rem, 4vw, 1.8rem); font-weight: 800; margin: 12px 0; }
+      .choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 10px; }
+      .coin { border: none; border-radius: 12px; padding: 12px 8px; font-size: 1.2rem; font-weight: 900; background: linear-gradient(145deg, #fcd34d, #f59e0b); color: #3f2f05; cursor: pointer; }
+      .feedback { min-height: 28px; text-align: center; font-weight: 800; margin-top: 10px; }
+      .ok { color: var(--ok); }
+      .bad { color: var(--bad); }
+      .center { text-align: center; }
+      .tiny { font-size: .9rem; opacity: .9; }
+    </style>
+  </head>
+  <body>
+    <a class="home" href="../index.html">Inicio</a>
+    <main class="wrap">
+      <section id="app" class="card"></section>
+    </main>
+
+    <script>
+      const LEVELS = [
+        { cost: 9, paid: 12 }, { cost: 14, paid: 20 }, { cost: 18, paid: 25 }, { cost: 27, paid: 30 },
+        { cost: 16, paid: 21 }, { cost: 35, paid: 50 }, { cost: 42, paid: 50 }, { cost: 57, paid: 80 }
+      ];
+      const STORAGE = 'pirata-troco-progress-v1';
+      const app = document.getElementById('app');
+      let state = 'cover';
+      let current = 0;
+      let attempts = 0;
+      let coins = 0;
+      let progress = loadProgress();
+
+      function loadProgress() {
+        const base = { unlocked: 1, stars: Array(LEVELS.length).fill(0) };
+        try {
+          const data = JSON.parse(localStorage.getItem(STORAGE));
+          if (!data) return base;
+          return { unlocked: Math.min(LEVELS.length, Math.max(1, Number(data.unlocked || 1))), stars: Array.isArray(data.stars) ? data.stars.slice(0, LEVELS.length).map((v) => Number(v || 0)) : base.stars };
+        } catch { return base; }
+      }
+      function saveProgress() { localStorage.setItem(STORAGE, JSON.stringify(progress)); }
+      function medal(total) {
+        const max = LEVELS.length * 3;
+        if (total >= max * 0.85) return 'Ouro';
+        if (total >= max * 0.6) return 'Prata';
+        return 'Bronze';
+      }
+      function options(answer) {
+        const set = new Set([answer]);
+        while (set.size < 4) set.add(Math.max(0, answer + (Math.floor(Math.random() * 13) - 6)));
+        return [...set].sort(() => Math.random() - 0.5);
+      }
+
+      function render() {
+        if (state === 'cover') return renderCover();
+        if (state === 'select') return renderSelect();
+        return renderPlay();
+      }
+
+      function renderCover() {
+        const total = progress.stars.reduce((a, b) => a + b, 0);
+        app.innerHTML = `
+          <h1>Piratas do Troco</h1>
+          <p class="subtitle">Calcule o troco certo e junte tesouros.</p>
+          <p class="center">Medalha atual: <strong>${medal(total)}</strong></p>
+          <p class="center"><button id="start" class="btn primary">Abrir mapa</button></p>
+        `;
+        document.getElementById('start').onclick = () => { state = 'select'; render(); };
+      }
+
+      function renderSelect() {
+        const total = progress.stars.reduce((a, b) => a + b, 0);
+        app.innerHTML = `
+          <h1>Mapa de Rodadas</h1>
+          <p class="subtitle">Cada rodada desbloqueia a proxima.</p>
+          <p class="center tiny">Estrelas: <strong>${total}/${LEVELS.length * 3}</strong> | Medalha: <strong>${medal(total)}</strong></p>
+          <div class="grid">
+            ${LEVELS.map((_, i) => `<button class="phase" data-i="${i}" ${i + 1 > progress.unlocked ? 'disabled' : ''}>Rodada ${i + 1}<br>${'⭐'.repeat(progress.stars[i] || 0) || '---'}</button>`).join('')}
+          </div>
+          <p class="center" style="margin-top:12px"><button id="back" class="btn">Voltar</button></p>
+        `;
+        app.querySelectorAll('.phase').forEach((btn) => {
+          btn.onclick = () => { current = Number(btn.dataset.i); attempts = 0; state = 'play'; render(); };
+        });
+        document.getElementById('back').onclick = () => { state = 'cover'; render(); };
+      }
+
+      function renderPlay() {
+        const round = LEVELS[current];
+        const answer = round.paid - round.cost;
+        app.innerHTML = `
+          <h1>Rodada ${current + 1}</h1>
+          <div class="hud">
+            <span class="chip">Moedas: ${coins}</span>
+            <span class="chip">Tentativas: ${attempts}</span>
+            <span class="chip">Estrelas da rodada: ${progress.stars[current] || 0}</span>
+          </div>
+          <p class="question">Item custa ${round.cost}. Cliente pagou ${round.paid}. Qual e o troco?</p>
+          <div class="choices">${options(answer).map((v) => `<button class="coin" data-v="${v}">${v}</button>`).join('')}</div>
+          <div class="feedback" id="feedback"></div>
+          <p class="center" style="margin-top:10px"><button id="menu" class="btn">Menu de rodadas</button></p>
+        `;
+
+        app.querySelectorAll('.coin').forEach((btn) => {
+          btn.onclick = () => {
+            attempts += 1;
+            const value = Number(btn.dataset.v);
+            const fb = document.getElementById('feedback');
+            if (value === answer) {
+              const earned = attempts === 1 ? 3 : attempts === 2 ? 2 : 1;
+              progress.stars[current] = Math.max(progress.stars[current], earned);
+              progress.unlocked = Math.max(progress.unlocked, Math.min(LEVELS.length, current + 2));
+              saveProgress();
+              coins += 8 + earned;
+              fb.className = 'feedback ok';
+              fb.textContent = `Troco correto! +${8 + earned} moedas e ${earned} estrela(s).`;
+              setTimeout(() => { state = 'select'; render(); }, 850);
+            } else {
+              coins = Math.max(0, coins - 2);
+              fb.className = 'feedback bad';
+              fb.textContent = 'Nao bateu. Tente de novo.';
+            }
+            const chips = app.querySelectorAll('.chip');
+            chips[0].textContent = `Moedas: ${coins}`;
+            chips[1].textContent = `Tentativas: ${attempts}`;
+          };
+        });
+
+        document.getElementById('menu').onclick = () => { state = 'select'; render(); };
+      }
+
+      render();
+    </script>
+  </body>
+</html>
