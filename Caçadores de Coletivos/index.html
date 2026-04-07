@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/game-viewport.css" />
-  <title>CaÃ§adores de Coletivos</title>
+  <title>Caçadores de Coletivos</title>
   
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -26,7 +26,7 @@
       background-color: #fef3c7; /* amber-50 */
     }
     
-    /* AnimaÃ§Ãµes */
+    /* Animações */
     @keyframes shake {
       0%, 100% { transform: translateX(0); }
       25% { transform: translateX(-8px) rotate(-3deg); }
@@ -53,7 +53,7 @@
     }
     .float-anim { animation: floatAround 5s ease-in-out infinite; }
 
-    /* Fundo SafÃ¡ri / Aventura */
+    /* Fundo Safári / Aventura */
     .safari-bg {
       background: linear-gradient(180deg, #fef3c7 0%, #fde68a 100%);
       position: relative;
@@ -66,27 +66,27 @@
   <script type="text/babel">
     const { useState, useEffect } = React;
 
-    // --- DADOS DO JOGO: CAÃ‡ADORES DE COLETIVOS ---
+    // --- DADOS DO JOGO: CAÇADORES DE COLETIVOS ---
     const LEVELS = [
-      // MECÃ‚NICA 1: AssociaÃ§Ã£o (Arrastar o coletivo)
-      { id: 1, type: 'match', target: 'LOBOS', answer: 'ALCATEIA', options: ['ALCATEIA', 'MATILHA', 'REBANHO'], emoji: 'ðŸº', instruction: 'Como chamamos um grupo de LOBOS? Arraste a palavra certa!' },
-      { id: 2, type: 'match', target: 'PEIXES', answer: 'CARDUME', options: ['BANDO', 'CARDUME', 'ENXAME'], emoji: 'ðŸŸ', instruction: 'Qual Ã© a palavra mÃ¡gica para um grupo de PEIXES?' },
-      { id: 3, type: 'match', target: 'ABELHAS', answer: 'ENXAME', options: ['ENXAME', 'CACHO', 'BANDO'], emoji: 'ðŸ', instruction: 'Muitas ABELHAS juntas formam um...' },
+      // MECÂNICA 1: Associação (Arrastar o coletivo)
+      { id: 1, type: 'match', target: 'LOBOS', answer: 'ALCATEIA', options: ['ALCATEIA', 'MATILHA', 'REBANHO'], emoji: '🐺', instruction: 'Como chamamos um grupo de LOBOS? Arraste a palavra certa!' },
+      { id: 2, type: 'match', target: 'PEIXES', answer: 'CARDUME', options: ['BANDO', 'CARDUME', 'ENXAME'], emoji: '🐟', instruction: 'Qual é a palavra mágica para um grupo de PEIXES?' },
+      { id: 3, type: 'match', target: 'ABELHAS', answer: 'ENXAME', options: ['ENXAME', 'CACHO', 'BANDO'], emoji: '🐝', instruction: 'Muitas ABELHAS juntas formam um...' },
       
-      // MECÃ‚NICA 2: Ligar os Pontos (Ligar o item ao seu coletivo)
-      { id: 4, type: 'connect', leftWords: ['ESTRELAS', 'ILHAS', 'PÃSSAROS'], rightWords: ['BANDO', 'CONSTELAÃ‡ÃƒO', 'ARQUIPÃ‰LAGO'], matches: { 'ESTRELAS': 'CONSTELAÃ‡ÃƒO', 'ILHAS': 'ARQUIPÃ‰LAGO', 'PÃSSAROS': 'BANDO' }, emoji: 'ðŸ”­', instruction: 'Ligue o elemento ao seu Substantivo Coletivo!' },
-      { id: 5, type: 'connect', leftWords: ['CÃƒES', 'OVELHAS', 'PORCOS'], rightWords: ['REBANHO', 'VARA', 'MATILHA'], matches: { 'CÃƒES': 'MATILHA', 'OVELHAS': 'REBANHO', 'PORCOS': 'VARA' }, emoji: 'ðŸ•', instruction: 'Ligue os animais aos seus grupos corretos!' },
-      { id: 6, type: 'connect', leftWords: ['AVIÃ•ES', 'MAPAS', 'FLORES'], rightWords: ['ATLAS', 'RAMALHETE', 'ESQUADRILHA'], matches: { 'AVIÃ•ES': 'ESQUADRILHA', 'MAPAS': 'ATLAS', 'FLORES': 'RAMALHETE' }, emoji: 'âœˆï¸', instruction: 'Encontre os 3 pares escondidos no mapa!' },
+      // MECÂNICA 2: Ligar os Pontos (Ligar o item ao seu coletivo)
+      { id: 4, type: 'connect', leftWords: ['ESTRELAS', 'ILHAS', 'PÁSSAROS'], rightWords: ['BANDO', 'CONSTELAÇÃO', 'ARQUIPÉLAGO'], matches: { 'ESTRELAS': 'CONSTELAÇÃO', 'ILHAS': 'ARQUIPÉLAGO', 'PÁSSAROS': 'BANDO' }, emoji: '🔭', instruction: 'Ligue o elemento ao seu Substantivo Coletivo!' },
+      { id: 5, type: 'connect', leftWords: ['CÃES', 'OVELHAS', 'PORCOS'], rightWords: ['REBANHO', 'VARA', 'MATILHA'], matches: { 'CÃES': 'MATILHA', 'OVELHAS': 'REBANHO', 'PORCOS': 'VARA' }, emoji: '🐕', instruction: 'Ligue os animais aos seus grupos corretos!' },
+      { id: 6, type: 'connect', leftWords: ['AVIÕES', 'MAPAS', 'FLORES'], rightWords: ['ATLAS', 'RAMALHETE', 'ESQUADRILHA'], matches: { 'AVIÕES': 'ESQUADRILHA', 'MAPAS': 'ATLAS', 'FLORES': 'RAMALHETE' }, emoji: '✈️', instruction: 'Encontre os 3 pares escondidos no mapa!' },
 
-      // MECÃ‚NICA 3: O Intruso (Descobrir a palavra que NÃƒO Ã© um coletivo)
-      { id: 7, type: 'intruder', words: ['ALCATEIA', 'CARDUME', 'CACHORRO', 'MANADA'], answer: 'CACHORRO', emoji: 'ðŸ¾', instruction: 'AtenÃ§Ã£o, caÃ§ador! Qual dessas palavras NÃƒO Ã© um coletivo?' },
-      { id: 8, type: 'intruder', words: ['CONSTELAÃ‡ÃƒO', 'ESTRELA', 'ARQUIPÃ‰LAGO', 'FLORESTA'], answer: 'ESTRELA', emoji: 'âœ¨', instruction: 'Encontre a palavra intrusa que indica apenas UMA coisa!' },
-      { id: 9, type: 'intruder', words: ['TURMA', 'ELENCO', 'BANDA', 'CANTOR'], answer: 'CANTOR', emoji: 'ðŸŽ¤', instruction: 'TrÃªs palavras indicam grupos. Qual Ã© a intrusa?' },
+      // MECÂNICA 3: O Intruso (Descobrir a palavra que NÃO é um coletivo)
+      { id: 7, type: 'intruder', words: ['ALCATEIA', 'CARDUME', 'CACHORRO', 'MANADA'], answer: 'CACHORRO', emoji: '🐾', instruction: 'Atenção, caçador! Qual dessas palavras NÃO é um coletivo?' },
+      { id: 8, type: 'intruder', words: ['CONSTELAÇÃO', 'ESTRELA', 'ARQUIPÉLAGO', 'FLORESTA'], answer: 'ESTRELA', emoji: '✨', instruction: 'Encontre a palavra intrusa que indica apenas UMA coisa!' },
+      { id: 9, type: 'intruder', words: ['TURMA', 'ELENCO', 'BANDA', 'CANTOR'], answer: 'CANTOR', emoji: '🎤', instruction: 'Três palavras indicam grupos. Qual é a intrusa?' },
 
-      // MECÃ‚NICA 4: Construtor de Frases (Substituir pela palavra coletiva)
-      { id: 10, type: 'sentence', preText: 'Vimos um lindo ', boldText: 'GRUPO DE PEIXES', postText: ' no oceano.', answer: 'CARDUME', options: ['CARDUME', 'BANDO', 'REBANHO'], emoji: 'ðŸŒŠ', instruction: 'Substitua a expressÃ£o destacada pelo seu Coletivo correspondente!' },
-      { id: 11, type: 'sentence', preText: 'Eles fugiram da ', boldText: 'GRUPO DE LOBOS', postText: ' assustadora.', answer: 'ALCATEIA', options: ['MATILHA', 'ALCATEIA', 'MANADA'], emoji: 'ðŸŒ•', instruction: 'Troque as palavras pelo Coletivo correto!' },
-      { id: 12, type: 'sentence', preText: 'Ganhei um ', boldText: 'CONJUNTO DE FLORES', postText: ' no meu aniversÃ¡rio.', answer: 'RAMALHETE', options: ['CACHO', 'RAMALHETE', 'ARQUIPÃ‰LAGO'], emoji: 'ðŸ’', instruction: 'Qual palavra resume a parte destacada? Arraste para a frase!' },
+      // MECÂNICA 4: Construtor de Frases (Substituir pela palavra coletiva)
+      { id: 10, type: 'sentence', preText: 'Vimos um lindo ', boldText: 'GRUPO DE PEIXES', postText: ' no oceano.', answer: 'CARDUME', options: ['CARDUME', 'BANDO', 'REBANHO'], emoji: '🌊', instruction: 'Substitua a expressão destacada pelo seu Coletivo correspondente!' },
+      { id: 11, type: 'sentence', preText: 'Eles fugiram da ', boldText: 'GRUPO DE LOBOS', postText: ' assustadora.', answer: 'ALCATEIA', options: ['MATILHA', 'ALCATEIA', 'MANADA'], emoji: '🌕', instruction: 'Troque as palavras pelo Coletivo correto!' },
+      { id: 12, type: 'sentence', preText: 'Ganhei um ', boldText: 'CONJUNTO DE FLORES', postText: ' no meu aniversário.', answer: 'RAMALHETE', options: ['CACHO', 'RAMALHETE', 'ARQUIPÉLAGO'], emoji: '💐', instruction: 'Qual palavra resume a parte destacada? Arraste para a frase!' },
     ];
 
     function App() {
@@ -101,7 +101,7 @@
       const [shakeWrong, setShakeWrong] = useState(null); 
       const [wrongAnswers, setWrongAnswers] = useState([]);
 
-      // Estados para a mecÃ¢nica de "Ligar Pontos"
+      // Estados para a mecânica de "Ligar Pontos"
       const [selectedLeft, setSelectedLeft] = useState(null);
       const [solvedPairs, setSolvedPairs] = useState([]);
 
@@ -123,7 +123,7 @@
         setShakeWrong(null);
       };
 
-      // FunÃ§Ã£o genÃ©rica de vitÃ³ria
+      // Função genérica de vitória
       const handleWin = () => {
         setIsSuccess(true);
         setStars(prev => prev + 1);
@@ -137,7 +137,7 @@
         }, 2500);
       };
 
-      // LÃ³gica de ValidaÃ§Ã£o: Match, Intruder, Sentence
+      // Lógica de Validação: Match, Intruder, Sentence
       const checkAnswer = (value) => {
         if (isSuccess || wrongAnswers.includes(value)) return;
 
@@ -150,10 +150,10 @@
         }
       };
 
-      // LÃ³gica de ValidaÃ§Ã£o: Ligar Pontos
+      // Lógica de Validação: Ligar Pontos
       const handleConnectRight = (rightWord) => {
         if (!selectedLeft) {
-          alert("CaÃ§ador, escolha primeiro uma palavra da coluna da esquerda!");
+          alert("Caçador, escolha primeiro uma palavra da coluna da esquerda!");
           return;
         }
         
@@ -190,16 +190,16 @@
       if (gameState === 'cover') {
         return (
           <div className="min-h-screen safari-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
-            {/* DecoraÃ§Ã£o Aventureira */}
-            <div className="absolute top-10 left-10 text-6xl opacity-40 float-anim">ðŸ—ºï¸</div>
-            <div className="absolute top-32 right-10 text-7xl opacity-40 float-anim" style={{animationDelay: '1s'}}>ðŸ¦</div>
-            <div className="absolute bottom-10 left-20 text-6xl opacity-40 float-anim" style={{animationDelay: '2s'}}>ðŸ§­</div>
-            <div className="absolute bottom-32 right-32 text-6xl opacity-40 float-anim" style={{animationDelay: '0.5s'}}>ðŸš™</div>
+            {/* Decoração Aventureira */}
+            <div className="absolute top-10 left-10 text-6xl opacity-40 float-anim">🗺️</div>
+            <div className="absolute top-32 right-10 text-7xl opacity-40 float-anim" style={{animationDelay: '1s'}}>🦁</div>
+            <div className="absolute bottom-10 left-20 text-6xl opacity-40 float-anim" style={{animationDelay: '2s'}}>🧭</div>
+            <div className="absolute bottom-32 right-32 text-6xl opacity-40 float-anim" style={{animationDelay: '0.5s'}}>🚙</div>
 
             <div className="bg-white/90 backdrop-blur-sm p-10 rounded-[3rem] shadow-[0_20px_50px_rgba(217,119,6,0.2)] flex flex-col items-center text-center z-10 max-w-xl w-full border-8 border-orange-500 mb-10">
-              <div className="text-8xl mb-4">ðŸ”¦</div>
+              <div className="text-8xl mb-4">🔦</div>
               <h1 className="text-5xl font-black text-stone-800 mb-2 tracking-tight uppercase">
-                CaÃ§adores de<br/><span className="text-5xl text-orange-600">Coletivos</span>
+                Caçadores de<br/><span className="text-5xl text-orange-600">Coletivos</span>
               </h1>
               <p className="text-stone-600 mb-8 text-xl font-bold px-4">
                 Pegue sua lupa e seu mapa! Vamos descobrir a palavra secreta que representa grupos inteiros!
@@ -209,7 +209,7 @@
                 onClick={startGame}
                 className="w-full py-5 px-8 bg-emerald-600 hover:bg-emerald-700 text-white rounded-3xl text-3xl font-black transition-all transform hover:scale-105 shadow-[0_8px_0_rgb(5,150,105)] hover:translate-y-1 active:shadow-none active:translate-y-2 uppercase"
               >
-                Iniciar ExpediÃ§Ã£o!
+                Iniciar Expedição!
               </button>
             </div>
           </div>
@@ -223,16 +223,16 @@
         return (
           <div className="min-h-screen safari-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
             <div className="bg-white/90 backdrop-blur-sm p-10 rounded-[3rem] shadow-[0_20px_50px_rgba(217,119,6,0.2)] flex flex-col items-center text-center z-10 max-w-lg w-full border-8 border-orange-500">
-              <div className="text-8xl mb-4 pop-anim">ðŸŽ–ï¸</div>
+              <div className="text-8xl mb-4 pop-anim">🎖️</div>
               <h1 className="text-5xl font-black text-stone-800 mb-2 uppercase">
                 Grande Explorador!
               </h1>
-              <p className="text-stone-600 mb-6 text-xl font-bold">VocÃª encontrou todos os coletivos raros!</p>
+              <p className="text-stone-600 mb-6 text-xl font-bold">Você encontrou todos os coletivos raros!</p>
               
               <div className="bg-amber-100 border-4 border-amber-400 rounded-3xl p-6 mb-8 w-full flex flex-col items-center">
-                <span className="text-amber-800 font-bold uppercase mb-2">InsÃ­gnias de CaÃ§ador</span>
+                <span className="text-amber-800 font-bold uppercase mb-2">Insígnias de Caçador</span>
                 <div className="flex items-center text-6xl font-black text-orange-500">
-                  <span className="mr-4">â­</span> x{stars}
+                  <span className="mr-4">⭐</span> x{stars}
                 </div>
               </div>
 
@@ -248,12 +248,12 @@
       }
 
       // ------------------------------------------------------------------------
-      // TELA 2: JOGABILIDADE (MÃºltiplas MecÃ¢nicas)
+      // TELA 2: JOGABILIDADE (Múltiplas Mecânicas)
       // ------------------------------------------------------------------------
       return (
         <div className="min-h-screen w-full flex flex-col relative safari-bg text-stone-800">
           
-          {/* CABEÃ‡ALHO */}
+          {/* CABEÇALHO */}
           <div className="w-full flex justify-between items-center p-6 z-10 bg-stone-900/80 backdrop-blur-sm shadow-lg rounded-b-3xl border-b-4 border-stone-700">
             <div className="flex flex-col">
               <h2 className="text-2xl md:text-3xl font-black uppercase text-amber-100 drop-shadow-md">
@@ -264,14 +264,14 @@
             
             <div className="flex items-center text-3xl font-black text-orange-400 drop-shadow-md">
               <span className="mr-2">x{stars}</span>
-              <span className="pop-anim">â­</span>
+              <span className="pop-anim">⭐</span>
             </div>
           </div>
 
           <div className="flex-1 flex flex-col items-center justify-center p-4 z-10 w-full max-w-5xl mx-auto">
             
             {/* ------------------------------------------------------------ */}
-            {/* MECÃ‚NICA 1: MATCH (Arrastar e Largar)                          */}
+            {/* MECÂNICA 1: MATCH (Arrastar e Largar)                          */}
             {/* ------------------------------------------------------------ */}
             {level.type === 'match' && (
               <div className="flex flex-col items-center w-full">
@@ -281,7 +281,7 @@
                   {/* Palavra Alvo (Design Aventura) */}
                   <div className="bg-stone-800 rounded-[2rem] border-4 border-stone-600 p-8 shadow-xl text-center mb-4 relative">
                     <span className="text-4xl md:text-6xl font-black text-white tracking-wider relative z-10">
-                      VÃRIOS {level.target}
+                      VÁRIOS {level.target}
                     </span>
                   </div>
                   
@@ -338,7 +338,7 @@
             )}
 
             {/* ------------------------------------------------------------ */}
-            {/* MECÃ‚NICA 2: CONNECT (Ligar os Pontos)                          */}
+            {/* MECÂNICA 2: CONNECT (Ligar os Pontos)                          */}
             {/* ------------------------------------------------------------ */}
             {level.type === 'connect' && (
               <div className="flex flex-col items-center w-full">
@@ -424,7 +424,7 @@
             )}
 
             {/* ------------------------------------------------------------ */}
-            {/* MECÃ‚NICA 3: INTRUDER (Encontrar a palavra diferente)           */}
+            {/* MECÂNICA 3: INTRUDER (Encontrar a palavra diferente)           */}
             {/* ------------------------------------------------------------ */}
             {level.type === 'intruder' && (
               <div className="flex flex-col items-center w-full">
@@ -466,7 +466,7 @@
             )}
 
             {/* ------------------------------------------------------------ */}
-            {/* MECÃ‚NICA 4: SENTENCE (Substituir a palavra na frase)           */}
+            {/* MECÂNICA 4: SENTENCE (Substituir a palavra na frase)           */}
             {/* ------------------------------------------------------------ */}
             {level.type === 'sentence' && (
               <div className="flex flex-col items-center w-full">
@@ -486,7 +486,7 @@
                     onDragOver={handleDragOver}
                     onDrop={handleDrop}
                     onClick={() => {
-                       if(!isSuccess) alert("Toque ou arraste uma das opÃ§Ãµes de baixo aqui para dentro!");
+                       if(!isSuccess) alert("Toque ou arraste uma das opções de baixo aqui para dentro!");
                     }}
                   >
                     {isSuccess ? (

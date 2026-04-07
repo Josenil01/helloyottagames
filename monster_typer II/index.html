@@ -27,7 +27,7 @@
             font-family: 'Luckiest Guy', cursive;
         }
         
-        /* CenÃ¡rio de Fundo */
+        /* Cenário de Fundo */
         .game-bg {
             background: linear-gradient(to bottom, #7dd3fc 0%, #7dd3fc 60%, #4ade80 60%, #22c55e 100%);
             position: relative;
@@ -83,7 +83,7 @@
         .letter-correct { color: #ef4444; } /* Cor vermelha conforme a imagem */
         .letter-pending { color: #ffffff; }
 
-        /* AnimaÃ§Ãµes */
+        /* Animações */
         @keyframes monster-bounce {
             0%, 100% { transform: translateY(0) scale(1); }
             50% { transform: translateY(-10px) scale(1.02); }
@@ -119,9 +119,9 @@
 </head>
 <body class="h-screen h-dvh flex items-center justify-center overflow-hidden">
 
-    <!-- TELA DE INÃCIO -->
+    <!-- TELA DE INÍCIO -->
     <div id="screen-start" class="screen active-screen flex-col items-center justify-center w-full h-full bg-teal-600">
-            <a href="../../index.html" class="absolute top-4 left-4 text-teal-100 hover:text-teal-300 font-bold bg-teal-700/80 hover:bg-teal-800 px-4 py-2 rounded-full transition-colors z-20 border-2 border-teal-300">â—€ Voltar</a>
+            <a href="../../index.html" class="absolute top-4 left-4 text-teal-100 hover:text-teal-300 font-bold bg-teal-700/80 hover:bg-teal-800 px-4 py-2 rounded-full transition-colors z-20 border-2 border-teal-300">◀ Voltar</a>
         <h1 class="text-7xl font-game text-white mb-12 drop-shadow-lg text-center">MONSTER TYPER<br><span class="text-yellow-300">TECLADO MONSTROS</span></h1>
         
         <div class="mb-12 monster-anim">
@@ -184,7 +184,7 @@
                 <path d="M85 70 Q 100 30 115 70" fill="#ef4444" stroke="#991b1b" stroke-width="2" />
                 <circle cx="95" cy="55" r="4" fill="white" opacity="0.5" />
                 <circle cx="108" cy="62" r="3" fill="white" opacity="0.5" />
-                <!-- PÃ©s -->
+                <!-- Pés -->
                 <rect x="50" y="155" width="25" height="15" rx="5" fill="#16a34a" />
                 <rect x="125" y="155" width="25" height="15" rx="5" fill="#16a34a" />
             </svg>
@@ -204,7 +204,7 @@
         <!-- Bottom: Word Area -->
         <div class="mb-12">
             <div id="word-container" class="word-display-box font-game">
-                <!-- Letras serÃ£o inseridas aqui via JS -->
+                <!-- Letras serão inseridas aqui via JS -->
             </div>
         </div>
 
@@ -214,10 +214,10 @@
     <div id="modal-feedback" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-50">
         <div class="wood-panel p-12 text-center max-w-sm border-yellow-500 border-8">
             <h2 id="feedback-title" class="text-5xl font-game text-yellow-400 mb-4">MUITO BEM!</h2>
-            <div class="text-7xl mb-6">ðŸŒŸðŸŒŸðŸŒŸ</div>
-            <p id="feedback-msg" class="text-white text-xl font-bold mb-8">VocÃª Ã© um mestre dos monstros!</p>
+            <div class="text-7xl mb-6">🌟🌟🌟</div>
+            <p id="feedback-msg" class="text-white text-xl font-bold mb-8">Você é um mestre dos monstros!</p>
             <button onclick="nextLevel()" class="bg-green-500 text-white font-game text-3xl px-12 py-4 rounded-full border-b-8 border-green-700 active:border-0 transform active:translate-y-2">
-                PRÃ“XIMO
+                PRÓXIMO
             </button>
         </div>
     </div>
@@ -303,7 +303,7 @@
             timeLeft = 100;
             updateTimerUI();
             
-            // Dificuldade baseada no nÃ­vel: tempo diminui mais rÃ¡pido
+            // Dificuldade baseada no nível: tempo diminui mais rápido
             const speed = 100 + (level * 2); 
             
             timerInterval = setInterval(() => {
@@ -338,7 +338,7 @@
             
             const key = e.key.toUpperCase();
             
-            // Ignorar teclas que nÃ£o sÃ£o letras
+            // Ignorar teclas que não são letras
             if (!/^[A-Z]$/.test(key)) return;
 
             if (key === currentWord[typedIndex]) {
@@ -372,7 +372,7 @@
             score += 10;
             uiScore.innerText = score;
             
-            // Progresso do nÃ­vel
+            // Progresso do nível
             const progress = (score % 50) * 2;
             scoreBar.style.width = progress + "%";
 

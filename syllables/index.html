@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/game-viewport.css" />
-    <title>Separando SÃ­labas - NÃ­veis de Dificuldade</title>
+    <title>Separando Sílabas - Níveis de Dificuldade</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
     <style>
@@ -87,27 +87,27 @@
 
     <!-- TELA INICIAL -->
     <div id="screen-start" class="screen active-screen justify-center bg-gradient-to-b from-purple-400 to-purple-600 text-white">
-            <a href="../../index.html" class="absolute top-4 left-4 text-purple-100 hover:text-purple-300 font-bold bg-purple-700/80 hover:bg-purple-800 px-4 py-2 rounded-full transition-colors z-20 border-2 border-purple-300">â—€ Voltar</a>
-        <h1 class="text-6xl md:text-8xl font-game mb-8 drop-shadow-xl text-center leading-tight">SEPARANDO<br>SÃLABAS</h1>
+            <a href="../../index.html" class="absolute top-4 left-4 text-purple-100 hover:text-purple-300 font-bold bg-purple-700/80 hover:bg-purple-800 px-4 py-2 rounded-full transition-colors z-20 border-2 border-purple-300">◀ Voltar</a>
+        <h1 class="text-6xl md:text-8xl font-game mb-8 drop-shadow-xl text-center leading-tight">SEPARANDO<br>SÍLABAS</h1>
         <div class="w-64 h-64 bg-white rounded-3xl flex items-center justify-center border-8 border-yellow-300 shadow-2xl mb-12 rotate-3">
-            <span class="text-9xl">ðŸ“š</span>
+            <span class="text-9xl">📚</span>
         </div>
         <button onclick="showScreen('screen-levels')" class="bg-yellow-400 hover:bg-yellow-500 text-purple-900 font-game text-4xl px-12 py-4 rounded-full shadow-lg transform transition hover:scale-110 active:scale-95 border-b-8 border-yellow-600">
             JOGAR!
         </button>
     </div>
 
-    <!-- TELA DE SELEÃ‡ÃƒO DE NÃVEIS -->
+    <!-- TELA DE SELEÇÃO DE NÍVEIS -->
     <div id="screen-levels" class="screen bg-purple-50">
         <div class="max-w-4xl w-full">
             <div class="flex justify-between items-center mb-8">
-                <button onclick="showScreen('screen-start')" class="text-purple-600 font-bold bg-white px-4 py-2 rounded-xl shadow-sm border-2 border-purple-100">â† VOLTAR</button>
+                <button onclick="showScreen('screen-start')" class="text-purple-600 font-bold bg-white px-4 py-2 rounded-xl shadow-sm border-2 border-purple-100">← VOLTAR</button>
                 <h2 class="text-4xl font-game text-purple-600">FASES</h2>
                 <div class="w-10"></div>
             </div>
             
             <div id="levels-container" class="space-y-12">
-                <!-- SeÃ§Ãµes geradas por JS (FÃ¡cil, MÃ©dio, DifÃ­cil) -->
+                <!-- Seções geradas por JS (Fácil, Médio, Difícil) -->
             </div>
         </div>
     </div>
@@ -130,94 +130,94 @@
                 </div>
 
                 <div class="flex flex-col items-end">
-                    <div class="text-sm font-bold text-purple-400 uppercase" id="difficulty-label">FÃ¡cil</div>
+                    <div class="text-sm font-bold text-purple-400 uppercase" id="difficulty-label">Fácil</div>
                     <div class="text-xl font-game text-purple-600 bg-white px-6 py-1 rounded-full border-2 border-purple-100 shadow-sm" id="level-indicator">FASE 1</div>
                 </div>
             </div>
 
-            <!-- Ãrea de Jogo Principal -->
+            <!-- Área de Jogo Principal -->
             <div class="flex flex-col md:flex-row items-center justify-center gap-8 bg-white p-6 md:p-10 rounded-[3rem] shadow-2xl border-b-8 border-purple-100">
                 <!-- Imagem -->
                 <div class="w-full md:w-2/5 flex flex-col items-center">
                     <div class="bg-purple-50 rounded-[2rem] border-4 border-dashed border-purple-200 w-full aspect-square flex items-center justify-center shadow-inner">
-                        <span id="word-emoji" class="text-8xl md:text-9xl select-none">ðŸ”¤</span>
+                        <span id="word-emoji" class="text-8xl md:text-9xl select-none">🔤</span>
                     </div>
                     <div id="word-hint" class="mt-4 text-3xl font-game text-purple-300 opacity-50 uppercase tracking-widest"></div>
                 </div>
 
-                <!-- Slots de SÃ­labas -->
+                <!-- Slots de Sílabas -->
                 <div class="w-full md:w-3/5 text-center">
-                    <div class="mb-6 text-purple-400 font-bold uppercase tracking-wider">Arraste as sÃ­labas na ordem correta:</div>
+                    <div class="mb-6 text-purple-400 font-bold uppercase tracking-wider">Arraste as sílabas na ordem correta:</div>
                     <div class="flex flex-wrap justify-center gap-4" id="slots-container"></div>
                 </div>
             </div>
 
-            <!-- Banco de SÃ­labas -->
+            <!-- Banco de Sílabas -->
             <div id="syllables-bank" class="flex flex-wrap justify-center gap-4 mt-8 p-8 bg-purple-100 rounded-[2rem] border-4 border-white shadow-xl min-h-[120px]"></div>
         </div>
     </div>
 
-    <!-- Modal de VitÃ³ria -->
+    <!-- Modal de Vitória -->
     <div id="win-modal" class="fixed inset-0 bg-purple-900/80 flex items-center justify-center hidden z-50 backdrop-blur-sm">
         <div class="bg-white p-10 rounded-[3rem] text-center shadow-2xl border-8 border-yellow-400 max-w-sm mx-4 transform scale-110">
             <h2 class="text-5xl font-game text-purple-600 mb-2">MUITO BEM!</h2>
-            <div class="text-7xl mb-6">ðŸ†</div>
-            <p class="text-xl font-bold text-gray-600 mb-8" id="win-message">SÃ­laba por sÃ­laba, vocÃª conseguiu!</p>
+            <div class="text-7xl mb-6">🏆</div>
+            <p class="text-xl font-bold text-gray-600 mb-8" id="win-message">Sílaba por sílaba, você conseguiu!</p>
             <button onclick="handleNextLevel()" class="bg-green-500 hover:bg-green-600 text-white font-game text-3xl py-4 px-12 rounded-full shadow-lg border-b-8 border-green-700 active:border-b-0 active:translate-y-1 transition-all">
-                PRÃ“XIMO âž”
+                PRÓXIMO ➔
             </button>
         </div>
     </div>
 
     <script>
        /**
- * ConfiguraÃ§Ã£o dos nÃ­veis do jogo.
- * FÃ¡cil: Palavras de 2 sÃ­labas.
- * MÃ©dio: Palavras de 3 sÃ­labas.
- * DifÃ­cil: Palavras de 4 sÃ­labas.
+ * Configuração dos níveis do jogo.
+ * Fácil: Palavras de 2 sílabas.
+ * Médio: Palavras de 3 sílabas.
+ * Difícil: Palavras de 4 sílabas.
  */
 const levels = [
-    // FASE FÃCIL (2 SÃ­labas)
-    { difficulty: 'FÃ¡cil', word: 'BOLA', syllables: ['BO', 'LA'], emoji: 'âš½' },
-    { difficulty: 'FÃ¡cil', word: 'CASA', syllables: ['CA', 'SA'], emoji: 'ðŸ ' },
-    { difficulty: 'FÃ¡cil', word: 'GATO', syllables: ['GA', 'TO'], emoji: 'ðŸ±' },
-    { difficulty: 'FÃ¡cil', word: 'PATO', syllables: ['PA', 'TO'], emoji: 'ðŸ¦†' },
-    { difficulty: 'FÃ¡cil', word: 'MESA', syllables: ['ME', 'SA'], emoji: 'ðŸª‘' },
-    { difficulty: 'FÃ¡cil', word: 'DADO', syllables: ['DA', 'DO'], emoji: 'ðŸŽ²' },
-    { difficulty: 'FÃ¡cil', word: 'BOLO', syllables: ['BO', 'LO'], emoji: 'ðŸŽ‚' },
-    { difficulty: 'FÃ¡cil', word: 'SAPO', syllables: ['SA', 'PO'], emoji: 'ðŸ¸' },
-    { difficulty: 'FÃ¡cil', word: 'LAGO', syllables: ['LA', 'GO'], emoji: 'ðŸžï¸' },
-    { difficulty: 'FÃ¡cil', word: 'FOGO', syllables: ['FO', 'GO'], emoji: 'ðŸ”¥' },
-    { difficulty: 'FÃ¡cil', word: 'URSO', syllables: ['UR', 'SO'], emoji: 'ðŸ»' },
-    { difficulty: 'FÃ¡cil', word: 'RATO', syllables: ['RA', 'TO'], emoji: 'ðŸ­' },
+    // FASE FÁCIL (2 Sílabas)
+    { difficulty: 'Fácil', word: 'BOLA', syllables: ['BO', 'LA'], emoji: '⚽' },
+    { difficulty: 'Fácil', word: 'CASA', syllables: ['CA', 'SA'], emoji: '🏠' },
+    { difficulty: 'Fácil', word: 'GATO', syllables: ['GA', 'TO'], emoji: '🐱' },
+    { difficulty: 'Fácil', word: 'PATO', syllables: ['PA', 'TO'], emoji: '🦆' },
+    { difficulty: 'Fácil', word: 'MESA', syllables: ['ME', 'SA'], emoji: '🪑' },
+    { difficulty: 'Fácil', word: 'DADO', syllables: ['DA', 'DO'], emoji: '🎲' },
+    { difficulty: 'Fácil', word: 'BOLO', syllables: ['BO', 'LO'], emoji: '🎂' },
+    { difficulty: 'Fácil', word: 'SAPO', syllables: ['SA', 'PO'], emoji: '🐸' },
+    { difficulty: 'Fácil', word: 'LAGO', syllables: ['LA', 'GO'], emoji: '🏞️' },
+    { difficulty: 'Fácil', word: 'FOGO', syllables: ['FO', 'GO'], emoji: '🔥' },
+    { difficulty: 'Fácil', word: 'URSO', syllables: ['UR', 'SO'], emoji: '🐻' },
+    { difficulty: 'Fácil', word: 'RATO', syllables: ['RA', 'TO'], emoji: '🐭' },
 
-    // FASE MÃ‰DIA (3 SÃ­labas)
-    { difficulty: 'MÃ©dio', word: 'MACACO', syllables: ['MA', 'CA', 'CO'], emoji: 'ðŸ’' },
-    { difficulty: 'MÃ©dio', word: 'SAPATO', syllables: ['SA', 'PA', 'TO'], emoji: 'ðŸ‘Ÿ' },
-    { difficulty: 'MÃ©dio', word: 'GIRAFA', syllables: ['GI', 'RA', 'FA'], emoji: 'ðŸ¦’' },
-    { difficulty: 'MÃ©dio', word: 'CANETA', syllables: ['CA', 'NE', 'TA'], emoji: 'ðŸ–Šï¸' },
-    { difficulty: 'MÃ©dio', word: 'JANELA', syllables: ['JA', 'NE', 'LA'], emoji: 'ðŸªŸ' },
-    { difficulty: 'MÃ©dio', word: 'CAVALO', syllables: ['CA', 'VA', 'LO'], emoji: 'ðŸ´' },
-    { difficulty: 'MÃ©dio', word: 'TOMATE', syllables: ['TO', 'MA', 'TE'], emoji: 'ðŸ…' },
-    { difficulty: 'MÃ©dio', word: 'PANELA', syllables: ['PA', 'NE', 'LA'], emoji: 'ðŸ³' },
-    { difficulty: 'MÃ©dio', word: 'PIPOCA', syllables: ['PI', 'PO', 'CA'], emoji: 'ðŸ¿' },
-    { difficulty: 'MÃ©dio', word: 'PETECA', syllables: ['PE', 'TE', 'CA'], emoji: 'ðŸ¸' },
-    { difficulty: 'MÃ©dio', word: 'CABANA', syllables: ['CA', 'BA', 'NA'], emoji: 'ðŸ›–' },
-    { difficulty: 'MÃ©dio', word: 'SALADA', syllables: ['SA', 'LA', 'DA'], emoji: 'ðŸ¥—' },
+    // FASE MÉDIA (3 Sílabas)
+    { difficulty: 'Médio', word: 'MACACO', syllables: ['MA', 'CA', 'CO'], emoji: '🐒' },
+    { difficulty: 'Médio', word: 'SAPATO', syllables: ['SA', 'PA', 'TO'], emoji: '👟' },
+    { difficulty: 'Médio', word: 'GIRAFA', syllables: ['GI', 'RA', 'FA'], emoji: '🦒' },
+    { difficulty: 'Médio', word: 'CANETA', syllables: ['CA', 'NE', 'TA'], emoji: '🖊️' },
+    { difficulty: 'Médio', word: 'JANELA', syllables: ['JA', 'NE', 'LA'], emoji: '🪟' },
+    { difficulty: 'Médio', word: 'CAVALO', syllables: ['CA', 'VA', 'LO'], emoji: '🐴' },
+    { difficulty: 'Médio', word: 'TOMATE', syllables: ['TO', 'MA', 'TE'], emoji: '🍅' },
+    { difficulty: 'Médio', word: 'PANELA', syllables: ['PA', 'NE', 'LA'], emoji: '🍳' },
+    { difficulty: 'Médio', word: 'PIPOCA', syllables: ['PI', 'PO', 'CA'], emoji: '🍿' },
+    { difficulty: 'Médio', word: 'PETECA', syllables: ['PE', 'TE', 'CA'], emoji: '🏸' },
+    { difficulty: 'Médio', word: 'CABANA', syllables: ['CA', 'BA', 'NA'], emoji: '🛖' },
+    { difficulty: 'Médio', word: 'SALADA', syllables: ['SA', 'LA', 'DA'], emoji: '🥗' },
 
-    // FASE DIFÃCIL (4 SÃ­labas)
-    { difficulty: 'DifÃ­cil', word: 'MELANCIA', syllables: ['ME', 'LAN', 'CI', 'A'], emoji: 'ðŸ‰' },
-    { difficulty: 'DifÃ­cil', word: 'ELEFANTE', syllables: ['E', 'LE', 'FAN', 'TE'], emoji: 'ðŸ˜' },
-    { difficulty: 'DifÃ­cil', word: 'BICICLETA', syllables: ['BI', 'CI', 'CLE', 'TA'], emoji: 'ðŸš²' },
-    { difficulty: 'DifÃ­cil', word: 'BORBOLETA', syllables: ['BOR', 'BO', 'LE', 'TA'], emoji: 'ðŸ¦‹' },
-    { difficulty: 'DifÃ­cil', word: 'TELEFONE', syllables: ['TE', 'LE', 'FO', 'NE'], emoji: 'ðŸ“±' },
-    { difficulty: 'DifÃ­cil', word: 'ABACAXI', syllables: ['A', 'BA', 'CA', 'XI'], emoji: 'ðŸ' },
-    { difficulty: 'DifÃ­cil', word: 'GELADEIRA', syllables: ['GE', 'LA', 'DEI', 'RA'], emoji: 'ðŸ§Š' },
-    { difficulty: 'DifÃ­cil', word: 'TELEVISÃƒO', syllables: ['TE', 'LE', 'VI', 'SÃƒO'], emoji: 'ðŸ“º' },
-    { difficulty: 'DifÃ­cil', word: 'COMPUTADOR', syllables: ['COM', 'PU', 'TA', 'DOR'], emoji: 'ðŸ’»' },
-    { difficulty: 'DifÃ­cil', word: 'ABACATE', syllables: ['A', 'BA', 'CA', 'TE'], emoji: 'ðŸ¥‘' },
-    { difficulty: 'DifÃ­cil', word: 'CHOCOLATE', syllables: ['CHO', 'CO', 'LA', 'TE'], emoji: 'ðŸ«' },
-    { difficulty: 'DifÃ­cil', word: 'ESPERANÃ‡A', syllables: ['ES', 'PE', 'RAN', 'Ã‡A'], emoji: 'ðŸ•Šï¸' }
+    // FASE DIFÍCIL (4 Sílabas)
+    { difficulty: 'Difícil', word: 'MELANCIA', syllables: ['ME', 'LAN', 'CI', 'A'], emoji: '🍉' },
+    { difficulty: 'Difícil', word: 'ELEFANTE', syllables: ['E', 'LE', 'FAN', 'TE'], emoji: '🐘' },
+    { difficulty: 'Difícil', word: 'BICICLETA', syllables: ['BI', 'CI', 'CLE', 'TA'], emoji: '🚲' },
+    { difficulty: 'Difícil', word: 'BORBOLETA', syllables: ['BOR', 'BO', 'LE', 'TA'], emoji: '🦋' },
+    { difficulty: 'Difícil', word: 'TELEFONE', syllables: ['TE', 'LE', 'FO', 'NE'], emoji: '📱' },
+    { difficulty: 'Difícil', word: 'ABACAXI', syllables: ['A', 'BA', 'CA', 'XI'], emoji: '🍍' },
+    { difficulty: 'Difícil', word: 'GELADEIRA', syllables: ['GE', 'LA', 'DEI', 'RA'], emoji: '🧊' },
+    { difficulty: 'Difícil', word: 'TELEVISÃO', syllables: ['TE', 'LE', 'VI', 'SÃO'], emoji: '📺' },
+    { difficulty: 'Difícil', word: 'COMPUTADOR', syllables: ['COM', 'PU', 'TA', 'DOR'], emoji: '💻' },
+    { difficulty: 'Difícil', word: 'ABACATE', syllables: ['A', 'BA', 'CA', 'TE'], emoji: '🥑' },
+    { difficulty: 'Difícil', word: 'CHOCOLATE', syllables: ['CHO', 'CO', 'LA', 'TE'], emoji: '🍫' },
+    { difficulty: 'Difícil', word: 'ESPERANÇA', syllables: ['ES', 'PE', 'RAN', 'ÇA'], emoji: '🕊️' }
 ];
 
         let currentLevelIdx = 0;
@@ -236,9 +236,9 @@ const levels = [
             container.innerHTML = '';
             
             const groups = {
-                'FÃ¡cil': { color: 'text-green-500', levels: levels.slice(0, 12), startIdx: 0 },
-                'MÃ©dio': { color: 'text-orange-500', levels: levels.slice(12, 24), startIdx: 12 },
-                'DifÃ­cil': { color: 'text-red-500', levels: levels.slice(24, 36), startIdx: 24 }
+                'Fácil': { color: 'text-green-500', levels: levels.slice(0, 12), startIdx: 0 },
+                'Médio': { color: 'text-orange-500', levels: levels.slice(12, 24), startIdx: 12 },
+                'Difícil': { color: 'text-red-500', levels: levels.slice(24, 36), startIdx: 24 }
             };
 
             for (const [phaseName, info] of Object.entries(groups)) {
@@ -259,7 +259,7 @@ const levels = [
                     card.className = `level-card aspect-square rounded-[1.5rem] flex flex-col items-center justify-center text-3xl font-game shadow-md transition ${isLocked ? 'locked bg-gray-200 text-gray-400' : 'bg-white text-purple-600 border-4 border-purple-100 hover:border-purple-400'}`;
                     
                     card.innerHTML = `
-                        <span class="text-xs uppercase opacity-60">${isLocked ? 'ðŸ”’' : 'Fase'}</span>
+                        <span class="text-xs uppercase opacity-60">${isLocked ? '🔒' : 'Fase'}</span>
                         <span>${realIdx + 1}</span>
                     `;
                     

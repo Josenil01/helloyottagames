@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado dos Gigantes - Comparação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #8b5cf6;
+            --secondary: #fbbf24;
+            --giant-skin: #fde68a;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --sky: #bae6fd;
+            --wood: #78350f;
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Baloo 2", cursive;
+            background: var(--sky);
+            overflow: hidden;
+            color: #1e293b;
+            user-select: none;
+        }
+
+        /* Cenário de Cozinha de Gigante */
+        .scenery {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background: linear-gradient(to bottom, #bae6fd 0%, #e0f2fe 100%);
+        }
+
+        .shelf {
+            position: absolute;
+            bottom: 150px;
+            width: 120%;
+            left: -10%;
+            height: 40px;
+            background: var(--wood);
+            border-bottom: 8px solid #451a03;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* HUD */
+        .hud {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .stat-badge {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 5px 15px;
+            border-radius: 999px;
+            font-size: 1.1rem;
+            border: 2px solid var(--primary);
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Pedido do Gigante */
+        .instruction-card {
+            background: white;
+            border-radius: 25px;
+            padding: 15px 25px;
+            text-align: center;
+            border: 4px solid var(--primary);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            animation: bounce 2s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .instruction-text {
+            font-size: 1.5rem;
+            margin: 0;
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        /* Área de Comparação */
+        .market-area {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 40px;
+            padding-bottom: 80px; /* Acima da prateleira */
+        }
+
+        .item-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            min-width: 150px;
+        }
+
+        .item-box:hover { transform: scale(1.1); background: rgba(255, 255, 255, 0.3); }
+
+        .item-visual {
+            filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));
+            transition: all 0.5s;
+        }
+
+        /* Telas */
+        .screen { display: none; height: 100%; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+        .screen.active { display: flex; }
+
+        .btn-large {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.8rem;
+            font-family: inherit;
+            cursor: pointer;
+            box-shadow: 0 8px 0 #6d28d9;
+            font-weight: 800;
+            margin-top: 20px;
+        }
+
+        .level-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 15px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .lvl-btn {
+            aspect-ratio: 1;
+            border-radius: 20px;
+            border: 3px solid #e2e8f0;
+            background: white;
+            font-family: inherit;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .lvl-btn.unlocked { border-color: var(--primary); color: var(--primary); }
+        .lvl-btn:disabled { opacity: 0.5; }
+
+        /* Modal */
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 30px;
+            text-align: center;
+            max-width: 350px;
+            width: 90%;
+            border: 6px solid var(--primary);
+        }
+
+        /* Itens SVG */
+        .svg-icon { width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+
+    <div class="scenery">
+        <div class="shelf"></div>
+    </div>
+
+    <div class="container">
+        <!-- HOME -->
+        <div id="screen-home" class="screen active">
+            <h1 style="font-size: 3rem; margin: 0; text-shadow: 2px 2px white;">🍎 Mercado</h1>
+            <h2 style="margin: 0; color: var(--primary); text-shadow: 1px 1px white;">dos Gigantes</h2>
+            <div style="margin: 30px 0; font-size: 5rem;">⚖️</div>
+            <button class="btn-large" onclick="changeScreen('levels')">AJUDAR!</button>
+            <p id="total-stars">⭐ 0/12</p>
+        </div>
+
+        <!-- NÍVEIS -->
+        <div id="screen-levels" class="screen" style="justify-content: flex-start; padding-top: 40px;">
+            <div class="hud" style="width: 100%;">
+                <button class="stat-badge" onclick="changeScreen('home')" style="cursor:pointer; border:none">🏠 Início</button>
+                <div class="stat-badge" id="lvl-star-count">⭐ 0</div>
+            </div>
+            <h2 style="margin: 20px 0;">Lista de Compras</h2>
+            <div class="level-grid" id="level-grid"></div>
+        </div>
+
+        <!-- JOGO -->
+        <div id="screen-game" class="screen">
+            <div class="hud" style="width: 100%;">
+                <div class="stat-badge" id="game-info">Pedido 1</div>
+                <button class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer; border:none">✕</button>
+            </div>
+
+            <div class="instruction-card">
+                <p class="instruction-text" id="instruction">Escolha o MAIOR!</p>
+            </div>
+
+            <div class="market-area" id="market-area">
+                <!-- Itens para comparar aqui -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2 style="color: var(--primary)" id="result-title">Muito bem!</h2>
+            <div style="font-size: 4rem; margin: 15px 0;">😋</div>
+            <p id="result-msg">O gigante adorou a sua escolha!</p>
+            <button id="modal-next-btn" class="btn-large" onclick="handleModalAction()">PRÓXIMO</button>
+        </div>
+    </div>
+
+    <script>
+        const TYPES = {
+            fruit: (size) => `<svg class="svg-icon" width="${size}" height="${size}" viewBox="0 0 100 100"><circle cx="50" cy="55" r="40" fill="#ef4444"/><path d="M50 15 L50 25 M45 15 L55 15" stroke="#78350f" stroke-width="4"/><path d="M52 20 Q65 10 60 25 Z" fill="#22c55e"/></svg>`,
+            bread: (size) => `<svg class="svg-icon" width="${size}" height="${size}" viewBox="0 0 100 100"><path d="M10 60 Q50 30 90 60 Q90 80 50 80 Q10 80 10 60" fill="#fcd34d" stroke="#b45309" stroke-width="2"/><path d="M30 55 L40 50 M50 55 L60 50 M70 55 L80 50" stroke="#b45309" stroke-width="2"/></svg>`,
+            bottle: (size) => `<svg class="svg-icon" width="${size}" height="${size}" viewBox="0 0 100 100"><rect x="35" y="10" width="30" height="20" rx="2" fill="#94a3b8"/><rect x="25" y="30" width="50" height="60" rx="5" fill="#3b82f6"/><rect x="30" y="45" width="40" height="20" fill="white" opacity="0.3"/></svg>`,
+            ladder: (size) => `<svg class="svg-icon" width="${size/2}" height="${size}" viewBox="0 0 50 100"><rect x="10" y="0" width="4" height="100" fill="#78350f"/><rect x="36" y="0" width="4" height="100" fill="#78350f"/><rect x="10" y="20" width="30" height="4" fill="#78350f"/><rect x="10" y="40" width="30" height="4" fill="#78350f"/><rect x="10" y="60" width="30" height="4" fill="#78350f"/><rect x="10" y="80" width="30" height="4" fill="#78350f"/></svg>`
+        };
+
+        const LEVELS = [
+            { id: 1, type: 'fruit', task: 'maior', items: [{val: 40, label: 'Pequena'}, {val: 100, label: 'Grande'}] },
+            { id: 2, type: 'fruit', task: 'menor', items: [{val: 40, label: 'Pequena'}, {val: 100, label: 'Grande'}] },
+            { id: 3, type: 'bread', task: 'maior', items: [{val: 50, label: 'Pãozinho'}, {val: 120, label: 'Pãozão'}] },
+            { id: 4, type: 'bottle', task: 'menor', items: [{val: 120, label: 'Garrfona'}, {val: 60, label: 'Garrafinha'}] },
+            { id: 5, type: 'ladder', task: 'maior', items: [{val: 100, label: 'Curta'}, {val: 180, label: 'Comprida'}] },
+            { id: 6, type: 'ladder', task: 'menor', items: [{val: 180, label: 'Comprida'}, {val: 100, label: 'Curta'}] },
+            { id: 7, type: 'fruit', task: 'maior', items: [{val: 30, id:0}, {val: 70, id:1}, {val: 130, id:2}] },
+            { id: 8, type: 'bread', task: 'menor', items: [{val: 140, id:0}, {val: 90, id:1}, {val: 50, id:2}] },
+            { id: 9, type: 'bottle', task: 'maior', items: [{val: 50, id:0}, {val: 150, id:1}, {val: 100, id:2}] },
+            { id: 10, type: 'ladder', task: 'menor', items: [{val: 200, id:0}, {val: 140, id:1}, {val: 80, id:2}] },
+            { id: 11, type: 'fruit', task: 'maior', items: [{val: 50, id:0}, {val: 180, id:1}, {val: 110, id:2}] },
+            { id: 12, type: 'bread', task: 'menor', items: [{val: 160, id:0}, {val: 30, id:1}, {val: 80, id:2}] }
+        ];
+
+        let unlocked = 1;
+        let stars = Array(LEVELS.length).fill(0);
+        let currentLevelIdx = 0;
+        let isLocked = false;
+
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        function playSfx(freq, type = 'sine', duration = 0.1) {
+            try {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = type;
+                osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+                gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
+                osc.connect(gain); gain.connect(audioCtx.destination);
+                osc.start(); osc.stop(audioCtx.currentTime + duration);
+            } catch(e) {}
+        }
+
+        function init() {
+            loadProgress();
+            renderLevelGrid();
+            updateStats();
+        }
+
+        function loadProgress() {
+            const saved = localStorage.getItem('mercado_gigantes_v1');
+            if(saved) {
+                const data = JSON.parse(saved);
+                unlocked = data.unlocked || 1;
+                stars = data.stars || Array(LEVELS.length).fill(0);
+            }
+        }
+
+        function saveProgress() {
+            localStorage.setItem('mercado_gigantes_v1', JSON.stringify({ unlocked, stars }));
+        }
+
+        function changeScreen(id) {
+            playSfx(440, 'triangle', 0.05);
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById('screen-' + id).classList.add('active');
+            if(id === 'levels') renderLevelGrid();
+        }
+
+        function renderLevelGrid() {
+            const grid = document.getElementById('level-grid');
+            grid.innerHTML = '';
+            LEVELS.forEach((lvl, i) => {
+                const btn = document.createElement('button');
+                btn.className = `lvl-btn ${i < unlocked ? 'unlocked' : ''}`;
+                btn.disabled = i >= unlocked;
+                btn.innerHTML = `<span>Pedido ${lvl.id}</span><div style="font-size:1.5rem">${stars[i] ? '⭐' : '🛒'}</div>`;
+                btn.onclick = () => startLevel(i);
+                grid.appendChild(btn);
+            });
+        }
+
+        function updateStats() {
+            const total = stars.reduce((a,b) => a + (b ? 1 : 0), 0);
+            document.getElementById('total-stars').textContent = `⭐ ${total}/${LEVELS.length}`;
+            document.getElementById('lvl-star-count').textContent = `⭐ ${total}`;
+        }
+
+        function startLevel(idx) {
+            currentLevelIdx = idx;
+            isLocked = false;
+            const lvl = LEVELS[idx];
+            
+            document.getElementById('game-info').textContent = `Pedido ${lvl.id}`;
+            document.getElementById('instruction').textContent = `Escolha o ${lvl.task.toUpperCase()}!`;
+            
+            const area = document.getElementById('market-area');
+            area.innerHTML = '';
+            
+            // Determinar o valor correto
+            const targetVal = lvl.task === 'maior' 
+                ? Math.max(...lvl.items.map(i => i.val)) 
+                : Math.min(...lvl.items.map(i => i.val));
+
+            lvl.items.forEach(item => {
+                const box = document.createElement('div');
+                box.className = 'item-box';
+                box.innerHTML = `<div class="item-visual">${TYPES[lvl.type](item.val)}</div>`;
+                box.onclick = () => handleChoice(box, item.val === targetVal);
+                area.appendChild(box);
+            });
+
+            changeScreen('game');
+        }
+
+        function handleChoice(el, isCorrect) {
+            if(isLocked) return;
+
+            if(isCorrect) {
+                isLocked = true;
+                playSfx(880, 'sine', 0.3);
+                el.style.transform = 'scale(1.3) translateY(-20px)';
+                
+                // Brilho de sucesso
+                const visual = el.querySelector('.item-visual');
+                visual.style.filter = 'drop-shadow(0 0 20px gold)';
+                
+                stars[currentLevelIdx] = 1;
+                unlocked = Math.max(unlocked, currentLevelIdx + 2);
+                saveProgress();
+                updateStats();
+
+                setTimeout(() => {
+                    const modal = document.getElementById('result-modal');
+                    modal.style.display = 'flex';
+                }, 800);
+            } else {
+                playSfx(220, 'sawtooth', 0.2);
+                el.style.animation = 'shake 0.4s';
+                setTimeout(() => el.style.animation = '', 400);
+            }
+        }
+
+        function handleModalAction() {
+            document.getElementById('result-modal').style.display = 'none';
+            if(currentLevelIdx + 1 < LEVELS.length) {
+                startLevel(currentLevelIdx + 1);
+            } else {
+                changeScreen('levels');
+            }
+        }
+
+        // CSS Shake Animation
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes shake {
+                0%, 100% { transform: translateX(0); }
+                25% { transform: translateX(-10px); }
+                75% { transform: translateX(10px); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        window.onload = init;
+    </script>
+</body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/game-viewport.css" />
-    <title>GalÃ¡xia da MatemÃ¡tica - AdiÃ§Ã£o e SubtraÃ§Ã£o</title>
+    <title>Galáxia da Matemática - Adição e Subtração</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
     <style>
@@ -36,7 +36,7 @@
             user-select: none;
         }
         
-        /* AnimaÃ§Ãµes de Sucesso */
+        /* Animações de Sucesso */
         @keyframes success-pop {
             0% { transform: scale(1); }
             50% { transform: scale(1.1); color: #4ade80; }
@@ -64,7 +64,7 @@
             animation: shake 0.4s ease;
         }
 
-        /* AnimaÃ§Ã£o do Foguete de TransiÃ§Ã£o (Apenas entre NÃ­veis) */
+        /* Animação do Foguete de Transição (Apenas entre Níveis) */
         @keyframes rocket-travel {
             0% { transform: translate(-150%, 50%) rotate(45deg); }
             100% { transform: translate(150%, -150%) rotate(45deg); }
@@ -129,45 +129,45 @@
 
     <!-- TELA INICIAL -->
     <div id="screen-start" class="screen active-screen justify-center bg-gradient-to-b from-indigo-900 via-slate-900 to-black text-white text-center">
-        <h1 class="text-6xl md:text-8xl font-game mb-8 drop-shadow-[0_10px_10px_rgba(99,102,241,0.5)] leading-tight">GALÃXIA<br>MATEMÃTICA</h1>
+        <h1 class="text-6xl md:text-8xl font-game mb-8 drop-shadow-[0_10px_10px_rgba(99,102,241,0.5)] leading-tight">GALÁXIA<br>MATEMÁTICA</h1>
         <div class="w-64 h-64 bg-slate-800 rounded-full flex items-center justify-center border-8 border-indigo-500 shadow-[0_0_50px_rgba(99,102,241,0.4)] mb-12 overflow-hidden rotate-2 relative">
             <span class="text-white font-game text-8xl z-10">4+1</span>
             <div class="absolute inset-0 bg-indigo-500/10 animate-pulse"></div>
         </div>
         <button onclick="showScreen('screen-mode')" class="bg-indigo-500 hover:bg-indigo-400 text-white font-game text-4xl px-12 py-4 rounded-full shadow-lg transform transition hover:scale-110 active:scale-95 border-b-8 border-indigo-700">
-            LANÃ‡AR FOGUETE!
+            LANÇAR FOGUETE!
         </button>
     </div>
 
-    <!-- SELEÃ‡ÃƒO DE MODO -->
+    <!-- SELEÇÃO DE MODO -->
     <div id="screen-mode" class="screen bg-slate-950 justify-center">
-        <h2 class="text-4xl font-game text-indigo-400 mb-12 text-center uppercase">Selecione sua MissÃ£o</h2>
+        <h2 class="text-4xl font-game text-indigo-400 mb-12 text-center uppercase">Selecione sua Missão</h2>
         <div class="flex flex-col md:flex-row gap-8 w-full max-w-4xl px-4">
             <button onclick="setMode('infantil')" class="mode-card flex-1 bg-slate-900 p-8 rounded-[3.5rem] border-4 border-indigo-500/30 text-center shadow-xl">
-                <div class="text-7xl mb-4">ðŸš€</div>
+                <div class="text-7xl mb-4">🚀</div>
                 <div class="text-3xl font-game text-indigo-300 mb-2">INFANTIL</div>
-                <p class="text-slate-400 font-bold">Contagem com Ãcones<br>Somas simples atÃ© 10!</p>
+                <p class="text-slate-400 font-bold">Contagem com Ícones<br>Somas simples até 10!</p>
             </button>
 
             <button onclick="setMode('fundamental')" class="mode-card flex-1 bg-slate-900 p-8 rounded-[3.5rem] border-4 border-purple-500/30 text-center shadow-xl">
-                <div class="text-7xl mb-4">ðŸ‘¨â€ðŸš€</div>
+                <div class="text-7xl mb-4">👨‍🚀</div>
                 <div class="text-3xl font-game text-purple-300 mb-2">FUNDAMENTAL I</div>
-                <p class="text-slate-400 font-bold">CÃ¡lculo Mental<br>Desafios atÃ© 100!</p>
+                <p class="text-slate-400 font-bold">Cálculo Mental<br>Desafios até 100!</p>
             </button>
         </div>
         <button onclick="showScreen('screen-start')" class="mt-12 text-indigo-400 font-bold underline hover:text-indigo-300">Voltar para a Terra</button>
     </div>
 
-    <!-- SELEÃ‡ÃƒO DE NÃVEIS -->
+    <!-- SELEÇÃO DE NÍVEIS -->
     <div id="screen-levels" class="screen bg-slate-950 overflow-y-auto">
         <div class="max-w-5xl w-full">
             <div class="flex justify-between items-center mb-10">
-                <button onclick="showScreen('screen-mode')" class="bg-slate-800 text-indigo-300 font-bold px-6 py-3 rounded-2xl shadow-sm border-2 border-indigo-900/50 hover:bg-slate-700 transition">â† MISSÃ•ES</button>
+                <button onclick="showScreen('screen-mode')" class="bg-slate-800 text-indigo-300 font-bold px-6 py-3 rounded-2xl shadow-sm border-2 border-indigo-900/50 hover:bg-slate-700 transition">← MISSÕES</button>
                 <h2 class="text-4xl font-game text-indigo-400">MAPA ESTELAR</h2>
                 <div class="w-24"></div>
             </div>
             <div id="levels-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-8 pb-12">
-                <!-- NÃ­veis via JS -->
+                <!-- Níveis via JS -->
             </div>
         </div>
     </div>
@@ -207,23 +207,23 @@
 
             <div class="text-center mt-10">
                 <div class="inline-flex items-center gap-3 bg-indigo-900/30 text-indigo-200 px-10 py-5 rounded-full border border-indigo-500/20 shadow-inner">
-                    <span class="text-3xl animate-bounce">âŒ¨ï¸</span>
-                    <p class="text-xl font-bold">Digite o cÃ³digo no painel!</p>
+                    <span class="text-3xl animate-bounce">⌨️</span>
+                    <p class="text-xl font-bold">Digite o código no painel!</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- TELA DE TRANSIÃ‡ÃƒO (FOGUETE) - SÃ³ aparece na troca de nÃ­vel -->
+    <!-- TELA DE TRANSIÇÃO (FOGUETE) - Só aparece na troca de nível -->
     <div id="screen-transition" class="fixed inset-0 bg-slate-950 z-[60] flex items-center justify-center hidden overflow-hidden">
         <div class="stars-bg opacity-40"></div>
         <div class="text-center">
-            <h3 class="text-indigo-300 font-game text-3xl mb-12 animate-pulse" id="transition-text">SALTANDO PARA O PRÃ“XIMO SETOR...</h3>
+            <h3 class="text-indigo-300 font-game text-3xl mb-12 animate-pulse" id="transition-text">SALTANDO PARA O PRÓXIMO SETOR...</h3>
             <div class="relative w-full h-64 flex items-center justify-center">
                 <!-- Planeta Destino -->
-                <div id="target-planet" class="text-9xl absolute right-10 top-10 filter drop-shadow-[0_0_30px_rgba(99,102,241,0.5)]">ðŸª</div>
+                <div id="target-planet" class="text-9xl absolute right-10 top-10 filter drop-shadow-[0_0_30px_rgba(99,102,241,0.5)]">🪐</div>
                 <!-- Foguete -->
-                <div id="transition-rocket" class="text-8xl absolute left-10 bottom-10">ðŸš€</div>
+                <div id="transition-rocket" class="text-8xl absolute left-10 bottom-10">🚀</div>
             </div>
         </div>
     </div>
@@ -232,10 +232,10 @@
     <div id="win-modal" class="fixed inset-0 bg-black/90 flex items-center justify-center hidden z-50 backdrop-blur-md">
         <div class="bg-slate-900 p-12 rounded-[4rem] text-center shadow-[0_0_60px_rgba(99,102,241,0.4)] border-8 border-indigo-500 max-w-sm mx-4 transform scale-105">
             <h2 class="text-5xl font-game text-white mb-4" id="modal-title">SETOR LIMPO!</h2>
-            <div class="text-8xl mb-6">ðŸ†</div>
-            <p class="text-xl font-bold text-slate-400 mb-8" id="modal-msg">MissÃ£o cumprida, cadete!</p>
+            <div class="text-8xl mb-6">🏆</div>
+            <p class="text-xl font-bold text-slate-400 mb-8" id="modal-msg">Missão cumprida, cadete!</p>
             <button id="next-level-btn" onclick="handleNextLevelClick()" class="bg-indigo-500 hover:bg-indigo-400 text-white font-game text-3xl py-4 px-12 rounded-full shadow-lg border-b-8 border-indigo-700 active:translate-y-1 active:border-b-0 transition-all">
-                PRÃ“XIMO SETOR âž”
+                PRÓXIMO SETOR ➔
             </button>
         </div>
     </div>
@@ -263,12 +263,12 @@
         let gameMode = 'infantil';
         let currentOperation = null;
         let typedInput = "";
-        let currentIcon = 'ðŸš€';
+        let currentIcon = '🚀';
 
         let timeLeft = 100;
         let timerInterval = null;
 
-        const spacePlanets = ['ðŸª', 'ðŸŒ', 'ðŸŒ•', 'â˜€ï¸', 'ðŸŒ‘', 'â˜„ï¸', 'ðŸŒŒ', 'ðŸŒŸ', 'ðŸŒ‘', 'ðŸ”µ', 'ðŸ”´', 'ðŸŸ£'];
+        const spacePlanets = ['🪐', '🌍', '🌕', '☀️', '🌑', '☄️', '🌌', '🌟', '🌑', '🔵', '🔴', '🟣'];
 
         function showScreen(screenId) {
             stopTimer();
@@ -295,9 +295,9 @@
                 const card = document.createElement('div');
                 card.className = `level-card bg-slate-900 p-5 md:p-8 rounded-[3rem] flex flex-col items-center justify-center text-center border-4 ${isLocked ? 'locked border-slate-800' : 'border-indigo-900/40 cursor-pointer shadow-lg'}`;
                 card.innerHTML = `
-                    <div class="text-3xl mb-1">${isLocked ? 'ðŸ”’' : 'â˜„ï¸'}</div>
+                    <div class="text-3xl mb-1">${isLocked ? '🔒' : '☄️'}</div>
                     <div class="text-xl font-game text-indigo-300">${level.name}</div>
-                    <div class="text-xs font-bold text-indigo-500 uppercase tracking-tighter">${isLocked ? 'IndisponÃ­vel' : level.count + ' MissÃµes'}</div>
+                    <div class="text-xs font-bold text-indigo-500 uppercase tracking-tighter">${isLocked ? 'Indisponível' : level.count + ' Missões'}</div>
                 `;
                 if (!isLocked) card.onclick = () => startLevel(index);
                 grid.appendChild(card);
@@ -329,7 +329,7 @@
             currentOperation = { n1, n2, op, result };
             typedInput = "";
             
-            const spaceIcons = ['ðŸš€', 'ðŸª', 'ðŸ›¸', 'ðŸ›°ï¸', 'â˜„ï¸', 'ðŸŒŸ', 'ðŸ‘¨â€ðŸš€', 'ðŸŒŒ', 'ðŸŒ', 'ðŸ‘¾'];
+            const spaceIcons = ['🚀', '🪐', '🛸', '🛰️', '☄️', '🌟', '👨‍🚀', '🌌', '🌍', '👾'];
             currentIcon = spaceIcons[Math.floor(Math.random() * spaceIcons.length)];
             
             renderPhase();
@@ -354,7 +354,7 @@
             const slot = document.getElementById('answer-slot');
             
             document.getElementById('level-title').innerText = gameLevels[activeLevelIdx].name;
-            document.getElementById('phase-counter').innerText = `MISSÃƒO ${activePhaseIdx + 1} / ${gameLevels[activeLevelIdx].count}`;
+            document.getElementById('phase-counter').innerText = `MISSÃO ${activePhaseIdx + 1} / ${gameLevels[activeLevelIdx].count}`;
             
             opDisplay.children[0].innerText = currentOperation.n1;
             opDisplay.children[1].innerText = currentOperation.op;
@@ -454,7 +454,7 @@
                         aid.appendChild(resultContainer);
                     }
 
-                    // Passa para a prÃ³xima fase diretamente sem animaÃ§Ã£o de foguete
+                    // Passa para a próxima fase diretamente sem animação de foguete
                     setTimeout(nextPhase, 1500);
                 } else if (typedInput.length >= targetStr.length) {
                     const display = document.getElementById('math-op-display');
@@ -473,12 +473,12 @@
             }
         });
 
-        // FunÃ§Ã£o chamada ao clicar no botÃ£o "PrÃ³ximo Setor" do modal
+        // Função chamada ao clicar no botão "Próximo Setor" do modal
         function handleNextLevelClick() {
             if (activeLevelIdx + 1 < gameLevels.length) {
                 activeLevelIdx++;
                 activePhaseIdx = 0;
-                startTransition(); // SÃ³ aqui a animaÃ§Ã£o do foguete acontece
+                startTransition(); // Só aqui a animação do foguete acontece
             } else {
                 showScreen('screen-levels');
             }
@@ -509,20 +509,20 @@
             if (activePhaseIdx < level.count) {
                 generateNewOperation();
             } else {
-                // Fim do nÃ­vel: Desbloqueia prÃ³ximo e mostra modal
+                // Fim do nível: Desbloqueia próximo e mostra modal
                 if (activeLevelIdx + 1 === unlockedLevels && unlockedLevels < gameLevels.length) {
                     unlockedLevels++;
                 }
                 const isFinal = activeLevelIdx + 1 === gameLevels.length;
-                document.getElementById('modal-title').innerText = isFinal ? "LENDÃRIO!" : "SETOR LIMPO!";
+                document.getElementById('modal-title').innerText = isFinal ? "LENDÁRIO!" : "SETOR LIMPO!";
                 
-                // Muda o texto do botÃ£o se for o Ãºltimo nÃ­vel
+                // Muda o texto do botão se for o último nível
                 const btn = document.getElementById('next-level-btn');
                 if(isFinal) {
                     btn.innerText = "MENU PRINCIPAL";
                     btn.onclick = () => showScreen('screen-levels');
                 } else {
-                    btn.innerText = "PRÃ“XIMO SETOR âž”";
+                    btn.innerText = "PRÓXIMO SETOR ➔";
                     btn.onclick = handleNextLevelClick;
                 }
                 

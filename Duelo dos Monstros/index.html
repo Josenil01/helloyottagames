@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duelo dos Monstros - Maior ou Menor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --monster-purple: #a855f7;
+            --monster-green: #22c55e;
+            --monster-orange: #f97316;
+            --bg-cave: #1e1b4b;
+            --gold: #fbbf24;
+            --success: #22c55e;
+            --danger: #ef4444;
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Baloo 2", cursive;
+            background: var(--bg-cave);
+            overflow: hidden;
+            color: #f8fafc;
+            user-select: none;
+        }
+
+        /* Cenário de Caverna */
+        .scenery {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background: radial-gradient(circle at center, #312e81 0%, #1e1b4b 100%);
+        }
+
+        .stalactite {
+            position: absolute;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 60px solid #1e293b;
+            opacity: 0.5;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* HUD */
+        .hud {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .stat-badge {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 5px 15px;
+            border-radius: 999px;
+            font-size: 1.1rem;
+            border: 2px solid var(--monster-purple);
+            font-weight: 800;
+        }
+
+        /* Área de Jogo */
+        .game-area {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .battle-display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            width: 100%;
+        }
+
+        .monster-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 30px;
+            width: 180px;
+            border: 2px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s;
+        }
+
+        .monster-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--gold);
+            text-shadow: 0 0 15px rgba(251, 191, 36, 0.4);
+        }
+
+        .symbol-slot {
+            width: 100px;
+            height: 100px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 4px dashed var(--monster-purple);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--monster-green);
+        }
+
+        .symbol-slot.filled {
+            border-style: solid;
+            background: rgba(255, 255, 255, 0.1);
+            animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        /* Botões de Símbolos */
+        .options-row {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .symbol-btn {
+            width: 100px;
+            height: 110px;
+            background: white;
+            border: none;
+            border-radius: 20px;
+            font-family: inherit;
+            cursor: pointer;
+            color: var(--bg-cave);
+            box-shadow: 0 8px 0 #cbd5e1;
+            transition: transform 0.1s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .symbol-btn span.icon {
+            font-size: 3rem;
+            line-height: 1;
+            font-weight: 800;
+        }
+
+        .symbol-btn span.label {
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-top: 5px;
+            color: var(--monster-purple);
+        }
+
+        .symbol-btn:active { transform: translateY(4px); box-shadow: 0 4px 0 #cbd5e1; }
+        .symbol-btn:hover { background: #f1f5f9; }
+
+        /* Telas */
+        .screen { display: none; height: 100%; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+        .screen.active { display: flex; }
+
+        .btn-large {
+            background: var(--monster-purple);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.8rem;
+            font-family: inherit;
+            cursor: pointer;
+            box-shadow: 0 8px 0 #7e22ce;
+            font-weight: 800;
+            margin-top: 20px;
+        }
+
+        .level-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+            gap: 15px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .lvl-btn {
+            aspect-ratio: 1;
+            border-radius: 20px;
+            border: 3px solid rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.05);
+            color: white;
+            font-family: inherit;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .lvl-btn.unlocked { border-color: var(--monster-purple); color: var(--monster-purple); }
+
+        /* Modal */
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.85);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        .modal-content {
+            background: #1e1b4b;
+            padding: 30px;
+            border-radius: 30px;
+            text-align: center;
+            max-width: 320px;
+            width: 90%;
+            border: 4px solid var(--monster-purple);
+        }
+
+        @keyframes pop {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        /* Estilo dos Monstros SVG */
+        .monster-svg { width: 100px; height: 100px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3)); }
+    </style>
+</head>
+<body>
+
+    <div class="scenery" id="scenery"></div>
+
+    <div class="container">
+        <!-- HOME -->
+        <div id="screen-home" class="screen active">
+            <h1 style="font-size: 3rem; margin: 0; text-shadow: 0 0 20px var(--monster-purple);">👾 Duelo dos</h1>
+            <h2 style="margin: 0; color: var(--monster-purple);">Monstrinhos</h2>
+            <div style="margin: 30px 0; font-size: 4rem;">&gt; &lt; =</div>
+            <button class="btn-large" onclick="changeScreen('levels')">DESAFIAR!</button>
+            <p id="total-stars">⭐ 0/12</p>
+        </div>
+
+        <!-- NÍVEIS -->
+        <div id="screen-levels" class="screen" style="justify-content: flex-start; padding-top: 40px;">
+            <div class="hud" style="width: 100%;">
+                <button class="stat-badge" onclick="changeScreen('home')" style="cursor:pointer; border:none">🏠 Início</button>
+                <div class="stat-badge" id="lvl-star-count">⭐ 0</div>
+            </div>
+            <h2 style="margin: 20px 0;">Escolha uma Caverna</h2>
+            <div class="level-grid" id="level-grid"></div>
+        </div>
+
+        <!-- JOGO -->
+        <div id="screen-game" class="screen">
+            <div class="hud" style="width: 100%;">
+                <div class="stat-badge" id="game-info">Duelo 1</div>
+                <button class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer; border:none">✕</button>
+            </div>
+
+            <div class="game-area">
+                <p style="font-size: 1.5rem; font-weight: 800;">Qual é o símbolo certo?</p>
+                <div class="battle-display">
+                    <div class="monster-card" id="monster-left"></div>
+                    <div class="symbol-slot" id="slot">?</div>
+                    <div class="monster-card" id="monster-right"></div>
+                </div>
+
+                <div class="options-row">
+                    <button class="symbol-btn" onclick="checkChoice('<')">
+                        <span class="icon">&lt;</span>
+                        <span class="label">Menor que</span>
+                    </button>
+                    <button class="symbol-btn" onclick="checkChoice('=')">
+                        <span class="icon">=</span>
+                        <span class="label">Igual a</span>
+                    </button>
+                    <button class="symbol-btn" onclick="checkChoice('>')">
+                        <span class="icon">&gt;</span>
+                        <span class="label">Maior que</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2 style="color: var(--monster-purple)">Incrível!</h2>
+            <div style="font-size: 4rem; margin: 15px 0;">✨</div>
+            <p id="result-msg">Acertaste a comparação!</p>
+            <button id="modal-next-btn" class="btn-large" onclick="handleModalAction()">PRÓXIMO</button>
+        </div>
+    </div>
+
+    <script>
+        const MONSTERS = [
+            (color) => `<svg class="monster-svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="${color}"/><circle cx="35" cy="40" r="8" fill="white"/><circle cx="65" cy="40" r="8" fill="white"/><circle cx="35" cy="42" r="3" fill="black"/><circle cx="65" cy="42" r="3" fill="black"/><path d="M30 70 Q50 85 70 70" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/></svg>`,
+            (color) => `<svg class="monster-svg" viewBox="0 0 100 100"><rect x="20" y="20" width="60" height="60" rx="10" fill="${color}"/><circle cx="50" cy="40" r="12" fill="white"/><circle cx="50" cy="40" r="5" fill="black"/><path d="M40 70 L60 70" stroke="black" stroke-width="4" stroke-linecap="round"/></svg>`,
+            (color) => `<svg class="monster-svg" viewBox="0 0 100 100"><path d="M50 10 L90 90 L10 90 Z" fill="${color}"/><circle cx="40" cy="60" r="6" fill="white"/><circle cx="60" cy="60" r="6" fill="white"/><circle cx="40" cy="60" r="2" fill="black"/><circle cx="60" cy="60" r="2" fill="black"/><rect x="45" y="75" width="10" height="5" fill="black"/></svg>`
+        ];
+
+        const LEVELS = [
+            { n1: 5, n2: 3, ans: '>' }, { n1: 2, n2: 8, ans: '<' },
+            { n1: 6, n2: 6, ans: '=' }, { n1: 10, n2: 4, ans: '>' },
+            { n1: 1, n2: 9, ans: '<' }, { n1: 7, n2: 7, ans: '=' },
+            { n1: 15, n2: 12, ans: '>' }, { n1: 11, n2: 18, ans: '<' },
+            { n1: 20, n2: 20, ans: '=' }, { n1: 13, n2: 9, ans: '>' },
+            { n1: 25, n2: 30, ans: '<' }, { n1: 50, n2: 50, ans: '=' }
+        ];
+
+        let unlocked = 1;
+        let stars = Array(LEVELS.length).fill(0);
+        let currentLevelIdx = 0;
+        let isLocked = false;
+
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        function playSfx(freq, type = 'sine', duration = 0.1) {
+            try {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = type;
+                osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+                gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
+                osc.connect(gain); gain.connect(audioCtx.destination);
+                osc.start(); osc.stop(audioCtx.currentTime + duration);
+            } catch(e) {}
+        }
+
+        function init() {
+            createScenery();
+            loadProgress();
+            renderLevelGrid();
+            updateStats();
+        }
+
+        function createScenery() {
+            const container = document.getElementById('scenery');
+            for(let i=0; i<15; i++) {
+                const s = document.createElement('div');
+                s.className = 'stalactite';
+                s.style.left = Math.random() * 100 + '%';
+                s.style.height = (20 + Math.random() * 60) + 'px';
+                container.appendChild(s);
+            }
+        }
+
+        function loadProgress() {
+            const saved = localStorage.getItem('monstros_comparacao_v1');
+            if(saved) {
+                const data = JSON.parse(saved);
+                unlocked = data.unlocked || 1;
+                stars = data.stars || Array(LEVELS.length).fill(0);
+            }
+        }
+
+        function saveProgress() {
+            localStorage.setItem('monstros_comparacao_v1', JSON.stringify({ unlocked, stars }));
+        }
+
+        function changeScreen(id) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById('screen-' + id).classList.add('active');
+            if(id === 'levels') renderLevelGrid();
+        }
+
+        function renderLevelGrid() {
+            const grid = document.getElementById('level-grid');
+            grid.innerHTML = '';
+            LEVELS.forEach((lvl, i) => {
+                const btn = document.createElement('button');
+                btn.className = `lvl-btn ${i < unlocked ? 'unlocked' : ''}`;
+                btn.disabled = i >= unlocked;
+                btn.innerHTML = `<span>Duelo ${i + 1}</span><div style="font-size:1.5rem">${stars[i] ? '⭐' : '👾'}</div>`;
+                btn.onclick = () => startLevel(i);
+                grid.appendChild(btn);
+            });
+        }
+
+        function updateStats() {
+            const total = stars.reduce((a,b) => a + (b ? 1 : 0), 0);
+            document.getElementById('total-stars').textContent = `⭐ ${total}/${LEVELS.length}`;
+            document.getElementById('lvl-star-count').textContent = `⭐ ${total}`;
+        }
+
+        function startLevel(idx) {
+            currentLevelIdx = idx;
+            isLocked = false;
+            const lvl = LEVELS[idx];
+            
+            document.getElementById('game-info').textContent = `Duelo ${idx + 1}`;
+            document.getElementById('slot').textContent = '?';
+            document.getElementById('slot').classList.remove('filled');
+            
+            const colors = ['#a855f7', '#f97316', '#22c55e', '#db2777', '#3b82f6'];
+            const m1 = MONSTERS[Math.floor(Math.random()*3)](colors[Math.floor(Math.random()*5)]);
+            const m2 = MONSTERS[Math.floor(Math.random()*3)](colors[Math.floor(Math.random()*5)]);
+
+            document.getElementById('monster-left').innerHTML = `${m1}<div class="monster-number">${lvl.n1}</div>`;
+            document.getElementById('monster-right').innerHTML = `${m2}<div class="monster-number">${lvl.n2}</div>`;
+
+            changeScreen('game');
+        }
+
+        function checkChoice(symbol) {
+            if(isLocked) return;
+            const correct = LEVELS[currentLevelIdx].ans;
+            
+            if(symbol === correct) {
+                isLocked = true;
+                playSfx(880, 'sine', 0.3);
+                
+                const slot = document.getElementById('slot');
+                slot.textContent = symbol;
+                slot.classList.add('filled');
+                
+                stars[currentLevelIdx] = 1;
+                unlocked = Math.max(unlocked, currentLevelIdx + 2);
+                saveProgress();
+                updateStats();
+
+                setTimeout(() => {
+                    document.getElementById('result-modal').style.display = 'flex';
+                }, 800);
+            } else {
+                playSfx(150, 'sawtooth', 0.2);
+                const slot = document.getElementById('slot');
+                slot.style.borderColor = 'var(--danger)';
+                setTimeout(() => slot.style.borderColor = '', 400);
+            }
+        }
+
+        function handleModalAction() {
+            document.getElementById('result-modal').style.display = 'none';
+            if(currentLevelIdx + 1 < LEVELS.length) {
+                startLevel(currentLevelIdx + 1);
+            } else {
+                changeScreen('levels');
+            }
+        }
+
+        window.onload = init;
+    </script>
+</body>
+</html>
