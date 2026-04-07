@@ -17,6 +17,9 @@ body {
 body {
   position: relative;
   touch-action: manipulation;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
 }
 
 #root {
@@ -33,6 +36,24 @@ body {
   height: 100dvh;
   max-height: 100dvh;
   overflow: hidden;
+}
+
+/* Typography safety: avoid clipped text on small screens */
+:where(h1, h2, h3, h4, p, button, span, .title, .subtitle, .chip, .btn, .lvl, .phase) {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Keep controls readable without overflow */
+:where(button, .btn, .btn-large, .lvl, .phase, .chip, .opt, .wagon, .answer-box) {
+  white-space: normal;
+  line-height: 1.1;
+}
+
+/* Prevent flex/grid children from forcing horizontal clipping */
+:where(.hud, .grid, .train-row, .answer-row, .container, .card, #app, #root) {
+  min-width: 0;
 }
 
 img,

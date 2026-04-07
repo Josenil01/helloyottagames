@@ -28,7 +28,7 @@
             user-select: none;
         }
 
-        /* CenÃ¡rio com Navio Detalhado */
+        /* Cenario com Navio Detalhado */
         .scenery {
             position: fixed;
             inset: 0;
@@ -280,7 +280,7 @@
             <svg viewBox="0 0 200 200" width="220" xmlns="http://www.w3.org/2000/svg">
                 <!-- Casco do Navio -->
                 <path d="M20 140 Q100 180 180 140 L165 170 Q100 190 35 170 Z" fill="#78350f" stroke="#451a03" stroke-width="2"/>
-                <!-- CanhÃµes -->
+                <!-- Canhoes -->
                 <circle cx="50" cy="155" r="5" fill="#333" />
                 <circle cx="80" cy="160" r="5" fill="#333" />
                 <circle cx="120" cy="160" r="5" fill="#333" />
@@ -323,12 +323,12 @@
     <div class="container">
         <!-- HOME -->
         <div id="screen-home" class="screen active">
-            <h1 style="font-size: 3rem; text-shadow: 3px 3px rgba(0,0,0,0.3);">ðŸ´â€â˜ ï¸ Piratas do Troco</h1>
+            <h1 style="font-size: 3rem; text-shadow: 3px 3px rgba(0,0,0,0.3);">🏴‍☠️ Piratas do Troco</h1>
             <p style="font-size: 1.5rem;">Aprende a contar moedas!</p>
-            <button class="btn-large" onclick="changeScreen('levels')">COMEÃ‡AR!</button>
+            <button class="btn-large" onclick="changeScreen('levels')">COMECAR!</button>
         </div>
 
-        <!-- NÃVEIS -->
+        <!-- NIVEIS -->
         <div id="screen-levels" class="screen">
             <h2 style="font-size: 2rem;">Mapa das Ilhas</h2>
             <div class="level-grid" id="level-grid"></div>
@@ -340,7 +340,7 @@
             <div class="hud" style="width: 100%;">
                 <div class="stat-badge" id="game-info">Ilha 1</div>
                 <div class="stat-badge" id="click-counter">Tira: 0/0</div>
-                <button class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer; border:none">âœ•</button>
+                <button class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer; border:none">✖</button>
             </div>
 
             <div class="instruction-card">
@@ -353,7 +353,7 @@
             <div class="chest-area" id="chest-zone">
                 <div class="chest" id="treasure-chest" ondragover="allowDrop(event)" ondrop="dropCoin(event)" onclick="chestClicked()">
                     <div class="chest-lock"></div>
-                    <span style="font-size: 0.8rem; margin-top: 5px; font-weight: 800;">BAÃš</span>
+                    <span style="font-size: 0.8rem; margin-top: 5px; font-weight: 800;">BAU</span>
                 </div>
             </div>
         </div>
@@ -363,9 +363,9 @@
     <div class="modal" id="result-modal">
         <div class="modal-content">
             <h2 style="margin:0">MUITO BEM!</h2>
-            <div style="font-size: 4rem;">ðŸ’°</div>
+            <div style="font-size: 4rem;">💰</div>
             <p id="result-msg">Contaste certinho!</p>
-            <button class="btn-large" onclick="handleNext()">PRÃ“XIMA ILHA</button>
+            <button class="btn-large" onclick="handleNext()">PROXIMA ILHA</button>
         </div>
     </div>
 
@@ -456,7 +456,7 @@
                 document.getElementById('click-counter').textContent = `Tira: ${spentCount} / ${target}`;
             } else {
                 const remaining = LEVELS[currentLevelIdx][1] - LEVELS[currentLevelIdx][0];
-                document.getElementById('click-counter').textContent = `No BaÃº: ${chestCount} / ${remaining}`;
+                document.getElementById('click-counter').textContent = `No BAU: ${chestCount} / ${remaining}`;
             }
         }
 
@@ -487,7 +487,7 @@
             const remaining = total - cost;
             
             document.getElementById('equation-display').textContent = `${total} - ${cost} = ${remaining}`;
-            document.getElementById('instruction-text').textContent = `Agora guarda o teu troco de ${remaining} moedas no baÃº!`;
+            document.getElementById('instruction-text').textContent = `Agora guarda o teu troco de ${remaining} moedas no BAU!`;
             document.getElementById('chest-zone').classList.add('active');
             updateCounter();
 
@@ -536,7 +536,7 @@
             const [cost, total] = LEVELS[currentLevelIdx];
             const remaining = total - cost;
             const modal = document.getElementById('result-modal');
-            document.getElementById('result-msg').textContent = `Pagaste o pirata e guardaste as tuas ${remaining} moedas no baÃº!`;
+            document.getElementById('result-msg').textContent = `Pagaste o pirata e guardaste as tuas ${remaining} moedas no BAU!`;
             modal.style.display = 'flex';
             if(currentLevelIdx + 1 >= unlocked) unlocked = currentLevelIdx + 2;
         }

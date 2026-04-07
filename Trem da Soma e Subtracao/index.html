@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/game-viewport.css" />
-    <title>Expresso da MatemÃ¡tica</title>
+    <title>Expresso da Matematica</title>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -28,7 +28,7 @@
             user-select: none;
         }
 
-        /* CenÃ¡rio Animado */
+        /* Cenario Animado */
         .scenery {
             position: fixed;
             inset: 0;
@@ -90,7 +90,7 @@
             border: none;
         }
 
-        /* Jogo - Ãrea do Trem */
+        /* Jogo - Area do Trem */
         .game-area {
             flex-grow: 1;
             display: flex;
@@ -105,7 +105,7 @@
             align-items: flex-end;
             gap: 8px;
             min-height: 120px;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
         }
 
         .svg-icon { width: 80px; height: 80px; filter: drop-shadow(0 4px 4px rgba(0,0,0,0.15)); }
@@ -276,29 +276,29 @@
     <div class="container">
         <!-- TELA INICIAL -->
         <div id="screen-home" class="screen active">
-            <h1 style="font-size: 3.5rem; margin: 0; text-shadow: 2px 2px white;">ðŸš‚ Expresso</h1>
-            <h2 style="margin: 0; color: var(--primary); text-shadow: 1px 1px white;">da MatemÃ¡tica</h2>
+            <h1 style="font-size: 3.5rem; margin: 0; text-shadow: 2px 2px white;">🚂 Expresso</h1>
+            <h2 style="margin: 0; color: var(--primary); text-shadow: 1px 1px white;">da Matematica</h2>
             <div id="home-train" class="train-display" style="margin: 40px 0;"></div>
-            <button class="btn-large" onclick="changeScreen('levels')">VAMOS LÃ!</button>
-            <p id="total-stars">â­ 0/36</p>
+            <button class="btn-large" onclick="changeScreen('levels')">VAMOS LA!</button>
+            <p id="total-stars">⭐ 0/36</p>
         </div>
 
-        <!-- TELA DE NÃVEIS -->
+        <!-- TELA DE NIVEIS -->
         <div id="screen-levels" class="screen" style="justify-content: flex-start; padding-top: 40px;">
             <div class="hud" style="width: 100%;">
-                <button class="stat-badge" onclick="changeScreen('home')" style="cursor:pointer">ðŸ  InÃ­cio</button>
-                <div class="stat-badge" id="lvl-star-count">â­ 0</div>
+                <button class="stat-badge" onclick="changeScreen('home')" style="cursor:pointer">🏠 Inicio</button>
+                <div class="stat-badge" id="lvl-star-count">⭐ 0</div>
             </div>
-            <h2 style="margin: 20px 0;">PrÃ³xima EstaÃ§Ã£o?</h2>
+            <h2 style="margin: 20px 0;">Proxima Estacao?</h2>
             <div class="level-grid" id="level-grid"></div>
         </div>
 
         <!-- TELA DE JOGO -->
         <div id="screen-game" class="screen">
             <div class="hud" style="width: 100%;">
-                <div class="stat-badge" id="game-info">EstaÃ§Ã£o 1</div>
+                <div class="stat-badge" id="game-info">Estacao 1</div>
                 <div class="stat-badge" id="game-score">Score: 0</div>
-                <button class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer">âœ•</button>
+                <button class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer">✖</button>
             </div>
 
             <div class="timer-container">
@@ -311,7 +311,7 @@
                 </div>
 
                 <div class="options-grid" id="options">
-                    <!-- OpÃ§Ãµes aqui -->
+                    <!-- Opcoes aqui -->
                 </div>
             </div>
         </div>
@@ -320,9 +320,9 @@
     <!-- MODAL DE RESULTADO -->
     <div class="modal" id="result-modal">
         <div class="modal-content">
-            <h2 id="result-title">IncrÃ­vel!</h2>
-            <div id="result-stars" style="font-size: 2.5rem; margin: 15px 0;">â­â­â­</div>
-            <p id="result-msg">VocÃª chegou na estaÃ§Ã£o!</p>
+            <h2 id="result-title">Incrivel!</h2>
+            <div id="result-stars" style="font-size: 2.5rem; margin: 15px 0;">⭐⭐⭐</div>
+            <p id="result-msg">Voce chegou na estacao!</p>
             <button id="modal-next-btn" class="btn-large" onclick="handleModalAction()">CONTINUAR</button>
         </div>
     </div>
@@ -419,7 +419,7 @@
                 btn.className = `lvl-btn ${isUnlocked ? 'unlocked' : ''}`;
                 btn.disabled = !isUnlocked;
                 const stars = userData.stars[idx] || 0;
-                btn.innerHTML = `<span>${idx + 1}</span><div style="font-size:0.7rem; color:#fbbf24">${'â˜…'.repeat(stars)}${'â˜†'.repeat(3-stars)}</div>`;
+                btn.innerHTML = `<span>${idx + 1}</span><div style="font-size:0.7rem; color:#fbbf24">${'★'.repeat(stars)}${'☆'.repeat(3-stars)}</div>`;
                 btn.onclick = () => startLevel(idx);
                 grid.appendChild(btn);
             });
@@ -427,8 +427,8 @@
 
         function updateGlobalStats() {
             const total = userData.stars.reduce((a, b) => a + b, 0);
-            document.getElementById('total-stars').textContent = `â­ ${total}/${LEVELS.length * 3}`;
-            document.getElementById('lvl-star-count').textContent = `â­ ${total}`;
+            document.getElementById('total-stars').textContent = `⭐ ${total}/${LEVELS.length * 3}`;
+            document.getElementById('lvl-star-count').textContent = `⭐ ${total}`;
         }
 
         function changeScreen(id) {
@@ -552,23 +552,23 @@
                 let earned = (tries === 1 && timeLeft > 15) ? 3 : (tries <= 2 && timeLeft > 5) ? 2 : 1;
                 userData.stars[currentLevel] = Math.max(userData.stars[currentLevel], earned);
                 
-                // Desbloquear prÃ³ximo nÃ­vel
+                // Desbloquear proximo nivel
                 userData.unlocked = Math.max(userData.unlocked, currentLevel + 2);
                 saveGame();
                 
-                starDiv.textContent = "â­".repeat(earned) + "â˜†".repeat(3-earned);
+                starDiv.textContent = "⭐".repeat(earned) + "☆".repeat(3-earned);
                 document.getElementById('result-title').textContent = "Na mosca!";
-                msg.textContent = "O trem estÃ¡ pronto para partir!";
+                msg.textContent = "O trem esta pronto para partir!";
                 
-                // Se for o Ãºltimo nÃ­vel, volta pro menu
+                // Se for o ultimo nivel, volta pro menu
                 if (currentLevel >= LEVELS.length - 1) {
                     btn.textContent = "MENU INICIAL";
                 } else {
-                    btn.textContent = "PRÃ“XIMO";
+                    btn.textContent = "PROXIMO";
                 }
             } else {
-                document.getElementById('result-title').textContent = "UÃ©, parou?";
-                starDiv.textContent = "â°";
+                document.getElementById('result-title').textContent = "Ue, parou?";
+                starDiv.textContent = "⏰";
                 msg.textContent = "O tempo acabou ou houveram muitos erros.";
                 btn.textContent = "TENTAR DENOVO";
             }
@@ -583,20 +583,20 @@
             
             if (lastResultSuccess) {
                 if (currentLevel < LEVELS.length - 1) {
-                    // Passa para o prÃ³ximo automaticamente
+                    // Passa para o proximo automaticamente
                     startLevel(currentLevel + 1);
                 } else {
                     // Fim do jogo
                     changeScreen('levels');
                 }
             } else {
-                // Tentar denovo o mesmo nÃ­vel
+                // Tentar denovo o mesmo nivel
                 startLevel(currentLevel);
             }
         }
 
         function closeModal() {
-            // FunÃ§Ã£o legada se necessÃ¡rio, mas handleModalAction substitui o clique principal
+            // Funcao legada se necessario, mas handleModalAction substitui o clique principal
             document.getElementById('result-modal').style.display = 'none';
             changeScreen('levels');
         }

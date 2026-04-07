@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/game-viewport.css" />
-    <title>Defesa do Castelo MatemÃ¡tico</title>
+    <title>Defesa do Castelo Matematico</title>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -30,7 +30,7 @@
             user-select: none;
         }
 
-        /* CenÃ¡rio Animado */
+        /* Cenario Animado */
         .scenery {
             position: fixed;
             inset: 0;
@@ -154,7 +154,7 @@
             border: 2px solid rgba(255,255,255,0.2);
         }
 
-        /* Ãrea de Defesa */
+        /* Area de Defesa */
         .game-area {
             flex-grow: 1;
             display: flex;
@@ -246,7 +246,7 @@
             background: linear-gradient(90deg, var(--success), var(--gold), var(--danger));
         }
 
-        /* AnimaÃ§Ãµes de Batalha */
+        /* Animacoes de Batalha */
         @keyframes fire-recoil {
             0% { margin-left: 0; }
             50% { margin-left: -15px; }
@@ -335,7 +335,7 @@
     <div class="scenery" id="scenery"></div>
     <div class="ground"></div>
     
-    <!-- Bala de CanhÃ£o Oculta -->
+    <!-- Bala de Canhao Oculta -->
     <div id="cannon-ball" class="cannon-ball"></div>
 
     <!-- Elementos Visuais do Jogo -->
@@ -350,7 +350,7 @@
             <path d="M65 30 L72.5 20 L80 30 Z" fill="#ef4444"/>
         </svg>
         <div class="cannon" id="cannon">
-            <div class="muzzle-flash" id="flash">ðŸ’¥</div>
+            <div class="muzzle-flash" id="flash">??</div>
         </div>
     </div>
 
@@ -363,18 +363,18 @@
     <div class="container">
         <!-- HOME -->
         <div id="screen-home" class="screen active">
-            <h1 style="font-size: 3rem; margin: 0; text-shadow: 2px 2px white;">ðŸ° Defesa do</h1>
+            <h1 style="font-size: 3rem; margin: 0; text-shadow: 2px 2px white;">🏰 Defesa do</h1>
             <h2 style="margin: 0; color: #ea580c; text-shadow: 1px 1px white;">Castelo</h2>
-            <div style="margin: 40px 0; font-size: 4rem;">âš”ï¸</div>
+            <div style="margin: 40px 0; font-size: 4rem;">⚔️</div>
             <button class="btn-large" onclick="changeScreen('levels')">DEFENDER!</button>
-            <p id="total-stars">â­ 0/36</p>
+            <p id="total-stars">⭐ 0/36</p>
         </div>
 
-        <!-- NÃVEIS -->
+        <!-- NIVEIS -->
         <div id="screen-levels" class="screen" style="justify-content: flex-start; padding-top: 40px;">
             <div class="hud" style="width: 100%;">
-                <button class="stat-badge" onclick="changeScreen('home')" style="cursor:pointer; border:none">ðŸ  InÃ­cio</button>
-                <div class="stat-badge" id="lvl-star-count">â­ 0</div>
+                <button class="stat-badge" onclick="changeScreen('home')" style="cursor:pointer; border:none">🏠 Inicio</button>
+                <div class="stat-badge" id="lvl-star-count">⭐ 0</div>
             </div>
             <h2 style="margin: 20px 0;">Selecione a Torre</h2>
             <div class="level-grid" id="level-grid"></div>
@@ -385,7 +385,7 @@
             <div class="hud" style="width: 100%;">
                 <div class="stat-badge" id="game-info">Torre 1</div>
                 <div class="stat-badge" id="game-score">Score: 0</div>
-                <button class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer; border:none">âœ•</button>
+                <button class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer; border:none">✖</button>
             </div>
 
             <div class="timer-container">
@@ -402,10 +402,10 @@
     <!-- MODAL -->
     <div class="modal" id="result-modal">
         <div class="modal-content">
-            <h2 id="result-title">VitÃ³ria!</h2>
-            <div id="result-stars" style="font-size: 2.5rem; margin: 15px 0;">â­â­â­</div>
+            <h2 id="result-title">Vitoria!</h2>
+            <div id="result-stars" style="font-size: 2.5rem; margin: 15px 0;">⭐⭐⭐</div>
             <p id="result-msg">Os lobos foram expulsos!</p>
-            <button id="modal-next-btn" class="btn-large" onclick="handleModalAction()">PRÃ“XIMO</button>
+            <button id="modal-next-btn" class="btn-large" onclick="handleModalAction()">PROXIMO</button>
         </div>
     </div>
 
@@ -479,8 +479,8 @@
 
         function updateGlobalStats() {
             const total = userData.stars.reduce((a, b) => a + b, 0);
-            document.getElementById('total-stars').textContent = `â­ ${total}/${LEVELS.length * 3}`;
-            document.getElementById('lvl-star-count').textContent = `â­ ${total}`;
+            document.getElementById('total-stars').textContent = `⭐ ${total}/${LEVELS.length * 3}`;
+            document.getElementById('lvl-star-count').textContent = `⭐ ${total}`;
         }
 
         function renderLevelGrid() {
@@ -492,7 +492,7 @@
                 btn.className = `lvl-btn ${isUnlocked ? 'unlocked' : ''}`;
                 btn.disabled = !isUnlocked;
                 const stars = userData.stars[idx] || 0;
-                btn.innerHTML = `<span>Torre ${idx + 1}</span><div style="font-size:0.7rem; color:#fbbf24">${'â˜…'.repeat(stars)}${'â˜†'.repeat(3-stars)}</div>`;
+                btn.innerHTML = `<span>Torre ${idx + 1}</span><div style="font-size:0.7rem; color:#fbbf24">${'★'.repeat(stars)}${'☆'.repeat(3-stars)}</div>`;
                 btn.onclick = () => startLevel(idx);
                 grid.appendChild(btn);
             });
@@ -519,7 +519,7 @@
             castle.classList.remove('destroyed');
             
             const cannon = document.getElementById('cannon');
-            cannon.style.transform = 'rotate(0deg)'; // Reset rotaÃ§Ã£o
+            cannon.style.transform = 'rotate(0deg)'; // Reset rotacao
             
             changeScreen('game');
             loadQuestion();
@@ -617,17 +617,17 @@
             const ball = document.getElementById('cannon-ball');
             const wolves = document.getElementById('wolf-pack');
             
-            // PosiÃ§Ã£o inicial (boca do canhÃ£o)
+            // Posicao inicial (boca do canhao)
             const cannonRect = cannon.getBoundingClientRect();
             const startX = cannonRect.right - 20;
             const startY = cannonRect.top + 5;
             
-            // PosiÃ§Ã£o final (alvo lobos)
+            // Posicao final (alvo lobos)
             const wolfRect = wolves.getBoundingClientRect();
             const endX = wolfRect.left + (wolfRect.width / 2);
             const endY = wolfRect.top + (wolfRect.height / 2);
 
-            // Girar o canhÃ£o para cima antes do tiro (-35 graus para mirar o arco)
+            // Girar o canhao para cima antes do tiro (-35 graus para mirar o arco)
             cannon.style.transform = 'rotate(-35deg)';
             
             setTimeout(() => {
@@ -636,12 +636,12 @@
                 ball.style.left = startX + 'px';
                 ball.style.top = startY + 'px';
                 
-                // Coice do canhÃ£o (agora usando margin para nÃ£o resetar transform) e flash
+                // Coice do canhao (agora usando margin para nao resetar transform) e flash
                 cannon.classList.add('firing-recoil');
                 flash.style.opacity = '1';
                 SFX.shot();
 
-                // AnimaÃ§Ã£o ParabÃ³lica via JS
+                // Animacao Parabolica via JS
                 const duration = 800;
                 const startTimestamp = performance.now();
                 const height = 180; // Altura do arco
@@ -668,7 +668,7 @@
                 }
                 
                 requestAnimationFrame(step);
-            }, 300); // Pequeno atraso para a animaÃ§Ã£o de mira
+            }, 300); // Pequeno atraso para a animacao de mira
         }
 
         function endLevel(success, message) {
@@ -684,13 +684,13 @@
                 userData.unlocked = Math.max(userData.unlocked, currentLevel + 2);
                 saveGame();
                 
-                starDiv.textContent = "â­".repeat(earned) + "â˜†".repeat(3-earned);
-                document.getElementById('result-title').textContent = "VitÃ³ria!";
+                starDiv.textContent = "?".repeat(earned) + "?".repeat(3-earned);
+                document.getElementById('result-title').textContent = "Vitoria!";
                 document.getElementById('result-msg').textContent = "Alvo atingido! Os lobos recuaram!";
-                btn.textContent = (currentLevel < LEVELS.length - 1) ? "PRÃ“XIMA TORRE" : "MENU";
+                btn.textContent = (currentLevel < LEVELS.length - 1) ? "PROXIMA TORRE" : "MENU";
             } else {
                 document.getElementById('result-title').textContent = "Derrota!";
-                starDiv.textContent = "ðŸ¾";
+                starDiv.textContent = "??";
                 document.getElementById('result-msg').textContent = message || "Os lobos invadiram!";
                 btn.textContent = "RECONSTRUIR";
             }
