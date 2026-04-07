@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
   <title>Detetives da Ortografia</title>
   
   <!-- Tailwind CSS -->
@@ -25,7 +26,7 @@
       background-color: #0f172a; /* slate-900 */
     }
     
-    /* Animações */
+    /* AnimaÃ§Ãµes */
     @keyframes shake {
       0%, 100% { transform: translateX(0); }
       25% { transform: translateX(-8px) rotate(-3deg); }
@@ -52,7 +53,7 @@
     }
     .float-anim { animation: spyFloat 4s ease-in-out infinite; }
 
-    /* Fundo Detetive / Mistério */
+    /* Fundo Detetive / MistÃ©rio */
     .detective-bg {
       background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
       position: relative;
@@ -67,25 +68,25 @@
 
     // --- DADOS DO JOGO: DETETIVES DA ORTOGRAFIA ---
     const LEVELS = [
-      // MECÂNICA 1: Associação (Arrastar a letra correta)
-      { id: 1, type: 'match', target: 'CAI__A', answer: 'X', options: ['X', 'CH', 'SS'], emoji: '📦', instruction: 'É com X ou CH? Arraste a letra certa para consertar a palavra!' },
-      { id: 2, type: 'match', target: 'PÁ__ARO', answer: 'SS', options: ['S', 'SS', 'Ç'], emoji: '🐦', instruction: 'Como se escreve pássaro? Arraste a opção correta!' },
-      { id: 3, type: 'match', target: 'RELÓ__IO', answer: 'G', options: ['G', 'J', 'CH'], emoji: '⌚', instruction: 'Relógio é com G ou com J? Descubra!' },
+      // MECÃ‚NICA 1: AssociaÃ§Ã£o (Arrastar a letra correta)
+      { id: 1, type: 'match', target: 'CAI__A', answer: 'X', options: ['X', 'CH', 'SS'], emoji: 'ðŸ“¦', instruction: 'Ã‰ com X ou CH? Arraste a letra certa para consertar a palavra!' },
+      { id: 2, type: 'match', target: 'PÃ__ARO', answer: 'SS', options: ['S', 'SS', 'Ã‡'], emoji: 'ðŸ¦', instruction: 'Como se escreve pÃ¡ssaro? Arraste a opÃ§Ã£o correta!' },
+      { id: 3, type: 'match', target: 'RELÃ“__IO', answer: 'G', options: ['G', 'J', 'CH'], emoji: 'âŒš', instruction: 'RelÃ³gio Ã© com G ou com J? Descubra!' },
       
-      // MECÂNICA 2: Ligar os Pontos (Ligar a palavra incompleta à completa)
-      { id: 4, type: 'connect', leftWords: ['CAI__A', 'FLE__A', 'BAI__O'], rightWords: ['FLECHA', 'BAIXO', 'CAIXA'], matches: { 'CAI__A': 'CAIXA', 'FLE__A': 'FLECHA', 'BAI__O': 'BAIXO' }, emoji: '🔗', instruction: 'Ligue a palavra com letras faltando à sua forma escrita corretamente!' },
-      { id: 5, type: 'connect', leftWords: ['VA__OURA', 'CA__A', 'O__O'], rightWords: ['OSSO', 'VASSOURA', 'CASA'], matches: { 'VA__OURA': 'VASSOURA', 'CA__A': 'CASA', 'O__O': 'OSSO' }, emoji: '🧹', instruction: 'S ou SS? Ligue as palavras e resolva o mistério!' },
-      { id: 6, type: 'connect', leftWords: ['__ELO', '__ACARÉ', 'MÁ__ICO'], rightWords: ['JACARÉ', 'MÁGICO', 'GELO'], matches: { '__ELO': 'GELO', '__ACARÉ': 'JACARÉ', 'MÁ__ICO': 'MÁGICO' }, emoji: '🐊', instruction: 'Encontre os 3 pares escondidos usando G ou J!' },
+      // MECÃ‚NICA 2: Ligar os Pontos (Ligar a palavra incompleta Ã  completa)
+      { id: 4, type: 'connect', leftWords: ['CAI__A', 'FLE__A', 'BAI__O'], rightWords: ['FLECHA', 'BAIXO', 'CAIXA'], matches: { 'CAI__A': 'CAIXA', 'FLE__A': 'FLECHA', 'BAI__O': 'BAIXO' }, emoji: 'ðŸ”—', instruction: 'Ligue a palavra com letras faltando Ã  sua forma escrita corretamente!' },
+      { id: 5, type: 'connect', leftWords: ['VA__OURA', 'CA__A', 'O__O'], rightWords: ['OSSO', 'VASSOURA', 'CASA'], matches: { 'VA__OURA': 'VASSOURA', 'CA__A': 'CASA', 'O__O': 'OSSO' }, emoji: 'ðŸ§¹', instruction: 'S ou SS? Ligue as palavras e resolva o mistÃ©rio!' },
+      { id: 6, type: 'connect', leftWords: ['__ELO', '__ACARÃ‰', 'MÃ__ICO'], rightWords: ['JACARÃ‰', 'MÃGICO', 'GELO'], matches: { '__ELO': 'GELO', '__ACARÃ‰': 'JACARÃ‰', 'MÃ__ICO': 'MÃGICO' }, emoji: 'ðŸŠ', instruction: 'Encontre os 3 pares escondidos usando G ou J!' },
 
-      // MECÂNICA 3: O Intruso (Descobrir a palavra escrita ERRADA)
-      { id: 7, type: 'intruder', words: ['XÍCARA', 'ENXADA', 'XUVEIRO', 'CAIXA'], answer: 'XUVEIRO', emoji: '🚿', instruction: 'Atenção, detetive! Qual dessas palavras está escrita ERRADA (é a intrusa)?' },
-      { id: 8, type: 'intruder', words: ['PÁSSARO', 'OSSO', 'PÊCEGO', 'MASSA'], answer: 'PÊCEGO', emoji: '🍑', instruction: 'Tem uma palavra com a ortografia incorreta! Descubra qual é!' },
-      { id: 9, type: 'intruder', words: ['GELO', 'GIRAFA', 'JELADEIRA', 'JACARÉ'], answer: 'JELADEIRA', emoji: '🧊', instruction: 'Inspecione bem! Qual palavra foi escrita pelo vilão com a letra errada?' },
+      // MECÃ‚NICA 3: O Intruso (Descobrir a palavra escrita ERRADA)
+      { id: 7, type: 'intruder', words: ['XÃCARA', 'ENXADA', 'XUVEIRO', 'CAIXA'], answer: 'XUVEIRO', emoji: 'ðŸš¿', instruction: 'AtenÃ§Ã£o, detetive! Qual dessas palavras estÃ¡ escrita ERRADA (Ã© a intrusa)?' },
+      { id: 8, type: 'intruder', words: ['PÃSSARO', 'OSSO', 'PÃŠCEGO', 'MASSA'], answer: 'PÃŠCEGO', emoji: 'ðŸ‘', instruction: 'Tem uma palavra com a ortografia incorreta! Descubra qual Ã©!' },
+      { id: 9, type: 'intruder', words: ['GELO', 'GIRAFA', 'JELADEIRA', 'JACARÃ‰'], answer: 'JELADEIRA', emoji: 'ðŸ§Š', instruction: 'Inspecione bem! Qual palavra foi escrita pelo vilÃ£o com a letra errada?' },
 
-      // MECÂNICA 4: Construtor de Frases (Substituir o erro ortográfico)
-      { id: 10, type: 'sentence', preText: 'Eu tomei um ', boldText: 'XÁ', postText: ' de camomila.', answer: 'CHÁ', options: ['CHÁ', 'XÁ', 'XIA'], emoji: '☕', instruction: 'Substitua a palavra incorreta pela escrita corretamente!' },
-      { id: 11, type: 'sentence', preText: 'A ', boldText: 'BRUCHA', postText: ' voa na vassoura mágica.', answer: 'BRUXA', options: ['BRUSHA', 'BRUCHA', 'BRUXA'], emoji: '🧹', instruction: 'Ops, tem um erro ortográfico! Arraste a palavra corrigida para a frase!' },
-      { id: 12, type: 'sentence', preText: 'Aquele menino é muito ', boldText: 'CORAGOSO', postText: '.', answer: 'CORAJOSO', options: ['CORAGOSO', 'CORAJOSO', 'CORAJOZO'], emoji: '🦸', instruction: 'Como se escreve? Conserte o erro na frase!' },
+      // MECÃ‚NICA 4: Construtor de Frases (Substituir o erro ortogrÃ¡fico)
+      { id: 10, type: 'sentence', preText: 'Eu tomei um ', boldText: 'XÃ', postText: ' de camomila.', answer: 'CHÃ', options: ['CHÃ', 'XÃ', 'XIA'], emoji: 'â˜•', instruction: 'Substitua a palavra incorreta pela escrita corretamente!' },
+      { id: 11, type: 'sentence', preText: 'A ', boldText: 'BRUCHA', postText: ' voa na vassoura mÃ¡gica.', answer: 'BRUXA', options: ['BRUSHA', 'BRUCHA', 'BRUXA'], emoji: 'ðŸ§¹', instruction: 'Ops, tem um erro ortogrÃ¡fico! Arraste a palavra corrigida para a frase!' },
+      { id: 12, type: 'sentence', preText: 'Aquele menino Ã© muito ', boldText: 'CORAGOSO', postText: '.', answer: 'CORAJOSO', options: ['CORAGOSO', 'CORAJOSO', 'CORAJOZO'], emoji: 'ðŸ¦¸', instruction: 'Como se escreve? Conserte o erro na frase!' },
     ];
 
     function App() {
@@ -182,26 +183,26 @@
       if (gameState === 'cover') {
         return (
           <div className="min-h-screen detective-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
-            {/* Decoração Detetive */}
-            <div className="absolute top-10 left-10 text-6xl opacity-30 float-anim">🔦</div>
-            <div className="absolute top-32 right-10 text-7xl opacity-30 float-anim" style={{animationDelay: '1s'}}>👣</div>
-            <div className="absolute bottom-10 left-20 text-6xl opacity-30 float-anim" style={{animationDelay: '2s'}}>🔎</div>
-            <div className="absolute bottom-32 right-32 text-6xl opacity-30 float-anim" style={{animationDelay: '0.5s'}}>🕵️‍♂️</div>
+            {/* DecoraÃ§Ã£o Detetive */}
+            <div className="absolute top-10 left-10 text-6xl opacity-30 float-anim">ðŸ”¦</div>
+            <div className="absolute top-32 right-10 text-7xl opacity-30 float-anim" style={{animationDelay: '1s'}}>ðŸ‘£</div>
+            <div className="absolute bottom-10 left-20 text-6xl opacity-30 float-anim" style={{animationDelay: '2s'}}>ðŸ”Ž</div>
+            <div className="absolute bottom-32 right-32 text-6xl opacity-30 float-anim" style={{animationDelay: '0.5s'}}>ðŸ•µï¸â€â™‚ï¸</div>
 
             <div className="bg-slate-800/80 backdrop-blur-sm p-10 rounded-[3rem] shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col items-center text-center z-10 max-w-xl w-full border-4 border-amber-500 mb-10">
-              <div className="text-8xl mb-4">🔍</div>
+              <div className="text-8xl mb-4">ðŸ”</div>
               <h1 className="text-5xl font-black text-white mb-2 tracking-tight uppercase">
                 Detetives da<br/><span className="text-5xl text-amber-500">Ortografia</span>
               </h1>
               <p className="text-slate-300 mb-8 text-xl font-bold px-4">
-                Pegue sua lupa e seu bloquinho! Vamos investigar as letras e descobrir como as palavras são escritas de verdade!
+                Pegue sua lupa e seu bloquinho! Vamos investigar as letras e descobrir como as palavras sÃ£o escritas de verdade!
               </p>
               
               <button 
                 onClick={startGame}
                 className="w-full py-5 px-8 bg-emerald-600 hover:bg-emerald-500 text-white rounded-3xl text-3xl font-black transition-all transform hover:scale-105 shadow-[0_8px_0_rgb(5,150,105)] hover:translate-y-1 active:shadow-none active:translate-y-2 uppercase"
               >
-                Iniciar Investigação!
+                Iniciar InvestigaÃ§Ã£o!
               </button>
             </div>
           </div>
@@ -215,16 +216,16 @@
         return (
           <div className="min-h-screen detective-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
             <div className="bg-slate-800/90 backdrop-blur-sm p-10 rounded-[3rem] shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col items-center text-center z-10 max-w-lg w-full border-4 border-amber-500">
-              <div className="text-8xl mb-4 pop-anim">🎖️</div>
+              <div className="text-8xl mb-4 pop-anim">ðŸŽ–ï¸</div>
               <h1 className="text-5xl font-black text-white mb-2 uppercase">
                 Mestre Detetive!
               </h1>
-              <p className="text-slate-300 mb-6 text-xl font-bold">Você resolveu todos os mistérios da ortografia!</p>
+              <p className="text-slate-300 mb-6 text-xl font-bold">VocÃª resolveu todos os mistÃ©rios da ortografia!</p>
               
               <div className="bg-slate-900 border-4 border-slate-700 rounded-3xl p-6 mb-8 w-full flex flex-col items-center">
                 <span className="text-slate-400 font-bold uppercase mb-2">Lupas Coletadas</span>
                 <div className="flex items-center text-6xl font-black text-amber-500">
-                  <span className="mr-4">🔍</span> x{stars}
+                  <span className="mr-4">ðŸ”</span> x{stars}
                 </div>
               </div>
 
@@ -240,12 +241,12 @@
       }
 
       // ------------------------------------------------------------------------
-      // TELA 2: JOGABILIDADE (Múltiplas Mecânicas)
+      // TELA 2: JOGABILIDADE (MÃºltiplas MecÃ¢nicas)
       // ------------------------------------------------------------------------
       return (
         <div className="min-h-screen w-full flex flex-col relative detective-bg text-slate-100">
           
-          {/* CABEÇALHO */}
+          {/* CABEÃ‡ALHO */}
           <div className="w-full flex justify-between items-center p-6 z-10 bg-slate-900/90 backdrop-blur-md shadow-xl rounded-b-3xl border-b-2 border-slate-700">
             <div className="flex flex-col">
               <h2 className="text-2xl md:text-3xl font-black uppercase text-amber-500 drop-shadow-md">
@@ -256,21 +257,21 @@
             
             <div className="flex items-center text-3xl font-black text-amber-500 drop-shadow-md">
               <span className="mr-2">x{stars}</span>
-              <span className="pop-anim">🔍</span>
+              <span className="pop-anim">ðŸ”</span>
             </div>
           </div>
 
           <div className="flex-1 flex flex-col items-center justify-center p-4 z-10 w-full max-w-5xl mx-auto">
             
             {/* ------------------------------------------------------------ */}
-            {/* MECÂNICA 1: MATCH (Arrastar e Largar)                          */}
+            {/* MECÃ‚NICA 1: MATCH (Arrastar e Largar)                          */}
             {/* ------------------------------------------------------------ */}
             {level.type === 'match' && (
               <div className="flex flex-col items-center w-full">
                 <div className="flex flex-col items-center mb-12">
                   <div className="text-6xl mb-4 pop-anim drop-shadow-xl">{level.emoji}</div>
                   
-                  {/* Palavra Alvo (Design Mistério) */}
+                  {/* Palavra Alvo (Design MistÃ©rio) */}
                   <div className="bg-slate-800 rounded-[2rem] border-4 border-slate-600 p-8 shadow-xl text-center mb-4 relative">
                     <span className="text-4xl md:text-6xl font-black text-white tracking-wider relative z-10">
                       {level.target}
@@ -330,7 +331,7 @@
             )}
 
             {/* ------------------------------------------------------------ */}
-            {/* MECÂNICA 2: CONNECT (Ligar os Pontos)                          */}
+            {/* MECÃ‚NICA 2: CONNECT (Ligar os Pontos)                          */}
             {/* ------------------------------------------------------------ */}
             {level.type === 'connect' && (
               <div className="flex flex-col items-center w-full">
@@ -416,7 +417,7 @@
             )}
 
             {/* ------------------------------------------------------------ */}
-            {/* MECÂNICA 3: INTRUDER (Encontrar a palavra ERRADA)              */}
+            {/* MECÃ‚NICA 3: INTRUDER (Encontrar a palavra ERRADA)              */}
             {/* ------------------------------------------------------------ */}
             {level.type === 'intruder' && (
               <div className="flex flex-col items-center w-full">
@@ -425,7 +426,7 @@
                 <div className="bg-slate-800/90 p-6 md:p-10 rounded-[3rem] border-4 border-slate-600 shadow-2xl w-full max-w-3xl relative overflow-hidden">
                   <div className="grid grid-cols-2 gap-4 md:gap-6 relative z-10">
                     {level.words.map((word, i) => {
-                      const isCorrectAnswer = word === level.answer; // O acerto é achar a errada!
+                      const isCorrectAnswer = word === level.answer; // O acerto Ã© achar a errada!
                       const isClickedAndNotIntruder = wrongAnswers.includes(word);
                       const isShaking = shakeWrong === word;
                       
@@ -458,7 +459,7 @@
             )}
 
             {/* ------------------------------------------------------------ */}
-            {/* MECÂNICA 4: SENTENCE (Substituir a palavra errada)             */}
+            {/* MECÃ‚NICA 4: SENTENCE (Substituir a palavra errada)             */}
             {/* ------------------------------------------------------------ */}
             {level.type === 'sentence' && (
               <div className="flex flex-col items-center w-full">
@@ -478,7 +479,7 @@
                     onDragOver={handleDragOver}
                     onDrop={handleDrop}
                     onClick={() => {
-                       if(!isSuccess) alert("Toque ou arraste uma das opções amarelas aqui para dentro para consertar a frase!");
+                       if(!isSuccess) alert("Toque ou arraste uma das opÃ§Ãµes amarelas aqui para dentro para consertar a frase!");
                     }}
                   >
                     {isSuccess ? (

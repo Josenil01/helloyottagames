@@ -1,81 +1,607 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trem da Soma e Subtracao</title>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
+    <title>Expresso da MatemÃ¡tica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
     <style>
-      * { box-sizing: border-box; }
-      body { margin: 0; min-height: 100vh; font-family: "Baloo 2", cursive; background: linear-gradient(140deg, #fde68a, #86efac); color: #1f2937; }
-      .home { position: fixed; top: 12px; left: 12px; text-decoration: none; background: #fffffff0; padding: 8px 12px; border-radius: 999px; font-size: 1.4rem; }
-      .wrap { max-width: 900px; margin: 0 auto; padding: 64px 16px 20px; }
-      .card { background: #ffffffde; border-radius: 24px; border: 3px solid #fff; padding: 16px; box-shadow: 0 14px 30px #00000024; }
-      .center { text-align: center; }
-      .big { font-size: clamp(2rem, 7vw, 3.6rem); }
-      .mid { font-size: clamp(1.2rem, 4vw, 2rem); }
-      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 10px; }
-      .lvl, .opt { border: none; border-radius: 14px; padding: 12px 8px; font-family: inherit; font-size: 1.5rem; cursor: pointer; }
-      .lvl { background: #f1f5f9; border: 2px solid #cbd5e1; }
-      .lvl[disabled] { opacity: .35; }
-      .opt { color: #fff; background: linear-gradient(145deg, #60a5fa, #2563eb); box-shadow: 0 8px 16px #1d4ed855; }
-      .hud { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
-      .chip { background: #1f2937; color: #fff; border-radius: 999px; padding: 4px 10px; font-size: 1.1rem; }
-      .fb { min-height: 30px; text-align: center; font-size: 1.4rem; }
+        :root {
+            --primary: #3b82f6;
+            --secondary: #f59e0b;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --sky: #87ceeb;
+            --ground: #4ade80;
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Baloo 2", cursive;
+            background: var(--sky);
+            overflow: hidden;
+            color: #1e293b;
+            user-select: none;
+        }
+
+        /* CenÃ¡rio Animado */
+        .scenery {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background: linear-gradient(to bottom, #87ceeb 0%, #e0f2fe 100%);
+        }
+
+        .cloud {
+            position: absolute;
+            background: white;
+            border-radius: 50px;
+            opacity: 0.8;
+            animation: move linear infinite;
+        }
+
+        .grass {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 150px;
+            background: var(--ground);
+            border-top: 8px solid #22c55e;
+        }
+
+        @keyframes move {
+            from { transform: translateX(110vw); }
+            to { transform: translateX(-20vw); }
+        }
+
+        /* Layout Principal */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* HUD */
+        .hud {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            z-index: 10;
+        }
+
+        .stat-badge {
+            background: #1e293b;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 999px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: none;
+        }
+
+        /* Jogo - Ãrea do Trem */
+        .game-area {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .train-display {
+            display: flex;
+            align-items: flex-end;
+            gap: 8px;
+            min-height: 120px;
+            flex-wrap: nowrap;
+        }
+
+        .svg-icon { width: 80px; height: 80px; filter: drop-shadow(0 4px 4px rgba(0,0,0,0.15)); }
+
+        .wagon {
+            background: var(--primary);
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 12px;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 6px solid #1d4ed8;
+            position: relative;
+            animation: bounce 2s infinite ease-in-out;
+        }
+
+        .wagon.op { background: #64748b; border-bottom-color: #334155; width: 60px; height: 60px; font-size: 1.5rem; }
+
+        .wagon.target {
+            background: rgba(255, 255, 255, 0.3);
+            border: 3px dashed var(--primary);
+            border-bottom-width: 3px;
+            color: transparent;
+        }
+
+        .wagon.target.filled {
+            background: var(--success);
+            border: none;
+            border-bottom: 6px solid #16a34a;
+            color: white;
+            transition: all 0.3s;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+
+        /* Alternativas */
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .opt-btn {
+            background: white;
+            border: 3px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 15px;
+            font-size: 2.2rem;
+            font-family: inherit;
+            cursor: pointer;
+            transition: transform 0.1s, box-shadow 0.1s;
+            color: var(--primary);
+            box-shadow: 0 8px 0 #cbd5e1;
+            position: relative;
+        }
+
+        .opt-btn:active { transform: translateY(4px); box-shadow: 0 4px 0 #cbd5e1; }
+        
+        /* Efeito de voo */
+        .flying-num {
+            position: fixed;
+            z-index: 1000;
+            pointer-events: none;
+            font-size: 2.2rem;
+            color: var(--primary);
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 20px;
+            width: 80px;
+            height: 80px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Timer Bar */
+        .timer-container {
+            width: 100%;
+            height: 12px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 6px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .timer-bar {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, var(--success), var(--secondary), var(--danger));
+        }
+
+        /* Telas */
+        .screen { display: none; height: 100%; flex-direction: column; text-align: center; justify-content: center; align-items: center; }
+        .screen.active { display: flex; }
+
+        .btn-large {
+            background: var(--secondary);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.8rem;
+            font-family: inherit;
+            cursor: pointer;
+            box-shadow: 0 8px 0 #d97706;
+            margin: 10px;
+        }
+
+        .level-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 12px;
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        .lvl-btn {
+            aspect-ratio: 1;
+            border-radius: 15px;
+            border: 2px solid #e2e8f0;
+            background: white;
+            font-size: 1.2rem;
+            font-family: inherit;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lvl-btn:disabled { opacity: 0.5; }
+
+        /* Modal de Resultado */
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.7);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 30px;
+            text-align: center;
+            max-width: 320px;
+            width: 90%;
+        }
     </style>
-  </head>
-  <body>
-    <a class="home" href="../index.html">🏠</a>
-    <main class="wrap"><section id="app" class="card"></section></main>
+</head>
+<body>
+
+    <div class="scenery" id="scenery"></div>
+
+    <div class="container">
+        <!-- TELA INICIAL -->
+        <div id="screen-home" class="screen active">
+            <h1 style="font-size: 3.5rem; margin: 0; text-shadow: 2px 2px white;">ðŸš‚ Expresso</h1>
+            <h2 style="margin: 0; color: var(--primary); text-shadow: 1px 1px white;">da MatemÃ¡tica</h2>
+            <div id="home-train" class="train-display" style="margin: 40px 0;"></div>
+            <button class="btn-large" onclick="changeScreen('levels')">VAMOS LÃ!</button>
+            <p id="total-stars">â­ 0/36</p>
+        </div>
+
+        <!-- TELA DE NÃVEIS -->
+        <div id="screen-levels" class="screen" style="justify-content: flex-start; padding-top: 40px;">
+            <div class="hud" style="width: 100%;">
+                <button class="stat-badge" onclick="changeScreen('home')" style="cursor:pointer">ðŸ  InÃ­cio</button>
+                <div class="stat-badge" id="lvl-star-count">â­ 0</div>
+            </div>
+            <h2 style="margin: 20px 0;">PrÃ³xima EstaÃ§Ã£o?</h2>
+            <div class="level-grid" id="level-grid"></div>
+        </div>
+
+        <!-- TELA DE JOGO -->
+        <div id="screen-game" class="screen">
+            <div class="hud" style="width: 100%;">
+                <div class="stat-badge" id="game-info">EstaÃ§Ã£o 1</div>
+                <div class="stat-badge" id="game-score">Score: 0</div>
+                <button class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer">âœ•</button>
+            </div>
+
+            <div class="timer-container">
+                <div class="timer-bar" id="timer-bar"></div>
+            </div>
+
+            <div class="game-area">
+                <div class="train-display" id="active-train">
+                    <!-- Gerado via JS: Engine + Wagons -->
+                </div>
+
+                <div class="options-grid" id="options">
+                    <!-- OpÃ§Ãµes aqui -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE RESULTADO -->
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2 id="result-title">IncrÃ­vel!</h2>
+            <div id="result-stars" style="font-size: 2.5rem; margin: 15px 0;">â­â­â­</div>
+            <p id="result-msg">VocÃª chegou na estaÃ§Ã£o!</p>
+            <button id="modal-next-btn" class="btn-large" onclick="handleModalAction()">CONTINUAR</button>
+        </div>
+    </div>
+
     <script>
-      const LEVELS = [[1, '+', 1], [2, '+', 1], [3, '+', 1], [4, '+', 1], [5, '+', 2], [6, '+', 3], [8, '-', 2], [9, '-', 3], [7, '+', 5], [12, '-', 4], [9, '+', 8], [15, '-', 6]];
-      const SKEY = 'g1-train-v2';
-      const app = document.getElementById('app');
-      let state = 'cover', i = 0, tries = 0, score = 0;
-      const pg = load();
+        const LEVELS = [
+            [1, '+', 1], [2, '+', 2], [5, '+', 3], [10, '+', 4], 
+            [8, '-', 2], [12, '-', 5], [15, '-', 7], [9, '+', 9],
+            [14, '+', 6], [20, '-', 8], [15, '+', 12], [30, '-', 15]
+        ];
+        
+        const SKEY = 'math_train_v4';
+        let userData = loadData();
+        let currentLevel = 0;
+        let score = 0;
+        let timeLeft = 30;
+        let timerInterval = null;
+        let isLocked = false;
+        let tries = 0;
+        let lastResultSuccess = false;
 
-      function load() {
-        const b = { unlocked: 1, stars: Array(LEVELS.length).fill(0) };
-        try {
-          const d = JSON.parse(localStorage.getItem(SKEY));
-          if (!d) return b;
-          return { unlocked: Math.min(LEVELS.length, Math.max(1, Number(d.unlocked || 1))), stars: Array.isArray(d.stars) ? d.stars.slice(0, LEVELS.length).map((x) => Number(x || 0)) : b.stars };
-        } catch { return b; }
-      }
-      function save() { localStorage.setItem(SKEY, JSON.stringify(pg)); }
-      function medal() { const t = pg.stars.reduce((a, b) => a + b, 0), m = LEVELS.length * 3; return t >= m * 0.85 ? '🥇' : t >= m * 0.6 ? '🥈' : '🥉'; }
-      function mkOptions(ans) { const s = new Set([ans]); while (s.size < 3) s.add(Math.max(0, ans + (Math.floor(Math.random() * 7) - 3))); return [...s].sort(() => Math.random() - 0.5); }
-      function earnedByTry(n) { return n === 1 ? 3 : n === 2 ? 2 : 1; }
+        const SVG_ENGINE = `
+            <svg class="svg-icon" viewBox="0 0 100 100">
+                <rect x="10" y="40" width="70" height="40" fill="#ef4444" rx="5"/>
+                <rect x="50" y="20" width="25" height="30" fill="#ef4444" rx="2"/>
+                <rect x="55" y="10" width="10" height="15" fill="#334155" />
+                <circle cx="25" cy="85" r="10" fill="#334155" stroke="white" stroke-width="2"/>
+                <circle cx="65" cy="85" r="10" fill="#334155" stroke="white" stroke-width="2"/>
+                <rect x="15" y="45" width="20" height="20" fill="#93c5fd" rx="2"/>
+            </svg>`;
 
-      function render() { if (state === 'cover') return cover(); if (state === 'select') return select(); play(); }
-      function cover() {
-        app.innerHTML = `<p class="center big">🚂➕➖</p><p class="center big">${medal()}</p><p class="center"><button id="go" class="lvl" style="font-size:2.2rem">▶️</button></p>`;
-        document.getElementById('go').onclick = () => { state = 'select'; render(); };
-      }
-      function select() {
-        app.innerHTML = `<p class="center mid">🚂 ⭐ ${pg.stars.reduce((a,b)=>a+b,0)}/${LEVELS.length*3}</p><div class="grid">${LEVELS.map((_, k) => `<button class="lvl" data-k="${k}" ${k + 1 > pg.unlocked ? 'disabled' : ''}>${k + 1}<br>${'⭐'.repeat(pg.stars[k] || 0) || '▫️'}</button>`).join('')}</div><p class="center" style="margin-top:10px"><button id="back" class="lvl">◀️</button></p>`;
-        app.querySelectorAll('.lvl[data-k]').forEach((b) => b.onclick = () => { i = Number(b.dataset.k); tries = 0; state = 'play'; render(); });
-        document.getElementById('back').onclick = () => { state = 'cover'; render(); };
-      }
-      function play() {
-        const [a, op, b] = LEVELS[i], ans = op === '+' ? a + b : a - b;
-        app.innerHTML = `<div class="hud"><span class="chip">${i + 1}/${LEVELS.length}</span><span class="chip">⭐ ${pg.stars[i] || 0}</span><span class="chip">🏅 ${score}</span></div><p class="center big">${a} ${op} ${b} = ?</p><div class="grid">${mkOptions(ans).map((n) => `<button class="opt" data-n="${n}">${n}</button>`).join('')}</div><div id="fb" class="fb"></div><p class="center" style="margin-top:10px"><button id="menu" class="lvl">📚</button></p>`;
-        app.querySelectorAll('.opt').forEach((btn) => btn.onclick = () => {
-          tries += 1;
-          const n = Number(btn.dataset.n), fb = document.getElementById('fb');
-          if (n === ans) {
-            const e = earnedByTry(tries);
-            pg.stars[i] = Math.max(pg.stars[i], e);
-            pg.unlocked = Math.max(pg.unlocked, Math.min(LEVELS.length, i + 2));
-            save();
-            score += 8 + e;
-            fb.textContent = '✅ ' + '⭐'.repeat(e);
-            setTimeout(() => { state = 'select'; render(); }, 600);
-          } else fb.textContent = '❌';
-        });
-        document.getElementById('menu').onclick = () => { state = 'select'; render(); };
-      }
-      render();
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        function playTone(freq, type, duration) {
+            try {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = type;
+                osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+                gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start();
+                osc.stop(audioCtx.currentTime + duration);
+            } catch(e) {}
+        }
+
+        const SFX = {
+            correct: () => { playTone(523, 'sine', 0.2); setTimeout(() => playTone(659, 'sine', 0.3), 100); },
+            wrong: () => { playTone(220, 'sawtooth', 0.3); },
+            click: () => { playTone(440, 'triangle', 0.05); }
+        };
+
+        function init() {
+            createScenery();
+            renderLevelGrid();
+            updateGlobalStats();
+            document.getElementById('home-train').innerHTML = SVG_ENGINE + `<div class="wagon">1</div><div class="wagon op">+</div><div class="wagon">1</div>`;
+        }
+
+        function createScenery() {
+            const container = document.getElementById('scenery');
+            for(let i=0; i<6; i++) {
+                const cloud = document.createElement('div');
+                cloud.className = 'cloud';
+                const size = 40 + Math.random() * 60;
+                cloud.style.width = size + 'px';
+                cloud.style.height = (size * 0.6) + 'px';
+                cloud.style.top = (Math.random() * 40) + '%';
+                cloud.style.animationDuration = (15 + Math.random() * 20) + 's';
+                cloud.style.animationDelay = (Math.random() * 10) + 's';
+                container.appendChild(cloud);
+            }
+            const grass = document.createElement('div');
+            grass.className = 'grass';
+            container.appendChild(grass);
+        }
+
+        function loadData() {
+            const d = localStorage.getItem(SKEY);
+            return d ? JSON.parse(d) : { unlocked: 1, stars: Array(LEVELS.length).fill(0) };
+        }
+
+        function saveGame() {
+            localStorage.setItem(SKEY, JSON.stringify(userData));
+        }
+
+        function renderLevelGrid() {
+            const grid = document.getElementById('level-grid');
+            grid.innerHTML = '';
+            LEVELS.forEach((_, idx) => {
+                const btn = document.createElement('button');
+                const isUnlocked = idx < userData.unlocked;
+                btn.className = `lvl-btn ${isUnlocked ? 'unlocked' : ''}`;
+                btn.disabled = !isUnlocked;
+                const stars = userData.stars[idx] || 0;
+                btn.innerHTML = `<span>${idx + 1}</span><div style="font-size:0.7rem; color:#fbbf24">${'â˜…'.repeat(stars)}${'â˜†'.repeat(3-stars)}</div>`;
+                btn.onclick = () => startLevel(idx);
+                grid.appendChild(btn);
+            });
+        }
+
+        function updateGlobalStats() {
+            const total = userData.stars.reduce((a, b) => a + b, 0);
+            document.getElementById('total-stars').textContent = `â­ ${total}/${LEVELS.length * 3}`;
+            document.getElementById('lvl-star-count').textContent = `â­ ${total}`;
+        }
+
+        function changeScreen(id) {
+            SFX.click();
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById('screen-' + id).classList.add('active');
+            if(id === 'levels') renderLevelGrid();
+        }
+
+        function startLevel(idx) {
+            currentLevel = idx;
+            tries = 0;
+            isLocked = false;
+            timeLeft = 30;
+            changeScreen('game');
+            loadQuestion();
+            startTimer();
+        }
+
+        function startTimer() {
+            if(timerInterval) clearInterval(timerInterval);
+            const bar = document.getElementById('timer-bar');
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                bar.style.width = (timeLeft / 30 * 100) + '%';
+                if(timeLeft <= 0) endLevel(false);
+            }, 1000);
+        }
+
+        function loadQuestion() {
+            const [a, op, b] = LEVELS[currentLevel];
+            const train = document.getElementById('active-train');
+            
+            train.innerHTML = `
+                <div class="engine-box">${SVG_ENGINE}</div>
+                <div class="wagon">${a}</div>
+                <div class="wagon op">${op}</div>
+                <div class="wagon">${b}</div>
+                <div class="wagon op">=</div>
+                <div class="wagon target" id="target-wagon">?</div>
+            `;
+
+            const ans = op === '+' ? a + b : a - b;
+            const options = new Set([ans]);
+            while(options.size < 3) {
+                const fake = Math.max(0, ans + (Math.floor(Math.random() * 9) - 4));
+                options.add(fake);
+            }
+
+            const btnContainer = document.getElementById('options');
+            btnContainer.innerHTML = '';
+            [...options].sort(() => Math.random() - 0.5).forEach(val => {
+                const btn = document.createElement('button');
+                btn.className = 'opt-btn';
+                btn.textContent = val;
+                btn.onclick = (e) => checkAnswer(val, ans, btn, e);
+                btnContainer.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(selected, correct, btn, event) {
+            if(isLocked) return;
+            
+            const rect = btn.getBoundingClientRect();
+            const flying = document.createElement('div');
+            flying.className = 'flying-num';
+            flying.textContent = selected;
+            flying.style.left = rect.left + 'px';
+            flying.style.top = rect.top + 'px';
+            document.body.appendChild(flying);
+
+            if(selected === correct) {
+                isLocked = true;
+                tries++;
+                clearInterval(timerInterval);
+                SFX.correct();
+                
+                const target = document.getElementById('target-wagon');
+                const targetRect = target.getBoundingClientRect();
+                
+                flying.animate([
+                    { left: rect.left + 'px', top: rect.top + 'px', transform: 'scale(1)' },
+                    { left: targetRect.left + 'px', top: targetRect.top + 'px', transform: 'scale(0.8)' }
+                ], { duration: 600, easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)', fill: 'forwards' })
+                .onfinish = () => {
+                    target.textContent = selected;
+                    target.classList.add('filled');
+                    flying.remove();
+                    setTimeout(() => endLevel(true), 600);
+                };
+
+                score += 10 + Math.floor(timeLeft / 2);
+                document.getElementById('game-score').textContent = `Score: ${score}`;
+            } else {
+                tries++;
+                SFX.wrong();
+                
+                const randomX = (Math.random() - 0.5) * 1000;
+                const randomRot = (Math.random() - 0.5) * 1000;
+                
+                flying.animate([
+                    { transform: 'translate(0, 0) rotate(0deg)', opacity: 1 },
+                    { transform: `translate(${randomX}px, 800px) rotate(${randomRot}deg)`, opacity: 0 }
+                ], { duration: 1000, easing: 'ease-in' })
+                .onfinish = () => flying.remove();
+
+                btn.style.opacity = '0.3';
+                btn.disabled = true;
+            }
+        }
+
+        function endLevel(success) {
+            clearInterval(timerInterval);
+            lastResultSuccess = success;
+            const modal = document.getElementById('result-modal');
+            const starDiv = document.getElementById('result-stars');
+            const btn = document.getElementById('modal-next-btn');
+            const msg = document.getElementById('result-msg');
+
+            if(success) {
+                let earned = (tries === 1 && timeLeft > 15) ? 3 : (tries <= 2 && timeLeft > 5) ? 2 : 1;
+                userData.stars[currentLevel] = Math.max(userData.stars[currentLevel], earned);
+                
+                // Desbloquear prÃ³ximo nÃ­vel
+                userData.unlocked = Math.max(userData.unlocked, currentLevel + 2);
+                saveGame();
+                
+                starDiv.textContent = "â­".repeat(earned) + "â˜†".repeat(3-earned);
+                document.getElementById('result-title').textContent = "Na mosca!";
+                msg.textContent = "O trem estÃ¡ pronto para partir!";
+                
+                // Se for o Ãºltimo nÃ­vel, volta pro menu
+                if (currentLevel >= LEVELS.length - 1) {
+                    btn.textContent = "MENU INICIAL";
+                } else {
+                    btn.textContent = "PRÃ“XIMO";
+                }
+            } else {
+                document.getElementById('result-title').textContent = "UÃ©, parou?";
+                starDiv.textContent = "â°";
+                msg.textContent = "O tempo acabou ou houveram muitos erros.";
+                btn.textContent = "TENTAR DENOVO";
+            }
+
+            modal.style.display = 'flex';
+            updateGlobalStats();
+        }
+
+        function handleModalAction() {
+            SFX.click();
+            document.getElementById('result-modal').style.display = 'none';
+            
+            if (lastResultSuccess) {
+                if (currentLevel < LEVELS.length - 1) {
+                    // Passa para o prÃ³ximo automaticamente
+                    startLevel(currentLevel + 1);
+                } else {
+                    // Fim do jogo
+                    changeScreen('levels');
+                }
+            } else {
+                // Tentar denovo o mesmo nÃ­vel
+                startLevel(currentLevel);
+            }
+        }
+
+        function closeModal() {
+            // FunÃ§Ã£o legada se necessÃ¡rio, mas handleModalAction substitui o clique principal
+            document.getElementById('result-modal').style.display = 'none';
+            changeScreen('levels');
+        }
+
+        window.onload = init;
     </script>
-  </body>
+</body>
 </html>

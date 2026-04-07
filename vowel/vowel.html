@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
     <title>Complete a Palavra - Vogais</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@500;700;800&display=swap" rel="stylesheet">
@@ -40,7 +41,7 @@
             display: flex;
         }
         
-        /* Animações */
+        /* AnimaÃ§Ãµes */
         @keyframes success-pop {
             0% { transform: scale(1); }
             50% { transform: scale(1.2); color: #22c55e; }
@@ -59,7 +60,7 @@
             animation: shake 0.4s ease;
         }
 
-        /* Cartões de Nível */
+        /* CartÃµes de NÃ­vel */
         .level-card, .mode-card {
             transition: transform 0.2s, box-shadow 0.2s;
         }
@@ -73,7 +74,7 @@
             cursor: not-allowed;
         }
 
-        /* Estilo dos Botões de Vogais */
+        /* Estilo dos BotÃµes de Vogais */
         .vowel-btn {
             transition: all 0.1s ease;
             position: relative;
@@ -139,38 +140,38 @@
         <h1 class="text-6xl md:text-8xl font-game text-blue-600 mb-4 drop-shadow-md leading-tight" style="-webkit-text-stroke: 2px white;">COMPLETE A<br>PALAVRA</h1>
         <div class="w-64 h-64 bg-white rounded-[3rem] flex items-center justify-center border-8 border-yellow-400 shadow-2xl mb-12 rotate-3 relative">
             <div class="absolute inset-0 bg-blue-50 opacity-50 rounded-[2.5rem]"></div>
-            <span class="text-9xl relative z-10">🎹</span>
+            <span class="text-9xl relative z-10">ðŸŽ¹</span>
         </div>
         <button onclick="showScreen('screen-mode')" class="bg-yellow-400 hover:bg-yellow-500 text-yellow-900 font-game text-4xl px-16 py-5 rounded-full shadow-[0_8px_0_#ca8a04] transform transition active:translate-y-2 active:shadow-none">
             JOGAR!
         </button>
     </div>
 
-    <!-- TELA DE SELEÇÃO DE MODO -->
+    <!-- TELA DE SELEÃ‡ÃƒO DE MODO -->
     <div id="screen-mode" class="screen justify-center">
         <h2 class="text-5xl font-game text-blue-600 mb-12 text-center drop-shadow-sm" style="-webkit-text-stroke: 1px white;">COMO VAMOS JOGAR?</h2>
         <div class="flex flex-col md:flex-row gap-8 w-full max-w-4xl px-4">
             <button onclick="setMode('infantil')" class="mode-card flex-1 bg-white p-10 rounded-[3rem] border-4 border-blue-200 text-center shadow-xl">
-                <div class="text-7xl mb-6">👶</div>
+                <div class="text-7xl mb-6">ðŸ‘¶</div>
                 <div class="text-4xl font-game text-blue-600 mb-3">INFANTIL</div>
-                <p class="text-gray-500 font-bold text-lg">Letras Grandes<br>(MAIÚSCULAS)</p>
+                <p class="text-gray-500 font-bold text-lg">Letras Grandes<br>(MAIÃšSCULAS)</p>
             </button>
 
             <button onclick="setMode('fundamental')" class="mode-card flex-1 bg-white p-10 rounded-[3rem] border-4 border-purple-200 text-center shadow-xl">
-                <div class="text-7xl mb-6">🎒</div>
+                <div class="text-7xl mb-6">ðŸŽ’</div>
                 <div class="text-4xl font-game text-purple-600 mb-3">ESCOLA</div>
-                <p class="text-gray-500 font-bold text-lg">Maiúsculas e Minúsculas<br>(Pian _)</p>
+                <p class="text-gray-500 font-bold text-lg">MaiÃºsculas e MinÃºsculas<br>(Pian _)</p>
             </button>
         </div>
-        <button onclick="showScreen('screen-start')" class="mt-12 text-blue-600 font-bold text-xl hover:text-blue-800 transition">Voltar ao início</button>
+        <button onclick="showScreen('screen-start')" class="mt-12 text-blue-600 font-bold text-xl hover:text-blue-800 transition">Voltar ao inÃ­cio</button>
     </div>
 
-    <!-- TELA DE SELEÇÃO DE NÍVEIS -->
+    <!-- TELA DE SELEÃ‡ÃƒO DE NÃVEIS -->
     <div id="screen-levels" class="screen">
         <div class="max-w-4xl w-full">
             <div class="flex justify-between items-center mb-10">
-                <button onclick="showScreen('screen-mode')" class="bg-white text-blue-600 font-bold px-6 py-3 rounded-2xl shadow-sm border-2 border-blue-100 hover:bg-blue-50">← VOLTAR</button>
-                <h2 class="text-5xl font-game text-blue-600 drop-shadow-sm" style="-webkit-text-stroke: 1px white;">NÍVEIS</h2>
+                <button onclick="showScreen('screen-mode')" class="bg-white text-blue-600 font-bold px-6 py-3 rounded-2xl shadow-sm border-2 border-blue-100 hover:bg-blue-50">â† VOLTAR</button>
+                <h2 class="text-5xl font-game text-blue-600 drop-shadow-sm" style="-webkit-text-stroke: 1px white;">NÃVEIS</h2>
                 <div class="w-24"></div>
             </div>
             <div id="levels-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"></div>
@@ -199,15 +200,15 @@
             <div class="w-full flex justify-between items-center mb-8 px-4">
                 <button onclick="quitGame()" class="bg-white px-6 py-2 rounded-xl font-bold border-2 border-blue-200 text-blue-600 shadow-sm hover:bg-blue-50 transition-colors">SAIR</button>
                 <div class="flex flex-col items-end">
-                    <div class="text-2xl font-game text-blue-600" id="level-title">NÍVEL 1</div>
+                    <div class="text-2xl font-game text-blue-600" id="level-title">NÃVEL 1</div>
                 </div>
             </div>
 
-            <!-- Área Principal: Imagem + Palavra -->
+            <!-- Ãrea Principal: Imagem + Palavra -->
             <div class="flex flex-col md:flex-row items-center justify-center w-full gap-8 md:gap-16 my-auto">
                 <!-- Imagem -->
                 <div class="w-56 h-56 md:w-80 md:h-80 shrink-0 bg-white p-4 md:p-6 rounded-[2rem] border-4 border-blue-200 shadow-xl flex items-center justify-center">
-                    <span id="display-emoji" class="text-8xl md:text-9xl select-none transition hover:scale-105">🎹</span>
+                    <span id="display-emoji" class="text-8xl md:text-9xl select-none transition hover:scale-105">ðŸŽ¹</span>
                 </div>
 
                 <!-- Palavra incompleta -->
@@ -218,7 +219,7 @@
                 </div>
             </div>
 
-            <!-- Botões das Vogais (Teclado Virtual) -->
+            <!-- BotÃµes das Vogais (Teclado Virtual) -->
             <div class="w-full max-w-3xl mt-12">
                 <div class="flex justify-center gap-3 md:gap-6 px-4">
                     <button id="btn-A" onclick="checkVowel('A')" class="vowel-btn flex-1 aspect-square max-w-[110px] bg-[#9333ea] text-white font-game text-5xl md:text-6xl rounded-2xl shadow-[0_8px_0_#5b21b6]">A</button>
@@ -231,12 +232,12 @@
         </div>
     </div>
 
-    <!-- MODAL DE VITÓRIA -->
+    <!-- MODAL DE VITÃ“RIA -->
     <div id="win-modal" class="fixed inset-0 bg-blue-900/80 flex items-center justify-center hidden z-50 backdrop-blur-sm">
         <div class="bg-white p-12 rounded-[3rem] text-center shadow-2xl border-8 border-yellow-400 max-w-sm mx-4 transform scale-105">
-            <h2 class="text-5xl font-game text-blue-600 mb-4 drop-shadow-sm" id="modal-title">NÍVEL CONCLUÍDO!</h2>
-            <div class="text-8xl mb-6">🏆</div>
-            <p class="text-xl font-bold text-gray-600 mb-8" id="modal-msg">Você foi incrível!</p>
+            <h2 class="text-5xl font-game text-blue-600 mb-4 drop-shadow-sm" id="modal-title">NÃVEL CONCLUÃDO!</h2>
+            <div class="text-8xl mb-6">ðŸ†</div>
+            <p class="text-xl font-bold text-gray-600 mb-8" id="modal-msg">VocÃª foi incrÃ­vel!</p>
             <button onclick="showScreen('screen-levels')" class="bg-green-500 hover:bg-green-600 text-white font-game text-4xl py-4 px-12 rounded-full shadow-[0_8px_0_#166534] active:translate-y-2 active:shadow-none transition-all w-full">
                 CONTINUAR
             </button>
@@ -253,80 +254,80 @@
 const gameData = [
     {
         name: "Nivel 1",
-        desc: "Fácil",
+        desc: "FÃ¡cil",
         phases: [
-            { prefix: 'PIAN', vowel: 'O', suffix: '', emoji: '🎹' },
-            { prefix: 'GAT', vowel: 'O', suffix: '', emoji: '🐱' },
-            { prefix: 'BÔL', vowel: 'O', suffix: '', emoji: '🎂' },
-            { prefix: 'SAP', vowel: 'O', suffix: '', emoji: '🐸' },
-            { prefix: 'UV', vowel: 'A', suffix: '', emoji: '🍇' },
-            { prefix: 'RAT', vowel: 'O', suffix: '', emoji: '🐭' },
-            { prefix: 'MES', vowel: 'A', suffix: '', emoji: '🪑' },
-            { prefix: 'CAS', vowel: 'A', suffix: '', emoji: '🏠' },
-            { prefix: 'BOL', vowel: 'A', suffix: '', emoji: '⚽' },
-            { prefix: 'DAD', vowel: 'O', suffix: '', emoji: '🎲' },
-            { prefix: 'FOG', vowel: 'O', suffix: '', emoji: '🔥' },
-            { prefix: 'LAG', vowel: 'O', suffix: '', emoji: '🏞️' },
-            { prefix: 'URS', vowel: 'O', suffix: '', emoji: '🐻' },
-            { prefix: 'NAVI', vowel: 'O', suffix: '', emoji: '🚢' },
-            { prefix: 'FRUT', vowel: 'A', suffix: '', emoji: '🍓' },
-            { prefix: 'HORT', vowel: 'A', suffix: '', emoji: '🥦' },
-            { prefix: 'BANC', vowel: 'O', suffix: '', emoji: '🏦' },
-            { prefix: 'CARR', vowel: 'O', suffix: '', emoji: '🚗' },
-            { prefix: 'DENT', vowel: 'E', suffix: '', emoji: '🦷' },
-            { prefix: 'ESCOL', vowel: 'A', suffix: '', emoji: '🏫' }
+            { prefix: 'PIAN', vowel: 'O', suffix: '', emoji: 'ðŸŽ¹' },
+            { prefix: 'GAT', vowel: 'O', suffix: '', emoji: 'ðŸ±' },
+            { prefix: 'BÃ”L', vowel: 'O', suffix: '', emoji: 'ðŸŽ‚' },
+            { prefix: 'SAP', vowel: 'O', suffix: '', emoji: 'ðŸ¸' },
+            { prefix: 'UV', vowel: 'A', suffix: '', emoji: 'ðŸ‡' },
+            { prefix: 'RAT', vowel: 'O', suffix: '', emoji: 'ðŸ­' },
+            { prefix: 'MES', vowel: 'A', suffix: '', emoji: 'ðŸª‘' },
+            { prefix: 'CAS', vowel: 'A', suffix: '', emoji: 'ðŸ ' },
+            { prefix: 'BOL', vowel: 'A', suffix: '', emoji: 'âš½' },
+            { prefix: 'DAD', vowel: 'O', suffix: '', emoji: 'ðŸŽ²' },
+            { prefix: 'FOG', vowel: 'O', suffix: '', emoji: 'ðŸ”¥' },
+            { prefix: 'LAG', vowel: 'O', suffix: '', emoji: 'ðŸžï¸' },
+            { prefix: 'URS', vowel: 'O', suffix: '', emoji: 'ðŸ»' },
+            { prefix: 'NAVI', vowel: 'O', suffix: '', emoji: 'ðŸš¢' },
+            { prefix: 'FRUT', vowel: 'A', suffix: '', emoji: 'ðŸ“' },
+            { prefix: 'HORT', vowel: 'A', suffix: '', emoji: 'ðŸ¥¦' },
+            { prefix: 'BANC', vowel: 'O', suffix: '', emoji: 'ðŸ¦' },
+            { prefix: 'CARR', vowel: 'O', suffix: '', emoji: 'ðŸš—' },
+            { prefix: 'DENT', vowel: 'E', suffix: '', emoji: 'ðŸ¦·' },
+            { prefix: 'ESCOL', vowel: 'A', suffix: '', emoji: 'ðŸ«' }
         ]
     },
     {
         name: "Nivel 2",
-        desc: "Médio",
+        desc: "MÃ©dio",
         phases: [
-            { prefix: 'B', vowel: 'O', suffix: 'LA', emoji: '⚽' },
-            { prefix: 'P', vowel: 'A', suffix: 'TO', emoji: '🦆' },
-            { prefix: 'D', vowel: 'A', suffix: 'DO', emoji: '🎲' },
-            { prefix: 'L', vowel: 'U', suffix: 'A', emoji: '🌙' },
-            { prefix: 'F', vowel: 'O', suffix: 'CA', emoji: '🦭' },
-            { prefix: 'M', vowel: 'A', suffix: 'LA', emoji: '💼' },
-            { prefix: 'V', vowel: 'E', suffix: 'LA', emoji: '🕯️' },
-            { prefix: 'S', vowel: 'E', suffix: 'TA', emoji: '➡️' },
-            { prefix: 'C', vowel: 'O', suffix: 'PO', emoji: '🥛' },
-            { prefix: 'T', vowel: 'E', suffix: 'LA', emoji: '📺' },
-            { prefix: 'L', vowel: 'A', suffix: 'TA', emoji: '🥫' },
-            { prefix: 'R', vowel: 'O', suffix: 'DA', emoji: '⚙️' },
-            { prefix: 'B', vowel: 'O', suffix: 'TA', emoji: '👢' },
-            { prefix: 'F', vowel: 'A', suffix: 'CA', emoji: '🔪' },
-            { prefix: 'L', vowel: 'U', suffix: 'VA', emoji: '🧤' },
-            { prefix: 'D', vowel: 'O', suffix: 'CE', emoji: '🍬' },
-            { prefix: 'N', vowel: 'O', suffix: 'ITE', emoji: '🌙' },
-            { prefix: 'P', vowel: 'O', suffix: 'NTE', emoji: '🌉' },
-            { prefix: 'T', vowel: 'O', suffix: 'RRE', emoji: '🗼' },
-            { prefix: 'M', vowel: 'U', suffix: 'RO', emoji: '🧱' }
+            { prefix: 'B', vowel: 'O', suffix: 'LA', emoji: 'âš½' },
+            { prefix: 'P', vowel: 'A', suffix: 'TO', emoji: 'ðŸ¦†' },
+            { prefix: 'D', vowel: 'A', suffix: 'DO', emoji: 'ðŸŽ²' },
+            { prefix: 'L', vowel: 'U', suffix: 'A', emoji: 'ðŸŒ™' },
+            { prefix: 'F', vowel: 'O', suffix: 'CA', emoji: 'ðŸ¦­' },
+            { prefix: 'M', vowel: 'A', suffix: 'LA', emoji: 'ðŸ’¼' },
+            { prefix: 'V', vowel: 'E', suffix: 'LA', emoji: 'ðŸ•¯ï¸' },
+            { prefix: 'S', vowel: 'E', suffix: 'TA', emoji: 'âž¡ï¸' },
+            { prefix: 'C', vowel: 'O', suffix: 'PO', emoji: 'ðŸ¥›' },
+            { prefix: 'T', vowel: 'E', suffix: 'LA', emoji: 'ðŸ“º' },
+            { prefix: 'L', vowel: 'A', suffix: 'TA', emoji: 'ðŸ¥«' },
+            { prefix: 'R', vowel: 'O', suffix: 'DA', emoji: 'âš™ï¸' },
+            { prefix: 'B', vowel: 'O', suffix: 'TA', emoji: 'ðŸ‘¢' },
+            { prefix: 'F', vowel: 'A', suffix: 'CA', emoji: 'ðŸ”ª' },
+            { prefix: 'L', vowel: 'U', suffix: 'VA', emoji: 'ðŸ§¤' },
+            { prefix: 'D', vowel: 'O', suffix: 'CE', emoji: 'ðŸ¬' },
+            { prefix: 'N', vowel: 'O', suffix: 'ITE', emoji: 'ðŸŒ™' },
+            { prefix: 'P', vowel: 'O', suffix: 'NTE', emoji: 'ðŸŒ‰' },
+            { prefix: 'T', vowel: 'O', suffix: 'RRE', emoji: 'ðŸ—¼' },
+            { prefix: 'M', vowel: 'U', suffix: 'RO', emoji: 'ðŸ§±' }
         ]
     },
     {
         name: "Nivel 3",
         desc: "Dificil",
         phases: [
-            { prefix: 'P', vowel: 'E', suffix: 'IXE', emoji: '🐟' },
-            { prefix: 'URS', vowel: 'O', suffix: '', emoji: '🐻' },
-            { prefix: 'L', vowel: 'E', suffix: 'ÃO', emoji: '🦁' },
-            { prefix: 'Z', vowel: 'E', suffix: 'BRA', emoji: '🦓' },
-            { prefix: 'T', vowel: 'A', suffix: 'TU', emoji: '🐾' },
-            { prefix: 'A', vowel: 'G', suffix: 'UA', emoji: '💧' },
-            { prefix: 'C', vowel: 'A', suffix: 'IXA', emoji: '📦' },
-            { prefix: 'I', vowel: 'N', suffix: 'DIO', emoji: '🪶' },
-            { prefix: 'O', vowel: 'L', suffix: 'HO', emoji: '👁️' },
-            { prefix: 'S', vowel: 'O', suffix: 'NO', emoji: '😴' },
-            { prefix: 'V', vowel: 'I', suffix: 'DA', emoji: '🌱' },
-            { prefix: 'A', vowel: 'R', suffix: 'ROZ', emoji: '🍚' },
-            { prefix: 'J', vowel: 'O', suffix: 'IA', emoji: '💎' },
-            { prefix: 'L', vowel: 'E', suffix: 'ITE', emoji: '🥛' },
-            { prefix: 'N', vowel: 'O', suffix: 'ME', emoji: '📛' },
-            { prefix: 'O', vowel: 'L', suffix: 'EO', emoji: '🪴' },
-            { prefix: 'R', vowel: 'U', suffix: 'A', emoji: '🛣️' },
-            { prefix: 'V', vowel: 'A', suffix: 'LE', emoji: '🏞️' },
-            { prefix: 'G', vowel: 'O', suffix: 'TA', emoji: '💧' },
-            { prefix: 'H', vowel: 'I', suffix: 'NO', emoji: '🎵' }
+            { prefix: 'P', vowel: 'E', suffix: 'IXE', emoji: 'ðŸŸ' },
+            { prefix: 'URS', vowel: 'O', suffix: '', emoji: 'ðŸ»' },
+            { prefix: 'L', vowel: 'E', suffix: 'ÃƒO', emoji: 'ðŸ¦' },
+            { prefix: 'Z', vowel: 'E', suffix: 'BRA', emoji: 'ðŸ¦“' },
+            { prefix: 'T', vowel: 'A', suffix: 'TU', emoji: 'ðŸ¾' },
+            { prefix: 'A', vowel: 'G', suffix: 'UA', emoji: 'ðŸ’§' },
+            { prefix: 'C', vowel: 'A', suffix: 'IXA', emoji: 'ðŸ“¦' },
+            { prefix: 'I', vowel: 'N', suffix: 'DIO', emoji: 'ðŸª¶' },
+            { prefix: 'O', vowel: 'L', suffix: 'HO', emoji: 'ðŸ‘ï¸' },
+            { prefix: 'S', vowel: 'O', suffix: 'NO', emoji: 'ðŸ˜´' },
+            { prefix: 'V', vowel: 'I', suffix: 'DA', emoji: 'ðŸŒ±' },
+            { prefix: 'A', vowel: 'R', suffix: 'ROZ', emoji: 'ðŸš' },
+            { prefix: 'J', vowel: 'O', suffix: 'IA', emoji: 'ðŸ’Ž' },
+            { prefix: 'L', vowel: 'E', suffix: 'ITE', emoji: 'ðŸ¥›' },
+            { prefix: 'N', vowel: 'O', suffix: 'ME', emoji: 'ðŸ“›' },
+            { prefix: 'O', vowel: 'L', suffix: 'EO', emoji: 'ðŸª´' },
+            { prefix: 'R', vowel: 'U', suffix: 'A', emoji: 'ðŸ›£ï¸' },
+            { prefix: 'V', vowel: 'A', suffix: 'LE', emoji: 'ðŸžï¸' },
+            { prefix: 'G', vowel: 'O', suffix: 'TA', emoji: 'ðŸ’§' },
+            { prefix: 'H', vowel: 'I', suffix: 'NO', emoji: 'ðŸŽµ' }
         ]
     }
 ];
@@ -363,7 +364,7 @@ const gameData = [
                 card.className = `level-card bg-white p-8 rounded-[2.5rem] flex flex-col items-center justify-center text-center border-4 ${isLocked ? 'locked border-gray-200' : 'border-blue-200 cursor-pointer shadow-lg'}`;
                 
                 card.innerHTML = `
-                    <div class="text-5xl mb-4">${isLocked ? '🔒' : '⭐'}</div>
+                    <div class="text-5xl mb-4">${isLocked ? 'ðŸ”’' : 'â­'}</div>
                     <div class="text-3xl font-game text-blue-600 mb-1">${level.name}</div>
                     <div class="text-lg font-bold text-gray-400">${isLocked ? 'Bloqueado' : level.desc}</div>
                 `;
@@ -402,7 +403,7 @@ const gameData = [
             updateScores();
             document.getElementById('display-emoji').innerText = data.emoji;
 
-            // Formatação baseada no modo
+            // FormataÃ§Ã£o baseada no modo
             let displayPrefix = data.prefix;
             let displaySuffix = data.suffix;
 
@@ -412,7 +413,7 @@ const gameData = [
                     displayPrefix = displayPrefix.charAt(0).toUpperCase() + displayPrefix.slice(1).toLowerCase();
                     displaySuffix = displaySuffix.toLowerCase();
                 } else if (displaySuffix.length > 0) {
-                    // O gap é a primeira letra (raro neste jogo, mas tratando)
+                    // O gap Ã© a primeira letra (raro neste jogo, mas tratando)
                     displaySuffix = displaySuffix.toLowerCase(); 
                 }
             }
@@ -442,11 +443,11 @@ const gameData = [
             showScreen('screen-levels');
         }
 
-        // Suporte para clique nos botões virtuais
+        // Suporte para clique nos botÃµes virtuais
         function checkVowel(vowel) {
             if (!canType) return;
             
-            // Efeito visual no botão pressionado
+            // Efeito visual no botÃ£o pressionado
             const btn = document.getElementById(`btn-${vowel}`);
             if(btn) {
                 btn.classList.add('active-press');
@@ -462,7 +463,7 @@ const gameData = [
                 score++;
                 updateScores();
                 
-                // Formatação do acerto dependendo do modo
+                // FormataÃ§Ã£o do acerto dependendo do modo
                 let displayVowel = vowel;
                 if(gameMode === 'fundamental' && data.prefix.length > 0) {
                     displayVowel = vowel.toLowerCase();
@@ -483,7 +484,7 @@ const gameData = [
             }
         }
 
-        // Suporte para teclado físico
+        // Suporte para teclado fÃ­sico
         window.addEventListener('keydown', (e) => {
             if (!document.getElementById('screen-game').classList.contains('active-screen') || !canType) return;
             
@@ -498,12 +499,12 @@ const gameData = [
             if (activePhaseIdx < gameData[activeLevelIdx].phases.length) {
                 initPhase();
             } else {
-                // Fim de nível
+                // Fim de nÃ­vel
                 if (activeLevelIdx + 1 === unlockedLevels && unlockedLevels < gameData.length) {
                     unlockedLevels++;
                 }
                 const isFinalLevel = activeLevelIdx + 1 === gameData.length;
-                document.getElementById('modal-title').innerText = isFinalLevel ? "JOGO CONCLUÍDO!" : "NÍVEL CONCLUÍDO!";
+                document.getElementById('modal-title').innerText = isFinalLevel ? "JOGO CONCLUÃDO!" : "NÃVEL CONCLUÃDO!";
                 document.getElementById('win-modal').classList.remove('hidden');
             }
         }

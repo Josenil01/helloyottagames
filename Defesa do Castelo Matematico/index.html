@@ -1,101 +1,716 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Defesa do Castelo Matematico</title>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
+    <title>Defesa do Castelo MatemÃ¡tico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
     <style>
-      * { box-sizing: border-box; }
-      body { margin: 0; min-height: 100vh; font-family: "Baloo 2", cursive; color: #0f172a; background: linear-gradient(180deg, #dbeafe, #93c5fd); }
-      .home { position: fixed; top: 12px; left: 12px; text-decoration: none; background: #ffffffec; color: #111827; padding: 8px 12px; border-radius: 999px; font-size: 1.4rem; }
-      .wrap { max-width: 900px; margin: 0 auto; padding: 64px 16px 20px; }
-      .card { background: #ffffffde; border-radius: 24px; border: 3px solid #fff; padding: 16px; box-shadow: 0 14px 30px #00000024; }
-      .center { text-align: center; }
-      .big { font-size: clamp(2rem, 7vw, 3.6rem); }
-      .mid { font-size: clamp(1.2rem, 4vw, 2rem); }
-      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 10px; }
-      .lvl, .opt { border: none; border-radius: 14px; padding: 12px 8px; font-family: inherit; font-size: 1.5rem; cursor: pointer; }
-      .lvl { background: #f1f5f9; border: 2px solid #cbd5e1; }
-      .lvl[disabled] { opacity: .35; }
-      .opt { color: #fff; background: linear-gradient(145deg, #f97316, #ea580c); box-shadow: 0 8px 16px #ea580c55; }
-      .hud { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
-      .chip { background: #334155; color: #fff; border-radius: 999px; padding: 4px 10px; font-size: 1.1rem; }
-      .fb { min-height: 30px; text-align: center; font-size: 1.4rem; }
-      .timer { margin: 8px auto 12px; width: min(420px, 100%); height: 14px; border-radius: 999px; overflow: hidden; background: #cbd5e1; }
-      .fill { height: 100%; width: 100%; background: linear-gradient(90deg, #22c55e, #f59e0b, #ef4444); }
+        :root {
+            --stone: #64748b;
+            --stone-dark: #334155;
+            --gold: #f59e0b;
+            --sky: #bae6fd;
+            --grass: #4ade80;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --wood: #78350f;
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Baloo 2", cursive;
+            background: var(--sky);
+            overflow: hidden;
+            color: #1e293b;
+            user-select: none;
+        }
+
+        /* CenÃ¡rio Animado */
+        .scenery {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background: linear-gradient(to bottom, #bae6fd 0%, #e0f2fe 100%);
+        }
+
+        .cloud {
+            position: absolute;
+            background: white;
+            border-radius: 50px;
+            opacity: 0.8;
+            animation: move linear infinite;
+        }
+
+        .ground {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 120px;
+            background: var(--grass);
+            border-top: 8px solid #22c55e;
+            z-index: 5;
+        }
+
+        @keyframes move {
+            from { transform: translateX(110vw); }
+            to { transform: translateX(-20vw); }
+        }
+
+        /* Elementos da Batalha */
+        #castle-container {
+            position: absolute;
+            bottom: 110px;
+            left: 20px;
+            z-index: 10;
+            transition: transform 0.5s;
+        }
+
+        .castle-svg { width: 180px; height: 180px; }
+
+        .cannon {
+            position: absolute;
+            bottom: 50px;
+            right: 15px;
+            width: 60px;
+            height: 35px;
+            background: #1e293b;
+            border-radius: 5px 25px 25px 5px;
+            transform-origin: left center;
+            border: 3px solid #000;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .muzzle-flash {
+            position: absolute;
+            right: -50px;
+            top: -15px;
+            font-size: 3.5rem;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 20;
+        }
+
+        .cannon-ball {
+            position: fixed;
+            width: 25px;
+            height: 25px;
+            background: radial-gradient(circle at 30% 30%, #4b5563, #000);
+            border-radius: 50%;
+            z-index: 100;
+            pointer-events: none;
+            display: none;
+        }
+
+        #wolf-pack {
+            position: absolute;
+            bottom: 110px;
+            right: 0%;
+            z-index: 10;
+            display: flex;
+            gap: 5px;
+            transition: right 0.1s linear, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .wolf-img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+        }
+
+        /* Layout Principal */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+            z-index: 20;
+        }
+
+        /* HUD */
+        .hud {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .stat-badge {
+            background: rgba(15, 23, 42, 0.8);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 999px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+
+        /* Ãrea de Defesa */
+        .game-area {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 20px;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .wall-row {
+            display: flex;
+            align-items: flex-end;
+            gap: 8px;
+            background: rgba(255,255,255,0.4);
+            padding: 15px;
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+        }
+
+        .stone {
+            width: 70px;
+            height: 70px;
+            background: var(--stone);
+            color: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 800;
+            border-bottom: 6px solid var(--stone-dark);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        .stone.op { background: var(--stone-dark); width: 50px; height: 50px; font-size: 1.4rem; border-bottom-width: 4px; }
+
+        .stone.target {
+            background: rgba(255,255,255,0.5);
+            border: 3px dashed var(--stone);
+            color: transparent;
+        }
+
+        .stone.filled {
+            background: var(--success);
+            border: none;
+            border-bottom: 6px solid #16a34a;
+            color: white;
+        }
+
+        /* Alternativas */
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .shield-btn {
+            background: white;
+            border: 4px solid var(--gold);
+            border-radius: 15px 15px 50% 50%;
+            padding: 15px;
+            font-size: 2.2rem;
+            font-family: inherit;
+            cursor: pointer;
+            color: var(--stone-dark);
+            box-shadow: 0 8px 0 #b45309;
+            transition: transform 0.1s;
+        }
+
+        .shield-btn:active { transform: translateY(4px); box-shadow: 0 4px 0 #b45309; }
+
+        /* Timer Bar */
+        .timer-container {
+            width: 100%;
+            height: 12px;
+            background: rgba(0,0,0,0.1);
+            border-radius: 6px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .timer-bar {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, var(--success), var(--gold), var(--danger));
+        }
+
+        /* AnimaÃ§Ãµes de Batalha */
+        @keyframes fire-recoil {
+            0% { margin-left: 0; }
+            50% { margin-left: -15px; }
+            100% { margin-left: 0; }
+        }
+
+        @keyframes explode-wolves {
+            0% { transform: translate(0, 0) rotate(0deg) scale(1.5); opacity: 1; }
+            100% { transform: translate(600px, -400px) rotate(1080deg) scale(0.5); opacity: 0; }
+        }
+
+        @keyframes shake-destroy {
+            0% { transform: translate(0,0); }
+            10%, 30%, 50%, 70%, 90% { transform: translate(-5px, 0); }
+            20%, 40%, 60%, 80% { transform: translate(5px, 0); }
+            100% { transform: translateY(300px) rotate(15deg); opacity: 0; }
+        }
+
+        .firing-recoil { animation: fire-recoil 0.3s; }
+        .defeated { animation: explode-wolves 1.5s forwards !important; }
+        .destroyed { animation: shake-destroy 1s forwards; }
+
+        /* Telas */
+        .screen { display: none; height: 100%; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+        .screen.active { display: flex; }
+
+        .btn-large {
+            background: #ea580c;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.8rem;
+            font-family: inherit;
+            cursor: pointer;
+            box-shadow: 0 8px 0 #9a3412;
+            font-weight: 800;
+        }
+
+        .level-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 12px;
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        .lvl-btn {
+            aspect-ratio: 1;
+            border-radius: 15px;
+            border: 3px solid rgba(0,0,0,0.1);
+            background: white;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .lvl-btn.unlocked { border-color: #ea580c; color: #ea580c; font-weight: 800; }
+
+        /* Modal */
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 30px;
+            text-align: center;
+            max-width: 320px;
+            width: 90%;
+            border: 6px solid #ea580c;
+        }
     </style>
-  </head>
-  <body>
-    <a class="home" href="../index.html">🏠</a>
-    <main class="wrap"><section id="app" class="card"></section></main>
+</head>
+<body>
+
+    <div class="scenery" id="scenery"></div>
+    <div class="ground"></div>
+    
+    <!-- Bala de CanhÃ£o Oculta -->
+    <div id="cannon-ball" class="cannon-ball"></div>
+
+    <!-- Elementos Visuais do Jogo -->
+    <div id="castle-container">
+        <svg class="castle-svg" viewBox="0 0 100 100">
+            <rect x="20" y="40" width="60" height="40" fill="#94a3b8"/>
+            <rect x="20" y="30" width="15" height="15" fill="#64748b"/>
+            <rect x="65" y="30" width="15" height="15" fill="#64748b"/>
+            <rect x="40" y="35" width="20" height="10" fill="#64748b"/>
+            <rect x="45" y="60" width="10" height="20" fill="#451a03"/>
+            <path d="M20 30 L27.5 20 L35 30 Z" fill="#ef4444"/>
+            <path d="M65 30 L72.5 20 L80 30 Z" fill="#ef4444"/>
+        </svg>
+        <div class="cannon" id="cannon">
+            <div class="muzzle-flash" id="flash">ðŸ’¥</div>
+        </div>
+    </div>
+
+    <div id="wolf-pack">
+        <img class="wolf-img" src="https://emojipedia-us.s3.dualstack.us-west-2.amazonaws.com/content/2023/11/17/grumpy-wolf-sticker.webp" alt="Lobo" onerror="this.src='https://openmoji.org/data/color/svg/1F43A.svg'">
+        <img class="wolf-img" src="https://emojipedia-us.s3.dualstack.us-west-2.amazonaws.com/content/2023/11/17/grumpy-wolf-sticker.webp" alt="Lobo" onerror="this.src='https://openmoji.org/data/color/svg/1F43A.svg'">
+        <img class="wolf-img" src="https://emojipedia-us.s3.dualstack.us-west-2.amazonaws.com/content/2023/11/17/grumpy-wolf-sticker.webp" alt="Lobo" onerror="this.src='https://openmoji.org/data/color/svg/1F43A.svg'">
+    </div>
+
+    <div class="container">
+        <!-- HOME -->
+        <div id="screen-home" class="screen active">
+            <h1 style="font-size: 3rem; margin: 0; text-shadow: 2px 2px white;">ðŸ° Defesa do</h1>
+            <h2 style="margin: 0; color: #ea580c; text-shadow: 1px 1px white;">Castelo</h2>
+            <div style="margin: 40px 0; font-size: 4rem;">âš”ï¸</div>
+            <button class="btn-large" onclick="changeScreen('levels')">DEFENDER!</button>
+            <p id="total-stars">â­ 0/36</p>
+        </div>
+
+        <!-- NÃVEIS -->
+        <div id="screen-levels" class="screen" style="justify-content: flex-start; padding-top: 40px;">
+            <div class="hud" style="width: 100%;">
+                <button class="stat-badge" onclick="changeScreen('home')" style="cursor:pointer; border:none">ðŸ  InÃ­cio</button>
+                <div class="stat-badge" id="lvl-star-count">â­ 0</div>
+            </div>
+            <h2 style="margin: 20px 0;">Selecione a Torre</h2>
+            <div class="level-grid" id="level-grid"></div>
+        </div>
+
+        <!-- JOGO -->
+        <div id="screen-game" class="screen">
+            <div class="hud" style="width: 100%;">
+                <div class="stat-badge" id="game-info">Torre 1</div>
+                <div class="stat-badge" id="game-score">Score: 0</div>
+                <button class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer; border:none">âœ•</button>
+            </div>
+
+            <div class="timer-container">
+                <div class="timer-bar" id="timer-bar"></div>
+            </div>
+
+            <div class="game-area">
+                <div class="wall-row" id="active-wall"></div>
+                <div class="options-grid" id="options"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2 id="result-title">VitÃ³ria!</h2>
+            <div id="result-stars" style="font-size: 2.5rem; margin: 15px 0;">â­â­â­</div>
+            <p id="result-msg">Os lobos foram expulsos!</p>
+            <button id="modal-next-btn" class="btn-large" onclick="handleModalAction()">PRÃ“XIMO</button>
+        </div>
+    </div>
+
     <script>
-      const LEVELS = [[2, '+', 1], [3, '+', 2], [5, '+', 1], [6, '+', 2], [7, '+', 2], [8, '-', 3], [9, '-', 4], [10, '-', 5], [8, '+', 5], [14, '-', 6], [9, '+', 7], [16, '-', 7]];
-      const SPEED = [90, 90, 85, 85, 80, 80, 75, 75, 70, 70, 65, 65];
-      const SKEY = 'g1-castelo-v2';
-      const app = document.getElementById('app');
-      let state = 'cover', i = 0, tries = 0, score = 0, timer = 100, tid = null;
-      const pg = load();
+        const LEVELS = [
+            [2, '+', 1], [3, '+', 2], [5, '+', 1], [6, '+', 2], 
+            [7, '+', 2], [8, '-', 3], [9, '-', 4], [10, '-', 5], 
+            [8, '+', 5], [14, '-', 6], [9, '+', 7], [16, '-', 7]
+        ];
+        
+        const SKEY = 'math_castle_cannon_v3';
+        let userData = loadData();
+        let currentLevel = 0;
+        let score = 0;
+        let timeLeft = 100;
+        let timerInterval = null;
+        let isLocked = false;
+        let tries = 0;
+        let wolfScale = 1;
+        let lastResultSuccess = false;
 
-      function load() {
-        const b = { unlocked: 1, stars: Array(LEVELS.length).fill(0) };
-        try {
-          const d = JSON.parse(localStorage.getItem(SKEY));
-          if (!d) return b;
-          return { unlocked: Math.min(LEVELS.length, Math.max(1, Number(d.unlocked || 1))), stars: Array.isArray(d.stars) ? d.stars.slice(0, LEVELS.length).map((x) => Number(x || 0)) : b.stars };
-        } catch { return b; }
-      }
-      function save() { localStorage.setItem(SKEY, JSON.stringify(pg)); }
-      function stopTimer() { if (tid) clearInterval(tid); }
-      function medal() { const t = pg.stars.reduce((a, b) => a + b, 0), m = LEVELS.length * 3; return t >= m * 0.85 ? '🥇' : t >= m * 0.6 ? '🥈' : '🥉'; }
-      function mkOptions(ans) { const s = new Set([ans]); while (s.size < 3) s.add(Math.max(0, ans + (Math.floor(Math.random() * 7) - 3))); return [...s].sort(() => Math.random() - 0.5); }
-      function earnedByTry(n) { return n === 1 ? 3 : n === 2 ? 2 : 1; }
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        function playTone(freq, type, duration) {
+            try {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = type;
+                osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+                gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
+                osc.connect(gain); gain.connect(audioCtx.destination);
+                osc.start(); osc.stop(audioCtx.currentTime + duration);
+            } catch(e) {}
+        }
 
-      function render() { if (state === 'cover') return cover(); if (state === 'select') return select(); play(); }
-      function cover() {
-        app.innerHTML = `<p class="center big">🏰⚔️➕➖</p><p class="center big">${medal()}</p><p class="center"><button id="go" class="lvl" style="font-size:2.2rem">▶️</button></p>`;
-        document.getElementById('go').onclick = () => { state = 'select'; render(); };
-      }
-      function select() {
-        stopTimer();
-        app.innerHTML = `<p class="center mid">🏰 ⭐ ${pg.stars.reduce((a,b)=>a+b,0)}/${LEVELS.length*3}</p><div class="grid">${LEVELS.map((_, k) => `<button class="lvl" data-k="${k}" ${k + 1 > pg.unlocked ? 'disabled' : ''}>${k + 1}<br>${'⭐'.repeat(pg.stars[k] || 0) || '▫️'}</button>`).join('')}</div><p class="center" style="margin-top:10px"><button id="back" class="lvl">◀️</button></p>`;
-        app.querySelectorAll('.lvl[data-k]').forEach((b) => b.onclick = () => { i = Number(b.dataset.k); tries = 0; state = 'play'; render(); });
-        document.getElementById('back').onclick = () => { state = 'cover'; render(); };
-      }
-      function play() {
-        const [a, op, b] = LEVELS[i], ans = op === '+' ? a + b : a - b;
-        timer = 100;
-        app.innerHTML = `<div class="hud"><span class="chip">${i + 1}/${LEVELS.length}</span><span class="chip">⭐ ${pg.stars[i] || 0}</span><span class="chip">🏅 ${score}</span></div><div class="timer"><div id="fill" class="fill"></div></div><p class="center big">🏰 ${a} ${op} ${b} = ?</p><div class="grid">${mkOptions(ans).map((n) => `<button class="opt" data-n="${n}">${n}</button>`).join('')}</div><div id="fb" class="fb"></div><p class="center" style="margin-top:10px"><button id="menu" class="lvl">📚</button></p>`;
+        const SFX = {
+            correct: () => { playTone(600, 'sine', 0.2); setTimeout(() => playTone(800, 'sine', 0.3), 100); },
+            wrong: () => { playTone(150, 'sawtooth', 0.4); },
+            shot: () => { playTone(100, 'sine', 0.5); }
+        };
 
-        const fill = document.getElementById('fill');
-        stopTimer();
-        tid = setInterval(() => {
-          timer -= 1;
-          fill.style.width = timer + '%';
-          if (timer <= 0) {
-            stopTimer();
-            document.getElementById('fb').textContent = '⏰';
-            setTimeout(() => { state = 'select'; render(); }, 600);
-          }
-        }, SPEED[i]);
+        function init() {
+            createScenery();
+            renderLevelGrid();
+            updateGlobalStats();
+        }
 
-        app.querySelectorAll('.opt').forEach((btn) => btn.onclick = () => {
-          tries += 1;
-          const n = Number(btn.dataset.n), fb = document.getElementById('fb');
-          if (n === ans) {
-            stopTimer();
-            const e = earnedByTry(tries);
-            pg.stars[i] = Math.max(pg.stars[i], e);
-            pg.unlocked = Math.max(pg.unlocked, Math.min(LEVELS.length, i + 2));
-            save();
-            score += 8 + e;
-            fb.textContent = '✅ ' + '⭐'.repeat(e);
-            setTimeout(() => { state = 'select'; render(); }, 600);
-          } else fb.textContent = '❌';
-        });
-        document.getElementById('menu').onclick = () => { stopTimer(); state = 'select'; render(); };
-      }
-      render();
+        function createScenery() {
+            const container = document.getElementById('scenery');
+            for(let i=0; i<5; i++) {
+                const cloud = document.createElement('div');
+                cloud.className = 'cloud';
+                const size = 50 + Math.random() * 50;
+                cloud.style.width = size + 'px';
+                cloud.style.height = (size * 0.6) + 'px';
+                cloud.style.top = (Math.random() * 30) + '%';
+                cloud.style.animationDuration = (20 + Math.random() * 20) + 's';
+                cloud.style.animationDelay = (Math.random() * 10) + 's';
+                container.appendChild(cloud);
+            }
+        }
+
+        function loadData() {
+            const d = localStorage.getItem(SKEY);
+            return d ? JSON.parse(d) : { unlocked: 1, stars: Array(LEVELS.length).fill(0) };
+        }
+
+        function saveGame() {
+            localStorage.setItem(SKEY, JSON.stringify(userData));
+        }
+
+        function updateGlobalStats() {
+            const total = userData.stars.reduce((a, b) => a + b, 0);
+            document.getElementById('total-stars').textContent = `â­ ${total}/${LEVELS.length * 3}`;
+            document.getElementById('lvl-star-count').textContent = `â­ ${total}`;
+        }
+
+        function renderLevelGrid() {
+            const grid = document.getElementById('level-grid');
+            grid.innerHTML = '';
+            LEVELS.forEach((_, idx) => {
+                const btn = document.createElement('button');
+                const isUnlocked = idx < userData.unlocked;
+                btn.className = `lvl-btn ${isUnlocked ? 'unlocked' : ''}`;
+                btn.disabled = !isUnlocked;
+                const stars = userData.stars[idx] || 0;
+                btn.innerHTML = `<span>Torre ${idx + 1}</span><div style="font-size:0.7rem; color:#fbbf24">${'â˜…'.repeat(stars)}${'â˜†'.repeat(3-stars)}</div>`;
+                btn.onclick = () => startLevel(idx);
+                grid.appendChild(btn);
+            });
+        }
+
+        function changeScreen(id) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById('screen-' + id).classList.add('active');
+        }
+
+        function startLevel(idx) {
+            currentLevel = idx;
+            tries = 0;
+            isLocked = false;
+            timeLeft = 100;
+            wolfScale = 1;
+            
+            const wolves = document.getElementById('wolf-pack');
+            wolves.classList.remove('defeated');
+            wolves.style.transform = 'scale(1)';
+            wolves.style.right = '0%';
+            
+            const castle = document.getElementById('castle-container');
+            castle.classList.remove('destroyed');
+            
+            const cannon = document.getElementById('cannon');
+            cannon.style.transform = 'rotate(0deg)'; // Reset rotaÃ§Ã£o
+            
+            changeScreen('game');
+            loadQuestion();
+            startTimer();
+        }
+
+        function startTimer() {
+            if(timerInterval) clearInterval(timerInterval);
+            const bar = document.getElementById('timer-bar');
+            const wolves = document.getElementById('wolf-pack');
+            
+            timerInterval = setInterval(() => {
+                if(isLocked) return;
+                timeLeft -= 0.5;
+                bar.style.width = timeLeft + '%';
+                
+                const advance = (100 - timeLeft) * 0.7;
+                wolves.style.right = advance + '%';
+                
+                if(timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    destroyCastle();
+                }
+            }, 150);
+        }
+
+        function destroyCastle() {
+            isLocked = true;
+            document.getElementById('castle-container').classList.add('destroyed');
+            setTimeout(() => endLevel(false, "O castelo desmoronou!"), 1200);
+        }
+
+        function loadQuestion() {
+            const [a, op, b] = LEVELS[currentLevel];
+            const wall = document.getElementById('active-wall');
+            wall.innerHTML = `
+                <div class="stone">${a}</div>
+                <div class="stone op">${op}</div>
+                <div class="stone">${b}</div>
+                <div class="stone op">=</div>
+                <div class="stone target" id="target-stone">?</div>
+            `;
+
+            const ans = op === '+' ? a + b : a - b;
+            const options = new Set([ans]);
+            while(options.size < 3) {
+                const fake = Math.max(0, ans + (Math.floor(Math.random() * 7) - 3));
+                options.add(fake);
+            }
+
+            const btnContainer = document.getElementById('options');
+            btnContainer.innerHTML = '';
+            [...options].sort(() => Math.random() - 0.5).forEach(val => {
+                const btn = document.createElement('button');
+                btn.className = 'shield-btn';
+                btn.textContent = val;
+                btn.onclick = () => checkAnswer(val, ans, btn);
+                btnContainer.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(selected, correct, btn) {
+            if(isLocked) return;
+            
+            if(selected === correct) {
+                isLocked = true;
+                clearInterval(timerInterval);
+                SFX.correct();
+                
+                const target = document.getElementById('target-stone');
+                target.textContent = selected;
+                target.classList.add('filled');
+                
+                animateCannonShot();
+                
+                score += 10 + Math.floor(timeLeft / 10);
+                document.getElementById('game-score').textContent = `Score: ${score}`;
+            } else {
+                tries++;
+                SFX.wrong();
+                
+                wolfScale += 0.4;
+                const wolves = document.getElementById('wolf-pack');
+                wolves.style.transform = `scale(${wolfScale})`;
+                
+                btn.style.opacity = '0.3';
+                btn.disabled = true;
+                timeLeft = Math.max(0, timeLeft - 20);
+            }
+        }
+
+        function animateCannonShot() {
+            const cannon = document.getElementById('cannon');
+            const flash = document.getElementById('flash');
+            const ball = document.getElementById('cannon-ball');
+            const wolves = document.getElementById('wolf-pack');
+            
+            // PosiÃ§Ã£o inicial (boca do canhÃ£o)
+            const cannonRect = cannon.getBoundingClientRect();
+            const startX = cannonRect.right - 20;
+            const startY = cannonRect.top + 5;
+            
+            // PosiÃ§Ã£o final (alvo lobos)
+            const wolfRect = wolves.getBoundingClientRect();
+            const endX = wolfRect.left + (wolfRect.width / 2);
+            const endY = wolfRect.top + (wolfRect.height / 2);
+
+            // Girar o canhÃ£o para cima antes do tiro (-35 graus para mirar o arco)
+            cannon.style.transform = 'rotate(-35deg)';
+            
+            setTimeout(() => {
+                // Preparar bala
+                ball.style.display = 'block';
+                ball.style.left = startX + 'px';
+                ball.style.top = startY + 'px';
+                
+                // Coice do canhÃ£o (agora usando margin para nÃ£o resetar transform) e flash
+                cannon.classList.add('firing-recoil');
+                flash.style.opacity = '1';
+                SFX.shot();
+
+                // AnimaÃ§Ã£o ParabÃ³lica via JS
+                const duration = 800;
+                const startTimestamp = performance.now();
+                const height = 180; // Altura do arco
+                
+                function step(timestamp) {
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    
+                    const currentX = startX + (endX - startX) * progress;
+                    const currentY = startY + (endY - startY) * progress - (Math.sin(progress * Math.PI) * height);
+                    
+                    ball.style.left = currentX + 'px';
+                    ball.style.top = currentY + 'px';
+
+                    if (progress < 1) {
+                        requestAnimationFrame(step);
+                    } else {
+                        // Impacto!
+                        ball.style.display = 'none';
+                        flash.style.opacity = '0';
+                        cannon.classList.remove('firing-recoil');
+                        wolves.classList.add('defeated');
+                        setTimeout(() => endLevel(true), 1500);
+                    }
+                }
+                
+                requestAnimationFrame(step);
+            }, 300); // Pequeno atraso para a animaÃ§Ã£o de mira
+        }
+
+        function endLevel(success, message) {
+            clearInterval(timerInterval);
+            lastResultSuccess = success;
+            const modal = document.getElementById('result-modal');
+            const starDiv = document.getElementById('result-stars');
+            const btn = document.getElementById('modal-next-btn');
+
+            if(success) {
+                let earned = tries === 0 ? 3 : tries === 1 ? 2 : 1;
+                userData.stars[currentLevel] = Math.max(userData.stars[currentLevel], earned);
+                userData.unlocked = Math.max(userData.unlocked, currentLevel + 2);
+                saveGame();
+                
+                starDiv.textContent = "â­".repeat(earned) + "â˜†".repeat(3-earned);
+                document.getElementById('result-title').textContent = "VitÃ³ria!";
+                document.getElementById('result-msg').textContent = "Alvo atingido! Os lobos recuaram!";
+                btn.textContent = (currentLevel < LEVELS.length - 1) ? "PRÃ“XIMA TORRE" : "MENU";
+            } else {
+                document.getElementById('result-title').textContent = "Derrota!";
+                starDiv.textContent = "ðŸ¾";
+                document.getElementById('result-msg').textContent = message || "Os lobos invadiram!";
+                btn.textContent = "RECONSTRUIR";
+            }
+
+            modal.style.display = 'flex';
+            updateGlobalStats();
+        }
+
+        function handleModalAction() {
+            document.getElementById('result-modal').style.display = 'none';
+            if (lastResultSuccess && currentLevel < LEVELS.length - 1) {
+                startLevel(currentLevel + 1);
+            } else if (!lastResultSuccess) {
+                startLevel(currentLevel);
+            } else {
+                changeScreen('home');
+            }
+        }
+
+        window.onload = init;
     </script>
-  </body>
+</body>
 </html>

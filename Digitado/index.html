@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
     <title>Digitado - Desafio de Emojis</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
@@ -33,50 +34,50 @@
     <script type="text/babel">
 const { useState, useEffect, useRef } = React;
 
-// Agora dividimos o dicionário em 8 Fases, cada uma com 2 palavras.
+// Agora dividimos o dicionÃ¡rio em 8 Fases, cada uma com 2 palavras.
 /**
  * Fases para o desafio de emojis.
- * Total: 30 níveis (60 palavras).
+ * Total: 30 nÃ­veis (60 palavras).
  */
 const PHASES = [
-  [ { word: 'GATO', emoji: '🐱' }, { word: 'BOLA', emoji: '⚽' } ], // Fase 1
-  [ { word: 'CASA', emoji: '🏠' }, { word: 'PATO', emoji: '🦆' } ], // Fase 2
-  [ { word: 'SAPO', emoji: '🐸' }, { word: 'DADO', emoji: '🎲' } ], // Fase 3
-  [ { word: 'BOLO', emoji: '🎂' }, { word: 'VACA', emoji: '🐮' } ], // Fase 4
-  [ { word: 'LEÃO', emoji: '🦁' }, { word: 'FOCA', emoji: '🦭' } ], // Fase 5
-  [ { word: 'MAÇÃ', emoji: '🍎' }, { word: 'PERA', emoji: '🍐' } ], // Fase 6
-  [ { word: 'RATO', emoji: '🐭' }, { word: 'FLOR', emoji: '🌸' } ], // Fase 7
-  [ { word: 'URSO', emoji: '🐻' }, { word: 'TREM', emoji: '🚂' } ], // Fase 8
-  [ { word: 'PIANO', emoji: '🎹' }, { word: 'NAVIO', emoji: '🚢' } ], // Fase 9
-  [ { word: 'FRUTA', emoji: '🍓' }, { word: 'HORTA', emoji: '🥦' } ], // Fase 10
-  [ { word: 'AMIGO', emoji: '🤝' }, { word: 'BANCO', emoji: '🏦' } ], // Fase 11
-  [ { word: 'CARRO', emoji: '🚗' }, { word: 'DENTE', emoji: '🦷' } ], // Fase 12
-  [ { word: 'FESTA', emoji: '🎉' }, { word: 'GELO', emoji: '🧊' } ], // Fase 13
-  [ { word: 'ILHA', emoji: '🏝️' }, { word: 'JOGO', emoji: '🎮' } ], // Fase 14
-  [ { word: 'LIVRO', emoji: '📚' }, { word: 'NOITE', emoji: '🌙' } ], // Fase 15
-  [ { word: 'OURO', emoji: '💰' }, { word: 'PORTA', emoji: '🚪' } ], // Fase 16
-  [ { word: 'ROUPA', emoji: '👕' }, { word: 'TERRA', emoji: '🌍' } ], // Fase 17
-  [ { word: 'VENTO', emoji: '💨' }, { word: 'ZERO', emoji: '0️⃣' } ], // Fase 18
-  [ { word: 'ALMA', emoji: '👻' }, { word: 'DOCE', emoji: '🍬' } ], // Fase 19
-  [ { word: 'FILHO', emoji: '👶' }, { word: 'HORA', emoji: '⏰' } ], // Fase 20
-  [ { word: 'LATA', emoji: '🥫' }, { word: 'NUVEM', emoji: '☁️' } ], // Fase 21
-  [ { word: 'PEIXE', emoji: '🐟' }, { word: 'VIDA', emoji: '🌱' } ], // Fase 22
-  [ { word: 'ARROZ', emoji: '🍚' }, { word: 'COPO', emoji: '🥛' } ], // Fase 23
-  [ { word: 'FACA', emoji: '🔪' }, { word: 'HOTEL', emoji: '🏨' } ], // Fase 24
-  [ { word: 'JOIA', emoji: '💎' }, { word: 'MALA', emoji: '💼' } ], // Fase 25
-  [ { word: 'QUADRO', emoji: '🖼️' }, { word: 'SALTO', emoji: '👠' } ], // Fase 26
-  [ { word: 'ÁGUA', emoji: '💧' }, { word: 'CAIXA', emoji: '📦' } ], // Fase 27
-  [ { word: 'FORNO', emoji: '🔥' }, { word: 'GOTA', emoji: '💧' } ], // Fase 28
-  [ { word: 'NAVE', emoji: '🚀' }, { word: 'PRATO', emoji: '🍽️' } ], // Fase 29
-  [ { word: 'MEIA', emoji: '🧦' }, { word: 'TELA', emoji: '🖥️' } ]  // Fase 30
+  [ { word: 'GATO', emoji: 'ðŸ±' }, { word: 'BOLA', emoji: 'âš½' } ], // Fase 1
+  [ { word: 'CASA', emoji: 'ðŸ ' }, { word: 'PATO', emoji: 'ðŸ¦†' } ], // Fase 2
+  [ { word: 'SAPO', emoji: 'ðŸ¸' }, { word: 'DADO', emoji: 'ðŸŽ²' } ], // Fase 3
+  [ { word: 'BOLO', emoji: 'ðŸŽ‚' }, { word: 'VACA', emoji: 'ðŸ®' } ], // Fase 4
+  [ { word: 'LEÃƒO', emoji: 'ðŸ¦' }, { word: 'FOCA', emoji: 'ðŸ¦­' } ], // Fase 5
+  [ { word: 'MAÃ‡Ãƒ', emoji: 'ðŸŽ' }, { word: 'PERA', emoji: 'ðŸ' } ], // Fase 6
+  [ { word: 'RATO', emoji: 'ðŸ­' }, { word: 'FLOR', emoji: 'ðŸŒ¸' } ], // Fase 7
+  [ { word: 'URSO', emoji: 'ðŸ»' }, { word: 'TREM', emoji: 'ðŸš‚' } ], // Fase 8
+  [ { word: 'PIANO', emoji: 'ðŸŽ¹' }, { word: 'NAVIO', emoji: 'ðŸš¢' } ], // Fase 9
+  [ { word: 'FRUTA', emoji: 'ðŸ“' }, { word: 'HORTA', emoji: 'ðŸ¥¦' } ], // Fase 10
+  [ { word: 'AMIGO', emoji: 'ðŸ¤' }, { word: 'BANCO', emoji: 'ðŸ¦' } ], // Fase 11
+  [ { word: 'CARRO', emoji: 'ðŸš—' }, { word: 'DENTE', emoji: 'ðŸ¦·' } ], // Fase 12
+  [ { word: 'FESTA', emoji: 'ðŸŽ‰' }, { word: 'GELO', emoji: 'ðŸ§Š' } ], // Fase 13
+  [ { word: 'ILHA', emoji: 'ðŸï¸' }, { word: 'JOGO', emoji: 'ðŸŽ®' } ], // Fase 14
+  [ { word: 'LIVRO', emoji: 'ðŸ“š' }, { word: 'NOITE', emoji: 'ðŸŒ™' } ], // Fase 15
+  [ { word: 'OURO', emoji: 'ðŸ’°' }, { word: 'PORTA', emoji: 'ðŸšª' } ], // Fase 16
+  [ { word: 'ROUPA', emoji: 'ðŸ‘•' }, { word: 'TERRA', emoji: 'ðŸŒ' } ], // Fase 17
+  [ { word: 'VENTO', emoji: 'ðŸ’¨' }, { word: 'ZERO', emoji: '0ï¸âƒ£' } ], // Fase 18
+  [ { word: 'ALMA', emoji: 'ðŸ‘»' }, { word: 'DOCE', emoji: 'ðŸ¬' } ], // Fase 19
+  [ { word: 'FILHO', emoji: 'ðŸ‘¶' }, { word: 'HORA', emoji: 'â°' } ], // Fase 20
+  [ { word: 'LATA', emoji: 'ðŸ¥«' }, { word: 'NUVEM', emoji: 'â˜ï¸' } ], // Fase 21
+  [ { word: 'PEIXE', emoji: 'ðŸŸ' }, { word: 'VIDA', emoji: 'ðŸŒ±' } ], // Fase 22
+  [ { word: 'ARROZ', emoji: 'ðŸš' }, { word: 'COPO', emoji: 'ðŸ¥›' } ], // Fase 23
+  [ { word: 'FACA', emoji: 'ðŸ”ª' }, { word: 'HOTEL', emoji: 'ðŸ¨' } ], // Fase 24
+  [ { word: 'JOIA', emoji: 'ðŸ’Ž' }, { word: 'MALA', emoji: 'ðŸ’¼' } ], // Fase 25
+  [ { word: 'QUADRO', emoji: 'ðŸ–¼ï¸' }, { word: 'SALTO', emoji: 'ðŸ‘ ' } ], // Fase 26
+  [ { word: 'ÃGUA', emoji: 'ðŸ’§' }, { word: 'CAIXA', emoji: 'ðŸ“¦' } ], // Fase 27
+  [ { word: 'FORNO', emoji: 'ðŸ”¥' }, { word: 'GOTA', emoji: 'ðŸ’§' } ], // Fase 28
+  [ { word: 'NAVE', emoji: 'ðŸš€' }, { word: 'PRATO', emoji: 'ðŸ½ï¸' } ], // Fase 29
+  [ { word: 'MEIA', emoji: 'ðŸ§¦' }, { word: 'TELA', emoji: 'ðŸ–¥ï¸' } ]  // Fase 30
 ];
 function App() {
-  // Estados de Navegação do Jogo
+  // Estados de NavegaÃ§Ã£o do Jogo
   // 'cover' -> 'levelSelect' -> 'phaseSelect' -> 'playing' -> 'phaseComplete'
   const [gameState, setGameState] = useState('cover'); 
-  const [level, setLevel] = useState('infantil'); // 'infantil' (MAIÚSCULA) ou 'fundamental' (minúscula)
+  const [level, setLevel] = useState('infantil'); // 'infantil' (MAIÃšSCULA) ou 'fundamental' (minÃºscula)
   
-  // Controle de Fases Desbloqueadas (Inicia com a Fase 1 liberada em ambos os níveis)
+  // Controle de Fases Desbloqueadas (Inicia com a Fase 1 liberada em ambos os nÃ­veis)
   const [unlockedPhases, setUnlockedPhases] = useState({
     infantil: 1,
     fundamental: 1
@@ -92,7 +93,7 @@ function App() {
   
   const inputRef = useRef(null);
 
-  // Mantém o foco no campo de digitação sempre que mudar de palavra
+  // MantÃ©m o foco no campo de digitaÃ§Ã£o sempre que mudar de palavra
   useEffect(() => {
     if (gameState === 'playing' && inputRef.current) {
       inputRef.current.focus();
@@ -100,12 +101,12 @@ function App() {
     }
   }, [currentWordIndex, gameState]);
 
-  // Função para remover acentos
+  // FunÃ§Ã£o para remover acentos
   const removeAccents = (str) => {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   };
 
-  // Iniciar uma Fase específica
+  // Iniciar uma Fase especÃ­fica
   const startPhase = (phaseNumber) => {
     setCurrentPhase(phaseNumber);
     setCurrentWordIndex(0);
@@ -116,11 +117,11 @@ function App() {
     setStartTime(Date.now());
   };
 
-  // Lida com a digitação da criança
+  // Lida com a digitaÃ§Ã£o da crianÃ§a
   const handleInputChange = (e) => {
     let text = e.target.value;
     
-    // Formata o texto de acordo com o nível escolar
+    // Formata o texto de acordo com o nÃ­vel escolar
     if (level === 'infantil') {
       text = text.toUpperCase();
     } else {
@@ -151,7 +152,7 @@ function App() {
     setMetrics(prev => [...prev, { word: targetWord, time: timeTaken }]);
 
     if (currentWordIndex + 1 < phaseWords.length) {
-      // Próxima Palavra
+      // PrÃ³xima Palavra
       setTimeout(() => {
         setInputValue('');
         setIsError(false);
@@ -160,7 +161,7 @@ function App() {
     } else {
       // Terminou a Fase!
       setTimeout(() => {
-        // Desbloqueia a próxima fase se for a última desbloqueada e não for a fase 8
+        // Desbloqueia a prÃ³xima fase se for a Ãºltima desbloqueada e nÃ£o for a fase 8
         if (currentPhase === unlockedPhases[level] && currentPhase < 8) {
           setUnlockedPhases(prev => ({
             ...prev,
@@ -178,18 +179,18 @@ function App() {
   if (gameState === 'cover') {
     return (
       <div className="min-h-screen bg-sky-400 flex flex-col items-center justify-center p-4 font-sans relative overflow-hidden">
-        <a href="../../index.html" className="absolute top-4 left-4 text-sky-100 hover:text-sky-300 font-bold bg-sky-600/80 hover:bg-sky-700 px-4 py-2 rounded-full transition-colors z-20 border-2 border-sky-300">◀ Voltar</a>
-        {/* Decoração de Fundo */}
-        <div className="absolute top-10 left-10 text-6xl opacity-20 animate-bounce">☁️</div>
-        <div className="absolute top-20 right-20 text-8xl opacity-20 animate-pulse">☀️</div>
-        <div className="absolute bottom-10 left-20 text-6xl opacity-20">🎈</div>
+        <a href="../../index.html" className="absolute top-4 left-4 text-sky-100 hover:text-sky-300 font-bold bg-sky-600/80 hover:bg-sky-700 px-4 py-2 rounded-full transition-colors z-20 border-2 border-sky-300">â—€ Voltar</a>
+        {/* DecoraÃ§Ã£o de Fundo */}
+        <div className="absolute top-10 left-10 text-6xl opacity-20 animate-bounce">â˜ï¸</div>
+        <div className="absolute top-20 right-20 text-8xl opacity-20 animate-pulse">â˜€ï¸</div>
+        <div className="absolute bottom-10 left-20 text-6xl opacity-20">ðŸŽˆ</div>
 
         <div className="bg-white/90 p-10 rounded-[3rem] shadow-2xl flex flex-col items-center text-center z-10 max-w-lg w-full border-8 border-white">
-          <div className="text-8xl mb-4">🚀</div>
+          <div className="text-8xl mb-4">ðŸš€</div>
           <h1 className="text-5xl font-extrabold text-sky-600 mb-4 tracking-tight leading-tight">
-            ABC<br/><span className="text-4xl text-sky-400">Palavras Mágicas</span>
+            ABC<br/><span className="text-4xl text-sky-400">Palavras MÃ¡gicas</span>
           </h1>
-          <p className="text-gray-500 mb-8 text-lg font-medium">Aprender a escrever nunca foi tão divertido!</p>
+          <p className="text-gray-500 mb-8 text-lg font-medium">Aprender a escrever nunca foi tÃ£o divertido!</p>
           
           <button 
             onClick={() => setGameState('levelSelect')}
@@ -203,7 +204,7 @@ function App() {
   }
 
   // ------------------------------------------------------------------------
-  // TELA 2: SELEÇÃO DE NÍVEL
+  // TELA 2: SELEÃ‡ÃƒO DE NÃVEL
   // ------------------------------------------------------------------------
   if (gameState === 'levelSelect') {
     return (
@@ -213,18 +214,18 @@ function App() {
             onClick={() => setGameState('cover')}
             className="absolute top-4 left-4 text-gray-400 hover:text-gray-600 font-bold text-sm bg-gray-100 px-3 py-1 rounded-full"
           >
-            ◀ Voltar
+            â—€ Voltar
           </button>
 
-          <h1 className="text-3xl font-bold text-blue-600 mb-2 mt-4">Escolha o Nível</h1>
-          <p className="text-gray-500 mb-8">Qual o seu nível na escola?</p>
+          <h1 className="text-3xl font-bold text-blue-600 mb-2 mt-4">Escolha o NÃ­vel</h1>
+          <p className="text-gray-500 mb-8">Qual o seu nÃ­vel na escola?</p>
           
           <div className="space-y-4">
             <button 
               onClick={() => { setLevel('infantil'); setGameState('phaseSelect'); }}
               className="w-full py-6 px-6 bg-orange-400 hover:bg-orange-500 text-white rounded-2xl text-xl font-bold transition-transform transform hover:scale-105 shadow-md flex flex-col items-center"
             >
-              <span>Educação Infantil 🧒</span>
+              <span>EducaÃ§Ã£o Infantil ðŸ§’</span>
               <span className="text-sm font-normal mt-1 bg-white/20 px-3 py-1 rounded-full">(CAIXA ALTA)</span>
             </button>
             
@@ -232,8 +233,8 @@ function App() {
               onClick={() => { setLevel('fundamental'); setGameState('phaseSelect'); }}
               className="w-full py-6 px-6 bg-purple-400 hover:bg-purple-500 text-white rounded-2xl text-xl font-bold transition-transform transform hover:scale-105 shadow-md flex flex-col items-center"
             >
-              <span>Ensino Fundamental 🎒</span>
-              <span className="text-sm font-normal mt-1 bg-white/20 px-3 py-1 rounded-full">(letras minúsculas)</span>
+              <span>Ensino Fundamental ðŸŽ’</span>
+              <span className="text-sm font-normal mt-1 bg-white/20 px-3 py-1 rounded-full">(letras minÃºsculas)</span>
             </button>
           </div>
         </div>
@@ -242,7 +243,7 @@ function App() {
   }
 
   // ------------------------------------------------------------------------
-  // TELA 3: SELEÇÃO DE FASES (MAPA)
+  // TELA 3: SELEÃ‡ÃƒO DE FASES (MAPA)
   // ------------------------------------------------------------------------
   if (gameState === 'phaseSelect') {
     const maxUnlocked = unlockedPhases[level];
@@ -254,12 +255,12 @@ function App() {
             onClick={() => setGameState('levelSelect')}
             className="absolute top-4 left-4 text-gray-400 hover:text-gray-600 font-bold text-sm bg-gray-100 px-3 py-1 rounded-full"
           >
-            ◀ Níveis
+            â—€ NÃ­veis
           </button>
 
           <h1 className="text-3xl font-bold text-emerald-600 mb-2 mt-4">Mapa de Fases</h1>
           <p className="text-gray-500 mb-6">
-            Nível: <span className="font-bold text-emerald-500">{level === 'infantil' ? 'Infantil' : 'Fundamental'}</span>
+            NÃ­vel: <span className="font-bold text-emerald-500">{level === 'infantil' ? 'Infantil' : 'Fundamental'}</span>
           </p>
 
           <div className="grid grid-cols-2 gap-4">
@@ -278,7 +279,7 @@ function App() {
                   }`}
                 >
                   <span className="mb-1">{isUnlocked ? `Fase ${phaseNum}` : 'Bloqueado'}</span>
-                  <span className="text-2xl">{isUnlocked ? '⭐' : '🔒'}</span>
+                  <span className="text-2xl">{isUnlocked ? 'â­' : 'ðŸ”’'}</span>
                 </button>
               );
             })}
@@ -298,8 +299,8 @@ function App() {
     return (
       <div className="min-h-screen bg-yellow-100 flex flex-col items-center justify-center p-4 font-sans">
         <div className="bg-white p-8 rounded-3xl shadow-xl max-w-md w-full text-center">
-          <div className="text-6xl mb-4">🏆</div>
-          <h1 className="text-4xl font-bold text-yellow-500 mb-2">Fase {currentPhase} Concluída!</h1>
+          <div className="text-6xl mb-4">ðŸ†</div>
+          <h1 className="text-4xl font-bold text-yellow-500 mb-2">Fase {currentPhase} ConcluÃ­da!</h1>
           
           <div className="bg-gray-50 rounded-xl p-4 mb-6 mt-6">
             <h2 className="text-xl font-bold text-gray-700 mb-4 border-b pb-2">Seu Boletim</h2>
@@ -325,7 +326,7 @@ function App() {
                 onClick={() => startPhase(currentPhase + 1)}
                 className="w-full py-4 px-6 bg-green-500 hover:bg-green-600 text-white rounded-2xl text-xl font-bold shadow-md"
               >
-                Próxima Fase ➡️
+                PrÃ³xima Fase âž¡ï¸
               </button>
             )}
             <button 
@@ -341,7 +342,7 @@ function App() {
   }
 
   // ------------------------------------------------------------------------
-  // TELA 5: O JOGO (DIGITAÇÃO)
+  // TELA 5: O JOGO (DIGITAÃ‡ÃƒO)
   // ------------------------------------------------------------------------
   const phaseWords = PHASES[currentPhase - 1];
   const currentItem = phaseWords[currentWordIndex];
@@ -353,7 +354,7 @@ function App() {
         onClick={() => setGameState('phaseSelect')}
         className="absolute top-4 left-4 text-sky-700 hover:text-sky-900 font-bold bg-white/50 hover:bg-white px-4 py-2 rounded-full transition-colors"
       >
-        ⏸ Pausar / Sair
+        â¸ Pausar / Sair
       </button>
 
       {/* Barra de progresso da Fase */}

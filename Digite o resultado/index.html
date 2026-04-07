@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matemática Divertida - Adição e Subtração</title>
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
+    <title>MatemÃ¡tica Divertida - AdiÃ§Ã£o e SubtraÃ§Ã£o</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
     <style>
@@ -35,7 +36,7 @@
             user-select: none;
         }
         
-        /* Animações */
+        /* AnimaÃ§Ãµes */
         @keyframes success-pop {
             0% { transform: scale(1); }
             50% { transform: scale(1.1); color: #22c55e; }
@@ -43,6 +44,15 @@
         }
         .correct-anim {
             animation: success-pop 0.5s ease;
+        }
+
+        @keyframes result-bounce {
+            0% { transform: scale(0); opacity: 0; }
+            60% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .result-icons-anim {
+            animation: result-bounce 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
         }
         
         @keyframes shake {
@@ -86,6 +96,7 @@
         .counter-icon {
             font-size: 2rem;
             filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+            display: inline-block;
         }
     </style>
 </head>
@@ -93,7 +104,7 @@
 
     <!-- TELA INICIAL -->
     <div id="screen-start" class="screen active-screen justify-center bg-gradient-to-b from-rose-400 to-orange-500 text-white text-center">
-        <h1 class="text-6xl md:text-8xl font-game mb-8 drop-shadow-xl leading-tight">MATEMÁTICA<br>DIVERTIDA</h1>
+        <h1 class="text-6xl md:text-8xl font-game mb-8 drop-shadow-xl leading-tight">MATEMÃTICA<br>DIVERTIDA</h1>
         <div class="w-64 h-64 bg-white rounded-full flex items-center justify-center border-8 border-yellow-300 shadow-2xl mb-12 overflow-hidden rotate-3">
             <span class="text-rose-500 font-game text-8xl">2+3</span>
         </div>
@@ -102,35 +113,35 @@
         </button>
     </div>
 
-    <!-- SELEÇÃO DE MODO -->
+    <!-- SELEÃ‡ÃƒO DE MODO -->
     <div id="screen-mode" class="screen bg-rose-50 justify-center">
         <h2 class="text-4xl font-game text-rose-600 mb-12 text-center">QUAL O DESAFIO?</h2>
         <div class="flex flex-col md:flex-row gap-8 w-full max-w-4xl px-4">
             <button onclick="setMode('infantil')" class="mode-card flex-1 bg-white p-8 rounded-[3rem] border-4 border-rose-200 text-center shadow-xl">
-                <div class="text-6xl mb-4">🍎</div>
+                <div class="text-6xl mb-4">ðŸŽ</div>
                 <div class="text-3xl font-game text-rose-600 mb-2">INFANTIL</div>
-                <p class="text-rose-400 font-bold">Adição simples<br>Com ajuda para contar!</p>
+                <p class="text-rose-400 font-bold">AdiÃ§Ã£o simples<br>Com ajuda para contar!</p>
             </button>
 
             <button onclick="setMode('fundamental')" class="mode-card flex-1 bg-white p-8 rounded-[3rem] border-4 border-orange-200 text-center shadow-xl">
-                <div class="text-6xl mb-4">🚀</div>
+                <div class="text-6xl mb-4">ðŸš€</div>
                 <div class="text-3xl font-game text-orange-600 mb-2">FUNDAMENTAL I</div>
-                <p class="text-orange-400 font-bold">Adição e Subtração<br>Desafios até 100!</p>
+                <p class="text-orange-400 font-bold">AdiÃ§Ã£o e SubtraÃ§Ã£o<br>Desafios atÃ© 100!</p>
             </button>
         </div>
-        <button onclick="showScreen('screen-start')" class="mt-12 text-rose-600 font-bold underline">Voltar ao início</button>
+        <button onclick="showScreen('screen-start')" class="mt-12 text-rose-600 font-bold underline">Voltar ao inÃ­cio</button>
     </div>
 
-    <!-- SELEÇÃO DE NÍVEIS -->
+    <!-- SELEÃ‡ÃƒO DE NÃVEIS -->
     <div id="screen-levels" class="screen bg-rose-50 overflow-y-auto">
         <div class="max-w-4xl w-full">
             <div class="flex justify-between items-center mb-8">
-                <button onclick="showScreen('screen-mode')" class="bg-white text-rose-600 font-bold px-4 py-2 rounded-xl shadow-sm border-2 border-rose-100">← VOLTAR</button>
-                <h2 class="text-4xl font-game text-rose-600">ESCOLHA O NÍVEL</h2>
+                <button onclick="showScreen('screen-mode')" class="bg-white text-rose-600 font-bold px-4 py-2 rounded-xl shadow-sm border-2 border-rose-100">â† VOLTAR</button>
+                <h2 class="text-4xl font-game text-rose-600">ESCOLHA O NÃVEL</h2>
                 <div class="w-20"></div>
             </div>
             <div id="levels-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-8 pb-10">
-                <!-- Níveis gerados via JS -->
+                <!-- NÃ­veis gerados via JS -->
             </div>
         </div>
     </div>
@@ -141,7 +152,7 @@
             <div class="flex justify-between items-center mb-4">
                 <button onclick="quitGame()" class="bg-white px-6 py-2 rounded-xl font-bold border-2 border-rose-200 text-rose-600 shadow-sm hover:bg-rose-50 transition-colors">SAIR</button>
                 <div class="flex flex-col items-end">
-                    <div class="text-xl font-game text-rose-600" id="level-title">NÍVEL 1</div>
+                    <div class="text-xl font-game text-rose-600" id="level-title">NÃVEL 1</div>
                     <div class="text-sm font-bold text-teal-500" id="phase-counter">FASE 1 / 10</div>
                 </div>
             </div>
@@ -154,11 +165,11 @@
             <div class="flex flex-col items-center justify-center bg-white p-6 md:p-12 rounded-[4rem] shadow-2xl border-b-8 border-rose-100 relative min-h-[500px] gap-8">
                 
                 <!-- Ajuda Visual (Modo Infantil) -->
-                <div id="visual-aid" class="flex flex-wrap justify-center gap-4 min-h-[60px]">
-                    <!-- Ícones aparecem aqui -->
+                <div id="visual-aid" class="flex flex-wrap justify-center items-center gap-4 min-h-[100px] w-full">
+                    <!-- Ãcones aparecem aqui -->
                 </div>
 
-                <!-- Operação Matemática -->
+                <!-- OperaÃ§Ã£o MatemÃ¡tica -->
                 <div class="flex flex-col items-center text-center">
                     <div id="math-op-display" class="math-display font-game text-rose-500 drop-shadow-lg flex items-center gap-4">
                         <span>5</span>
@@ -172,19 +183,19 @@
 
             <div class="text-center mt-10">
                 <div class="inline-flex items-center gap-3 bg-rose-100 text-rose-800 px-8 py-4 rounded-full shadow-sm">
-                    <span class="text-3xl">⌨️</span>
-                    <p class="text-xl font-bold">Digite o número no teclado!</p>
+                    <span class="text-3xl">âŒ¨ï¸</span>
+                    <p class="text-xl font-bold">Digite o nÃºmero no teclado!</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- MODAL DE VITÓRIA -->
+    <!-- MODAL DE VITÃ“RIA -->
     <div id="win-modal" class="fixed inset-0 bg-rose-900/90 flex items-center justify-center hidden z-50 backdrop-blur-sm">
         <div class="bg-white p-12 rounded-[3rem] text-center shadow-2xl border-8 border-yellow-400 max-w-sm mx-4 transform scale-105">
-            <h2 class="text-5xl font-game text-rose-600 mb-4" id="modal-title">CONCLUÍDO!</h2>
-            <div class="text-8xl mb-6">🏆</div>
-            <p class="text-xl font-bold text-gray-600 mb-8" id="modal-msg">Você é fera na matemática!</p>
+            <h2 class="text-5xl font-game text-rose-600 mb-4" id="modal-title">CONCLUÃDO!</h2>
+            <div class="text-8xl mb-6">ðŸ†</div>
+            <p class="text-xl font-bold text-gray-600 mb-8" id="modal-msg">VocÃª Ã© fera na matemÃ¡tica!</p>
             <button onclick="showScreen('screen-levels')" class="bg-green-500 hover:bg-green-600 text-white font-game text-3xl py-4 px-12 rounded-full shadow-lg border-b-8 border-green-700 active:translate-y-1 active:border-b-0 transition-all">
                 CONTINUAR
             </button>
@@ -192,20 +203,19 @@
     </div>
 
     <script>
-        // Configuração dos 12 Níveis Progressivos
         const gameLevels = [
-            { name: "Nível 1", count: 8, maxVal: 5, ops: ['+'], time: 15000 },
-            { name: "Nível 2", count: 8, maxVal: 10, ops: ['+'], time: 15000 },
-            { name: "Nível 3", count: 10, maxVal: 10, ops: ['-'], time: 15000 },
-            { name: "Nível 4", count: 10, maxVal: 15, ops: ['+'], time: 15000 },
-            { name: "Nível 5", count: 10, maxVal: 15, ops: ['-'], time: 12000 },
-            { name: "Nível 6", count: 12, maxVal: 20, ops: ['+'], time: 12000 },
-            { name: "Nível 7", count: 12, maxVal: 20, ops: ['-'], time: 12000 },
-            { name: "Nível 8", count: 12, maxVal: 20, ops: ['+', '-'], time: 10000 },
-            { name: "Nível 9", count: 15, maxVal: 30, ops: ['+', '-'], time: 10000 },
-            { name: "Nível 10", count: 15, maxVal: 50, ops: ['+', '-'], time: 10000 },
-            { name: "Nível 11", count: 15, maxVal: 75, ops: ['+', '-'], time: 8000 },
-            { name: "Nível 12", count: 20, maxVal: 100, ops: ['+', '-'], time: 8000 }
+            { name: "NÃ­vel 1", count: 8, maxVal: 5, ops: ['+'], time: 15000 },
+            { name: "NÃ­vel 2", count: 8, maxVal: 10, ops: ['+'], time: 15000 },
+            { name: "NÃ­vel 3", count: 10, maxVal: 10, ops: ['-'], time: 15000 },
+            { name: "NÃ­vel 4", count: 10, maxVal: 15, ops: ['+'], time: 15000 },
+            { name: "NÃ­vel 5", count: 10, maxVal: 15, ops: ['-'], time: 12000 },
+            { name: "NÃ­vel 6", count: 12, maxVal: 20, ops: ['+'], time: 12000 },
+            { name: "NÃ­vel 7", count: 12, maxVal: 20, ops: ['-'], time: 12000 },
+            { name: "NÃ­vel 8", count: 12, maxVal: 20, ops: ['+', '-'], time: 10000 },
+            { name: "NÃ­vel 9", count: 15, maxVal: 30, ops: ['+', '-'], time: 10000 },
+            { name: "NÃ­vel 10", count: 15, maxVal: 50, ops: ['+', '-'], time: 10000 },
+            { name: "NÃ­vel 11", count: 15, maxVal: 75, ops: ['+', '-'], time: 8000 },
+            { name: "NÃ­vel 12", count: 20, maxVal: 100, ops: ['+', '-'], time: 8000 }
         ];
 
         let unlockedLevels = 1;
@@ -215,8 +225,8 @@
         let gameMode = 'infantil';
         let currentOperation = null;
         let typedInput = "";
+        let currentIcon = 'ðŸŽ';
 
-        // Lógica do Temporizador
         let timeLeft = 100;
         let timerInterval = null;
 
@@ -241,7 +251,7 @@
                 const card = document.createElement('div');
                 card.className = `level-card bg-white p-4 md:p-6 rounded-[2rem] flex flex-col items-center justify-center text-center border-4 ${isLocked ? 'locked border-gray-200' : 'border-rose-100 cursor-pointer shadow-md'}`;
                 card.innerHTML = `
-                    <div class="text-2xl md:text-3xl mb-1">${isLocked ? '🔒' : '🌟'}</div>
+                    <div class="text-2xl md:text-3xl mb-1">${isLocked ? 'ðŸ”’' : 'ðŸŒŸ'}</div>
                     <div class="text-lg md:text-xl font-game text-rose-600">${level.name}</div>
                     <div class="text-xs font-bold text-rose-300">${isLocked ? 'Bloqueado' : level.count + ' Fases'}</div>
                 `;
@@ -263,18 +273,37 @@
             let n1, n2, result;
 
             if (op === '+') {
-                n1 = Math.floor(Math.random() * config.maxVal);
-                n2 = Math.floor(Math.random() * (config.maxVal - n1));
+                // n1 entre 1 e maxVal-1
+                n1 = Math.floor(Math.random() * (config.maxVal - 1)) + 1;
+                // n2 entre 1 e maxVal-n1
+                n2 = Math.floor(Math.random() * (config.maxVal - n1)) + 1;
                 result = n1 + n2;
             } else {
-                n1 = Math.floor(Math.random() * config.maxVal) + 1;
-                n2 = Math.floor(Math.random() * n1);
+                // SubtraÃ§Ã£o: n1 entre 2 e maxVal, n2 entre 1 e n1-1 (evita zero e resultado zero)
+                n1 = Math.floor(Math.random() * (config.maxVal - 1)) + 2;
+                n2 = Math.floor(Math.random() * (n1 - 1)) + 1;
                 result = n1 - n2;
             }
 
             currentOperation = { n1, n2, op, result };
             typedInput = "";
+            
+            const iconSet = ['ðŸŽ', 'â­ï¸', 'ðŸ¶', 'ðŸ•', 'âš½ï¸', 'ðŸ§¸', 'ðŸ­', 'ðŸ“', 'ðŸ', 'ðŸ¦'];
+            currentIcon = iconSet[Math.floor(Math.random() * iconSet.length)];
+            
             renderPhase();
+        }
+
+        function createIconGroup(num, colorClass) {
+            const group = document.createElement('div');
+            group.className = `flex flex-wrap gap-1 border-2 border-dashed ${colorClass} p-2 rounded-xl min-w-[40px] justify-center transition-all duration-500`;
+            for(let i=0; i<num; i++) {
+                const span = document.createElement('span');
+                span.className = "counter-icon";
+                span.innerText = currentIcon;
+                group.appendChild(span);
+            }
+            return group;
         }
 
         function renderPhase() {
@@ -293,32 +322,14 @@
             slot.className = "text-rose-200";
             opDisplay.className = "math-display font-game text-rose-500 drop-shadow-lg flex items-center gap-4";
 
-            // Ajuda Visual - Ícones para contar
             aid.innerHTML = '';
-            // Só exibe ajuda visual se os números forem pequenos e estiver no modo infantil
             if (gameMode === 'infantil' && currentOperation.n1 + currentOperation.n2 <= 20) {
-                const iconSet = ['🍎', '⭐️', '🐶', '🍕', '⚽️', '🧸', '🍭'];
-                const icon = iconSet[Math.floor(Math.random() * iconSet.length)];
-                
-                const createIcons = (num, colorClass) => {
-                    const group = document.createElement('div');
-                    group.className = `flex flex-wrap gap-1 border-2 border-dashed ${colorClass} p-2 rounded-xl max-w-[150px] justify-center`;
-                    for(let i=0; i<num; i++) {
-                        const span = document.createElement('span');
-                        span.className = "counter-icon";
-                        span.innerText = icon;
-                        group.appendChild(span);
-                    }
-                    if(num === 0) group.innerHTML = '<span class="text-gray-300 font-bold">0</span>';
-                    return group;
-                };
-
-                aid.appendChild(createIcons(currentOperation.n1, 'border-rose-200'));
+                aid.appendChild(createIconGroup(currentOperation.n1, 'border-rose-200'));
                 const sign = document.createElement('span');
                 sign.className = "text-3xl font-game text-rose-300 mx-2 self-center";
                 sign.innerText = currentOperation.op;
                 aid.appendChild(sign);
-                aid.appendChild(createIcons(currentOperation.n2, 'border-orange-200'));
+                aid.appendChild(createIconGroup(currentOperation.n2, 'border-orange-200'));
             }
 
             resetTimer();
@@ -349,9 +360,9 @@
         function updateTimerUI() {
             const bar = document.getElementById('timer-bar');
             bar.style.width = `${timeLeft}%`;
-            if (timeLeft > 50) bar.style.backgroundColor = '#10b981'; // Verde
-            else if (timeLeft > 20) bar.style.backgroundColor = '#facc15'; // Amarelo
-            else bar.style.backgroundColor = '#f43f5e'; // Vermelho
+            if (timeLeft > 50) bar.style.backgroundColor = '#10b981';
+            else if (timeLeft > 20) bar.style.backgroundColor = '#facc15';
+            else bar.style.backgroundColor = '#f43f5e';
         }
 
         function handleTimeOut() {
@@ -372,7 +383,6 @@
         window.addEventListener('keydown', (e) => {
             if (!document.getElementById('screen-game').classList.contains('active-screen') || !canType) return;
 
-            // Apenas números
             if (e.key >= '0' && e.key <= '9') {
                 typedInput += e.key;
                 const slot = document.getElementById('answer-slot');
@@ -382,14 +392,32 @@
                 const targetStr = currentOperation.result.toString();
                 
                 if (typedInput === targetStr) {
-                    // ACERTOU
                     canType = false;
                     stopTimer();
+                    
                     const display = document.getElementById('math-op-display');
                     display.classList.add('correct-anim');
-                    setTimeout(nextPhase, 1000);
+
+                    // AnimaÃ§Ã£o dos Ã­cones de resultado no modo Infantil
+                    if (gameMode === 'infantil' && currentOperation.n1 + currentOperation.n2 <= 20) {
+                        const aid = document.getElementById('visual-aid');
+                        aid.innerHTML = '';
+                        const resultContainer = document.createElement('div');
+                        resultContainer.className = "flex flex-col items-center gap-2 result-icons-anim";
+                        
+                        const label = document.createElement('span');
+                        label.className = "text-xl font-game text-green-500 uppercase";
+                        label.innerText = "Total!";
+                        
+                        const iconsGroup = createIconGroup(currentOperation.result, 'border-green-400 bg-green-50');
+                        
+                        resultContainer.appendChild(label);
+                        resultContainer.appendChild(iconsGroup);
+                        aid.appendChild(resultContainer);
+                    }
+
+                    setTimeout(nextPhase, 1500);
                 } else if (typedInput.length >= targetStr.length) {
-                    // ERROU
                     const display = document.getElementById('math-op-display');
                     display.classList.add('shake-anim');
                     setTimeout(() => {
@@ -416,8 +444,7 @@
                     unlockedLevels++;
                 }
                 const isFinal = activeLevelIdx + 1 === gameLevels.length;
-                document.getElementById('modal-title').innerText = isFinal ? "MESTRE!" : "NÍVEL CONCLUÍDO!";
-                document.getElementById('modal-msg').innerText = isFinal ? "Você completou todos os desafios!" : "Pronto para o próximo nível?";
+                document.getElementById('modal-title').innerText = isFinal ? "MESTRE!" : "NÃVEL CONCLUÃDO!";
                 document.getElementById('win-modal').classList.remove('hidden');
             }
         }

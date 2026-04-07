@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
   <title>Jogo - Organiza Tudo!</title>
   
   <!-- Tailwind CSS -->
@@ -16,7 +17,7 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
   <style>
-    /* Animações Personalizadas */
+    /* AnimaÃ§Ãµes Personalizadas */
     @keyframes shake {
       0%, 100% { transform: translateX(0); }
       25% { transform: translateX(-8px) rotate(-5deg); }
@@ -43,7 +44,7 @@
       animation: float 3s ease-in-out infinite;
     }
     
-    /* Esconder scrollbar na área dos items */
+    /* Esconder scrollbar na Ã¡rea dos items */
     .no-scrollbar::-webkit-scrollbar {
       display: none;
     }
@@ -72,37 +73,37 @@
           { id: 'yellow', label: 'Amarelo', color: 'bg-yellow-400', border: 'border-yellow-500', shadow: 'shadow-yellow-200' }
         ],
         items: [
-          { id: 'r1', emoji: '🍎', category: 'red' },
-          { id: 'r2', emoji: '🚗', category: 'red' },
-          { id: 'r3', emoji: '🎈', category: 'red' },
-          { id: 'b1', emoji: '🐳', category: 'blue' },
-          { id: 'b2', emoji: '👖', category: 'blue' },
-          { id: 'b3', emoji: '🧢', category: 'blue' },
-          { id: 'y1', emoji: '⭐', category: 'yellow' },
-          { id: 'y2', emoji: '🍌', category: 'yellow' },
-          { id: 'y3', emoji: '🌻', category: 'yellow' },
+          { id: 'r1', emoji: 'ðŸŽ', category: 'red' },
+          { id: 'r2', emoji: 'ðŸš—', category: 'red' },
+          { id: 'r3', emoji: 'ðŸŽˆ', category: 'red' },
+          { id: 'b1', emoji: 'ðŸ³', category: 'blue' },
+          { id: 'b2', emoji: 'ðŸ‘–', category: 'blue' },
+          { id: 'b3', emoji: 'ðŸ§¢', category: 'blue' },
+          { id: 'y1', emoji: 'â­', category: 'yellow' },
+          { id: 'y2', emoji: 'ðŸŒ', category: 'yellow' },
+          { id: 'y3', emoji: 'ðŸŒ»', category: 'yellow' },
         ]
       },
       {
         id: 2,
         title: "Mundo das Formas",
-        instruction: "Separe os objetos pela sua forma geométrica!",
+        instruction: "Separe os objetos pela sua forma geomÃ©trica!",
         type: "shape",
         zones: [
-          { id: 'circle', label: 'Círculos', icon: '⭕', color: 'bg-pink-400', border: 'border-pink-500', shadow: 'shadow-pink-200' },
-          { id: 'square', label: 'Quadrados', icon: '⏹️', color: 'bg-emerald-400', border: 'border-emerald-500', shadow: 'shadow-emerald-200' },
-          { id: 'triangle', label: 'Triângulos', icon: '🔺', color: 'bg-purple-400', border: 'border-purple-500', shadow: 'shadow-purple-200' }
+          { id: 'circle', label: 'CÃ­rculos', icon: 'â­•', color: 'bg-pink-400', border: 'border-pink-500', shadow: 'shadow-pink-200' },
+          { id: 'square', label: 'Quadrados', icon: 'â¹ï¸', color: 'bg-emerald-400', border: 'border-emerald-500', shadow: 'shadow-emerald-200' },
+          { id: 'triangle', label: 'TriÃ¢ngulos', icon: 'ðŸ”º', color: 'bg-purple-400', border: 'border-purple-500', shadow: 'shadow-purple-200' }
         ],
         items: [
-          { id: 'c1', emoji: '⚽', category: 'circle' },
-          { id: 'c2', emoji: '🍩', category: 'circle' },
-          { id: 'c3', emoji: '🪙', category: 'circle' },
-          { id: 's1', emoji: '📦', category: 'square' },
-          { id: 's2', emoji: '🖼️', category: 'square' },
-          { id: 's3', emoji: '🎁', category: 'square' },
-          { id: 't1', emoji: '🍕', category: 'triangle' },
-          { id: 't2', emoji: '⛺', category: 'triangle' },
-          { id: 't3', emoji: '📐', category: 'triangle' },
+          { id: 'c1', emoji: 'âš½', category: 'circle' },
+          { id: 'c2', emoji: 'ðŸ©', category: 'circle' },
+          { id: 'c3', emoji: 'ðŸª™', category: 'circle' },
+          { id: 's1', emoji: 'ðŸ“¦', category: 'square' },
+          { id: 's2', emoji: 'ðŸ–¼ï¸', category: 'square' },
+          { id: 's3', emoji: 'ðŸŽ', category: 'square' },
+          { id: 't1', emoji: 'ðŸ•', category: 'triangle' },
+          { id: 't2', emoji: 'â›º', category: 'triangle' },
+          { id: 't3', emoji: 'ðŸ“', category: 'triangle' },
         ]
       },
       {
@@ -111,52 +112,52 @@
         instruction: "Guarde cada coisa na sua caixa correta!",
         type: "theme",
         zones: [
-          { id: 'animal', label: 'Animais', icon: '🐶', color: 'bg-orange-400', border: 'border-orange-500', shadow: 'shadow-orange-200' },
-          { id: 'fruit', label: 'Frutas', icon: '🍉', color: 'bg-lime-400', border: 'border-lime-500', shadow: 'shadow-lime-200' },
-          { id: 'vehicle', label: 'Veículos', icon: '🚗', color: 'bg-cyan-400', border: 'border-cyan-500', shadow: 'shadow-cyan-200' }
+          { id: 'animal', label: 'Animais', icon: 'ðŸ¶', color: 'bg-orange-400', border: 'border-orange-500', shadow: 'shadow-orange-200' },
+          { id: 'fruit', label: 'Frutas', icon: 'ðŸ‰', color: 'bg-lime-400', border: 'border-lime-500', shadow: 'shadow-lime-200' },
+          { id: 'vehicle', label: 'VeÃ­culos', icon: 'ðŸš—', color: 'bg-cyan-400', border: 'border-cyan-500', shadow: 'shadow-cyan-200' }
         ],
         items: [
-          { id: 'a1', emoji: '🐱', category: 'animal' },
-          { id: 'a2', emoji: '🐘', category: 'animal' },
-          { id: 'a3', emoji: '🐢', category: 'animal' },
-          { id: 'f1', emoji: '🍇', category: 'fruit' },
-          { id: 'f2', emoji: '🍓', category: 'fruit' },
-          { id: 'f3', emoji: '🍍', category: 'fruit' },
-          { id: 'v1', emoji: '🚓', category: 'vehicle' },
-          { id: 'v2', emoji: '🚀', category: 'vehicle' },
-          { id: 'v3', emoji: '🚁', category: 'vehicle' },
+          { id: 'a1', emoji: 'ðŸ±', category: 'animal' },
+          { id: 'a2', emoji: 'ðŸ˜', category: 'animal' },
+          { id: 'a3', emoji: 'ðŸ¢', category: 'animal' },
+          { id: 'f1', emoji: 'ðŸ‡', category: 'fruit' },
+          { id: 'f2', emoji: 'ðŸ“', category: 'fruit' },
+          { id: 'f3', emoji: 'ðŸ', category: 'fruit' },
+          { id: 'v1', emoji: 'ðŸš“', category: 'vehicle' },
+          { id: 'v2', emoji: 'ðŸš€', category: 'vehicle' },
+          { id: 'v3', emoji: 'ðŸš', category: 'vehicle' },
         ]
       },
       {
         id: 4,
-        title: "Natureza Mágica",
+        title: "Natureza MÃ¡gica",
         instruction: "Separe os elementos da natureza!",
         type: "nature",
         zones: [
-          { id: 'water', label: 'Água', icon: '💧', color: 'bg-blue-400', border: 'border-blue-500', shadow: 'shadow-blue-200' },
-          { id: 'fire', label: 'Fogo', icon: '🔥', color: 'bg-red-500', border: 'border-red-600', shadow: 'shadow-red-200' },
-          { id: 'earth', label: 'Terra', icon: '🌱', color: 'bg-amber-600', border: 'border-amber-700', shadow: 'shadow-amber-200' }
+          { id: 'water', label: 'Ãgua', icon: 'ðŸ’§', color: 'bg-blue-400', border: 'border-blue-500', shadow: 'shadow-blue-200' },
+          { id: 'fire', label: 'Fogo', icon: 'ðŸ”¥', color: 'bg-red-500', border: 'border-red-600', shadow: 'shadow-red-200' },
+          { id: 'earth', label: 'Terra', icon: 'ðŸŒ±', color: 'bg-amber-600', border: 'border-amber-700', shadow: 'shadow-amber-200' }
         ],
         items: [
-          { id: 'w1', emoji: '🧊', category: 'water' }, { id: 'w2', emoji: '🌊', category: 'water' }, { id: 'w3', emoji: '🌧️', category: 'water' },
-          { id: 'f1', emoji: '🌋', category: 'fire' }, { id: 'f2', emoji: '🧨', category: 'fire' }, { id: 'f3', emoji: '🎇', category: 'fire' },
-          { id: 'e1', emoji: '🪨', category: 'earth' }, { id: 'e2', emoji: '🪴', category: 'earth' }, { id: 'e3', emoji: '🌲', category: 'earth' },
+          { id: 'w1', emoji: 'ðŸ§Š', category: 'water' }, { id: 'w2', emoji: 'ðŸŒŠ', category: 'water' }, { id: 'w3', emoji: 'ðŸŒ§ï¸', category: 'water' },
+          { id: 'f1', emoji: 'ðŸŒ‹', category: 'fire' }, { id: 'f2', emoji: 'ðŸ§¨', category: 'fire' }, { id: 'f3', emoji: 'ðŸŽ‡', category: 'fire' },
+          { id: 'e1', emoji: 'ðŸª¨', category: 'earth' }, { id: 'e2', emoji: 'ðŸª´', category: 'earth' }, { id: 'e3', emoji: 'ðŸŒ²', category: 'earth' },
         ]
       },
       {
         id: 5,
         title: "Guarda-Roupa",
-        instruction: "Onde usamos cada peça de roupa?",
+        instruction: "Onde usamos cada peÃ§a de roupa?",
         type: "clothing",
         zones: [
-          { id: 'head', label: 'Cabeça', icon: '🧢', color: 'bg-indigo-400', border: 'border-indigo-500', shadow: 'shadow-indigo-200' },
-          { id: 'body', label: 'Corpo', icon: '👕', color: 'bg-teal-400', border: 'border-teal-500', shadow: 'shadow-teal-200' },
-          { id: 'feet', label: 'Pés', icon: '👟', color: 'bg-rose-400', border: 'border-rose-500', shadow: 'shadow-rose-200' }
+          { id: 'head', label: 'CabeÃ§a', icon: 'ðŸ§¢', color: 'bg-indigo-400', border: 'border-indigo-500', shadow: 'shadow-indigo-200' },
+          { id: 'body', label: 'Corpo', icon: 'ðŸ‘•', color: 'bg-teal-400', border: 'border-teal-500', shadow: 'shadow-teal-200' },
+          { id: 'feet', label: 'PÃ©s', icon: 'ðŸ‘Ÿ', color: 'bg-rose-400', border: 'border-rose-500', shadow: 'shadow-rose-200' }
         ],
         items: [
-          { id: 'h1', emoji: '🎩', category: 'head' }, { id: 'h2', emoji: '👑', category: 'head' }, { id: 'h3', emoji: '🪖', category: 'head' },
-          { id: 'b1', emoji: '👗', category: 'body' }, { id: 'b2', emoji: '🧥', category: 'body' }, { id: 'b3', emoji: '🦺', category: 'body' },
-          { id: 'ft1', emoji: '👢', category: 'feet' }, { id: 'ft2', emoji: '🧦', category: 'feet' }, { id: 'ft3', emoji: '🩴', category: 'feet' },
+          { id: 'h1', emoji: 'ðŸŽ©', category: 'head' }, { id: 'h2', emoji: 'ðŸ‘‘', category: 'head' }, { id: 'h3', emoji: 'ðŸª–', category: 'head' },
+          { id: 'b1', emoji: 'ðŸ‘—', category: 'body' }, { id: 'b2', emoji: 'ðŸ§¥', category: 'body' }, { id: 'b3', emoji: 'ðŸ¦º', category: 'body' },
+          { id: 'ft1', emoji: 'ðŸ‘¢', category: 'feet' }, { id: 'ft2', emoji: 'ðŸ§¦', category: 'feet' }, { id: 'ft3', emoji: 'ðŸ©´', category: 'feet' },
         ]
       },
       {
@@ -165,20 +166,20 @@
         instruction: "Separe as comidas e bebidas!",
         type: "food",
         zones: [
-          { id: 'sweet', label: 'Doces', icon: '🍩', color: 'bg-fuchsia-400', border: 'border-fuchsia-500', shadow: 'shadow-fuchsia-200' },
-          { id: 'salty', label: 'Salgados', icon: '🍕', color: 'bg-orange-500', border: 'border-orange-600', shadow: 'shadow-orange-200' },
-          { id: 'drink', label: 'Bebidas', icon: '🥤', color: 'bg-cyan-300', border: 'border-cyan-400', shadow: 'shadow-cyan-100' }
+          { id: 'sweet', label: 'Doces', icon: 'ðŸ©', color: 'bg-fuchsia-400', border: 'border-fuchsia-500', shadow: 'shadow-fuchsia-200' },
+          { id: 'salty', label: 'Salgados', icon: 'ðŸ•', color: 'bg-orange-500', border: 'border-orange-600', shadow: 'shadow-orange-200' },
+          { id: 'drink', label: 'Bebidas', icon: 'ðŸ¥¤', color: 'bg-cyan-300', border: 'border-cyan-400', shadow: 'shadow-cyan-100' }
         ],
         items: [
-          { id: 'sw1', emoji: '🍫', category: 'sweet' }, { id: 'sw2', emoji: '🍬', category: 'sweet' }, { id: 'sw3', emoji: '🍪', category: 'sweet' },
-          { id: 'sl1', emoji: '🍔', category: 'salty' }, { id: 'sl2', emoji: '🍟', category: 'salty' }, { id: 'sl3', emoji: '🌭', category: 'salty' },
-          { id: 'd1', emoji: '🧃', category: 'drink' }, { id: 'd2', emoji: '☕', category: 'drink' }, { id: 'd3', emoji: '🥛', category: 'drink' },
+          { id: 'sw1', emoji: 'ðŸ«', category: 'sweet' }, { id: 'sw2', emoji: 'ðŸ¬', category: 'sweet' }, { id: 'sw3', emoji: 'ðŸª', category: 'sweet' },
+          { id: 'sl1', emoji: 'ðŸ”', category: 'salty' }, { id: 'sl2', emoji: 'ðŸŸ', category: 'salty' }, { id: 'sl3', emoji: 'ðŸŒ­', category: 'salty' },
+          { id: 'd1', emoji: 'ðŸ§ƒ', category: 'drink' }, { id: 'd2', emoji: 'â˜•', category: 'drink' }, { id: 'd3', emoji: 'ðŸ¥›', category: 'drink' },
         ]
       }
     ];
 
     function App() {
-      // Estados de Navegação
+      // Estados de NavegaÃ§Ã£o
       const [gameState, setGameState] = useState('cover'); 
       const [unlockedLevels, setUnlockedLevels] = useState(1);
       
@@ -187,7 +188,7 @@
       const [pendingItems, setPendingItems] = useState([]);
       const [sortedItems, setSortedItems] = useState({});
       
-      // Estados de Interação
+      // Estados de InteraÃ§Ã£o
       const [draggedItem, setDraggedItem] = useState(null);
       const [selectedItem, setSelectedItem] = useState(null);
       const [dragOverZone, setDragOverZone] = useState(null);
@@ -212,7 +213,7 @@
         setGameState('playing');
       };
 
-      // --- LÓGICA DE VALIDAÇÃO ---
+      // --- LÃ“GICA DE VALIDAÃ‡ÃƒO ---
       const handleAttempt = (item, zoneId) => {
         if (!item) return;
 
@@ -256,7 +257,7 @@
       };
 
       const onDragOver = (e, zoneId) => {
-        e.preventDefault(); // Obrigatório para permitir que o item caia aqui
+        e.preventDefault(); // ObrigatÃ³rio para permitir que o item caia aqui
         e.dataTransfer.dropEffect = 'move';
         if (dragOverZone !== zoneId) setDragOverZone(zoneId);
       };
@@ -301,14 +302,14 @@
       if (gameState === 'cover') {
         return (
           <div className="min-h-screen bg-sky-400 flex flex-col items-center justify-center p-4 relative overflow-hidden">
-            <a href="../../index.html" className="absolute top-4 left-4 text-sky-900 hover:text-sky-700 font-bold bg-sky-200/80 hover:bg-sky-300 px-4 py-2 rounded-full transition-colors z-20 border-2 border-sky-400">◀ Voltar</a>
-            <div className="absolute top-10 left-10 text-6xl opacity-30 float-anim">🍎</div>
-            <div className="absolute top-32 right-16 text-6xl opacity-30 float-anim" style={{animationDelay: '1s'}}>⚽</div>
-            <div className="absolute bottom-20 left-20 text-7xl opacity-30 float-anim" style={{animationDelay: '2s'}}>🚗</div>
-            <div className="absolute bottom-10 right-20 text-6xl opacity-30 float-anim" style={{animationDelay: '0.5s'}}>🎨</div>
+            <a href="../../index.html" className="absolute top-4 left-4 text-sky-900 hover:text-sky-700 font-bold bg-sky-200/80 hover:bg-sky-300 px-4 py-2 rounded-full transition-colors z-20 border-2 border-sky-400">â—€ Voltar</a>
+            <div className="absolute top-10 left-10 text-6xl opacity-30 float-anim">ðŸŽ</div>
+            <div className="absolute top-32 right-16 text-6xl opacity-30 float-anim" style={{animationDelay: '1s'}}>âš½</div>
+            <div className="absolute bottom-20 left-20 text-7xl opacity-30 float-anim" style={{animationDelay: '2s'}}>ðŸš—</div>
+            <div className="absolute bottom-10 right-20 text-6xl opacity-30 float-anim" style={{animationDelay: '0.5s'}}>ðŸŽ¨</div>
 
             <div className="bg-white/95 p-10 rounded-[3rem] shadow-2xl flex flex-col items-center text-center z-10 max-w-lg w-full border-8 border-sky-300">
-              <div className="text-[6rem] mb-4">📦</div>
+              <div className="text-[6rem] mb-4">ðŸ“¦</div>
               <h1 className="text-5xl font-extrabold text-sky-600 mb-2 tracking-tight leading-tight">
                 Organiza<br/><span className="text-4xl text-sky-400">Tudo!</span>
               </h1>
@@ -326,7 +327,7 @@
       }
 
       // ------------------------------------------------------------------------
-      // TELA 2: SELEÇÃO DE FASE
+      // TELA 2: SELEÃ‡ÃƒO DE FASE
       // ------------------------------------------------------------------------
       if (gameState === 'levelSelect') {
         return (
@@ -336,12 +337,12 @@
                 onClick={() => setGameState('cover')}
                 className="absolute top-4 left-4 text-gray-400 hover:text-gray-600 font-bold text-sm bg-gray-100 px-3 py-1 rounded-full"
               >
-                ◀ Início
+                â—€ InÃ­cio
               </button>
 
               <h1 className="text-3xl font-bold text-emerald-600 mb-2 mt-6">Escolhe a Fase</h1>
               <p className="text-gray-500 mb-6 bg-emerald-50 rounded-lg p-2 font-semibold">
-                Vamos arrumar a bagunça!
+                Vamos arrumar a bagunÃ§a!
               </p>
 
               <div className="grid grid-cols-1 gap-4">
@@ -362,7 +363,7 @@
                         <span>Fase {level.id}</span>
                         {isUnlocked && <span className="text-sm font-normal bg-white/20 px-2 py-0.5 rounded mt-1">{level.title}</span>}
                       </span>
-                      <span className="text-3xl">{isUnlocked ? '⭐' : '🔒'}</span>
+                      <span className="text-3xl">{isUnlocked ? 'â­' : 'ðŸ”’'}</span>
                     </button>
                   );
                 })}
@@ -373,7 +374,7 @@
       }
 
       // ------------------------------------------------------------------------
-      // TELA 3: FASE CONCLUÍDA
+      // TELA 3: FASE CONCLUÃDA
       // ------------------------------------------------------------------------
       if (gameState === 'levelComplete') {
         const hasNextPhase = currentLevel.id < LEVELS.length;
@@ -381,9 +382,9 @@
         return (
           <div className="min-h-screen bg-yellow-100 flex flex-col items-center justify-center p-4">
             <div className="bg-white p-8 rounded-3xl shadow-xl max-w-md w-full text-center border-4 border-yellow-300">
-              <div className="text-6xl mb-4 pop-anim">🎉</div>
-              <h1 className="text-4xl font-bold text-yellow-500 mb-2">Fase {currentLevel.id} Concluída!</h1>
-              <p className="text-gray-600 text-lg mb-8">Parabéns! Arrumaste tudo direitinho!</p>
+              <div className="text-6xl mb-4 pop-anim">ðŸŽ‰</div>
+              <h1 className="text-4xl font-bold text-yellow-500 mb-2">Fase {currentLevel.id} ConcluÃ­da!</h1>
+              <p className="text-gray-600 text-lg mb-8">ParabÃ©ns! Arrumaste tudo direitinho!</p>
 
               <div className="space-y-3">
                 {hasNextPhase && (
@@ -391,14 +392,14 @@
                     onClick={() => startLevel(currentLevel.id + 1)}
                     className="w-full py-4 px-6 bg-yellow-400 hover:bg-yellow-500 text-white rounded-2xl text-xl font-bold shadow-[0_6px_0_rgb(202,138,4)] hover:shadow-none hover:translate-y-1 transition-all"
                   >
-                    Próxima Fase ➡️
+                    PrÃ³xima Fase âž¡ï¸
                   </button>
                 )}
                 <button 
                   onClick={() => setGameState('levelSelect')}
                   className="w-full py-3 px-6 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-2xl text-lg font-bold transition-colors"
                 >
-                  Voltar às Fases
+                  Voltar Ã s Fases
                 </button>
               </div>
             </div>
@@ -416,7 +417,7 @@
             onClick={() => setGameState('levelSelect')}
             className="absolute top-4 left-4 text-indigo-500 hover:text-indigo-700 font-bold bg-white/50 hover:bg-white px-4 py-2 rounded-full transition-colors z-20"
           >
-            ⏸ Sair
+            â¸ Sair
           </button>
 
           <div className="mt-16 mb-6 text-center">
@@ -424,10 +425,10 @@
             <div className="inline-block bg-white/80 px-6 py-2 rounded-full text-indigo-600 font-bold shadow-sm">
               {currentLevel.instruction}
             </div>
-            <p className="text-xs text-indigo-400 mt-2 font-semibold uppercase tracking-wider">Arraste a peça ou toque na peça e depois na caixa!</p>
+            <p className="text-xs text-indigo-400 mt-2 font-semibold uppercase tracking-wider">Arraste a peÃ§a ou toque na peÃ§a e depois na caixa!</p>
           </div>
 
-          {/* ÁREA DAS CAIXAS (DROPZONES) */}
+          {/* ÃREA DAS CAIXAS (DROPZONES) */}
           <div className="flex flex-row flex-wrap justify-center gap-4 md:gap-8 w-full max-w-4xl mb-auto">
             {currentLevel.zones.map((zone) => {
               const itemsInZone = sortedItems[zone.id] || [];
@@ -457,7 +458,7 @@
                     </div>
                   </div>
                   
-                  {/* Adicionado 'relative' e os elementos de dentro agora têm 'pointer-events-none' */}
+                  {/* Adicionado 'relative' e os elementos de dentro agora tÃªm 'pointer-events-none' */}
                   <div className={`relative w-full h-36 md:h-48 rounded-2xl border-4 flex flex-wrap content-start p-2 gap-1 overflow-hidden transition-all duration-300 ${zone.color} ${zone.border} ${zone.shadow} shadow-inner ${isHovered ? 'brightness-110 border-dashed' : 'border-solid'} ${canClickDrop && !isHovered ? 'ring-4 ring-white/50 cursor-pointer' : ''}`}>
                     
                     {itemsInZone.map((item, idx) => (
@@ -473,7 +474,7 @@
                     )}
                     {isHovered && (
                       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white/20 text-5xl rounded-2xl z-10">
-                        📥
+                        ðŸ“¥
                       </div>
                     )}
                   </div>
@@ -482,10 +483,10 @@
             })}
           </div>
 
-          {/* ÁREA DA BAGUNÇA (ITENS PARA ARRASTAR) */}
+          {/* ÃREA DA BAGUNÃ‡A (ITENS PARA ARRASTAR) */}
           <div className="w-full max-w-4xl mt-8">
             <div className="bg-white/60 backdrop-blur-sm rounded-[2rem] border-4 border-white p-6 shadow-lg min-h-[160px]">
-              <h3 className="text-gray-500 font-bold uppercase tracking-widest text-sm mb-4 text-center">Bagunça para Arrumar</h3>
+              <h3 className="text-gray-500 font-bold uppercase tracking-widest text-sm mb-4 text-center">BagunÃ§a para Arrumar</h3>
               
               <div className="flex flex-wrap justify-center gap-3 md:gap-4 no-scrollbar">
                 {pendingItems.map((item) => {
@@ -508,7 +509,7 @@
 
                 {pendingItems.length === 0 && (
                   <div className="w-full text-center text-gray-400 font-bold py-4">
-                    Tudo arrumado! 🎉
+                    Tudo arrumado! ðŸŽ‰
                   </div>
                 )}
               </div>

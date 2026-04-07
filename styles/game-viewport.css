@@ -1,0 +1,43 @@
+/* Global viewport lock for game pages */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100dvh;
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  touch-action: manipulation;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.screen,
+.game-screen,
+.fullscreen,
+.fullscreen-container {
+  width: 100%;
+  height: 100dvh;
+  max-height: 100dvh;
+  overflow: hidden;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}

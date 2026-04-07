@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exploradores de Sinônimos</title>
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
+  <title>Exploradores de SinÃ´nimos</title>
   
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -25,7 +26,7 @@
       background-color: #dcfce7;
     }
     
-    /* Animações */
+    /* AnimaÃ§Ãµes */
     @keyframes shake {
       0%, 100% { transform: translateX(0); }
       25% { transform: translateX(-8px) rotate(-3deg); }
@@ -64,27 +65,27 @@
   <script type="text/babel">
     const { useState, useEffect } = React;
 
-    // --- DADOS DO JOGO (Agora com 4 Mecânicas e 12 Fases!) ---
+    // --- DADOS DO JOGO (Agora com 4 MecÃ¢nicas e 12 Fases!) ---
     const LEVELS = [
-      // MECÂNICA 1: Associação (Arrastar)
-      { id: 1, type: 'match', target: 'FELIZ', answer: 'CONTENTE', options: ['CONTENTE', 'TRISTE', 'ZANGADO'], emoji: '😄', instruction: 'Encontre a palavra que significa o mesmo!' },
-      { id: 2, type: 'match', target: 'RÁPIDO', answer: 'VELOZ', options: ['LENTO', 'VELOZ', 'PESADO'], emoji: '🐆', instruction: 'Qual destas palavras também significa rápido?' },
-      { id: 3, type: 'match', target: 'SALTO', answer: 'PULO', options: ['PASSO', 'CORRIDA', 'PULO'], emoji: '🦘', instruction: 'O que é o mesmo que um salto?' },
+      // MECÃ‚NICA 1: AssociaÃ§Ã£o (Arrastar)
+      { id: 1, type: 'match', target: 'FELIZ', answer: 'CONTENTE', options: ['CONTENTE', 'TRISTE', 'ZANGADO'], emoji: 'ðŸ˜„', instruction: 'Encontre a palavra que significa o mesmo!' },
+      { id: 2, type: 'match', target: 'RÃPIDO', answer: 'VELOZ', options: ['LENTO', 'VELOZ', 'PESADO'], emoji: 'ðŸ†', instruction: 'Qual destas palavras tambÃ©m significa rÃ¡pido?' },
+      { id: 3, type: 'match', target: 'SALTO', answer: 'PULO', options: ['PASSO', 'CORRIDA', 'PULO'], emoji: 'ðŸ¦˜', instruction: 'O que Ã© o mesmo que um salto?' },
       
-      // MECÂNICA 2: Ligar os Pontos (NOVA)
-      { id: 4, type: 'connect', leftWords: ['CASA', 'PULAR', 'GAROTO'], rightWords: ['MENINO', 'LAR', 'SALTAR'], matches: { 'CASA': 'LAR', 'PULAR': 'SALTAR', 'GAROTO': 'MENINO' }, emoji: '🔗', instruction: 'Toque na palavra da esquerda e depois no seu sinônimo na direita para ligá-las!' },
-      { id: 5, type: 'connect', leftWords: ['GRANDE', 'BEM', 'CEDO'], rightWords: ['BOM', 'ENORME', 'LOGO'], matches: { 'GRANDE': 'ENORME', 'BEM': 'BOM', 'CEDO': 'LOGO' }, emoji: '🧩', instruction: 'Ligue os pares de sinônimos tocando neles!' },
-      { id: 6, type: 'connect', leftWords: ['INÍCIO', 'LENTO', 'FÁCIL'], rightWords: ['SIMPLES', 'COMEÇO', 'DEVAGAR'], matches: { 'INÍCIO': 'COMEÇO', 'LENTO': 'DEVAGAR', 'FÁCIL': 'SIMPLES' }, emoji: '🎯', instruction: 'Encontre os 3 pares! Ligue as palavras iguais!' },
+      // MECÃ‚NICA 2: Ligar os Pontos (NOVA)
+      { id: 4, type: 'connect', leftWords: ['CASA', 'PULAR', 'GAROTO'], rightWords: ['MENINO', 'LAR', 'SALTAR'], matches: { 'CASA': 'LAR', 'PULAR': 'SALTAR', 'GAROTO': 'MENINO' }, emoji: 'ðŸ”—', instruction: 'Toque na palavra da esquerda e depois no seu sinÃ´nimo na direita para ligÃ¡-las!' },
+      { id: 5, type: 'connect', leftWords: ['GRANDE', 'BEM', 'CEDO'], rightWords: ['BOM', 'ENORME', 'LOGO'], matches: { 'GRANDE': 'ENORME', 'BEM': 'BOM', 'CEDO': 'LOGO' }, emoji: 'ðŸ§©', instruction: 'Ligue os pares de sinÃ´nimos tocando neles!' },
+      { id: 6, type: 'connect', leftWords: ['INÃCIO', 'LENTO', 'FÃCIL'], rightWords: ['SIMPLES', 'COMEÃ‡O', 'DEVAGAR'], matches: { 'INÃCIO': 'COMEÃ‡O', 'LENTO': 'DEVAGAR', 'FÃCIL': 'SIMPLES' }, emoji: 'ðŸŽ¯', instruction: 'Encontre os 3 pares! Ligue as palavras iguais!' },
 
-      // MECÂNICA 3: O Intruso
-      { id: 7, type: 'intruder', words: ['LINDO', 'BONITO', 'BELO', 'FEIO'], answer: 'FEIO', emoji: '🕵️‍♂️', instruction: 'Atenção! Clique na palavra INTRUSA (a que é diferente das outras)!' },
-      { id: 8, type: 'intruder', words: ['GRANDE', 'ENORME', 'GIGANTE', 'PEQUENO'], answer: 'PEQUENO', emoji: '🐘', instruction: 'Ache o intruso! Qual destas não pertence ao grupo?' },
-      { id: 9, type: 'intruder', words: ['GULOSO', 'FURIOSO', 'ZANGADO', 'IRRITADO'], answer: 'GULOSO', emoji: '😡', instruction: 'Três palavras são iguais. Qual é a intrusa?' },
+      // MECÃ‚NICA 3: O Intruso
+      { id: 7, type: 'intruder', words: ['LINDO', 'BONITO', 'BELO', 'FEIO'], answer: 'FEIO', emoji: 'ðŸ•µï¸â€â™‚ï¸', instruction: 'AtenÃ§Ã£o! Clique na palavra INTRUSA (a que Ã© diferente das outras)!' },
+      { id: 8, type: 'intruder', words: ['GRANDE', 'ENORME', 'GIGANTE', 'PEQUENO'], answer: 'PEQUENO', emoji: 'ðŸ˜', instruction: 'Ache o intruso! Qual destas nÃ£o pertence ao grupo?' },
+      { id: 9, type: 'intruder', words: ['GULOSO', 'FURIOSO', 'ZANGADO', 'IRRITADO'], answer: 'GULOSO', emoji: 'ðŸ˜¡', instruction: 'TrÃªs palavras sÃ£o iguais. Qual Ã© a intrusa?' },
 
-      // MECÂNICA 4: Construtor de Frases
-      { id: 10, type: 'sentence', preText: 'O cachorro é muito ', boldText: 'ESPERTO', postText: '.', answer: 'INTELIGENTE', options: ['INTELIGENTE', 'DORMINHOCO', 'LIGEIRO'], emoji: '🐶', instruction: 'Mude a palavra destacada sem alterar a frase!' },
-      { id: 11, type: 'sentence', preText: 'A sopa está muito ', boldText: 'SABOROSA', postText: '!', answer: 'DELICIOSA', options: ['QUENTE', 'DELICIOSA', 'SALGADA'], emoji: '🍲', instruction: 'Mude a palavra destacada sem alterar a frase!' },
-      { id: 12, type: 'sentence', preText: 'Aquele castelo é ', boldText: 'ANTIGO', postText: '.', answer: 'VELHO', options: ['NOVO', 'GIGANTE', 'VELHO'], emoji: '🏰', instruction: 'Mude a palavra destacada sem alterar a frase!' },
+      // MECÃ‚NICA 4: Construtor de Frases
+      { id: 10, type: 'sentence', preText: 'O cachorro Ã© muito ', boldText: 'ESPERTO', postText: '.', answer: 'INTELIGENTE', options: ['INTELIGENTE', 'DORMINHOCO', 'LIGEIRO'], emoji: 'ðŸ¶', instruction: 'Mude a palavra destacada sem alterar a frase!' },
+      { id: 11, type: 'sentence', preText: 'A sopa estÃ¡ muito ', boldText: 'SABOROSA', postText: '!', answer: 'DELICIOSA', options: ['QUENTE', 'DELICIOSA', 'SALGADA'], emoji: 'ðŸ²', instruction: 'Mude a palavra destacada sem alterar a frase!' },
+      { id: 12, type: 'sentence', preText: 'Aquele castelo Ã© ', boldText: 'ANTIGO', postText: '.', answer: 'VELHO', options: ['NOVO', 'GIGANTE', 'VELHO'], emoji: 'ðŸ°', instruction: 'Mude a palavra destacada sem alterar a frase!' },
     ];
 
     function App() {
@@ -96,10 +97,10 @@
       // Estados interativos
       const [draggedOption, setDraggedOption] = useState(null);
       const [isSuccess, setIsSuccess] = useState(false);
-      const [shakeWrong, setShakeWrong] = useState(null); // Agora guarda o valor específico para animar apenas o botão errado
+      const [shakeWrong, setShakeWrong] = useState(null); // Agora guarda o valor especÃ­fico para animar apenas o botÃ£o errado
       const [wrongAnswers, setWrongAnswers] = useState([]);
 
-      // Estados para a mecânica de "Ligar Pontos"
+      // Estados para a mecÃ¢nica de "Ligar Pontos"
       const [selectedLeft, setSelectedLeft] = useState(null);
       const [solvedPairs, setSolvedPairs] = useState([]);
 
@@ -121,7 +122,7 @@
         setShakeWrong(null);
       };
 
-      // Função genérica de vitória
+      // FunÃ§Ã£o genÃ©rica de vitÃ³ria
       const handleWin = () => {
         setIsSuccess(true);
         setStars(prev => prev + 1);
@@ -135,7 +136,7 @@
         }, 2500);
       };
 
-      // Lógica de Validação: Match, Intruder, Sentence
+      // LÃ³gica de ValidaÃ§Ã£o: Match, Intruder, Sentence
       const checkAnswer = (value) => {
         if (isSuccess || wrongAnswers.includes(value)) return;
 
@@ -148,7 +149,7 @@
         }
       };
 
-      // Lógica de Validação: Ligar Pontos
+      // LÃ³gica de ValidaÃ§Ã£o: Ligar Pontos
       const handleConnectRight = (rightWord) => {
         if (!selectedLeft) {
           alert("Escolha primeiro uma palavra da coluna da esquerda!");
@@ -161,19 +162,19 @@
           setSolvedPairs(newSolved);
           setSelectedLeft(null);
           
-          // Verifica se terminou todas as 3 ligações
+          // Verifica se terminou todas as 3 ligaÃ§Ãµes
           if (newSolved.length === level.leftWords.length) {
             handleWin();
           }
         } else {
-          // Errou a ligação
+          // Errou a ligaÃ§Ã£o
           setShakeWrong(rightWord);
           setTimeout(() => setShakeWrong(null), 400);
-          setSelectedLeft(null); // Limpa a seleção para a criança tentar novamente do zero
+          setSelectedLeft(null); // Limpa a seleÃ§Ã£o para a crianÃ§a tentar novamente do zero
         }
       };
 
-      // --- Drag & Drop Handlers (usado nas mecânicas 1 e 4) ---
+      // --- Drag & Drop Handlers (usado nas mecÃ¢nicas 1 e 4) ---
       const handleDragStart = (e, value) => {
         setDraggedOption(value);
         e.dataTransfer.setData('text/plain', value);
@@ -191,15 +192,15 @@
       if (gameState === 'cover') {
         return (
           <div className="min-h-screen jungle-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
-            <a href="../../index.html" className="absolute top-4 left-4 text-green-900 hover:text-green-700 font-bold bg-green-200/80 hover:bg-green-300 px-4 py-2 rounded-full transition-colors z-20 border-2 border-green-400">◀ Voltar</a>
-            <div className="absolute top-10 left-10 text-6xl opacity-40 leaf-anim">🌿</div>
-            <div className="absolute top-32 right-10 text-7xl opacity-40 leaf-anim" style={{animationDelay: '1s'}}>🦜</div>
-            <div className="absolute bottom-10 left-20 text-6xl opacity-40 leaf-anim" style={{animationDelay: '2s'}}>🐒</div>
+            <a href="../../index.html" className="absolute top-4 left-4 text-green-900 hover:text-green-700 font-bold bg-green-200/80 hover:bg-green-300 px-4 py-2 rounded-full transition-colors z-20 border-2 border-green-400">â—€ Voltar</a>
+            <div className="absolute top-10 left-10 text-6xl opacity-40 leaf-anim">ðŸŒ¿</div>
+            <div className="absolute top-32 right-10 text-7xl opacity-40 leaf-anim" style={{animationDelay: '1s'}}>ðŸ¦œ</div>
+            <div className="absolute bottom-10 left-20 text-6xl opacity-40 leaf-anim" style={{animationDelay: '2s'}}>ðŸ’</div>
 
             <div className="bg-white p-10 rounded-[3rem] shadow-2xl flex flex-col items-center text-center z-10 max-w-xl w-full border-8 border-emerald-600 mb-10">
-              <div className="text-8xl mb-4">🧭</div>
+              <div className="text-8xl mb-4">ðŸ§­</div>
               <h1 className="text-5xl font-black text-emerald-800 mb-2 tracking-tight uppercase">
-                Exploradores de<br/><span className="text-5xl text-emerald-500">Sinônimos</span>
+                Exploradores de<br/><span className="text-5xl text-emerald-500">SinÃ´nimos</span>
               </h1>
               <p className="text-gray-600 mb-8 text-xl font-bold px-4">
                 Prepare-se para uma aventura na selva das palavras que significam o mesmo!
@@ -223,16 +224,16 @@
         return (
           <div className="min-h-screen jungle-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
             <div className="bg-white p-10 rounded-[3rem] shadow-2xl flex flex-col items-center text-center z-10 max-w-lg w-full border-8 border-emerald-600">
-              <div className="text-8xl mb-4 pop-anim">🏆</div>
+              <div className="text-8xl mb-4 pop-anim">ðŸ†</div>
               <h1 className="text-5xl font-black text-emerald-800 mb-2 uppercase">
-                Você é um Mestre!
+                VocÃª Ã© um Mestre!
               </h1>
-              <p className="text-gray-600 mb-6 text-xl font-bold">Você descobriu todos os sinônimos!</p>
+              <p className="text-gray-600 mb-6 text-xl font-bold">VocÃª descobriu todos os sinÃ´nimos!</p>
               
               <div className="bg-emerald-100 border-4 border-emerald-400 rounded-3xl p-6 mb-8 w-full flex flex-col items-center">
                 <span className="text-emerald-800 font-bold uppercase mb-2">Estrelas de Explorador</span>
                 <div className="flex items-center text-6xl font-black text-amber-500">
-                  <span className="mr-4">⭐</span> x{stars}
+                  <span className="mr-4">â­</span> x{stars}
                 </div>
               </div>
 
@@ -248,12 +249,12 @@
       }
 
       // ------------------------------------------------------------------------
-      // TELA 2: JOGABILIDADE (Múltiplas Mecânicas)
+      // TELA 2: JOGABILIDADE (MÃºltiplas MecÃ¢nicas)
       // ------------------------------------------------------------------------
       return (
         <div className="min-h-screen w-full flex flex-col relative jungle-bg text-emerald-900">
           
-          {/* CABEÇALHO */}
+          {/* CABEÃ‡ALHO */}
           <div className="w-full flex justify-between items-center p-6 z-10 bg-white/30 backdrop-blur-sm shadow-sm rounded-b-3xl">
             <div className="flex flex-col">
               <h2 className="text-2xl md:text-3xl font-black uppercase text-emerald-800">
@@ -264,14 +265,14 @@
             
             <div className="flex items-center text-3xl font-black text-amber-500 drop-shadow-md">
               <span className="mr-2">x{stars}</span>
-              <span>⭐</span>
+              <span>â­</span>
             </div>
           </div>
 
           <div className="flex-1 flex flex-col items-center justify-center p-4 z-10 w-full max-w-5xl mx-auto">
             
             {/* ------------------------------------------------------------ */}
-            {/* MECÂNICA 1: MATCH (Arrastar e Largar)                          */}
+            {/* MECÃ‚NICA 1: MATCH (Arrastar e Largar)                          */}
             {/* ------------------------------------------------------------ */}
             {level.type === 'match' && (
               <div className="flex flex-col items-center w-full">
@@ -297,7 +298,7 @@
                       </span>
                     ) : (
                       <span className="text-emerald-700/40 text-2xl font-black animate-pulse uppercase text-center px-4">
-                        Arraste o<br/>sinônimo aqui!
+                        Arraste o<br/>sinÃ´nimo aqui!
                       </span>
                     )}
                   </div>
@@ -334,7 +335,7 @@
             )}
 
             {/* ------------------------------------------------------------ */}
-            {/* MECÂNICA 2: CONNECT (Ligar os Pontos) NOVA!                    */}
+            {/* MECÃ‚NICA 2: CONNECT (Ligar os Pontos) NOVA!                    */}
             {/* ------------------------------------------------------------ */}
             {level.type === 'connect' && (
               <div className="flex flex-col items-center w-full">
@@ -421,7 +422,7 @@
             )}
 
             {/* ------------------------------------------------------------ */}
-            {/* MECÂNICA 3: INTRUDER (Encontrar a palavra diferente)           */}
+            {/* MECÃ‚NICA 3: INTRUDER (Encontrar a palavra diferente)           */}
             {/* ------------------------------------------------------------ */}
             {level.type === 'intruder' && (
               <div className="flex flex-col items-center w-full">
@@ -463,7 +464,7 @@
             )}
 
             {/* ------------------------------------------------------------ */}
-            {/* MECÂNICA 4: SENTENCE (Substituir a palavra na frase)           */}
+            {/* MECÃ‚NICA 4: SENTENCE (Substituir a palavra na frase)           */}
             {/* ------------------------------------------------------------ */}
             {level.type === 'sentence' && (
               <div className="flex flex-col items-center w-full">
@@ -483,7 +484,7 @@
                     onDragOver={handleDragOver}
                     onDrop={handleDrop}
                     onClick={() => {
-                       if(!isSuccess) alert("Toque ou arraste uma das opções verdes aqui para dentro!");
+                       if(!isSuccess) alert("Toque ou arraste uma das opÃ§Ãµes verdes aqui para dentro!");
                     }}
                   >
                     {isSuccess ? (

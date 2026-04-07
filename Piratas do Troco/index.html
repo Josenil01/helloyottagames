@@ -1,81 +1,556 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Piratas do Troco</title>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
+    <title>Piratas do Troco - Contagem e Tesouro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
     <style>
-      * { box-sizing: border-box; }
-      body { margin: 0; min-height: 100vh; font-family: "Baloo 2", cursive; background: linear-gradient(170deg, #1e3a8a, #0b132b); color: #fff; }
-      .home { position: fixed; top: 12px; left: 12px; text-decoration: none; background: #ffffffec; color: #111827; padding: 8px 12px; border-radius: 999px; font-size: 1.4rem; }
-      .wrap { max-width: 900px; margin: 0 auto; padding: 64px 16px 20px; }
-      .card { background: #ffffff12; border: 2px solid #67e8f980; border-radius: 24px; padding: 16px; }
-      .center { text-align: center; }
-      .big { font-size: clamp(2rem, 7vw, 3.6rem); }
-      .mid { font-size: clamp(1.2rem, 4vw, 2rem); }
-      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 10px; }
-      .lvl, .opt { border: none; border-radius: 14px; padding: 12px 8px; font-family: inherit; font-size: 1.5rem; cursor: pointer; }
-      .lvl { background: #0f172a; color: #fff; border: 2px solid #93c5fd80; }
-      .lvl[disabled] { opacity: .35; }
-      .opt { color: #3f2f05; background: linear-gradient(145deg, #fcd34d, #f59e0b); box-shadow: 0 8px 16px #f59e0b55; }
-      .hud { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
-      .chip { background: #00000066; color: #fff; border-radius: 999px; padding: 4px 10px; font-size: 1.1rem; }
-      .fb { min-height: 30px; text-align: center; font-size: 1.4rem; }
+        :root {
+            --gold: #f59e0b;
+            --wood: #78350f;
+            --ocean: #0ea5e9;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --sand: #fde68a;
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Baloo 2", cursive;
+            background: var(--ocean);
+            overflow: hidden;
+            color: #fff;
+            user-select: none;
+        }
+
+        /* CenÃ¡rio com Navio Detalhado */
+        .scenery {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background: linear-gradient(to bottom, #0ea5e9 0%, #38bdf8 100%);
+        }
+
+        .ship-container {
+            position: absolute;
+            bottom: 40px;
+            left: -250px;
+            width: 220px;
+            animation: sail 35s linear infinite;
+            z-index: 1;
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));
+        }
+
+        @keyframes sail {
+            from { left: -250px; transform: scaleX(1); }
+            50% { left: 110%; transform: scaleX(1); }
+            51% { transform: scaleX(-1); }
+            to { left: -250px; transform: scaleX(-1); }
+        }
+
+        .wave {
+            position: absolute;
+            bottom: 0;
+            width: 200%;
+            height: 150px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%230284c7" d="M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,165.3C672,139,768,117,864,128C960,139,1056,181,1152,186.7C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-repeat: repeat-x;
+            animation: wave-move 10s linear infinite;
+            z-index: 2;
+        }
+        @keyframes wave-move { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+        /* Layout */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .hud {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .stat-badge {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 999px;
+            font-size: 1.1rem;
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+
+        .instruction-card {
+            background: rgba(255,255,255,0.9);
+            color: var(--wood);
+            padding: 12px;
+            border-radius: 20px;
+            margin: 10px 0;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .equation {
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 0;
+        }
+
+        .coins-container {
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            gap: 15px;
+            padding: 10px;
+        }
+
+        .coin {
+            width: 65px;
+            height: 65px;
+            background: var(--gold);
+            border: 4px solid #fbbf24;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            color: #78350f;
+            font-weight: 800;
+            box-shadow: 0 6px 0 #b45309, 0 10px 15px rgba(0,0,0,0.2);
+            transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            touch-action: none;
+        }
+
+        .coin.spent {
+            opacity: 0;
+            transform: scale(0) rotate(180deg);
+            pointer-events: none;
+        }
+
+        .coin.locked {
+            animation: pulse-gold 2s infinite;
+        }
+
+        .coin.selected {
+            border-color: #fff;
+            transform: scale(1.2) translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+        }
+
+        @keyframes pulse-gold {
+            0%, 100% { box-shadow: 0 6px 0 #b45309, 0 0 0 0px rgba(245, 158, 11, 0.4); }
+            50% { box-shadow: 0 6px 0 #b45309, 0 0 0 15px rgba(245, 158, 11, 0); }
+        }
+
+        .chest-area {
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            opacity: 0;
+            transition: opacity 0.5s;
+            pointer-events: none;
+        }
+
+        .chest-area.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .chest {
+            width: 140px;
+            height: 100px;
+            background: var(--wood);
+            border: 4px solid #451a03;
+            border-radius: 12px 12px 4px 4px;
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .chest::before {
+            content: "";
+            position: absolute;
+            top: 30%;
+            width: 100%;
+            height: 8px;
+            background: #451a03;
+        }
+
+        .chest-lock {
+            width: 20px;
+            height: 25px;
+            background: var(--gold);
+            border-radius: 4px;
+            border: 2px solid #b45309;
+            z-index: 2;
+        }
+
+        .chest.drag-over {
+            transform: scale(1.1);
+            background: #92400e;
+        }
+
+        .screen { display: none; height: 100%; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+        .screen.active { display: flex; }
+
+        .btn-large {
+            background: var(--gold);
+            color: #78350f;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.8rem;
+            font-family: inherit;
+            cursor: pointer;
+            box-shadow: 0 8px 0 #b45309;
+            font-weight: 800;
+            margin-top: 20px;
+        }
+
+        .level-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+            gap: 10px;
+            width: 100%;
+            max-width: 500px;
+            margin-top: 20px;
+        }
+
+        .lvl-btn {
+            aspect-ratio: 1;
+            border-radius: 12px;
+            border: 2px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.1);
+            color: white;
+            font-family: inherit;
+            cursor: pointer;
+        }
+        .lvl-btn.unlocked { border-color: var(--gold); background: rgba(245, 158, 11, 0.2); }
+
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        .modal-content {
+            background: #fef3c7;
+            padding: 30px;
+            border-radius: 30px;
+            text-align: center;
+            max-width: 350px;
+            width: 90%;
+            color: #78350f;
+            border: 6px solid var(--gold);
+        }
     </style>
-  </head>
-  <body>
-    <a class="home" href="../index.html">🏠</a>
-    <main class="wrap"><section id="app" class="card"></section></main>
+</head>
+<body>
+
+    <div class="scenery">
+        <!-- Navio Pirata Baseado na Imagem Enviada -->
+        <div class="ship-container">
+            <svg viewBox="0 0 200 200" width="220" xmlns="http://www.w3.org/2000/svg">
+                <!-- Casco do Navio -->
+                <path d="M20 140 Q100 180 180 140 L165 170 Q100 190 35 170 Z" fill="#78350f" stroke="#451a03" stroke-width="2"/>
+                <!-- CanhÃµes -->
+                <circle cx="50" cy="155" r="5" fill="#333" />
+                <circle cx="80" cy="160" r="5" fill="#333" />
+                <circle cx="120" cy="160" r="5" fill="#333" />
+                <circle cx="150" cy="155" r="5" fill="#333" />
+                
+                <!-- Mastro -->
+                <rect x="95" y="40" width="8" height="110" fill="#451a03" />
+                <rect x="90" y="35" width="18" height="12" fill="#5c2d12" />
+                
+                <!-- Vela Principal -->
+                <path d="M50 50 Q100 40 150 50 L145 130 Q100 120 55 130 Z" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+                <!-- Listras na Vela -->
+                <path d="M70 48 L73 126" stroke="#9ca3af" stroke-width="2" opacity="0.5"/>
+                <path d="M90 44 L92 122" stroke="#9ca3af" stroke-width="2" opacity="0.5"/>
+                <path d="M110 44 L112 122" stroke="#9ca3af" stroke-width="2" opacity="0.5"/>
+                <path d="M130 48 L133 126" stroke="#9ca3af" stroke-width="2" opacity="0.5"/>
+
+                <!-- Caveira na Vela -->
+                <circle cx="100" cy="85" r="14" fill="white" />
+                <circle cx="95" cy="83" r="3" fill="black" />
+                <circle cx="105" cy="83" r="3" fill="black" />
+                <path d="M96 92 Q100 95 104 92" fill="none" stroke="black" stroke-width="1"/>
+                <!-- Bandana Vermelha na Caveira -->
+                <path d="M86 78 Q100 70 114 78 L114 84 Q100 76 86 84 Z" fill="#ef4444" />
+                <path d="M114 78 L122 75 L120 82 Z" fill="#ef4444" />
+
+                <!-- Mastro Menor e Cordas -->
+                <path d="M40 142 L95 50" stroke="#451a03" stroke-width="1.5" opacity="0.6"/>
+                <path d="M160 142 L103 50" stroke="#451a03" stroke-width="1.5" opacity="0.6"/>
+
+                <!-- Bandeira no Topo -->
+                <rect x="103" y="10" width="30" height="20" fill="black" />
+                <circle cx="115" cy="20" r="4" fill="white" />
+                <rect x="99" y="5" width="4" height="40" fill="#451a03" />
+            </svg>
+        </div>
+        <div class="wave"></div>
+    </div>
+
+    <div class="container">
+        <!-- HOME -->
+        <div id="screen-home" class="screen active">
+            <h1 style="font-size: 3rem; text-shadow: 3px 3px rgba(0,0,0,0.3);">ðŸ´â€â˜ ï¸ Piratas do Troco</h1>
+            <p style="font-size: 1.5rem;">Aprende a contar moedas!</p>
+            <button class="btn-large" onclick="changeScreen('levels')">COMEÃ‡AR!</button>
+        </div>
+
+        <!-- NÃVEIS -->
+        <div id="screen-levels" class="screen">
+            <h2 style="font-size: 2rem;">Mapa das Ilhas</h2>
+            <div class="level-grid" id="level-grid"></div>
+            <button class="btn-large" style="font-size: 1rem; padding: 10px 20px;" onclick="changeScreen('home')">VOLTAR</button>
+        </div>
+
+        <!-- JOGO -->
+        <div id="screen-game" class="screen">
+            <div class="hud" style="width: 100%;">
+                <div class="stat-badge" id="game-info">Ilha 1</div>
+                <div class="stat-badge" id="click-counter">Tira: 0/0</div>
+                <button class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer; border:none">âœ•</button>
+            </div>
+
+            <div class="instruction-card">
+                <div id="instruction-text">Tens 10 moedas. Gasta 7 delas!</div>
+                <div class="equation" id="equation-display">10 - 7 = ?</div>
+            </div>
+
+            <div class="coins-container" id="coins-area"></div>
+
+            <div class="chest-area" id="chest-zone">
+                <div class="chest" id="treasure-chest" ondragover="allowDrop(event)" ondrop="dropCoin(event)" onclick="chestClicked()">
+                    <div class="chest-lock"></div>
+                    <span style="font-size: 0.8rem; margin-top: 5px; font-weight: 800;">BAÃš</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2 style="margin:0">MUITO BEM!</h2>
+            <div style="font-size: 4rem;">ðŸ’°</div>
+            <p id="result-msg">Contaste certinho!</p>
+            <button class="btn-large" onclick="handleNext()">PRÃ“XIMA ILHA</button>
+        </div>
+    </div>
+
     <script>
-      const LEVELS = [[5, 7], [6, 9], [7, 10], [8, 12], [9, 14], [11, 16], [12, 18], [14, 20], [16, 23], [17, 25], [18, 27], [19, 30]];
-      const SKEY = 'g1-pirata-v2';
-      const app = document.getElementById('app');
-      let state = 'cover', i = 0, tries = 0, score = 0;
-      const pg = load();
+        const LEVELS = [
+            [2, 5], [3, 6], [4, 7], [5, 10], [7, 12], [8, 15], 
+            [10, 15], [12, 18], [15, 20], [10, 25], [18, 30], [20, 40]
+        ];
+        
+        let unlocked = 1;
+        let currentLevelIdx = 0;
+        let spentCount = 0;
+        let chestCount = 0;
+        let isComplete = false;
+        let selectedCoin = null;
 
-      function load() {
-        const b = { unlocked: 1, stars: Array(LEVELS.length).fill(0) };
-        try {
-          const d = JSON.parse(localStorage.getItem(SKEY));
-          if (!d) return b;
-          return { unlocked: Math.min(LEVELS.length, Math.max(1, Number(d.unlocked || 1))), stars: Array.isArray(d.stars) ? d.stars.slice(0, LEVELS.length).map((x) => Number(x || 0)) : b.stars };
-        } catch { return b; }
-      }
-      function save() { localStorage.setItem(SKEY, JSON.stringify(pg)); }
-      function medal() { const t = pg.stars.reduce((a, b) => a + b, 0), m = LEVELS.length * 3; return t >= m * 0.85 ? '🥇' : t >= m * 0.6 ? '🥈' : '🥉'; }
-      function mkOptions(ans) { const s = new Set([ans]); while (s.size < 3) s.add(Math.max(0, ans + (Math.floor(Math.random() * 7) - 3))); return [...s].sort(() => Math.random() - 0.5); }
-      function earnedByTry(n) { return n === 1 ? 3 : n === 2 ? 2 : 1; }
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        function playSfx(freq, type = 'sine', vol = 0.05) {
+            try {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = type;
+                osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+                gain.gain.setValueAtTime(vol, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.1);
+                osc.connect(gain); gain.connect(audioCtx.destination);
+                osc.start(); osc.stop(audioCtx.currentTime + 0.1);
+            } catch(e) {}
+        }
 
-      function render() { if (state === 'cover') return cover(); if (state === 'select') return select(); play(); }
-      function cover() {
-        app.innerHTML = `<p class="center big">🏴‍☠️💰➖</p><p class="center big">${medal()}</p><p class="center"><button id="go" class="lvl" style="font-size:2.2rem">▶️</button></p>`;
-        document.getElementById('go').onclick = () => { state = 'select'; render(); };
-      }
-      function select() {
-        app.innerHTML = `<p class="center mid">💰 ⭐ ${pg.stars.reduce((a,b)=>a+b,0)}/${LEVELS.length*3}</p><div class="grid">${LEVELS.map((_, k) => `<button class="lvl" data-k="${k}" ${k + 1 > pg.unlocked ? 'disabled' : ''}>${k + 1}<br>${'⭐'.repeat(pg.stars[k] || 0) || '▫️'}</button>`).join('')}</div><p class="center" style="margin-top:10px"><button id="back" class="lvl">◀️</button></p>`;
-        app.querySelectorAll('.lvl[data-k]').forEach((b) => b.onclick = () => { i = Number(b.dataset.k); tries = 0; state = 'play'; render(); });
-        document.getElementById('back').onclick = () => { state = 'cover'; render(); };
-      }
-      function play() {
-        const [cost, paid] = LEVELS[i], ans = paid - cost;
-        app.innerHTML = `<div class="hud"><span class="chip">${i + 1}/${LEVELS.length}</span><span class="chip">⭐ ${pg.stars[i] || 0}</span><span class="chip">🏅 ${score}</span></div><p class="center big">💰 ${paid} - ${cost} = ?</p><div class="grid">${mkOptions(ans).map((n) => `<button class="opt" data-n="${n}">${n}</button>`).join('')}</div><div id="fb" class="fb"></div><p class="center" style="margin-top:10px"><button id="menu" class="lvl">📚</button></p>`;
-        app.querySelectorAll('.opt').forEach((btn) => btn.onclick = () => {
-          tries += 1;
-          const n = Number(btn.dataset.n), fb = document.getElementById('fb');
-          if (n === ans) {
-            const e = earnedByTry(tries);
-            pg.stars[i] = Math.max(pg.stars[i], e);
-            pg.unlocked = Math.max(pg.unlocked, Math.min(LEVELS.length, i + 2));
-            save();
-            score += 8 + e;
-            fb.textContent = '✅ ' + '⭐'.repeat(e);
-            setTimeout(() => { state = 'select'; render(); }, 600);
-          } else fb.textContent = '❌';
-        });
-        document.getElementById('menu').onclick = () => { state = 'select'; render(); };
-      }
-      render();
+        function changeScreen(id) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById('screen-' + id).classList.add('active');
+            if(id === 'levels') renderLevels();
+        }
+
+        function renderLevels() {
+            const grid = document.getElementById('level-grid');
+            grid.innerHTML = '';
+            LEVELS.forEach((_, i) => {
+                const btn = document.createElement('button');
+                btn.className = `lvl-btn ${i < unlocked ? 'unlocked' : ''}`;
+                btn.textContent = i + 1;
+                btn.disabled = i >= unlocked;
+                btn.onclick = () => startLevel(i);
+                grid.appendChild(btn);
+            });
+        }
+
+        function startLevel(idx) {
+            currentLevelIdx = idx;
+            spentCount = 0;
+            chestCount = 0;
+            isComplete = false;
+            selectedCoin = null;
+            const [cost, total] = LEVELS[idx];
+            
+            document.getElementById('game-info').textContent = `Ilha ${idx + 1}`;
+            document.getElementById('instruction-text').textContent = `Tens ${total} moedas. Gasta ${cost} para pagar!`;
+            document.getElementById('equation-display').textContent = `${total} - ${cost} = ?`;
+            document.getElementById('chest-zone').classList.remove('active');
+            updateCounter(cost);
+            
+            const area = document.getElementById('coins-area');
+            area.innerHTML = '';
+            
+            for(let i=0; i<total; i++) {
+                const coin = document.createElement('div');
+                coin.className = 'coin';
+                coin.innerHTML = '$';
+                coin.id = 'coin-' + i;
+                coin.onclick = () => handleCoinClick(coin, cost);
+                
+                coin.ondragstart = (e) => {
+                    if(!isComplete) return;
+                    e.dataTransfer.setData("text", e.target.id);
+                    coin.classList.add('selected');
+                };
+                
+                area.appendChild(coin);
+            }
+            
+            changeScreen('game');
+        }
+
+        function updateCounter(target) {
+            if(!isComplete) {
+                document.getElementById('click-counter').textContent = `Tira: ${spentCount} / ${target}`;
+            } else {
+                const remaining = LEVELS[currentLevelIdx][1] - LEVELS[currentLevelIdx][0];
+                document.getElementById('click-counter').textContent = `No BaÃº: ${chestCount} / ${remaining}`;
+            }
+        }
+
+        function handleCoinClick(el, target) {
+            if(!isComplete) {
+                if(el.classList.contains('spent')) return;
+                playSfx(800 + Math.random() * 200);
+                el.classList.add('spent');
+                spentCount++;
+                updateCounter(target);
+
+                if(spentCount === target) {
+                    isComplete = true;
+                    prepareChestPhase();
+                }
+            } 
+            else {
+                if(el.classList.contains('spent')) return;
+                document.querySelectorAll('.coin').forEach(c => c.classList.remove('selected'));
+                selectedCoin = el;
+                el.classList.add('selected');
+                playSfx(400, 'triangle');
+            }
+        }
+
+        function prepareChestPhase() {
+            const [cost, total] = LEVELS[currentLevelIdx];
+            const remaining = total - cost;
+            
+            document.getElementById('equation-display').textContent = `${total} - ${cost} = ${remaining}`;
+            document.getElementById('instruction-text').textContent = `Agora guarda o teu troco de ${remaining} moedas no baÃº!`;
+            document.getElementById('chest-zone').classList.add('active');
+            updateCounter();
+
+            const coins = document.querySelectorAll('.coin:not(.spent)');
+            coins.forEach(c => {
+                c.classList.add('locked');
+                c.setAttribute('draggable', 'true');
+            });
+        }
+
+        function chestClicked() {
+            if(selectedCoin && !selectedCoin.classList.contains('spent')) {
+                moveToChest(selectedCoin);
+            }
+        }
+
+        function allowDrop(e) {
+            e.preventDefault();
+            document.getElementById('treasure-chest').classList.add('drag-over');
+        }
+
+        function dropCoin(e) {
+            e.preventDefault();
+            document.getElementById('treasure-chest').classList.remove('drag-over');
+            const coinId = e.dataTransfer.getData("text");
+            const coinEl = document.getElementById(coinId);
+            if(coinEl) moveToChest(coinEl);
+        }
+
+        function moveToChest(el) {
+            playSfx(1200, 'sine', 0.03);
+            el.classList.add('spent');
+            el.classList.remove('selected');
+            chestCount++;
+            updateCounter();
+
+            const [cost, total] = LEVELS[currentLevelIdx];
+            const remaining = total - cost;
+
+            if(chestCount === remaining) {
+                setTimeout(showVictory, 600);
+            }
+        }
+
+        function showVictory() {
+            const [cost, total] = LEVELS[currentLevelIdx];
+            const remaining = total - cost;
+            const modal = document.getElementById('result-modal');
+            document.getElementById('result-msg').textContent = `Pagaste o pirata e guardaste as tuas ${remaining} moedas no baÃº!`;
+            modal.style.display = 'flex';
+            if(currentLevelIdx + 1 >= unlocked) unlocked = currentLevelIdx + 2;
+        }
+
+        function handleNext() {
+            document.getElementById('result-modal').style.display = 'none';
+            if(currentLevelIdx + 1 < LEVELS.length) {
+                startLevel(currentLevelIdx + 1);
+            } else {
+                changeScreen('levels');
+            }
+        }
+
+        window.onload = () => renderLevels();
     </script>
-  </body>
+</body>
 </html>

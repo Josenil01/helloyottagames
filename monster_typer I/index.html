@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
     <title>Aprenda a Digitar - Letra Inicial</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
@@ -44,7 +45,7 @@
             max-width: 100%;
         }
         
-        /* Animações */
+        /* AnimaÃ§Ãµes */
         @keyframes success-pop {
             0% { transform: scale(1); }
             50% { transform: scale(1.1); color: #22c55e; }
@@ -97,41 +98,41 @@
 
     <!-- TELA INICIAL -->
     <div id="screen-start" class="screen active-screen justify-center bg-gradient-to-b from-teal-400 to-blue-500 text-white text-center">
-            <a href="../../index.html" class="absolute top-4 left-4 text-teal-100 hover:text-teal-300 font-bold bg-teal-700/80 hover:bg-teal-800 px-4 py-2 rounded-full transition-colors z-20 border-2 border-teal-300">◀ Voltar</a>
-        <h1 class="text-6xl md:text-8xl font-game mb-8 drop-shadow-xl leading-tight">QUAL É A<br>LETRA?</h1>
+            <a href="../../index.html" class="absolute top-4 left-4 text-teal-100 hover:text-teal-300 font-bold bg-teal-700/80 hover:bg-teal-800 px-4 py-2 rounded-full transition-colors z-20 border-2 border-teal-300">â—€ Voltar</a>
+        <h1 class="text-6xl md:text-8xl font-game mb-8 drop-shadow-xl leading-tight">QUAL Ã‰ A<br>LETRA?</h1>
         <div class="w-64 h-64 bg-white rounded-full flex items-center justify-center border-8 border-yellow-300 shadow-2xl mb-12 overflow-hidden rotate-3">
             <span class="text-teal-500 font-game text-8xl">A a</span>
         </div>
         <button onclick="showScreen('screen-mode')" class="bg-yellow-400 hover:bg-yellow-500 text-teal-900 font-game text-4xl px-12 py-4 rounded-full shadow-lg transform transition hover:scale-110 active:scale-95 border-b-8 border-yellow-600">
-            COMEÇAR!
+            COMEÃ‡AR!
         </button>
     </div>
 
-    <!-- TELA DE SELEÇÃO DE MODO -->
+    <!-- TELA DE SELEÃ‡ÃƒO DE MODO -->
     <div id="screen-mode" class="screen bg-teal-50 justify-center">
         <h2 class="text-4xl font-game text-teal-600 mb-12 text-center">QUEM VAI JOGAR?</h2>
         <div class="flex flex-col md:flex-row gap-8 w-full max-w-4xl px-4">
             <button onclick="setMode('infantil')" class="mode-card flex-1 bg-white p-8 rounded-[3rem] border-4 border-teal-200 text-center shadow-xl">
-                <div class="text-6xl mb-4">👶</div>
+                <div class="text-6xl mb-4">ðŸ‘¶</div>
                 <div class="text-3xl font-game text-teal-600 mb-2">INFANTIL</div>
-                <p class="text-teal-400 font-bold">Letras Grandes<br>(MAIÚSCULAS)</p>
+                <p class="text-teal-400 font-bold">Letras Grandes<br>(MAIÃšSCULAS)</p>
             </button>
 
             <button onclick="setMode('fundamental')" class="mode-card flex-1 bg-white p-8 rounded-[3rem] border-4 border-purple-200 text-center shadow-xl">
-                <div class="text-6xl mb-4">🎒</div>
+                <div class="text-6xl mb-4">ðŸŽ’</div>
                 <div class="text-3xl font-game text-purple-600 mb-2">FUNDAMENTAL I</div>
-                <p class="text-purple-400 font-bold">Maiúsculas e Minúsculas<br>(A a - abelha)</p>
+                <p class="text-purple-400 font-bold">MaiÃºsculas e MinÃºsculas<br>(A a - abelha)</p>
             </button>
         </div>
-        <button onclick="showScreen('screen-start')" class="mt-12 text-teal-600 font-bold underline">Voltar ao início</button>
+        <button onclick="showScreen('screen-start')" class="mt-12 text-teal-600 font-bold underline">Voltar ao inÃ­cio</button>
     </div>
 
-    <!-- TELA DE SELEÇÃO DE NÍVEIS -->
+    <!-- TELA DE SELEÃ‡ÃƒO DE NÃVEIS -->
     <div id="screen-levels" class="screen bg-teal-50">
         <div class="max-w-4xl w-full">
             <div class="flex justify-between items-center mb-8">
-                <button onclick="showScreen('screen-mode')" class="bg-white text-teal-600 font-bold px-4 py-2 rounded-xl shadow-sm border-2 border-teal-100">← VOLTAR</button>
-                <h2 class="text-4xl font-game text-teal-600">ESCOLHA O NÍVEL</h2>
+                <button onclick="showScreen('screen-mode')" class="bg-white text-teal-600 font-bold px-4 py-2 rounded-xl shadow-sm border-2 border-teal-100">â† VOLTAR</button>
+                <h2 class="text-4xl font-game text-teal-600">ESCOLHA O NÃVEL</h2>
                 <div class="w-20"></div>
             </div>
             <div id="levels-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"></div>
@@ -144,7 +145,7 @@
             <div class="flex justify-between items-center mb-4">
                 <button onclick="quitGame()" class="bg-white px-6 py-2 rounded-xl font-bold border-2 border-teal-200 text-teal-600 shadow-sm hover:bg-teal-50 transition-colors">SAIR</button>
                 <div class="flex flex-col items-end">
-                    <div class="text-xl font-game text-teal-600" id="level-title">NÍVEL 1</div>
+                    <div class="text-xl font-game text-teal-600" id="level-title">NÃVEL 1</div>
                     <div class="text-sm font-bold text-teal-400" id="phase-counter">FASE 1 / 8</div>
                 </div>
             </div>
@@ -156,7 +157,7 @@
 
             <div class="flex flex-col md:flex-row items-center justify-around bg-white p-6 md:p-12 rounded-[4rem] shadow-2xl border-b-8 border-teal-100 relative min-h-[500px] gap-4">
                 <div class="w-64 h-64 md:w-80 md:h-80 bg-teal-50 rounded-[3rem] border-4 border-dashed border-teal-200 flex items-center justify-center shrink-0">
-                    <span id="display-emoji" class="text-8xl md:text-9xl select-none">🎯</span>
+                    <span id="display-emoji" class="text-8xl md:text-9xl select-none">ðŸŽ¯</span>
                 </div>
 
                 <div class="flex flex-col items-center mt-4 md:mt-0 text-center">
@@ -167,18 +168,18 @@
 
             <div class="text-center mt-10">
                 <div class="inline-flex items-center gap-3 bg-teal-100 text-teal-800 px-8 py-4 rounded-full shadow-sm">
-                    <span class="text-3xl">⌨️</span>
+                    <span class="text-3xl">âŒ¨ï¸</span>
                     <p class="text-xl font-bold" id="instruction-text">Carregue na tecla correta!</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- MODAL DE VITÓRIA -->
+    <!-- MODAL DE VITÃ“RIA -->
     <div id="win-modal" class="fixed inset-0 bg-teal-900/90 flex items-center justify-center hidden z-50 backdrop-blur-sm">
         <div class="bg-white p-12 rounded-[3rem] text-center shadow-2xl border-8 border-yellow-400 max-w-sm mx-4 transform scale-105">
-            <h2 class="text-5xl font-game text-teal-600 mb-4" id="modal-title">NÍVEL CONCLUÍDO!</h2>
-            <div class="text-8xl mb-6">🌟</div>
+            <h2 class="text-5xl font-game text-teal-600 mb-4" id="modal-title">NÃVEL CONCLUÃDO!</h2>
+            <div class="text-8xl mb-6">ðŸŒŸ</div>
             <p class="text-xl font-bold text-gray-600 mb-8" id="modal-msg">Muito bem!</p>
             <button onclick="showScreen('screen-levels')" class="bg-green-500 hover:bg-green-600 text-white font-game text-3xl py-4 px-12 rounded-full shadow-lg border-b-8 border-green-700 active:translate-y-1 active:border-b-0 transition-all">
                 CONTINUAR
@@ -189,138 +190,138 @@
     <script>
         const gameData = [
     {
-        name: "Nível 1",
+        name: "NÃ­vel 1",
         phases: [
-            { letter: 'A', word: 'ABELHA', emoji: '🐝' },
-            { letter: 'A', word: 'ANEL', emoji: '💍' },
-            { letter: 'A', word: 'AVIÃO', emoji: '✈️' },
-            { letter: 'A', word: 'ABACAXI', emoji: '🍍' },
-            { letter: 'A', word: 'ARANHA', emoji: '🕷️' },
-            { letter: 'B', word: 'BOLA', emoji: '⚽' },
-            { letter: 'B', word: 'BALA', emoji: '🍬' },
-            { letter: 'B', word: 'BONECA', emoji: '🪆' },
-            { letter: 'B', word: 'BALEIA', emoji: '🐋' },
-            { letter: 'B', word: 'BOTA', emoji: '👢' },
-            { letter: 'C', word: 'CASA', emoji: '🏠' },
-            { letter: 'C', word: 'CARRO', emoji: '🚗' },
-            { letter: 'C', word: 'COELHO', emoji: '🐰' },
-            { letter: 'C', word: 'COBRA', emoji: '🐍' },
-            { letter: 'C', word: 'CAMA', emoji: '🛏️' },
-            { letter: 'D', word: 'DADO', emoji: '🎲' },
-            { letter: 'D', word: 'DENTE', emoji: '🦷' },
-            { letter: 'D', word: 'DOCE', emoji: '🍰' },
-            { letter: 'D', word: 'DINOSSAURO', emoji: '🦕' },
-            { letter: 'D', word: 'DEDO', emoji: '🤚' },
-            { letter: 'E', word: 'ELEFANTE', emoji: '🐘' },
-            { letter: 'E', word: 'ESTRELA', emoji: '⭐' },
-            { letter: 'E', word: 'ESCOVA', emoji: '🪥' },
-            { letter: 'E', word: 'ESPELHO', emoji: '🪞' },
-            { letter: 'E', word: 'ESQUILO', emoji: '🐿️' },
-            { letter: 'F', word: 'FOCA', emoji: '🦭' },
-            { letter: 'F', word: 'FOGO', emoji: '🔥' },
-            { letter: 'F', word: 'FACA', emoji: '🔪' },
-            { letter: 'F', word: 'FLOR', emoji: '🌸' },
-            { letter: 'F', word: 'FORMIGA', emoji: '🐜' },
-            { letter: 'G', word: 'GATO', emoji: '🐱' },
-            { letter: 'G', word: 'GALINHA', emoji: '🐔' },
-            { letter: 'G', word: 'GELO', emoji: '🧊' },
-            { letter: 'G', word: 'GIRAFA', emoji: '🦒' },
-            { letter: 'G', word: 'GAIOLA', emoji: '🐦' },
-            { letter: 'H', word: 'HIPOPÓTAMO', emoji: '🦛' },
-            { letter: 'H', word: 'HARPA', emoji: '🎵' },
-            { letter: 'H', word: 'HÉLICE', emoji: '🌀' },
-            { letter: 'H', word: 'HELICÓPTERO', emoji: '🚁' },
-            { letter: 'H', word: 'HOMEM', emoji: '👨' }
+            { letter: 'A', word: 'ABELHA', emoji: 'ðŸ' },
+            { letter: 'A', word: 'ANEL', emoji: 'ðŸ’' },
+            { letter: 'A', word: 'AVIÃƒO', emoji: 'âœˆï¸' },
+            { letter: 'A', word: 'ABACAXI', emoji: 'ðŸ' },
+            { letter: 'A', word: 'ARANHA', emoji: 'ðŸ•·ï¸' },
+            { letter: 'B', word: 'BOLA', emoji: 'âš½' },
+            { letter: 'B', word: 'BALA', emoji: 'ðŸ¬' },
+            { letter: 'B', word: 'BONECA', emoji: 'ðŸª†' },
+            { letter: 'B', word: 'BALEIA', emoji: 'ðŸ‹' },
+            { letter: 'B', word: 'BOTA', emoji: 'ðŸ‘¢' },
+            { letter: 'C', word: 'CASA', emoji: 'ðŸ ' },
+            { letter: 'C', word: 'CARRO', emoji: 'ðŸš—' },
+            { letter: 'C', word: 'COELHO', emoji: 'ðŸ°' },
+            { letter: 'C', word: 'COBRA', emoji: 'ðŸ' },
+            { letter: 'C', word: 'CAMA', emoji: 'ðŸ›ï¸' },
+            { letter: 'D', word: 'DADO', emoji: 'ðŸŽ²' },
+            { letter: 'D', word: 'DENTE', emoji: 'ðŸ¦·' },
+            { letter: 'D', word: 'DOCE', emoji: 'ðŸ°' },
+            { letter: 'D', word: 'DINOSSAURO', emoji: 'ðŸ¦•' },
+            { letter: 'D', word: 'DEDO', emoji: 'ðŸ¤š' },
+            { letter: 'E', word: 'ELEFANTE', emoji: 'ðŸ˜' },
+            { letter: 'E', word: 'ESTRELA', emoji: 'â­' },
+            { letter: 'E', word: 'ESCOVA', emoji: 'ðŸª¥' },
+            { letter: 'E', word: 'ESPELHO', emoji: 'ðŸªž' },
+            { letter: 'E', word: 'ESQUILO', emoji: 'ðŸ¿ï¸' },
+            { letter: 'F', word: 'FOCA', emoji: 'ðŸ¦­' },
+            { letter: 'F', word: 'FOGO', emoji: 'ðŸ”¥' },
+            { letter: 'F', word: 'FACA', emoji: 'ðŸ”ª' },
+            { letter: 'F', word: 'FLOR', emoji: 'ðŸŒ¸' },
+            { letter: 'F', word: 'FORMIGA', emoji: 'ðŸœ' },
+            { letter: 'G', word: 'GATO', emoji: 'ðŸ±' },
+            { letter: 'G', word: 'GALINHA', emoji: 'ðŸ”' },
+            { letter: 'G', word: 'GELO', emoji: 'ðŸ§Š' },
+            { letter: 'G', word: 'GIRAFA', emoji: 'ðŸ¦’' },
+            { letter: 'G', word: 'GAIOLA', emoji: 'ðŸ¦' },
+            { letter: 'H', word: 'HIPOPÃ“TAMO', emoji: 'ðŸ¦›' },
+            { letter: 'H', word: 'HARPA', emoji: 'ðŸŽµ' },
+            { letter: 'H', word: 'HÃ‰LICE', emoji: 'ðŸŒ€' },
+            { letter: 'H', word: 'HELICÃ“PTERO', emoji: 'ðŸš' },
+            { letter: 'H', word: 'HOMEM', emoji: 'ðŸ‘¨' }
         ]
     },
     {
-        name: "Nível 2",
+        name: "NÃ­vel 2",
         phases: [
-            { letter: 'I', word: 'IGREJA', emoji: '⛪' },
-            { letter: 'I', word: 'ILHA', emoji: '🏝️' },
-            { letter: 'I', word: 'IOIÔ', emoji: '🪀' },
-            { letter: 'I', word: 'ÍMÃ', emoji: '🧲' },
-            { letter: 'I', word: 'INVERNO', emoji: '❄️' },
-            { letter: 'J', word: 'JACARÉ', emoji: '🐊' },
-            { letter: 'J', word: 'JANELA', emoji: '🪟' },
-            { letter: 'J', word: 'JOGO', emoji: '🎮' },
-            { letter: 'J', word: 'JARRO', emoji: '🏺' },
-            { letter: 'J', word: 'JACA', emoji: '🍈' },
-            { letter: 'K', word: 'KIWI', emoji: '🥝' },
-            { letter: 'K', word: 'KART', emoji: '🏎️' },
-            { letter: 'K', word: 'KOMBI', emoji: '🚐' },
-            { letter: 'K', word: 'KARAOKÊ', emoji: '🎤' },
-            { letter: 'K', word: 'KUNG-FU', emoji: '🥋' },
-            { letter: 'L', word: 'LEÃO', emoji: '🦁' },
-            { letter: 'L', word: 'LIVRO', emoji: '📚' },
-            { letter: 'L', word: 'LUA', emoji: '🌙' },
-            { letter: 'L', word: 'LÁPIS', emoji: '✏️' },
-            { letter: 'L', word: 'LARANJA', emoji: '🍊' },
-            { letter: 'M', word: 'MACACO', emoji: '🐒' },
-            { letter: 'M', word: 'MALA', emoji: '💼' },
-            { letter: 'M', word: 'MÃO', emoji: '🤚' },
-            { letter: 'M', word: 'MILHO', emoji: '🌽' },
-            { letter: 'M', word: 'MORANGO', emoji: '🍓' },
-            { letter: 'N', word: 'NAVIO', emoji: '🚢' },
-            { letter: 'N', word: 'NINHO', emoji: '🪺' },
-            { letter: 'N', word: 'NUVEM', emoji: '☁️' },
-            { letter: 'N', word: 'NARIZ', emoji: '👃' },
-            { letter: 'N', word: 'NEVE', emoji: '🌨️' },
-            { letter: 'O', word: 'OVO', emoji: '🥚' },
-            { letter: 'O', word: 'OLHO', emoji: '👁️' },
-            { letter: 'O', word: 'ONÇA', emoji: '🐆' },
-            { letter: 'O', word: 'OURO', emoji: '💰' },
-            { letter: 'O', word: 'ORELHA', emoji: '👂' },
-            { letter: 'P', word: 'PATO', emoji: '🦆' },
-            { letter: 'P', word: 'PEIXE', emoji: '🐟' },
-            { letter: 'P', word: 'PIPA', emoji: '🪁' },
-            { letter: 'P', word: 'PORCO', emoji: '🐷' },
-            { letter: 'P', word: 'PÃO', emoji: '🍞' }
+            { letter: 'I', word: 'IGREJA', emoji: 'â›ª' },
+            { letter: 'I', word: 'ILHA', emoji: 'ðŸï¸' },
+            { letter: 'I', word: 'IOIÃ”', emoji: 'ðŸª€' },
+            { letter: 'I', word: 'ÃMÃƒ', emoji: 'ðŸ§²' },
+            { letter: 'I', word: 'INVERNO', emoji: 'â„ï¸' },
+            { letter: 'J', word: 'JACARÃ‰', emoji: 'ðŸŠ' },
+            { letter: 'J', word: 'JANELA', emoji: 'ðŸªŸ' },
+            { letter: 'J', word: 'JOGO', emoji: 'ðŸŽ®' },
+            { letter: 'J', word: 'JARRO', emoji: 'ðŸº' },
+            { letter: 'J', word: 'JACA', emoji: 'ðŸˆ' },
+            { letter: 'K', word: 'KIWI', emoji: 'ðŸ¥' },
+            { letter: 'K', word: 'KART', emoji: 'ðŸŽï¸' },
+            { letter: 'K', word: 'KOMBI', emoji: 'ðŸš' },
+            { letter: 'K', word: 'KARAOKÃŠ', emoji: 'ðŸŽ¤' },
+            { letter: 'K', word: 'KUNG-FU', emoji: 'ðŸ¥‹' },
+            { letter: 'L', word: 'LEÃƒO', emoji: 'ðŸ¦' },
+            { letter: 'L', word: 'LIVRO', emoji: 'ðŸ“š' },
+            { letter: 'L', word: 'LUA', emoji: 'ðŸŒ™' },
+            { letter: 'L', word: 'LÃPIS', emoji: 'âœï¸' },
+            { letter: 'L', word: 'LARANJA', emoji: 'ðŸŠ' },
+            { letter: 'M', word: 'MACACO', emoji: 'ðŸ’' },
+            { letter: 'M', word: 'MALA', emoji: 'ðŸ’¼' },
+            { letter: 'M', word: 'MÃƒO', emoji: 'ðŸ¤š' },
+            { letter: 'M', word: 'MILHO', emoji: 'ðŸŒ½' },
+            { letter: 'M', word: 'MORANGO', emoji: 'ðŸ“' },
+            { letter: 'N', word: 'NAVIO', emoji: 'ðŸš¢' },
+            { letter: 'N', word: 'NINHO', emoji: 'ðŸªº' },
+            { letter: 'N', word: 'NUVEM', emoji: 'â˜ï¸' },
+            { letter: 'N', word: 'NARIZ', emoji: 'ðŸ‘ƒ' },
+            { letter: 'N', word: 'NEVE', emoji: 'ðŸŒ¨ï¸' },
+            { letter: 'O', word: 'OVO', emoji: 'ðŸ¥š' },
+            { letter: 'O', word: 'OLHO', emoji: 'ðŸ‘ï¸' },
+            { letter: 'O', word: 'ONÃ‡A', emoji: 'ðŸ†' },
+            { letter: 'O', word: 'OURO', emoji: 'ðŸ’°' },
+            { letter: 'O', word: 'ORELHA', emoji: 'ðŸ‘‚' },
+            { letter: 'P', word: 'PATO', emoji: 'ðŸ¦†' },
+            { letter: 'P', word: 'PEIXE', emoji: 'ðŸŸ' },
+            { letter: 'P', word: 'PIPA', emoji: 'ðŸª' },
+            { letter: 'P', word: 'PORCO', emoji: 'ðŸ·' },
+            { letter: 'P', word: 'PÃƒO', emoji: 'ðŸž' }
         ]
     },
     {
-        name: "Nível 3",
+        name: "NÃ­vel 3",
         phases: [
-            { letter: 'Q', word: 'QUEIJO', emoji: '🧀' },
-            { letter: 'Q', word: 'QUADRO', emoji: '🖼️' },
-            { letter: 'Q', word: 'QUIABO', emoji: '🫛' },
-            { letter: 'Q', word: 'QUINDIM', emoji: '🍮' },
-            { letter: 'Q', word: 'QUATI', emoji: '🦝' },
-            { letter: 'R', word: 'RATO', emoji: '🐭' },
-            { letter: 'R', word: 'REI', emoji: '👑' },
-            { letter: 'R', word: 'RIO', emoji: '🏞️' },
-            { letter: 'R', word: 'RODA', emoji: '⚙️' },
-            { letter: 'R', word: 'ROBÔ', emoji: '🤖' },
-            { letter: 'S', word: 'SAPO', emoji: '🐸' },
-            { letter: 'S', word: 'SOL', emoji: '☀️' },
-            { letter: 'S', word: 'SOPA', emoji: '🍲' },
-            { letter: 'S', word: 'SINO', emoji: '🔔' },
-            { letter: 'S', word: 'SOFÁ', emoji: '🛋️' },
-            { letter: 'T', word: 'TATU', emoji: '🐾' },
-            { letter: 'T', word: 'TREM', emoji: '🚂' },
-            { letter: 'T', word: 'TARTARUGA', emoji: '🐢' },
-            { letter: 'T', word: 'TEIA', emoji: '🕸️' },
-            { letter: 'T', word: 'TIJOLO', emoji: '🧱' },
-            { letter: 'U', word: 'URSO', emoji: '🐻' },
-            { letter: 'U', word: 'UVA', emoji: '🍇' },
-            { letter: 'U', word: 'URUBU', emoji: '🦅' },
-            { letter: 'U', word: 'UNHA', emoji: '💅' },
-            { letter: 'U', word: 'UMBIGO', emoji: '🫃' },
-            { letter: 'V', word: 'VACA', emoji: '🐄' },
-            { letter: 'V', word: 'VELA', emoji: '🕯️' },
-            { letter: 'V', word: 'VIOLÃO', emoji: '🎸' },
-            { letter: 'V', word: 'VASO', emoji: '🌺' },
-            { letter: 'V', word: 'VENTO', emoji: '💨' },
-            { letter: 'X', word: 'XÍCARA', emoji: '☕' },
-            { letter: 'X', word: 'XALE', emoji: '🧣' },
-            { letter: 'X', word: 'XADREZ', emoji: '♟️' },
-            { letter: 'X', word: 'XAROPE', emoji: '🩺' },
-            { letter: 'X', word: 'XILOFONE', emoji: '🎵' },
-            { letter: 'Z', word: 'ZEBRA', emoji: '🦓' },
-            { letter: 'Z', word: 'ZERO', emoji: '0️⃣' },
-            { letter: 'Z', word: 'ZÍPER', emoji: '🤐' },
-            { letter: 'Z', word: 'ZANGÃO', emoji: '🐝' },
-            { letter: 'Z', word: 'ZOOLÓGICO', emoji: '🦁' }
+            { letter: 'Q', word: 'QUEIJO', emoji: 'ðŸ§€' },
+            { letter: 'Q', word: 'QUADRO', emoji: 'ðŸ–¼ï¸' },
+            { letter: 'Q', word: 'QUIABO', emoji: 'ðŸ«›' },
+            { letter: 'Q', word: 'QUINDIM', emoji: 'ðŸ®' },
+            { letter: 'Q', word: 'QUATI', emoji: 'ðŸ¦' },
+            { letter: 'R', word: 'RATO', emoji: 'ðŸ­' },
+            { letter: 'R', word: 'REI', emoji: 'ðŸ‘‘' },
+            { letter: 'R', word: 'RIO', emoji: 'ðŸžï¸' },
+            { letter: 'R', word: 'RODA', emoji: 'âš™ï¸' },
+            { letter: 'R', word: 'ROBÃ”', emoji: 'ðŸ¤–' },
+            { letter: 'S', word: 'SAPO', emoji: 'ðŸ¸' },
+            { letter: 'S', word: 'SOL', emoji: 'â˜€ï¸' },
+            { letter: 'S', word: 'SOPA', emoji: 'ðŸ²' },
+            { letter: 'S', word: 'SINO', emoji: 'ðŸ””' },
+            { letter: 'S', word: 'SOFÃ', emoji: 'ðŸ›‹ï¸' },
+            { letter: 'T', word: 'TATU', emoji: 'ðŸ¾' },
+            { letter: 'T', word: 'TREM', emoji: 'ðŸš‚' },
+            { letter: 'T', word: 'TARTARUGA', emoji: 'ðŸ¢' },
+            { letter: 'T', word: 'TEIA', emoji: 'ðŸ•¸ï¸' },
+            { letter: 'T', word: 'TIJOLO', emoji: 'ðŸ§±' },
+            { letter: 'U', word: 'URSO', emoji: 'ðŸ»' },
+            { letter: 'U', word: 'UVA', emoji: 'ðŸ‡' },
+            { letter: 'U', word: 'URUBU', emoji: 'ðŸ¦…' },
+            { letter: 'U', word: 'UNHA', emoji: 'ðŸ’…' },
+            { letter: 'U', word: 'UMBIGO', emoji: 'ðŸ«ƒ' },
+            { letter: 'V', word: 'VACA', emoji: 'ðŸ„' },
+            { letter: 'V', word: 'VELA', emoji: 'ðŸ•¯ï¸' },
+            { letter: 'V', word: 'VIOLÃƒO', emoji: 'ðŸŽ¸' },
+            { letter: 'V', word: 'VASO', emoji: 'ðŸŒº' },
+            { letter: 'V', word: 'VENTO', emoji: 'ðŸ’¨' },
+            { letter: 'X', word: 'XÃCARA', emoji: 'â˜•' },
+            { letter: 'X', word: 'XALE', emoji: 'ðŸ§£' },
+            { letter: 'X', word: 'XADREZ', emoji: 'â™Ÿï¸' },
+            { letter: 'X', word: 'XAROPE', emoji: 'ðŸ©º' },
+            { letter: 'X', word: 'XILOFONE', emoji: 'ðŸŽµ' },
+            { letter: 'Z', word: 'ZEBRA', emoji: 'ðŸ¦“' },
+            { letter: 'Z', word: 'ZERO', emoji: '0ï¸âƒ£' },
+            { letter: 'Z', word: 'ZÃPER', emoji: 'ðŸ¤' },
+            { letter: 'Z', word: 'ZANGÃƒO', emoji: 'ðŸ' },
+            { letter: 'Z', word: 'ZOOLÃ“GICO', emoji: 'ðŸ¦' }
         ]
     }
 ];
@@ -329,7 +330,7 @@
         let activePhaseIdx = 0;
         let canType = false;
         let gameMode = 'infantil';
-        let currentPhases = []; // Armazena a lista embaralhada do nível atual
+        let currentPhases = []; // Armazena a lista embaralhada do nÃ­vel atual
         
         let timeLeft = 100;
         let timerInterval = null;
@@ -351,7 +352,7 @@
             showScreen('screen-levels');
         }
 
-        // Função para embaralhar array (Fisher-Yates)
+        // FunÃ§Ã£o para embaralhar array (Fisher-Yates)
         function shuffleArray(array) {
             let shuffled = [...array];
             for (let i = shuffled.length - 1; i > 0; i--) {
@@ -371,7 +372,7 @@
                 card.className = `level-card bg-white p-6 rounded-[2.5rem] flex flex-col items-center justify-center text-center border-4 ${isLocked ? 'locked border-gray-200' : 'border-teal-100 cursor-pointer shadow-md'}`;
                 
                 card.innerHTML = `
-                    <div class="text-4xl mb-2">${isLocked ? '🔒' : '⭐'}</div>
+                    <div class="text-4xl mb-2">${isLocked ? 'ðŸ”’' : 'â­'}</div>
                     <div class="text-2xl font-game text-teal-600">${level.name}</div>
                     <div class="text-sm font-bold text-teal-300">${isLocked ? 'Bloqueado' : level.phases.length + ' Fases'}</div>
                 `;
@@ -384,7 +385,7 @@
         function startLevel(index) {
             activeLevelIdx = index;
             activePhaseIdx = 0;
-            // Embaralha as fases do nível selecionado dinamicamente
+            // Embaralha as fases do nÃ­vel selecionado dinamicamente
             currentPhases = shuffleArray(gameData[index].phases);
             showScreen('screen-game');
             initPhase();
@@ -397,7 +398,7 @@
             
             canType = true;
             document.getElementById('level-title').innerText = gameData[activeLevelIdx].name;
-            // Contador dinâmico baseado no total de fases do nível atual
+            // Contador dinÃ¢mico baseado no total de fases do nÃ­vel atual
             document.getElementById('phase-counter').innerText = `FASE ${activePhaseIdx + 1} / ${currentPhases.length}`;
             document.getElementById('display-emoji').innerText = data.emoji;
 
@@ -490,7 +491,7 @@
                 bigLetter.style.color = '#22c55e';
                 setTimeout(nextPhase, 1100);
             } else {
-                if (e.key.length === 1 && /[a-zA-Záàâãéèêíïóôõúüç]/.test(e.key)) {
+                if (e.key.length === 1 && /[a-zA-ZÃ¡Ã Ã¢Ã£Ã©Ã¨ÃªÃ­Ã¯Ã³Ã´ÃµÃºÃ¼Ã§]/.test(e.key)) {
                     bigLetter.classList.remove('shake-anim');
                     void bigLetter.offsetWidth;
                     bigLetter.classList.add('shake-anim');
@@ -500,7 +501,7 @@
 
         function nextPhase() {
             activePhaseIdx++;
-            // Verifica se ainda há fases no nível atual usando a lista dinâmica
+            // Verifica se ainda hÃ¡ fases no nÃ­vel atual usando a lista dinÃ¢mica
             if (activePhaseIdx < currentPhases.length) {
                 initPhase();
             } else {
@@ -510,7 +511,7 @@
                     localStorage.setItem('mt1_unlockedLevels', unlockedLevels);
                 }
                 const isFinalLevel = activeLevelIdx + 1 === gameData.length;
-                document.getElementById('modal-title').innerText = isFinalLevel ? "JOGO CONCLUÍDO!" : "NÍVEL CONCLUÍDO!";
+                document.getElementById('modal-title').innerText = isFinalLevel ? "JOGO CONCLUÃDO!" : "NÃVEL CONCLUÃDO!";
                 document.getElementById('win-modal').classList.remove('hidden');
             }
         }

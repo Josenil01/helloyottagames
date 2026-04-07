@@ -1,81 +1,539 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Laboratorio das Pocoes</title>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
+    <title>LaboratÃ³rio das PoÃ§Ãµes MÃ­sticas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
     <style>
-      * { box-sizing: border-box; }
-      body { margin: 0; min-height: 100vh; font-family: "Baloo 2", cursive; color: #f8fafc; background: linear-gradient(145deg, #111827, #312e81); }
-      .home { position: fixed; top: 12px; left: 12px; text-decoration: none; background: #ffffffec; color: #111827; padding: 8px 12px; border-radius: 999px; font-size: 1.4rem; }
-      .wrap { max-width: 900px; margin: 0 auto; padding: 64px 16px 20px; }
-      .card { background: #ffffff12; border: 2px solid #ffffff2b; border-radius: 24px; padding: 16px; }
-      .center { text-align: center; }
-      .big { font-size: clamp(2rem, 7vw, 3.6rem); }
-      .mid { font-size: clamp(1.2rem, 4vw, 2rem); }
-      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 10px; }
-      .lvl, .opt { border: none; border-radius: 14px; padding: 12px 8px; font-family: inherit; font-size: 1.5rem; cursor: pointer; }
-      .lvl { background: #0f172a; color: #fff; border: 2px solid #c4b5fd66; }
-      .lvl[disabled] { opacity: .35; }
-      .opt { color: #031525; background: linear-gradient(145deg, #67e8f9, #22d3ee); box-shadow: 0 8px 16px #22d3ee55; }
-      .hud { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
-      .chip { background: #02061780; color: #fff; border-radius: 999px; padding: 4px 10px; font-size: 1.1rem; }
-      .fb { min-height: 30px; text-align: center; font-size: 1.4rem; }
+        :root {
+            --magic-purple: #6d28d9;
+            --magic-cyan: #22d3ee;
+            --magic-pink: #db2777;
+            --gold: #fbbf24;
+            --night: #0f172a;
+            --success: #22c55e;
+            --danger: #ef4444;
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Baloo 2", cursive;
+            background: var(--night);
+            overflow: hidden;
+            color: #f8fafc;
+            user-select: none;
+        }
+
+        /* CenÃ¡rio MÃ­stico */
+        .scenery {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background: radial-gradient(circle at center, #1e1b4b 0%, #0f172a 100%);
+        }
+
+        .sparkle {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: twinkle 3s infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { transform: scale(1); opacity: 0.3; }
+            50% { transform: scale(1.5); opacity: 0.7; }
+        }
+
+        /* Layout Principal */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* HUD */
+        .hud {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .stat-badge {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 999px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* Ãrea do LaboratÃ³rio */
+        .lab-area {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .potion-shelf {
+            display: flex;
+            align-items: flex-end;
+            gap: 12px;
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 30px;
+            border-bottom: 8px solid #000;
+        }
+
+        .flask {
+            width: 80px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 15px 15px 40% 40%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #fff;
+            box-shadow: inset 0 -20px 20px rgba(0,0,0,0.2);
+            animation: float 4s infinite ease-in-out;
+        }
+
+        .flask::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            width: 40px;
+            height: 10px;
+            background: #475569;
+            border-radius: 4px;
+        }
+
+        .flask.num-1 { background: linear-gradient(to top, var(--magic-purple), transparent); }
+        .flask.num-2 { background: linear-gradient(to top, var(--magic-pink), transparent); }
+        .flask.op { background: transparent; border: none; font-size: 1.5rem; width: 40px; animation-delay: 0.5s; box-shadow: none; }
+
+        .flask.target {
+            background: rgba(255, 255, 255, 0.05);
+            border: 3px dashed rgba(255, 255, 255, 0.3);
+            color: transparent;
+        }
+
+        .flask.filled {
+            background: linear-gradient(to top, var(--magic-cyan), transparent);
+            border-style: solid;
+            border-color: var(--magic-cyan);
+            color: white;
+            transition: all 0.5s;
+            text-shadow: 0 0 10px var(--magic-cyan);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Ingredientes (OpÃ§Ãµes) */
+        .ingredients-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .ingredient-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 3px solid var(--magic-cyan);
+            border-radius: 25px;
+            padding: 15px;
+            font-size: 2.2rem;
+            font-family: inherit;
+            cursor: pointer;
+            color: var(--magic-cyan);
+            box-shadow: 0 8px 0 #155e75, 0 10px 20px rgba(0,0,0,0.3);
+            position: relative;
+            transition: transform 0.1s;
+        }
+
+        .ingredient-btn:active { transform: translateY(4px); box-shadow: 0 4px 0 #155e75; }
+
+        /* Item MÃ¡gico Voando */
+        .flying-ingredient {
+            position: fixed;
+            z-index: 1000;
+            pointer-events: none;
+            font-size: 2.2rem;
+            color: var(--magic-cyan);
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 25px;
+            width: 80px;
+            height: 80px;
+            box-shadow: 0 0 20px var(--magic-cyan);
+            border: 3px solid var(--magic-cyan);
+        }
+
+        /* Telas */
+        .screen { display: none; height: 100%; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+        .screen.active { display: flex; }
+
+        .btn-large {
+            background: var(--magic-purple);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.8rem;
+            font-family: inherit;
+            cursor: pointer;
+            box-shadow: 0 8px 0 #4c1d95;
+            font-weight: 800;
+            margin-top: 20px;
+        }
+
+        .level-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 12px;
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        .lvl-btn {
+            aspect-ratio: 1;
+            border-radius: 15px;
+            border: 2px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.05);
+            color: white;
+            font-size: 1.2rem;
+            font-family: inherit;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .lvl-btn.unlocked { border-color: var(--magic-cyan); background: rgba(34, 211, 238, 0.1); color: var(--magic-cyan); }
+        .lvl-btn:disabled { opacity: 0.4; }
+
+        /* Modal */
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.85);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        .modal-content {
+            background: #1e1b4b;
+            padding: 30px;
+            border-radius: 30px;
+            text-align: center;
+            max-width: 320px;
+            width: 90%;
+            border: 4px solid var(--magic-cyan);
+            box-shadow: 0 0 30px rgba(34, 211, 238, 0.3);
+        }
     </style>
-  </head>
-  <body>
-    <a class="home" href="../index.html">🏠</a>
-    <main class="wrap"><section id="app" class="card"></section></main>
+</head>
+<body>
+
+    <div class="scenery" id="scenery"></div>
+
+    <div class="container">
+        <!-- HOME -->
+        <div id="screen-home" class="screen active">
+            <h1 style="font-size: 3.5rem; margin: 0; text-shadow: 0 0 20px var(--magic-purple);">ðŸ§ª LaboratÃ³rio</h1>
+            <h2 style="margin: 0; color: var(--magic-cyan); text-shadow: 0 0 10px var(--magic-cyan);">das PoÃ§Ãµes</h2>
+            <div class="flask num-1" style="margin: 40px 0; width: 100px; height: 120px; font-size: 3rem;">âœ¨</div>
+            <button class="btn-large" onclick="changeScreen('levels')">ENTRAR</button>
+            <p id="total-stars">â­ 0/36</p>
+        </div>
+
+        <!-- NÃVEIS -->
+        <div id="screen-levels" class="screen" style="justify-content: flex-start; padding-top: 40px;">
+            <div class="hud" style="width: 100%;">
+                <button class="stat-badge" onclick="changeScreen('home')" style="cursor:pointer; border:none">ðŸ  InÃ­cio</button>
+                <div class="stat-badge" id="lvl-star-count">â­ 0</div>
+            </div>
+            <h2 style="margin: 20px 0;">Mapa das PoÃ§Ãµes</h2>
+            <div class="level-grid" id="level-grid"></div>
+        </div>
+
+        <!-- JOGO -->
+        <div id="screen-game" class="screen">
+            <div class="hud" style="width: 100%;">
+                <div class="stat-badge" id="game-info">Frasco 1</div>
+                <div class="stat-badge" id="game-score">Mana: 0</div>
+                <button class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer; border:none">âœ•</button>
+            </div>
+
+            <div class="lab-area">
+                <div class="potion-shelf" id="active-shelf">
+                    <!-- Gerado via JS: Flasks -->
+                </div>
+
+                <div class="ingredients-grid" id="options">
+                    <!-- Ingredientes de resposta -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2 id="result-title" style="color: var(--magic-cyan)">PoÃ§Ã£o Estabilizada!</h2>
+            <div id="result-stars" style="font-size: 2.5rem; margin: 15px 0;">â­â­â­</div>
+            <p id="result-msg">VocÃª Ã© um grande alquimista!</p>
+            <button id="modal-next-btn" class="btn-large" onclick="handleModalAction()">PRÃ“XIMO</button>
+        </div>
+    </div>
+
     <script>
-      const LEVELS = [[2, 1], [3, 1], [4, 2], [5, 2], [6, 3], [7, 3], [8, 4], [9, 4], [10, 5], [12, 6], [14, 7], [16, 8]];
-      const SKEY = 'g1-pocoes-v2';
-      const app = document.getElementById('app');
-      let state = 'cover', i = 0, tries = 0, score = 0;
-      const pg = load();
+        const LEVELS = [[2, 1], [3, 1], [4, 2], [5, 2], [6, 3], [7, 3], [8, 4], [9, 4], [10, 5], [12, 6], [14, 7], [16, 8]];
+        const SKEY = 'math_alchemy_v1';
+        
+        let userData = loadData();
+        let currentLevel = 0;
+        let score = 0;
+        let isLocked = false;
+        let tries = 0;
+        let lastResultSuccess = false;
 
-      function load() {
-        const b = { unlocked: 1, stars: Array(LEVELS.length).fill(0) };
-        try {
-          const d = JSON.parse(localStorage.getItem(SKEY));
-          if (!d) return b;
-          return { unlocked: Math.min(LEVELS.length, Math.max(1, Number(d.unlocked || 1))), stars: Array.isArray(d.stars) ? d.stars.slice(0, LEVELS.length).map((x) => Number(x || 0)) : b.stars };
-        } catch { return b; }
-      }
-      function save() { localStorage.setItem(SKEY, JSON.stringify(pg)); }
-      function medal() { const t = pg.stars.reduce((a, b) => a + b, 0), m = LEVELS.length * 3; return t >= m * 0.85 ? '🥇' : t >= m * 0.6 ? '🥈' : '🥉'; }
-      function mkOptions(ans) { const s = new Set([ans]); while (s.size < 3) s.add(Math.max(0, ans + (Math.floor(Math.random() * 7) - 3))); return [...s].sort(() => Math.random() - 0.5); }
-      function earnedByTry(n) { return n === 1 ? 3 : n === 2 ? 2 : 1; }
+        // Sons Sintetizados MÃ¡gicos
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        function playMagic(freq, type, duration) {
+            try {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = type;
+                osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+                gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
+                osc.connect(gain); gain.connect(audioCtx.destination);
+                osc.start(); osc.stop(audioCtx.currentTime + duration);
+            } catch(e) {}
+        }
 
-      function render() { if (state === 'cover') return cover(); if (state === 'select') return select(); play(); }
-      function cover() {
-        app.innerHTML = `<p class="center big">🧪➕➖</p><p class="center big">${medal()}</p><p class="center"><button id="go" class="lvl" style="font-size:2.2rem">▶️</button></p>`;
-        document.getElementById('go').onclick = () => { state = 'select'; render(); };
-      }
-      function select() {
-        app.innerHTML = `<p class="center mid">🧪 ⭐ ${pg.stars.reduce((a,b)=>a+b,0)}/${LEVELS.length*3}</p><div class="grid">${LEVELS.map((_, k) => `<button class="lvl" data-k="${k}" ${k + 1 > pg.unlocked ? 'disabled' : ''}>${k + 1}<br>${'⭐'.repeat(pg.stars[k] || 0) || '▫️'}</button>`).join('')}</div><p class="center" style="margin-top:10px"><button id="back" class="lvl">◀️</button></p>`;
-        app.querySelectorAll('.lvl[data-k]').forEach((b) => b.onclick = () => { i = Number(b.dataset.k); tries = 0; state = 'play'; render(); });
-        document.getElementById('back').onclick = () => { state = 'cover'; render(); };
-      }
-      function play() {
-        const [a, b] = LEVELS[i], op = i < 6 ? '+' : '-', ans = op === '+' ? a + b : a - b;
-        app.innerHTML = `<div class="hud"><span class="chip">${i + 1}/${LEVELS.length}</span><span class="chip">⭐ ${pg.stars[i] || 0}</span><span class="chip">🏅 ${score}</span></div><p class="center big">🧪 ${a} ${op} ${b} = ?</p><div class="grid">${mkOptions(ans).map((n) => `<button class="opt" data-n="${n}">${n}</button>`).join('')}</div><div id="fb" class="fb"></div><p class="center" style="margin-top:10px"><button id="menu" class="lvl">📚</button></p>`;
-        app.querySelectorAll('.opt').forEach((btn) => btn.onclick = () => {
-          tries += 1;
-          const n = Number(btn.dataset.n), fb = document.getElementById('fb');
-          if (n === ans) {
-            const e = earnedByTry(tries);
-            pg.stars[i] = Math.max(pg.stars[i], e);
-            pg.unlocked = Math.max(pg.unlocked, Math.min(LEVELS.length, i + 2));
-            save();
-            score += 8 + e;
-            fb.textContent = '✅ ' + '⭐'.repeat(e);
-            setTimeout(() => { state = 'select'; render(); }, 600);
-          } else fb.textContent = '❌';
-        });
-        document.getElementById('menu').onclick = () => { state = 'select'; render(); };
-      }
-      render();
+        const SFX = {
+            correct: () => { 
+                playMagic(523, 'sine', 0.2); 
+                setTimeout(() => playMagic(880, 'sine', 0.4), 100);
+            },
+            wrong: () => { playMagic(100, 'sawtooth', 0.4); },
+            click: () => { playMagic(400, 'triangle', 0.05); }
+        };
+
+        function init() {
+            createScenery();
+            renderLevelGrid();
+            updateGlobalStats();
+        }
+
+        function createScenery() {
+            const container = document.getElementById('scenery');
+            for(let i=0; i<40; i++) {
+                const s = document.createElement('div');
+                s.className = 'sparkle';
+                const size = 2 + Math.random() * 4;
+                s.style.width = size + 'px';
+                s.style.height = size + 'px';
+                s.style.top = Math.random() * 100 + '%';
+                s.style.left = Math.random() * 100 + '%';
+                s.style.animationDelay = Math.random() * 3 + 's';
+                container.appendChild(s);
+            }
+        }
+
+        function loadData() {
+            const d = localStorage.getItem(SKEY);
+            return d ? JSON.parse(d) : { unlocked: 1, stars: Array(LEVELS.length).fill(0) };
+        }
+
+        function saveGame() {
+            localStorage.setItem(SKEY, JSON.stringify(userData));
+        }
+
+        function updateGlobalStats() {
+            const total = userData.stars.reduce((a, b) => a + b, 0);
+            document.getElementById('total-stars').textContent = `â­ ${total}/${LEVELS.length * 3}`;
+            document.getElementById('lvl-star-count').textContent = `â­ ${total}`;
+        }
+
+        function renderLevelGrid() {
+            const grid = document.getElementById('level-grid');
+            grid.innerHTML = '';
+            LEVELS.forEach((_, idx) => {
+                const btn = document.createElement('button');
+                const isUnlocked = idx < userData.unlocked;
+                btn.className = `lvl-btn ${isUnlocked ? 'unlocked' : ''}`;
+                btn.disabled = !isUnlocked;
+                const stars = userData.stars[idx] || 0;
+                btn.innerHTML = `<span>Frasco ${idx + 1}</span><div style="font-size:0.7rem; color:var(--gold)">${'â˜…'.repeat(stars)}${'â˜†'.repeat(3-stars)}</div>`;
+                btn.onclick = () => startLevel(idx);
+                grid.appendChild(btn);
+            });
+        }
+
+        function changeScreen(id) {
+            SFX.click();
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById('screen-' + id).classList.add('active');
+            if(id === 'levels') renderLevelGrid();
+        }
+
+        function startLevel(idx) {
+            currentLevel = idx;
+            tries = 0;
+            isLocked = false;
+            changeScreen('game');
+            loadQuestion();
+        }
+
+        function loadQuestion() {
+            const [a, b] = LEVELS[currentLevel];
+            const op = currentLevel < 6 ? '+' : '-';
+            const shelf = document.getElementById('active-shelf');
+            
+            shelf.innerHTML = `
+                <div class="flask num-1">${a}</div>
+                <div class="flask op">${op}</div>
+                <div class="flask num-2">${b}</div>
+                <div class="flask op">=</div>
+                <div class="flask target" id="target-flask">?</div>
+            `;
+
+            const ans = op === '+' ? a + b : a - b;
+            const options = new Set([ans]);
+            while(options.size < 3) {
+                const fake = Math.max(0, ans + (Math.floor(Math.random() * 7) - 3));
+                options.add(fake);
+            }
+
+            const btnContainer = document.getElementById('options');
+            btnContainer.innerHTML = '';
+            [...options].sort(() => Math.random() - 0.5).forEach(val => {
+                const btn = document.createElement('button');
+                btn.className = 'ingredient-btn';
+                btn.textContent = val;
+                btn.onclick = () => checkAnswer(val, ans, btn);
+                btnContainer.appendChild(btn);
+            });
+            document.getElementById('game-info').textContent = `Frasco ${currentLevel + 1}`;
+        }
+
+        function checkAnswer(selected, correct, btn) {
+            if(isLocked) return;
+            
+            const rect = btn.getBoundingClientRect();
+            const flying = document.createElement('div');
+            flying.className = 'flying-ingredient';
+            flying.textContent = selected;
+            flying.style.left = rect.left + 'px';
+            flying.style.top = rect.top + 'px';
+            document.body.appendChild(flying);
+
+            if(selected === correct) {
+                isLocked = true;
+                tries++;
+                SFX.correct();
+                
+                const target = document.getElementById('target-flask');
+                const targetRect = target.getBoundingClientRect();
+                
+                // AnimaÃ§Ã£o ParabÃ³lica MÃ¡gica
+                flying.animate([
+                    { left: rect.left + 'px', top: rect.top + 'px', transform: 'rotate(0deg) scale(1)' },
+                    { left: targetRect.left + 'px', top: targetRect.top + 'px', transform: 'rotate(720deg) scale(0.8)' }
+                ], { duration: 700, easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)', fill: 'forwards' })
+                .onfinish = () => {
+                    target.textContent = selected;
+                    target.classList.add('filled');
+                    flying.remove();
+                    setTimeout(() => endLevel(true), 800);
+                };
+
+                score += 10;
+                document.getElementById('game-score').textContent = `Mana: ${score}`;
+            } else {
+                tries++;
+                SFX.wrong();
+                
+                // Explode ou foge
+                const randomX = (Math.random() - 0.5) * 800;
+                flying.animate([
+                    { transform: 'translate(0, 0) scale(1)', opacity: 1 },
+                    { transform: `translate(${randomX}px, -400px) scale(0)`, opacity: 0 }
+                ], { duration: 1000, easing: 'ease-in' })
+                .onfinish = () => flying.remove();
+
+                btn.style.opacity = '0.3';
+                btn.disabled = true;
+            }
+        }
+
+        function endLevel(success) {
+            lastResultSuccess = success;
+            const modal = document.getElementById('result-modal');
+            const starDiv = document.getElementById('result-stars');
+            const btn = document.getElementById('modal-next-btn');
+
+            if(success) {
+                let earned = tries === 1 ? 3 : tries === 2 ? 2 : 1;
+                userData.stars[currentLevel] = Math.max(userData.stars[currentLevel], earned);
+                userData.unlocked = Math.max(userData.unlocked, currentLevel + 2);
+                saveGame();
+                
+                starDiv.textContent = "â­".repeat(earned) + "â˜†".repeat(3-earned);
+                document.getElementById('result-title').textContent = "PoÃ§Ã£o Perfeita!";
+                btn.textContent = (currentLevel < LEVELS.length - 1) ? "PRÃ“XIMO FRASCO" : "MENU FINAL";
+            }
+
+            modal.style.display = 'flex';
+            updateGlobalStats();
+        }
+
+        function handleModalAction() {
+            SFX.click();
+            document.getElementById('result-modal').style.display = 'none';
+            if (currentLevel < LEVELS.length - 1) {
+                startLevel(currentLevel + 1);
+            } else {
+                changeScreen('levels');
+            }
+        }
+
+        window.onload = init;
     </script>
-  </body>
+</body>
 </html>

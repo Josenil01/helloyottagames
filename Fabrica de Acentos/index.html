@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fábrica de Acentos</title>
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
+  <title>FÃ¡brica de Acentos</title>
   
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -16,7 +17,7 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
   <style>
-    /* Animação para quando erra o acento ou a letra */
+    /* AnimaÃ§Ã£o para quando erra o acento ou a letra */
     @keyframes shake {
       0%, 100% { transform: translateX(0); }
       25% { transform: translateX(-5px); }
@@ -33,82 +34,82 @@
   <script type="text/babel">
     const { useState, useEffect } = React;
 
-    // Dicionário mapeando a letra acentuada para a sua base e o símbolo do acento
+    // DicionÃ¡rio mapeando a letra acentuada para a sua base e o sÃ­mbolo do acento
     const ACCENT_MAP = {
-      'Á': { base: 'A', accent: '´' },
-      'É': { base: 'E', accent: '´' },
-      'Í': { base: 'I', accent: '´' },
-      'Ó': { base: 'O', accent: '´' },
-      'Ú': { base: 'U', accent: '´' },
-      'Â': { base: 'A', accent: '^' },
-      'Ê': { base: 'E', accent: '^' },
-      'Ô': { base: 'O', accent: '^' },
-      'Ã': { base: 'A', accent: '~' },
-      'Õ': { base: 'O', accent: '~' }
+      'Ã': { base: 'A', accent: 'Â´' },
+      'Ã‰': { base: 'E', accent: 'Â´' },
+      'Ã': { base: 'I', accent: 'Â´' },
+      'Ã“': { base: 'O', accent: 'Â´' },
+      'Ãš': { base: 'U', accent: 'Â´' },
+      'Ã‚': { base: 'A', accent: '^' },
+      'ÃŠ': { base: 'E', accent: '^' },
+      'Ã”': { base: 'O', accent: '^' },
+      'Ãƒ': { base: 'A', accent: '~' },
+      'Ã•': { base: 'O', accent: '~' }
     };
 
     // Fases do jogo organizadas por dificuldade e tipo de acento
     const PHASES = [
       // Fase 1: Acento Agudo
       [
-        { word: "ÁGUA", emoji: "💧" },
-        { word: "CAFÉ", emoji: "☕" },
-        { word: "LÁPIS", emoji: "✏️" },
-        { word: "ÓCULOS", emoji: "👓" },
-        { word: "BAÚ", emoji: "🧰" },
+        { word: "ÃGUA", emoji: "ðŸ’§" },
+        { word: "CAFÃ‰", emoji: "â˜•" },
+        { word: "LÃPIS", emoji: "âœï¸" },
+        { word: "Ã“CULOS", emoji: "ðŸ‘“" },
+        { word: "BAÃš", emoji: "ðŸ§°" },
       ],
       // Fase 2: Acento Circunflexo
       [
-        { word: "ÔNIBUS", emoji: "🚌" },
-        { word: "BEBÊ", emoji: "👶" },
-        { word: "ROBÔ", emoji: "🤖" },
-        { word: "TÊNIS", emoji: "👟" },
-        { word: "LÂMPADA", emoji: "💡" },
+        { word: "Ã”NIBUS", emoji: "ðŸšŒ" },
+        { word: "BEBÃŠ", emoji: "ðŸ‘¶" },
+        { word: "ROBÃ”", emoji: "ðŸ¤–" },
+        { word: "TÃŠNIS", emoji: "ðŸ‘Ÿ" },
+        { word: "LÃ‚MPADA", emoji: "ðŸ’¡" },
       ],
       // Fase 3: Til
       [
-        { word: "MAÇÃ", emoji: "🍎" },
-        { word: "LEÃO", emoji: "🦁" },
-        { word: "MÃO", emoji: "🖐️" },
-        { word: "AVIÃO", emoji: "✈️" },
-        { word: "CORAÇÃO", emoji: "❤️" },
+        { word: "MAÃ‡Ãƒ", emoji: "ðŸŽ" },
+        { word: "LEÃƒO", emoji: "ðŸ¦" },
+        { word: "MÃƒO", emoji: "ðŸ–ï¸" },
+        { word: "AVIÃƒO", emoji: "âœˆï¸" },
+        { word: "CORAÃ‡ÃƒO", emoji: "â¤ï¸" },
       ],
       // Fase 4: Mistura Divertida 1
       [
-        { word: "PÉ", emoji: "🦶" },
-        { word: "AVÔ", emoji: "👴" }, 
-        { word: "MÃE", emoji: "👩" },
-        { word: "ÁRVORE", emoji: "🌳" },
-        { word: "TRÊS", emoji: "3️⃣" },
+        { word: "PÃ‰", emoji: "ðŸ¦¶" },
+        { word: "AVÃ”", emoji: "ðŸ‘´" }, 
+        { word: "MÃƒE", emoji: "ðŸ‘©" },
+        { word: "ÃRVORE", emoji: "ðŸŒ³" },
+        { word: "TRÃŠS", emoji: "3ï¸âƒ£" },
       ],
       // Fase 5: Mistura Divertida 2
       [
-        { word: "PÁSSARO", emoji: "🐦" },
-        { word: "PÊSSEGO", emoji: "🍑" },
-        { word: "CAMINHÃO", emoji: "🚛" },
-        { word: "RELÓGIO", emoji: "⌚" },
-        { word: "ÍNDIO", emoji: "🏹" },
+        { word: "PÃSSARO", emoji: "ðŸ¦" },
+        { word: "PÃŠSSEGO", emoji: "ðŸ‘" },
+        { word: "CAMINHÃƒO", emoji: "ðŸš›" },
+        { word: "RELÃ“GIO", emoji: "âŒš" },
+        { word: "ÃNDIO", emoji: "ðŸ¹" },
       ],
-      // Fase 6: NOVA FASE - Todas as letras têm caixa (nível 1)
+      // Fase 6: NOVA FASE - Todas as letras tÃªm caixa (nÃ­vel 1)
       [
-        { word: "XÍCARA", emoji: "☕" },
-        { word: "MÁGICA", emoji: "🪄" },
-        { word: "BÚSSOLA", emoji: "🧭" },
-        { word: "VULCÃO", emoji: "🌋" },
-        { word: "PÊNALTI", emoji: "⚽" },
+        { word: "XÃCARA", emoji: "â˜•" },
+        { word: "MÃGICA", emoji: "ðŸª„" },
+        { word: "BÃšSSOLA", emoji: "ðŸ§­" },
+        { word: "VULCÃƒO", emoji: "ðŸŒ‹" },
+        { word: "PÃŠNALTI", emoji: "âš½" },
       ],
-      // Fase 7: NOVA FASE - Todas as letras têm caixa (Desafio Master)
+      // Fase 7: NOVA FASE - Todas as letras tÃªm caixa (Desafio Master)
       [
-        { word: "MATEMÁTICA", emoji: "🧮" },
-        { word: "ECOLÓGICO", emoji: "🌱" },
-        { word: "DINÂMICO", emoji: "⚡" },
-        { word: "TUBARÃO", emoji: "🦈" },
-        { word: "FÁBRICA", emoji: "🏭" },
+        { word: "MATEMÃTICA", emoji: "ðŸ§®" },
+        { word: "ECOLÃ“GICO", emoji: "ðŸŒ±" },
+        { word: "DINÃ‚MICO", emoji: "âš¡" },
+        { word: "TUBARÃƒO", emoji: "ðŸ¦ˆ" },
+        { word: "FÃBRICA", emoji: "ðŸ­" },
       ]
     ];
 
     const ACCENT_OPTIONS = [
-      { symbol: '´', name: 'Agudo', color: 'bg-blue-400' },
+      { symbol: 'Â´', name: 'Agudo', color: 'bg-blue-400' },
       { symbol: '^', name: 'Circunflexo', color: 'bg-purple-400' },
       { symbol: '~', name: 'Til', color: 'bg-pink-400' }
     ];
@@ -143,26 +144,26 @@
         setStartTime(Date.now());
       };
 
-      // Lógica principal: Verifica se o acento e a letra estão corretos
+      // LÃ³gica principal: Verifica se o acento e a letra estÃ£o corretos
       const checkAnswer = (accentSymbol, dropIndex) => {
         if (isSuccess || wrongAnswers.includes(accentSymbol)) return;
 
         const phaseWords = PHASES[currentPhase - 1];
         const currentItem = phaseWords[currentWordIndex];
         
-        // Encontra qual é a letra correta que precisa do acento
+        // Encontra qual Ã© a letra correta que precisa do acento
         const wordArray = currentItem.word.split('');
         const targetIndex = wordArray.findIndex(char => ACCENT_MAP[char]);
         const targetChar = wordArray[targetIndex];
         const expectedAccent = ACCENT_MAP[targetChar].accent;
 
-        // Validação se o jogador tocou no botão de acento sem selecionar a caixa (Fases 6 e 7)
+        // ValidaÃ§Ã£o se o jogador tocou no botÃ£o de acento sem selecionar a caixa (Fases 6 e 7)
         if (currentPhase >= 6 && dropIndex === undefined && selectedLetterIndex === null) {
           alert("Toque numa caixinha amarela primeiro para escolher a letra!");
           return;
         }
 
-        // Define o índice final onde o acento está a ser tentado
+        // Define o Ã­ndice final onde o acento estÃ¡ a ser tentado
         const finalDropIndex = dropIndex !== undefined ? dropIndex : (currentPhase >= 6 ? selectedLetterIndex : targetIndex);
 
         // 1. Verificamos se o aluno colocou na letra certa (importante para fases 6 e 7)
@@ -170,7 +171,7 @@
           // Errou a letra onde se coloca o acento
           setShakeIndex(finalDropIndex);
           setTimeout(() => setShakeIndex(null), 300);
-          return; // Não bloqueia o acento, pois ele pode ser o correto, apenas colocado no lugar errado
+          return; // NÃ£o bloqueia o acento, pois ele pode ser o correto, apenas colocado no lugar errado
         }
 
         // 2. Verificamos se escolheu o acento certo
@@ -243,15 +244,15 @@
       if (gameState === 'cover') {
         return (
           <div className="min-h-screen bg-violet-600 flex flex-col items-center justify-center p-4 font-sans relative overflow-hidden">
-            <a href="../../index.html" className="absolute top-4 left-4 text-violet-200 hover:text-violet-400 font-bold bg-violet-700/80 hover:bg-violet-800 px-4 py-2 rounded-full transition-colors z-20 border-2 border-violet-400">◀ Voltar</a>
-            <div className="absolute top-10 left-10 text-6xl opacity-30 animate-bounce">´</div>
+            <a href="../../index.html" className="absolute top-4 left-4 text-violet-200 hover:text-violet-400 font-bold bg-violet-700/80 hover:bg-violet-800 px-4 py-2 rounded-full transition-colors z-20 border-2 border-violet-400">â—€ Voltar</a>
+            <div className="absolute top-10 left-10 text-6xl opacity-30 animate-bounce">Â´</div>
             <div className="absolute top-20 right-20 text-7xl opacity-30 text-yellow-300">^</div>
             <div className="absolute bottom-20 left-20 text-8xl opacity-30 text-pink-300 rotate-12">~</div>
 
             <div className="bg-white/95 p-10 rounded-[3rem] shadow-2xl flex flex-col items-center text-center z-10 max-w-lg w-full border-8 border-violet-300">
-              <div className="text-8xl mb-4">🎩</div>
+              <div className="text-8xl mb-4">ðŸŽ©</div>
               <h1 className="text-5xl font-extrabold text-violet-700 mb-2 tracking-tight leading-tight">
-                Fábrica de<br/><span className="text-4xl text-violet-500">Acentos</span>
+                FÃ¡brica de<br/><span className="text-4xl text-violet-500">Acentos</span>
               </h1>
               <p className="text-gray-500 mb-8 text-lg font-medium">Coloque a "coroazinha" certa na letra correta!</p>
               
@@ -277,7 +278,7 @@
                 onClick={() => setGameState('cover')}
                 className="absolute top-4 left-4 text-gray-400 hover:text-gray-600 font-bold text-sm bg-gray-100 px-3 py-1 rounded-full"
               >
-                ◀ Início
+                â—€ InÃ­cio
               </button>
 
               <h1 className="text-3xl font-bold text-indigo-600 mb-2 mt-6">Mapa do Jogo</h1>
@@ -290,12 +291,12 @@
                   const phaseNum = index + 1;
                   const isUnlocked = phaseNum <= unlockedPhases;
                   let phaseTitle = "Mistura Final";
-                  if (phaseNum === 1) phaseTitle = "Acento Agudo ( ´ )";
+                  if (phaseNum === 1) phaseTitle = "Acento Agudo ( Â´ )";
                   if (phaseNum === 2) phaseTitle = "Circunflexo ( ^ )";
                   if (phaseNum === 3) phaseTitle = "Sinal de Til ( ~ )";
                   if (phaseNum === 4) phaseTitle = "Mistura Divertida 1";
                   if (phaseNum === 5) phaseTitle = "Mistura Divertida 2";
-                  if (phaseNum === 6) phaseTitle = "Desafio: Onde está o acento?";
+                  if (phaseNum === 6) phaseTitle = "Desafio: Onde estÃ¡ o acento?";
                   if (phaseNum === 7) phaseTitle = "Mestre dos Acentos";
 
                   return (
@@ -312,7 +313,7 @@
                         <span>Fase {phaseNum}</span>
                         {isUnlocked && <span className="text-sm font-normal bg-white/20 px-2 py-0.5 rounded mt-1">{phaseTitle}</span>}
                       </span>
-                      <span className="text-3xl">{isUnlocked ? '⭐' : '🔒'}</span>
+                      <span className="text-3xl">{isUnlocked ? 'â­' : 'ðŸ”’'}</span>
                     </button>
                   );
                 })}
@@ -332,8 +333,8 @@
         return (
           <div className="min-h-screen bg-yellow-100 flex flex-col items-center justify-center p-4 font-sans">
             <div className="bg-white p-8 rounded-3xl shadow-xl max-w-md w-full text-center border-4 border-yellow-300">
-              <div className="text-6xl mb-4 animate-bounce">🏆</div>
-              <h1 className="text-4xl font-bold text-yellow-500 mb-2">Fase {currentPhase} Concluída!</h1>
+              <div className="text-6xl mb-4 animate-bounce">ðŸ†</div>
+              <h1 className="text-4xl font-bold text-yellow-500 mb-2">Fase {currentPhase} ConcluÃ­da!</h1>
               
               <div className="bg-gray-50 rounded-xl p-4 mb-6 mt-6 shadow-inner">
                 <h2 className="text-xl font-bold text-gray-700 mb-4 border-b pb-2">Palavras que aprendeste</h2>
@@ -357,7 +358,7 @@
                     onClick={() => startPhase(currentPhase + 1)}
                     className="w-full py-4 px-6 bg-yellow-400 hover:bg-yellow-500 text-white rounded-2xl text-xl font-bold shadow-[0_6px_0_rgb(202,138,4)] hover:shadow-none hover:translate-y-1 transition-all"
                   >
-                    Próxima Fase ➡️
+                    PrÃ³xima Fase âž¡ï¸
                   </button>
                 )}
                 <button 
@@ -393,7 +394,7 @@
             onClick={() => setGameState('phaseSelect')}
             className="absolute top-4 left-4 text-violet-700 hover:text-violet-900 font-bold bg-white/50 hover:bg-white px-4 py-2 rounded-full transition-colors z-20"
           >
-            ⏸ Pausar
+            â¸ Pausar
           </button>
 
           {/* Barra de progresso */}
@@ -421,7 +422,7 @@
               {instructionText}
             </div>
 
-            {/* --- ÁREA DA PALAVRA --- */}
+            {/* --- ÃREA DA PALAVRA --- */}
             <div className="flex flex-row flex-wrap items-end justify-center gap-1 md:gap-3 mb-16 w-full px-2">
                  
               {wordArray.map((char, index) => {
@@ -441,7 +442,7 @@
                          onDrop={(e) => handleDropLetter(e, index)}
                          onClick={() => handleLetterClick(index)}
                     >
-                      {/* Espaço pontilhado (Dropzone) ou Animação de sucesso */}
+                      {/* EspaÃ§o pontilhado (Dropzone) ou AnimaÃ§Ã£o de sucesso */}
                       {isSuccessThisBox ? (
                         <div className="text-4xl md:text-5xl font-black text-green-500 mb-2 animate-bounce">
                           {targetData.accent}
@@ -450,7 +451,7 @@
                         <div className={`w-12 h-12 md:w-16 md:h-16 rounded-xl border-4 border-dashed mb-2 flex items-center justify-center text-3xl md:text-5xl font-black transition-colors ${
                           isHoveredOrSelected ? 'border-yellow-400 bg-yellow-100 text-yellow-500 scale-105' : 'border-violet-300 text-violet-200'
                         }`}>
-                          {isHoveredOrSelected ? (dragOverIndex === index ? '📥' : '👆') : ''}
+                          {isHoveredOrSelected ? (dragOverIndex === index ? 'ðŸ“¥' : 'ðŸ‘†') : ''}
                         </div>
                       )}
 
@@ -460,14 +461,14 @@
                           ? 'bg-green-400 text-white border-green-600 scale-110 shadow-xl' 
                           : (isHoveredOrSelected ? 'bg-yellow-100 text-yellow-600 border-yellow-300' : 'bg-white text-indigo-400 border-gray-200')
                       }`}>
-                        {/* Mostra a letra normal não acentuada, a não ser que tenha acertado a caixa correta */}
+                        {/* Mostra a letra normal nÃ£o acentuada, a nÃ£o ser que tenha acertado a caixa correta */}
                         {isSuccessThisBox ? char : (isTarget ? targetData.base : char)}
                       </div>
                     </div>
                   );
                 }
 
-                // Letras normais que não precisam de acento nas Fases 1 a 5
+                // Letras normais que nÃ£o precisam de acento nas Fases 1 a 5
                 return (
                   <div key={index} className="flex flex-col justify-end h-32 md:h-40 pb-0">
                     <div className="bg-white rounded-xl border-b-8 border-gray-200 flex items-center justify-center w-14 h-16 md:w-20 md:h-24 text-4xl md:text-6xl font-bold text-indigo-800 shadow-md">
@@ -478,7 +479,7 @@
               })}
             </div>
 
-            {/* --- OPÇÕES DE ACENTOS --- */}
+            {/* --- OPÃ‡Ã•ES DE ACENTOS --- */}
             <div className="flex flex-row justify-center gap-6 md:gap-12 w-full px-4">
               {ACCENT_OPTIONS.map((opt, i) => {
                 const isWrong = wrongAnswers.includes(opt.symbol);
@@ -500,7 +501,7 @@
                     key={i}
                     draggable={!isWrong && !isSuccess}
                     onDragStart={(e) => handleDragStart(e, opt.symbol)}
-                    onClick={() => checkAnswer(opt.symbol)} // Fallback para toque no ecrã
+                    onClick={() => checkAnswer(opt.symbol)} // Fallback para toque no ecrÃ£
                     disabled={isWrong || isSuccess}
                     className={`rounded-3xl flex flex-col items-center justify-center w-28 h-32 md:w-36 md:h-40 transition-all duration-300 ${btnClass}`}
                   >
