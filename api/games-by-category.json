@@ -1,0 +1,637 @@
+{
+    "version":  "1.0.0",
+    "generatedAt":  "2026-04-14T19:29:35Z",
+    "totalCategories":  4,
+    "totalGames":  25,
+    "categories":  [
+                       {
+                           "slug":  "logica",
+                           "total":  15,
+                           "games":  [
+                                         {
+                                             "slug":  "digitado",
+                                             "title":  "Digitado",
+                                             "description":  "Teste sua digitação! Veja o emoji, digite a palavra correta e avance de fase. Diversão e agilidade com emojis!",
+                                             "icon":  "⌨️",
+                                             "href":  "/Digitado/index.html",
+                                             "url":  "https://games.helloyotta.com/Digitado/index.html",
+                                             "categories":  [
+                                                                "portugues",
+                                                                "logica"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "monster-typer-i",
+                                             "title":  "Monster Typer I",
+                                             "description":  "Digite a letra inicial das palavras para derrotar monstros! Pratique digitação e raciocínio rápido.",
+                                             "icon":  "👾",
+                                             "href":  "/monster_typer%20I/index.html",
+                                             "url":  "https://games.helloyotta.com/monster_typer%20I/index.html",
+                                             "categories":  [
+                                                                "portugues",
+                                                                "logica"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "monster-typer-ii",
+                                             "title":  "Monster Typer II",
+                                             "description":  "O desafio continua! Digite letras e palavras para vencer monstros ainda mais rápidos e espertos.",
+                                             "icon":  "👹",
+                                             "href":  "/monster_typer%20II/index.html",
+                                             "url":  "https://games.helloyotta.com/monster_typer%20II/index.html",
+                                             "categories":  [
+                                                                "portugues",
+                                                                "logica"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "organiza-tudo",
+                                             "title":  "Organiza Tudo",
+                                             "description":  "Organize as letras e forme palavras! Desenvolva lógica e vocabulário brincando.",
+                                             "icon":  "🔠",
+                                             "href":  "/Organiza%20Tudo/index.html",
+                                             "url":  "https://games.helloyotta.com/Organiza%20Tudo/index.html",
+                                             "categories":  [
+                                                                "portugues",
+                                                                "logica"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "matematica-pirata",
+                                             "title":  "Matemática Pirata",
+                                             "description":  "Resolva desafios matemáticos em alto-mar! Some, subtraia e encontre o tesouro dos piratas.",
+                                             "icon":  "🏴‍☠️",
+                                             "href":  "/Matematica%20Pirata/index.html",
+                                             "url":  "https://games.helloyotta.com/Matematica%20Pirata/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "trem-da-soma-e-subtracao",
+                                             "title":  "Trem da Soma e Subtração",
+                                             "description":  "Complete contas com vagões numéricos e avance pelos trilhos da adição e subtração.",
+                                             "icon":  "🚂",
+                                             "href":  "/Trem%20da%20Soma%20e%20Subtracao/index.html",
+                                             "url":  "https://games.helloyotta.com/Trem%20da%20Soma%20e%20Subtracao/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "digite-o-resultado",
+                                             "title":  "Digite o Resultado",
+                                             "description":  "Complete contas de adição e subtração antes que o tempo acabe.",
+                                             "icon":  "⌨️",
+                                             "href":  "/Digite%20o%20resultado/index.html",
+                                             "url":  "https://games.helloyotta.com/Digite%20o%20resultado/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "galaxia-da-matematica",
+                                             "title":  "Galáxia da Matemática",
+                                             "description":  "Embarque em missões espaciais e resolva adição e subtração com rapidez.",
+                                             "icon":  "🚀",
+                                             "href":  "/Gal%C3%A1xia%20da%20Matem%C3%A1tica/index.html",
+                                             "url":  "https://games.helloyotta.com/Gal%C3%A1xia%20da%20Matem%C3%A1tica/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "duelo-dos-monstros",
+                                             "title":  "Duelo dos Monstros",
+                                             "description":  "Vença monstros resolvendo contas e escolha a resposta certa para atacar.",
+                                             "icon":  "👾",
+                                             "href":  "/Duelo%20dos%20Monstros/index.html",
+                                             "url":  "https://games.helloyotta.com/Duelo%20dos%20Monstros/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "mercado-maior-ou-menor",
+                                             "title":  "Mercado Maior ou Menor",
+                                             "description":  "Compare valores no mercado e aprenda maior, menor e igualdade brincando.",
+                                             "icon":  "🛒",
+                                             "href":  "/Mercado%20Maior%20ou%20Menor/index.html",
+                                             "url":  "https://games.helloyotta.com/Mercado%20Maior%20ou%20Menor/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "canhoes-de-ouro",
+                                             "title":  "Canhões de Ouro",
+                                             "description":  "Mire os canhões com cálculos corretos para conquistar tesouros.",
+                                             "icon":  "💣",
+                                             "href":  "/Canh%C3%B5es%20de%20ouro/index.html",
+                                             "url":  "https://games.helloyotta.com/Canh%C3%B5es%20de%20ouro/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "piratas-do-troco",
+                                             "title":  "Piratas do Troco",
+                                             "description":  "Calcule o troco certo em cada rodada e acumule moedas para abrir o baú do tesouro.",
+                                             "icon":  "💰",
+                                             "href":  "/Piratas%20do%20Troco/index.html",
+                                             "url":  "https://games.helloyotta.com/Piratas%20do%20Troco/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "laboratorio-das-pocoes",
+                                             "title":  "Laboratório das Poções",
+                                             "description":  "Ajuste as gotas do frasco com soma e subtração até alcançar a receita perfeita.",
+                                             "icon":  "🧪",
+                                             "href":  "/Laboratorio%20das%20Pocoes/index.html",
+                                             "url":  "https://games.helloyotta.com/Laboratorio%20das%20Pocoes/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "defesa-do-castelo-matematico",
+                                             "title":  "Defesa do Castelo Matemático",
+                                             "description":  "Responda operações rápidas para defender o castelo antes que o tempo acabe.",
+                                             "icon":  "🏰",
+                                             "href":  "/Defesa%20do%20Castelo%20Matematico/index.html",
+                                             "url":  "https://games.helloyotta.com/Defesa%20do%20Castelo%20Matematico/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "galaxia-dos-opostos",
+                                             "title":  "Galáxia dos Opostos",
+                                             "description":  "Encontre o oposto das palavras e viaje pela galáxia dos antônimos!",
+                                             "icon":  "🌌",
+                                             "href":  "/Galaxia%20dos%20Opostos/index.html",
+                                             "url":  "https://games.helloyotta.com/Galaxia%20dos%20Opostos/index.html",
+                                             "categories":  [
+                                                                "portugues",
+                                                                "logica"
+                                                            ]
+                                         }
+                                     ]
+                       },
+                       {
+                           "slug":  "matematica",
+                           "total":  11,
+                           "games":  [
+                                         {
+                                             "slug":  "matematica-pirata",
+                                             "title":  "Matemática Pirata",
+                                             "description":  "Resolva desafios matemáticos em alto-mar! Some, subtraia e encontre o tesouro dos piratas.",
+                                             "icon":  "🏴‍☠️",
+                                             "href":  "/Matematica%20Pirata/index.html",
+                                             "url":  "https://games.helloyotta.com/Matematica%20Pirata/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "trem-da-soma-e-subtracao",
+                                             "title":  "Trem da Soma e Subtração",
+                                             "description":  "Complete contas com vagões numéricos e avance pelos trilhos da adição e subtração.",
+                                             "icon":  "🚂",
+                                             "href":  "/Trem%20da%20Soma%20e%20Subtracao/index.html",
+                                             "url":  "https://games.helloyotta.com/Trem%20da%20Soma%20e%20Subtracao/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "digite-o-resultado",
+                                             "title":  "Digite o Resultado",
+                                             "description":  "Complete contas de adição e subtração antes que o tempo acabe.",
+                                             "icon":  "⌨️",
+                                             "href":  "/Digite%20o%20resultado/index.html",
+                                             "url":  "https://games.helloyotta.com/Digite%20o%20resultado/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "galaxia-da-matematica",
+                                             "title":  "Galáxia da Matemática",
+                                             "description":  "Embarque em missões espaciais e resolva adição e subtração com rapidez.",
+                                             "icon":  "🚀",
+                                             "href":  "/Gal%C3%A1xia%20da%20Matem%C3%A1tica/index.html",
+                                             "url":  "https://games.helloyotta.com/Gal%C3%A1xia%20da%20Matem%C3%A1tica/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "duelo-dos-monstros",
+                                             "title":  "Duelo dos Monstros",
+                                             "description":  "Vença monstros resolvendo contas e escolha a resposta certa para atacar.",
+                                             "icon":  "👾",
+                                             "href":  "/Duelo%20dos%20Monstros/index.html",
+                                             "url":  "https://games.helloyotta.com/Duelo%20dos%20Monstros/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "mercado-maior-ou-menor",
+                                             "title":  "Mercado Maior ou Menor",
+                                             "description":  "Compare valores no mercado e aprenda maior, menor e igualdade brincando.",
+                                             "icon":  "🛒",
+                                             "href":  "/Mercado%20Maior%20ou%20Menor/index.html",
+                                             "url":  "https://games.helloyotta.com/Mercado%20Maior%20ou%20Menor/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "canhoes-de-ouro",
+                                             "title":  "Canhões de Ouro",
+                                             "description":  "Mire os canhões com cálculos corretos para conquistar tesouros.",
+                                             "icon":  "💣",
+                                             "href":  "/Canh%C3%B5es%20de%20ouro/index.html",
+                                             "url":  "https://games.helloyotta.com/Canh%C3%B5es%20de%20ouro/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "piratas-do-troco",
+                                             "title":  "Piratas do Troco",
+                                             "description":  "Calcule o troco certo em cada rodada e acumule moedas para abrir o baú do tesouro.",
+                                             "icon":  "💰",
+                                             "href":  "/Piratas%20do%20Troco/index.html",
+                                             "url":  "https://games.helloyotta.com/Piratas%20do%20Troco/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "laboratorio-das-pocoes",
+                                             "title":  "Laboratório das Poções",
+                                             "description":  "Ajuste as gotas do frasco com soma e subtração até alcançar a receita perfeita.",
+                                             "icon":  "🧪",
+                                             "href":  "/Laboratorio%20das%20Pocoes/index.html",
+                                             "url":  "https://games.helloyotta.com/Laboratorio%20das%20Pocoes/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "defesa-do-castelo-matematico",
+                                             "title":  "Defesa do Castelo Matemático",
+                                             "description":  "Responda operações rápidas para defender o castelo antes que o tempo acabe.",
+                                             "icon":  "🏰",
+                                             "href":  "/Defesa%20do%20Castelo%20Matematico/index.html",
+                                             "url":  "https://games.helloyotta.com/Defesa%20do%20Castelo%20Matematico/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "mercado-alien",
+                                             "title":  "Mercado Alien",
+                                             "description":  "Compare valores no mercado Alien e aprenda maior, menor e igualdade brincando.",
+                                             "icon":  "🛸",
+                                             "href":  "/Mercado%20Alien/index.html",
+                                             "url":  "https://games.helloyotta.com/Mercado%20Alien/index.html",
+                                             "categories":  [
+                                                                "matematica"
+                                                            ]
+                                         }
+                                     ]
+                       },
+                       {
+                           "slug":  "novos",
+                           "total":  9,
+                           "games":  [
+                                         {
+                                             "slug":  "trem-da-soma-e-subtracao",
+                                             "title":  "Trem da Soma e Subtração",
+                                             "description":  "Complete contas com vagões numéricos e avance pelos trilhos da adição e subtração.",
+                                             "icon":  "🚂",
+                                             "href":  "/Trem%20da%20Soma%20e%20Subtracao/index.html",
+                                             "url":  "https://games.helloyotta.com/Trem%20da%20Soma%20e%20Subtracao/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "digite-o-resultado",
+                                             "title":  "Digite o Resultado",
+                                             "description":  "Complete contas de adição e subtração antes que o tempo acabe.",
+                                             "icon":  "⌨️",
+                                             "href":  "/Digite%20o%20resultado/index.html",
+                                             "url":  "https://games.helloyotta.com/Digite%20o%20resultado/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "galaxia-da-matematica",
+                                             "title":  "Galáxia da Matemática",
+                                             "description":  "Embarque em missões espaciais e resolva adição e subtração com rapidez.",
+                                             "icon":  "🚀",
+                                             "href":  "/Gal%C3%A1xia%20da%20Matem%C3%A1tica/index.html",
+                                             "url":  "https://games.helloyotta.com/Gal%C3%A1xia%20da%20Matem%C3%A1tica/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "duelo-dos-monstros",
+                                             "title":  "Duelo dos Monstros",
+                                             "description":  "Vença monstros resolvendo contas e escolha a resposta certa para atacar.",
+                                             "icon":  "👾",
+                                             "href":  "/Duelo%20dos%20Monstros/index.html",
+                                             "url":  "https://games.helloyotta.com/Duelo%20dos%20Monstros/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "mercado-maior-ou-menor",
+                                             "title":  "Mercado Maior ou Menor",
+                                             "description":  "Compare valores no mercado e aprenda maior, menor e igualdade brincando.",
+                                             "icon":  "🛒",
+                                             "href":  "/Mercado%20Maior%20ou%20Menor/index.html",
+                                             "url":  "https://games.helloyotta.com/Mercado%20Maior%20ou%20Menor/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "canhoes-de-ouro",
+                                             "title":  "Canhões de Ouro",
+                                             "description":  "Mire os canhões com cálculos corretos para conquistar tesouros.",
+                                             "icon":  "💣",
+                                             "href":  "/Canh%C3%B5es%20de%20ouro/index.html",
+                                             "url":  "https://games.helloyotta.com/Canh%C3%B5es%20de%20ouro/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "piratas-do-troco",
+                                             "title":  "Piratas do Troco",
+                                             "description":  "Calcule o troco certo em cada rodada e acumule moedas para abrir o baú do tesouro.",
+                                             "icon":  "💰",
+                                             "href":  "/Piratas%20do%20Troco/index.html",
+                                             "url":  "https://games.helloyotta.com/Piratas%20do%20Troco/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "laboratorio-das-pocoes",
+                                             "title":  "Laboratório das Poções",
+                                             "description":  "Ajuste as gotas do frasco com soma e subtração até alcançar a receita perfeita.",
+                                             "icon":  "🧪",
+                                             "href":  "/Laboratorio%20das%20Pocoes/index.html",
+                                             "url":  "https://games.helloyotta.com/Laboratorio%20das%20Pocoes/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "defesa-do-castelo-matematico",
+                                             "title":  "Defesa do Castelo Matemático",
+                                             "description":  "Responda operações rápidas para defender o castelo antes que o tempo acabe.",
+                                             "icon":  "🏰",
+                                             "href":  "/Defesa%20do%20Castelo%20Matematico/index.html",
+                                             "url":  "https://games.helloyotta.com/Defesa%20do%20Castelo%20Matematico/index.html",
+                                             "categories":  [
+                                                                "matematica",
+                                                                "logica",
+                                                                "novos"
+                                                            ]
+                                         }
+                                     ]
+                       },
+                       {
+                           "slug":  "portugues",
+                           "total":  14,
+                           "games":  [
+                                         {
+                                             "slug":  "digitado",
+                                             "title":  "Digitado",
+                                             "description":  "Teste sua digitação! Veja o emoji, digite a palavra correta e avance de fase. Diversão e agilidade com emojis!",
+                                             "icon":  "⌨️",
+                                             "href":  "/Digitado/index.html",
+                                             "url":  "https://games.helloyotta.com/Digitado/index.html",
+                                             "categories":  [
+                                                                "portugues",
+                                                                "logica"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "maisculo-vs-minusculo",
+                                             "title":  "Maiúsculo vs Minúsculo",
+                                             "description":  "Descubra e combine letras maiúsculas e minúsculas, treinando a percepção visual e a alfabetização!",
+                                             "icon":  "🔤",
+                                             "href":  "/Maisculo%20vs%20Minusculo/index.html",
+                                             "url":  "https://games.helloyotta.com/Maisculo%20vs%20Minusculo/index.html",
+                                             "categories":  [
+                                                                "portugues"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "monster-typer-i",
+                                             "title":  "Monster Typer I",
+                                             "description":  "Digite a letra inicial das palavras para derrotar monstros! Pratique digitação e raciocínio rápido.",
+                                             "icon":  "👾",
+                                             "href":  "/monster_typer%20I/index.html",
+                                             "url":  "https://games.helloyotta.com/monster_typer%20I/index.html",
+                                             "categories":  [
+                                                                "portugues",
+                                                                "logica"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "monster-typer-ii",
+                                             "title":  "Monster Typer II",
+                                             "description":  "O desafio continua! Digite letras e palavras para vencer monstros ainda mais rápidos e espertos.",
+                                             "icon":  "👹",
+                                             "href":  "/monster_typer%20II/index.html",
+                                             "url":  "https://games.helloyotta.com/monster_typer%20II/index.html",
+                                             "categories":  [
+                                                                "portugues",
+                                                                "logica"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "syllables",
+                                             "title":  "Separando Sílabas",
+                                             "description":  "Separe as sílabas corretamente e avance nos níveis! Ideal para aprender a estrutura das palavras.",
+                                             "icon":  "✂️",
+                                             "href":  "/syllables/index.html",
+                                             "url":  "https://games.helloyotta.com/syllables/index.html",
+                                             "categories":  [
+                                                                "portugues"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "vowel-vowel",
+                                             "title":  "Complete com Vogais",
+                                             "description":  "Complete as palavras escolhendo a vogal certa! Exercite ortografia e leitura de forma divertida.",
+                                             "icon":  "🔠",
+                                             "href":  "/vowel/vowel.html",
+                                             "url":  "https://games.helloyotta.com/vowel/vowel.html",
+                                             "categories":  [
+                                                                "portugues"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "fabrica-de-acentos",
+                                             "title":  "Fábrica de Acentos",
+                                             "description":  "Treine o uso correto dos acentos nas palavras! Aprenda brincando com desafios de ortografia.",
+                                             "icon":  "🔠",
+                                             "href":  "/Fabrica%20de%20Acentos/index.html",
+                                             "url":  "https://games.helloyotta.com/Fabrica%20de%20Acentos/index.html",
+                                             "categories":  [
+                                                                "portugues"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "organiza-tudo",
+                                             "title":  "Organiza Tudo",
+                                             "description":  "Organize as letras e forme palavras! Desenvolva lógica e vocabulário brincando.",
+                                             "icon":  "🔠",
+                                             "href":  "/Organiza%20Tudo/index.html",
+                                             "url":  "https://games.helloyotta.com/Organiza%20Tudo/index.html",
+                                             "categories":  [
+                                                                "portugues",
+                                                                "logica"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "cacadores-de-coletivos",
+                                             "title":  "Caçadores de Coletivos",
+                                             "description":  "Encontre o coletivo correto para cada grupo! Pratique gramática de forma interativa.",
+                                             "icon":  "🕵️‍♂️",
+                                             "href":  "/Ca%C3%A7adores%20de%20Coletivos/index.html",
+                                             "url":  "https://games.helloyotta.com/Ca%C3%A7adores%20de%20Coletivos/index.html",
+                                             "categories":  [
+                                                                "portugues"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "detetives-da-ortografia",
+                                             "title":  "Detetives da Ortografia",
+                                             "description":  "Investigue e corrija palavras! Torne-se um detetive da ortografia e melhore sua escrita.",
+                                             "icon":  "🕵️‍♀️",
+                                             "href":  "/Detetives%20da%20Ortografia/index.html",
+                                             "url":  "https://games.helloyotta.com/Detetives%20da%20Ortografia/index.html",
+                                             "categories":  [
+                                                                "portugues"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "sinonimos",
+                                             "title":  "Sinônimos",
+                                             "description":  "Descubra palavras com significados parecidos! Enriqueça seu vocabulário brincando com sinônimos.",
+                                             "icon":  "🔁",
+                                             "href":  "/Sinonimos/index.html",
+                                             "url":  "https://games.helloyotta.com/Sinonimos/index.html",
+                                             "categories":  [
+                                                                "portugues"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "galaxia-dos-opostos",
+                                             "title":  "Galáxia dos Opostos",
+                                             "description":  "Encontre o oposto das palavras e viaje pela galáxia dos antônimos!",
+                                             "icon":  "🌌",
+                                             "href":  "/Galaxia%20dos%20Opostos/index.html",
+                                             "url":  "https://games.helloyotta.com/Galaxia%20dos%20Opostos/index.html",
+                                             "categories":  [
+                                                                "portugues",
+                                                                "logica"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "fabrica-de-rimas",
+                                             "title":  "Fábrica de Rimas",
+                                             "description":  "Crie rimas divertidas! Complete versos e desenvolva criatividade com as palavras.",
+                                             "icon":  "🎤",
+                                             "href":  "/F%C3%A1brica%20de%20Rimas/index.html",
+                                             "url":  "https://games.helloyotta.com/F%C3%A1brica%20de%20Rimas/index.html",
+                                             "categories":  [
+                                                                "portugues"
+                                                            ]
+                                         },
+                                         {
+                                             "slug":  "escola-de-magia-vsa",
+                                             "title":  "Escola de Magia VSA",
+                                             "description":  "Aprenda sobre classes gramaticais com magia! Descubra substantivos, verbos e adjetivos de forma encantada.",
+                                             "icon":  "🧙‍♂️",
+                                             "href":  "/Escola%20de%20Magia%20VSA/index.html",
+                                             "url":  "https://games.helloyotta.com/Escola%20de%20Magia%20VSA/index.html",
+                                             "categories":  [
+                                                                "portugues"
+                                                            ]
+                                         }
+                                     ]
+                       }
+                   ]
+}
