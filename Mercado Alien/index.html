@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliens Comparadores - < = ></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #020617;
+            color: white;
+            touch-action: manipulation;
+            overflow-x: hidden;
+            margin: 0;
+        }
+        .font-game {
+            font-family: 'Luckiest Guy', cursive;
+            letter-spacing: 2px;
+        }
+        .screen {
+            display: none;
+            min-height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        .active-screen {
+            display: flex;
+        }
+
+        /* Estilos dos Botões de Operadores */
+        .op-btn {
+            font-size: 4rem;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #1e293b;
+            border: 4px solid #334155;
+            border-radius: 1.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .op-btn:hover {
+            transform: scale(1.1);
+            background: #334155;
+            border-color: #6366f1;
+        }
+        .op-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Animações */
+        @keyframes correct-flash {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.5) drop-shadow(0 0 20px #4ade80); }
+        }
+        .correct-anim {
+            animation: correct-flash 0.5s ease;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-15px); }
+            75% { transform: translateX(15px); }
+        }
+        .shake-anim {
+            animation: shake 0.4s ease;
+            color: #f87171;
+        }
+
+        @keyframes saucer-float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(2deg); }
+        }
+        .floating-saucer {
+            animation: saucer-float 3s ease-in-out infinite;
+        }
+
+        @keyframes travel {
+            0% { transform: translateX(-150%) scale(0.5); }
+            50% { transform: translateX(0) scale(1.2); }
+            100% { transform: translateX(150%) scale(0.5); }
+        }
+        .travel-anim {
+            animation: travel 2s linear forwards;
+        }
+
+        /* Temporizador */
+        .timer-container {
+            width: 100%;
+            height: 14px;
+            background-color: #0f172a;
+            border-radius: 999px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+            border: 2px solid #1e293b;
+        }
+        #timer-bar {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, #4ade80, #22c55e);
+            transition: width 0.1s linear;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(white 1px, transparent 0);
+            background-size: 40px 40px;
+            opacity: 0.05;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+
+    <!-- TELA INICIAL -->
+    <div id="screen-start" class="screen active-screen justify-center bg-gradient-to-b from-slate-900 to-black">
+        <h1 class="text-6xl md:text-8xl font-game mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-400 drop-shadow-lg">ALIENS<br>COMPARADORES</h1>
+        <div class="w-64 h-48 flex items-center justify-center mb-12 floating-saucer">
+            <span class="text-9xl">🛸</span>
+        </div>
+        <button onclick="showScreen('screen-mode')" class="bg-green-500 hover:bg-green-400 text-slate-900 font-game text-4xl px-16 py-5 rounded-full shadow-[0_0_30px_rgba(74,222,128,0.4)] transition-all hover:scale-110 active:scale-95 border-b-8 border-green-700">
+            INICIAR MISSÃO
+        </button>
+    </div>
+
+    <!-- SELEÇÃO DE MODO -->
+    <div id="screen-mode" class="screen bg-slate-950 justify-center">
+        <h2 class="text-4xl font-game text-cyan-400 mb-12">NÍVEL DE INTELIGÊNCIA</h2>
+        <div class="flex flex-col md:flex-row gap-8 w-full max-w-4xl px-4">
+            <button onclick="setMode('infantil')" class="flex-1 bg-slate-900 p-8 rounded-[3rem] border-4 border-cyan-500/30 text-center hover:border-cyan-400 transition">
+                <div class="text-7xl mb-4">👽</div>
+                <div class="text-3xl font-game text-cyan-300 mb-2">INFANTIL</div>
+                <p class="text-slate-400 font-bold italic">Conte os Aliens para comparar!</p>
+            </button>
+            <button onclick="setMode('fundamental')" class="flex-1 bg-slate-900 p-8 rounded-[3rem] border-4 border-purple-500/30 text-center hover:border-purple-400 transition">
+                <div class="text-7xl mb-4">🧠</div>
+                <div class="text-3xl font-game text-purple-300 mb-2">FUNDAMENTAL I</div>
+                <p class="text-slate-400 font-bold italic">Raciocínio rápido com números!</p>
+            </button>
+        </div>
+        <button onclick="showScreen('screen-start')" class="mt-12 text-slate-500 font-bold underline underline-offset-4 hover:text-slate-300 transition">Voltar para o Menu</button>
+    </div>
+
+    <!-- SELEÇÃO DE NÍVEIS -->
+    <div id="screen-levels" class="screen bg-slate-950 overflow-y-auto">
+        <div class="max-w-5xl w-full">
+            <div class="flex justify-between items-center mb-10">
+                <button onclick="showScreen('screen-mode')" class="bg-slate-800 text-cyan-300 font-bold px-6 py-3 rounded-2xl border-2 border-cyan-900/50 hover:bg-slate-700">← MODOS</button>
+                <h2 class="text-4xl font-game text-cyan-400">PLANETAS</h2>
+                <div class="w-24"></div>
+            </div>
+            <div id="levels-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 pb-10"></div>
+        </div>
+    </div>
+
+    <!-- TELA DO JOGO -->
+    <div id="screen-game" class="screen">
+        <div class="w-full max-w-5xl">
+            <div class="flex justify-between items-center mb-4">
+                <button onclick="quitGame()" class="bg-slate-800 px-6 py-2 rounded-xl font-bold border-2 border-slate-700 text-slate-300">ABORTAR</button>
+                <div class="text-right flex flex-col items-end">
+                    <div id="shields-ui" class="flex gap-1 mb-1 text-2xl">
+                        <span>🔋</span><span>🔋</span><span>🔋</span>
+                    </div>
+                    <div class="text-xl font-game text-cyan-400" id="level-title">NÍVEL 1</div>
+                    <div class="text-sm font-bold text-green-400" id="phase-counter">FASE 1 / 10</div>
+                </div>
+            </div>
+
+            <div class="timer-container">
+                <div id="timer-bar"></div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center bg-slate-900/50 p-6 md:p-12 rounded-[4rem] border-4 border-slate-800 relative min-h-[550px] gap-8 shadow-2xl">
+
+                <!-- Área Visual de Ajuda -->
+                <div id="visual-aid" class="flex justify-around w-full items-center min-h-[140px] gap-4">
+                    <!-- Gerado dinamicamente -->
+                </div>
+
+                <!-- Painel de Comparação -->
+                <div class="flex items-center justify-center w-full gap-8 md:gap-16">
+                    <div id="val-left" class="font-game text-6xl md:text-8xl text-white">10</div>
+                    <div id="operator-slot" class="w-24 h-24 md:w-32 md:h-32 border-4 border-dashed border-cyan-500/50 rounded-3xl flex items-center justify-center text-6xl font-game text-cyan-400 bg-cyan-500/5">?</div>
+                    <div id="val-right" class="font-game text-6xl md:text-8xl text-white">25</div>
+                </div>
+
+                <!-- Botões de Operadores -->
+                <div class="flex gap-4 md:gap-8 mt-4">
+                    <button onclick="checkAnswer('<')" class="op-btn font-game text-cyan-400"><</button>
+                    <button onclick="checkAnswer('=')" class="op-btn font-game text-yellow-400">=</button>
+                    <button onclick="checkAnswer('>')" class="op-btn font-game text-pink-400">></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TELA DE TRANSIÇÃO -->
+    <div id="screen-transition" class="fixed inset-0 bg-slate-950 z-[100] flex items-center justify-center hidden">
+        <div class="text-center">
+            <h3 class="text-3xl font-game text-cyan-400 mb-12">SALTANDO PARA O PRÓXIMO PLANETA...</h3>
+            <div class="relative w-full h-40 flex items-center justify-center">
+                <div id="trans-planet" class="text-9xl absolute right-10">🪐</div>
+                <div id="trans-ufo" class="text-8xl absolute left-10">🛸</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE VITÓRIA -->
+    <div id="win-modal" class="fixed inset-0 bg-black/90 flex items-center justify-center hidden z-[110]">
+        <div class="bg-slate-900 p-12 rounded-[4rem] text-center border-8 border-green-500 max-w-sm mx-4 shadow-[0_0_50px_rgba(74,222,128,0.3)]">
+            <h2 class="text-5xl font-game text-white mb-4">SUCESSO!</h2>
+            <div class="text-8xl mb-6">👾</div>
+            <p class="text-xl font-bold text-slate-400 mb-8">Portal ativado para o próximo setor!</p>
+            <button id="next-level-btn" onclick="handleNextLevelClick()" class="bg-green-500 hover:bg-green-400 text-slate-900 font-game text-3xl py-4 px-12 rounded-full shadow-lg border-b-8 border-green-700 transition-all">
+                AVANÇAR ➔
+            </button>
+        </div>
+    </div>
+
+    <!-- MODAL DE GAME OVER -->
+    <div id="game-over-modal" class="fixed inset-0 bg-black/90 flex items-center justify-center hidden z-[110]">
+        <div class="bg-slate-900 p-12 rounded-[4rem] text-center border-8 border-red-500 max-w-sm mx-4 shadow-[0_0_50px_rgba(239,68,68,0.3)]">
+            <h2 class="text-5xl font-game text-white mb-4">ENERGIA ESGOTADA!</h2>
+            <div class="text-8xl mb-6">💥</div>
+            <p class="text-xl font-bold text-slate-400 mb-8">A nave ficou sem energia. Tente novamente!</p>
+            <button onclick="retryLevel()" class="bg-red-500 hover:bg-red-400 text-slate-900 font-game text-3xl py-4 px-12 rounded-full shadow-lg border-b-8 border-red-700 transition-all">
+                REINICIAR ➔
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Configuração dos 12 Níveis (Dificuldade Média e Mais Fases)
+        const levels = [
+            { name: "Marte", count: 10, range: 10, complex: false, time: 15000 },
+            { name: "Vênus", count: 10, range: 15, complex: false, time: 15000 },
+            { name: "Júpiter", count: 10, range: 20, complex: false, time: 14000 },
+            { name: "Saturno", count: 10, range: 25, complex: false, time: 14000 },
+            { name: "Netuno", count: 10, range: 30, complex: false, time: 13000 },
+            { name: "Urano", count: 10, range: 35, complex: false, time: 12000 },
+            { name: "Plutão", count: 10, range: 40, complex: true, time: 12000 },
+            { name: "Nebulosa", count: 10, range: 45, complex: true, time: 11000 },
+            { name: "Andrômeda", count: 10, range: 50, complex: true, time: 10000 },
+            { name: "Buraco Negro", count: 10, range: 60, complex: true, time: 9000 },
+            { name: "Quasar", count: 10, range: 80, complex: true, time: 8000 },
+            { name: "Infinito", count: 10, range: 100, complex: true, time: 7000 }
+        ];
+
+        let unlockedLevels = 1;
+        let activeLevelIdx = 0;
+        let activePhaseIdx = 0;
+        let canInteract = false;
+        let gameMode = 'infantil';
+        let currentProblem = null;
+        let timerInterval = null;
+        let timeLeft = 100;
+        let shields = 3;
+
+        const planets = ['🪐', '🌍', '🌑', '☀️', '🌑', '☄️', '🔵', '🔴', '🟣', '🟢'];
+        const alienIcons = ['👽', '👾', '🤖', '👻', '🐙'];
+
+        function showScreen(screenId) {
+            stopTimer();
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active-screen'));
+            document.getElementById('screen-transition').classList.add('hidden');
+            const target = document.getElementById(screenId);
+            if(target) target.classList.add('active-screen');
+            document.getElementById('win-modal').classList.add('hidden');
+            document.getElementById('game-over-modal').classList.add('hidden');
+            if (screenId === 'screen-levels') renderLevelsGrid();
+        }
+
+        function setMode(mode) {
+            gameMode = mode;
+            showScreen('screen-levels');
+        }
+
+        function renderLevelsGrid() {
+            const grid = document.getElementById('levels-grid');
+            grid.innerHTML = '';
+            levels.forEach((lvl, idx) => {
+                const isLocked = idx + 1 > unlockedLevels;
+                const card = document.createElement('div');
+                card.className = `bg-slate-900 p-6 rounded-[2.5rem] border-4 flex flex-col items-center justify-center text-center transition-all ${isLocked ? 'opacity-50 border-slate-800' : 'border-cyan-900/40 cursor-pointer hover:scale-105 shadow-lg'}`;
+                card.innerHTML = `
+                    <div class="text-4xl mb-2">${isLocked ? '🔒' : '📍'}</div>
+                    <div class="text-xl font-game text-cyan-300">${lvl.name}</div>
+                    <div class="text-xs font-bold text-slate-500 uppercase">${isLocked ? 'Trancado' : lvl.count + ' Fases'}</div>
+                `;
+                if (!isLocked) card.onclick = () => startLevel(idx);
+                grid.appendChild(card);
+            });
+        }
+
+        function startLevel(idx) {
+            activeLevelIdx = idx;
+            activePhaseIdx = 0;
+            shields = 3;
+            updateShieldsUI();
+            showScreen('screen-game');
+            generateProblem();
+        }
+
+        function retryLevel() {
+            document.getElementById('game-over-modal').classList.add('hidden');
+            startLevel(activeLevelIdx);
+        }
+
+        function updateShieldsUI() {
+            const container = document.getElementById('shields-ui');
+            container.innerHTML = '';
+            for(let i=0; i<3; i++) {
+                if(i < shields) {
+                    container.innerHTML += '<span>🔋</span>';
+                } else {
+                    container.innerHTML += '<span class="opacity-30 grayscale filter">🪫</span>';
+                }
+            }
+        }
+
+        function generateProblem() {
+            const config = levels[activeLevelIdx];
+            let v1, v2, displayV1, displayV2;
+
+            if (config.complex && Math.random() > 0.6) {
+                // Desafio de Soma Simples vs Número
+                const n1 = Math.floor(Math.random() * (config.range / 2)) + 5;
+                const n2 = Math.floor(Math.random() * 10) + 1;
+                v1 = n1 + n2;
+                displayV1 = `${n1}+${n2}`;
+                v2 = Math.floor(Math.random() * config.range) + 10;
+                displayV2 = v2;
+            } else {
+                // Comparação de Números Puros
+                v1 = Math.floor(Math.random() * config.range) + 1;
+                v2 = Math.floor(Math.random() * config.range) + 1;
+
+                // Evita sempre o mesmo número, mas permite às vezes para o "="
+                if(Math.random() < 0.15) v2 = v1;
+
+                displayV1 = v1;
+                displayV2 = v2;
+            }
+
+            let correct;
+            if (v1 < v2) correct = '<';
+            else if (v1 === v2) correct = '=';
+            else correct = '>';
+
+            currentProblem = { v1, v2, displayV1, displayV2, correct };
+            renderPhase();
+        }
+
+        function renderPhase() {
+            canInteract = true;
+            const leftEl = document.getElementById('val-left');
+            const rightEl = document.getElementById('val-right');
+            const slot = document.getElementById('operator-slot');
+            const aid = document.getElementById('visual-aid');
+
+            document.getElementById('level-title').innerText = levels[activeLevelIdx].name.toUpperCase();
+            document.getElementById('phase-counter').innerText = `MISSÃO ${activePhaseIdx + 1} / ${levels[activeLevelIdx].count}`;
+
+            leftEl.innerText = currentProblem.displayV1;
+            rightEl.innerText = currentProblem.displayV2;
+            slot.innerText = "?";
+            slot.className = "w-24 h-24 md:w-32 md:h-32 border-4 border-dashed border-cyan-500/50 rounded-3xl flex items-center justify-center text-6xl font-game text-cyan-400 bg-cyan-500/5";
+
+            // Ajuda Visual (Modo Infantil)
+            aid.innerHTML = '';
+            if (gameMode === 'infantil' && currentProblem.v1 <= 30 && currentProblem.v2 <= 30) {
+                const icon = alienIcons[Math.floor(Math.random() * alienIcons.length)];
+
+                const createGroup = (num, color) => {
+                    const g = document.createElement('div');
+                    g.className = `flex flex-wrap gap-1 justify-center p-4 border-2 border-dashed ${color} rounded-2xl max-w-[200px]`;
+                    for(let i=0; i<num; i++) {
+                        const s = document.createElement('span');
+                        s.className = "text-2xl filter drop-shadow-sm";
+                        s.innerText = icon;
+                        g.appendChild(s);
+                    }
+                    return g;
+                };
+
+                aid.appendChild(createGroup(currentProblem.v1, 'border-cyan-500/20'));
+                const spacer = document.createElement('div');
+                spacer.className = "w-20";
+                aid.appendChild(spacer);
+                aid.appendChild(createGroup(currentProblem.v2, 'border-purple-500/20'));
+            }
+
+            resetTimer();
+        }
+
+        function checkAnswer(choice) {
+            if (!canInteract) return;
+            canInteract = false;
+            stopTimer();
+
+            const slot = document.getElementById('operator-slot');
+            const panel = slot.parentElement.parentElement;
+            slot.innerText = choice;
+
+            if (choice === currentProblem.correct) {
+                slot.className = "w-24 h-24 md:w-32 md:h-32 border-4 border-green-500 rounded-3xl flex items-center justify-center text-6xl font-game text-green-400 bg-green-500/10 correct-anim";
+                setTimeout(nextPhase, 1200);
+            } else {
+                panel.classList.add('shake-anim');
+                slot.className = "w-24 h-24 md:w-32 md:h-32 border-4 border-red-500 rounded-3xl flex items-center justify-center text-6xl font-game text-red-400 bg-red-500/10";
+
+                shields--;
+                updateShieldsUI();
+
+                setTimeout(() => {
+                    panel.classList.remove('shake-anim');
+                    if (shields <= 0) {
+                        document.getElementById('game-over-modal').classList.remove('hidden');
+                    } else {
+                        slot.innerText = "?";
+                        slot.className = "w-24 h-24 md:w-32 md:h-32 border-4 border-dashed border-cyan-500/50 rounded-3xl flex items-center justify-center text-6xl font-game text-cyan-400 bg-cyan-500/5";
+                        canInteract = true;
+                        resetTimer();
+                    }
+                }, 800);
+            }
+        }
+
+        function resetTimer() {
+            stopTimer();
+            timeLeft = 100;
+            updateTimerUI();
+            const config = levels[activeLevelIdx];
+            const step = 100;
+            const decrement = (step / config.time) * 100;
+
+            timerInterval = setInterval(() => {
+                timeLeft -= decrement;
+                if (timeLeft <= 0) {
+                    timeLeft = 0;
+                    handleTimeOut();
+                }
+                updateTimerUI();
+            }, step);
+        }
+
+        function stopTimer() {
+            if (timerInterval) clearInterval(timerInterval);
+        }
+
+        function updateTimerUI() {
+            const bar = document.getElementById('timer-bar');
+            bar.style.width = `${timeLeft}%`;
+            if (timeLeft > 50) bar.style.background = 'linear-gradient(90deg, #4ade80, #22c55e)';
+            else if (timeLeft > 20) bar.style.background = 'linear-gradient(90deg, #fbbf24, #f59e0b)';
+            else bar.style.background = 'linear-gradient(90deg, #f87171, #ef4444)';
+        }
+
+        function handleTimeOut() {
+            stopTimer();
+            canInteract = false;
+            const panel = document.getElementById('operator-slot').parentElement.parentElement;
+            panel.classList.add('shake-anim');
+
+            shields--;
+            updateShieldsUI();
+
+            setTimeout(() => {
+                panel.classList.remove('shake-anim');
+                if (shields <= 0) {
+                    document.getElementById('game-over-modal').classList.remove('hidden');
+                } else {
+                    resetTimer();
+                    canInteract = true;
+                }
+            }, 600);
+        }
+
+        function nextPhase() {
+            activePhaseIdx++;
+            if (activePhaseIdx < levels[activeLevelIdx].count) {
+                generateProblem();
+            } else {
+                // Inicia a animação de transição imediatamente após completar o nível
+                startTransition();
+            }
+        }
+
+        function startTransition() {
+            const screen = document.getElementById('screen-transition');
+            const ufo = document.getElementById('trans-ufo');
+            const planet = document.getElementById('trans-planet');
+
+            planet.innerText = planets[Math.floor(Math.random() * planets.length)];
+            screen.classList.remove('hidden');
+            ufo.classList.remove('travel-anim');
+            void ufo.offsetWidth;
+            ufo.classList.add('travel-anim');
+
+            setTimeout(() => {
+                screen.classList.add('hidden');
+                // Exibe o modal de vitória somente após a nave terminar de viajar
+                showWinModal();
+            }, 2000);
+        }
+
+        function showWinModal() {
+            if (activeLevelIdx + 1 === unlockedLevels && unlockedLevels < levels.length) {
+                unlockedLevels++;
+            }
+            const isFinal = activeLevelIdx + 1 === levels.length;
+            document.getElementById('modal-title').innerText = isFinal ? "GALÁXIA SALVA!" : "SETOR LIMPO!";
+            const btn = document.getElementById('next-level-btn');
+
+            if(isFinal) {
+                btn.innerText = "MENU PRINCIPAL";
+                btn.onclick = () => showScreen('screen-levels');
+            } else {
+                btn.innerText = "PRÓXIMO SETOR ➔";
+                btn.onclick = handleNextLevelClick;
+            }
+
+            document.getElementById('win-modal').classList.remove('hidden');
+        }
+
+        function handleNextLevelClick() {
+            document.getElementById('win-modal').classList.add('hidden');
+            activeLevelIdx++;
+            startLevel(activeLevelIdx); // startLevel já reinicia a energia e a fase para 0
+        }
+
+        function quitGame() {
+            stopTimer();
+            showScreen('screen-levels');
+        }
+
+        // Bloqueia teclas de atalho se necessário (ex: números para resposta)
+        window.addEventListener('keydown', (e) => {
+            if (!canInteract) return;
+            if (e.key === '<' || e.key === ',') checkAnswer('<');
+            if (e.key === '=' || e.key === 'Enter') checkAnswer('=');
+            if (e.key === '>' || e.key === '.') checkAnswer('>');
+        });
+    </script>
+</body>
+</html>
