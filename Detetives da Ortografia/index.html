@@ -9,15 +9,12 @@
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- Fontes Divertidas -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
-  
   <!-- React e ReactDOM -->
-  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
-  
+  <script src="../vendor/react@18.3.1.production.min.js" crossorigin></script>
+  <script src="../vendor/react-dom@18.3.1.production.min.js" crossorigin></script>
+
   <!-- Babel -->
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="../vendor/babel@7.26.10.min.js"></script>
 
   <style>
     body {
@@ -27,26 +24,6 @@
     }
     
     /* Animações */
-    @keyframes shake {
-      0%, 100% { transform: translateX(0); }
-      25% { transform: translateX(-8px) rotate(-3deg); }
-      75% { transform: translateX(8px) rotate(3deg); }
-    }
-    .shake-anim { animation: shake 0.4s ease-in-out; }
-
-    @keyframes popIn {
-      0% { transform: scale(0.5); opacity: 0; }
-      80% { transform: scale(1.1); }
-      100% { transform: scale(1); opacity: 1; }
-    }
-    .pop-anim { animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
-
-    @keyframes lineDraw {
-      0% { stroke-dasharray: 0, 1000; }
-      100% { stroke-dasharray: 1000, 0; }
-    }
-    .line-anim { animation: lineDraw 0.5s ease-out forwards; }
-
     @keyframes spyFloat {
       0%, 100% { transform: translateY(0) rotate(0deg); }
       50% { transform: translateY(-10px) rotate(5deg); }
@@ -64,7 +41,7 @@
   <div id="root"></div>
 
   <script type="text/babel">
-    const { useState, useEffect } = React;
+const { useState, useEffect } = React;
 
     // --- DADOS DO JOGO: DETETIVES DA ORTOGRAFIA ---
     const LEVELS = [
@@ -533,6 +510,6 @@
 
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(<App />);
-  </script>
+</script>
 </body>
 </html>

@@ -10,40 +10,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
   
   <!-- React e ReactDOM -->
-  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
-  
+  <script src="../vendor/react@18.3.1.production.min.js" crossorigin></script>
+  <script src="../vendor/react-dom@18.3.1.production.min.js" crossorigin></script>
+
   <!-- Babel -->
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="../vendor/babel@7.26.10.min.js"></script>
 
   <style>
-    /* Animações Personalizadas */
-    @keyframes shake {
-      0%, 100% { transform: translateX(0); }
-      25% { transform: translateX(-8px) rotate(-5deg); }
-      75% { transform: translateX(8px) rotate(5deg); }
-    }
-    .shake-anim {
-      animation: shake 0.3s ease-in-out;
-    }
-
-    @keyframes pop {
-      0% { transform: scale(0.5); opacity: 0; }
-      70% { transform: scale(1.2); }
-      100% { transform: scale(1); opacity: 1; }
-    }
-    .pop-anim {
-      animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-    .float-anim {
-      animation: float 3s ease-in-out infinite;
-    }
-    
     /* Esconder scrollbar na área dos items */
     .no-scrollbar::-webkit-scrollbar {
       display: none;
@@ -57,8 +30,9 @@
 <body class="bg-sky-50 font-sans selection:bg-none">
   <div id="root"></div>
 
+  <script src="../utils/shuffle.js"></script>
   <script type="text/babel">
-    const { useState, useEffect } = React;
+const { useState, useEffect } = React;
 
     // --- DADOS DO JOGO ---
     const LEVELS = [
@@ -194,12 +168,10 @@
       const [dragOverZone, setDragOverZone] = useState(null);
       const [shakeZone, setShakeZone] = useState(null);
       
-      const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
-
       const startLevel = (levelId) => {
         const levelData = LEVELS.find(l => l.id === levelId);
         setCurrentLevel(levelData);
-        setPendingItems(shuffleArray(levelData.items));
+        setPendingItems(HY.shuffle(levelData.items));
         
         // Inicializa as caixas vazias
         const initialSorted = {};
@@ -522,6 +494,6 @@
 
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(<App />);
-  </script>
+</script>
 </body>
 </html>
