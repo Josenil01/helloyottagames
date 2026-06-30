@@ -1,0 +1,31 @@
+// utils/letters.js — HY Letters Bank
+// Banco de letras do alfabeto para jogos de letras (ex: Maiúsculo vs Minúsculo).
+// eConsoante: true para todas as letras exceto A, E, I, O, U.
+window.HYLetters = [
+  { maiusculo: 'A', minusculo: 'a', indice: 0,  dificuldade: 'facil',   eConsoante: false, distratoresUpper: ['E', 'O', 'R'],   distratoresLower: ['e', 'o', 'c'] },
+  { maiusculo: 'B', minusculo: 'b', indice: 1,  dificuldade: 'medio',   eConsoante: true,  distratoresUpper: ['D', 'P', 'R'],   distratoresLower: ['d', 'p', 'q'] },
+  { maiusculo: 'C', minusculo: 'c', indice: 2,  dificuldade: 'medio',   eConsoante: true,  distratoresUpper: ['G', 'O', 'E'],   distratoresLower: ['e', 'o', 'a'] },
+  { maiusculo: 'D', minusculo: 'd', indice: 3,  dificuldade: 'medio',   eConsoante: true,  distratoresUpper: ['B', 'O', 'P'],   distratoresLower: ['b', 'p', 'q'] },
+  { maiusculo: 'E', minusculo: 'e', indice: 4,  dificuldade: 'facil',   eConsoante: false, distratoresUpper: ['F', 'C', 'B'],   distratoresLower: ['c', 'a', 'o'] },
+  { maiusculo: 'F', minusculo: 'f', indice: 5,  dificuldade: 'medio',   eConsoante: true,  distratoresUpper: ['E', 'P', 'T'],   distratoresLower: ['t', 'l', 'j'] },
+  { maiusculo: 'G', minusculo: 'g', indice: 6,  dificuldade: 'medio',   eConsoante: true,  distratoresUpper: ['C', 'O', 'Q'],   distratoresLower: ['q', 'p', 'd'] },
+  { maiusculo: 'H', minusculo: 'h', indice: 7,  dificuldade: 'medio',   eConsoante: true,  distratoresUpper: ['M', 'N', 'A'],   distratoresLower: ['n', 'm', 'b'] },
+  { maiusculo: 'I', minusculo: 'i', indice: 8,  dificuldade: 'facil',   eConsoante: false, distratoresUpper: ['J', 'L', 'T'],   distratoresLower: ['j', 'l', 't'] },
+  { maiusculo: 'J', minusculo: 'j', indice: 9,  dificuldade: 'medio',   eConsoante: true,  distratoresUpper: ['I', 'L', 'U'],   distratoresLower: ['i', 'l', 'f'] },
+  { maiusculo: 'K', minusculo: 'k', indice: 10, dificuldade: 'dificil', eConsoante: true,  distratoresUpper: ['X', 'Y', 'H'],   distratoresLower: ['x', 'y', 'h'] },
+  { maiusculo: 'L', minusculo: 'l', indice: 11, dificuldade: 'medio',   eConsoante: true,  distratoresUpper: ['I', 'J', 'T'],   distratoresLower: ['i', 't', 'j'] },
+  { maiusculo: 'M', minusculo: 'm', indice: 12, dificuldade: 'medio',   eConsoante: true,  distratoresUpper: ['N', 'W', 'H'],   distratoresLower: ['n', 'w', 'u'] },
+  { maiusculo: 'N', minusculo: 'n', indice: 13, dificuldade: 'medio',   eConsoante: true,  distratoresUpper: ['M', 'V', 'Z'],   distratoresLower: ['m', 'u', 'v'] },
+  { maiusculo: 'O', minusculo: 'o', indice: 14, dificuldade: 'facil',   eConsoante: false, distratoresUpper: ['Q', 'C', 'D'],   distratoresLower: ['c', 'a', 'e'] },
+  { maiusculo: 'P', minusculo: 'p', indice: 15, dificuldade: 'medio',   eConsoante: true,  distratoresUpper: ['R', 'B', 'D'],   distratoresLower: ['q', 'b', 'd'] },
+  { maiusculo: 'Q', minusculo: 'q', indice: 16, dificuldade: 'dificil', eConsoante: true,  distratoresUpper: ['O', 'C', 'G'],   distratoresLower: ['p', 'd', 'b'] },
+  { maiusculo: 'R', minusculo: 'r', indice: 17, dificuldade: 'medio',   eConsoante: true,  distratoresUpper: ['P', 'B', 'K'],   distratoresLower: ['n', 'm', 's'] },
+  { maiusculo: 'S', minusculo: 's', indice: 18, dificuldade: 'medio',   eConsoante: true,  distratoresUpper: ['C', 'Z', 'J'],   distratoresLower: ['c', 'z', 'a'] },
+  { maiusculo: 'T', minusculo: 't', indice: 19, dificuldade: 'medio',   eConsoante: true,  distratoresUpper: ['I', 'F', 'J'],   distratoresLower: ['f', 'l', 'i'] },
+  { maiusculo: 'U', minusculo: 'u', indice: 20, dificuldade: 'facil',   eConsoante: false, distratoresUpper: ['V', 'J', 'O'],   distratoresLower: ['v', 'n', 'w'] },
+  { maiusculo: 'V', minusculo: 'v', indice: 21, dificuldade: 'medio',   eConsoante: true,  distratoresUpper: ['U', 'Y', 'W'],   distratoresLower: ['u', 'w', 'y'] },
+  { maiusculo: 'W', minusculo: 'w', indice: 22, dificuldade: 'dificil', eConsoante: true,  distratoresUpper: ['M', 'V', 'U'],   distratoresLower: ['m', 'v', 'u'] },
+  { maiusculo: 'X', minusculo: 'x', indice: 23, dificuldade: 'dificil', eConsoante: true,  distratoresUpper: ['Y', 'K', 'Z'],   distratoresLower: ['y', 'k', 'z'] },
+  { maiusculo: 'Y', minusculo: 'y', indice: 24, dificuldade: 'dificil', eConsoante: true,  distratoresUpper: ['V', 'X', 'U'],   distratoresLower: ['v', 'x', 'u'] },
+  { maiusculo: 'Z', minusculo: 'z', indice: 25, dificuldade: 'dificil', eConsoante: true,  distratoresUpper: ['S', 'N', 'X'],   distratoresLower: ['s', 'x', 'c'] },
+];

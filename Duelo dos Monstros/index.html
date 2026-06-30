@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -274,7 +274,6 @@
         <!-- JOGO -->
         <div id="screen-game" class="screen">
             <div class="hud" style="width: 100%;">
-                <div class="stat-badge" id="game-info">Duelo 1</div>
                 <button class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer; border:none">✕</button>
             </div>
 
@@ -314,154 +313,11 @@
         </div>
     </div>
 
-    <script>
-        const MONSTERS = [
-            (color) => `<svg class="monster-svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="${color}"/><circle cx="35" cy="40" r="8" fill="white"/><circle cx="65" cy="40" r="8" fill="white"/><circle cx="35" cy="42" r="3" fill="black"/><circle cx="65" cy="42" r="3" fill="black"/><path d="M30 70 Q50 85 70 70" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/></svg>`,
-            (color) => `<svg class="monster-svg" viewBox="0 0 100 100"><rect x="20" y="20" width="60" height="60" rx="10" fill="${color}"/><circle cx="50" cy="40" r="12" fill="white"/><circle cx="50" cy="40" r="5" fill="black"/><path d="M40 70 L60 70" stroke="black" stroke-width="4" stroke-linecap="round"/></svg>`,
-            (color) => `<svg class="monster-svg" viewBox="0 0 100 100"><path d="M50 10 L90 90 L10 90 Z" fill="${color}"/><circle cx="40" cy="60" r="6" fill="white"/><circle cx="60" cy="60" r="6" fill="white"/><circle cx="40" cy="60" r="2" fill="black"/><circle cx="60" cy="60" r="2" fill="black"/><rect x="45" y="75" width="10" height="5" fill="black"/></svg>`
-        ];
-
-        const LEVELS = [
-            { n1: 5, n2: 3, ans: '>' }, { n1: 2, n2: 8, ans: '<' },
-            { n1: 6, n2: 6, ans: '=' }, { n1: 10, n2: 4, ans: '>' },
-            { n1: 1, n2: 9, ans: '<' }, { n1: 7, n2: 7, ans: '=' },
-            { n1: 15, n2: 12, ans: '>' }, { n1: 11, n2: 18, ans: '<' },
-            { n1: 20, n2: 20, ans: '=' }, { n1: 13, n2: 9, ans: '>' },
-            { n1: 25, n2: 30, ans: '<' }, { n1: 50, n2: 50, ans: '=' }
-        ];
-
-        let unlocked = 1;
-        let stars = Array(LEVELS.length).fill(0);
-        let currentLevelIdx = 0;
-        let isLocked = false;
-
-        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        function playSfx(freq, type = 'sine', duration = 0.1) {
-            try {
-                const osc = audioCtx.createOscillator();
-                const gain = audioCtx.createGain();
-                osc.type = type;
-                osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
-                gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
-                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
-                osc.connect(gain); gain.connect(audioCtx.destination);
-                osc.start(); osc.stop(audioCtx.currentTime + duration);
-            } catch(e) {}
-        }
-
-        function init() {
-            createScenery();
-            loadProgress();
-            renderLevelGrid();
-            updateStats();
-        }
-
-        function createScenery() {
-            const container = document.getElementById('scenery');
-            for(let i=0; i<15; i++) {
-                const s = document.createElement('div');
-                s.className = 'stalactite';
-                s.style.left = Math.random() * 100 + '%';
-                s.style.height = (20 + Math.random() * 60) + 'px';
-                container.appendChild(s);
-            }
-        }
-
-        function loadProgress() {
-            const saved = localStorage.getItem('monstros_comparacao_v1');
-            if(saved) {
-                const data = JSON.parse(saved);
-                unlocked = data.unlocked || 1;
-                stars = data.stars || Array(LEVELS.length).fill(0);
-            }
-        }
-
-        function saveProgress() {
-            localStorage.setItem('monstros_comparacao_v1', JSON.stringify({ unlocked, stars }));
-        }
-
-        function changeScreen(id) {
-            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-            document.getElementById('screen-' + id).classList.add('active');
-            if(id === 'levels') renderLevelGrid();
-        }
-
-        function renderLevelGrid() {
-            const grid = document.getElementById('level-grid');
-            grid.innerHTML = '';
-            LEVELS.forEach((lvl, i) => {
-                const btn = document.createElement('button');
-                btn.className = `lvl-btn ${i < unlocked ? 'unlocked' : ''}`;
-                btn.disabled = i >= unlocked;
-                btn.innerHTML = `<span>Duelo ${i + 1}</span><div style="font-size:1.5rem">${stars[i] ? '⭐' : '👾'}</div>`;
-                btn.onclick = () => startLevel(i);
-                grid.appendChild(btn);
-            });
-        }
-
-        function updateStats() {
-            const total = stars.reduce((a,b) => a + (b ? 1 : 0), 0);
-            document.getElementById('total-stars').textContent = `⭐ ${total}/${LEVELS.length}`;
-            document.getElementById('lvl-star-count').textContent = `⭐ ${total}`;
-        }
-
-        function startLevel(idx) {
-            currentLevelIdx = idx;
-            isLocked = false;
-            const lvl = LEVELS[idx];
-            
-            document.getElementById('game-info').textContent = `Duelo ${idx + 1}`;
-            document.getElementById('slot').textContent = '?';
-            document.getElementById('slot').classList.remove('filled');
-            
-            const colors = ['#a855f7', '#f97316', '#22c55e', '#db2777', '#3b82f6'];
-            const m1 = MONSTERS[Math.floor(Math.random()*3)](colors[Math.floor(Math.random()*5)]);
-            const m2 = MONSTERS[Math.floor(Math.random()*3)](colors[Math.floor(Math.random()*5)]);
-
-            document.getElementById('monster-left').innerHTML = `${m1}<div class="monster-number">${lvl.n1}</div>`;
-            document.getElementById('monster-right').innerHTML = `${m2}<div class="monster-number">${lvl.n2}</div>`;
-
-            changeScreen('game');
-        }
-
-        function checkChoice(symbol) {
-            if(isLocked) return;
-            const correct = LEVELS[currentLevelIdx].ans;
-            
-            if(symbol === correct) {
-                isLocked = true;
-                playSfx(880, 'sine', 0.3);
-                
-                const slot = document.getElementById('slot');
-                slot.textContent = symbol;
-                slot.classList.add('filled');
-                
-                stars[currentLevelIdx] = 1;
-                unlocked = Math.max(unlocked, currentLevelIdx + 2);
-                saveProgress();
-                updateStats();
-
-                setTimeout(() => {
-                    document.getElementById('result-modal').style.display = 'flex';
-                }, 800);
-            } else {
-                playSfx(150, 'sawtooth', 0.2);
-                const slot = document.getElementById('slot');
-                slot.style.borderColor = 'var(--danger)';
-                setTimeout(() => slot.style.borderColor = '', 400);
-            }
-        }
-
-        function handleModalAction() {
-            document.getElementById('result-modal').style.display = 'none';
-            if(currentLevelIdx + 1 < LEVELS.length) {
-                startLevel(currentLevelIdx + 1);
-            } else {
-                changeScreen('levels');
-            }
-        }
-
-        window.onload = init;
-    </script>
+    <script src="../utils/audio.js"></script>
+    <script src="../utils/score.js"></script>
+    <script src="../utils/elapsed.js"></script>
+    <script src="../utils/progress.js"></script>
+    <script src="../utils/stars.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

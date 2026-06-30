@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -338,8 +338,8 @@
         <!-- JOGO -->
         <div id="screen-game" class="screen">
             <div class="hud" style="width: 100%;">
-                <div class="stat-badge" id="game-info">Ilha 1</div>
                 <div class="stat-badge" id="click-counter">Tira: 0/0</div>
+                <div class="stat-badge" id="game-info">Ilha 1 — 1/5</div>
                 <button class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer; border:none">✖</button>
             </div>
 
@@ -369,188 +369,11 @@
         </div>
     </div>
 
-    <script>
-        const LEVELS = [
-            [2, 5], [3, 6], [4, 7], [5, 10], [7, 12], [8, 15], 
-            [10, 15], [12, 18], [15, 20], [10, 25], [18, 30], [20, 40]
-        ];
-        
-        let unlocked = 1;
-        let currentLevelIdx = 0;
-        let spentCount = 0;
-        let chestCount = 0;
-        let isComplete = false;
-        let selectedCoin = null;
-
-        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        function playSfx(freq, type = 'sine', vol = 0.05) {
-            try {
-                const osc = audioCtx.createOscillator();
-                const gain = audioCtx.createGain();
-                osc.type = type;
-                osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
-                gain.gain.setValueAtTime(vol, audioCtx.currentTime);
-                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.1);
-                osc.connect(gain); gain.connect(audioCtx.destination);
-                osc.start(); osc.stop(audioCtx.currentTime + 0.1);
-            } catch(e) {}
-        }
-
-        function changeScreen(id) {
-            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-            document.getElementById('screen-' + id).classList.add('active');
-            if(id === 'levels') renderLevels();
-        }
-
-        function renderLevels() {
-            const grid = document.getElementById('level-grid');
-            grid.innerHTML = '';
-            LEVELS.forEach((_, i) => {
-                const btn = document.createElement('button');
-                btn.className = `lvl-btn ${i < unlocked ? 'unlocked' : ''}`;
-                btn.textContent = i + 1;
-                btn.disabled = i >= unlocked;
-                btn.onclick = () => startLevel(i);
-                grid.appendChild(btn);
-            });
-        }
-
-        function startLevel(idx) {
-            currentLevelIdx = idx;
-            spentCount = 0;
-            chestCount = 0;
-            isComplete = false;
-            selectedCoin = null;
-            const [cost, total] = LEVELS[idx];
-            
-            document.getElementById('game-info').textContent = `Ilha ${idx + 1}`;
-            document.getElementById('instruction-text').textContent = `Tens ${total} moedas. Gasta ${cost} para pagar!`;
-            document.getElementById('equation-display').textContent = `${total} - ${cost} = ?`;
-            document.getElementById('chest-zone').classList.remove('active');
-            updateCounter(cost);
-            
-            const area = document.getElementById('coins-area');
-            area.innerHTML = '';
-            
-            for(let i=0; i<total; i++) {
-                const coin = document.createElement('div');
-                coin.className = 'coin';
-                coin.innerHTML = '$';
-                coin.id = 'coin-' + i;
-                coin.onclick = () => handleCoinClick(coin, cost);
-                
-                coin.ondragstart = (e) => {
-                    if(!isComplete) return;
-                    e.dataTransfer.setData("text", e.target.id);
-                    coin.classList.add('selected');
-                };
-                
-                area.appendChild(coin);
-            }
-            
-            changeScreen('game');
-        }
-
-        function updateCounter(target) {
-            if(!isComplete) {
-                document.getElementById('click-counter').textContent = `Tira: ${spentCount} / ${target}`;
-            } else {
-                const remaining = LEVELS[currentLevelIdx][1] - LEVELS[currentLevelIdx][0];
-                document.getElementById('click-counter').textContent = `No BAU: ${chestCount} / ${remaining}`;
-            }
-        }
-
-        function handleCoinClick(el, target) {
-            if(!isComplete) {
-                if(el.classList.contains('spent')) return;
-                playSfx(800 + Math.random() * 200);
-                el.classList.add('spent');
-                spentCount++;
-                updateCounter(target);
-
-                if(spentCount === target) {
-                    isComplete = true;
-                    prepareChestPhase();
-                }
-            } 
-            else {
-                if(el.classList.contains('spent')) return;
-                document.querySelectorAll('.coin').forEach(c => c.classList.remove('selected'));
-                selectedCoin = el;
-                el.classList.add('selected');
-                playSfx(400, 'triangle');
-            }
-        }
-
-        function prepareChestPhase() {
-            const [cost, total] = LEVELS[currentLevelIdx];
-            const remaining = total - cost;
-            
-            document.getElementById('equation-display').textContent = `${total} - ${cost} = ${remaining}`;
-            document.getElementById('instruction-text').textContent = `Agora guarda o teu troco de ${remaining} moedas no BAU!`;
-            document.getElementById('chest-zone').classList.add('active');
-            updateCounter();
-
-            const coins = document.querySelectorAll('.coin:not(.spent)');
-            coins.forEach(c => {
-                c.classList.add('locked');
-                c.setAttribute('draggable', 'true');
-            });
-        }
-
-        function chestClicked() {
-            if(selectedCoin && !selectedCoin.classList.contains('spent')) {
-                moveToChest(selectedCoin);
-            }
-        }
-
-        function allowDrop(e) {
-            e.preventDefault();
-            document.getElementById('treasure-chest').classList.add('drag-over');
-        }
-
-        function dropCoin(e) {
-            e.preventDefault();
-            document.getElementById('treasure-chest').classList.remove('drag-over');
-            const coinId = e.dataTransfer.getData("text");
-            const coinEl = document.getElementById(coinId);
-            if(coinEl) moveToChest(coinEl);
-        }
-
-        function moveToChest(el) {
-            playSfx(1200, 'sine', 0.03);
-            el.classList.add('spent');
-            el.classList.remove('selected');
-            chestCount++;
-            updateCounter();
-
-            const [cost, total] = LEVELS[currentLevelIdx];
-            const remaining = total - cost;
-
-            if(chestCount === remaining) {
-                setTimeout(showVictory, 600);
-            }
-        }
-
-        function showVictory() {
-            const [cost, total] = LEVELS[currentLevelIdx];
-            const remaining = total - cost;
-            const modal = document.getElementById('result-modal');
-            document.getElementById('result-msg').textContent = `Pagaste o pirata e guardaste as tuas ${remaining} moedas no BAU!`;
-            modal.style.display = 'flex';
-            if(currentLevelIdx + 1 >= unlocked) unlocked = currentLevelIdx + 2;
-        }
-
-        function handleNext() {
-            document.getElementById('result-modal').style.display = 'none';
-            if(currentLevelIdx + 1 < LEVELS.length) {
-                startLevel(currentLevelIdx + 1);
-            } else {
-                changeScreen('levels');
-            }
-        }
-
-        window.onload = () => renderLevels();
-    </script>
+    <script src="../utils/audio.js"></script>
+    <script src="../utils/score.js"></script>
+    <script src="../utils/elapsed.js"></script>
+    <script src="../utils/progress.js"></script>
+    <script src="../utils/stars.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

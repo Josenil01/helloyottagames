@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -143,22 +143,18 @@
         </button>
     </div>
 
+    <!-- TELA DE SELEÇÃO DE TRILHA -->
+    <div id="screen-tracks" class="screen flex-col items-center w-full h-full bg-teal-900 p-6 pt-12 overflow-y-auto">
+        <a href="../index.html" class="self-start mb-6 font-bold bg-teal-700 text-teal-100 px-4 py-2 rounded-full border-2 border-teal-400">◀ Voltar</a>
+        <h2 class="font-game text-4xl text-yellow-300 mb-8 uppercase">Escolha a Trilha</h2>
+        <div id="track-grid" style="width:100%;max-width:720px"></div>
+    </div>
+
     <!-- TELA DO JOGO -->
     <div id="screen-game" class="screen w-full h-full game-bg flex-col items-center justify-between p-8">
         
         <!-- Header -->
         <div class="w-full flex justify-between items-start">
-            <div class="flex flex-col gap-2">
-                <div class="wood-panel px-6 py-2 flex items-center gap-4 text-white">
-                    <div class="bg-amber-900 rounded-full w-12 h-12 flex items-center justify-center font-game text-2xl border-2 border-yellow-500" id="ui-level">1</div>
-                    <div class="w-48 h-6 bg-gray-800 rounded-full overflow-hidden border-2 border-amber-900">
-                        <div id="score-bar" class="h-full bg-yellow-400 transition-all duration-300" style="width: 0%"></div>
-                    </div>
-                </div>
-                <div class="wood-panel px-4 py-1 text-center text-white font-game text-xl self-start">
-                    PONTOS: <span id="ui-score">0</span>
-                </div>
-            </div>
 
             <button onclick="pauseGame()" class="wood-panel p-3 text-yellow-400 hover:scale-110 transition">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
@@ -222,192 +218,11 @@
         </div>
     </div>
 
-    <script>
-        const WORDS = [
-    "RADIO", "GATO", "CASA", "BOLA", "DADO", 
-    "FOGO", "LAGO", "MESA", "SAPO", "URSO",
-    "ZEBRA", "NAVIO", "PIANO", "FRUTA", "HORTA",
-    "AMIGO", "BANCO", "CARRO", "DENTE", "ESCOLA",
-    "FESTA", "GELO", "HARPA", "ILHA", "JOGO",
-    "KILO", "LIVRO", "MACA", "NOITE", "OURO",
-    "PORTA", "QUEIJO", "ROUPA", "SAPATO", "TERRA",
-    "UVA", "VENTO", "XADREZ", "YOGA", "ZERO",
-    "ALMA", "BRACO", "CORPO", "DOCE", "ERVA",
-    "FILHO", "GRAO", "HORA", "INDIO", "JARRO",
-    "LATA", "MEIA", "NUVEM", "OLHO", "PEIXE",
-    "RATO", "SONO", "TELA", "URUBU", "VIDA",
-    "XALE", "ARROZ", "BALAO", "COPO", "DICA",
-    "EIXO", "FACA", "GIRAFA", "HOTEL", "ITEM",
-    "JOIA", "LEITE", "MALA", "NOME", "OLEO",
-    "PAIXAO", "QUADRO", "RUA", "SALTO", "TORRE",
-    "UNIAO", "VALE", "WEB", "XAROPE", "AGUA",
-    "BOLSA", "CAIXA", "DONO", "ELMO", "FORNO",
-    "GOTA", "HINO", "IATE", "JUIZO", "LAMA",
-    "MURO", "NAVE", "OPCAO", "PRATO", "QUEDA"
-];
-
-        let currentWord = "";
-        let typedIndex = 0;
-        let score = 0;
-        let level = 1;
-        let timeLeft = 100;
-        let timerActive = false;
-        let gameActive = false;
-        let timerInterval;
-
-        const screenStart = document.getElementById('screen-start');
-        const screenGame = document.getElementById('screen-game');
-        const wordContainer = document.getElementById('word-container');
-        const timerFill = document.getElementById('timer-fill');
-        const uiScore = document.getElementById('ui-score');
-        const uiLevel = document.getElementById('ui-level');
-        const scoreBar = document.getElementById('score-bar');
-        const monsterSvg = document.getElementById('monster-svg');
-        const modalFeedback = document.getElementById('modal-feedback');
-
-        function showScreen(screen) {
-            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active-screen'));
-            screen.classList.add('active-screen');
-        }
-
-        function startGame() {
-            showScreen(screenGame);
-            score = 0;
-            level = 1;
-            uiScore.innerText = score;
-            uiLevel.innerText = level;
-            gameActive = true;
-            nextWord();
-        }
-
-        function nextWord() {
-            currentWord = WORDS[Math.floor(Math.random() * WORDS.length)];
-            typedIndex = 0;
-            renderWord();
-            resetTimer();
-            monsterSvg.classList.remove('shake-ui');
-        }
-
-        function renderWord() {
-            wordContainer.innerHTML = '';
-            for (let i = 0; i < currentWord.length; i++) {
-                const span = document.createElement('span');
-                span.innerText = currentWord[i];
-                span.className = `letter-slot ${i < typedIndex ? 'letter-correct' : 'letter-pending'}`;
-                wordContainer.appendChild(span);
-            }
-        }
-
-        function resetTimer() {
-            clearInterval(timerInterval);
-            timeLeft = 100;
-            updateTimerUI();
-            
-            // Dificuldade baseada no nível: tempo diminui mais rápido
-            const speed = 100 + (level * 2); 
-            
-            timerInterval = setInterval(() => {
-                if (!gameActive) return;
-                timeLeft -= 0.5;
-                updateTimerUI();
-                
-                if (timeLeft <= 0) {
-                    handleTimeOut();
-                }
-            }, 100);
-        }
-
-        function updateTimerUI() {
-            timerFill.style.height = timeLeft + '%';
-            if (timeLeft < 30) {
-                timerFill.style.background = 'linear-gradient(to top, #ef4444, #f87171)';
-            } else {
-                timerFill.style.background = 'linear-gradient(to top, #facc15, #fbbf24)';
-            }
-        }
-
-        function handleTimeOut() {
-            clearInterval(timerInterval);
-            monsterSvg.classList.add('shake-ui');
-            // Pequena penalidade ou apenas reiniciar a palavra
-            setTimeout(nextWord, 500);
-        }
-
-        window.addEventListener('keydown', (e) => {
-            if (!gameActive) return;
-            
-            const key = e.key.toUpperCase();
-            
-            // Ignorar teclas que não são letras
-            if (!/^[A-Z]$/.test(key)) return;
-
-            if (key === currentWord[typedIndex]) {
-                typedIndex++;
-                renderWord();
-                
-                // Feedback visual no monstro
-                monsterSvg.style.transform = "scale(1.1)";
-                setTimeout(() => monsterSvg.style.transform = "scale(1)", 100);
-
-                if (typedIndex === currentWord.length) {
-                    wordComplete();
-                }
-            } else {
-                // Errou a tecla
-                wordContainer.classList.add('shake-ui');
-                setTimeout(() => wordContainer.classList.remove('shake-ui'), 300);
-                
-                // Feedback visual "triste" nos olhos do monstro
-                document.getElementById('eye-l').style.fill = "#ef4444";
-                document.getElementById('eye-r').style.fill = "#ef4444";
-                setTimeout(() => {
-                    document.getElementById('eye-l').style.fill = "#2563eb";
-                    document.getElementById('eye-r').style.fill = "#2563eb";
-                }, 400);
-            }
-        });
-
-        function wordComplete() {
-            clearInterval(timerInterval);
-            score += 10;
-            uiScore.innerText = score;
-            
-            // Progresso do nível
-            const progress = (score % 50) * 2;
-            scoreBar.style.width = progress + "%";
-
-            if (score > 0 && score % 50 === 0) {
-                showVictory();
-            } else {
-                setTimeout(nextWord, 300);
-            }
-        }
-
-        function showVictory() {
-            gameActive = false;
-            modalFeedback.classList.remove('hidden');
-            modalFeedback.classList.add('flex');
-        }
-
-        function nextLevel() {
-            level++;
-            uiLevel.innerText = level;
-            modalFeedback.classList.add('hidden');
-            modalFeedback.classList.remove('flex');
-            gameActive = true;
-            scoreBar.style.width = "0%";
-            nextWord();
-        }
-
-        function pauseGame() {
-            gameActive = !gameActive;
-            if (!gameActive) {
-                clearInterval(timerInterval);
-            } else {
-                resetTimer(); // Simplificado para este exemplo
-            }
-        }
-
-    </script>
+    <script src="../utils/audio.js"></script>
+    <script src="../utils/score.js"></script>
+    <script src="../utils/elapsed.js"></script>
+    <script src="../utils/progress.js"></script>
+    <script src="../utils/stars.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

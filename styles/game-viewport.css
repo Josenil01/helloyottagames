@@ -1,4 +1,61 @@
-/* Global viewport lock for game pages */
+/* ============================================================
+   Hello Yotta Games — Shared Stylesheet
+   Importar em todo jogo: <link rel="stylesheet" href="../styles/game-viewport.css">
+   ============================================================ */
+
+/* ---- 1. IDENTIDADE VISUAL HELLO YOTTA ---- */
+:root {
+  /* Paleta oficial */
+  --hy-purple:      #48076a;
+  --hy-orange:      #ffa800;
+  --hy-pink:        #d046d9;
+  --hy-teal:        #01bebc;
+  --hy-green:       #6ce67d;
+  --hy-red:         #ff3041;
+  --hy-blue-dark:   #004b9a;
+  --hy-blue:        #0a40b5;
+  --hy-white:       #ffffff;
+
+  /* Tons escuros para bordas/sombras (efeito 3D) */
+  --hy-purple-dark: #2d0445;
+  --hy-orange-dark: #cc8600;
+  --hy-pink-dark:   #a030b0;
+  --hy-teal-dark:   #008f8e;
+  --hy-green-dark:  #3db54a;
+  --hy-red-dark:    #c0001e;
+  --hy-blue-dark2:  #003070;
+  --hy-blue-dark3:  #072e87;
+
+  /* Semântico — estados de jogo */
+  --hy-correct:       #6ce67d;
+  --hy-correct-dark:  #3db54a;
+  --hy-wrong:         #ff3041;
+  --hy-wrong-dark:    #c0001e;
+  --hy-neutral:       #94a3b8;
+  --hy-neutral-dark:  #64748b;
+  --hy-locked:        #cbd5e1;
+  --hy-locked-dark:   #94a3b8;
+}
+
+/* ---- 2. FONTES ---- */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@400;700;800;900&display=swap');
+
+/* Fonte para títulos, emojis e texto de destaque dos jogos */
+.font-game {
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 0.04em;
+}
+
+/* Tamanho de letra grande (letra/palavra em destaque) */
+.letter-big {
+  font-size: clamp(3.5rem, 14vw, 10rem);
+  line-height: 1;
+  transition: all 0.3s;
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* ---- 3. RESET GLOBAL DE VIEWPORT ---- */
 * {
   box-sizing: border-box;
 }
@@ -20,6 +77,9 @@ body {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+  font-family: 'Nunito', 'Quicksand', sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 #root {
@@ -28,6 +88,7 @@ body {
   overflow: hidden;
 }
 
+/* ---- 4. TELAS (SCREEN MANAGEMENT) ---- */
 .screen,
 .game-screen,
 .fullscreen,
@@ -38,20 +99,21 @@ body {
   overflow: hidden;
 }
 
-/* Typography safety: avoid clipped text on small screens */
+/* ---- 5. SEGURANÇA TIPOGRÁFICA ---- */
+/* Evita texto cortado em telas pequenas */
 :where(h1, h2, h3, h4, p, button, span, .title, .subtitle, .chip, .btn, .lvl, .phase) {
   max-width: 100%;
   overflow-wrap: anywhere;
   word-break: break-word;
 }
 
-/* Keep controls readable without overflow */
+/* Mantém controles legíveis sem overflow */
 :where(button, .btn, .btn-large, .lvl, .phase, .chip, .opt, .wagon, .answer-box) {
   white-space: normal;
   line-height: 1.1;
 }
 
-/* Prevent flex/grid children from forcing horizontal clipping */
+/* Evita clipping horizontal em filhos flex/grid */
 :where(.hud, .grid, .train-row, .answer-row, .container, .card, #app, #root) {
   min-width: 0;
 }
@@ -61,4 +123,174 @@ video,
 canvas,
 svg {
   max-width: 100%;
+}
+
+/* ---- 6. ANIMAÇÕES UNIVERSAIS ---- */
+
+/* Resposta errada — tremida */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%       { transform: translateX(-8px) rotate(-2deg); }
+  40%       { transform: translateX(8px)  rotate(2deg); }
+  60%       { transform: translateX(-5px) rotate(-1deg); }
+  80%       { transform: translateX(5px)  rotate(1deg); }
+}
+.shake,
+.shake-anim {
+  animation: shake 0.4s ease-in-out;
+}
+
+/* Resposta certa — pop de entrada */
+@keyframes pop-in {
+  0%   { transform: scale(0.5); opacity: 0; }
+  70%  { transform: scale(1.15); }
+  100% { transform: scale(1);   opacity: 1; }
+}
+.pop-in,
+.pop-anim {
+  animation: pop-in 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Elemento flutuante decorativo */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-12px); }
+}
+.float,
+.float-anim {
+  animation: float 3.5s ease-in-out infinite;
+}
+
+/* Pulso suave (timers, alertas) */
+@keyframes pulse-hy {
+  0%, 100% { transform: scale(1);    opacity: 1; }
+  50%       { transform: scale(1.06); opacity: 0.85; }
+}
+.pulse-hy {
+  animation: pulse-hy 1.2s ease-in-out infinite;
+}
+
+/* Linhas SVG — jogos de conectar */
+@keyframes line-draw {
+  from { stroke-dashoffset: 1000; }
+  to   { stroke-dashoffset: 0; }
+}
+.line-anim {
+  animation: line-draw 0.5s ease-out forwards;
+}
+
+/* Zoom de entrada para modais/telas de resultado */
+@keyframes zoom-in {
+  from { transform: scale(0.8); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+.zoom-in {
+  animation: zoom-in 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* ---- 7. ESTADOS DE FEEDBACK ---- */
+
+/* Correto */
+.state-correct {
+  background-color: var(--hy-correct) !important;
+  border-color:     var(--hy-correct-dark) !important;
+  color:            #fff !important;
+}
+
+/* Errado */
+.state-wrong {
+  background-color: var(--hy-wrong) !important;
+  border-color:     var(--hy-wrong-dark) !important;
+  color:            #fff !important;
+}
+
+/* Neutro / desativado */
+.state-neutral {
+  background-color: var(--hy-neutral) !important;
+  border-color:     var(--hy-neutral-dark) !important;
+  color:            #fff !important;
+}
+
+/* ---- 8. BOTÃO VOLTAR (PADRÃO) ---- */
+.btn-back {
+  position: absolute;
+  top:  clamp(0.5rem, 2vw, 1rem);
+  left: clamp(0.5rem, 2vw, 1rem);
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  background: rgba(255, 255, 255, 0.92);
+  border: 3px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  font-weight: 800;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+  color: inherit;
+}
+.btn-back:hover  { transform: scale(1.07); box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18); }
+.btn-back:active { transform: scale(0.95); }
+
+/* ---- 9. EFEITO 3D DE BOTÃO ---- */
+/* Adicionar .btn-3d em qualquer botão para o efeito pressionado */
+.btn-3d {
+  transition: transform 0.12s, box-shadow 0.12s, border-bottom-width 0.12s;
+  cursor: pointer;
+}
+.btn-3d:hover:not(:disabled):not(.locked) {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.btn-3d:active:not(:disabled):not(.locked) {
+  transform: translateY(3px);
+  border-bottom-width: 2px !important;
+  box-shadow: none;
+}
+.btn-3d:disabled,
+.btn-3d.locked {
+  opacity: 0.45;
+  cursor: not-allowed;
+  filter: grayscale(0.35);
+  transform: none !important;
+}
+
+/* ---- 10. DRAG & DROP ---- */
+.draggable {
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+  transition: transform 0.15s, opacity 0.15s;
+}
+.draggable:active { cursor: grabbing; }
+.draggable.dragging {
+  opacity: 0.45;
+  transform: scale(1.08);
+  pointer-events: none;
+}
+
+.dropzone {
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+}
+.dropzone.drag-over {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 4px var(--hy-teal);
+}
+
+/* ---- 11. BARRA DE PROGRESSO ---- */
+.progress-bar {
+  width: 100%;
+  height: 0.85rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background-color: var(--hy-green);
+  transition: width 0.4s ease, background-color 0.4s ease;
 }
