@@ -363,6 +363,7 @@
     <div class="container">
         <!-- HOME -->
         <div id="screen-home" class="screen active">
+        <a href="../index.html" class="btn-back" style="color:#334155">← Voltar</a>
             <h1 style="font-size: 3rem; margin: 0; text-shadow: 2px 2px white;">🏰 Defesa do</h1>
             <h2 style="margin: 0; color: #ea580c; text-shadow: 1px 1px white;">Castelo</h2>
             <div style="margin: 40px 0; font-size: 4rem;">⚔️</div>
@@ -373,7 +374,7 @@
         <!-- NIVEIS -->
         <div id="screen-levels" class="screen" style="justify-content: flex-start; padding-top: 40px;">
             <div class="hud" style="width: 100%;">
-                <button class="stat-badge" onclick="changeScreen('home')" style="cursor:pointer; border:none">🏠 Inicio</button>
+                <button aria-label="Voltar" title="Voltar" class="stat-badge" onclick="changeScreen('home')" style="cursor:pointer; border:none">← Voltar</button>
                 <div class="stat-badge" id="lvl-star-count">⭐ 0</div>
             </div>
             <h2 style="margin: 20px 0;">Selecione a Torre</h2>
@@ -383,7 +384,7 @@
         <!-- JOGO -->
         <div id="screen-game" class="screen">
             <div class="hud" style="width: 100%;">
-                <button class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer; border:none">✖</button>
+                <button aria-label="Voltar" title="Voltar" class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer; border:none">← Voltar</button>
             </div>
 
             <div class="timer-container">

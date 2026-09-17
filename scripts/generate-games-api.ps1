@@ -60,7 +60,7 @@ if (-not (Test-Path $cnamePath)) {
 $domain = (Get-Content -Raw -Encoding utf8 -Path $cnamePath).Trim()
 $html = Get-Content -Raw -Encoding utf8 -Path $indexPath
 
-$cardPattern = '<a\s+href="(?<href>[^"]+)"\s+class="game-card[^"]*"\s+data-category="(?<cat>[^"]+)">\s*<div class="emoji">(?<emoji>.*?)</div>\s*<div class="title">(?<title>.*?)</div>\s*<div class="description">\s*(?<desc>.*?)\s*</div>\s*</a>'
+$cardPattern = '<a\s+href="(?<href>[^"]+)"\s+class="game-card[^"]*"\s+data-category="(?<cat>[^"]+)"\s*>\s*<div class="emoji">(?<emoji>.*?)</div>\s*<div class="title">(?<title>.*?)</div>\s*<div class="description">\s*(?<desc>.*?)\s*</div>\s*</a>'
 $matches = [regex]::Matches($html, $cardPattern, [System.Text.RegularExpressions.RegexOptions]::Singleline)
 
 $games = foreach ($match in $matches) {

@@ -1,6 +1,6 @@
 ﻿if (window.HY && window.HY.stars) HY.stars.init('digitado');
 
-const { useState, useEffect } = React;
+const { useState, useEffect, useRef } = React;
 
 // Critérios de filtragem por trilha — ajustar conforme demanda pedagógica
 const CRITERIOS = [
@@ -21,6 +21,10 @@ const CRITERIOS = [
 function App() {
   const trackWordsRef = useRef([]);
   const [gameState, setGameState] = useState('cover');
+      React.useLayoutEffect(() => {
+        const hud = document.getElementById('hy-hud');
+        if (hud) hud.style.display = gameState === 'playing' ? 'flex' : 'none';
+      }, [gameState]);
   const [mode, setMode] = useState('infantil');
   const [currentTrack, setCurrentTrack] = useState(0);
   const [wordInTrack, setWordInTrack] = useState(0);
@@ -69,7 +73,7 @@ function App() {
     if (gameState === 'trackSelect' && window.HY && window.HY.stars) {
       HY.stars.renderGrid('hy-track-grid', {
         onPlay: startTrack,
-        emoji: (i) => TRACKS[i][0].emoji,
+        emoji: () => '⌨️',
         accentColor: '#0d9488'
       });
     }
@@ -122,7 +126,7 @@ function App() {
   if (gameState === 'trackSelect') {
     return (
       <div key="trackSelect" className="min-h-screen flex flex-col items-center p-6 bg-gradient-to-b from-teal-500 to-teal-700">
-        <button onClick={() => setGameState('cover')} className="self-start bg-white/20 text-white px-4 py-2 rounded-full font-bold mb-6">◀ Voltar</button>
+        <button onClick={() => setGameState('cover')} className="self-start bg-white/20 text-white px-4 py-2 rounded-full font-bold mb-6">← Voltar</button>
         <h2 className="text-4xl font-black text-white mb-8 uppercase font-game">Escolha a Fase</h2>
         <div id="hy-track-grid" style={{width:'100%', maxWidth:'720px'}}></div>
       </div>
@@ -149,7 +153,7 @@ function App() {
     <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gradient-to-b from-teal-500 to-teal-700">
       <div className="w-full max-w-lg">
         <div className="flex justify-between items-center mb-6">
-          <button onClick={() => setGameState('trackSelect')} className="bg-white/20 text-white px-4 py-2 rounded-full font-bold">◀ Sair</button>
+          <button onClick={() => setGameState('trackSelect')} className="bg-white/20 text-white px-4 py-2 rounded-full font-bold">← Voltar</button>
         </div>
 
         <div className="text-center mb-8">

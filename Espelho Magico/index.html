@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
+    <title>Espelho Mágico</title>
+    <style>
+        :root {
+            --mirror-bg:   #cdeef7;
+            --mirror-line: #7fd4e8;
+            --card-bg:     #fdf5ff;
+            --card-border: #e2c6f0;
+            --cell-size:   clamp(24px, 6.5vw, 42px);
+            --cell-size-mini: clamp(14px, 4vw, 22px);
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(to bottom, var(--hy-purple) 0%, var(--hy-pink) 100%);
+            color: #3a1050;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+        }
+
+        .screen { display: none; flex-direction: column; align-items: center; height: 100%; }
+        .screen.active { display: flex; }
+
+        h1.font-game { font-size: clamp(1.6rem, 6vw, 2.4rem); color: #fff; text-shadow: 2px 2px 0 rgba(0,0,0,0.2); margin: 10px 0 0; text-align: center; }
+        h2.font-game { font-size: clamp(1.1rem, 4vw, 1.6rem); color: #fff; margin: 10px 0; text-align: center; }
+
+        .btn-large {
+            background: var(--hy-orange);
+            color: #fff;
+            border: none;
+            padding: 14px 38px;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            font-family: 'Luckiest Guy', cursive;
+            letter-spacing: 0.03em;
+            cursor: pointer;
+            box-shadow: 0 6px 0 var(--hy-orange-dark);
+            margin: 14px 0;
+        }
+        .btn-large:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--hy-orange-dark); }
+
+        #total-stars { font-size: 1.1rem; font-weight: 800; color: #fff; }
+
+        /* ---- Tela de trilhas ---- */
+        #screen-tracks { justify-content: flex-start; padding-top: 30px; overflow-y: auto; }
+        .tracks-hud { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 10px; }
+        .stat-badge {
+            background: #fff; color: var(--hy-purple); border: 2px solid var(--hy-purple);
+            padding: 6px 16px; border-radius: 999px; font-weight: 800; cursor: pointer;
+        }
+        #track-grid { width: 100%; margin-top: 10px; padding-bottom: 20px; }
+
+        /* ---- Tela de jogo ---- */
+        #screen-game { justify-content: flex-start; padding-top: clamp(50px, 8vh, 70px); overflow-y: auto; }
+        .game-back-btn {
+            position: absolute; top: 16px; left: 16px; z-index: 40;
+            background: #fff; border: 2px solid var(--hy-purple); color: var(--hy-purple);
+            width: 40px; height: 40px; border-radius: 50%; font-size: 1.1rem; cursor: pointer;
+        }
+
+        .instruction {
+            color: #fff;
+            font-weight: 800;
+            font-size: clamp(0.95rem, 3.5vw, 1.2rem);
+            text-align: center;
+            margin-bottom: 14px;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.15);
+        }
+
+        .game-layout {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 780px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
+
+        /* ---- Figura + barra do espelho ---- */
+        .figure-area {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 20px;
+            padding: 16px;
+        }
+        .figure-area.side-top, .figure-area.side-bottom { flex-direction: column; align-items: center; }
+        .figure-area.side-left, .figure-area.side-right { flex-direction: row; }
+
+        .mirror-bar {
+            background: var(--mirror-bg);
+            border: 2px solid var(--mirror-line);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: clamp(1rem, 4vw, 1.3rem);
+            line-height: 1;
+        }
+        .figure-area.side-left .mirror-bar, .figure-area.side-right .mirror-bar { width: clamp(24px, 6vw, 30px); align-self: stretch; }
+        .figure-area.side-top .mirror-bar, .figure-area.side-bottom .mirror-bar { height: clamp(24px, 6vw, 30px); width: 100%; }
+
+        .shape-grid {
+            display: grid;
+            gap: 3px;
+        }
+        .shape-grid.mini { --cell-size: var(--cell-size-mini); }
+        .shape-cell {
+            width: var(--cell-size);
+            height: var(--cell-size);
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .shape-cell.empty { background: transparent; }
+        .shape-cell.filled { border: 2px solid rgba(0,0,0,0.15); }
+        .shape-cell.blank {
+            border: 2px dashed rgba(255,255,255,0.8);
+            background: rgba(255,255,255,0.25);
+            cursor: pointer;
+        }
+        .shape-cell.blank.selected {
+            border-color: var(--hy-orange);
+            box-shadow: 0 0 0 3px rgba(255,168,0,0.55);
+        }
+
+        /* ---- Tipo 1: opcoes de resposta ---- */
+        .options-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 14px;
+            justify-content: center;
+            margin-top: 18px;
+        }
+        .option-card {
+            background: var(--card-bg);
+            border: 3px solid var(--card-border);
+            border-radius: 16px;
+            padding: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .option-card:active { transform: scale(0.96); }
+        .option-card.state-correct { border-color: var(--hy-green); background: #eafff0; }
+        .option-card.wrong-disabled { opacity: 0.3; pointer-events: none; }
+
+        /* ---- Tipo 2: figuras + paleta ---- */
+        .figures-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+        }
+        .figure-block { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+        .figure-block-label { color: #fff; font-weight: 800; font-size: 0.85rem; text-shadow: 1px 1px 0 rgba(0,0,0,0.15); }
+
+        .palette-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 16px;
+        }
+        .palette-swatch {
+            width: clamp(34px, 9vw, 44px);
+            height: clamp(34px, 9vw, 44px);
+            border-radius: 50%;
+            border: 3px solid rgba(255,255,255,0.8);
+            cursor: pointer;
+            box-shadow: 0 3px 0 rgba(0,0,0,0.15);
+        }
+        .palette-swatch:active { transform: translateY(2px); box-shadow: none; }
+
+        /* ---- Modal ---- */
+        .modal {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.65);
+            display: none; align-items: center; justify-content: center; z-index: 2000;
+        }
+        .modal-content {
+            background: #fff; padding: 30px; border-radius: 30px; text-align: center;
+            max-width: 340px; width: 90%;
+        }
+        .modal-content h2 { font-family: 'Luckiest Guy', cursive; color: var(--hy-purple); font-size: 1.3rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- TELA INICIAL -->
+        <div id="screen-cover" class="screen active">
+            <button onclick="window.location.href='../index.html'" class="btn-back">← Voltar</button>
+            <div style="flex-grow:1; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                <div style="font-size:4rem;">🪞</div>
+                <h1 class="font-game">Espelho Mágico</h1>
+                <h2 class="font-game">Descubra os reflexos!</h2>
+                <button class="btn-large" onclick="changeScreen('tracks')">COMEÇAR</button>
+                <p id="total-stars">⭐ 0/36</p>
+            </div>
+        </div>
+
+        <!-- TELA DE TRILHAS -->
+        <div id="screen-tracks" class="screen">
+            <div class="tracks-hud">
+                <button aria-label="Voltar" title="Voltar" class="stat-badge" onclick="changeScreen('cover')">← Voltar</button>
+                <div class="stat-badge" id="tracks-star-count">⭐ 0</div>
+            </div>
+            <h2 class="font-game">Escolha sua trilha</h2>
+            <div id="track-grid"></div>
+        </div>
+
+        <!-- TELA DE JOGO -->
+        <div id="screen-game" class="screen">
+            <button aria-label="Voltar" title="Voltar" class="game-back-btn" onclick="changeScreen('tracks')">←</button>
+
+            <div class="instruction" id="instruction">Qual é o reflexo correto?</div>
+
+            <div class="game-layout">
+                <!-- Tipo 1: figura + barra do espelho + opcoes -->
+                <div id="type1-area" style="display:none; width:100%; flex-direction:column; align-items:center;">
+                    <div class="figure-area" id="figure-area"></div>
+                    <div class="options-row" id="options-row"></div>
+                </div>
+
+                <!-- Tipo 2: original + espelhada + paleta -->
+                <div id="type2-area" style="display:none; width:100%; flex-direction:column; align-items:center;">
+                    <div class="figures-row">
+                        <div class="figure-block">
+                            <div class="figure-block-label">Original</div>
+                            <div class="shape-grid" id="original-grid"></div>
+                        </div>
+                        <div class="figure-block">
+                            <div class="figure-block-label">Espelhada</div>
+                            <div class="shape-grid" id="mirrored-grid"></div>
+                        </div>
+                    </div>
+                    <div class="palette-row" id="palette-row"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE RESULTADO -->
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2>Parabéns, você descobriu os reflexos do espelho mágico!</h2>
+            <div id="result-stars" style="font-size: 2.5rem; margin: 15px 0;">⭐⭐⭐</div>
+            <button class="btn-large" onclick="handleModalContinue()">CONTINUAR</button>
+        </div>
+    </div>
+
+    <script src="../utils/audio.js"></script>
+    <script src="../utils/score.js"></script>
+    <script src="../utils/elapsed.js"></script>
+    <script src="../utils/progress.js"></script>
+    <script src="../utils/stars.js"></script>
+    <script src="../utils/shuffle.js"></script>
+    <script src="../utils/rand.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

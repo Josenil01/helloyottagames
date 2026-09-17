@@ -112,13 +112,17 @@ Trabalhe **apenas dentro deste repositório**. Novas funcionalidades se limitam 
 
 ### 1. URLs dos jogos
 
-Não renomeie pastas, não mova arquivos. Cada jogo é acessível por path direto:
+Não renomeie pastas de jogos já existentes, não mova arquivos. Cada jogo é acessível por path direto:
 ```
 /Digitado/index.html
 /Matematica Pirata/index.html
 /syllables/index.html
 ```
 > **Exceção:** `vowel` usa `vowel.html` como entry point, não `index.html`.
+
+**Nomes de pasta sem acentos/cedilha:** ao criar um jogo novo, o nome da pasta não deve ter acentos nem cedilha (ex: `Sudoku Magico`, não `Sudoku Mágico`). Espaços continuam permitidos e comuns no projeto. O `<title>`/`<h1>` dentro do jogo pode (e deve) manter a acentuação normal em português — a restrição é só no nome da pasta/URL.
+
+Pastas de jogos já existentes com acento **não devem ser renomeadas** só por causa dessa regra — URLs já em produção são um contrato público (ver seção 2). Renomear uma pasta existente exige confirmação explícita do usuário, porque quebra links já publicados.
 
 ### 2. Formato da API JSON
 
@@ -366,13 +370,13 @@ Drag & Drop: `.draggable`, `.dropzone`, `.dragging` (no item), `.drag-over` (na 
 <script src="../vendor/babel@7.26.10.min.js"></script>
 ```
 
-**Deploy:** caminhos relativos sempre (`../styles/`, `../vendor/`, `../utils/`). Verificar que assets referenciados existem no repositório. Nomes de pasta com acentos e espaços são válidos — não renomear.
+**Deploy:** caminhos relativos sempre (`../styles/`, `../vendor/`, `../utils/`). Verificar que assets referenciados existem no repositório. Pastas de jogos existentes com acentos/espaços são válidas — não renomear sem pedir confirmação. Jogos novos: pasta sem acentos/cedilha (espaço pode); ver seção "URLs dos jogos".
 
 ---
 
 ## Como adicionar um novo jogo
 
-1. Crie a pasta com o nome do jogo
+1. Crie a pasta com o nome do jogo, **sem acentos nem cedilha** (espaço pode: `Sudoku Magico`, não `Sudoku Mágico`)
 2. Crie `[nome]/index.html` com a estrutura padrão (seleção → gameplay → resultado)
 3. Importe `../styles/game-viewport.css` e os utils necessários
 4. Adicione o game-card no `index.html` raiz respeitando a estrutura do regex

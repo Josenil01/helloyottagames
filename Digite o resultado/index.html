@@ -104,6 +104,7 @@
 
     <!-- TELA INICIAL -->
     <div id="screen-start" class="screen active-screen justify-center bg-gradient-to-b from-rose-400 to-orange-500 text-white text-center">
+        <a href="../index.html" class="btn-back" style="color:#334155">← Voltar</a>
         <h1 class="text-6xl md:text-8xl font-game mb-8 drop-shadow-xl leading-tight">MATEMÁTICA<br>DIVERTIDA</h1>
         <div class="w-64 h-64 bg-white rounded-full flex items-center justify-center border-8 border-yellow-300 shadow-2xl mb-12 overflow-hidden rotate-3">
             <span class="text-rose-500 font-game text-8xl">2+3</span>
@@ -136,7 +137,7 @@
     <div id="screen-levels" class="screen bg-rose-50 overflow-y-auto">
         <div class="max-w-4xl w-full">
             <div class="flex justify-between items-center mb-8">
-                <button onclick="showScreen('screen-mode')" class="bg-white text-rose-600 font-bold px-4 py-2 rounded-xl shadow-sm border-2 border-rose-100">← VOLTAR</button>
+                <button aria-label="Voltar" title="Voltar" onclick="showScreen('screen-start')" class="bg-white text-rose-600 font-bold px-4 py-2 rounded-xl shadow-sm border-2 border-rose-100">← Voltar</button>
                 <h2 class="text-4xl font-game text-rose-600">ESCOLHA O NÍVEL</h2>
                 <div class="w-20"></div>
             </div>
@@ -150,7 +151,7 @@
     <div id="screen-game" class="screen">
         <div class="w-full max-w-5xl">
             <div class="flex justify-between items-center mb-4">
-                <button onclick="quitGame()" class="bg-white px-6 py-2 rounded-xl font-bold border-2 border-rose-200 text-rose-600 shadow-sm hover:bg-rose-50 transition-colors">SAIR</button>
+                <button aria-label="Voltar" title="Voltar" onclick="quitGame()" class="bg-white px-6 py-2 rounded-xl font-bold border-2 border-rose-200 text-rose-600 shadow-sm hover:bg-rose-50 transition-colors">← Voltar</button>
             </div>
 
             <!-- Temporizador -->

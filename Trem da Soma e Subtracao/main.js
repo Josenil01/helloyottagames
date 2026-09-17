@@ -109,6 +109,8 @@
         }
 
         function changeScreen(id) {
+    const hud = document.getElementById('hy-hud');
+    if (hud) hud.style.display = id === 'game' ? 'flex' : 'none';
             SFX.click();
             document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
             document.getElementById('screen-' + id).classList.add('active');

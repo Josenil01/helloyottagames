@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
+    <title>Balança da Descoberta</title>
+    <style>
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(160deg, #ffa800 0%, #d046d9 100%);
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+        }
+
+        .screen { display: none; flex-direction: column; align-items: center; height: 100%; }
+        .screen.active { display: flex; }
+
+        h1.font-game { font-size: clamp(1.4rem, 6vw, 2.2rem); color: #fff; text-shadow: 2px 2px 0 rgba(0,0,0,0.25); margin: 10px 0 0; text-align: center; }
+        h2.font-game { font-size: clamp(1.05rem, 4vw, 1.5rem); color: #fff; margin: 10px 0; text-align: center; }
+
+        .btn-large {
+            background: var(--hy-purple);
+            color: #fff;
+            border: none;
+            padding: 14px 38px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-family: 'Luckiest Guy', cursive;
+            letter-spacing: 0.03em;
+            cursor: pointer;
+            box-shadow: 0 6px 0 var(--hy-purple-dark);
+            margin: 10px 0;
+        }
+        .btn-large:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--hy-purple-dark); }
+        .btn-large:disabled { background: #9aa5a0; box-shadow: 0 6px 0 #6d756f; cursor: not-allowed; opacity: 0.7; }
+        .btn-large:disabled:active { transform: none; box-shadow: 0 6px 0 #6d756f; }
+
+        #total-stars { font-size: 1.1rem; font-weight: 800; color: #fff; }
+
+        /* ---- Tela de trilhas ---- */
+        #screen-tracks { justify-content: flex-start; padding-top: 30px; overflow-y: auto; }
+        .tracks-hud { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 10px; }
+        .stat-badge {
+            background: #fff; color: #7a2d99; border: 2px solid #7a2d99;
+            padding: 6px 16px; border-radius: 999px; font-weight: 800; cursor: pointer;
+        }
+        #track-grid { width: 100%; margin-top: 10px; padding-bottom: 20px; }
+
+        /* ---- Tela de jogo ---- */
+        #screen-game { justify-content: flex-start; padding-top: clamp(40px, 5vh, 56px); overflow-y: auto; }
+        .game-back-btn {
+            position: absolute; top: 16px; left: 16px; z-index: 40;
+            background: #fff; border: 2px solid #7a2d99; color: #7a2d99;
+            width: 40px; height: 40px; border-radius: 50%; font-size: 1.1rem; cursor: pointer;
+        }
+
+        .game-content { display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%; min-height: 0; }
+
+        .instruction {
+            flex: 0 0 auto;
+            font-weight: 800;
+            font-size: clamp(0.8rem, 3vw, 1.05rem);
+            text-align: center;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.15);
+        }
+
+        .weight-challenge, .balance-challenge {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            flex: 1 1 auto;
+            min-height: 0;
+            gap: 10px;
+        }
+        .weight-challenge.active, .balance-challenge.active { display: flex; }
+
+        .scale-wrap {
+            flex: 1 1 auto;
+            width: 100%;
+            max-width: 480px;
+            min-height: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .scale-wrap svg { width: 100%; height: 100%; max-height: 100%; }
+
+        .controls-bar {
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            padding: 6px 0;
+        }
+        .controls-bar .btn-large { margin: 0; }
+
+        #weight-guess-input {
+            width: 90px;
+            height: 54px;
+            text-align: center;
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 1.5rem;
+            border-radius: 14px;
+            border: 3px solid #fff;
+            background: #fff;
+            color: #7a2d99;
+        }
+        #weight-guess-input.state-correct { border-color: var(--hy-green); }
+        #weight-guess-input.state-wrong { border-color: var(--hy-red); }
+
+        .object-table {
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            background: rgba(255,255,255,0.15);
+            border-radius: 18px;
+            padding: 10px 14px;
+            width: 100%;
+            max-width: 480px;
+        }
+        .table-cell {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+            background: #fff;
+            border-radius: 12px;
+            padding: 6px 8px;
+            min-width: 44px;
+        }
+        .table-cell-blank { background: #fff3cd; border: 2px dashed var(--hy-orange); }
+        .table-icon { font-size: clamp(1.1rem, 4vw, 1.4rem); }
+        .table-value { font-size: 0.85rem; font-weight: 800; color: #7a2d99; }
+        .table-cell-blank .table-value { color: var(--hy-orange); }
+
+        .tray {
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            background: rgba(255,255,255,0.15);
+            border-radius: 18px;
+            padding: 10px;
+            min-height: 76px;
+            width: 100%;
+            max-width: 480px;
+        }
+        .tray-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #fff;
+            border-radius: 14px;
+            padding: 6px 10px;
+            box-shadow: 0 3px 0 rgba(0,0,0,0.15);
+            cursor: grab;
+            touch-action: none;
+        }
+        .tray-item.selected { box-shadow: 0 0 0 3px var(--hy-orange), 0 3px 0 rgba(0,0,0,0.15); }
+        .tray-item.dragging { opacity: 0.35; }
+        .tray-icon { font-size: clamp(1.3rem, 5vw, 1.7rem); }
+        .tray-weight { font-size: 0.75rem; font-weight: 800; color: #7a2d99; }
+        .tray-item.drag-ghost {
+            position: fixed; top: 0; left: 0;
+            transform: translate(-50%, -50%) scale(1.08);
+            pointer-events: none; z-index: 9999;
+            box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+        }
+
+        .pan-zone { cursor: pointer; }
+        .pan-zone.drag-over { filter: brightness(1.25); }
+
+        /* ---- Modal ---- */
+        .modal {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.65);
+            display: none; align-items: center; justify-content: center; z-index: 2000;
+        }
+        .modal-content {
+            background: #fff; padding: 30px; border-radius: 30px; text-align: center;
+            max-width: 340px; width: 90%; color: #1a1a1a;
+        }
+        .modal-content h2 { font-family: 'Luckiest Guy', cursive; color: #7a2d99; font-size: 1.3rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- TELA INICIAL -->
+        <div id="screen-cover" class="screen active">
+            <button onclick="window.location.href='../index.html'" class="btn-back">← Voltar</button>
+            <div style="flex-grow:1; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                <div style="font-size:4rem;">⚖️</div>
+                <h1 class="font-game">Balança da Descoberta</h1>
+                <h2 class="font-game">Descubra o peso e equilibre a balança!</h2>
+                <button class="btn-large" onclick="changeScreen('tracks')">COMEÇAR</button>
+                <p id="total-stars">⭐ 0/36</p>
+            </div>
+        </div>
+
+        <!-- TELA DE TRILHAS -->
+        <div id="screen-tracks" class="screen">
+            <div class="tracks-hud">
+                <button aria-label="Voltar" title="Voltar" class="stat-badge" onclick="changeScreen('cover')">← Voltar</button>
+                <div class="stat-badge" id="tracks-star-count">⭐ 0</div>
+            </div>
+            <h2 class="font-game">Escolha sua trilha</h2>
+            <div id="track-grid"></div>
+        </div>
+
+        <!-- TELA DE JOGO -->
+        <div id="screen-game" class="screen">
+            <button aria-label="Voltar" title="Voltar" class="game-back-btn" onclick="changeScreen('tracks')">←</button>
+
+            <div class="game-content">
+                <div class="instruction" id="instruction"></div>
+
+                <div class="weight-challenge" id="weight-challenge">
+                    <div class="object-table" id="object-table"></div>
+                    <div class="scale-wrap" id="weight-scale-wrap"><svg id="weight-scale-svg" viewBox="0 0 400 260"></svg></div>
+                    <div class="controls-bar">
+                        <input type="text" inputmode="numeric" id="weight-guess-input" placeholder="?" oninput="updateWeightGuess()">
+                        <button class="btn-large" onclick="verifyWeightGuess()">VERIFICAR</button>
+                    </div>
+                </div>
+
+                <div class="balance-challenge" id="balance-challenge">
+                    <div class="scale-wrap" id="balance-scale-wrap"><svg id="balance-scale-svg" viewBox="0 0 400 260"></svg></div>
+                    <div class="tray" id="balance-tray"></div>
+                    <div class="controls-bar">
+                        <button class="btn-large" id="verify-balance-btn" onclick="verifyBalance()" disabled>VERIFICAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE RESULTADO -->
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2>Parabéns, você equilibrou tudo!</h2>
+            <div id="result-stars" style="font-size: 2.5rem; margin: 15px 0;">⭐⭐⭐</div>
+            <button class="btn-large" onclick="handleModalContinue()">CONTINUAR</button>
+        </div>
+    </div>
+
+    <script src="../utils/audio.js"></script>
+    <script src="../utils/score.js"></script>
+    <script src="../utils/elapsed.js"></script>
+    <script src="../utils/progress.js"></script>
+    <script src="../utils/stars.js"></script>
+    <script src="../utils/shuffle.js"></script>
+    <script src="../utils/rand.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

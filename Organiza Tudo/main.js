@@ -122,32 +122,36 @@ const { useState, useEffect } = React;
 
     function App() {
       // Estados de Navegação
-      const [gameState, setGameState] = useState('cover'); 
+      const [gameState, setGameState] = useState('cover');
+      React.useLayoutEffect(() => {
+        const hud = document.getElementById('hy-hud');
+        if (hud) hud.style.display = gameState === 'playing' ? 'flex' : 'none';
+      }, [gameState]);
       const [unlockedLevels, setUnlockedLevels] = useState(() => window.HY && window.HY.stars ? HY.stars.getUnlocked() : 1);
-      
+
       // Estados da Partida Atual
       const [currentLevel, setCurrentLevel] = useState(null);
       const [pendingItems, setPendingItems] = useState([]);
       const [sortedItems, setSortedItems] = useState({});
-      
+
       // Estados de Interação
       const [draggedItem, setDraggedItem] = useState(null);
       const [selectedItem, setSelectedItem] = useState(null);
       const [dragOverZone, setDragOverZone] = useState(null);
       const [shakeZone, setShakeZone] = useState(null);
-      
+
       const startLevel = (levelId) => {
         const levelData = LEVELS.find(l => l.id === levelId);
         setCurrentLevel(levelData);
         setPendingItems(HY.shuffle(levelData.items));
-        
+
         // Inicializa as caixas vazias
         const initialSorted = {};
         levelData.zones.forEach(zone => {
           initialSorted[zone.id] = [];
         });
         setSortedItems(initialSorted);
-        
+
         setSelectedItem(null);
         setDraggedItem(null);
         setGameState('playing');
@@ -167,7 +171,7 @@ const { useState, useEffect } = React;
             ...prev,
             [zoneId]: [...prev[zoneId], item]
           }));
-          
+
           setPendingItems(prev => {
             const newPending = prev.filter(i => i.id !== item.id);
             // Verifica se ganhou a fase
@@ -183,7 +187,7 @@ const { useState, useEffect } = React;
             }
             return newPending;
           });
-          
+
           setSelectedItem(null);
         } else {
           // Errou
@@ -191,7 +195,7 @@ const { useState, useEffect } = React;
           HY.score.wrong();
           setShakeZone(zoneId);
           setTimeout(() => setShakeZone(null), 400);
-          setSelectedItem(null); 
+          setSelectedItem(null);
         }
       };
 
@@ -218,7 +222,7 @@ const { useState, useEffect } = React;
       const onDrop = (e, zoneId) => {
         e.preventDefault();
         setDragOverZone(null);
-        
+
         try {
           const itemData = e.dataTransfer.getData('application/json');
           if (itemData) {
@@ -268,8 +272,8 @@ const { useState, useEffect } = React;
                 Organiza<br/><span className="text-4xl text-sky-400">Tudo!</span>
               </h1>
               <p className="text-gray-500 mb-8 text-lg font-medium">Vamos aprender a separar as coisas pela cor, forma e tema!</p>
-              
-              <button 
+
+              <button
                 onClick={() => setGameState('levelSelect')}
                 className="w-full py-5 px-8 bg-green-400 hover:bg-green-500 text-white rounded-[2rem] text-3xl font-black transition-all transform hover:scale-105 shadow-[0_8px_0_rgb(34,197,94)] hover:shadow-[0_4px_0_rgb(34,197,94)] hover:translate-y-1 active:shadow-none active:translate-y-2"
               >
@@ -286,7 +290,7 @@ const { useState, useEffect } = React;
       if (gameState === 'levelSelect') {
         return (
           <div key="levelSelect" className="min-h-screen bg-emerald-600 flex flex-col items-center p-6 pt-12">
-            <button onClick={() => setGameState('cover')} className="self-start mb-6 font-bold bg-emerald-900/60 text-white px-4 py-2 rounded-full border-2 border-emerald-300">◀ Início</button>
+            <button onClick={() => setGameState('cover')} className="self-start mb-6 font-bold bg-emerald-900/60 text-white px-4 py-2 rounded-full border-2 border-emerald-300">← Voltar</button>
             <h2 className="text-4xl font-black text-white mb-8 uppercase font-game">Escolhe a Fase</h2>
             <div id="hy-track-grid" style={{width:'100%',maxWidth:'720px'}}></div>
           </div>
@@ -298,7 +302,7 @@ const { useState, useEffect } = React;
       // ------------------------------------------------------------------------
       if (gameState === 'levelComplete') {
         const hasNextPhase = currentLevel.id < LEVELS.length;
-        
+
         return (
           <div className="min-h-screen bg-yellow-100 flex flex-col items-center justify-center p-4">
             <div className="bg-white p-8 rounded-3xl shadow-xl max-w-md w-full text-center border-4 border-yellow-300">
@@ -308,14 +312,14 @@ const { useState, useEffect } = React;
 
               <div className="space-y-3">
                 {hasNextPhase && (
-                  <button 
+                  <button
                     onClick={() => startLevel(currentLevel.id + 1)}
                     className="w-full py-4 px-6 bg-yellow-400 hover:bg-yellow-500 text-white rounded-2xl text-xl font-bold shadow-[0_6px_0_rgb(202,138,4)] hover:shadow-none hover:translate-y-1 transition-all"
                   >
                     Próxima Fase ➡️
                   </button>
                 )}
-                <button 
+                <button
                   onClick={() => setGameState('levelSelect')}
                   className="w-full py-3 px-6 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-2xl text-lg font-bold transition-colors"
                 >
@@ -332,12 +336,12 @@ const { useState, useEffect } = React;
       // ------------------------------------------------------------------------
       return (
         <div key="playing" className="min-h-screen bg-indigo-50 flex flex-col items-center p-4 pb-20 md:pb-4 font-sans relative">
-          
-          <button 
+
+          <button
             onClick={() => setGameState('levelSelect')}
             className="absolute top-4 left-4 text-indigo-500 hover:text-indigo-700 font-bold bg-white/50 hover:bg-white px-4 py-2 rounded-full transition-colors z-20"
           >
-            ⏸ Sair
+            ← Voltar
           </button>
 
           <div className="mt-16 mb-6 text-center">
@@ -349,18 +353,18 @@ const { useState, useEffect } = React;
           </div>
 
           {/* ÁREA DAS CAIXAS (DROPZONES) */}
-          <div className="flex flex-row flex-wrap justify-center gap-4 md:gap-8 w-full max-w-4xl mb-auto">
+          <div className="flex flex-row flex-wrap justify-center gap-4 md:gap-8 w-full max-w-4xl mb-16">
             {currentLevel.zones.map((zone) => {
               const itemsInZone = sortedItems[zone.id] || [];
               const isHovered = dragOverZone === zone.id;
               const isShaking = shakeZone === zone.id;
               const canClickDrop = selectedItem !== null;
-              
+
               const totalInZone = currentLevel.items.filter(i => i.category === zone.id).length;
               const isFull = itemsInZone.length === totalInZone;
 
               return (
-                <div 
+                <div
                   key={zone.id}
                   className={`flex flex-col items-center w-28 md:w-40 transition-transform ${isShaking ? 'shake-anim' : ''} ${isHovered || canClickDrop ? 'scale-105' : ''}`}
                   onDragOver={(e) => onDragOver(e, zone.id)}
@@ -377,16 +381,16 @@ const { useState, useEffect } = React;
                       {itemsInZone.length}/{totalInZone}
                     </div>
                   </div>
-                  
+
                   {/* Adicionado 'relative' e os elementos de dentro agora têm 'pointer-events-none' */}
                   <div className={`relative w-full h-36 md:h-48 rounded-2xl border-4 flex flex-wrap content-start p-2 gap-1 overflow-hidden transition-all duration-300 ${zone.color} ${zone.border} ${zone.shadow} shadow-inner ${isHovered ? 'brightness-110 border-dashed' : 'border-solid'} ${canClickDrop && !isHovered ? 'ring-4 ring-white/50 cursor-pointer' : ''}`}>
-                    
+
                     {itemsInZone.map((item, idx) => (
                       <div key={idx} className="pointer-events-none w-10 h-10 md:w-14 md:h-14 bg-white/30 rounded-lg flex items-center justify-center text-2xl md:text-4xl pop-anim">
                         {item.emoji}
                       </div>
                     ))}
-                    
+
                     {itemsInZone.length === 0 && !isHovered && (
                       <div className="pointer-events-none w-full h-full flex items-center justify-center opacity-30 text-white font-bold text-xl">
                         Vazio
@@ -404,14 +408,14 @@ const { useState, useEffect } = React;
           </div>
 
           {/* ÁREA DA BAGUNÇA (ITENS PARA ARRASTAR) */}
-          <div className="w-full max-w-4xl mt-8">
+          <div className="w-full max-w-2xl mt-8">
             <div className="bg-white/60 backdrop-blur-sm rounded-[2rem] border-4 border-white p-6 shadow-lg min-h-[160px]">
               <h3 className="text-gray-500 font-bold uppercase tracking-widest text-sm mb-4 text-center">Bagunça para Arrumar</h3>
-              
+
               <div className="flex flex-wrap justify-center gap-3 md:gap-4 no-scrollbar">
                 {pendingItems.map((item) => {
                   const isSelected = selectedItem && selectedItem.id === item.id;
-                  
+
                   return (
                     <div
                       key={item.id}

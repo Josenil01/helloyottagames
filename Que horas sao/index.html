@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
+    <title>Que horas são</title>
+    <style>
+        :root {
+            --clock-size: clamp(200px, 42vw, 300px);
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(160deg, #0a40b5 0%, #48076a 100%);
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+        }
+
+        .screen { display: none; flex-direction: column; align-items: center; height: 100%; }
+        .screen.active { display: flex; }
+
+        h1.font-game { font-size: clamp(1.5rem, 6vw, 2.3rem); color: #fff; text-shadow: 2px 2px 0 rgba(0,0,0,0.25); margin: 10px 0 0; text-align: center; }
+        h2.font-game { font-size: clamp(1.1rem, 4vw, 1.6rem); color: #fff; margin: 10px 0; text-align: center; }
+
+        .btn-large {
+            background: var(--hy-orange);
+            color: #fff;
+            border: none;
+            padding: 14px 38px;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            font-family: 'Luckiest Guy', cursive;
+            letter-spacing: 0.03em;
+            cursor: pointer;
+            box-shadow: 0 6px 0 var(--hy-orange-dark);
+            margin: 10px 0;
+        }
+        .btn-large:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--hy-orange-dark); }
+        .btn-large:disabled { opacity: 0.5; cursor: not-allowed; }
+        .btn-large.hidden { display: none; }
+
+        #total-stars { font-size: 1.1rem; font-weight: 800; color: #fff; }
+
+        /* ---- Tela de trilhas ---- */
+        #screen-tracks { justify-content: flex-start; padding-top: 30px; overflow-y: auto; }
+        .tracks-hud { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 10px; }
+        .stat-badge {
+            background: #fff; color: #0a40b5; border: 2px solid #0a40b5;
+            padding: 6px 16px; border-radius: 999px; font-weight: 800; cursor: pointer;
+        }
+        #track-grid { width: 100%; margin-top: 10px; padding-bottom: 20px; }
+
+        /* ---- Tela de jogo ---- */
+        #screen-game { justify-content: flex-start; padding-top: clamp(50px, 8vh, 68px); overflow-y: auto; }
+        .game-back-btn {
+            position: absolute; top: 16px; left: 16px; z-index: 40;
+            background: #fff; border: 2px solid #0a40b5; color: #0a40b5;
+            width: 40px; height: 40px; border-radius: 50%; font-size: 1.1rem; cursor: pointer;
+        }
+
+        .instruction {
+            font-weight: 800;
+            font-size: clamp(1rem, 4vw, 1.3rem);
+            text-align: center;
+            margin-bottom: 16px;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+        }
+
+        .game-layout { width: 100%; max-width: 700px; margin: 0 auto; padding-bottom: 20px; display: flex; flex-direction: column; align-items: center; }
+
+        #clock-svg {
+            width: var(--clock-size);
+            height: var(--clock-size);
+            touch-action: none;
+        }
+        .clock-face { fill: #fdf5e6; stroke: #d9b98a; stroke-width: 4; }
+        .clock-tick { stroke: #a08256; }
+        .clock-tick.long { stroke: #3a2a10; stroke-width: 2.5; }
+        .clock-number { fill: #3a2a10; font-size: 13px; font-weight: 800; text-anchor: middle; dominant-baseline: central; font-family: 'Nunito', sans-serif; }
+        #center-dot { fill: #3a2a10; cursor: grab; }
+
+        .clock-hand { stroke-linecap: round; transition: stroke 0.2s; }
+        .clock-hand.state-neutral { stroke: #1a1a1a; }
+        .clock-hand.state-correct { stroke: var(--hy-green); }
+        .clock-hand.state-wrong { stroke: var(--hy-red); }
+        .hand-hit { stroke: transparent; stroke-linecap: round; cursor: grab; }
+
+        /* ---- Tipo 2: inputs ---- */
+        .time-inputs {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .time-inputs input {
+            width: 70px;
+            font-size: 1.8rem;
+            font-family: 'Luckiest Guy', cursive;
+            text-align: center;
+            border-radius: 14px;
+            border: 3px solid #d9b98a;
+            padding: 8px 4px;
+            color: #3a2a10;
+        }
+        .time-inputs input.state-correct { border-color: var(--hy-green); background: #eafff0; }
+        .time-inputs input.state-wrong { border-color: var(--hy-red); background: #fff0f0; }
+        .time-sep { font-size: 2rem; font-family: 'Luckiest Guy', cursive; }
+
+        /* ---- Modal ---- */
+        .modal {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.65);
+            display: none; align-items: center; justify-content: center; z-index: 2000;
+        }
+        .modal-content {
+            background: #fff; padding: 30px; border-radius: 30px; text-align: center;
+            max-width: 340px; width: 90%; color: #1a1a1a;
+        }
+        .modal-content h2 { font-family: 'Luckiest Guy', cursive; color: #0a40b5; font-size: 1.3rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- TELA INICIAL -->
+        <div id="screen-cover" class="screen active">
+            <button onclick="window.location.href='../index.html'" class="btn-back">← Voltar</button>
+            <div style="flex-grow:1; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                <div style="font-size:4rem;">🕐</div>
+                <h1 class="font-game">Que horas são</h1>
+                <h2 class="font-game">Aprenda a ler o relógio!</h2>
+                <button class="btn-large" onclick="changeScreen('tracks')">COMEÇAR</button>
+                <p id="total-stars">⭐ 0/36</p>
+            </div>
+        </div>
+
+        <!-- TELA DE TRILHAS -->
+        <div id="screen-tracks" class="screen">
+            <div class="tracks-hud">
+                <button aria-label="Voltar" title="Voltar" class="stat-badge" onclick="changeScreen('cover')">← Voltar</button>
+                <div class="stat-badge" id="tracks-star-count">⭐ 0</div>
+            </div>
+            <h2 class="font-game">Escolha sua trilha</h2>
+            <div id="track-grid"></div>
+        </div>
+
+        <!-- TELA DE JOGO -->
+        <div id="screen-game" class="screen">
+            <button aria-label="Voltar" title="Voltar" class="game-back-btn" onclick="changeScreen('tracks')">←</button>
+
+            <div class="instruction" id="instruction">Agora são 3:00</div>
+
+            <div class="game-layout">
+                <svg id="clock-svg" viewBox="0 0 200 200">
+                    <circle class="clock-face" cx="100" cy="100" r="92"></circle>
+                    <g id="clock-ticks"></g>
+                    <g id="clock-numbers"></g>
+
+                    <line id="hour-hand-hit" class="hand-hit" x1="100" y1="100" x2="100" y2="55" stroke-width="18"></line>
+                    <line id="minute-hand-hit" class="hand-hit" x1="100" y1="100" x2="100" y2="28" stroke-width="18"></line>
+                    <line id="hour-hand" class="clock-hand state-neutral" x1="100" y1="100" x2="100" y2="55" stroke-width="5" style="display:none"></line>
+                    <line id="minute-hand" class="clock-hand state-neutral" x1="100" y1="100" x2="100" y2="28" stroke-width="3.5" style="display:none"></line>
+
+                    <circle id="center-dot" cx="100" cy="100" r="8"></circle>
+                </svg>
+
+                <div class="time-inputs" id="time-inputs" style="display:none;">
+                    <input type="number" id="input-hour" min="1" max="12" placeholder="h" inputmode="numeric">
+                    <span class="time-sep">:</span>
+                    <input type="number" id="input-minute" min="0" max="59" placeholder="min" inputmode="numeric">
+                </div>
+
+                <button class="btn-large hidden" id="verify-btn" onclick="handleVerify()">VERIFICAR</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE RESULTADO -->
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2>Parabéns, agora você sabe as horas!</h2>
+            <div id="result-stars" style="font-size: 2.5rem; margin: 15px 0;">⭐⭐⭐</div>
+            <button class="btn-large" onclick="handleModalContinue()">CONTINUAR</button>
+        </div>
+    </div>
+
+    <script src="../utils/audio.js"></script>
+    <script src="../utils/score.js"></script>
+    <script src="../utils/elapsed.js"></script>
+    <script src="../utils/progress.js"></script>
+    <script src="../utils/stars.js"></script>
+    <script src="../utils/shuffle.js"></script>
+    <script src="../utils/rand.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

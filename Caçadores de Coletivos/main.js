@@ -14,6 +14,10 @@ const { useState, useEffect } = React;
     function App() {
       // Estados globais
       const [gameState, setGameState] = useState('cover');
+      React.useLayoutEffect(() => {
+        const hud = document.getElementById('hy-hud');
+        if (hud) hud.style.display = gameState === 'playing' ? 'flex' : 'none';
+      }, [gameState]);
       const [currentPhaseIndex, setCurrentPhaseIndex] = useState(0);
       const [stars, setStars] = useState(0);
       const [currentTrack, setCurrentTrack] = useState(0);
@@ -133,6 +137,7 @@ const { useState, useEffect } = React;
       if (gameState === 'cover') {
         return (
           <div className="min-h-screen safari-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
+            <a href="../index.html" className="btn-back" style={{color: "#334155"}}>← Voltar</a>
             {/* Decoração Aventureira */}
             <div className="absolute top-10 left-10 text-6xl opacity-40 float-anim">🗺️</div>
             <div className="absolute top-32 right-10 text-7xl opacity-40 float-anim" style={{animationDelay: '1s'}}>🦁</div>
@@ -165,7 +170,7 @@ const { useState, useEffect } = React;
       if (gameState === 'trackSelect') {
         return (
           <div className="min-h-screen safari-bg flex flex-col items-center p-6 pt-12">
-            <a href="../index.html" className="self-start mb-6 font-bold bg-amber-200/80 text-stone-900 px-4 py-2 rounded-full border-2 border-amber-400">◀ Voltar</a>
+            <button onClick={() => setGameState('cover')} className="self-start mb-6 font-bold bg-amber-200/80 text-stone-900 px-4 py-2 rounded-full border-2 border-amber-400">← Voltar</button>
             <h2 className="text-4xl font-black text-white mb-8 uppercase font-game">Escolha a Expedição</h2>
             <div id="hy-track-grid" style={{width:'100%',maxWidth:'720px'}}></div>
           </div>
@@ -236,22 +241,12 @@ const { useState, useEffect } = React;
         <div className="min-h-screen w-full flex flex-col relative safari-bg text-stone-800">
 
           {/* CABEÇALHO */}
-          <div className="w-full flex justify-between items-center p-6 z-10 bg-stone-900/80 backdrop-blur-sm shadow-lg rounded-b-3xl border-b-4 border-stone-700">
-            <div className="flex flex-col">
-              <h2 className="text-2xl md:text-3xl font-black uppercase text-amber-100 drop-shadow-md">
-                Mapa {level.id} de {LEVELS.length}
-              </h2>
-              <span className="text-sm font-bold text-amber-300">{level.instruction}</span>
-            </div>
-
-            <div className="flex items-center text-3xl font-black text-orange-400 drop-shadow-md">
-              <span className="mr-2">x{stars}</span>
-              <span className="pop-anim">⭐</span>
-            </div>
+          <div className="w-full h-[60px] flexjustify-between items-center p-6 z-10 bg-stone-900/80 backdrop-blur-sm shadow-lg rounded-b-3xl border-b-4 border-stone-700">
+            <button onClick={() => setGameState('trackSelect')} className="bg-white text-slate-800 px-4 py-2 rounded-full font-bold">← Voltar</button>
           </div>
 
-          <div className="flex-1 flex flex-col items-center justify-center p-4 z-10 w-full max-w-5xl mx-auto">
-
+          <div className="flex-1 flex flex-col items-center justify-center p-4 z-10 w-full max-w-8xl mx-auto">
+              <span className="text-2xl md:text-3xl font-black uppercase p-4 text-black-200 drop-shadow-md">{level.instruction}</span>
             {level.type === 'match' && (
               <HYChallenges.Match
                 level={level}

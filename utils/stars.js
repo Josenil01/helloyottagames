@@ -9,6 +9,8 @@ window.HY = window.HY || {};
   var _wrongs = 0;
   var _trackStart = 0;
   var _onPlay = null;
+  var _lastContainerId = null;
+  var _lastOpts = null;
 
   /* ── CSS injetado uma vez ── */
   if (!document.getElementById('hy-stars-css')) {
@@ -104,6 +106,8 @@ window.HY = window.HY || {};
     var container = document.getElementById(containerId);
     if (!container) return;
     opts = opts || {};
+    _lastContainerId = containerId;
+    _lastOpts = opts;
     var unlocked = getUnlocked();
     var accent = opts.accentColor || 'var(--hy-purple, #48076a)';
 
@@ -151,6 +155,41 @@ window.HY = window.HY || {};
         '</div>';
     }
     container.innerHTML = html;
+  }
+
+  /* ── Atalho de QA: Ctrl+Shift+L (ou Cmd+Shift+L no Mac) libera todas
+     as 12 trilhas do jogo atual na hora, sem precisar jogar tudo. ── */
+  function _showUnlockToast() {
+    var toast = document.createElement('div');
+    toast.textContent = '🔓 Todas as trilhas foram desbloqueadas!';
+    toast.style.cssText = [
+      'position:fixed', 'top:16px', 'left:50%', 'transform:translateX(-50%)',
+      'background:#1a1a1a', 'color:#fff', 'padding:10px 22px', 'border-radius:999px',
+      'font-weight:800', 'font-family:sans-serif', 'font-size:14px',
+      'z-index:99999', 'box-shadow:0 4px 14px rgba(0,0,0,0.35)', 'pointer-events:none'
+    ].join(';');
+    document.body.appendChild(toast);
+    setTimeout(function () { toast.remove(); }, 1800);
+  }
+
+  function _unlockAll() {
+    if (!_gameKey) return;
+    if (!_data) _data = _load();
+    _data.unlocked = TOTAL;
+    _persist();
+    if (_lastContainerId) renderGrid(_lastContainerId, _lastOpts);
+    _showUnlockToast();
+  }
+
+  if (!window.__HY_starsUnlockListenerAttached) {
+    window.__HY_starsUnlockListenerAttached = true;
+    document.addEventListener('keydown', function (e) {
+      var key = (e.key || '').toLowerCase();
+      if ((e.ctrlKey || e.metaKey) && e.shiftKey && key === 'l') {
+        e.preventDefault();
+        _unlockAll();
+      }
+    });
   }
 
   window.HY.stars = {

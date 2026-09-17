@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
+    <title>Gráfico em Ação</title>
+    <style>
+        :root {
+            --panel-bg: rgba(255,255,255,0.14);
+            --track-cell: clamp(12px, 3.2vw, 16px);
+            --pie-size: clamp(110px, 30vw, 150px);
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(to bottom, #0a40b5 0%, #01bebc 100%);
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+        }
+
+        .screen { display: none; flex-direction: column; align-items: center; height: 100%; }
+        .screen.active { display: flex; }
+
+        h1.font-game { font-size: clamp(1.5rem, 6vw, 2.3rem); color: #fff; text-shadow: 2px 2px 0 rgba(0,0,0,0.2); margin: 10px 0 0; text-align: center; }
+        h2.font-game { font-size: clamp(1.1rem, 4vw, 1.6rem); color: #fff; margin: 10px 0; text-align: center; }
+
+        .btn-large {
+            background: var(--hy-orange);
+            color: #fff;
+            border: none;
+            padding: 14px 38px;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            font-family: 'Luckiest Guy', cursive;
+            letter-spacing: 0.03em;
+            cursor: pointer;
+            box-shadow: 0 6px 0 var(--hy-orange-dark);
+            margin: 10px 0;
+        }
+        .btn-large:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--hy-orange-dark); }
+        .btn-large:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        #total-stars { font-size: 1.1rem; font-weight: 800; color: #fff; }
+
+        /* ---- Tela de trilhas ---- */
+        #screen-tracks { justify-content: flex-start; padding-top: 30px; overflow-y: auto; }
+        .tracks-hud { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 10px; }
+        .stat-badge {
+            background: #fff; color: var(--hy-blue); border: 2px solid var(--hy-blue);
+            padding: 6px 16px; border-radius: 999px; font-weight: 800; cursor: pointer;
+        }
+        #track-grid { width: 100%; margin-top: 10px; padding-bottom: 20px; }
+
+        /* ---- Tela de jogo ---- */
+        #screen-game { justify-content: flex-start; padding-top: clamp(50px, 8vh, 68px); overflow-y: auto; }
+        .game-back-btn {
+            position: absolute; top: 16px; left: 16px; z-index: 40;
+            background: #fff; border: 2px solid var(--hy-blue); color: var(--hy-blue);
+            width: 40px; height: 40px; border-radius: 50%; font-size: 1.1rem; cursor: pointer;
+        }
+
+        .instruction {
+            font-weight: 800;
+            font-size: clamp(0.9rem, 3.2vw, 1.1rem);
+            text-align: center;
+            margin-bottom: 8px;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.15);
+        }
+
+        /* ---- Cena ---- */
+        .scene-area {
+            position: relative;
+            width: 100%;
+            max-width: 620px;
+            height: clamp(100px, 18vh, 150px);
+            background: var(--panel-bg);
+            border-radius: 16px;
+            margin: 0 auto 12px;
+            overflow: hidden;
+        }
+        .scene-item {
+            position: absolute;
+            width: clamp(26px, 6.5vw, 36px);
+            height: clamp(26px, 6.5vw, 36px);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: clamp(0.9rem, 3.2vw, 1.2rem);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+            color: #1a1a1a;
+            text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+        }
+
+        /* ---- Paineis ---- */
+        .game-layout {
+            width: 100%;
+            max-width: 780px;
+            margin: 0 auto;
+            padding-bottom: 16px;
+        }
+        .panels-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 22px;
+            justify-content: center;
+        }
+        .chart-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            background: var(--panel-bg);
+            border-radius: 16px;
+            padding: 12px;
+        }
+        .chart-panel-title { font-weight: 800; font-size: 0.8rem; text-align: center; }
+
+        /* barra vertical / linha: colunas lado a lado */
+        .track-row { display: flex; flex-direction: row; gap: 8px; align-items: flex-end; position: relative; }
+        .track-col { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 3px; border-radius: 8px; border: 3px solid transparent; }
+        .track-col.correct { border-color: var(--hy-green); }
+        .track-col.wrong { border-color: var(--hy-red); }
+        .cells-vertical { display: flex; flex-direction: column-reverse; gap: 2px; }
+        .track-icon { font-size: clamp(0.85rem, 3vw, 1.1rem); }
+
+        /* barra horizontal: linhas empilhadas */
+        .track-rows-h { display: flex; flex-direction: column; gap: 6px; }
+        .track-row-h { display: flex; flex-direction: row; align-items: center; gap: 6px; padding: 3px; border-radius: 8px; border: 3px solid transparent; }
+        .track-row-h.correct { border-color: var(--hy-green); }
+        .track-row-h.wrong { border-color: var(--hy-red); }
+        .cells-horizontal { display: flex; flex-direction: row; gap: 2px; }
+
+        .cell {
+            width: var(--track-cell);
+            height: var(--track-cell);
+            border: 1px solid rgba(255,255,255,0.55);
+            border-radius: 3px;
+            cursor: pointer;
+            background: rgba(255,255,255,0.12);
+        }
+        .cell.tick { background: rgba(255,255,255,0.12); }
+        .cell.dot-active { background: transparent; border-color: transparent; position: relative; }
+        .cell.dot-active::after {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            border-radius: 50%;
+            background: var(--dot-bg, #fff);
+            box-shadow: 0 0 0 2px rgba(255,255,255,0.7);
+        }
+
+        /* linha: svg de conexao sobre os tracks */
+        .line-svg { position: absolute; inset: 0; pointer-events: none; overflow: visible; }
+
+        /* pizza */
+        .pie-wrap { position: relative; width: var(--pie-size); height: var(--pie-size); }
+        .pie-svg { width: 100%; height: 100%; }
+        .pie-wedge { cursor: pointer; stroke: rgba(255,255,255,0.5); stroke-width: 1; }
+        .pie-wedge.selected { stroke: #fff; stroke-width: 3; }
+        .pie-legend { display: flex; flex-direction: row; flex-wrap: wrap; gap: 8px; justify-content: center; }
+        .legend-item { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px; border-radius: 8px; border: 3px solid transparent; cursor: pointer; }
+        .legend-item.correct { border-color: var(--hy-green); }
+        .legend-item.wrong { border-color: var(--hy-red); }
+        .legend-swatch { width: 24px; height: 24px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.7); display: flex; align-items: center; justify-content: center; font-size: 0.9rem; }
+        .legend-icon { font-size: 0.9rem; }
+
+        /* ---- Modal ---- */
+        .modal {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.65);
+            display: none; align-items: center; justify-content: center; z-index: 2000;
+        }
+        .modal-content {
+            background: #fff; padding: 30px; border-radius: 30px; text-align: center;
+            max-width: 340px; width: 90%; color: #1a1a1a;
+        }
+        .modal-content h2 { font-family: 'Luckiest Guy', cursive; color: var(--hy-blue); font-size: 1.3rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- TELA INICIAL -->
+        <div id="screen-cover" class="screen active">
+            <button onclick="window.location.href='../index.html'" class="btn-back">← Voltar</button>
+            <div style="flex-grow:1; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                <div style="font-size:4rem;">📊</div>
+                <h1 class="font-game">Gráfico em Ação</h1>
+                <h2 class="font-game">Conte, compare e monte gráficos!</h2>
+                <button class="btn-large" onclick="changeScreen('tracks')">COMEÇAR</button>
+                <p id="total-stars">⭐ 0/36</p>
+            </div>
+        </div>
+
+        <!-- TELA DE TRILHAS -->
+        <div id="screen-tracks" class="screen">
+            <div class="tracks-hud">
+                <button aria-label="Voltar" title="Voltar" class="stat-badge" onclick="changeScreen('cover')">← Voltar</button>
+                <div class="stat-badge" id="tracks-star-count">⭐ 0</div>
+            </div>
+            <h2 class="font-game">Escolha sua trilha</h2>
+            <div id="track-grid"></div>
+        </div>
+
+        <!-- TELA DE JOGO -->
+        <div id="screen-game" class="screen">
+            <button aria-label="Voltar" title="Voltar" class="game-back-btn" onclick="changeScreen('tracks')">←</button>
+
+            <div class="instruction" id="instruction">Conte os itens e monte o gráfico!</div>
+
+            <div class="scene-area" id="scene-area"></div>
+
+            <div class="game-layout">
+                <div class="panels-row">
+                    <div class="chart-panel">
+                        <div class="chart-panel-title">Por tipo</div>
+                        <div id="panel-type"></div>
+                    </div>
+                    <div class="chart-panel">
+                        <div class="chart-panel-title">Por cor</div>
+                        <div id="panel-color"></div>
+                    </div>
+                </div>
+                <div style="text-align:center; margin-top:16px;">
+                    <button class="btn-large" id="verify-btn" onclick="handleVerify()">VERIFICAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE RESULTADO -->
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2>Parabéns, você dominou os gráficos!</h2>
+            <div id="result-stars" style="font-size: 2.5rem; margin: 15px 0;">⭐⭐⭐</div>
+            <button class="btn-large" onclick="handleModalContinue()">CONTINUAR</button>
+        </div>
+    </div>
+
+    <script src="../utils/audio.js"></script>
+    <script src="../utils/score.js"></script>
+    <script src="../utils/elapsed.js"></script>
+    <script src="../utils/progress.js"></script>
+    <script src="../utils/stars.js"></script>
+    <script src="../utils/shuffle.js"></script>
+    <script src="../utils/rand.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

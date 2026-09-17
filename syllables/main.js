@@ -1,4 +1,4 @@
-﻿HY.stars.init('syllables');
+HY.stars.init('syllables');
 
 /**
  * Configuração dos níveis do jogo.
@@ -28,10 +28,13 @@ const levels = (function () {
         function showScreen(screenId) {
             document.querySelectorAll('.screen').forEach(s => s.classList.remove('active-screen'));
             document.getElementById(screenId).classList.add('active-screen');
+            const hud = document.getElementById('hy-hud');
+            if (hud) hud.style.display = screenId === 'screen-game' ? 'flex' : 'none';
             if (screenId === 'screen-levels') renderTracksGrid();
         }
 
         function renderTracksGrid() {
+            document.getElementById('levels-container').classList.remove('space-y-12');
             HY.stars.renderGrid('levels-container', {
                 onPlay: startTrack,
                 emoji: (i) => levels[i * 5].emoji,
@@ -181,6 +184,7 @@ const levels = (function () {
         }
 
         function handleNextLevel() {
+            document.getElementById('win-modal').classList.add('hidden');
             if (challengeInTrack < 5) {
                 initLevel();
             } else {

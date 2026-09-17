@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
+    <title>O Caminho Mais Rápido</title>
+    <style>
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(160deg, #0a40b5 0%, #01bebc 100%);
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+        }
+
+        .screen { display: none; flex-direction: column; align-items: center; height: 100%; }
+        .screen.active { display: flex; }
+
+        h1.font-game { font-size: clamp(1.4rem, 6vw, 2.2rem); color: #fff; text-shadow: 2px 2px 0 rgba(0,0,0,0.25); margin: 10px 0 0; text-align: center; }
+        h2.font-game { font-size: clamp(1.05rem, 4vw, 1.5rem); color: #fff; margin: 10px 0; text-align: center; }
+
+        .btn-large {
+            background: var(--hy-orange);
+            color: #fff;
+            border: none;
+            padding: 14px 38px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-family: 'Luckiest Guy', cursive;
+            letter-spacing: 0.03em;
+            cursor: pointer;
+            box-shadow: 0 6px 0 var(--hy-orange-dark);
+            margin: 10px 0;
+        }
+        .btn-large:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--hy-orange-dark); }
+        .btn-large:disabled { background: #9aa5a0; box-shadow: 0 6px 0 #6d756f; cursor: not-allowed; opacity: 0.7; }
+        .btn-large:disabled:active { transform: none; box-shadow: 0 6px 0 #6d756f; }
+
+        .btn-restart {
+            background: #fff;
+            color: #0a40b5;
+            border: 2px solid #0a40b5;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 800;
+            cursor: pointer;
+        }
+        .btn-restart:active { transform: translateY(2px); }
+
+        #total-stars { font-size: 1.1rem; font-weight: 800; color: #fff; }
+
+        /* ---- Tela de trilhas ---- */
+        #screen-tracks { justify-content: flex-start; padding-top: 30px; overflow-y: auto; }
+        .tracks-hud { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 10px; }
+        .stat-badge {
+            background: #fff; color: #0a40b5; border: 2px solid #0a40b5;
+            padding: 6px 16px; border-radius: 999px; font-weight: 800; cursor: pointer;
+        }
+        #track-grid { width: 100%; margin-top: 10px; padding-bottom: 20px; }
+
+        /* ---- Tela de jogo ---- */
+        /* O grafo deve ocupar a maior parte da tela: layout em coluna onde
+           o grafo cresce (flex:1) e a barra de controles fica fixa embaixo. */
+        #screen-game { justify-content: flex-start; padding-top: clamp(40px, 5vh, 56px); overflow-y: auto; }
+        .game-back-btn {
+            position: absolute; top: 16px; left: 16px; z-index: 40;
+            background: #fff; border: 2px solid #0a40b5; color: #0a40b5;
+            width: 40px; height: 40px; border-radius: 50%; font-size: 1.1rem; cursor: pointer;
+        }
+
+        .game-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            min-height: 0;
+        }
+
+        .instruction {
+            flex: 0 0 auto;
+            font-weight: 800;
+            font-size: clamp(0.8rem, 3vw, 1.05rem);
+            text-align: center;
+            margin-bottom: 8px;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.15);
+        }
+
+        .single-path-challenge, .multi-path-challenge {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            flex: 1 1 auto;
+            min-height: 0;
+            gap: 8px;
+        }
+        .single-path-challenge.active, .multi-path-challenge.active { display: flex; }
+
+        .graph-wrap {
+            flex: 1 1 auto;
+            width: 100%;
+            max-width: 900px;
+            min-height: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.12);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .graph-wrap svg { width: 100%; height: 100%; display: block; }
+
+        .graph-edge { stroke: rgba(255,255,255,0.35); stroke-width: 2; }
+        .graph-path-line { stroke-width: 5; stroke-linecap: round; }
+
+        .graph-node circle {
+            fill: #fff;
+            stroke: var(--hy-purple);
+            stroke-width: 2.5;
+            cursor: pointer;
+        }
+        .graph-node.in-path circle { fill: var(--hy-orange); stroke: var(--hy-orange-dark); }
+        .graph-node text {
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 15px;
+            fill: var(--hy-purple);
+            text-anchor: middle;
+            dominant-baseline: central;
+            pointer-events: none;
+        }
+        .graph-node.in-path text { fill: #fff; }
+        .marker-icon { pointer-events: none; }
+
+        .controls-bar {
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            padding: 8px 0 4px;
+        }
+        .controls-bar .btn-large { margin: 0; }
+        .step-counter {
+            background: #fff;
+            color: #0a40b5;
+            font-weight: 800;
+            padding: 8px 18px;
+            border-radius: 999px;
+            font-size: 1rem;
+        }
+        .step-counter span { font-family: 'Luckiest Guy', cursive; font-size: 1.2rem; }
+
+        /* ---- Desafios multi-personagem ---- */
+        .character-tabs {
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .character-tab {
+            background: #fff;
+            border: 3px solid transparent;
+            border-radius: 16px;
+            padding: 6px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .character-tab.active { border-color: var(--hy-orange); }
+
+        .crossing-input-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.15);
+            padding: 8px 16px;
+            border-radius: 16px;
+        }
+        .crossing-input-row label { font-weight: 800; font-size: 0.85rem; }
+        #crossing-input {
+            width: 46px;
+            height: 46px;
+            text-align: center;
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 1.3rem;
+            border-radius: 12px;
+            border: 3px solid #fff;
+            text-transform: uppercase;
+        }
+        #crossing-input.state-correct { border-color: var(--hy-green); }
+        #crossing-input.state-wrong { border-color: var(--hy-red); }
+
+        /* ---- Modal ---- */
+        .modal {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.65);
+            display: none; align-items: center; justify-content: center; z-index: 2000;
+        }
+        .modal-content {
+            background: #fff; padding: 30px; border-radius: 30px; text-align: center;
+            max-width: 340px; width: 90%; color: #1a1a1a;
+        }
+        .modal-content h2 { font-family: 'Luckiest Guy', cursive; color: #0a40b5; font-size: 1.3rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- TELA INICIAL -->
+        <div id="screen-cover" class="screen active">
+            <button onclick="window.location.href='../index.html'" class="btn-back">← Voltar</button>
+            <div style="flex-grow:1; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                <div style="font-size:4rem;">🗺️</div>
+                <h1 class="font-game">O Caminho Mais Rápido</h1>
+                <h2 class="font-game">Ache a rota mais curta até em casa!</h2>
+                <button class="btn-large" onclick="changeScreen('tracks')">COMEÇAR</button>
+                <p id="total-stars">⭐ 0/36</p>
+            </div>
+        </div>
+
+        <!-- TELA DE TRILHAS -->
+        <div id="screen-tracks" class="screen">
+            <div class="tracks-hud">
+                <button aria-label="Voltar" title="Voltar" class="stat-badge" onclick="changeScreen('cover')">← Voltar</button>
+                <div class="stat-badge" id="tracks-star-count">⭐ 0</div>
+            </div>
+            <h2 class="font-game">Escolha sua trilha</h2>
+            <div id="track-grid"></div>
+        </div>
+
+        <!-- TELA DE JOGO -->
+        <div id="screen-game" class="screen">
+            <button aria-label="Voltar" title="Voltar" class="game-back-btn" onclick="changeScreen('tracks')">←</button>
+
+            <div class="game-content">
+                <div class="instruction" id="instruction"></div>
+
+                <div class="single-path-challenge" id="single-path-challenge">
+                    <div class="graph-wrap" id="single-graph-wrap"><svg id="graph-svg" viewBox="0 0 640 420"></svg></div>
+                    <div class="controls-bar">
+                        <div class="step-counter">Passos: <span id="step-counter">0</span></div>
+                        <button class="btn-restart" onclick="restartSinglePath()">↺ RECOMEÇAR</button>
+                        <button class="btn-large" id="verify-single-btn" onclick="verifySinglePath()" disabled>VERIFICAR</button>
+                    </div>
+                </div>
+
+                <div class="multi-path-challenge" id="multi-path-challenge">
+                    <div class="graph-wrap" id="multi-graph-wrap"><svg id="multi-graph-svg" viewBox="0 0 640 420"></svg></div>
+                    <div class="character-tabs" id="character-tabs"></div>
+                    <div class="controls-bar">
+                        <div class="step-counter">Passos: <span id="multi-step-counter">0</span></div>
+                        <div class="crossing-input-row">
+                            <label for="crossing-input">Letra do cruzamento:</label>
+                            <input type="text" id="crossing-input" maxlength="1">
+                        </div>
+                        <button class="btn-restart" onclick="restartMultiPath()">↺ RECOMEÇAR</button>
+                        <button class="btn-large" onclick="verifyMultiPath()">VERIFICAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE RESULTADO -->
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2>Parabéns, você achou o caminho mais rápido!</h2>
+            <div id="result-stars" style="font-size: 2.5rem; margin: 15px 0;">⭐⭐⭐</div>
+            <button class="btn-large" onclick="handleModalContinue()">CONTINUAR</button>
+        </div>
+    </div>
+
+    <script src="../utils/audio.js"></script>
+    <script src="../utils/score.js"></script>
+    <script src="../utils/elapsed.js"></script>
+    <script src="../utils/progress.js"></script>
+    <script src="../utils/stars.js"></script>
+    <script src="../utils/shuffle.js"></script>
+    <script src="../utils/rand.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

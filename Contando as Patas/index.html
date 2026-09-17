@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
+    <title>Contando as Patas</title>
+    <style>
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(160deg, #6ce67d 0%, #ffa800 100%);
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+        }
+
+        .screen { display: none; flex-direction: column; align-items: center; height: 100%; }
+        .screen.active { display: flex; }
+
+        h1.font-game { font-size: clamp(1.4rem, 6vw, 2.2rem); color: #fff; text-shadow: 2px 2px 0 rgba(0,0,0,0.25); margin: 10px 0 0; text-align: center; }
+        h2.font-game { font-size: clamp(1.05rem, 4vw, 1.5rem); color: #fff; margin: 10px 0; text-align: center; }
+
+        .btn-large {
+            background: var(--hy-purple);
+            color: #fff;
+            border: none;
+            padding: 14px 38px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-family: 'Luckiest Guy', cursive;
+            letter-spacing: 0.03em;
+            cursor: pointer;
+            box-shadow: 0 6px 0 var(--hy-purple-dark);
+            margin: 10px 0;
+        }
+        .btn-large:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--hy-purple-dark); }
+
+        #total-stars { font-size: 1.1rem; font-weight: 800; color: #fff; }
+
+        /* ---- Tela de trilhas ---- */
+        #screen-tracks { justify-content: flex-start; padding-top: 30px; overflow-y: auto; }
+        .tracks-hud { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 10px; }
+        .stat-badge {
+            background: #fff; color: #2e7d32; border: 2px solid #2e7d32;
+            padding: 6px 16px; border-radius: 999px; font-weight: 800; cursor: pointer;
+        }
+        #track-grid { width: 100%; margin-top: 10px; padding-bottom: 20px; }
+
+        /* ---- Tela de jogo ---- */
+        #screen-game { justify-content: flex-start; padding-top: clamp(40px, 5vh, 56px); overflow-y: auto; }
+        .game-back-btn {
+            position: absolute; top: 16px; left: 16px; z-index: 40;
+            background: #fff; border: 2px solid #2e7d32; color: #2e7d32;
+            width: 40px; height: 40px; border-radius: 50%; font-size: 1.1rem; cursor: pointer;
+        }
+
+        .game-content { display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%; min-height: 0; }
+
+        .instruction {
+            flex: 0 0 auto;
+            font-weight: 800;
+            font-size: clamp(0.85rem, 3.2vw, 1.1rem);
+            text-align: center;
+            margin-bottom: 14px;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.15);
+        }
+
+        .panels-wrap {
+            flex: 1 1 auto;
+            width: 100%;
+            max-width: 760px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .panels-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .panel {
+            flex: 1 1 280px;
+            max-width: 340px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 22px;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .panel-animal {
+            font-size: clamp(3rem, 12vw, 4.5rem);
+        }
+
+        .panel-group {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: center;
+            max-width: 280px;
+        }
+        .panel-group span { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+
+        .panel-question {
+            font-weight: 800;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .panel-input {
+            width: 90px;
+            height: 54px;
+            text-align: center;
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 1.4rem;
+            border-radius: 14px;
+            border: 3px solid #fff;
+            background: #fff;
+            color: #2e7d32;
+        }
+        .panel-input.state-correct { border-color: var(--hy-green); }
+        .panel-input.state-wrong { border-color: var(--hy-red); }
+
+        .controls-bar {
+            flex: 0 0 auto;
+            display: flex;
+            justify-content: center;
+            padding: 14px 0;
+        }
+
+        /* ---- Modal ---- */
+        .modal {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.65);
+            display: none; align-items: center; justify-content: center; z-index: 2000;
+        }
+        .modal-content {
+            background: #fff; padding: 30px; border-radius: 30px; text-align: center;
+            max-width: 340px; width: 90%; color: #1a1a1a;
+        }
+        .modal-content h2 { font-family: 'Luckiest Guy', cursive; color: #2e7d32; font-size: 1.3rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- TELA INICIAL -->
+        <div id="screen-cover" class="screen active">
+            <button onclick="window.location.href='../index.html'" class="btn-back">← Voltar</button>
+            <div style="flex-grow:1; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                <div style="font-size:4rem;">🐾</div>
+                <h1 class="font-game">Contando as Patas</h1>
+                <h2 class="font-game">Conte as patas do animal e do grupo todo!</h2>
+                <button class="btn-large" onclick="changeScreen('tracks')">COMEÇAR</button>
+                <p id="total-stars">⭐ 0/36</p>
+            </div>
+        </div>
+
+        <!-- TELA DE TRILHAS -->
+        <div id="screen-tracks" class="screen">
+            <div class="tracks-hud">
+                <button aria-label="Voltar" title="Voltar" class="stat-badge" onclick="changeScreen('cover')">← Voltar</button>
+                <div class="stat-badge" id="tracks-star-count">⭐ 0</div>
+            </div>
+            <h2 class="font-game">Escolha sua trilha</h2>
+            <div id="track-grid"></div>
+        </div>
+
+        <!-- TELA DE JOGO -->
+        <div id="screen-game" class="screen">
+            <button aria-label="Voltar" title="Voltar" class="game-back-btn" onclick="changeScreen('tracks')">←</button>
+
+            <div class="game-content">
+                <div class="instruction" id="instruction">Conte as patas e digite as respostas!</div>
+
+                <div class="panels-wrap">
+                    <div class="panels-row">
+                        <div class="panel">
+                            <div class="panel-animal" id="single-animal"></div>
+                            <div class="panel-question">Quantas patas tem esse animal?</div>
+                            <input type="text" inputmode="numeric" class="panel-input" id="single-input" placeholder="?">
+                        </div>
+                        <div class="panel">
+                            <div class="panel-group" id="group-animals"></div>
+                            <div class="panel-question">Quantas patas tem o grupo todo?</div>
+                            <input type="text" inputmode="numeric" class="panel-input" id="group-input" placeholder="?">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="controls-bar">
+                    <button class="btn-large" onclick="verifyChallenge()">VERIFICAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE RESULTADO -->
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2>Parabéns, você contou tudo certinho!</h2>
+            <div id="result-stars" style="font-size: 2.5rem; margin: 15px 0;">⭐⭐⭐</div>
+            <button class="btn-large" onclick="handleModalContinue()">CONTINUAR</button>
+        </div>
+    </div>
+
+    <script src="../utils/audio.js"></script>
+    <script src="../utils/score.js"></script>
+    <script src="../utils/elapsed.js"></script>
+    <script src="../utils/progress.js"></script>
+    <script src="../utils/stars.js"></script>
+    <script src="../utils/shuffle.js"></script>
+    <script src="../utils/rand.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

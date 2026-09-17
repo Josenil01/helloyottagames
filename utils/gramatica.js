@@ -6,7 +6,7 @@ window.HYGramatica = [
   { id: 1,  type: 'match',   target: 'AÇÃO (VERBO)',         answer: 'PULAR',    options: ['PULAR', 'BOLA', 'TRISTE'],           emoji: '🏃‍♂️', instruction: 'Qual destas palavras indica uma AÇÃO (algo que você faz)?' },
   { id: 2,  type: 'match',   target: 'NOME (SUBSTANTIVO)',   answer: 'CACHORRO', options: ['CORRER', 'CACHORRO', 'BONITO'],       emoji: '🐶', instruction: 'Qual destas palavras indica um NOME?' },
   { id: 3,  type: 'connect', leftWords: ['BOLA', 'LENTO', 'CAIR'],    rightWords: ['NOME', 'QUALIDADE', 'AÇÃO'],    matches: { 'BOLA': 'NOME', 'LENTO': 'QUALIDADE', 'CAIR': 'AÇÃO' },       emoji: '🔮', instruction: 'Ligue a palavra ao seu tipo mágico correto!' },
-  { id: 4,  type: 'intruder', words: ['CANTOU', 'FALOU', 'PULOU', 'MENINO'],         answer: 'MENINO',   emoji: '🧙‍♂️', instruction: 'Atenção! Qual é a intrusa?' },
+  { id: 4,  type: 'intruder', words: ['CANTOU', 'FALOU', 'PULOU', 'MENINO'],         answer: 'MENINO',   emoji: '👦', instruction: 'Atenção! Qual é a intrusa?' },
   { id: 5,  type: 'sentence', preText: 'O gato ',           boldText: '[AÇÃO]',        postText: ' o muro alto.',         answer: 'PULOU',    options: ['PULOU', 'GATO', 'ALTO'],             emoji: '🐈', instruction: 'Arraste a palavra certa para completar o feitiço!' },
   // TRILHA 2 — Adjetivo, Substantivo, Verbo
   { id: 6,  type: 'match',   target: 'QUALIDADE (ADJETIVO)', answer: 'FELIZ',    options: ['FELIZ', 'CADEIRA', 'COMER'],         emoji: '✨', instruction: 'Qual destas palavras indica uma QUALIDADE?' },

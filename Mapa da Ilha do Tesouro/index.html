@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
+    <title>Mapa da Ilha do Tesouro</title>
+    <style>
+        :root {
+            --sand-light: #f3dcae;
+            --sand-mid:   #e6c184;
+            --sand-dark:  #b9915a;
+            --water:      #4fc3d8;
+            --water-dark: #1f8fa6;
+            --parchment:  #f8ecd4;
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(to bottom, var(--water) 0%, var(--sand-light) 45%);
+            color: #4a2c0f;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+        }
+
+        .screen { display: none; flex-direction: column; align-items: center; height: 100%; }
+        .screen.active { display: flex; }
+
+        h1.font-game { font-size: clamp(1.8rem, 6vw, 2.6rem); color: var(--hy-purple); text-shadow: 2px 2px 0 #fff; margin: 10px 0 0; text-align: center; }
+        h2.font-game { font-size: clamp(1.2rem, 4vw, 1.7rem); color: var(--hy-purple); margin: 10px 0; text-align: center; }
+
+        .btn-large {
+            background: var(--hy-orange);
+            color: #fff;
+            border: none;
+            padding: 14px 38px;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            font-family: 'Luckiest Guy', cursive;
+            letter-spacing: 0.03em;
+            cursor: pointer;
+            box-shadow: 0 6px 0 var(--hy-orange-dark);
+            margin: 14px 0;
+        }
+        .btn-large:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--hy-orange-dark); }
+
+        #total-stars { font-size: 1.1rem; font-weight: 800; color: var(--hy-purple); }
+
+        /* ---- Tela de trilhas ---- */
+        #screen-tracks { justify-content: flex-start; padding-top: 30px; overflow-y: auto; }
+        .tracks-hud { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 10px; }
+        .stat-badge {
+            background: #fff; color: var(--hy-purple); border: 2px solid var(--hy-purple);
+            padding: 6px 16px; border-radius: 999px; font-weight: 800; cursor: pointer;
+        }
+        #track-grid { width: 100%; margin-top: 10px; padding-bottom: 20px; }
+
+        /* ---- Tela de jogo ---- */
+        /* overflow-y:auto atua como rede de segurança: se mesmo com o layout
+           lateral o conteudo nao couber na altura da tela, ele rola em vez
+           de ser cortado pelo overflow:hidden herdado de game-viewport.css */
+        #screen-game { justify-content: flex-start; padding-top: clamp(50px, 8vh, 70px); overflow-y: auto; }
+        .game-back-btn {
+            position: absolute; top: 16px; left: 16px; z-index: 40;
+            background: #fff; border: 2px solid var(--hy-purple); color: var(--hy-purple);
+            width: 40px; height: 40px; border-radius: 50%; font-size: 1.1rem; cursor: pointer;
+        }
+
+        /* Usa o espaco lateral (eixo X) da tela: grid e painel lado a lado
+           quando ha largura disponivel; empilha automaticamente (flex-wrap)
+           em telas estreitas no lugar de crescer no eixo Y. */
+        .game-layout {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            max-width: 760px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
+
+        .game-side {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+            flex: 0 1 220px;
+            min-width: 180px;
+        }
+
+        .target-card {
+            background: var(--parchment);
+            border: 3px solid var(--sand-dark);
+            border-radius: 20px;
+            padding: 10px 24px;
+            text-align: center;
+            width: 100%;
+        }
+        .target-label { font-size: 0.9rem; font-weight: 800; color: var(--hy-purple); }
+        .target-icon { font-size: clamp(2.2rem, 8vw, 3rem); line-height: 1.2; }
+
+        .map-grid {
+            display: grid;
+            grid-template-columns: 11% repeat(6, 1fr);
+            grid-template-rows: 11% repeat(6, 1fr);
+            gap: 3px;
+            flex: 0 1 380px;
+            width: 100%;
+            max-width: min(380px, 82vw);
+            aspect-ratio: 1;
+        }
+        .map-label {
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Luckiest Guy', cursive; color: var(--hy-purple); font-size: clamp(0.75rem, 3vw, 0.95rem);
+        }
+        .map-cell {
+            display: flex; align-items: center; justify-content: center;
+            background: var(--sand-light);
+            border: 2px solid var(--sand-dark);
+            border-radius: 6px;
+            font-size: clamp(1.1rem, 4.5vw, 1.5rem);
+            cursor: pointer;
+            position: relative;
+            transition: transform 0.1s;
+            user-select: none;
+        }
+        .map-cell:active { transform: scale(0.93); }
+        .map-cell.found::after {
+            content: '✕';
+            position: absolute;
+            inset: 0;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--hy-red);
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
+        }
+
+        /* ---- Desafio "Rota do Pirata" (penultimo/ultimo de cada trilha) ---- */
+        .route-challenge {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            width: 100%;
+            max-width: 460px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
+        .route-challenge.active { display: flex; }
+
+        .route-hint { font-weight: 800; color: var(--hy-purple); font-size: 0.95rem; text-align: center; }
+
+        .route-grid {
+            display: grid;
+            grid-template-columns: 9% repeat(8, 1fr);
+            grid-template-rows: 9% repeat(8, 1fr);
+            gap: 2px;
+            width: 100%;
+            max-width: min(420px, 86vw);
+            aspect-ratio: 1;
+        }
+        .route-label {
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Luckiest Guy', cursive; color: var(--hy-purple); font-size: clamp(0.6rem, 2.2vw, 0.8rem);
+        }
+        .route-cell {
+            display: flex; align-items: center; justify-content: center;
+            background: var(--sand-light);
+            border: 2px solid var(--sand-dark);
+            border-radius: 5px;
+            font-size: clamp(0.85rem, 3.4vw, 1.2rem);
+        }
+        .route-cell.pirate-cell { background: var(--water); }
+
+        .route-steps-bar {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .step-card {
+            background: var(--parchment);
+            border: 3px solid var(--sand-dark);
+            border-radius: 14px;
+            padding: 8px 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 46px;
+        }
+        .step-count { font-family: 'Luckiest Guy', cursive; font-size: 1.3rem; color: var(--hy-purple); }
+        .step-arrow { font-size: 1.4rem; color: var(--water-dark); font-weight: 900; }
+
+        .route-answers {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            justify-content: center;
+        }
+        .route-answer-btn {
+            background: #fff;
+            border: 3px solid var(--sand-dark);
+            border-radius: 16px;
+            width: clamp(56px, 14vw, 76px);
+            height: clamp(56px, 14vw, 76px);
+            font-size: clamp(1.6rem, 6vw, 2.2rem);
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer;
+        }
+        .route-answer-btn.state-correct { border-color: var(--hy-green); background: #eafff0; }
+
+        /* ---- Painel de coordenada ---- */
+        .coord-panel {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            background: var(--parchment);
+            border: 3px solid var(--sand-dark);
+            border-radius: 20px;
+            padding: 14px 20px;
+            width: 100%;
+        }
+        .coord-panel.visible { display: flex; }
+        .coord-hint { font-weight: 800; color: var(--hy-purple); font-size: 0.9rem; text-align: center; }
+        .coord-boxes { display: flex; gap: 14px; }
+        .coord-box {
+            width: clamp(46px, 12vw, 60px); height: clamp(46px, 12vw, 60px);
+            display: flex; align-items: center; justify-content: center;
+            background: #fff;
+            border: 3px solid var(--sand-dark);
+            border-radius: 14px;
+            font-family: 'Luckiest Guy', cursive;
+            font-size: clamp(1.3rem, 4.5vw, 1.8rem);
+            color: var(--hy-purple);
+        }
+        .coord-box.blank { border-style: dashed; color: var(--sand-dark); background: rgba(255,255,255,0.5); }
+
+        /* ---- Modal ---- */
+        .modal {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.65);
+            display: none; align-items: center; justify-content: center; z-index: 2000;
+        }
+        .modal-content {
+            background: #fff; padding: 30px; border-radius: 30px; text-align: center;
+            max-width: 320px; width: 90%;
+        }
+        .modal-content h2 { font-family: 'Luckiest Guy', cursive; color: var(--hy-purple); }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- TELA INICIAL -->
+        <div id="screen-cover" class="screen active">
+            <button onclick="window.location.href='../index.html'" class="btn-back">← Voltar</button>
+            <div style="flex-grow:1; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                <div style="font-size:4rem;">🗺️</div>
+                <h1 class="font-game">Mapa da Ilha do Tesouro</h1>
+                <h2 class="font-game" style="color:var(--water-dark);">Decifre as coordenadas!</h2>
+                <button class="btn-large" onclick="changeScreen('tracks')">COMEÇAR</button>
+                <p id="total-stars">⭐ 0/36</p>
+            </div>
+        </div>
+
+        <!-- TELA DE TRILHAS -->
+        <div id="screen-tracks" class="screen">
+            <div class="tracks-hud">
+                <button aria-label="Voltar" title="Voltar" class="stat-badge" onclick="changeScreen('cover')">← Voltar</button>
+                <div class="stat-badge" id="tracks-star-count">⭐ 0</div>
+            </div>
+            <h2 class="font-game">Escolha sua trilha</h2>
+            <div id="track-grid"></div>
+        </div>
+
+        <!-- TELA DE JOGO -->
+        <div id="screen-game" class="screen">
+            <button aria-label="Voltar" title="Voltar" class="game-back-btn" onclick="changeScreen('tracks')">←</button>
+
+            <div class="game-layout">
+                <div class="map-grid" id="map-grid"></div>
+
+                <div class="game-side">
+                    <div class="target-card" id="target-card">
+                        <div class="target-label">Encontre no mapa:</div>
+                        <div class="target-icon" id="target-icon">💰</div>
+                    </div>
+
+                    <div class="coord-panel" id="coord-panel">
+                        <div class="coord-hint" id="coord-hint">Complete a coordenada:</div>
+                        <div class="coord-boxes">
+                            <div class="coord-box" id="coord-letter-box">A</div>
+                            <div class="coord-box" id="coord-number-box">1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="route-challenge" id="route-challenge">
+                <div class="route-hint">Siga os passos do pirata e descubra o que ele encontra!</div>
+                <div class="route-grid" id="route-grid"></div>
+                <div class="route-steps-bar" id="route-steps"></div>
+                <div class="route-answers" id="route-answers"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE RESULTADO -->
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2>Parabéns, você encontrou o Tesouro!</h2>
+            <div id="result-stars" style="font-size: 2.5rem; margin: 15px 0;">⭐⭐⭐</div>
+            <button class="btn-large" onclick="handleModalContinue()">CONTINUAR</button>
+        </div>
+    </div>
+
+    <script src="../utils/audio.js"></script>
+    <script src="../utils/score.js"></script>
+    <script src="../utils/elapsed.js"></script>
+    <script src="../utils/progress.js"></script>
+    <script src="../utils/stars.js"></script>
+    <script src="../utils/shuffle.js"></script>
+    <script src="../utils/rand.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

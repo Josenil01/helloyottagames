@@ -5,6 +5,8 @@
 
 ---
 
+Tornar o jogo "Laboratorio das poçoes" em um jogo de Color Sort
+
 ## Todos os Jogos
 
 Estas tarefas se aplicam a **todos os jogos** da plataforma e devem ser implementadas de forma padronizada.

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
+    <title>Qual é o Grupo?</title>
+    <style>
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(160deg, #48076a 0%, #01bebc 100%);
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+        }
+
+        .screen { display: none; flex-direction: column; align-items: center; height: 100%; }
+        .screen.active { display: flex; }
+
+        h1.font-game { font-size: clamp(1.4rem, 6vw, 2.2rem); color: #fff; text-shadow: 2px 2px 0 rgba(0,0,0,0.25); margin: 10px 0 0; text-align: center; }
+        h2.font-game { font-size: clamp(1.05rem, 4vw, 1.5rem); color: #fff; margin: 10px 0; text-align: center; }
+
+        .btn-large {
+            background: var(--hy-orange);
+            color: #fff;
+            border: none;
+            padding: 14px 38px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-family: 'Luckiest Guy', cursive;
+            letter-spacing: 0.03em;
+            cursor: pointer;
+            box-shadow: 0 6px 0 var(--hy-orange-dark);
+            margin: 10px 0;
+        }
+        .btn-large:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--hy-orange-dark); }
+
+        #total-stars { font-size: 1.1rem; font-weight: 800; color: #fff; }
+
+        /* ---- Tela de trilhas ---- */
+        #screen-tracks { justify-content: flex-start; padding-top: 30px; overflow-y: auto; }
+        .tracks-hud { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 10px; }
+        .stat-badge {
+            background: #fff; color: #48076a; border: 2px solid #48076a;
+            padding: 6px 16px; border-radius: 999px; font-weight: 800; cursor: pointer;
+        }
+        #track-grid { width: 100%; margin-top: 10px; padding-bottom: 20px; }
+
+        /* ---- Tela de jogo ---- */
+        #screen-game { justify-content: flex-start; padding-top: clamp(40px, 5vh, 56px); overflow-y: auto; }
+        .game-back-btn {
+            position: absolute; top: 16px; left: 16px; z-index: 40;
+            background: #fff; border: 2px solid #48076a; color: #48076a;
+            width: 40px; height: 40px; border-radius: 50%; font-size: 1.1rem; cursor: pointer;
+        }
+
+        .game-content { display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%; min-height: 0; }
+
+        .instruction {
+            flex: 0 0 auto;
+            font-weight: 800;
+            font-size: clamp(0.8rem, 3vw, 1.05rem);
+            text-align: center;
+            margin-bottom: 8px;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.15);
+        }
+
+        .legend {
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 999px;
+            padding: 4px 12px;
+            font-size: 0.75rem;
+            font-weight: 800;
+        }
+        .legend-swatch {
+            width: 14px; height: 14px; border-radius: 50%;
+        }
+
+        .diagram-wrap {
+            flex: 1 1 auto;
+            width: 100%;
+            max-width: 520px;
+            min-height: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .diagram-wrap svg { width: 100%; height: 100%; max-height: 100%; }
+
+        .venn-item {
+            font-size: 22px;
+            cursor: pointer;
+        }
+        .venn-item.selected { filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 4px #fff); }
+        .venn-item.state-correct { filter: drop-shadow(0 0 4px #2ecc71) drop-shadow(0 0 4px #2ecc71); }
+        .venn-item.state-wrong { filter: drop-shadow(0 0 4px #ff3041) drop-shadow(0 0 4px #ff3041); }
+
+        .tray {
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            background: rgba(255,255,255,0.15);
+            border-radius: 18px;
+            padding: 8px 10px;
+            width: 100%;
+            max-width: 600px;
+            min-height: 56px;
+        }
+        .tray-item {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            border-radius: 12px;
+            font-size: 1.4rem;
+            box-shadow: 0 3px 0 rgba(0,0,0,0.15);
+            cursor: grab;
+            touch-action: none;
+        }
+        .tray-item.selected { box-shadow: 0 0 0 3px var(--hy-orange), 0 3px 0 rgba(0,0,0,0.15); }
+        .tray-item.dragging { opacity: 0.35; }
+        .tray-item.drag-ghost {
+            position: fixed; top: 0; left: 0;
+            transform: translate(-50%, -50%) scale(1.08);
+            pointer-events: none; z-index: 9999;
+            box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+        }
+
+        .controls-bar {
+            flex: 0 0 auto;
+            display: flex;
+            justify-content: center;
+            padding: 8px 0;
+        }
+
+        /* ---- Modal ---- */
+        .modal {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.65);
+            display: none; align-items: center; justify-content: center; z-index: 2000;
+        }
+        .modal-content {
+            background: #fff; padding: 30px; border-radius: 30px; text-align: center;
+            max-width: 340px; width: 90%; color: #1a1a1a;
+        }
+        .modal-content h2 { font-family: 'Luckiest Guy', cursive; color: #48076a; font-size: 1.3rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- TELA INICIAL -->
+        <div id="screen-cover" class="screen active">
+            <button onclick="window.location.href='../index.html'" class="btn-back">← Voltar</button>
+            <div style="flex-grow:1; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                <div style="font-size:4rem;">🎯</div>
+                <h1 class="font-game">Qual é o Grupo?</h1>
+                <h2 class="font-game">Organize os objetos no diagrama certo!</h2>
+                <button class="btn-large" onclick="changeScreen('tracks')">COMEÇAR</button>
+                <p id="total-stars">⭐ 0/36</p>
+            </div>
+        </div>
+
+        <!-- TELA DE TRILHAS -->
+        <div id="screen-tracks" class="screen">
+            <div class="tracks-hud">
+                <button aria-label="Voltar" title="Voltar" class="stat-badge" onclick="changeScreen('cover')">← Voltar</button>
+                <div class="stat-badge" id="tracks-star-count">⭐ 0</div>
+            </div>
+            <h2 class="font-game">Escolha sua trilha</h2>
+            <div id="track-grid"></div>
+        </div>
+
+        <!-- TELA DE JOGO -->
+        <div id="screen-game" class="screen">
+            <button aria-label="Voltar" title="Voltar" class="game-back-btn" onclick="changeScreen('tracks')">←</button>
+
+            <div class="game-content">
+                <div class="instruction" id="instruction">Arraste cada objeto para a área certa do diagrama!</div>
+                <div class="legend" id="legend"></div>
+
+                <div class="diagram-wrap" id="diagram-wrap">
+                    <svg id="venn-svg" viewBox="0 0 420 380"></svg>
+                </div>
+
+                <div class="tray" id="item-tray"></div>
+
+                <div class="controls-bar">
+                    <button class="btn-large" onclick="verifyDiagram()">VERIFICAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE RESULTADO -->
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2>Parabéns, você organizou tudo certinho!</h2>
+            <div id="result-stars" style="font-size: 2.5rem; margin: 15px 0;">⭐⭐⭐</div>
+            <button class="btn-large" onclick="handleModalContinue()">CONTINUAR</button>
+        </div>
+    </div>
+
+    <script src="../utils/audio.js"></script>
+    <script src="../utils/score.js"></script>
+    <script src="../utils/elapsed.js"></script>
+    <script src="../utils/progress.js"></script>
+    <script src="../utils/stars.js"></script>
+    <script src="../utils/shuffle.js"></script>
+    <script src="../utils/rand.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

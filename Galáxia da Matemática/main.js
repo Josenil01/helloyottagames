@@ -30,6 +30,8 @@ const gameLevels = [
         const spacePlanets = ['🪐', '🌍', '🌕', '☀️', '🌑', '☄️', '🌌', '🌟', '🌑', '🔵', '🔴', '🟣'];
 
         function showScreen(screenId) {
+    const hud = document.getElementById('hy-hud');
+    if (hud) hud.style.display = screenId === 'screen-game' ? 'flex' : 'none';
             stopTimer();
             document.querySelectorAll('.screen').forEach(s => s.classList.remove('active-screen'));
             document.getElementById('screen-transition').classList.add('hidden');

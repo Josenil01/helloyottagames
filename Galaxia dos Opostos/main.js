@@ -88,6 +88,10 @@ const { useState, useEffect } = React;
     function App() {
       // Estados globais
       const [gameState, setGameState] = useState('cover');
+      React.useLayoutEffect(() => {
+        const hud = document.getElementById('hy-hud');
+        if (hud) hud.style.display = gameState === 'playing' ? 'flex' : 'none';
+      }, [gameState]);
       const [currentPhaseIndex, setCurrentPhaseIndex] = useState(0);
       const [stars, setStars] = useState(0);
       const [currentTrack, setCurrentTrack] = useState(0);
@@ -240,7 +244,7 @@ const { useState, useEffect } = React;
       if (gameState === 'trackSelect') {
         return (
           <div className="min-h-screen galaxy-bg flex flex-col items-center p-6 pt-12">
-            <a href="../index.html" className="self-start mb-6 font-bold bg-purple-900/60 text-white px-4 py-2 rounded-full border-2 border-purple-400">◀ Voltar</a>
+            <button onClick={() => setGameState('cover')} className="self-start mb-6 font-bold bg-purple-900/60 text-white px-4 py-2 rounded-full border-2 border-purple-400">← Voltar</button>
             <h2 className="text-4xl font-black text-white mb-8 uppercase font-game">Escolha a Galáxia</h2>
             <div id="hy-track-grid" style={{width:'100%',maxWidth:'720px'}}></div>
           </div>
@@ -312,21 +316,15 @@ const { useState, useEffect } = React;
 
           {/* CABEÇALHO */}
           <div className="w-full flex justify-between items-center p-6 z-10 bg-black/20 backdrop-blur-sm shadow-lg rounded-b-3xl border-b border-violet-500/30">
-            <div className="flex flex-col">
-              <h2 className="text-2xl md:text-3xl font-black uppercase text-violet-200 drop-shadow-md">
-                Galáxia {currentTrack + 1} — Fase {(currentPhaseIndex - currentTrack * 5) + 1} de 5
-              </h2>
-              <span className="text-sm font-bold text-violet-300">{level.instruction}</span>
-            </div>
-
+            <button onClick={() => setGameState('trackSelect')} className="bg-white text-slate-800 px-4 py-2 rounded-full font-bold">← Voltar</button>
             <div className="flex items-center text-3xl font-black text-yellow-300 drop-shadow-md">
               <span className="mr-2">x{stars}</span>
               <span>⭐</span>
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col items-center justify-center p-4 z-10 w-full max-w-5xl mx-auto">
-
+          <div className="flex-1 flex flex-col items-center justify-center p-4 z-10 w-full max-w-8xl mx-auto">
+              <span className="text-2xl md:text-3xl font-black uppercase text-violet-200 drop-shadow-md mb-8">{level.instruction}</span>
             {level.type === 'match' && (
               <HYChallenges.Match
                 level={level}

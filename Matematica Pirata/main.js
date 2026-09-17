@@ -101,7 +101,11 @@ const { useState, useEffect, useRef } = React;
       const trackChallengesRef = useRef([]);
 
       // Estados
-      const [gameState, setGameState] = useState('cover'); // cover, trackSelect, playing, trackComplete
+      const [gameState, setGameState] = useState('cover');
+      React.useLayoutEffect(() => {
+        const hud = document.getElementById('hy-hud');
+        if (hud) hud.style.display = gameState === 'playing' ? 'flex' : 'none';
+      }, [gameState]); // cover, trackSelect, playing, trackComplete
       const [currentTrack, setCurrentTrack] = useState(0);
       const [currentPhaseIndex, setCurrentPhaseIndex] = useState(0);
       const [coins, setCoins] = useState(0);
@@ -353,6 +357,7 @@ const { useState, useEffect, useRef } = React;
 
           {/* CABEÇALHO */}
           <div className="w-full flex justify-between items-center p-6 md:p-8 z-10">
+            <button onClick={() => setGameState('trackSelect')} className="bg-white text-slate-800 px-4 py-2 rounded-full font-bold">← Voltar</button>
 
             {/* Contador de Moedas */}
             <div className="flex items-center text-3xl md:text-4xl font-black text-yellow-400 drop-shadow-sm">

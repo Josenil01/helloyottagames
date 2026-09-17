@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
+    <title>Fábrica das Formas</title>
+    <style>
+        :root {
+            --card-bg: #fdf5e6;
+            --card-border: #d9b98a;
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #64748b 0%, #1e293b 100%);
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+        }
+
+        .screen { display: none; flex-direction: column; align-items: center; height: 100%; }
+        .screen.active { display: flex; }
+
+        h1.font-game { font-size: clamp(1.5rem, 6vw, 2.3rem); color: #fff; text-shadow: 2px 2px 0 rgba(0,0,0,0.25); margin: 10px 0 0; text-align: center; }
+        h2.font-game { font-size: clamp(1.1rem, 4vw, 1.6rem); color: #fff; margin: 10px 0; text-align: center; }
+
+        .btn-large {
+            background: var(--hy-orange);
+            color: #fff;
+            border: none;
+            padding: 14px 38px;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            font-family: 'Luckiest Guy', cursive;
+            letter-spacing: 0.03em;
+            cursor: pointer;
+            box-shadow: 0 6px 0 var(--hy-orange-dark);
+            margin: 14px 0;
+        }
+        .btn-large:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--hy-orange-dark); }
+
+        #total-stars { font-size: 1.1rem; font-weight: 800; color: #fff; }
+
+        /* ---- Tela de trilhas ---- */
+        #screen-tracks { justify-content: flex-start; padding-top: 30px; overflow-y: auto; }
+        .tracks-hud { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 10px; }
+        .stat-badge {
+            background: #fff; color: #1e293b; border: 2px solid #1e293b;
+            padding: 6px 16px; border-radius: 999px; font-weight: 800; cursor: pointer;
+        }
+        #track-grid { width: 100%; margin-top: 10px; padding-bottom: 20px; }
+
+        /* ---- Tela de jogo ---- */
+        #screen-game { justify-content: flex-start; padding-top: clamp(50px, 8vh, 68px); overflow-y: auto; }
+        .game-back-btn {
+            position: absolute; top: 16px; left: 16px; z-index: 40;
+            background: #fff; border: 2px solid #1e293b; color: #1e293b;
+            width: 40px; height: 40px; border-radius: 50%; font-size: 1.1rem; cursor: pointer;
+        }
+
+        .instruction {
+            font-weight: 800;
+            font-size: clamp(0.9rem, 3.5vw, 1.15rem);
+            text-align: center;
+            margin-bottom: 16px;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+        }
+
+        .game-layout { width: 100%; max-width: 780px; margin: 0 auto; padding-bottom: 20px; }
+
+        /* ---- Linha de montagem ---- */
+        .chain-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.08);
+            border-radius: 18px;
+            padding: 18px 12px;
+        }
+
+        .shape-visual { box-shadow: 0 3px 0 rgba(0,0,0,0.2); }
+        .shape-visual.circle { border-radius: 50%; }
+        .shape-visual.square { border-radius: 8px; }
+        .shape-visual.triangle { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); box-shadow: none; }
+        .shape-visual.star { clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); box-shadow: none; }
+        .shape-visual.diamond { clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); box-shadow: none; }
+
+        .blank-slot {
+            min-width: 56px;
+            min-height: 56px;
+            border: 3px dashed rgba(255,255,255,0.55);
+            border-radius: 12px;
+            display: flex;
+            gap: 4px;
+            align-items: center;
+            justify-content: center;
+            padding: 4px;
+            background: rgba(255,255,255,0.06);
+        }
+        .blank-slot.correct { border-style: solid; border-color: var(--hy-green); background: rgba(108,230,125,0.18); }
+
+        .chip {
+            width: 30px; height: 30px;
+            border-radius: 7px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border: 2px solid rgba(255,255,255,0.6);
+        }
+
+        /* ---- Bandeja de cards ---- */
+        .cards-tray {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 22px;
+        }
+        .action-card {
+            width: 76px;
+            padding: 10px 6px;
+            border-radius: 14px;
+            background: var(--card-bg);
+            border: 3px solid var(--card-border);
+            text-align: center;
+            cursor: grab;
+            color: #3a2a10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+        .action-card.selected { border-color: var(--hy-orange); box-shadow: 0 0 0 3px rgba(255,168,0,0.45); }
+        .action-card .icon { font-size: 1.5rem; }
+        .action-card .label { font-size: 0.7rem; font-weight: 800; line-height: 1.1; }
+        .action-card .swatch { width: 26px; height: 26px; border-radius: 50%; border: 2px solid rgba(0,0,0,0.15); }
+        .action-card.dragging { opacity: 0.35; }
+
+        .drag-ghost {
+            position: fixed;
+            top: 0; left: 0;
+            transform: translate(-50%, -50%) scale(1.08);
+            pointer-events: none;
+            z-index: 9999;
+            box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+        }
+
+        /* ---- Modal ---- */
+        .modal {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.65);
+            display: none; align-items: center; justify-content: center; z-index: 2000;
+        }
+        .modal-content {
+            background: #fff; padding: 30px; border-radius: 30px; text-align: center;
+            max-width: 340px; width: 90%; color: #1a1a1a;
+        }
+        .modal-content h2 { font-family: 'Luckiest Guy', cursive; color: #1e293b; font-size: 1.3rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- TELA INICIAL -->
+        <div id="screen-cover" class="screen active">
+            <button onclick="window.location.href='../index.html'" class="btn-back">← Voltar</button>
+            <div style="flex-grow:1; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                <div style="font-size:4rem;">🏭</div>
+                <h1 class="font-game">Fábrica das Formas</h1>
+                <h2 class="font-game">Monte a linha de montagem!</h2>
+                <button class="btn-large" onclick="changeScreen('tracks')">COMEÇAR</button>
+                <p id="total-stars">⭐ 0/36</p>
+            </div>
+        </div>
+
+        <!-- TELA DE TRILHAS -->
+        <div id="screen-tracks" class="screen">
+            <div class="tracks-hud">
+                <button aria-label="Voltar" title="Voltar" class="stat-badge" onclick="changeScreen('cover')">← Voltar</button>
+                <div class="stat-badge" id="tracks-star-count">⭐ 0</div>
+            </div>
+            <h2 class="font-game">Escolha sua trilha</h2>
+            <div id="track-grid"></div>
+        </div>
+
+        <!-- TELA DE JOGO -->
+        <div id="screen-game" class="screen">
+            <button aria-label="Voltar" title="Voltar" class="game-back-btn" onclick="changeScreen('tracks')">←</button>
+
+            <div class="instruction">Arraste os cards certos pros espaços em branco!</div>
+
+            <div class="game-layout">
+                <div class="chain-row" id="chain-row"></div>
+                <div class="cards-tray" id="cards-tray"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE RESULTADO -->
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2>Parabéns, você montou a fábrica toda!</h2>
+            <div id="result-stars" style="font-size: 2.5rem; margin: 15px 0;">⭐⭐⭐</div>
+            <button class="btn-large" onclick="handleModalContinue()">CONTINUAR</button>
+        </div>
+    </div>
+
+    <script src="../utils/audio.js"></script>
+    <script src="../utils/score.js"></script>
+    <script src="../utils/elapsed.js"></script>
+    <script src="../utils/progress.js"></script>
+    <script src="../utils/stars.js"></script>
+    <script src="../utils/shuffle.js"></script>
+    <script src="../utils/rand.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

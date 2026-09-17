@@ -105,7 +105,11 @@ if (window.HY && window.HY.stars) HY.stars.init('canhoes-ouro');
       const trackChallengesRef = useRef([]);
 
       // --- Estados Principais ---
-      const [gameState, setGameState] = useState('cover'); // cover, trackSelect, playing, trackComplete
+      const [gameState, setGameState] = useState('cover');
+      React.useLayoutEffect(() => {
+        const hud = document.getElementById('hy-hud');
+        if (hud) hud.style.display = gameState === 'playing' ? 'flex' : 'none';
+      }, [gameState]); // cover, trackSelect, playing, trackComplete
       const [firing, setFiring] = useState(false);
       const [hit, setHit] = useState(false);
       const [wrong, setWrong] = useState([]);
@@ -153,7 +157,7 @@ if (window.HY && window.HY.stars) HY.stars.init('canhoes-ouro');
 
       const checkAnswer = (val) => {
         if (firing || hit) return;
-        const expected = level.unknown === 'n2' ? level.answerwer - level.n1 : level.unknown === 'n1' ? level.answerwer - level.n2 : level.answerwer;
+        const expected = level.unknown === 'n2' ? level.answer - level.n1 : level.unknown === 'n1' ? level.answer - level.n2 : level.answer;
 
         if (val === expected) {
           animateShot();
@@ -240,6 +244,7 @@ if (window.HY && window.HY.stars) HY.stars.init('canhoes-ouro');
       if (gameState === 'cover') {
         return (
           <div className="h-screen flex flex-col items-center justify-center p-6 text-center bg-sky-300">
+            <a href="../index.html" className="btn-back" style={{color: "#334155"}}>← Voltar</a>
             <div className="mb-8 text-[8rem] md:text-[10rem] animate-bounce">🏴‍☠️</div>
             <h1 className="text-5xl md:text-7xl font-black text-indigo-900 mb-4 uppercase tracking-tighter">Canhões de Ouro</h1>
             <p className="text-xl md:text-2xl text-indigo-700 font-bold mb-10">O Mapa do Tesouro espera por ti!</p>
@@ -258,7 +263,7 @@ if (window.HY && window.HY.stars) HY.stars.init('canhoes-ouro');
         return (
           <div key="trackSelect" className="h-screen flex flex-col items-center p-6 bg-sky-300">
             <div className="w-full max-w-4xl flex justify-between items-center mb-8">
-              <button onClick={() => setGameState('cover')} className="bg-indigo-900 text-white p-4 rounded-full shadow-lg">🏠</button>
+              <button onClick={() => setGameState('cover')} className="bg-indigo-900 text-white p-4 rounded-full shadow-lg">← Voltar</button>
               <h2 className="text-4xl font-black text-indigo-900 uppercase">Mapa das Ilhas</h2>
             </div>
             <div id="hy-track-grid" style={{width:'100%', maxWidth:'720px'}}></div>
@@ -290,7 +295,7 @@ if (window.HY && window.HY.stars) HY.stars.init('canhoes-ouro');
           {/* HUD Superior */}
           <div className="p-4 md:p-6 flex justify-between items-center z-10">
             <button onClick={() => setGameState('trackSelect')} className="bg-white/90 px-5 py-2 rounded-full border-4 border-indigo-900 font-black text-lg">
-              ◀ Sair
+              ← Voltar
             </button>
             <span className="text-sm text-indigo-500 font-bold">Ilha {currentTrack + 1} — {challengeInTrack + 1}/5</span>
           </div>

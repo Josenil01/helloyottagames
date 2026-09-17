@@ -323,6 +323,7 @@
     <div class="container">
         <!-- HOME -->
         <div id="screen-home" class="screen active">
+        <a href="../index.html" class="btn-back" style="color:#334155">← Voltar</a>
             <h1 style="font-size: 3rem; text-shadow: 3px 3px rgba(0,0,0,0.3);">🏴‍☠️ Piratas do Troco</h1>
             <p style="font-size: 1.5rem;">Aprende a contar moedas!</p>
             <button class="btn-large" onclick="changeScreen('levels')">COMECAR!</button>
@@ -332,7 +333,7 @@
         <div id="screen-levels" class="screen">
             <h2 style="font-size: 2rem;">Mapa das Ilhas</h2>
             <div class="level-grid" id="level-grid"></div>
-            <button class="btn-large" style="font-size: 1rem; padding: 10px 20px;" onclick="changeScreen('home')">VOLTAR</button>
+            <button aria-label="Voltar" title="Voltar" class="btn-large" style="font-size: 1rem; padding: 10px 20px;" onclick="changeScreen('home')">← Voltar</button>
         </div>
 
         <!-- JOGO -->
@@ -340,7 +341,7 @@
             <div class="hud" style="width: 100%;">
                 <div class="stat-badge" id="click-counter">Tira: 0/0</div>
                 <div class="stat-badge" id="game-info">Ilha 1 — 1/5</div>
-                <button class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer; border:none">✖</button>
+                <button aria-label="Voltar" title="Voltar" class="stat-badge" onclick="changeScreen('levels')" style="cursor:pointer; border:none">← Voltar</button>
             </div>
 
             <div class="instruction-card">

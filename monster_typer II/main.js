@@ -34,6 +34,8 @@ const monsterSvg = document.getElementById('monster-svg');
 const modalFeedback = document.getElementById('modal-feedback');
 
 function showScreen(screen) {
+    const hud = document.getElementById('hy-hud');
+    if (hud) hud.style.display = screen.id === 'screen-game' ? 'flex' : 'none';
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active-screen'));
     screen.classList.add('active-screen');
 }
@@ -49,7 +51,7 @@ function renderTrackSelect() {
 }
 
 function startGame() {
-    startTrack(0);
+    showTrackSelectScreen();
 }
 
 function startTrack(trackIdx) {
@@ -169,6 +171,9 @@ function nextLevel() {
 
 function showTrackSelectScreen() {
     gameActive = false;
+    clearInterval(timerInterval);
+    modalFeedback.classList.add('hidden');
+    modalFeedback.classList.remove('flex');
     const trackScreen = document.getElementById('screen-tracks');
     if (trackScreen) {
         renderTrackSelect();

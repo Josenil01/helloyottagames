@@ -20,7 +20,11 @@ const { useState, useEffect } = React;
     })();
 
     function App() {
-      const [gameState, setGameState] = useState('cover'); 
+      const [gameState, setGameState] = useState('cover');
+      React.useLayoutEffect(() => {
+        const hud = document.getElementById('hy-hud');
+        if (hud) hud.style.display = gameState === 'playing' ? 'flex' : 'none';
+      }, [gameState]); 
       const [unlockedPhases, setUnlockedPhases] = useState(() => window.HY && window.HY.stars ? HY.stars.getUnlocked() : 1);
       
       const [currentPhase, setCurrentPhase] = useState(1);
@@ -193,7 +197,7 @@ const { useState, useEffect } = React;
       if (gameState === 'phaseSelect') {
         return (
           <div className="min-h-screen bg-violet-600 flex flex-col items-center p-6 pt-12">
-            <button onClick={() => setGameState('cover')} className="self-start mb-6 font-bold bg-violet-900/60 text-violet-200 px-4 py-2 rounded-full border-2 border-violet-400">◀ Início</button>
+            <button onClick={() => setGameState('cover')} className="self-start mb-6 font-bold bg-violet-900/60 text-violet-200 px-4 py-2 rounded-full border-2 border-violet-400">← Voltar</button>
             <h2 className="text-4xl font-black text-white mb-8 uppercase font-game">Mapa do Jogo</h2>
             <div id="hy-track-grid" style={{width:'100%',maxWidth:'720px'}}></div>
           </div>
@@ -271,7 +275,7 @@ const { useState, useEffect } = React;
             onClick={() => setGameState('phaseSelect')}
             className="absolute top-4 left-4 text-violet-700 hover:text-violet-900 font-bold bg-white/50 hover:bg-white px-4 py-2 rounded-full transition-colors z-20"
           >
-            ⏸ Pausar
+            ← Voltar
           </button>
 
 

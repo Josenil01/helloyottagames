@@ -88,11 +88,15 @@ const { useState, useEffect } = React;
     function App() {
       // Estados globais
       const [gameState, setGameState] = useState('cover');
+      React.useLayoutEffect(() => {
+        const hud = document.getElementById('hy-hud');
+        if (hud) hud.style.display = gameState === 'playing' ? 'flex' : 'none';
+      }, [gameState]);
       const [currentPhaseIndex, setCurrentPhaseIndex] = useState(0);
       const [stars, setStars] = useState(0);
       const [currentTrack, setCurrentTrack] = useState(0);
       const [unlockedTracks, setUnlockedTracks] = useState(() => window.HY && window.HY.stars ? HY.stars.getUnlocked() : 1);
-      
+
       // Estados interativos
       const [draggedOption, setDraggedOption] = useState(null);
       const [isSuccess, setIsSuccess] = useState(false);
@@ -165,13 +169,13 @@ const { useState, useEffect } = React;
           alert("Escolha primeiro uma palavra da coluna da esquerda!");
           return;
         }
-        
+
         if (level.matches[selectedLeft] === rightWord) {
           // Acertou o par
           const newSolved = [...solvedPairs, selectedLeft];
           setSolvedPairs(newSolved);
           setSelectedLeft(null);
-          
+
           // Verifica se terminou todas as 3 ligações
           if (newSolved.length === level.leftWords.length) {
             handleWin();
@@ -221,7 +225,7 @@ const { useState, useEffect } = React;
               <p className="text-gray-600 mb-8 text-xl font-bold px-4">
                 Prepare-se para uma aventura na selva das palavras que significam o mesmo!
               </p>
-              
+
               <button
                 onClick={() => setGameState('trackSelect')}
                 className="w-full py-5 px-8 bg-amber-500 hover:bg-amber-600 text-white rounded-3xl text-3xl font-black transition-all transform hover:scale-105 shadow-[0_8px_0_rgb(217,119,6)] hover:translate-y-1 active:shadow-none active:translate-y-2 uppercase"
@@ -239,7 +243,7 @@ const { useState, useEffect } = React;
       if (gameState === 'trackSelect') {
         return (
           <div className="min-h-screen jungle-bg flex flex-col items-center p-6 pt-12">
-            <a href="../index.html" className="self-start mb-6 font-bold bg-green-200/80 text-green-900 px-4 py-2 rounded-full border-2 border-green-400">◀ Voltar</a>
+            <button onClick={() => setGameState('cover')} className="self-start mb-6 font-bold bg-green-200/80 text-green-900 px-4 py-2 rounded-full border-2 border-green-400">← Voltar</button>
             <h2 className="text-4xl font-black text-white mb-8 uppercase font-game">Escolha a Trilha</h2>
             <div id="hy-track-grid" style={{width:'100%',maxWidth:'720px'}}></div>
           </div>
@@ -308,24 +312,19 @@ const { useState, useEffect } = React;
       // ------------------------------------------------------------------------
       return (
         <div className="min-h-screen w-full flex flex-col relative jungle-bg text-emerald-900">
-          
+
           {/* CABEÇALHO */}
           <div className="w-full flex justify-between items-center p-6 z-10 bg-white/30 backdrop-blur-sm shadow-sm rounded-b-3xl">
-            <div className="flex flex-col">
-              <h2 className="text-2xl md:text-3xl font-black uppercase text-emerald-800">
-                Fase {level.id} de {LEVELS.length}
-              </h2>
-              <span className="text-sm font-bold text-emerald-700">{level.instruction}</span>
-            </div>
-            
+            <button onClick={() => setGameState('trackSelect')} className="bg-white text-slate-800 px-4 py-2 rounded-full font-bold">← Voltar</button>
             <div className="flex items-center text-3xl font-black text-amber-500 drop-shadow-md">
               <span className="mr-2">x{stars}</span>
               <span>⭐</span>
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col items-center justify-center p-4 z-10 w-full max-w-5xl mx-auto">
-            
+          <div className="flex-1 flex flex-col items-center justify-center p-4 z-10 w-full max-w-7xl mx-auto">
+            <span className="text-2xl md:text-3xl font-black uppercase text-emerald-900 drop-shadow-md mb-8">{level.instruction}</span>
+
             {level.type === 'match' && (
               <HYChallenges.Match
                 level={level}

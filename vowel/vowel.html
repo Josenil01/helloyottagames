@@ -137,6 +137,7 @@
 
     <!-- TELA INICIAL -->
     <div id="screen-start" class="screen active-screen justify-center text-center">
+        <a href="../index.html" class="btn-back" style="color:#334155">← Voltar</a>
         <h1 class="text-6xl md:text-8xl font-game text-blue-600 mb-4 drop-shadow-md leading-tight" style="-webkit-text-stroke: 2px white;">COMPLETE A<br>PALAVRA</h1>
         <div class="w-64 h-64 bg-white rounded-[3rem] flex items-center justify-center border-8 border-yellow-400 shadow-2xl mb-12 rotate-3 relative">
             <div class="absolute inset-0 bg-blue-50 opacity-50 rounded-[2.5rem]"></div>
@@ -170,7 +171,7 @@
     <div id="screen-levels" class="screen">
         <div class="max-w-4xl w-full">
             <div class="flex justify-between items-center mb-10">
-                <button onclick="showScreen('screen-mode')" class="bg-white text-blue-600 font-bold px-6 py-3 rounded-2xl shadow-sm border-2 border-blue-100 hover:bg-blue-50">← VOLTAR</button>
+                <button aria-label="Voltar" title="Voltar" onclick="showScreen('screen-start')" class="bg-white text-blue-600 font-bold px-6 py-3 rounded-2xl shadow-sm border-2 border-blue-100 hover:bg-blue-50">← Voltar</button>
                 <h2 class="text-5xl font-game text-blue-600 drop-shadow-sm" style="-webkit-text-stroke: 1px white;">NÍVEIS</h2>
                 <div class="w-24"></div>
             </div>
@@ -182,7 +183,7 @@
     <div id="screen-game" class="screen w-full">
         <div class="w-full max-w-5xl mt-4 flex flex-col h-full justify-between items-center pb-8">
             <div class="w-full flex justify-between items-center mb-8 px-4">
-                <button onclick="quitGame()" class="bg-white px-6 py-2 rounded-xl font-bold border-2 border-blue-200 text-blue-600 shadow-sm hover:bg-blue-50 transition-colors">SAIR</button>
+                <button aria-label="Voltar" title="Voltar" onclick="quitGame()" class="bg-white px-6 py-2 rounded-xl font-bold border-2 border-blue-200 text-blue-600 shadow-sm hover:bg-blue-50 transition-colors">← Voltar</button>
             </div>
 
             <!-- Área Principal: Imagem + Palavra -->

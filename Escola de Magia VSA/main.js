@@ -7,7 +7,11 @@ const { useState, useEffect } = React;
 
 
     function App() {
-      const [gameState, setGameState] = useState('cover'); 
+      const [gameState, setGameState] = useState('cover');
+      React.useLayoutEffect(() => {
+        const hud = document.getElementById('hy-hud');
+        if (hud) hud.style.display = gameState === 'playing' ? 'flex' : 'none';
+      }, [gameState]);
       const [currentPhaseIndex, setCurrentPhaseIndex] = useState(0);
       const [stars, setStars] = useState(0);
       const [currentTrack, setCurrentTrack] = useState(0);
@@ -15,7 +19,7 @@ const { useState, useEffect } = React;
 
       const [draggedOption, setDraggedOption] = useState(null);
       const [isSuccess, setIsSuccess] = useState(false);
-      const [shakeWrong, setShakeWrong] = useState(null); 
+      const [shakeWrong, setShakeWrong] = useState(null);
       const [wrongAnswers, setWrongAnswers] = useState([]);
 
       const [selectedLeft, setSelectedLeft] = useState(null);
@@ -80,12 +84,12 @@ const { useState, useEffect } = React;
           alert("Jovem Mago, escolha primeiro uma palavra da coluna da esquerda!");
           return;
         }
-        
+
         if (level.matches[selectedLeft] === rightWord) {
           const newSolved = [...solvedPairs, selectedLeft];
           setSolvedPairs(newSolved);
           setSelectedLeft(null);
-          
+
           if (newSolved.length === level.leftWords.length) {
             handleWin();
           }
@@ -136,7 +140,7 @@ const { useState, useEffect } = React;
               <p className="text-fuchsia-200 mb-8 text-xl font-bold px-4">
                 Pegue sua varinha! Vamos aprender os feitiços secretos dos Nomes, Ações e Qualidades!
               </p>
-              
+
               <button
                 onClick={() => setGameState('trackSelect')}
                 className="w-full py-5 px-8 bg-amber-400 hover:bg-amber-300 text-fuchsia-950 rounded-3xl text-3xl font-black transition-all transform hover:scale-105 shadow-[0_8px_0_rgb(217,119,6)] hover:translate-y-1 active:shadow-none active:translate-y-2 uppercase"
@@ -154,7 +158,7 @@ const { useState, useEffect } = React;
       if (gameState === 'trackSelect') {
         return (
           <div className="min-h-screen magic-bg flex flex-col items-center p-6 pt-12">
-            <a href="../index.html" className="self-start mb-6 font-bold bg-fuchsia-900/60 text-fuchsia-200 px-4 py-2 rounded-full border-2 border-fuchsia-400">◀ Voltar</a>
+            <button onClick={() => setGameState('cover')} className="self-start mb-6 font-bold bg-fuchsia-900/60 text-fuchsia-200 px-4 py-2 rounded-full border-2 border-fuchsia-400">← Voltar</button>
             <h2 className="text-4xl font-black text-white mb-8 uppercase font-game">Escolha a Aula</h2>
             <div id="hy-track-grid" style={{width:'100%',maxWidth:'720px'}}></div>
           </div>
@@ -192,21 +196,21 @@ const { useState, useEffect } = React;
       // ------------------------------------------------------------------------
       return (
         <div className="min-h-screen w-full flex flex-col relative magic-bg text-fuchsia-50">
-          
+
           {/* CABEÇALHO */}
           <div className="w-full flex justify-between items-center p-6 z-10 bg-fuchsia-950/80 backdrop-blur-md shadow-xl rounded-b-3xl border-b-2 border-fuchsia-700">
+            <button onClick={() => setGameState('trackSelect')} className="bg-white text-slate-800 px-4 py-2 rounded-full font-bold">← Voltar</button>
             <div className="flex flex-col">
-              <span className="text-sm font-bold text-fuchsia-400">{level.instruction}</span>
             </div>
-            
+
             <div className="flex items-center text-3xl font-black text-amber-400 drop-shadow-md">
               <span className="mr-2">x{stars}</span>
               <span className="pop-anim">🧪</span>
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col items-center justify-center p-4 z-10 w-full max-w-5xl mx-auto">
-            
+          <div className="flex-1 flex flex-col items-center justify-center p-4 z-10 w-full max-w-8xl mx-auto">
+            <span className="text-2xl md:text-3xl font-black uppercase text-violet-200 drop-shadow-md mb-8">{level.instruction}</span>
             {level.type === 'match' && (
               <HYChallenges.Match
                 level={level}

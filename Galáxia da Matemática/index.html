@@ -129,6 +129,7 @@
 
     <!-- TELA INICIAL -->
     <div id="screen-start" class="screen active-screen justify-center bg-gradient-to-b from-indigo-900 via-slate-900 to-black text-white text-center">
+        <a href="../index.html" class="btn-back" style="color:#334155">← Voltar</a>
         <h1 class="text-6xl md:text-8xl font-game mb-8 drop-shadow-[0_10px_10px_rgba(99,102,241,0.5)] leading-tight">GALÁXIA<br>MATEMÁTICA</h1>
         <div class="w-64 h-64 bg-slate-800 rounded-full flex items-center justify-center border-8 border-indigo-500 shadow-[0_0_50px_rgba(99,102,241,0.4)] mb-12 overflow-hidden rotate-2 relative">
             <span class="text-white font-game text-8xl z-10">4+1</span>
@@ -162,7 +163,7 @@
     <div id="screen-levels" class="screen bg-slate-950 overflow-y-auto">
         <div class="max-w-5xl w-full">
             <div class="flex justify-between items-center mb-10">
-                <button onclick="showScreen('screen-mode')" class="bg-slate-800 text-indigo-300 font-bold px-6 py-3 rounded-2xl shadow-sm border-2 border-indigo-900/50 hover:bg-slate-700 transition">← MISSÕES</button>
+                <button aria-label="Voltar" title="Voltar" onclick="showScreen('screen-start')" class="bg-slate-800 text-indigo-300 font-bold px-6 py-3 rounded-2xl shadow-sm border-2 border-indigo-900/50 hover:bg-slate-700 transition">← Voltar</button>
                 <h2 class="text-4xl font-game text-indigo-400">MAPA ESTELAR</h2>
                 <div class="w-24"></div>
             </div>
@@ -176,7 +177,7 @@
     <div id="screen-game" class="screen">
         <div class="w-full max-w-5xl">
             <div class="flex justify-between items-center mb-6">
-                <button onclick="quitGame()" class="bg-slate-800 px-6 py-2 rounded-xl font-bold border-2 border-indigo-900/50 text-indigo-300 shadow-sm hover:bg-slate-700">ABORTAR</button>
+                <button aria-label="Voltar" title="Voltar" onclick="quitGame()" class="bg-slate-800 px-6 py-2 rounded-xl font-bold border-2 border-indigo-900/50 text-indigo-300 shadow-sm hover:bg-slate-700">← Voltar</button>
             </div>
 
             <div class="timer-container">

@@ -99,6 +99,10 @@ const { useState, useEffect } = React;
     function App() {
       // Estados globais
       const [gameState, setGameState] = useState('cover');
+      React.useLayoutEffect(() => {
+        const hud = document.getElementById('hy-hud');
+        if (hud) hud.style.display = gameState === 'playing' ? 'flex' : 'none';
+      }, [gameState]);
       const [currentPhaseIndex, setCurrentPhaseIndex] = useState(0);
       const [stars, setStars] = useState(0);
       const [currentTrack, setCurrentTrack] = useState(0);
@@ -176,12 +180,12 @@ const { useState, useEffect } = React;
           alert("Escolha primeiro uma palavra da coluna da esquerda!");
           return;
         }
-        
+
         if (level.matches[selectedLeft] === rightWord) {
           const newSolved = [...solvedPairs, selectedLeft];
           setSolvedPairs(newSolved);
           setSelectedLeft(null);
-          
+
           if (newSolved.length === level.leftWords.length) {
             handleWin();
           }
@@ -245,7 +249,7 @@ const { useState, useEffect } = React;
       if (gameState === 'trackSelect') {
         return (
           <div className="min-h-screen factory-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
-            <a href="../index.html" className="absolute top-4 left-4 text-orange-200 hover:text-orange-400 font-bold bg-slate-800/80 hover:bg-slate-700 px-4 py-2 rounded-full transition-colors z-20 border-2 border-orange-400">◀ Voltar</a>
+            <button onClick={() => setGameState('cover')} className="absolute top-4 left-4 text-orange-200 hover:text-orange-400 font-bold bg-slate-800/80 hover:bg-slate-700 px-4 py-2 rounded-full transition-colors z-20 border-2 border-orange-400">← Voltar</button>
             <h2 className="text-4xl font-black text-white mb-8 uppercase">Escolha a Trilha</h2>
             <div className="grid grid-cols-3 md:grid-cols-4 gap-4 w-full max-w-2xl">
               {Array.from({length: 12}, (_, i) => {
@@ -290,21 +294,21 @@ const { useState, useEffect } = React;
       // ------------------------------------------------------------------------
       return (
         <div className="min-h-screen w-full flex flex-col relative factory-bg text-white">
-          
+
           {/* CABEÇALHO */}
           <div className="w-full flex justify-between items-center p-6 z-10 bg-slate-900/50 backdrop-blur-sm shadow-lg rounded-b-3xl border-b border-slate-700">
+            <button onClick={() => setGameState('trackSelect')} className="bg-white text-slate-800 px-4 py-2 rounded-full font-bold">← Voltar</button>
             <div className="flex flex-col">
-              <span className="text-sm font-bold text-slate-400">{level.instruction}</span>
             </div>
-            
+
             <div className="flex items-center text-3xl font-black text-amber-400 drop-shadow-md">
               <span className="mr-2">x{stars}</span>
               <span className="gear-anim">⚙️</span>
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col items-center justify-center p-4 z-10 w-full max-w-5xl mx-auto">
-            
+          <div className="flex-1 flex flex-col items-center justify-center p-4 z-10 w-full max-w-8xl mx-auto">
+            <span className="text-2xl md:text-3xl font-black uppercase text-violet-200 drop-shadow-md mb-8">{level.instruction}</span>
             {level.type === 'match' && (
               <HYChallenges.Match
                 level={level}

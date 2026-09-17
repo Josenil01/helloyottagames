@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game-viewport.css" />
+    <title>Complete a Cobra</title>
+    <style>
+        :root {
+            --cell-size: clamp(28px, 6vw, 44px);
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(160deg, #6ce67d 0%, #01bebc 100%);
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+        }
+
+        .screen { display: none; flex-direction: column; align-items: center; height: 100%; }
+        .screen.active { display: flex; }
+
+        h1.font-game { font-size: clamp(1.5rem, 6vw, 2.3rem); color: #fff; text-shadow: 2px 2px 0 rgba(0,0,0,0.25); margin: 10px 0 0; text-align: center; }
+        h2.font-game { font-size: clamp(1.1rem, 4vw, 1.6rem); color: #fff; margin: 10px 0; text-align: center; }
+
+        .btn-large {
+            background: var(--hy-orange);
+            color: #fff;
+            border: none;
+            padding: 14px 38px;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            font-family: 'Luckiest Guy', cursive;
+            letter-spacing: 0.03em;
+            cursor: pointer;
+            box-shadow: 0 6px 0 var(--hy-orange-dark);
+            margin: 14px 0;
+        }
+        .btn-large:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--hy-orange-dark); }
+
+        #total-stars { font-size: 1.1rem; font-weight: 800; color: #fff; }
+
+        /* ---- Tela de trilhas ---- */
+        #screen-tracks { justify-content: flex-start; padding-top: 30px; overflow-y: auto; }
+        .tracks-hud { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 10px; }
+        .stat-badge {
+            background: #fff; color: #01bebc; border: 2px solid #01bebc;
+            padding: 6px 16px; border-radius: 999px; font-weight: 800; cursor: pointer;
+        }
+        #track-grid { width: 100%; margin-top: 10px; padding-bottom: 20px; }
+
+        /* ---- Tela de jogo ---- */
+        #screen-game { justify-content: flex-start; padding-top: clamp(50px, 8vh, 68px); overflow-y: auto; }
+        .game-back-btn {
+            position: absolute; top: 16px; left: 16px; z-index: 40;
+            background: #fff; border: 2px solid #01bebc; color: #01bebc;
+            width: 40px; height: 40px; border-radius: 50%; font-size: 1.1rem; cursor: pointer;
+        }
+
+        .instruction {
+            font-weight: 800;
+            font-size: clamp(0.95rem, 3.5vw, 1.2rem);
+            text-align: center;
+            margin-bottom: 16px;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+        }
+
+        .game-layout {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 22px;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (max-width: 700px) {
+            .game-layout { flex-direction: column; }
+        }
+
+        #snake-area {
+            display: grid;
+            gap: 3px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 10px;
+        }
+
+        .snake-cell {
+            width: var(--cell-size);
+            height: var(--cell-size);
+            border-radius: 8px;
+            position: relative;
+        }
+        .snake-cell.pending { border: 2px dashed rgba(255,255,255,0.25); }
+        .snake-cell.active {
+            border: 3px dashed #fff;
+            animation: pulseActive 1s infinite;
+        }
+        .snake-cell.filled { border: 2px solid rgba(0,0,0,0.2); }
+        .snake-cell.head::after {
+            content: '👀';
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: calc(var(--cell-size) * 0.55);
+        }
+        @keyframes pulseActive {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0.5); }
+            50% { box-shadow: 0 0 0 6px rgba(255,255,255,0); }
+        }
+
+        /* ---- Bandeja de cores ---- */
+        #color-tray {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (max-width: 700px) {
+            #color-tray { flex-direction: row; flex-wrap: wrap; }
+        }
+
+        .color-swatch {
+            width: clamp(44px, 10vw, 60px);
+            height: clamp(44px, 10vw, 60px);
+            border-radius: 50%;
+            border: 4px solid rgba(255,255,255,0.85);
+            box-shadow: 0 4px 0 rgba(0,0,0,0.2);
+            cursor: grab;
+            touch-action: none;
+        }
+        .color-swatch.dragging { opacity: 0.35; }
+        .color-swatch.drag-ghost {
+            position: fixed;
+            top: 0; left: 0;
+            transform: translate(-50%, -50%) scale(1.1);
+            pointer-events: none;
+            z-index: 9999;
+            box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+        }
+
+        /* ---- Modal ---- */
+        .modal {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.65);
+            display: none; align-items: center; justify-content: center; z-index: 2000;
+        }
+        .modal-content {
+            background: #fff; padding: 30px; border-radius: 30px; text-align: center;
+            max-width: 340px; width: 90%; color: #1a1a1a;
+        }
+        .modal-content h2 { font-family: 'Luckiest Guy', cursive; color: #01bebc; font-size: 1.3rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- TELA INICIAL -->
+        <div id="screen-cover" class="screen active">
+            <button onclick="window.location.href='../index.html'" class="btn-back">← Voltar</button>
+            <div style="flex-grow:1; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                <div style="font-size:4rem;">🐍</div>
+                <h1 class="font-game">Complete a Cobra</h1>
+                <h2 class="font-game">Continue o padrão de cores!</h2>
+                <button class="btn-large" onclick="changeScreen('tracks')">COMEÇAR</button>
+                <p id="total-stars">⭐ 0/36</p>
+            </div>
+        </div>
+
+        <!-- TELA DE TRILHAS -->
+        <div id="screen-tracks" class="screen">
+            <div class="tracks-hud">
+                <button aria-label="Voltar" title="Voltar" class="stat-badge" onclick="changeScreen('cover')">← Voltar</button>
+                <div class="stat-badge" id="tracks-star-count">⭐ 0</div>
+            </div>
+            <h2 class="font-game">Escolha sua trilha</h2>
+            <div id="track-grid"></div>
+        </div>
+
+        <!-- TELA DE JOGO -->
+        <div id="screen-game" class="screen">
+            <button aria-label="Voltar" title="Voltar" class="game-back-btn" onclick="changeScreen('tracks')">←</button>
+
+            <div class="instruction">Continue pintando a cobra com o mesmo padrão!</div>
+
+            <div class="game-layout">
+                <div id="snake-area"></div>
+                <div id="color-tray"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE RESULTADO -->
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2>Parabéns, você pintou a cobra toda!</h2>
+            <div id="result-stars" style="font-size: 2.5rem; margin: 15px 0;">⭐⭐⭐</div>
+            <button class="btn-large" onclick="handleModalContinue()">CONTINUAR</button>
+        </div>
+    </div>
+
+    <script src="../utils/audio.js"></script>
+    <script src="../utils/score.js"></script>
+    <script src="../utils/elapsed.js"></script>
+    <script src="../utils/progress.js"></script>
+    <script src="../utils/stars.js"></script>
+    <script src="../utils/shuffle.js"></script>
+    <script src="../utils/rand.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -28,6 +28,10 @@ const TRACKS = [
 
 function App() {
   const [gameState, setGameState] = useState('cover');
+      React.useLayoutEffect(() => {
+        const hud = document.getElementById('hy-hud');
+        if (hud) hud.style.display = gameState === 'playing' ? 'flex' : 'none';
+      }, [gameState]);
   const [mode, setMode] = useState('upperToLower');
   const [currentTrack, setCurrentTrack] = useState(0);
   const [letterInTrack, setLetterInTrack] = useState(0);
@@ -126,7 +130,7 @@ function App() {
   if (gameState === 'trackSelect') {
     return (
       <div key="trackSelect" className="min-h-screen flex flex-col items-center p-6" style={{background: 'linear-gradient(135deg, #48076a 0%, #d046d9 100%)'}}>
-        <button onClick={() => setGameState('cover')} className="self-start bg-white/20 text-white px-4 py-2 rounded-full font-bold mb-6">◀ Voltar</button>
+        <button onClick={() => setGameState('cover')} className="self-start bg-white/20 text-white px-4 py-2 rounded-full font-bold mb-6">← Voltar</button>
         <h2 className="text-4xl font-black text-white mb-8 uppercase font-game">Escolha a Trilha</h2>
         <div id="hy-track-grid" style={{width:'100%', maxWidth:'720px'}}></div>
       </div>
@@ -155,7 +159,7 @@ function App() {
     <div className="min-h-screen flex flex-col items-center justify-center p-6" style={{background: 'linear-gradient(135deg, #48076a 0%, #d046d9 100%)'}}>
       <div className="w-full max-w-lg">
         <div className="flex justify-between items-center mb-6">
-          <button onClick={() => setGameState('trackSelect')} className="bg-white/20 text-white px-4 py-2 rounded-full font-bold">◀ Sair</button>
+          <button onClick={() => setGameState('trackSelect')} className="bg-white/20 text-white px-4 py-2 rounded-full font-bold">← Voltar</button>
           <span className="text-white font-black">Trilha {currentTrack + 1} — {letterInTrack + 1}/5</span>
         </div>
 

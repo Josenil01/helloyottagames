@@ -28,6 +28,8 @@ const gameLevels = [
         let timerInterval = null;
 
         function showScreen(screenId) {
+    const hud = document.getElementById('hy-hud');
+    if (hud) hud.style.display = screenId === 'screen-game' ? 'flex' : 'none';
             stopTimer();
             document.querySelectorAll('.screen').forEach(s => s.classList.remove('active-screen'));
             document.getElementById(screenId).classList.add('active-screen');
