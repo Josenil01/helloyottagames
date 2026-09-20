@@ -297,3 +297,231 @@ svg {
   background-color: var(--hy-green);
   transition: width 0.4s ease, background-color 0.4s ease;
 }
+
+/* ============================================================
+   12. CAPAS "INSTAGRAMÁVEIS" — só age em <body class="hy-brand">
+   Uso: <div class="hy-stage hy-theme-sea"> ... </div>
+   Temas: hy-theme-sea (azul) · hy-theme-safari (roxo/laranja) · hy-theme-vowel (rosa)
+   ============================================================ */
+.hy-brand {
+  --acc: #ffa800;
+  --acc-dark: #cc8600;
+  --cta: #ffa800;
+  --cta-dark: #cc8600;
+  --cta-ink: #2d0445;
+  --s1: #48076a;
+  --s2: #2d0445;
+  --g1: rgba(208, 70, 217, 0.5);
+  --g2: rgba(1, 190, 188, 0.3);
+}
+.hy-brand .hy-theme-sea {
+  --s1: #0a40b5; --s2: #00285f;
+  --g1: rgba(1, 190, 188, 0.55); --g2: rgba(255, 168, 0, 0.3);
+}
+.hy-brand .hy-theme-safari {
+  --s1: #48076a; --s2: #2d0445;
+  --g1: rgba(255, 168, 0, 0.5); --g2: rgba(208, 70, 217, 0.4);
+  --cta: #6ce67d; --cta-dark: #3db54a;
+}
+.hy-brand .hy-theme-vowel {
+  --s1: #a030b0; --s2: #48076a;
+  --g1: rgba(255, 168, 0, 0.35); --g2: rgba(1, 190, 188, 0.4);
+}
+
+.hy-brand .hy-stage {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background:
+    radial-gradient(rgba(255, 255, 255, 0.09) 1.5px, transparent 1.5px) 0 0 / 26px 26px,
+    radial-gradient(circle at 14% 10%, var(--g1), transparent 46%),
+    radial-gradient(circle at 88% 92%, var(--g2), transparent 46%),
+    linear-gradient(160deg, var(--s1) 0%, var(--s2) 100%);
+}
+.hy-brand .hy-stage.hy-full { width: 100%; height: 100dvh; }
+.hy-brand .hy-stage.hy-scroll { overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.hy-brand .hy-stage.hy-scroll > * { flex-shrink: 0; }
+/* conteúdo acima da decoração (o botão voltar já é absolute) */
+.hy-brand .hy-stage > *:not(.hy-deco):not(.btn-back) { position: relative; z-index: 1; }
+
+/* Emojis flutuando ao fundo */
+.hy-brand .hy-stage > .hy-deco { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+.hy-brand .hy-deco span {
+  position: absolute;
+  font-size: clamp(28px, 7vmin, 60px);
+  opacity: 0.2;
+  animation: hy-drift 7s ease-in-out infinite;
+}
+.hy-brand .hy-deco span:nth-child(2n) { animation-delay: 1.2s; }
+.hy-brand .hy-deco span:nth-child(3n) { animation-delay: 2.4s; }
+@keyframes hy-drift {
+  0%, 100% { transform: translateY(0) rotate(-6deg); }
+  50% { transform: translateY(-16px) rotate(6deg); }
+}
+@keyframes hy-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes hy-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+}
+
+/* Selo acima do título */
+.hy-brand .hy-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(6px);
+  font: 800 clamp(11px, 1.6vmin + 4px, 15px) 'Nunito', sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Emoji-herói em bolha */
+.hy-brand .hy-hero {
+  display: grid;
+  place-items: center;
+  width: clamp(100px, 23vmin, 180px);
+  height: clamp(100px, 23vmin, 180px);
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 25%, #fff 0%, rgba(255, 255, 255, 0.82) 60%, rgba(255, 255, 255, 0.55) 100%);
+  border: 5px dashed var(--acc);
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.25), 0 0 0 10px rgba(255, 255, 255, 0.12);
+  font-size: clamp(50px, 12vmin, 96px);
+  line-height: 1;
+  animation: hy-float 4s ease-in-out infinite;
+}
+
+/* Título "adesivo" em duas linhas */
+.hy-brand .hy-title {
+  margin: 0;
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: 400;
+  line-height: 0.95;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  filter: drop-shadow(0 6px 0 rgba(0, 0, 0, 0.35)) drop-shadow(0 14px 18px rgba(0, 0, 0, 0.3));
+}
+.hy-brand .hy-title span {
+  display: block;
+  -webkit-text-stroke: 0.16em var(--s2);
+  paint-order: stroke fill;
+}
+.hy-brand .hy-title .l1 { color: #fff; font-size: clamp(30px, 8vmin, 76px); }
+.hy-brand .hy-title .l2 {
+  color: var(--acc);
+  font-size: clamp(40px, 11.5vmin, 104px);
+  transform: rotate(-2deg);
+}
+.hy-brand .hy-tagline {
+  margin: 0;
+  max-width: 34ch;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: clamp(14px, 2.4vmin + 5px, 24px);
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* Botão principal 3D */
+.hy-brand .hy-cta {
+  max-width: 100%;
+  padding: 0.45em 1.5em;
+  border: 0;
+  border-radius: 40px;
+  background: var(--cta);
+  color: var(--cta-ink);
+  font-family: 'Luckiest Guy', cursive;
+  font-size: clamp(20px, 4vmin + 6px, 38px);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 8px 0 var(--cta-dark), 0 18px 26px rgba(0, 0, 0, 0.35);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  animation: hy-pulse 2.2s ease-in-out infinite;
+}
+.hy-brand .hy-cta:hover { transform: translateY(-3px); box-shadow: 0 11px 0 var(--cta-dark), 0 22px 30px rgba(0, 0, 0, 0.4); }
+.hy-brand .hy-cta:active { transform: translateY(6px); box-shadow: 0 2px 0 var(--cta-dark); animation: none; }
+.hy-brand .hy-cta.hy-cta-sec {
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.3);
+  animation: none;
+}
+
+/* Pílula (voltar etc.) e título de seção */
+.hy-brand .hy-pill-btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  color: #fff;
+  font: 800 15px 'Nunito', sans-serif;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.hy-brand .hy-pill-btn:hover { transform: translateY(-2px); background: rgba(255, 255, 255, 0.28); }
+.hy-brand .hy-heading {
+  margin: 0;
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: clamp(30px, 6.5vmin, 58px);
+  color: #fff;
+  -webkit-text-stroke: 0.14em var(--s2);
+  paint-order: stroke fill;
+  filter: drop-shadow(0 4px 0 rgba(0, 0, 0, 0.3));
+}
+
+/* Cartão branco (modo de jogo, resultado) */
+.hy-brand .hy-panel {
+  width: 100%;
+  padding: clamp(18px, 4vmin, 36px);
+  border: 4px solid var(--acc);
+  border-radius: 32px;
+  background: #fff;
+  color: #2d0445;
+  text-align: center;
+  box-shadow: 0 10px 0 var(--acc-dark), 0 24px 40px rgba(0, 0, 0, 0.4);
+}
+.hy-brand .hy-overlay { background: rgba(45, 4, 69, 0.85); }
+.hy-brand .hy-stars-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 26px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--acc-dark);
+  font: 400 clamp(26px, 6vmin, 44px) 'Luckiest Guy', cursive;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Cards das trilhas (utils/stars.js) */
+.hy-brand .hy-track-card {
+  border-radius: 26px;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.22);
+}
+.hy-brand .hy-track-card:not(.hy-locked):hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 0 rgba(0, 0, 0, 0.22);
+}
+.hy-brand .hy-track-label { color: #48076a; }
+
+/* Telas baixas (celular deitado): compacta a capa */
+@media (max-height: 520px) {
+  .hy-brand .hy-badge, .hy-brand .hy-tagline { display: none; }
+  .hy-brand .hy-hero { width: 72px; height: 72px; font-size: 40px; border-width: 3px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hy-brand .hy-deco span, .hy-brand .hy-hero, .hy-brand .hy-cta { animation: none; }
+}

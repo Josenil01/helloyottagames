@@ -127,7 +127,7 @@ const { useState, useEffect } = React;
 
       useEffect(() => {
         if (gameState === 'trackSelect' && window.HY && window.HY.stars) {
-          HY.stars.renderGrid('hy-track-grid', { onPlay: startTrack, accentColor: '#f97316' });
+          HY.stars.renderGrid('hy-track-grid', { onPlay: startTrack, accentColor: '#ffa800' });
         }
       }, [gameState]);
 
@@ -136,30 +136,28 @@ const { useState, useEffect } = React;
       // ------------------------------------------------------------------------
       if (gameState === 'cover') {
         return (
-          <div className="min-h-screen safari-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
+          <div className="hy-stage hy-full hy-theme-safari flex flex-col items-center justify-center gap-4 p-4 text-center">
             <a href="../index.html" className="btn-back" style={{color: "#334155"}}>← Voltar</a>
             {/* Decoração Aventureira */}
-            <div className="absolute top-10 left-10 text-6xl opacity-40 float-anim">🗺️</div>
-            <div className="absolute top-32 right-10 text-7xl opacity-40 float-anim" style={{animationDelay: '1s'}}>🦁</div>
-            <div className="absolute bottom-10 left-20 text-6xl opacity-40 float-anim" style={{animationDelay: '2s'}}>🧭</div>
-            <div className="absolute bottom-32 right-32 text-6xl opacity-40 float-anim" style={{animationDelay: '0.5s'}}>🚙</div>
-
-            <div className="bg-white/90 backdrop-blur-sm p-10 rounded-[3rem] shadow-[0_20px_50px_rgba(217,119,6,0.2)] flex flex-col items-center text-center z-10 max-w-xl w-full border-8 border-orange-500 mb-10">
-              <div className="text-8xl mb-4">🔦</div>
-              <h1 className="text-5xl font-black text-stone-800 mb-2 tracking-tight uppercase">
-                Caçadores de<br/><span className="text-5xl text-orange-600">Coletivos</span>
-              </h1>
-              <p className="text-stone-600 mb-8 text-xl font-bold px-4">
-                Pegue sua lupa e seu mapa! Vamos descobrir a palavra secreta que representa grupos inteiros!
-              </p>
-
-              <button
-                onClick={() => setGameState('trackSelect')}
-                className="w-full py-5 px-8 bg-emerald-600 hover:bg-emerald-700 text-white rounded-3xl text-3xl font-black transition-all transform hover:scale-105 shadow-[0_8px_0_rgb(5,150,105)] hover:translate-y-1 active:shadow-none active:translate-y-2 uppercase"
-              >
-                Iniciar Expedição!
-              </button>
+            <div className="hy-deco" aria-hidden="true">
+              <span style={{top:'8%', left:'6%'}}>🗺️</span>
+              <span style={{top:'14%', right:'8%'}}>🦁</span>
+              <span style={{top:'54%', left:'4%'}}>🦒</span>
+              <span style={{bottom:'8%', left:'14%'}}>🧭</span>
+              <span style={{bottom:'10%', right:'14%'}}>🚙</span>
             </div>
+            <span className="hy-badge">🔍 Gramática em ação</span>
+            <div className="hy-hero">🔦</div>
+            <h1 className="hy-title"><span className="l1">Caçadores de</span><span className="l2">Coletivos</span></h1>
+            <p className="hy-tagline">
+              Pegue sua lupa e seu mapa! Vamos descobrir a palavra secreta que representa grupos inteiros!
+            </p>
+            <button
+              onClick={() => setGameState('trackSelect')}
+              className="hy-cta"
+            >
+              Iniciar Expedição!
+            </button>
           </div>
         );
       }
@@ -169,9 +167,9 @@ const { useState, useEffect } = React;
       // ------------------------------------------------------------------------
       if (gameState === 'trackSelect') {
         return (
-          <div className="min-h-screen safari-bg flex flex-col items-center p-6 pt-12">
-            <button onClick={() => setGameState('cover')} className="self-start mb-6 font-bold bg-amber-200/80 text-stone-900 px-4 py-2 rounded-full border-2 border-amber-400">← Voltar</button>
-            <h2 className="text-4xl font-black text-white mb-8 uppercase font-game">Escolha a Expedição</h2>
+          <div className="hy-stage hy-full hy-scroll hy-theme-safari flex flex-col items-center gap-5 p-6">
+            <button onClick={() => setGameState('cover')} className="hy-pill-btn self-start">← Voltar</button>
+            <h2 className="hy-heading">Escolha a Expedição</h2>
             <div id="hy-track-grid" style={{width:'100%',maxWidth:'720px'}}></div>
           </div>
         );
@@ -182,23 +180,23 @@ const { useState, useEffect } = React;
       // ------------------------------------------------------------------------
       if (gameState === 'trackComplete') {
         return (
-          <div className="min-h-screen safari-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
-            <div className="bg-white/90 p-10 rounded-[3rem] shadow-[0_20px_50px_rgba(217,119,6,0.2)] flex flex-col items-center text-center z-10 max-w-lg w-full border-8 border-orange-500">
-              <div className="text-8xl mb-4 pop-anim">🎖️</div>
-              <h1 className="text-4xl font-black text-stone-800 mb-2 uppercase">Expedição {currentTrack + 1} Completa!</h1>
-              <p className="text-stone-600 mb-6 text-xl font-bold">Você capturou todos os 5 coletivos!</p>
-              <div className="bg-amber-100 border-4 border-amber-400 rounded-3xl p-6 mb-8 w-full flex flex-col items-center">
-                <div className="flex items-center text-6xl font-black text-orange-500">
-                  <span className="mr-4">⭐</span> x{stars}
-                </div>
-              </div>
-              <button
-                onClick={() => setGameState('trackSelect')}
-                className="w-full py-5 px-8 bg-emerald-600 hover:bg-emerald-700 text-white rounded-3xl text-2xl font-black transition-all transform hover:scale-105 shadow-[0_8px_0_rgb(5,150,105)] uppercase"
-              >
-                Escolher Próxima Expedição
-              </button>
+          <div className="hy-stage hy-full hy-theme-safari flex flex-col items-center justify-center gap-4 p-4 text-center">
+            <div className="hy-deco" aria-hidden="true">
+              <span style={{top:'10%', left:'8%'}}>⭐</span>
+              <span style={{top:'16%', right:'9%'}}>🦁</span>
+              <span style={{bottom:'12%', left:'10%'}}>🧭</span>
+              <span style={{bottom:'10%', right:'12%'}}>⭐</span>
             </div>
+            <div className="hy-hero pop-anim">🎖️</div>
+            <h1 className="hy-title"><span className="l1">Expedição {currentTrack + 1}</span><span className="l2">Completa!</span></h1>
+            <p className="hy-tagline">Você capturou todos os 5 coletivos!</p>
+            <div className="hy-stars-pill"><span>⭐</span> x{stars}</div>
+            <button
+              onClick={() => setGameState('trackSelect')}
+              className="hy-cta"
+            >
+              Escolher Próxima Expedição
+            </button>
           </div>
         );
       }
@@ -208,28 +206,23 @@ const { useState, useEffect } = React;
       // ------------------------------------------------------------------------
       if (gameState === 'complete') {
         return (
-          <div className="min-h-screen safari-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
-            <div className="bg-white/90 backdrop-blur-sm p-10 rounded-[3rem] shadow-[0_20px_50px_rgba(217,119,6,0.2)] flex flex-col items-center text-center z-10 max-w-lg w-full border-8 border-orange-500">
-              <div className="text-8xl mb-4 pop-anim">🎖️</div>
-              <h1 className="text-5xl font-black text-stone-800 mb-2 uppercase">
-                Parabéns!
-              </h1>
-              <p className="text-stone-600 mb-6 text-xl font-bold">Você encontrou todos os coletivos raros!</p>
-
-              <div className="bg-amber-100 border-4 border-amber-400 rounded-3xl p-6 mb-8 w-full flex flex-col items-center">
-                <span className="text-amber-800 font-bold uppercase mb-2">Insígnias de Caçador</span>
-                <div className="flex items-center text-6xl font-black text-orange-500">
-                  <span className="mr-4">⭐</span> x{stars}
-                </div>
-              </div>
-
-              <button
-                onClick={() => setGameState('trackSelect')}
-                className="w-full py-5 px-8 bg-emerald-600 hover:bg-emerald-700 text-white rounded-3xl text-2xl font-black transition-all transform hover:scale-105 shadow-[0_8px_0_rgb(5,150,105)] hover:translate-y-1 active:shadow-none active:translate-y-2 uppercase"
-              >
-                Escolher Expedição
-              </button>
+          <div className="hy-stage hy-full hy-theme-safari flex flex-col items-center justify-center gap-4 p-4 text-center">
+            <div className="hy-deco" aria-hidden="true">
+              <span style={{top:'10%', left:'8%'}}>⭐</span>
+              <span style={{top:'16%', right:'9%'}}>🦁</span>
+              <span style={{bottom:'12%', left:'10%'}}>🧭</span>
+              <span style={{bottom:'10%', right:'12%'}}>⭐</span>
             </div>
+            <div className="hy-hero pop-anim">🎖️</div>
+            <h1 className="hy-title"><span className="l1">Você encontrou todos!</span><span className="l2">Parabéns!</span></h1>
+            <p className="hy-tagline">Insígnias de Caçador: todos os coletivos raros!</p>
+            <div className="hy-stars-pill"><span>⭐</span> x{stars}</div>
+            <button
+              onClick={() => setGameState('trackSelect')}
+              className="hy-cta"
+            >
+              Escolher Expedição
+            </button>
           </div>
         );
       }

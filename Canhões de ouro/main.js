@@ -137,7 +137,7 @@ if (window.HY && window.HY.stars) HY.stars.init('canhoes-ouro');
 
       useEffect(() => {
         if (gameState === 'trackSelect' && window.HY && window.HY.stars) {
-          HY.stars.renderGrid('hy-track-grid', { onPlay: startTrack, accentColor: '#fbbf24' });
+          HY.stars.renderGrid('hy-track-grid', { onPlay: startTrack, accentColor: '#ffa800' });
         }
       }, [gameState]);
 
@@ -243,14 +243,23 @@ if (window.HY && window.HY.stars) HY.stars.init('canhoes-ouro');
       // --- TELA DE CAPA ---
       if (gameState === 'cover') {
         return (
-          <div className="h-screen flex flex-col items-center justify-center p-6 text-center bg-sky-300">
+          <div className="hy-stage hy-full hy-theme-sea flex flex-col items-center justify-center gap-4 p-6 text-center">
             <a href="../index.html" className="btn-back" style={{color: "#334155"}}>← Voltar</a>
-            <div className="mb-8 text-[8rem] md:text-[10rem] animate-bounce">🏴‍☠️</div>
-            <h1 className="text-5xl md:text-7xl font-black text-indigo-900 mb-4 uppercase tracking-tighter">Canhões de Ouro</h1>
-            <p className="text-xl md:text-2xl text-indigo-700 font-bold mb-10">O Mapa do Tesouro espera por ti!</p>
+            <div className="hy-deco" aria-hidden="true">
+              <span style={{top:'8%', left:'6%'}}>⚓</span>
+              <span style={{top:'14%', right:'8%'}}>🦜</span>
+              <span style={{top:'52%', left:'4%'}}>💎</span>
+              <span style={{top:'62%', right:'6%'}}>🪙</span>
+              <span style={{bottom:'7%', left:'14%'}}>🐚</span>
+              <span style={{bottom:'9%', right:'16%'}}>🌊</span>
+            </div>
+            <span className="hy-badge">➕ Soma e Subtração</span>
+            <div className="hy-hero">🏴‍☠️</div>
+            <h1 className="hy-title"><span className="l1">Canhões de</span><span className="l2">Ouro</span></h1>
+            <p className="hy-tagline">O Mapa do Tesouro espera por ti!</p>
             <button
               onClick={() => { playTone(500); setGameState('trackSelect'); }}
-              className="bg-yellow-400 text-indigo-900 px-12 py-6 rounded-full text-3xl md:text-4xl font-black shadow-[0_10px_0_#b45309] hover:translate-y-1 hover:shadow-[0_5px_0_#b45309] active:translate-y-2 active:shadow-none transition-all uppercase"
+              className="hy-cta"
             >
               Abrir Mapa
             </button>
@@ -261,11 +270,9 @@ if (window.HY && window.HY.stars) HY.stars.init('canhoes-ouro');
       // --- TELA DE SELECÇÃO DE TRILHAS ---
       if (gameState === 'trackSelect') {
         return (
-          <div key="trackSelect" className="h-screen flex flex-col items-center p-6 bg-sky-300">
-            <div className="w-full max-w-4xl flex justify-between items-center mb-8">
-              <button onClick={() => setGameState('cover')} className="bg-indigo-900 text-white p-4 rounded-full shadow-lg">← Voltar</button>
-              <h2 className="text-4xl font-black text-indigo-900 uppercase">Mapa das Ilhas</h2>
-            </div>
+          <div key="trackSelect" className="hy-stage hy-full hy-scroll hy-theme-sea flex flex-col items-center gap-5 p-6">
+            <button onClick={() => setGameState('cover')} className="hy-pill-btn self-start">← Voltar</button>
+            <h2 className="hy-heading">Mapa das Ilhas</h2>
             <div id="hy-track-grid" style={{width:'100%', maxWidth:'720px'}}></div>
           </div>
         );
@@ -274,13 +281,19 @@ if (window.HY && window.HY.stars) HY.stars.init('canhoes-ouro');
       // --- TELA DE TRILHA CONCLUÍDA ---
       if (gameState === 'trackComplete') {
         return (
-          <div className="h-screen flex flex-col items-center justify-center p-6 text-center bg-indigo-900/90 text-white backdrop-blur-md">
-            <div className="mb-6 text-9xl animate-bounce">⚓</div>
-            <h1 className="text-5xl font-black mb-2">Ilha {currentTrack + 1} Conquistada!</h1>
-            <p className="text-2xl mb-12">5 canhonadas certeiras!</p>
-            <div className="flex gap-6">
-              <button onClick={() => setGameState('trackSelect')} className="bg-zinc-700 text-white px-8 py-5 rounded-3xl text-2xl font-black shadow-[0_8px_0_#000]">Mapa</button>
-              {currentTrack + 1 < 12 && <button onClick={() => startTrack(currentTrack + 1)} className="bg-yellow-400 text-indigo-900 px-12 py-5 rounded-3xl text-3xl font-black shadow-[0_8px_0_#b45309]">Próxima!</button>}
+          <div className="hy-stage hy-full hy-theme-sea flex flex-col items-center justify-center gap-5 p-6 text-center">
+            <div className="hy-deco" aria-hidden="true">
+              <span style={{top:'10%', left:'8%'}}>⭐</span>
+              <span style={{top:'16%', right:'9%'}}>💎</span>
+              <span style={{bottom:'12%', left:'10%'}}>🪙</span>
+              <span style={{bottom:'10%', right:'12%'}}>⭐</span>
+            </div>
+            <div className="hy-hero">⚓</div>
+            <h1 className="hy-title"><span className="l1">Ilha {currentTrack + 1}</span><span className="l2">Conquistada!</span></h1>
+            <p className="hy-tagline">5 canhonadas certeiras!</p>
+            <div className="flex flex-wrap justify-center gap-5">
+              <button onClick={() => setGameState('trackSelect')} className="hy-cta hy-cta-sec">Mapa</button>
+              {currentTrack + 1 < 12 && <button onClick={() => startTrack(currentTrack + 1)} className="hy-cta">Próxima!</button>}
             </div>
           </div>
         );

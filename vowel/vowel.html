@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../styles/game-viewport.css" />
     <title>Complete a Palavra - Vogais</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@500;700;800&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; }
         html, body {
@@ -131,48 +131,54 @@
         }
     </style>
 </head>
-<body>
+<body class="hy-brand">
 
     <div class="bg-silhouette"></div>
 
     <!-- TELA INICIAL -->
-    <div id="screen-start" class="screen active-screen justify-center text-center">
+    <div id="screen-start" class="screen active-screen hy-stage hy-theme-vowel justify-center text-center gap-4">
         <a href="../index.html" class="btn-back" style="color:#334155">← Voltar</a>
-        <h1 class="text-6xl md:text-8xl font-game text-blue-600 mb-4 drop-shadow-md leading-tight" style="-webkit-text-stroke: 2px white;">COMPLETE A<br>PALAVRA</h1>
-        <div class="w-64 h-64 bg-white rounded-[3rem] flex items-center justify-center border-8 border-yellow-400 shadow-2xl mb-12 rotate-3 relative">
-            <div class="absolute inset-0 bg-blue-50 opacity-50 rounded-[2.5rem]"></div>
-            <span class="text-9xl relative z-10">🎹</span>
+        <div class="hy-deco" aria-hidden="true">
+            <span style="top:8%;left:6%">🔤</span>
+            <span style="top:14%;right:8%">✏️</span>
+            <span style="top:54%;left:4%">📚</span>
+            <span style="bottom:8%;left:14%">⭐</span>
+            <span style="bottom:10%;right:14%">🎈</span>
         </div>
-        <button onclick="showScreen('screen-mode')" class="bg-yellow-400 hover:bg-yellow-500 text-yellow-900 font-game text-4xl px-16 py-5 rounded-full shadow-[0_8px_0_#ca8a04] transform transition active:translate-y-2 active:shadow-none">
-            JOGAR!
+        <span class="hy-badge">🔠 Jogo de Ortografia</span>
+        <div class="hy-hero">🎹</div>
+        <h1 class="hy-title"><span class="l1">Complete a</span><span class="l2">Palavra</span></h1>
+        <p class="hy-tagline">Descubra a vogal que falta e monte a palavra certa!</p>
+        <button onclick="showScreen('screen-mode')" class="hy-cta">
+            Jogar!
         </button>
     </div>
 
     <!-- TELA DE SELEÇÃO DE MODO -->
-    <div id="screen-mode" class="screen justify-center">
-        <h2 class="text-5xl font-game text-blue-600 mb-12 text-center drop-shadow-sm" style="-webkit-text-stroke: 1px white;">COMO VAMOS JOGAR?</h2>
-        <div class="flex flex-col md:flex-row gap-8 w-full max-w-4xl px-4">
-            <button onclick="setMode('infantil')" class="mode-card flex-1 bg-white p-10 rounded-[3rem] border-4 border-blue-200 text-center shadow-xl">
-                <div class="text-7xl mb-6">👶</div>
-                <div class="text-4xl font-game text-blue-600 mb-3">INFANTIL</div>
+    <div id="screen-mode" class="screen hy-stage hy-theme-vowel justify-center items-center gap-8">
+        <h2 class="hy-heading">Como vamos jogar?</h2>
+        <div class="flex flex-col md:flex-row gap-8 w-full max-w-3xl px-4">
+            <button onclick="setMode('infantil')" class="mode-card hy-panel flex-1" style="--acc:#01bebc;--acc-dark:#008f8e">
+                <div class="text-7xl mb-4">👶</div>
+                <div class="text-4xl font-game mb-3" style="color:#008f8e">INFANTIL</div>
                 <p class="text-gray-500 font-bold text-lg">Letras Grandes<br>(MAIÚSCULAS)</p>
             </button>
 
-            <button onclick="setMode('fundamental')" class="mode-card flex-1 bg-white p-10 rounded-[3rem] border-4 border-purple-200 text-center shadow-xl">
-                <div class="text-7xl mb-6">🎒</div>
-                <div class="text-4xl font-game text-purple-600 mb-3">ESCOLA</div>
+            <button onclick="setMode('fundamental')" class="mode-card hy-panel flex-1" style="--acc:#d046d9;--acc-dark:#a030b0">
+                <div class="text-7xl mb-4">🎒</div>
+                <div class="text-4xl font-game mb-3" style="color:#a030b0">ESCOLA</div>
                 <p class="text-gray-500 font-bold text-lg">Maiúsculas e Minúsculas<br>(Pian _)</p>
             </button>
         </div>
-        <button onclick="showScreen('screen-start')" class="mt-12 text-blue-600 font-bold text-xl hover:text-blue-800 transition">Voltar ao início</button>
+        <button onclick="showScreen('screen-start')" class="hy-pill-btn">← Voltar ao início</button>
     </div>
 
     <!-- TELA DE SELEÇÃO DE NÍVEIS -->
-    <div id="screen-levels" class="screen">
+    <div id="screen-levels" class="screen hy-stage hy-full hy-scroll hy-theme-vowel">
         <div class="max-w-4xl w-full">
             <div class="flex justify-between items-center mb-10">
-                <button aria-label="Voltar" title="Voltar" onclick="showScreen('screen-start')" class="bg-white text-blue-600 font-bold px-6 py-3 rounded-2xl shadow-sm border-2 border-blue-100 hover:bg-blue-50">← Voltar</button>
-                <h2 class="text-5xl font-game text-blue-600 drop-shadow-sm" style="-webkit-text-stroke: 1px white;">NÍVEIS</h2>
+                <button aria-label="Voltar" title="Voltar" onclick="showScreen('screen-start')" class="hy-pill-btn">← Voltar</button>
+                <h2 class="hy-heading">Níveis</h2>
                 <div class="w-24"></div>
             </div>
             <div id="levels-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"></div>
@@ -215,13 +221,13 @@
     </div>
 
     <!-- MODAL DE VITÓRIA -->
-    <div id="win-modal" class="fixed inset-0 bg-blue-900/80 flex items-center justify-center hidden z-50 backdrop-blur-sm">
-        <div class="bg-white p-12 rounded-[3rem] text-center shadow-2xl border-8 border-yellow-400 max-w-sm mx-4 transform scale-105">
-            <h2 class="text-5xl font-game text-blue-600 mb-4 drop-shadow-sm" id="modal-title">NÍVEL CONCLUÍDO!</h2>
+    <div id="win-modal" class="fixed inset-0 hy-overlay flex items-center justify-center hidden z-50 backdrop-blur-sm">
+        <div class="hy-panel max-w-sm mx-4">
+            <h2 class="text-5xl font-game mb-4" style="color:#48076a" id="modal-title">NÍVEL CONCLUÍDO!</h2>
             <div class="text-8xl mb-6">🏆</div>
             <p class="text-xl font-bold text-gray-600 mb-8" id="modal-msg">Você foi incrível!</p>
-            <button onclick="showScreen('screen-levels')" class="bg-green-500 hover:bg-green-600 text-white font-game text-4xl py-4 px-12 rounded-full shadow-[0_8px_0_#166534] active:translate-y-2 active:shadow-none transition-all w-full">
-                CONTINUAR
+            <button onclick="showScreen('screen-levels')" class="hy-cta w-full" style="--cta:#6ce67d;--cta-dark:#3db54a;animation:none">
+                Continuar
             </button>
         </div>
     </div>

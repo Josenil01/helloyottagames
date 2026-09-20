@@ -3,13 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#48076a" />
+    <meta
+      name="description"
+      content="Jogos educativos de Português e Matemática para crianças. Aprender brincando com o Hello Yotta Games!"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hello Yotta Games 🎮" />
+    <meta
+      property="og:description"
+      content="Jogos educativos de Português e Matemática para crianças. Aprender brincando!"
+    />
     <title>Hello Yotta Games 🎮</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <style>
+      /* ===== Paleta Hello Yotta ===== */
+      :root {
+        --hy-purple: #48076a;
+        --hy-orange: #ffa800;
+        --hy-pink: #d046d9;
+        --hy-teal: #01bebc;
+        --hy-green: #6ce67d;
+        --hy-red: #ff3041;
+        --hy-blue-dark: #004b9a;
+        --hy-blue: #0a40b5;
+        --hy-white: #ffffff;
+
+        --hy-purple-dark: #2d0445;
+        --hy-orange-dark: #cc8600;
+        --hy-pink-dark: #a030b0;
+        --hy-teal-dark: #008f8e;
+        --hy-green-dark: #3db54a;
+        --hy-red-dark: #c0001e;
+
+        --ink: #2d0445;
+        --ink-soft: #6a4d7d;
+      }
+
       * {
         box-sizing: border-box;
       }
@@ -21,93 +57,391 @@
         max-width: 100%;
       }
       body {
-        font-family: "Quicksand", sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        font-family: "Nunito", sans-serif;
         min-height: 100vh;
+        color: var(--hy-white);
+        background:
+          radial-gradient(circle at 12% 8%, rgba(208, 70, 217, 0.55), transparent 42%),
+          radial-gradient(circle at 90% 16%, rgba(1, 190, 188, 0.32), transparent 40%),
+          radial-gradient(circle at 50% 105%, rgba(10, 64, 181, 0.6), transparent 55%),
+          linear-gradient(180deg, var(--hy-purple) 0%, var(--hy-purple-dark) 100%);
+        background-attachment: fixed;
       }
-      .game-card {
-        background: white;
-        border-radius: 20px;
-        padding: clamp(1rem, 3vw, 2rem);
-        text-align: center;
-        text-decoration: none;
-        color: #333;
-        transition:
-          transform 0.3s ease,
-          box-shadow 0.3s ease;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        display: flex;
-        flex-direction: column;
+      /* Textura de bolinhas sutil */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        background-image: radial-gradient(rgba(255, 255, 255, 0.09) 1.5px, transparent 1.5px);
+        background-size: 26px 26px;
+      }
+
+      /* ===== Decoração flutuante ===== */
+      .bg-deco {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: 0;
+      }
+      .bg-deco span {
+        position: absolute;
+        font-size: clamp(1.6rem, 4vw, 3rem);
+        opacity: 0.22;
+        animation: drift 7s ease-in-out infinite;
+      }
+      @keyframes drift {
+        0%, 100% { transform: translateY(0) rotate(-6deg); }
+        50% { transform: translateY(-18px) rotate(6deg); }
+      }
+
+      .page {
+        position: relative;
+        z-index: 1;
+      }
+
+      /* ===== Hero ===== */
+      .brand-pill {
+        display: inline-flex;
         align-items: center;
-        gap: 0.75rem;
-      }
-      .game-card:hover {
-        transform: translateY(-8px) scale(1.03);
-        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
-      }
-      .game-card .emoji {
-        font-size: clamp(2.5rem, 6vw, 3.5rem);
-      }
-      .game-card .title {
-        font-family: "Luckiest Guy", cursive;
-        font-size: clamp(1rem, 3vw, 1.3rem);
-        color: #4a3072;
-      }
-      .game-card .description {
-        font-size: clamp(0.8rem, 2vw, 0.95rem);
-        color: #666;
-        line-height: 1.4;
+        gap: 0.5rem;
+        padding: 0.4rem 1.1rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.14);
+        border: 2px solid rgba(255, 255, 255, 0.35);
+        backdrop-filter: blur(6px);
+        font-weight: 800;
+        font-size: clamp(0.75rem, 2.4vw, 0.95rem);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
       }
       h1 {
         font-family: "Luckiest Guy", cursive;
-        color: white;
-        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-        font-size: clamp(1.8rem, 6vw, 3.75rem);
+        font-weight: 400;
+        margin: 1rem 0 0.25rem;
+        line-height: 0.95;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        filter: drop-shadow(0 6px 0 var(--hy-purple-dark))
+          drop-shadow(0 16px 20px rgba(0, 0, 0, 0.35));
+        animation: floaty 5s ease-in-out infinite;
+      }
+      h1 span {
+        -webkit-text-stroke: 9px var(--hy-purple-dark);
+        paint-order: stroke fill;
+        letter-spacing: 0.02em;
+      }
+      h1 .line1 {
+        color: var(--hy-white);
+        font-size: clamp(2.6rem, 10vw, 5.5rem);
+      }
+      h1 .line2 {
+        color: var(--hy-orange);
+        font-size: clamp(3.4rem, 14vw, 7.5rem);
+        transform: rotate(-2.5deg);
+        margin-top: -0.05em;
+      }
+      @keyframes floaty {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
       }
       .subtitle {
-        color: rgba(255, 255, 255, 0.85);
+        color: rgba(255, 255, 255, 0.92);
+        font-weight: 800;
+        font-size: clamp(1.05rem, 3vw, 1.6rem);
+        margin-top: 1.1rem;
+      }
+      .subtitle b {
+        color: var(--hy-orange);
+        font-weight: 900;
+      }
+      .stats {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.6rem;
+        margin-top: 1.25rem;
+      }
+      .stat {
+        background: var(--hy-white);
+        color: var(--ink);
+        font-weight: 800;
+        font-size: clamp(0.8rem, 2.4vw, 0.95rem);
+        padding: 0.4rem 0.95rem;
+        border-radius: 999px;
+        box-shadow: 0 4px 0 rgba(0, 0, 0, 0.28);
+      }
+      .stat b {
+        color: var(--hy-pink);
+        font-family: "Luckiest Guy", cursive;
+        font-weight: 400;
+        font-size: 1.15em;
+        margin-right: 0.15em;
+      }
+
+      .hero-cta {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 0.55rem 1.8rem;
+        border-radius: 999px;
+        background: var(--hy-orange);
+        color: var(--hy-purple-dark);
+        font-family: "Luckiest Guy", cursive;
+        font-size: clamp(1.1rem, 3.4vw, 1.5rem);
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        box-shadow: 0 6px 0 var(--hy-orange-dark), 0 14px 22px rgba(0, 0, 0, 0.3);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+      }
+      .hero-cta:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 9px 0 var(--hy-orange-dark), 0 18px 26px rgba(0, 0, 0, 0.35);
+      }
+      .hero-cta:active {
+        transform: translateY(4px);
+        box-shadow: 0 2px 0 var(--hy-orange-dark);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* ===== Filtros ===== */
+      #category-filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.65rem;
+        margin-top: 1.75rem;
+      }
+      .category-btn {
+        --c: var(--hy-white);
+        --c-dark: #b8a3c9;
+        --on: var(--ink);
+        min-height: 44px;
+        padding: 0.45rem 1.3rem;
+        border-radius: 999px;
+        border: 3px solid rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.12);
+        color: var(--hy-white);
+        font: 800 1rem "Nunito", sans-serif;
+        cursor: pointer;
+        transition: transform 0.15s ease, background 0.2s ease, box-shadow 0.15s ease;
+      }
+      .category-btn[data-category="portugues"] { --c: var(--hy-pink); --c-dark: var(--hy-pink-dark); --on: #fff; }
+      .category-btn[data-category="matematica"] { --c: var(--hy-teal); --c-dark: var(--hy-teal-dark); --on: var(--hy-purple-dark); }
+      .category-btn[data-category="logica"] { --c: var(--hy-orange); --c-dark: var(--hy-orange-dark); --on: var(--hy-purple-dark); }
+      .category-btn:hover {
+        transform: translateY(-2px);
+        border-color: var(--c);
+      }
+      .category-btn:focus-visible {
+        outline: 3px solid var(--hy-white);
+        outline-offset: 3px;
+      }
+      .category-btn.is-active {
+        background: var(--c);
+        border-color: var(--c);
+        color: var(--on);
+        box-shadow: 0 5px 0 var(--c-dark);
+        transform: translateY(-2px);
+      }
+      .category-btn:active {
+        transform: translateY(2px);
+        box-shadow: 0 1px 0 var(--c-dark);
+      }
+
+      /* ===== Cards ===== */
+      #games-grid {
+        row-gap: 2.5rem;
+      }
+      .game-card {
+        --accent: var(--hy-orange);
+        --accent-dark: var(--hy-orange-dark);
+        --tint: rgba(255, 168, 0, 0.18);
+        --on-accent: var(--hy-purple-dark);
+        --tag: "Lógica";
+        position: relative;
+        background:
+          linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%) top / 100% 84px no-repeat,
+          var(--hy-white);
+        border: 3px solid var(--accent) !important;
+        border-radius: 28px;
+        padding: 1.75rem 1.25rem 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        color: var(--ink);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.7rem;
+        box-shadow:
+          0 8px 0 var(--accent-dark),
+          0 20px 28px rgba(20, 0, 40, 0.38) !important;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        animation: rise 0.5s ease both;
+        animation-delay: calc(var(--i, 0) * 35ms);
+      }
+      .game-card[data-category~="matematica"] {
+        --accent: var(--hy-teal);
+        --accent-dark: var(--hy-teal-dark);
+        --tint: rgba(1, 190, 188, 0.16);
+        --tag: "Matemática";
+      }
+      .game-card[data-category~="portugues"] {
+        --accent: var(--hy-pink);
+        --accent-dark: var(--hy-pink-dark);
+        --tint: rgba(208, 70, 217, 0.16);
+        --on-accent: #fff;
+        --tag: "Português";
+      }
+      .game-card::before {
+        content: var(--tag);
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0.15rem 0.95rem;
+        border-radius: 999px;
+        background: var(--hy-white);
+        color: var(--hy-purple);
+        border: 3px solid var(--accent);
+        font-family: "Luckiest Guy", cursive;
+        font-size: 0.8rem;
+        letter-spacing: 0.06em;
+        white-space: nowrap;
+        box-shadow: 0 3px 0 var(--accent-dark);
+      }
+      .game-card:hover,
+      .game-card:focus-visible {
+        transform: translateY(-8px) rotate(-0.8deg);
+        box-shadow:
+          0 16px 0 var(--accent-dark),
+          0 30px 40px rgba(20, 0, 40, 0.45) !important;
+        outline: none;
+      }
+      .game-card:active {
+        transform: translateY(4px);
+        box-shadow:
+          0 3px 0 var(--accent-dark),
+          0 8px 14px rgba(20, 0, 40, 0.35) !important;
+      }
+      .game-card .emoji {
+        display: grid;
+        place-items: center;
+        width: clamp(4.5rem, 14vw, 5.5rem);
+        height: clamp(4.5rem, 14vw, 5.5rem);
+        border-radius: 50%;
+        background: radial-gradient(circle at 30% 25%, #fff 0%, var(--tint) 80%);
+        border: 5px solid var(--hy-white);
+        box-shadow: 0 6px 0 rgba(45, 4, 69, 0.18), 0 0 0 3px var(--accent);
+        font-size: clamp(2.3rem, 7vw, 3rem);
+        transition: transform 0.3s ease;
+      }
+      .game-card:hover .emoji {
+        transform: scale(1.12) rotate(8deg);
+      }
+      .game-card .title {
+        font-family: "Luckiest Guy", cursive;
+        font-size: clamp(1.15rem, 3.2vw, 1.4rem);
+        color: var(--hy-purple);
+        line-height: 1.15;
+        letter-spacing: 0.02em;
+      }
+      .game-card .description {
         font-weight: 700;
-        font-size: clamp(1rem, 3vw, 1.5rem);
+        font-size: clamp(0.85rem, 2.2vw, 0.95rem);
+        color: var(--ink-soft);
+        line-height: 1.45;
+      }
+      .game-card::after {
+        content: "Jogar ▶";
+        margin-top: auto;
+        padding: 0.35rem 1.4rem;
+        border-radius: 999px;
+        background: var(--accent);
+        color: var(--on-accent);
+        font-family: "Luckiest Guy", cursive;
+        font-size: 1rem;
+        letter-spacing: 0.05em;
+        box-shadow: 0 4px 0 var(--accent-dark);
+        transition: transform 0.2s ease;
+      }
+      .game-card:hover::after {
+        transform: scale(1.08);
+      }
+      @keyframes rise {
+        from { opacity: 0; transform: translateY(24px) scale(0.96); }
+        to { opacity: 1; transform: none; }
+      }
+
+      /* ===== Rodapé ===== */
+      .site-footer {
+        margin-top: 3.5rem;
+        text-align: center;
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .site-footer a {
+        color: var(--hy-orange);
+        font-weight: 900;
+        text-decoration: none;
+      }
+      .site-footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          animation: none !important;
+          transition: none !important;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="min-h-screen flex flex-col items-center py-10 px-4">
+    <!-- Decoração de fundo -->
+    <div class="bg-deco" aria-hidden="true">
+      <span style="top: 8%; left: 5%; animation-delay: 0s">⭐</span>
+      <span style="top: 18%; right: 7%; animation-delay: 1s">🚀</span>
+      <span style="top: 46%; left: 3%; animation-delay: 2s">🧩</span>
+      <span style="top: 60%; right: 4%; animation-delay: 0.5s">✏️</span>
+      <span style="top: 82%; left: 9%; animation-delay: 1.5s">🔢</span>
+      <span style="top: 88%; right: 12%; animation-delay: 2.5s">🎈</span>
+    </div>
+
+    <div class="page min-h-screen flex flex-col items-center py-10 px-4">
       <!-- Header -->
       <div class="text-center mb-10">
-        <h1 class="text-5xl md:text-6xl mb-3 drop-shadow-lg animate-bounce">
-          🎮 Hello Yotta Games
+        <div class="brand-pill">🎮 Plataforma de jogos educativos</div>
+        <h1>
+          <span class="line1">Hello Yotta</span>
+          <span class="line2">Games</span>
         </h1>
-        <p class="subtitle text-xl md:text-2xl">
-          Jogos Educativos para Aprender Brincando!
+        <p class="subtitle">
+          Jogos Educativos para <b>Aprender Brincando!</b>
         </p>
+        <div class="stats">
+          <span class="stat"><b id="game-count">30+</b> jogos</span>
+          <span class="stat">📖 Português</span>
+          <span class="stat">➗ Matemática</span>
+          <span class="stat">🧩 Lógica</span>
+        </div>
+        <a class="hero-cta" href="#games-grid">Escolher um jogo ▼</a>
         <!-- Filtros de Categoria -->
-        <div id="category-filters" class="mt-4 flex justify-center gap-3">
-          <button
-            class="category-btn bg-white/20 rounded-full px-4 py-1 text-sm font-bold text-white shadow border-2 border-transparent hover:border-white focus:border-white focus:outline-none transition"
-            data-category="all"
-          >
-            Todos
+        <div id="category-filters">
+          <button class="category-btn" data-category="all">🌈 Todos</button>
+          <!--button class="category-btn" data-category="novos">Novos</button-->
+          <button class="category-btn" data-category="portugues">
+            📖 Português
           </button>
-          <!--button class="category-btn bg-white/20 rounded-full px-4 py-1 text-sm font-bold text-white shadow border-2 border-sky-200 hover:border-sky-400 focus:border-sky-400 focus:outline-none transition" data-category="novos">Novos</button-->
-          <button
-            class="category-btn bg-white/20 rounded-full px-4 py-1 text-sm font-bold text-white shadow border-2 border-pink-200 hover:border-pink-400 focus:border-pink-400 focus:outline-none transition"
-            data-category="portugues"
-          >
-            Português
+          <button class="category-btn" data-category="matematica">
+            ➗ Matemática
           </button>
-          <button
-            class="category-btn bg-white/20 rounded-full px-4 py-1 text-sm font-bold text-white shadow border-2 border-teal-200 hover:border-teal-400 focus:border-teal-400 focus:outline-none transition"
-            data-category="matematica"
-          >
-            Matemática
-          </button>
-          <button
-            class="category-btn bg-white/20 rounded-full px-4 py-1 text-sm font-bold text-white shadow border-2 border-yellow-200 hover:border-yellow-400 focus:border-yellow-400 focus:outline-none transition"
-            data-category="logica"
-          >
-            Lógica
-          </button>
+          <button class="category-btn" data-category="logica">🧩 Lógica</button>
         </div>
       </div>
 
@@ -665,21 +999,29 @@
         </a>
       </div>
       <!-- Footer -->
-      <div class="mt-12 text-center text-white opacity-70 text-sm">
-        <p>© 2026 Hello Yotta Games — Aprendendo com diversão! 🚀</p>
+      <div class="site-footer">
+        <p>
+          © 2026 <a href="https://helloyotta.com">Hello Yotta</a> Games —
+          Aprendendo com diversão! 🚀
+        </p>
       </div>
 
       <!-- Script de Filtro de Categorias -->
       <script>
         const filterButtons = document.querySelectorAll(".category-btn");
         const cards = document.querySelectorAll(".game-card");
+        const countEl = document.getElementById("game-count");
+        // Entrada escalonada dos cards
+        cards.forEach((card, i) => card.style.setProperty("--i", Math.min(i, 12)));
         filterButtons.forEach((btn) => {
           btn.addEventListener("click", () => {
             const cat = btn.getAttribute("data-category");
-            filterButtons.forEach((b) =>
-              b.classList.remove("ring", "ring-4", "ring-white"),
-            );
-            btn.classList.add("ring", "ring-4", "ring-white");
+            filterButtons.forEach((b) => {
+              b.classList.remove("is-active");
+              b.setAttribute("aria-pressed", "false");
+            });
+            btn.classList.add("is-active");
+            btn.setAttribute("aria-pressed", "true");
             cards.forEach((card) => {
               if (
                 cat === "all" ||
@@ -692,6 +1034,8 @@
             });
           });
         });
+        // Total de jogos no destaque do topo
+        if (countEl) countEl.textContent = cards.length;
         // Ativar filtro "Todos" por padrão
         document.querySelector('.category-btn[data-category="all"]').click();
       </script>
