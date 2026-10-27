@@ -79,33 +79,52 @@ function App() {
     }
   }, [gameState]);
 
+  const inputRef = useRef(null);
+
+  // Usa um <input> oculto + evento "input" em vez de keydown na window:
+  // teclas mortas (´, ~ do layout ABNT2) e teclados virtuais só entregam
+  // o caractere acentuado já composto através de "input", nunca de forma
+  // confiável em "keydown".
   useEffect(() => {
-    if (gameState !== 'playing') return;
-    const handler = (e) => {
-      if (isSuccess) return;
-      const key = e.key.toUpperCase();
-      if (!/^[A-ZÁÀÂÃÉÈÊÍÏÓÔÕÚÜÇ]$/.test(key)) return;
-      const expected = currentWord[typedCount];
-      if (!expected) return;
-      if (key === expected.toUpperCase() || key === expected) {
-        const newTyped = typedCount + 1;
-        setTypedCount(newTyped);
-        if (newTyped === currentWord.length) {
-          HY.playWin();
-          HY.score.correct();
-          setIsSuccess(true);
-          setTimeout(() => advanceWord(currentTrack, wordInTrack), 1200);
-        }
-      } else {
-        HY.playLose();
-        HY.score.wrong();
-        setWrongFlash(true);
-        setTimeout(() => setWrongFlash(false), 400);
+    if (gameState === 'playing' && inputRef.current) {
+      inputRef.current.value = '';
+      inputRef.current.focus();
+    }
+  }, [gameState, currentWord]);
+
+  const handleTypedChar = (rawChar) => {
+    if (isSuccess) return;
+    const key = rawChar.normalize('NFC').toUpperCase();
+    if (!/^[A-ZÁÀÂÃÉÈÊÍÏÓÔÕÚÜÇ]$/.test(key)) return;
+    const expected = currentWord[typedCount];
+    if (!expected) return;
+    if (key === expected.normalize('NFC').toUpperCase()) {
+      const newTyped = typedCount + 1;
+      setTypedCount(newTyped);
+      if (newTyped === currentWord.length) {
+        HY.playWin();
+        HY.score.correct();
+        setIsSuccess(true);
+        setTimeout(() => advanceWord(currentTrack, wordInTrack), 1200);
       }
-    };
-    window.addEventListener('keydown', handler);
-    return () => window.removeEventListener('keydown', handler);
-  }, [gameState, currentWord, typedCount, isSuccess, currentTrack, wordInTrack]);
+    } else {
+      HY.playLose();
+      HY.score.wrong();
+      setWrongFlash(true);
+      setTimeout(() => setWrongFlash(false), 400);
+    }
+  };
+
+  const handleHiddenInputChange = (e) => {
+    const val = e.target.value;
+    e.target.value = '';
+    if (!val) return;
+    handleTypedChar(val.slice(-1));
+  };
+
+  const handleHiddenInputBlur = () => {
+    if (gameState === 'playing' && inputRef.current) inputRef.current.focus();
+  };
 
   if (gameState === 'cover') {
     return (
@@ -150,7 +169,19 @@ function App() {
   // Playing screen
   const letters = currentWord.split('');
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gradient-to-b from-teal-500 to-teal-700">
+    <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gradient-to-b from-teal-500 to-teal-700" onClick={() => inputRef.current && inputRef.current.focus()}>
+      <input
+        ref={inputRef}
+        type="text"
+        inputMode="text"
+        autoComplete="off"
+        autoCorrect="off"
+        autoCapitalize="off"
+        spellCheck="false"
+        onChange={handleHiddenInputChange}
+        onBlur={handleHiddenInputBlur}
+        style={{ position: 'absolute', top: 0, left: 0, width: 1, height: 1, opacity: 0, border: 'none', padding: 0 }}
+      />
       <div className="w-full max-w-lg">
         <div className="flex justify-between items-center mb-6">
           <button onClick={() => setGameState('trackSelect')} className="bg-white/20 text-white px-4 py-2 rounded-full font-bold">← Voltar</button>
