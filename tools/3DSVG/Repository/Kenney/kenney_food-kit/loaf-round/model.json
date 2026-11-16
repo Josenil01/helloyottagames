@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "loaf-round",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/loaf-round.fbx": "c94302fb8ac26f8bd38afccba4e61ea053805b694121687c7a82350736e4d406",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/loaf-round.glb": "1c77ddba72374a869f165da16217a8e965a82dec61d911396002e1a61a2fe90e",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/loaf-round.obj": "26229994928189867c56381745640600a24bb53d4dc0f801f5cd44474c4cf268",
+    "Models/OBJ format/loaf-round.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/loaf-round.png": "6a0f408702d5090a37ebac09e7b4690ba5d968b68be2ebe6fffb0e7eb0621db7"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/loaf-round.fbx": "c94302fb8ac26f8bd38afccba4e61ea053805b694121687c7a82350736e4d406",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/loaf-round.glb": "1c77ddba72374a869f165da16217a8e965a82dec61d911396002e1a61a2fe90e",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/loaf-round.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/loaf-round.obj": "a3f0815786bc20b3432255b010f0faa8f64d9636a3b20bbc3cc9457c465d9604",
+    "Preview.png": "6a0f408702d5090a37ebac09e7b4690ba5d968b68be2ebe6fffb0e7eb0621db7"
+  },
+  "license": "../License.txt"
+}

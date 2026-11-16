@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-straight-barrier-half",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-straight-barrier-half.fbx": "654c8c87dc09d40820435ffa1ec99534bbd283d06c565bce2338bcaec7e18305",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-straight-barrier-half.glb": "6f850dedf540f9aadc618cf70c24af317a69a35e10cefd2da16df2c85311b994",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-straight-barrier-half.obj": "84fa6aeca11519cbf14afe3e84f4b91de5921ecdfb08b78fded3acaa32f2e9bc",
+    "Models/OBJ format/road-straight-barrier-half.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-straight-barrier-half.png": "3cc2daaf5b166e2b58f332e94726f6aa6d02e2894efa1dd280309add62fd8e5f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-straight-barrier-half.fbx": "654c8c87dc09d40820435ffa1ec99534bbd283d06c565bce2338bcaec7e18305",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-straight-barrier-half.glb": "6f850dedf540f9aadc618cf70c24af317a69a35e10cefd2da16df2c85311b994",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-straight-barrier-half.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-straight-barrier-half.obj": "20a75ef267574ab36815545ec20fb675bb3cdfe4816c6da0fa60add9fb1e263b",
+    "Preview.png": "3cc2daaf5b166e2b58f332e94726f6aa6d02e2894efa1dd280309add62fd8e5f"
+  },
+  "license": "../License.txt"
+}

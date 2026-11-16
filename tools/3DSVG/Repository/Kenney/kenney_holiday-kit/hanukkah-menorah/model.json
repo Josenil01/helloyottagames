@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "hanukkah-menorah",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/hanukkah-menorah.fbx": "d58c1359d6c1a72965caf3b21f4a6841f670995fdccf27d10cc3736d225b36b8",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/hanukkah-menorah.glb": "7542d7447c8b28d4ef2471d7f50dd1268587ea98556259ee0d2f7b58c9acb6d8",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/hanukkah-menorah.obj": "e32e9f73aedda136abd3991140c3bd0aedb1e1832b5010f999820cfeb383ec34",
+    "Models/OBJ format/hanukkah-menorah.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/hanukkah-menorah.png": "87908047708e7123f7d3a70e09200d3cfc8a4c35dfd8d858c1c82ec89cf9d27a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/hanukkah-menorah.fbx": "d58c1359d6c1a72965caf3b21f4a6841f670995fdccf27d10cc3736d225b36b8",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/hanukkah-menorah.glb": "7542d7447c8b28d4ef2471d7f50dd1268587ea98556259ee0d2f7b58c9acb6d8",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/hanukkah-menorah.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/hanukkah-menorah.obj": "5c3f84272d551053148f499ec0085ddaf806f2e7032efa7527e481cca8374a41",
+    "Preview.png": "87908047708e7123f7d3a70e09200d3cfc8a4c35dfd8d858c1c82ec89cf9d27a"
+  },
+  "license": "../License.txt"
+}

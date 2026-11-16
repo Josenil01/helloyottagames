@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pipe_ring",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/pipe_ring.fbx": "d1ecd3a338a1fe65e803b8c52f36fdf2ebb15a3bd2fcf3700bdd95e81291129a",
+    "Models/GLTF format/pipe_ring.glb": "5b5700b08e9decc638ec025b3d77cb1923cd7d0255588dde2fb130f9bd5e30f3",
+    "Models/OBJ format/pipe_ring.obj": "76e8ccf68a4ce8f66b9a89a0d2a309e62a2057bb736f11e0d230f68da6ce30b0",
+    "Models/OBJ format/pipe_ring.mtl": "87a7cff44876fc778b7262735ec577819c5f856b3194c74de297600bf08d2d05"
+  },
+  "files": {
+    "FBX format/pipe_ring.fbx": "d1ecd3a338a1fe65e803b8c52f36fdf2ebb15a3bd2fcf3700bdd95e81291129a",
+    "GLB format/pipe_ring.glb": "5b5700b08e9decc638ec025b3d77cb1923cd7d0255588dde2fb130f9bd5e30f3",
+    "OBJ format/pipe_ring.mtl": "87a7cff44876fc778b7262735ec577819c5f856b3194c74de297600bf08d2d05",
+    "OBJ format/pipe_ring.obj": "3283b5459fb1ef18fe01a9710e40fb433b72f83cdf14202d88908feab5389988"
+  },
+  "license": "../License.txt"
+}

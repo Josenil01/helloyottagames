@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "dryer",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/dryer.fbx": "905995456b4b5f97e67f8cc79bc163a9b7f78c0a40fcf6cb09e80f6ff6fd2cc8",
+    "Models/GLTF format/dryer.glb": "d8b727612fdfc141c0b56360f75b897f1b71d3420c8c0942b5ec626bd3c8303c",
+    "Models/OBJ format/dryer.obj": "4d64a36c4909c2f18a17f5b1a7f6c3917d36269923b4b20ead96db242d321a20",
+    "Models/OBJ format/dryer.mtl": "eaae346972c64b0f469c50bfb41f265031c160079573f3a748c76b6eb6b6eefc"
+  },
+  "files": {
+    "FBX format/dryer.fbx": "905995456b4b5f97e67f8cc79bc163a9b7f78c0a40fcf6cb09e80f6ff6fd2cc8",
+    "GLB format/dryer.glb": "d8b727612fdfc141c0b56360f75b897f1b71d3420c8c0942b5ec626bd3c8303c",
+    "OBJ format/dryer.mtl": "5dfdbdb74d31adb62f348819e1e80d9a17666df1575c93f03536ff58fbdae878",
+    "OBJ format/dryer.obj": "9202d4bc5bb2489a38c0b5e0405e1368b164f1f49cace4f1df77af3d11fdf082"
+  },
+  "license": "../License.txt"
+}

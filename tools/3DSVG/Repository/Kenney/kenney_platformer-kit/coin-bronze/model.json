@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coin-bronze",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/coin-bronze.fbx": "d6e5242a39e76e93798a078880e9a53a13af0da2f4e11a1bd9625b97abb2d63e",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/coin-bronze.glb": "08dac2b3fcd16888728aaa67e1f9b6ddd89806a2898f07c538792dd4330f3657",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/coin-bronze.obj": "14111028c428edd511c76c1baadcbf2306ac05f1b517abe21b90afd975c5cb97",
+    "Models/OBJ format/coin-bronze.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coin-bronze.png": "4dcd6edb1da7b4eaba0cc19cadb11509644da7242e47ff44e9624ba40fc57d72"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/coin-bronze.fbx": "d6e5242a39e76e93798a078880e9a53a13af0da2f4e11a1bd9625b97abb2d63e",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/coin-bronze.glb": "08dac2b3fcd16888728aaa67e1f9b6ddd89806a2898f07c538792dd4330f3657",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/coin-bronze.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coin-bronze.obj": "94f4058b120aec8b65084656f0e39ee3ad8c4087fd4196c084b9377fc0913835",
+    "Preview.png": "4dcd6edb1da7b4eaba0cc19cadb11509644da7242e47ff44e9624ba40fc57d72"
+  },
+  "license": "../License.txt"
+}

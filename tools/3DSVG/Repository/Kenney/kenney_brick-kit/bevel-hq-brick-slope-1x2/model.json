@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bevel-hq-brick-slope-1x2",
+  "pack": "kenney_brick-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/FBX format/bevel-hq-brick-slope-1x2.fbx": "139395fc9865ab8053062a336736cae779895548c6d810eb7b5024922e349985",
+    "Models/GLB format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/GLB format/bevel-hq-brick-slope-1x2.glb": "ff530fe8ffbfc25c263f2560625ee132e1e143b2cbdb142075975eb489108cbe",
+    "Models/OBJ format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/OBJ format/bevel-hq-brick-slope-1x2.obj": "b4d1a3e1b992be0e3234afa986af0dbf9b59e0ffaee2e06902413b71b6b0d225",
+    "Models/OBJ format/bevel-hq-brick-slope-1x2.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/bevel-hq-brick-slope-1x2.png": "b31885fc9fc3a0006ed3d4180f9e231470112c92492302e1d2db9c8ec444106a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "FBX format/bevel-hq-brick-slope-1x2.fbx": "139395fc9865ab8053062a336736cae779895548c6d810eb7b5024922e349985",
+    "Textures/GLB/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "GLB format/bevel-hq-brick-slope-1x2.glb": "ff530fe8ffbfc25c263f2560625ee132e1e143b2cbdb142075975eb489108cbe",
+    "Textures/OBJ/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "OBJ format/bevel-hq-brick-slope-1x2.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/bevel-hq-brick-slope-1x2.obj": "736d891da36fae655b930a42f574f295bf8a83a78889a0cd358022388120671a",
+    "Preview.png": "b31885fc9fc3a0006ed3d4180f9e231470112c92492302e1d2db9c8ec444106a"
+  },
+  "license": "../License.txt"
+}

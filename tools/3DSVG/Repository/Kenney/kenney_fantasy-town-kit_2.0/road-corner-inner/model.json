@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-corner-inner",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/road-corner-inner.fbx": "ac8d8b6b87580a3fcd57bc9cbe07875d3aa81998730f42a049a1f2758e6f37bf",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/road-corner-inner.glb": "0a998ac30f4be6f3a7d9f2e1f4e61edf35c5d9d99201b1389024921d45038661",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/road-corner-inner.obj": "56cf693654c9af119813edd39472289ccb60cabd537314e9a0421bf2eefb8f9f",
+    "Models/OBJ format/road-corner-inner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-corner-inner.png": "f28322c88ddc12715e0d1d844a22a8929f8658be4710f37a1e49fb8406808c9e"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/road-corner-inner.fbx": "ac8d8b6b87580a3fcd57bc9cbe07875d3aa81998730f42a049a1f2758e6f37bf",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/road-corner-inner.glb": "0a998ac30f4be6f3a7d9f2e1f4e61edf35c5d9d99201b1389024921d45038661",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/road-corner-inner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-corner-inner.obj": "caf1e4ac5206d45d6dd8c3a74e5eba1f488130ba71d1c2c4749a0eca34710b50",
+    "Preview.png": "f28322c88ddc12715e0d1d844a22a8929f8658be4710f37a1e49fb8406808c9e"
+  },
+  "license": "../License.txt"
+}

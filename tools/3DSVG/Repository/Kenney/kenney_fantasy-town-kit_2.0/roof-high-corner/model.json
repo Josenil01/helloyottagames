@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "roof-high-corner",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/roof-high-corner.fbx": "25c4a75137c2940fcea31bdca5eaf71eaf6ca235f6124b2f54015e128510a0a7",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/roof-high-corner.glb": "3ecd2f3fadaed67a2c713b272c7b8f73f60709752f8529bb34f9f92925123a4f",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/roof-high-corner.obj": "d79a8b8158c86f7983cc2d9533430f75581415ea045781cb571372078ab7fb11",
+    "Models/OBJ format/roof-high-corner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/roof-high-corner.png": "518537f509577f8e0e180f243b22e4243ab6c8ff2ddc20fd7a516c25a09575e7"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/roof-high-corner.fbx": "25c4a75137c2940fcea31bdca5eaf71eaf6ca235f6124b2f54015e128510a0a7",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/roof-high-corner.glb": "3ecd2f3fadaed67a2c713b272c7b8f73f60709752f8529bb34f9f92925123a4f",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/roof-high-corner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/roof-high-corner.obj": "6b366c34bb657887521dc69cc62114f6f5f8a98485ee762129933be0eb2708d4",
+    "Preview.png": "518537f509577f8e0e180f243b22e4243ab6c8ff2ddc20fd7a516c25a09575e7"
+  },
+  "license": "../License.txt"
+}

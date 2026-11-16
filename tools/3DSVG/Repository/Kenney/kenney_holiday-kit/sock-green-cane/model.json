@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "sock-green-cane",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/sock-green-cane.fbx": "5215cdd84b8d2430d19abc55ac84695fad265c2cd5f881df298169309f293729",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/sock-green-cane.glb": "9f6df4ebffe482db3d43f9d747c5b8d5512e1574f2ab8f59a71a7b084633905d",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/sock-green-cane.obj": "28c9cae98458bc187adf1acf2f9442eff6deee56e789b342fa6816f190c0bcb9",
+    "Models/OBJ format/sock-green-cane.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/sock-green-cane.png": "e9d20aec543829307b7e2874cd79648d6d7ca0c83c2d374efe41455af0b2f715"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/sock-green-cane.fbx": "5215cdd84b8d2430d19abc55ac84695fad265c2cd5f881df298169309f293729",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/sock-green-cane.glb": "9f6df4ebffe482db3d43f9d747c5b8d5512e1574f2ab8f59a71a7b084633905d",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/sock-green-cane.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/sock-green-cane.obj": "1b5edffa7cd67411aea99937fa7e701ed50921acc0a5250e6f966983d36f4b1f",
+    "Preview.png": "e9d20aec543829307b7e2874cd79648d6d7ca0c83c2d374efe41455af0b2f715"
+  },
+  "license": "../License.txt"
+}

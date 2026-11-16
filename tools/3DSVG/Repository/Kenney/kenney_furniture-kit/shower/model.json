@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "shower",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/shower.fbx": "4acf7fc38e2e01b6696e562501c3f5bb7f97d4eb20ad45ff935272bacd4b8399",
+    "Models/GLTF format/shower.glb": "25c1cebad681fe369dc04839a8f08f5da2ccbd99b3a70aa83fe2e4d1590c6951",
+    "Models/OBJ format/shower.obj": "236f9fc2d037bd2d011130d3ef637fde2f9ea6466da794c00e5156715355dddb",
+    "Models/OBJ format/shower.mtl": "dc57ab63d0e89e52d78581f2a96703240ee7af209c83e77538f8bd15f070c1de"
+  },
+  "files": {
+    "FBX format/shower.fbx": "4acf7fc38e2e01b6696e562501c3f5bb7f97d4eb20ad45ff935272bacd4b8399",
+    "GLB format/shower.glb": "25c1cebad681fe369dc04839a8f08f5da2ccbd99b3a70aa83fe2e4d1590c6951",
+    "OBJ format/shower.mtl": "d6eb2a7b2d6892a6b15647cf30df28422b0b8d26aad40cf3c3d1c1fb0bcfa923",
+    "OBJ format/shower.obj": "a796e51cae5dd7e7fc72a3c02cea34166b81e652936e39fbc377f5b6dc39b979"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "crater",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/crater.fbx": "110c71941d7ec6339164bc557420b9b82f9d0350e70d9cc472acdabc2fcd4d24",
+    "Models/GLTF format/crater.glb": "8b872ebe7358e1d5f08c600ed43f61d4d0dbbd03274a718424c599778915b175",
+    "Models/OBJ format/crater.obj": "9ca8a38929761616f07fcdeba46c837f0d29d77b11d5f5db99f65468a0744a9b",
+    "Models/OBJ format/crater.mtl": "1c89a6f5aa32460ba4976946c1e389ce0b5c85374443994f0285d96fd733f281"
+  },
+  "files": {
+    "FBX format/crater.fbx": "110c71941d7ec6339164bc557420b9b82f9d0350e70d9cc472acdabc2fcd4d24",
+    "GLB format/crater.glb": "8b872ebe7358e1d5f08c600ed43f61d4d0dbbd03274a718424c599778915b175",
+    "OBJ format/crater.mtl": "1c89a6f5aa32460ba4976946c1e389ce0b5c85374443994f0285d96fd733f281",
+    "OBJ format/crater.obj": "e5f2e49f0d818813d59e71c1f1d61c52d9727d206fbbd22fa7bf16dcaf3bfc0c"
+  },
+  "license": "../License.txt"
+}

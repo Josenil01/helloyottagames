@@ -1,0 +1,44 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-corner-rounded",
+  "pack": "kenney_prototype-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/Textures/variation-a.png": "7729166aa03f419ba26c5b884b9ddf28939c279fc35534ce0cdc3be590563bc7",
+    "Models/Textures/variation-b.png": "18a20d60a2fb19ae2ecb76d0a0756c956bd9c9e5138e10978fb82be4ed74cc17",
+    "Models/Textures/variation-c.png": "73a4547b1332a1a43d5bf2412f974f0df0e27576e7ce75ac34588061d99a304d",
+    "Models/FBX format/wall-corner-rounded.fbx": "d015f75161b7a0deaccf2d4821770fa146620d0b3b2142cbabb817c837ddda74",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/wall-corner-rounded.glb": "31f0704b5b9eb9ec3186007ed80a0526245cd30008d3d20b5e1873260954c959",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/wall-corner-rounded.obj": "900daedfb2346f9bd22bf4968c0b95bf1926a0a94d4a5a946aa8f3fb6d21fce7",
+    "Models/OBJ format/wall-corner-rounded.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-corner-rounded.png": "77695270c69c1185526f3bee065d977472a3df561784232d232d238cebe086b4"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/FBX/variation-a.png": "7729166aa03f419ba26c5b884b9ddf28939c279fc35534ce0cdc3be590563bc7",
+    "Textures/FBX/variation-b.png": "18a20d60a2fb19ae2ecb76d0a0756c956bd9c9e5138e10978fb82be4ed74cc17",
+    "Textures/FBX/variation-c.png": "73a4547b1332a1a43d5bf2412f974f0df0e27576e7ce75ac34588061d99a304d",
+    "FBX format/wall-corner-rounded.fbx": "d015f75161b7a0deaccf2d4821770fa146620d0b3b2142cbabb817c837ddda74",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/GLB/variation-a.png": "7729166aa03f419ba26c5b884b9ddf28939c279fc35534ce0cdc3be590563bc7",
+    "Textures/GLB/variation-b.png": "18a20d60a2fb19ae2ecb76d0a0756c956bd9c9e5138e10978fb82be4ed74cc17",
+    "Textures/GLB/variation-c.png": "73a4547b1332a1a43d5bf2412f974f0df0e27576e7ce75ac34588061d99a304d",
+    "GLB format/wall-corner-rounded.glb": "31f0704b5b9eb9ec3186007ed80a0526245cd30008d3d20b5e1873260954c959",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/OBJ/variation-a.png": "7729166aa03f419ba26c5b884b9ddf28939c279fc35534ce0cdc3be590563bc7",
+    "Textures/OBJ/variation-b.png": "18a20d60a2fb19ae2ecb76d0a0756c956bd9c9e5138e10978fb82be4ed74cc17",
+    "Textures/OBJ/variation-c.png": "73a4547b1332a1a43d5bf2412f974f0df0e27576e7ce75ac34588061d99a304d",
+    "OBJ format/wall-corner-rounded.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-corner-rounded.obj": "3f44996b21ac338f8eec4f8cc962901682ca6850660cf768e1bcffb3b56cacd4",
+    "Preview.png": "77695270c69c1185526f3bee065d977472a3df561784232d232d238cebe086b4"
+  },
+  "license": "../License.txt"
+}

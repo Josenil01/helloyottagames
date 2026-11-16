@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-crossroad",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-crossroad.fbx": "cdb2b7e79cfde2b0018fe8a13dae57d565544ebe49f303a3b8ce92c3546afafe",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-crossroad.glb": "2dc52a28cf89ec88025a047c0f6fff4c643f16b0f50f0e9a1140f16230c28b12",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-crossroad.obj": "313ffc4963a2f7976a1a4801e2ca837895b8f571eaca8ed9799916e76df6afbe",
+    "Models/OBJ format/road-crossroad.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-crossroad.png": "c515cc3e2aadf57c0a9228684ca4f6f90b280e73a0fb8237f58ce748ac960312"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-crossroad.fbx": "cdb2b7e79cfde2b0018fe8a13dae57d565544ebe49f303a3b8ce92c3546afafe",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-crossroad.glb": "2dc52a28cf89ec88025a047c0f6fff4c643f16b0f50f0e9a1140f16230c28b12",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-crossroad.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-crossroad.obj": "9f1a6ee1389d141455ae4330022b7638e1da6abab54f96453fabb5dc74c8703e",
+    "Preview.png": "c515cc3e2aadf57c0a9228684ca4f6f90b280e73a0fb8237f58ce748ac960312"
+  },
+  "license": "../License.txt"
+}

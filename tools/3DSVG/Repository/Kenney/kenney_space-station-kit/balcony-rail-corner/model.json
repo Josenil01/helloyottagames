@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "balcony-rail-corner",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/balcony-rail-corner.fbx": "37b31158cc5d8cd8b0a3e210a100937b72e0d3719ff438d30633b24780e7e622",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/balcony-rail-corner.glb": "e72c1fa4b87268e733f2e7358c27c9d79cdf915b9440d08b97d975a7d5e3f36d",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/balcony-rail-corner.obj": "23ac25505c18c932eedd9b412cb7c9700e890fbf7856ca187b2b7a725378a329",
+    "Models/OBJ format/balcony-rail-corner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/balcony-rail-corner.png": "45dcf4de65d6b64df1a290f1e678d4288efaa957bca68cda5438111d63d8b6dd"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/balcony-rail-corner.fbx": "37b31158cc5d8cd8b0a3e210a100937b72e0d3719ff438d30633b24780e7e622",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/balcony-rail-corner.glb": "e72c1fa4b87268e733f2e7358c27c9d79cdf915b9440d08b97d975a7d5e3f36d",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/balcony-rail-corner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/balcony-rail-corner.obj": "d40b02b95399451ce730f2e3efe4784e78dc5ce0e545d4ba9cfa4a2676bd9260",
+    "Preview.png": "45dcf4de65d6b64df1a290f1e678d4288efaa957bca68cda5438111d63d8b6dd"
+  },
+  "license": "../License.txt"
+}

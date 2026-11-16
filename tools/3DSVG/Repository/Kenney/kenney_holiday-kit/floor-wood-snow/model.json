@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "floor-wood-snow",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/floor-wood-snow.fbx": "ab7ca8d028ff2cb10143ec481ef4deb30ea914c92b30236ac8bde9bfd7afb985",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/floor-wood-snow.glb": "b6031010c49ce6fc243b85a23776b9584f665bd346a0af554fec191b8e9b43c6",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/floor-wood-snow.obj": "b53173e925e46aee20d32b4b022f1f79050e28e1274ad529f56f7065d72b1e1e",
+    "Models/OBJ format/floor-wood-snow.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/floor-wood-snow.png": "1897339b5ef5763ece230d98439e9b78b6c748e7d6aeb31bfc7f54a4cb98b5b5"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/floor-wood-snow.fbx": "ab7ca8d028ff2cb10143ec481ef4deb30ea914c92b30236ac8bde9bfd7afb985",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/floor-wood-snow.glb": "b6031010c49ce6fc243b85a23776b9584f665bd346a0af554fec191b8e9b43c6",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/floor-wood-snow.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/floor-wood-snow.obj": "0beb392e1e341856763c8d11e645e568f06f6e9519dd2fbf9a6712ae99da056b",
+    "Preview.png": "1897339b5ef5763ece230d98439e9b78b6c748e7d6aeb31bfc7f54a4cb98b5b5"
+  },
+  "license": "../License.txt"
+}

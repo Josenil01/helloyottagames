@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "machine-connection-hole",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/machine-connection-hole.fbx": "8c44b4692483ecf114dbba0ccbbf8b6d9f5506a171c57bb63157c29a6876984f",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/machine-connection-hole.glb": "e49c9d701f802ca1b125c7ae55d8992e03710ea10838bf536bd4ddbb3da4bf9c",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/machine-connection-hole.obj": "8fa6c3cd00275e90b25c2519d62abe88c9fb465677db1e4d90d7da0a3b1babd9",
+    "Models/OBJ format/machine-connection-hole.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/machine-connection-hole.png": "64e53465882a8438b8a6b5c9c74c6e2f01d1d2eb8702e967abbc2e0181873bd9"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/machine-connection-hole.fbx": "8c44b4692483ecf114dbba0ccbbf8b6d9f5506a171c57bb63157c29a6876984f",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/machine-connection-hole.glb": "e49c9d701f802ca1b125c7ae55d8992e03710ea10838bf536bd4ddbb3da4bf9c",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/machine-connection-hole.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/machine-connection-hole.obj": "aaec87420b520e52f807f469f75342dbfbabbd2af9b8d9cd49d3447479c4715f",
+    "Preview.png": "64e53465882a8438b8a6b5c9c74c6e2f01d1d2eb8702e967abbc2e0181873bd9"
+  },
+  "license": "../License.txt"
+}

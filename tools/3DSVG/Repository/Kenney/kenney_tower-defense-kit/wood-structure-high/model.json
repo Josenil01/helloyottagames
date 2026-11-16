@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wood-structure-high",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/wood-structure-high.fbx": "ece06579d192c55a33a17b38143e756d42e791253c7a67d34e24e677d1a6803c",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/wood-structure-high.glb": "c179575d1439d3cc22c710cf6253cd939480e1d8bd83db33f2bf81dc82cbead7",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/wood-structure-high.obj": "3edc80c2ce77b59f55678498f5d8a33f1e53983341b4c6baf2ed9d61307acd0f",
+    "Models/OBJ format/wood-structure-high.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wood-structure-high.png": "c9e2a52f45793621e1255d0871eba6eb0c138296c049c655f0165339cd906136"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/wood-structure-high.fbx": "ece06579d192c55a33a17b38143e756d42e791253c7a67d34e24e677d1a6803c",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/wood-structure-high.glb": "c179575d1439d3cc22c710cf6253cd939480e1d8bd83db33f2bf81dc82cbead7",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/wood-structure-high.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wood-structure-high.obj": "0e047addc7658f3afd576bff0cb8ce39175f53568e600a8d168b1d95dc0acc61",
+    "Preview.png": "c9e2a52f45793621e1255d0871eba6eb0c138296c049c655f0165339cd906136"
+  },
+  "license": "../License.txt"
+}

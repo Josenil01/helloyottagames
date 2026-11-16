@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "fence-door-rotate",
+  "pack": "kenney_mini-market",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/Textures/variation-a.png": "0190d68fc48bad4c980b8b10f7891741aca590a0a13cd8ecbaeb33537d47044e",
+    "Models/Textures/variation-b.png": "bb14943d14fa3382ae9d132b32c065c1f7312c4bf4f2600b50b9b265a4e4dda2",
+    "Models/FBX format/fence-door-rotate.fbx": "3e41052b0706c3be6156d165114e04557651b71a8c816a7eff0267566e37d377",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/fence-door-rotate.glb": "ae8b3335ad034a104d314c95ecbfd0b3521ccfe76812a5b63ad41018f80cee87",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/fence-door-rotate.obj": "665479258666d5d363152dec759f84aceaf42e4b0d0ff2bd7426dba1cf5b8392",
+    "Models/OBJ format/fence-door-rotate.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/fence-door-rotate.png": "eae1dcea1cabf0ad81984e857e6fd65e12e20c79a56b9f2caf246d091b5ef0d2"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/FBX/variation-a.png": "0190d68fc48bad4c980b8b10f7891741aca590a0a13cd8ecbaeb33537d47044e",
+    "Textures/FBX/variation-b.png": "bb14943d14fa3382ae9d132b32c065c1f7312c4bf4f2600b50b9b265a4e4dda2",
+    "FBX format/fence-door-rotate.fbx": "3e41052b0706c3be6156d165114e04557651b71a8c816a7eff0267566e37d377",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/GLB/variation-a.png": "0190d68fc48bad4c980b8b10f7891741aca590a0a13cd8ecbaeb33537d47044e",
+    "Textures/GLB/variation-b.png": "bb14943d14fa3382ae9d132b32c065c1f7312c4bf4f2600b50b9b265a4e4dda2",
+    "GLB format/fence-door-rotate.glb": "ae8b3335ad034a104d314c95ecbfd0b3521ccfe76812a5b63ad41018f80cee87",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/OBJ/variation-a.png": "0190d68fc48bad4c980b8b10f7891741aca590a0a13cd8ecbaeb33537d47044e",
+    "Textures/OBJ/variation-b.png": "bb14943d14fa3382ae9d132b32c065c1f7312c4bf4f2600b50b9b265a4e4dda2",
+    "OBJ format/fence-door-rotate.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/fence-door-rotate.obj": "415a1c3c468f28db6764c8abbc5bcb1e7fe6eb65c43a24052ff393fb5b68a958",
+    "Preview.png": "eae1dcea1cabf0ad81984e857e6fd65e12e20c79a56b9f2caf246d091b5ef0d2"
+  },
+  "license": "../License.txt"
+}

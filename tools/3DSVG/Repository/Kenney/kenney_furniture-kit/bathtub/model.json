@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bathtub",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/bathtub.fbx": "8229c3f2340a251edecb6ce7c1e964df4f8842f6e537ac5346ed25ce99c45ee5",
+    "Models/GLTF format/bathtub.glb": "54c405c7035aab63dc41e709dc3c50fc5bcfbc4cddc91ffc54188075a6d25d01",
+    "Models/OBJ format/bathtub.obj": "08ec12b2d68096bbecaa67987b3a4a5b752230b044b142cb8a7f4f58fedfda2a",
+    "Models/OBJ format/bathtub.mtl": "e999a5c5412f6f7f869d76929f1616e1c87b32a0eb08c875b4f0305499102501"
+  },
+  "files": {
+    "FBX format/bathtub.fbx": "8229c3f2340a251edecb6ce7c1e964df4f8842f6e537ac5346ed25ce99c45ee5",
+    "GLB format/bathtub.glb": "54c405c7035aab63dc41e709dc3c50fc5bcfbc4cddc91ffc54188075a6d25d01",
+    "OBJ format/bathtub.mtl": "cb5e99de4ba6cfbe980b956d87db05074bc0611fcdb209ea9a613872403532a7",
+    "OBJ format/bathtub.obj": "dd09f07af65cef43c6dfa1a933e116f2b65370873a1785b4589a6f8cfc8d2e3f"
+  },
+  "license": "../License.txt"
+}

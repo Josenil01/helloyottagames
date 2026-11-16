@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "catwalk-straight",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/catwalk-straight.fbx": "0e8bbf0519012e9be5952cf91b244cf47c5fe5c30df26f2e3eeee8071e10a5db",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/catwalk-straight.glb": "85797c6ce53e3f4373bc59ecd3ce951a3f6b707651def5e0bae46756051cd18d",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/catwalk-straight.obj": "79d5617c1c3ac72905525782b13a6af132c2a9dad0a341ac665a5ca6279e166e",
+    "Models/OBJ format/catwalk-straight.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/catwalk-straight.png": "0fb85dd4846971882418e3ec8d745e29bf193f17be3e2ed49fd35fcf174e16bd"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/catwalk-straight.fbx": "0e8bbf0519012e9be5952cf91b244cf47c5fe5c30df26f2e3eeee8071e10a5db",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/catwalk-straight.glb": "85797c6ce53e3f4373bc59ecd3ce951a3f6b707651def5e0bae46756051cd18d",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/catwalk-straight.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/catwalk-straight.obj": "93a1b114e5e710022514a7087ba3deb0550a0ec162a5a096e00fdbf6a8f3e8bb",
+    "Preview.png": "0fb85dd4846971882418e3ec8d745e29bf193f17be3e2ed49fd35fcf174e16bd"
+  },
+  "license": "../License.txt"
+}

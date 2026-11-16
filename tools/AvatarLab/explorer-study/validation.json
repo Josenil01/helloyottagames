@@ -1,0 +1,35 @@
+{
+  "identical_geometry": true,
+  "variants": [
+    {
+      "name": "sorridente",
+      "mesh_objects": 1,
+      "materials": 1,
+      "vertices": 448,
+      "triangles": 804,
+      "atlas": "512x512",
+      "rig": false,
+      "glb_bytes": 72256
+    },
+    {
+      "name": "apaixonado",
+      "mesh_objects": 1,
+      "materials": 1,
+      "vertices": 448,
+      "triangles": 804,
+      "atlas": "512x512",
+      "rig": false,
+      "glb_bytes": 70948
+    },
+    {
+      "name": "surpreso",
+      "mesh_objects": 1,
+      "materials": 1,
+      "vertices": 448,
+      "triangles": 804,
+      "atlas": "512x512",
+      "rig": false,
+      "glb_bytes": 72296
+    }
+  ]
+}

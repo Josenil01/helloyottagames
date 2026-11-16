@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "ship-ocean-liner-small",
+  "pack": "kenney_watercraft-pack",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/FBX format/ship-ocean-liner-small.fbx": "93efac5927a04b57539022d81e5156a4bda8f7a2baffef716484bff301addaaf",
+    "Models/GLB format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/GLB format/ship-ocean-liner-small.glb": "d1384d50769dc58260142f6115c307bf66cf307c42e7a39407c4e305e6ca7100",
+    "Models/OBJ format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/OBJ format/ship-ocean-liner-small.obj": "9c805c93098fb4789d1d60abd01c39bd5df66232a544758822203978139706f6",
+    "Models/OBJ format/ship-ocean-liner-small.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/ship-ocean-liner-small.png": "8d26ccfcd88988aab4f535c3235da2f6d13df58fbf5e7d6570d82281ab1acb46"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "FBX format/ship-ocean-liner-small.fbx": "93efac5927a04b57539022d81e5156a4bda8f7a2baffef716484bff301addaaf",
+    "Textures/GLB/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "GLB format/ship-ocean-liner-small.glb": "d1384d50769dc58260142f6115c307bf66cf307c42e7a39407c4e305e6ca7100",
+    "Textures/OBJ/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "OBJ format/ship-ocean-liner-small.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/ship-ocean-liner-small.obj": "7c8a527d86f309c0f7e137114c8a7dcc19455ff5bc47a45ac01d6b9373fd747c",
+    "Preview.png": "8d26ccfcd88988aab4f535c3235da2f6d13df58fbf5e7d6570d82281ab1acb46"
+  },
+  "license": "../License.txt"
+}

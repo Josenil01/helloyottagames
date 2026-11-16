@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "candle",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/candle.fbx": "670d28c428375b72840c6c84d3c0a98bf5b2824b1e0b9a6e1f3a6d71d24f6700",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/candle.glb": "4eea8c08c86daebbdddc454e89e3f75bb486ee7f82822bb1edb418db6d539f91",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/candle.obj": "d0165583b7ac7ec3bf289afcf9486e803e772bbfb6e2742f3c9ef7ef657a676f",
+    "Models/OBJ format/candle.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/candle.png": "51203ba4c77e8781c16643236f35d0ea0a6576c94c639f26c0042e09b81ae627"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/candle.fbx": "670d28c428375b72840c6c84d3c0a98bf5b2824b1e0b9a6e1f3a6d71d24f6700",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/candle.glb": "4eea8c08c86daebbdddc454e89e3f75bb486ee7f82822bb1edb418db6d539f91",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/candle.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/candle.obj": "7f019f721669f4770eb2ca517359fa84a66787a625182ddd5b8c3409d196aa07",
+    "Preview.png": "51203ba4c77e8781c16643236f35d0ea0a6576c94c639f26c0042e09b81ae627"
+  },
+  "license": "../License.txt"
+}

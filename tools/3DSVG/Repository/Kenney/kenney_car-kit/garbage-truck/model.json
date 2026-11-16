@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "garbage-truck",
+  "pack": "kenney_car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/FBX format/garbage-truck.fbx": "d6e9fe35e9b765d51df944a9c0a592f1b5089a7a113636add2822509ff30781c",
+    "Models/GLB format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/GLB format/garbage-truck.glb": "6f2943e0ba4c6d86eb69a9243224259d6e0f169f474228439cda0579d49d3509",
+    "Models/OBJ format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/OBJ format/garbage-truck.obj": "b1648430624514fa299cd0e7a218d6101cd9fbb0a056c333fbee50ce5b90c9eb",
+    "Models/OBJ format/garbage-truck.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/garbage-truck.png": "e6b6cd5372f59e23b43b7f764f0fd33c54e6d95f5ab30e918be587373e1c3e15"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "FBX format/garbage-truck.fbx": "d6e9fe35e9b765d51df944a9c0a592f1b5089a7a113636add2822509ff30781c",
+    "Textures/GLB/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "GLB format/garbage-truck.glb": "6f2943e0ba4c6d86eb69a9243224259d6e0f169f474228439cda0579d49d3509",
+    "Textures/OBJ/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "OBJ format/garbage-truck.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/garbage-truck.obj": "0e2aa35d0882586a670c658b4b7915f6f1feec5b467c40d9290f033003a4c1d9",
+    "Preview.png": "e6b6cd5372f59e23b43b7f764f0fd33c54e6d95f5ab30e918be587373e1c3e15"
+  },
+  "license": "../License.txt"
+}

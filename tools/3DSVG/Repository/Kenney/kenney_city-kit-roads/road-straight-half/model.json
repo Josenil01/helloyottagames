@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-straight-half",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-straight-half.fbx": "d23d18861b3f6a5c39331659814c55e767d31b6a70519cefe58101b2328cd540",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-straight-half.glb": "8dc2e2f4f6d38094f9c35004f78f20a596554454246d348db2832e6c443188bc",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-straight-half.obj": "9a3c4ad8437e006c766a98bba0082335565c04ce88736e96ff778abf1cb8bda5",
+    "Models/OBJ format/road-straight-half.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-straight-half.png": "fec4f58b8956e8315e53b61145c57935947677afdeed0620c60696dc1adf91ae"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-straight-half.fbx": "d23d18861b3f6a5c39331659814c55e767d31b6a70519cefe58101b2328cd540",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-straight-half.glb": "8dc2e2f4f6d38094f9c35004f78f20a596554454246d348db2832e6c443188bc",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-straight-half.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-straight-half.obj": "9975260666a77948ec49b7c049b20b667d32cc2f9dfb76751db8bf6c2390a744",
+    "Preview.png": "fec4f58b8956e8315e53b61145c57935947677afdeed0620c60696dc1adf91ae"
+  },
+  "license": "../License.txt"
+}

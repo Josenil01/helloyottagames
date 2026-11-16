@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "train-locomotive-c",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/train-locomotive-c.fbx": "d1d81ff06365c420e1fa52f897428114b9d3e962689449641ac6569ab76abe59",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/train-locomotive-c.glb": "f446d90590a85e94f4e00559e6fd6d34ef8646c7acd32ff21bd1d7e1774e1399",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/train-locomotive-c.obj": "de7f407356e9c096b5594497f49c59be3037bdcf7649f4cf47007d776cb1c42f",
+    "Models/OBJ format/train-locomotive-c.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/train-locomotive-c.png": "225c1dd744078532e46552ec7b925d59e25d33c37fe7b2a060190b1c898ae312"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/train-locomotive-c.fbx": "d1d81ff06365c420e1fa52f897428114b9d3e962689449641ac6569ab76abe59",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/train-locomotive-c.glb": "f446d90590a85e94f4e00559e6fd6d34ef8646c7acd32ff21bd1d7e1774e1399",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/train-locomotive-c.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/train-locomotive-c.obj": "84d8beed22d1d5e7e79340111722803e05289bec3596e6db5400dfeea742b748",
+    "Preview.png": "225c1dd744078532e46552ec7b925d59e25d33c37fe7b2a060190b1c898ae312"
+  },
+  "license": "../License.txt"
+}

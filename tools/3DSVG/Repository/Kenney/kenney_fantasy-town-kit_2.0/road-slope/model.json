@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-slope",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/road-slope.fbx": "716ba71fa8bfd6f3860dfe11c9b08c1a52d0b9476846a13d32f027b3ef6a17cc",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/road-slope.glb": "97d7e6c5aa5762de408c2053ceed88b4be77ac6d3ca79588d11ab3e1e0fa9094",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/road-slope.obj": "14bc0505076f4f4ef3cd8adcbe5c646de7208b90b6fa57e9e6d1a7f9dff57191",
+    "Models/OBJ format/road-slope.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-slope.png": "d4011acf9f8216fdf782eac9329debc691fa432b5323ac13c1f31768cf183ef8"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/road-slope.fbx": "716ba71fa8bfd6f3860dfe11c9b08c1a52d0b9476846a13d32f027b3ef6a17cc",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/road-slope.glb": "97d7e6c5aa5762de408c2053ceed88b4be77ac6d3ca79588d11ab3e1e0fa9094",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/road-slope.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-slope.obj": "e5aecdca033d5a5af9eb7d4d4f87f3d5d5ec3b860b057f29be8db040afd00c5e",
+    "Preview.png": "d4011acf9f8216fdf782eac9329debc691fa432b5323ac13c1f31768cf183ef8"
+  },
+  "license": "../License.txt"
+}

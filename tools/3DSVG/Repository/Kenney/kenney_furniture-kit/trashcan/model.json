@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "trashcan",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/trashcan.fbx": "587adb36a4a29c203e0ad478370c289d758990485c05244c7943e4d5db3ae7f8",
+    "Models/GLTF format/trashcan.glb": "e0ccc1fe50cbd05386477fdff527171d1cf7c0de2ba7ff3233f8d9561feb2561",
+    "Models/OBJ format/trashcan.obj": "b00a05f4d60d77cf133bedfd1ffdc6e22ae30272ed9b907825317ad5fc4960a4",
+    "Models/OBJ format/trashcan.mtl": "70cfdfd3c651f8ebcabbe86910f00c5775c8e3505094995953c653528f77b8de"
+  },
+  "files": {
+    "FBX format/trashcan.fbx": "587adb36a4a29c203e0ad478370c289d758990485c05244c7943e4d5db3ae7f8",
+    "GLB format/trashcan.glb": "e0ccc1fe50cbd05386477fdff527171d1cf7c0de2ba7ff3233f8d9561feb2561",
+    "OBJ format/trashcan.mtl": "9b522c2ff1d37ac99da5669b01a9d94291023ef50e1748bf43dab7c9abcfa1a8",
+    "OBJ format/trashcan.obj": "737789940d7b8a611921d9d1498bc7afe7394db122cc2c5864c35833ba019197"
+  },
+  "license": "../License.txt"
+}

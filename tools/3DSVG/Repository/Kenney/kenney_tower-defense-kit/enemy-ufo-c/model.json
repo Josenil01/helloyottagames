@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "enemy-ufo-c",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/enemy-ufo-c.fbx": "50cb67708dfdf23e7afb56918531e8bd552a6636a88bd2e1bb5239fdd36dd590",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/enemy-ufo-c.glb": "84d5f618e7498f97869fad53c23054a7ba629c9e70b1ce3862536355d32728db",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/enemy-ufo-c.obj": "1830d556bdff0c0cd2a54087f2b4fad306ff954c45c8e937e486dd1ad988f9e3",
+    "Models/OBJ format/enemy-ufo-c.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/enemy-ufo-c.png": "2399087f36fcac26f1759f98d02d70ac5774cdf256b9c06c5ca1a6333cca09f7"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/enemy-ufo-c.fbx": "50cb67708dfdf23e7afb56918531e8bd552a6636a88bd2e1bb5239fdd36dd590",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/enemy-ufo-c.glb": "84d5f618e7498f97869fad53c23054a7ba629c9e70b1ce3862536355d32728db",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/enemy-ufo-c.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/enemy-ufo-c.obj": "6ec1a1c358d0b00958b8052e1f21ad34fc2bccdc8715da0c45d103bea2049268",
+    "Preview.png": "2399087f36fcac26f1759f98d02d70ac5774cdf256b9c06c5ca1a6333cca09f7"
+  },
+  "license": "../License.txt"
+}

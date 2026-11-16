@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-wood-door",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/wall-wood-door.fbx": "1843685693d30b9afe28d43057daad0182b3730c6c9eca7ddec059eb37ccdadf",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/wall-wood-door.glb": "2aa4e982fcb6434be4e6051fcee7972799ff5350a3f36ca8bf71530b84608123",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/wall-wood-door.obj": "1271c6e653fcd358a473a88087c84c7db4639b5c84e890411a2d3bfee1073696",
+    "Models/OBJ format/wall-wood-door.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-wood-door.png": "e69f4cded3bd6ba72e8afc80516fbb85667eb3bb30a6f30e5e685778174c856a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/wall-wood-door.fbx": "1843685693d30b9afe28d43057daad0182b3730c6c9eca7ddec059eb37ccdadf",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/wall-wood-door.glb": "2aa4e982fcb6434be4e6051fcee7972799ff5350a3f36ca8bf71530b84608123",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/wall-wood-door.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-wood-door.obj": "876959324e68764cbe8ff3e8dc47254e38172055d071e8d9a8df0d02561f5c49",
+    "Preview.png": "e69f4cded3bd6ba72e8afc80516fbb85667eb3bb30a6f30e5e685778174c856a"
+  },
+  "license": "../License.txt"
+}

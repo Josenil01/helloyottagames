@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-switch",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/wall-switch.fbx": "30fdda92cbd5c85bd516448884d2a024beb318d1ca6c61b76859b88dda99cff8",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/wall-switch.glb": "2b297783053aa9b091972f31f5fc3892b7cb7572d017dd37fc22af9ac2640c20",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/wall-switch.obj": "123d1e425b01dfe6344a2f3a3da496d019068484a674928b07b18daedf3c525e",
+    "Models/OBJ format/wall-switch.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-switch.png": "c22f617c0f4ea88f6f323e1346cc5ae53964c8764419767727e4394ccbf3b672"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/wall-switch.fbx": "30fdda92cbd5c85bd516448884d2a024beb318d1ca6c61b76859b88dda99cff8",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/wall-switch.glb": "2b297783053aa9b091972f31f5fc3892b7cb7572d017dd37fc22af9ac2640c20",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/wall-switch.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-switch.obj": "8522121fbd31a4f80868a99b9d7d2af15b395bdba6ff82cdd0494392779f256f",
+    "Preview.png": "c22f617c0f4ea88f6f323e1346cc5ae53964c8764419767727e4394ccbf3b672"
+  },
+  "license": "../License.txt"
+}

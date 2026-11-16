@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "train-electric-city-c",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/train-electric-city-c.fbx": "b40222817c02199b9a997d7c3ef59031dbc3cc6708c6f6d68cdc68135bb8d3af",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/train-electric-city-c.glb": "16b3d6817e5e3fed42aa780b59f336322252d4b88b06a3003082b7f338320a76",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/train-electric-city-c.obj": "877ecc09f33293e8ce0f804a92a93de8f9ed5e7edd23d42cbdaf7e69b5ed3aa7",
+    "Models/OBJ format/train-electric-city-c.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/train-electric-city-c.png": "4d2895db1f4518465e0388d9c8d77c70236921e7e40b28e2782093055a941bb3"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/train-electric-city-c.fbx": "b40222817c02199b9a997d7c3ef59031dbc3cc6708c6f6d68cdc68135bb8d3af",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/train-electric-city-c.glb": "16b3d6817e5e3fed42aa780b59f336322252d4b88b06a3003082b7f338320a76",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/train-electric-city-c.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/train-electric-city-c.obj": "58ef9bd13c61dbe6e2488222707487f5b1b522b7aff843b095c9feb3cf86de91",
+    "Preview.png": "4d2895db1f4518465e0388d9c8d77c70236921e7e40b28e2782093055a941bb3"
+  },
+  "license": "../License.txt"
+}

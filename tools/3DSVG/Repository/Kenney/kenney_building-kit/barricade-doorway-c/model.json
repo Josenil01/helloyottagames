@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "barricade-doorway-c",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/barricade-doorway-c.fbx": "52677630bf66ffba5157593c92dd9f06d8206a8fe5f82aad57f7220e80c43b82",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/barricade-doorway-c.glb": "7152f57e742e44d1904f92fa2cb6d80294010527d0ebfb8c4891e706e01050d4",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/barricade-doorway-c.obj": "6a3cbf2f15603ca75e9644b48cd55b7fabb97e245b8558869935f2c7287f580e",
+    "Models/OBJ format/barricade-doorway-c.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/barricade-doorway-c.png": "1cbdce2053dee61da08bc19f4863528f05621a7fbd1ee05ded3b3a3dac8975b8"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/barricade-doorway-c.fbx": "52677630bf66ffba5157593c92dd9f06d8206a8fe5f82aad57f7220e80c43b82",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/barricade-doorway-c.glb": "7152f57e742e44d1904f92fa2cb6d80294010527d0ebfb8c4891e706e01050d4",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/barricade-doorway-c.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/barricade-doorway-c.obj": "ac74f7a47f64c6ace7fe4bb7d3890858c12c828e8f6a17d64d94ee89b199826f",
+    "Preview.png": "1cbdce2053dee61da08bc19f4863528f05621a7fbd1ee05ded3b3a3dac8975b8"
+  },
+  "license": "../License.txt"
+}

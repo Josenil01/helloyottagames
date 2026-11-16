@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bullet-foam-thick",
+  "pack": "kenney_blaster-kit_2.1",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Models/Textures/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "Models/FBX format/bullet-foam-thick.fbx": "84233dbdca63a55b4c361ee12cb7c9438e3781ee3fe9f77c345fa5374fc97af8",
+    "Models/GLB format/Textures/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Models/GLB format/bullet-foam-thick.glb": "ac12699af02e969be9860794d20f1750505273128864a27bff9393d7d6d3786f",
+    "Models/OBJ format/Textures/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Models/OBJ format/bullet-foam-thick.obj": "c07cf665dd02936a4560125e250bc518d0610275933dc0e3d2170f3124eafa7c",
+    "Models/OBJ format/bullet-foam-thick.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/bullet-foam-thick.png": "aab1352cf871ac914f84e35def17e64d5b19118240f60c2f896778ba1d51e8b9"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Textures/FBX/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "FBX format/bullet-foam-thick.fbx": "84233dbdca63a55b4c361ee12cb7c9438e3781ee3fe9f77c345fa5374fc97af8",
+    "Textures/GLB/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Textures/GLB/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "GLB format/bullet-foam-thick.glb": "ac12699af02e969be9860794d20f1750505273128864a27bff9393d7d6d3786f",
+    "Textures/OBJ/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Textures/OBJ/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "OBJ format/bullet-foam-thick.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/bullet-foam-thick.obj": "127ea3d37f4e72e4fef551a9c1c6a5540711a155ae604e3a45615f1a8316e29b",
+    "Preview.png": "aab1352cf871ac914f84e35def17e64d5b19118240f60c2f896778ba1d51e8b9"
+  },
+  "license": "../License.txt"
+}

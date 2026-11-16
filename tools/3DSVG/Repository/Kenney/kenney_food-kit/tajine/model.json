@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tajine",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/tajine.fbx": "43507500fac66f892cb21376f707a4998721125e74a0d417d2cd829e60ca9c7c",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/tajine.glb": "9afde098ea8798a78c6d4d44c00f43739dff4de354825b78eef4a2d52fb2399f",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/tajine.obj": "31095c7e63b5cd7e7c5231ee5cd2c34ea340e29fd2183a6b3505c9ae56e79fa3",
+    "Models/OBJ format/tajine.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tajine.png": "9b9e1a1d7334b332a2c0d43576bcef461e174219fe0d1b8da877ec0f412d1816"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/tajine.fbx": "43507500fac66f892cb21376f707a4998721125e74a0d417d2cd829e60ca9c7c",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/tajine.glb": "9afde098ea8798a78c6d4d44c00f43739dff4de354825b78eef4a2d52fb2399f",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/tajine.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tajine.obj": "0bd652ed68c320c9540f77f04a2b8d3961a3bed10838efdd2d8725a87c5c2f65",
+    "Preview.png": "9b9e1a1d7334b332a2c0d43576bcef461e174219fe0d1b8da877ec0f412d1816"
+  },
+  "license": "../License.txt"
+}

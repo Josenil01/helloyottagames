@@ -1,0 +1,44 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "fence",
+  "pack": "kenney_city-kit-suburban_20",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "9b5de86078c25ef02351a80d35ff3c978693a1044565b73eedd9ae9b5b80665d",
+    "Models/Textures/variation-a.png": "7d49db8b291751640ace09430d37da5b00ce35d00f71ea03979a0f47656abd5e",
+    "Models/Textures/variation-b.png": "476b218961c0485bc4c32f80368db7cfdd5d3f1aba2573ad941069996c89bc5f",
+    "Models/Textures/variation-c.png": "f11cf0a7b0a110da56602851b2fc65fd3ce10065f9359691da8a5689732c5903",
+    "Models/FBX format/fence.fbx": "ded136595bb2791d599065b8fdfd4ef18ea7946fa04d66c9df069bbcee7beca5",
+    "Models/GLB format/Textures/colormap.png": "9b5de86078c25ef02351a80d35ff3c978693a1044565b73eedd9ae9b5b80665d",
+    "Models/GLB format/fence.glb": "073bd2000ac51879516d49f835d5156dac4d5038085380b1232858fc3f562d02",
+    "Models/OBJ format/Textures/colormap.png": "9b5de86078c25ef02351a80d35ff3c978693a1044565b73eedd9ae9b5b80665d",
+    "Models/OBJ format/fence.obj": "290a57cbc1e602ffefd2d2e29e174d455852ed23bc837889dbb14d089e6e0640",
+    "Models/OBJ format/fence.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/fence.png": "1f17e49e0c4b4e1040875be6f29deb1006ef5551db459f232592b75622ada8f1"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "9b5de86078c25ef02351a80d35ff3c978693a1044565b73eedd9ae9b5b80665d",
+    "Textures/FBX/variation-a.png": "7d49db8b291751640ace09430d37da5b00ce35d00f71ea03979a0f47656abd5e",
+    "Textures/FBX/variation-b.png": "476b218961c0485bc4c32f80368db7cfdd5d3f1aba2573ad941069996c89bc5f",
+    "Textures/FBX/variation-c.png": "f11cf0a7b0a110da56602851b2fc65fd3ce10065f9359691da8a5689732c5903",
+    "FBX format/fence.fbx": "ded136595bb2791d599065b8fdfd4ef18ea7946fa04d66c9df069bbcee7beca5",
+    "Textures/GLB/colormap.png": "9b5de86078c25ef02351a80d35ff3c978693a1044565b73eedd9ae9b5b80665d",
+    "Textures/GLB/variation-a.png": "7d49db8b291751640ace09430d37da5b00ce35d00f71ea03979a0f47656abd5e",
+    "Textures/GLB/variation-b.png": "476b218961c0485bc4c32f80368db7cfdd5d3f1aba2573ad941069996c89bc5f",
+    "Textures/GLB/variation-c.png": "f11cf0a7b0a110da56602851b2fc65fd3ce10065f9359691da8a5689732c5903",
+    "GLB format/fence.glb": "073bd2000ac51879516d49f835d5156dac4d5038085380b1232858fc3f562d02",
+    "Textures/OBJ/colormap.png": "9b5de86078c25ef02351a80d35ff3c978693a1044565b73eedd9ae9b5b80665d",
+    "Textures/OBJ/variation-a.png": "7d49db8b291751640ace09430d37da5b00ce35d00f71ea03979a0f47656abd5e",
+    "Textures/OBJ/variation-b.png": "476b218961c0485bc4c32f80368db7cfdd5d3f1aba2573ad941069996c89bc5f",
+    "Textures/OBJ/variation-c.png": "f11cf0a7b0a110da56602851b2fc65fd3ce10065f9359691da8a5689732c5903",
+    "OBJ format/fence.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/fence.obj": "bc3996946070358583392b940d78558b3dc8df1ae1132e3cc0e3e334ce979211",
+    "Preview.png": "1f17e49e0c4b4e1040875be6f29deb1006ef5551db459f232592b75622ada8f1"
+  },
+  "license": "../License.txt"
+}

@@ -99,9 +99,19 @@ const { useState, useEffect, useRef } = React;
 
     function App() {
       const trackChallengesRef = useRef([]);
+      const feedbackTimers = useRef([]);
+      const answerLocked = useRef(false);
+      const scheduleFeedback = (callback, delay) => {
+        feedbackTimers.current.push(setTimeout(callback, delay));
+      };
 
       // Estados
       const [gameState, setGameState] = useState('cover');
+      useEffect(() => () => {
+        feedbackTimers.current.forEach(clearTimeout);
+        feedbackTimers.current = [];
+        answerLocked.current = false;
+      }, [gameState]);
       React.useLayoutEffect(() => {
         const hud = document.getElementById('hy-hud');
         if (hud) hud.style.display = gameState === 'playing' ? 'flex' : 'none';
@@ -119,6 +129,7 @@ const { useState, useEffect, useRef } = React;
       const level = trackChallengesRef.current[currentPhaseIndex % 5] || {};
 
       const startTrack = (trackIdx) => {
+        answerLocked.current = false;
         const raw = HY.rand.pick(HY.rand.NUMEROS.filter(CRITERIOS[trackIdx]), 5);
         trackChallengesRef.current = raw.map(c => ({ ...c, emoji: TRACK_EMOJIS[trackIdx] }));
         setCurrentTrack(trackIdx);
@@ -135,7 +146,7 @@ const { useState, useEffect, useRef } = React;
 
       useEffect(() => {
         if (gameState === 'trackSelect' && window.HY && window.HY.stars) {
-          HY.stars.renderGrid('hy-track-grid', { onPlay: startTrack, accentColor: '#fbbf24' });
+          HY.stars.renderGrid('hy-track-grid', { onPlay: startTrack, accentColor: '#fbbf24', emoji: i => '<img class="pirate-track-art" src="' + window.PirateAssets.base + window.PirateAssets.tracks[i] + '.svg" alt="" draggable="false">' });
         }
       }, [gameState]);
 
@@ -148,22 +159,24 @@ const { useState, useEffect, useRef } = React;
 
       // --- Lógica de Validação ---
       const checkAnswer = (value) => {
-        if (isSuccess || wrongAnswers.includes(value)) return;
+        if (answerLocked.current || isSuccess || wrongAnswers.includes(value)) return;
 
         // O valor correto agora depende de qual parcela está oculta (n1, n2 ou answer)
         const expectedValue = level[level.unknown || 'answer'];
 
         if (value === expectedValue) {
+          answerLocked.current = true;
           // Acertou!
           HY.playWin();
           HY.score.correct();
           setIsSuccess(true);
           setCoins(prev => prev + 1);
           setAnimateCoin(true);
-          setTimeout(() => setAnimateCoin(false), 600);
+          scheduleFeedback(() => setAnimateCoin(false), 600);
 
-          setTimeout(() => {
+          scheduleFeedback(() => {
             if (currentPhaseIndex + 1 < 5) {
+              answerLocked.current = false;
               setCurrentPhaseIndex(prev => prev + 1);
               setIsSuccess(false);
               setWrongAnswers([]);
@@ -182,7 +195,7 @@ const { useState, useEffect, useRef } = React;
           HY.score.wrong();
           setWrongAnswers(prev => [...prev, value]);
           setShakeWrong(true);
-          setTimeout(() => setShakeWrong(false), 400);
+          scheduleFeedback(() => setShakeWrong(false), 400);
         }
       };
 
@@ -211,19 +224,19 @@ const { useState, useEffect, useRef } = React;
           const tens = Math.floor(count / 10);
           const ones = count % 10;
           return (
-            <div className="flex flex-col items-center justify-center w-full h-full p-2 gap-1 md:gap-2 relative">
-              <div className="flex gap-1 md:gap-2">
+            <div className="pirate-quantity flex flex-col items-center justify-center w-full h-full p-2 gap-1 md:gap-2 relative">
+              <div className="pirate-tens flex gap-1 md:gap-2">
                 {Array.from({ length: tens }).map((_, i) => (
                   <span key={`t-${i}`} className="text-4xl md:text-6xl lg:text-7xl drop-shadow-md pop-anim" style={{animationDelay: `${i * 0.05}s`}} title="1 Baú = 10">
-                    🧰
+                    <window.PirateArt name="chest" alt="Um baú representa dez unidades" className="pirate-ten-art">🧰</window.PirateArt>
                   </span>
                 ))}
               </div>
               {ones > 0 && (
-                <div className="flex flex-wrap justify-center gap-1 md:gap-2 max-w-[90%]">
+                <div className="pirate-ones flex flex-wrap justify-center gap-1 md:gap-2 max-w-[90%]">
                   {Array.from({ length: ones }).map((_, i) => (
                     <span key={`o-${i}`} className="text-2xl md:text-4xl lg:text-5xl drop-shadow-md pop-anim" style={{animationDelay: `${(tens + i) * 0.05}s`}}>
-                      {emoji}
+                      <window.PirateArt name="barrel" alt="Uma unidade" className="pirate-count-art">{emoji}</window.PirateArt>
                     </span>
                   ))}
                 </div>
@@ -245,7 +258,7 @@ const { useState, useEffect, useRef } = React;
           }`}>
             {Array.from({ length: count }).map((_, i) => (
               <span key={i} className="text-3xl md:text-5xl lg:text-6xl drop-shadow-md pop-anim" style={{animationDelay: `${i * 0.05}s`}}>
-                {emoji}
+                <window.PirateArt name="barrel" alt="Uma unidade" className="pirate-count-art">{emoji}</window.PirateArt>
               </span>
             ))}
           </div>
@@ -257,7 +270,7 @@ const { useState, useEffect, useRef } = React;
         const expectedValue = level[level.unknown || 'answer'];
         return (
           <div
-            className={`rounded-3xl border-4 md:border-8 w-28 h-28 md:w-48 md:h-48 lg:w-64 lg:h-64 shadow-xl flex items-center justify-center transition-all ${
+            className={`pirate-number-box rounded-3xl border-4 md:border-8 w-28 h-28 md:w-48 md:h-48 lg:w-64 lg:h-64 shadow-xl flex items-center justify-center transition-all ${
               isSuccess ? 'bg-green-400 border-green-600 pop-anim' : 'bg-white border-indigo-900 border-dashed'
             } ${shakeWrong ? 'shake-anim border-red-500 bg-red-50' : ''}`}
             onDragOver={handleDragOver}
@@ -276,7 +289,7 @@ const { useState, useEffect, useRef } = React;
 
       // Componente: Caixa Estática (Exibe o que já é conhecido)
       const StaticBox = ({ value }) => (
-        <div className="bg-white rounded-3xl border-4 md:border-8 border-indigo-900 w-28 h-28 md:w-48 md:h-48 lg:w-64 lg:h-64 shadow-xl flex items-center justify-center overflow-hidden">
+        <div className="pirate-number-box bg-white rounded-3xl border-4 md:border-8 border-indigo-900 w-28 h-28 md:w-48 md:h-48 lg:w-64 lg:h-64 shadow-xl flex items-center justify-center overflow-hidden">
           <RenderVisualItems count={value} emoji={level.emoji} />
         </div>
       );
@@ -286,7 +299,7 @@ const { useState, useEffect, useRef } = React;
       // ------------------------------------------------------------------------
       if (gameState === 'cover') {
         return (
-          <div className="min-h-screen bg-sky-300 flex flex-col items-center justify-center p-4 relative overflow-hidden">
+          <div className="pirate-cover min-h-screen bg-sky-300 flex flex-col items-center justify-center p-4 relative overflow-hidden">
             <a href="../index.html" className="absolute top-4 left-4 text-blue-100 hover:text-blue-300 font-bold bg-blue-900/80 hover:bg-blue-800 px-4 py-2 rounded-full transition-colors z-20 border-2 border-blue-400">◀ Voltar</a>
             {/* Decoração Fundo */}
             <div className="absolute top-10 left-10 text-8xl opacity-50">☁️</div>
@@ -294,11 +307,12 @@ const { useState, useEffect, useRef } = React;
 
             {/* Mar */}
             <div className="absolute bottom-0 left-0 right-0 h-1/3 sea-bg flex items-end justify-center pb-10">
-              <div className="text-8xl md:text-[10rem] animate-pulse">⛵</div>
+              <window.PirateArt name="ship-pirate-large" className="pirate-cover-ship" />
+              <window.PirateScenery />
             </div>
 
-            <div className="bg-white/95 p-10 rounded-[3rem] shadow-2xl flex flex-col items-center text-center z-10 max-w-lg w-full border-8 border-indigo-900 mb-20">
-              <div className="text-8xl mb-4">🏴‍☠️</div>
+            <div className="pirate-cover-card bg-white/95 p-10 rounded-[3rem] shadow-2xl flex flex-col items-center text-center z-10 max-w-lg w-full border-8 border-indigo-900 mb-20">
+              <window.PirateArt name="flag-pirate" className="pirate-cover-emblem">🏴‍☠️</window.PirateArt>
               <h1 className="text-5xl font-black text-indigo-900 mb-2 tracking-tight leading-tight uppercase">
                 Matemática<br/><span className="text-4xl text-sky-500">Pirata!</span>
               </h1>
@@ -320,8 +334,9 @@ const { useState, useEffect, useRef } = React;
       // ------------------------------------------------------------------------
       if (gameState === 'trackSelect') {
         return (
-          <div key="trackSelect" className="min-h-screen flex flex-col items-center justify-center p-6 bg-blue-950">
-            <h2 className="text-4xl font-black text-yellow-400 mb-8 uppercase">⚓ Escolha a Ilha</h2>
+          <div key="trackSelect" className="pirate-map min-h-screen flex flex-col items-center justify-center p-6 bg-blue-950">
+            <window.PirateScenery />
+            <h2 className="pirate-map-heading text-4xl font-black text-yellow-400 mb-8 uppercase"><window.PirateArt name="ship-pirate-small" />Escolha a Ilha</h2>
             <div id="hy-track-grid" style={{width:'100%', maxWidth:'720px'}}></div>
             <button onClick={() => setGameState('cover')} className="mt-8 bg-blue-800 text-white px-8 py-3 rounded-full font-black">← Voltar</button>
           </div>
@@ -333,8 +348,9 @@ const { useState, useEffect, useRef } = React;
       // ------------------------------------------------------------------------
       if (gameState === 'trackComplete') {
         return (
-          <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-blue-950 text-white text-center">
-            <div className="text-8xl mb-4">🏴‍☠️</div>
+          <div className="pirate-complete min-h-screen flex flex-col items-center justify-center p-6 bg-blue-950 text-white text-center">
+            <window.PirateScenery />
+            <window.PirateArt name="chest" className="pirate-reward-art">🏴‍☠️</window.PirateArt>
             <h1 className="text-5xl font-black text-yellow-400 mb-2">Ilha {currentTrack + 1} Conquistada!</h1>
             <p className="text-2xl mb-8 text-blue-200">5 desafios superados!</p>
             <div className="flex gap-4">
@@ -349,34 +365,45 @@ const { useState, useEffect, useRef } = React;
       // TELA 2: JOGABILIDADE (LAYOUT BASEADO NA IMAGEM)
       // ------------------------------------------------------------------------
       return (
-        <div className="h-screen w-full flex flex-col relative bg-sky-200">
+        <div className="pirate-game h-screen w-full flex flex-col relative bg-sky-200">
 
           {/* Nuvens de fundo decorativas */}
           <div className="absolute top-8 left-[10%] text-white opacity-80" style={{fontSize: '8rem'}}>☁️</div>
           <div className="absolute top-4 right-[20%] text-white opacity-80" style={{fontSize: '10rem'}}>☁️</div>
 
           {/* CABEÇALHO */}
-          <div className="w-full flex justify-between items-center p-6 md:p-8 z-10">
+          <div className="pirate-header w-full flex justify-between items-center p-6 md:p-8 z-10">
             <button onClick={() => setGameState('trackSelect')} className="bg-white text-slate-800 px-4 py-2 rounded-full font-bold">← Voltar</button>
 
             {/* Contador de Moedas */}
-            <div className="flex items-center text-3xl md:text-4xl font-black text-yellow-400 drop-shadow-sm">
+            <div className="pirate-treasure-count flex items-center text-3xl md:text-4xl font-black text-yellow-400 drop-shadow-sm" role="status" aria-label={`${coins} tesouros conquistados`}>
               <span className={`mr-2 transition-all ${animateCoin ? 'text-yellow-500 scale-125' : ''}`}>
                 x{coins}
               </span>
-              <span className={`text-5xl md:text-6xl ${animateCoin ? 'coin-anim' : ''}`}>💰</span>
+              <span className={`text-5xl md:text-6xl ${animateCoin ? 'coin-anim' : ''}`}><window.PirateArt name="chest" className="pirate-counter-art">💰</window.PirateArt></span>
             </div>
           </div>
 
           {/* ÁREA DA EQUAÇÃO (CENTRO DO CÉU) */}
-          <div className="flex-1 flex items-center justify-center z-10 w-full px-2 mt-[-5vh]">
+          <div className="pirate-workspace flex-1">
+            <aside className="pirate-reference" aria-label="Referência dos ícones e valores">
+              <table>
+                <caption>Quanto vale?</caption>
+                <thead><tr><th scope="col">Ícone</th><th scope="col">Valor</th></tr></thead>
+                <tbody>
+                  <tr><td><window.PirateArt name="barrel" alt="Barril" className="pirate-reference-art">🛢️</window.PirateArt></td><td>1 unidade</td></tr>
+                  <tr><td><window.PirateArt name="chest" alt="Baú" className="pirate-reference-art">🧰</window.PirateArt></td><td>10 unidades</td></tr>
+                </tbody>
+              </table>
+            </aside>
+          <div className="pirate-equation flex items-center justify-center z-10 w-full px-2">
             <div className="flex flex-row items-center justify-center gap-2 md:gap-6 w-full max-w-5xl">
 
               {/* Caixa 1: N1 */}
               {(level.unknown === 'n1') ? <Dropzone /> : <StaticBox value={level.n1} />}
 
               {/* Operador matemático */}
-              <div className="text-5xl md:text-7xl lg:text-9xl font-black text-indigo-900 drop-shadow-md pb-2">
+              <div className="pirate-operator text-5xl md:text-7xl lg:text-9xl font-black text-indigo-900 drop-shadow-md pb-2">
                 {level.op}
               </div>
 
@@ -384,7 +411,7 @@ const { useState, useEffect, useRef } = React;
               {(level.unknown === 'n2') ? <Dropzone /> : <StaticBox value={level.n2} />}
 
               {/* Sinal de Igual */}
-              <div className="text-5xl md:text-7xl lg:text-9xl font-black text-indigo-900 drop-shadow-md pb-2">
+              <div className="pirate-operator text-5xl md:text-7xl lg:text-9xl font-black text-indigo-900 drop-shadow-md pb-2">
                 =
               </div>
 
@@ -394,8 +421,13 @@ const { useState, useEffect, useRef } = React;
             </div>
           </div>
 
+          </div>
+
           {/* ÁREA DO MAR (BOTÕES DE OPÇÕES NA PARTE INFERIOR) */}
-          <div className="h-[35vh] md:h-[40vh] w-full sea-bg flex items-center justify-center relative shadow-[inset_0_10px_20px_rgba(0,0,0,0.1)] border-t-[6px] border-[#81e6d9]/30">
+          <div className="pirate-sea h-[35vh] md:h-[40vh] w-full sea-bg flex items-center justify-center relative shadow-[inset_0_10px_20px_rgba(0,0,0,0.1)] border-t-[6px] border-[#81e6d9]/30">
+            {isSuccess && <window.PirateCannonFeedback />}
+
+            <window.PirateScenery />
 
             {/* Detalhes das ondas no mar */}
             <div className="sea-line w-32 h-2 top-8 left-10"></div>
@@ -423,7 +455,7 @@ const { useState, useEffect, useRef } = React;
                     onDragStart={(e) => handleDragStart(e, opt)}
                     onClick={() => checkAnswer(opt)} // Permite o clique como alternativa ao arrasto
                     disabled={isWrong || isSuccess}
-                    className={`w-32 h-32 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-[2rem] md:rounded-[2.5rem] flex items-center justify-center transition-all duration-300 shadow-xl ${btnClass}`}
+                    className={`pirate-option w-32 h-32 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-[2rem] md:rounded-[2.5rem] flex items-center justify-center transition-all duration-300 shadow-xl ${btnClass}`}
                   >
                     <span className="text-[5rem] md:text-[7rem] lg:text-[8rem] font-black drop-shadow-md leading-none mt-2">
                       {opt}

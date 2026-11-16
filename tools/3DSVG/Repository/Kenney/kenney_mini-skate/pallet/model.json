@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pallet",
+  "pack": "kenney_mini-skate",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "806ff16fd46a2a259485672edfdc71c3d1bce255db71c01abda9a095b5e661d2",
+    "Models/Textures/variation-a.png": "8ef3f98395dc6c687a374511be39a9c3217b1c1fe7999054a2dcf54dadb3ec28",
+    "Models/FBX format/pallet.fbx": "147a5b0d66038281894d1214ac5c8e32e9b151a00784a6f9285dc16a75b8be19",
+    "Models/GLB format/Textures/colormap.png": "806ff16fd46a2a259485672edfdc71c3d1bce255db71c01abda9a095b5e661d2",
+    "Models/GLB format/pallet.glb": "03a99f908f569a3306683f16ab4fe7f18c72892d71409e340f9ba0bff64997eb",
+    "Models/OBJ format/Textures/colormap.png": "806ff16fd46a2a259485672edfdc71c3d1bce255db71c01abda9a095b5e661d2",
+    "Models/OBJ format/pallet.obj": "0da473de5b40b218e27905bd7c7be442690859299e5d8de43c13b43b007585cb",
+    "Models/OBJ format/pallet.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/pallet.png": "7f01f2673398ca88a17ab1c0788a30a32a0d283f3a6a06d25ae10cda3e126913"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "806ff16fd46a2a259485672edfdc71c3d1bce255db71c01abda9a095b5e661d2",
+    "Textures/FBX/variation-a.png": "8ef3f98395dc6c687a374511be39a9c3217b1c1fe7999054a2dcf54dadb3ec28",
+    "FBX format/pallet.fbx": "147a5b0d66038281894d1214ac5c8e32e9b151a00784a6f9285dc16a75b8be19",
+    "Textures/GLB/colormap.png": "806ff16fd46a2a259485672edfdc71c3d1bce255db71c01abda9a095b5e661d2",
+    "Textures/GLB/variation-a.png": "8ef3f98395dc6c687a374511be39a9c3217b1c1fe7999054a2dcf54dadb3ec28",
+    "GLB format/pallet.glb": "03a99f908f569a3306683f16ab4fe7f18c72892d71409e340f9ba0bff64997eb",
+    "Textures/OBJ/colormap.png": "806ff16fd46a2a259485672edfdc71c3d1bce255db71c01abda9a095b5e661d2",
+    "Textures/OBJ/variation-a.png": "8ef3f98395dc6c687a374511be39a9c3217b1c1fe7999054a2dcf54dadb3ec28",
+    "OBJ format/pallet.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/pallet.obj": "cf973a4388480cd553b4dab95708c607d096a35fd44d719ddfcdef06752ed92c",
+    "Preview.png": "7f01f2673398ca88a17ab1c0788a30a32a0d283f3a6a06d25ae10cda3e126913"
+  },
+  "license": "../License.txt"
+}

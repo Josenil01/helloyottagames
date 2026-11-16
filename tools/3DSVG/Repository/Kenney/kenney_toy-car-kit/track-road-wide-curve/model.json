@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "track-road-wide-curve",
+  "pack": "kenney_toy-car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/Textures/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Models/Textures/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "Models/FBX format/track-road-wide-curve.fbx": "e0e639c13d0316748834f7ab8fc02f82f935a2aec1b9a41328fbec8e696dd472",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/track-road-wide-curve.glb": "52bf8111576ecb077a95ecdefa9b9e601d4e2fee3d119b48c978d322dcc7c1ad",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/track-road-wide-curve.obj": "5c6ee9bd0adef64c4a63f41328ea01912680bbf0d58e5cea6c02e7dcc6a55ce9",
+    "Models/OBJ format/track-road-wide-curve.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/track-road-wide-curve.png": "e88ffe1b97f70ebe021f90ea0b6371e02d727589bbff8b20963f56027d0f8be2"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/FBX/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/FBX/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "FBX format/track-road-wide-curve.fbx": "e0e639c13d0316748834f7ab8fc02f82f935a2aec1b9a41328fbec8e696dd472",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/GLB/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/GLB/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "GLB format/track-road-wide-curve.glb": "52bf8111576ecb077a95ecdefa9b9e601d4e2fee3d119b48c978d322dcc7c1ad",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/OBJ/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/OBJ/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "OBJ format/track-road-wide-curve.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/track-road-wide-curve.obj": "dcb9c5874a80c7c2a892e5c3d1d085d9365a742492b42fb79e53cd125fec43ee",
+    "Preview.png": "e88ffe1b97f70ebe021f90ea0b6371e02d727589bbff8b20963f56027d0f8be2"
+  },
+  "license": "../License.txt"
+}

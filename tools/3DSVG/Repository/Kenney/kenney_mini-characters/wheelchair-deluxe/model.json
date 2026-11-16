@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wheelchair-deluxe",
+  "pack": "kenney_mini-characters",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/wheelchair-deluxe.fbx": "950e49ad6f80de0bacbcd48a51c8a1adfb047bd4af48a760ea711006e01fa726",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/wheelchair-deluxe.glb": "b72046e5ce52770fc7d7cf36623d7599e7247d6071659a39df915a9fc62e942f",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/wheelchair-deluxe.obj": "3690c1e9b3a2d1d17c40231f5452e16f211d82177ba9e7db25b3ccc912908d45",
+    "Models/OBJ format/wheelchair-deluxe.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wheelchair-deluxe.png": "9a1700c13e6455690c9280ae2a1c837b302b916f9593a0175c0f3246442f2671"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/wheelchair-deluxe.fbx": "950e49ad6f80de0bacbcd48a51c8a1adfb047bd4af48a760ea711006e01fa726",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/wheelchair-deluxe.glb": "b72046e5ce52770fc7d7cf36623d7599e7247d6071659a39df915a9fc62e942f",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/wheelchair-deluxe.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wheelchair-deluxe.obj": "f6223565867f90c549468e715544c69ae34b55ecc8170bf5e649f2b7eabaeb6c",
+    "Preview.png": "9a1700c13e6455690c9280ae2a1c837b302b916f9593a0175c0f3246442f2671"
+  },
+  "license": "../License.txt"
+}

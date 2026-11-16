@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "computerScreen",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/computerScreen.fbx": "e8a9d52795ce8f7e22e48f10569cebf55aca8b81fef78bd811ba8b4e4b90adfc",
+    "Models/GLTF format/computerScreen.glb": "5942cbad29a2d2b956619569926e81d50a4174403d592fece6556e57632dc643",
+    "Models/OBJ format/computerScreen.obj": "848ae85155d913cb84b6289d7d169b6c172f3954e48a9d77eb783dcca279baf2",
+    "Models/OBJ format/computerScreen.mtl": "8ef639de4b20b15181d963ec50d47c100d29b056bf5e56e06d394dd92b93d939"
+  },
+  "files": {
+    "FBX format/computerScreen.fbx": "e8a9d52795ce8f7e22e48f10569cebf55aca8b81fef78bd811ba8b4e4b90adfc",
+    "GLB format/computerScreen.glb": "5942cbad29a2d2b956619569926e81d50a4174403d592fece6556e57632dc643",
+    "OBJ format/computerScreen.mtl": "926b0ea26c54ca2e7e5adf12e400339f20072a028ae2ee3228f5b2be8e37d044",
+    "OBJ format/computerScreen.obj": "9cdef7d5da9f609df2fbf9c0af6dc3d208b36d6cb975d4ff37b85ea4c9c53d97"
+  },
+  "license": "../License.txt"
+}

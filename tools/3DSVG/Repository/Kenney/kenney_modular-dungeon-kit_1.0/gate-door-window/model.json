@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "gate-door-window",
+  "pack": "kenney_modular-dungeon-kit_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "fc9e729b10296cccc9466ecbb4dac7ea0575e2a0798a72ed94d41b0b8a73d824",
+    "Models/Textures/variation-a.png": "5429990fc32206c84c5e8a656f787ad05506f6c05251ba09acb92d58755be881",
+    "Models/Textures/variation-b.png": "fc8a0f62bf9820c5f4fd5136353d8511f5643d06483403214fbb2ba76880a380",
+    "Models/FBX format/gate-door-window.fbx": "9c046c75c3d2d27d9ede9ecfa4149a7fbed541d23bcb7c0ebe9828f69a843bbc",
+    "Models/GLB format/Textures/colormap.png": "fc9e729b10296cccc9466ecbb4dac7ea0575e2a0798a72ed94d41b0b8a73d824",
+    "Models/GLB format/gate-door-window.glb": "9fca8b1307efae4c4305c646ab61c1532c06ad389e011de604d58a49912642db",
+    "Models/OBJ format/Textures/colormap.png": "fc9e729b10296cccc9466ecbb4dac7ea0575e2a0798a72ed94d41b0b8a73d824",
+    "Models/OBJ format/gate-door-window.obj": "ff3bd703380b3b84515d4ef958b30d5966849ae05209acdccbe5f00468cc4647",
+    "Models/OBJ format/gate-door-window.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/gate-door-window.png": "4ee4180aed2ee4743e77df0348d12f10b15f82b0f20c591ddc74a8ac4689e7f8"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "fc9e729b10296cccc9466ecbb4dac7ea0575e2a0798a72ed94d41b0b8a73d824",
+    "Textures/FBX/variation-a.png": "5429990fc32206c84c5e8a656f787ad05506f6c05251ba09acb92d58755be881",
+    "Textures/FBX/variation-b.png": "fc8a0f62bf9820c5f4fd5136353d8511f5643d06483403214fbb2ba76880a380",
+    "FBX format/gate-door-window.fbx": "9c046c75c3d2d27d9ede9ecfa4149a7fbed541d23bcb7c0ebe9828f69a843bbc",
+    "Textures/GLB/colormap.png": "fc9e729b10296cccc9466ecbb4dac7ea0575e2a0798a72ed94d41b0b8a73d824",
+    "Textures/GLB/variation-a.png": "5429990fc32206c84c5e8a656f787ad05506f6c05251ba09acb92d58755be881",
+    "Textures/GLB/variation-b.png": "fc8a0f62bf9820c5f4fd5136353d8511f5643d06483403214fbb2ba76880a380",
+    "GLB format/gate-door-window.glb": "9fca8b1307efae4c4305c646ab61c1532c06ad389e011de604d58a49912642db",
+    "Textures/OBJ/colormap.png": "fc9e729b10296cccc9466ecbb4dac7ea0575e2a0798a72ed94d41b0b8a73d824",
+    "Textures/OBJ/variation-a.png": "5429990fc32206c84c5e8a656f787ad05506f6c05251ba09acb92d58755be881",
+    "Textures/OBJ/variation-b.png": "fc8a0f62bf9820c5f4fd5136353d8511f5643d06483403214fbb2ba76880a380",
+    "OBJ format/gate-door-window.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/gate-door-window.obj": "e2a997e2bc039af7dfc0482074d3773e4b1779d3b4e1207f90449e5b109b89fb",
+    "Preview.png": "4ee4180aed2ee4743e77df0348d12f10b15f82b0f20c591ddc74a8ac4689e7f8"
+  },
+  "license": "../License.txt"
+}

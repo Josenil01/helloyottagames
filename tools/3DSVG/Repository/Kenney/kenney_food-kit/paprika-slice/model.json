@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "paprika-slice",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/paprika-slice.fbx": "7f233a7f9307a7471507ff2eadbb63c7ba094a922a26ae180fa4d7a678b5dfcb",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/paprika-slice.glb": "aa3f8d8e9b3a751e0e73de3c778afc0bdeaad45c62f6fd1d149ddb8472e19324",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/paprika-slice.obj": "a419c383175318bef4191b31ae64f745a2453bbb0bdd3ad0a3b30e4c327531df",
+    "Models/OBJ format/paprika-slice.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/paprika-slice.png": "8ec54ac073e79c3fdfc9aa77f771b4f135b738e364ca142cf791b5b036fa1618"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/paprika-slice.fbx": "7f233a7f9307a7471507ff2eadbb63c7ba094a922a26ae180fa4d7a678b5dfcb",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/paprika-slice.glb": "aa3f8d8e9b3a751e0e73de3c778afc0bdeaad45c62f6fd1d149ddb8472e19324",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/paprika-slice.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/paprika-slice.obj": "bba1ab5f1ebf1caed5d53439b4479bf71bb3ee0a26937e4fbd74768f17a95a2d",
+    "Preview.png": "8ec54ac073e79c3fdfc9aa77f771b4f135b738e364ca142cf791b5b036fa1618"
+  },
+  "license": "../License.txt"
+}

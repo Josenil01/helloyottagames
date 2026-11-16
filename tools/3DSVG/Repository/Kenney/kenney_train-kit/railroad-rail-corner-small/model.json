@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "railroad-rail-corner-small",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/railroad-rail-corner-small.fbx": "d093021189d3dc92dc07d83733db36fc76325488baaadf95c16c0a4a42feab53",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/railroad-rail-corner-small.glb": "0f6cc1d10a0e7a60b83555a4a15b6964edc016315bb0ac56d09b77659919378f",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/railroad-rail-corner-small.obj": "0784e55211538b4ded480669a59fbce50d8cd247d0086ae4fb99e436401d5ed1",
+    "Models/OBJ format/railroad-rail-corner-small.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/railroad-rail-corner-small.png": "0a9685b24a4e6657247fb0d1e614fb8e7a1149ff5143b494795eb92bd1472ca4"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/railroad-rail-corner-small.fbx": "d093021189d3dc92dc07d83733db36fc76325488baaadf95c16c0a4a42feab53",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/railroad-rail-corner-small.glb": "0f6cc1d10a0e7a60b83555a4a15b6964edc016315bb0ac56d09b77659919378f",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/railroad-rail-corner-small.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/railroad-rail-corner-small.obj": "b18a3f55d3acc330a5a14cb090a93753a8fdcae0f8f17521e08b5197ee2a9ac5",
+    "Preview.png": "0a9685b24a4e6657247fb0d1e614fb8e7a1149ff5143b494795eb92bd1472ca4"
+  },
+  "license": "../License.txt"
+}

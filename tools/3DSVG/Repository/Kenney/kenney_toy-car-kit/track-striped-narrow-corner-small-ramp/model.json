@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "track-striped-narrow-corner-small-ramp",
+  "pack": "kenney_toy-car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/Textures/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Models/Textures/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "Models/FBX format/track-striped-narrow-corner-small-ramp.fbx": "c46020b38f95cff7649774d6982195a591b2e62c559c932b517790c5942951f1",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/track-striped-narrow-corner-small-ramp.glb": "5f0bc982f128780f3b06109576aa3392c97d9f6b2257dae2aa7fbb68e03bd07c",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/track-striped-narrow-corner-small-ramp.obj": "3674735e66c7d50dc78252bb732477296e79a6591311db4b1bf85d99bbeecc35",
+    "Models/OBJ format/track-striped-narrow-corner-small-ramp.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/track-striped-narrow-corner-small-ramp.png": "d27f0f55328128f869a4820dc612eec1072db3ac59bf33c845422488dabd9833"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/FBX/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/FBX/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "FBX format/track-striped-narrow-corner-small-ramp.fbx": "c46020b38f95cff7649774d6982195a591b2e62c559c932b517790c5942951f1",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/GLB/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/GLB/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "GLB format/track-striped-narrow-corner-small-ramp.glb": "5f0bc982f128780f3b06109576aa3392c97d9f6b2257dae2aa7fbb68e03bd07c",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/OBJ/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/OBJ/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "OBJ format/track-striped-narrow-corner-small-ramp.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/track-striped-narrow-corner-small-ramp.obj": "24bdd7ed60fe8c6d5d6b5d8e8fd17cea7228e072cde377fd59318a0c87e55da6",
+    "Preview.png": "d27f0f55328128f869a4820dc612eec1072db3ac59bf33c845422488dabd9833"
+  },
+  "license": "../License.txt"
+}

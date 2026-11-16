@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "chocolate",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/chocolate.fbx": "a1df9dade419a550987a50e28052415f6bc35a4d780ab62d8d143a187f5bcee9",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/chocolate.glb": "40087c3e876830cfcc0a2fbd47f97d3727a4bef450689834f49d971406e4e80e",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/chocolate.obj": "c9b2a0ae2ac5bb33f17a0ab6ce7499b9961260d741eddbb64505f5e7d67e3454",
+    "Models/OBJ format/chocolate.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/chocolate.png": "6bf7527e1c75d09be32c963e646f58179f7c49cecea5946f94789715d92200fc"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/chocolate.fbx": "a1df9dade419a550987a50e28052415f6bc35a4d780ab62d8d143a187f5bcee9",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/chocolate.glb": "40087c3e876830cfcc0a2fbd47f97d3727a4bef450689834f49d971406e4e80e",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/chocolate.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/chocolate.obj": "6c61764a23a37861cc28b8c96683f95d9d9a554f9d0740eb1104089d64c649ce",
+    "Preview.png": "6bf7527e1c75d09be32c963e646f58179f7c49cecea5946f94789715d92200fc"
+  },
+  "license": "../License.txt"
+}

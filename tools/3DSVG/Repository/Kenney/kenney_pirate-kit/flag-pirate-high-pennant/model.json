@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "flag-pirate-high-pennant",
+  "pack": "kenney_pirate-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/FBX format/flag-pirate-high-pennant.fbx": "f4bce6107e3553f1ba6573f92f075bc429ee2f7f99f4afc6b15671acde0d7862",
+    "Models/GLB format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/GLB format/flag-pirate-high-pennant.glb": "baa86b7557b1875afa56054bd41963acbb39e6a7cd5667162066f505a6a3664e",
+    "Models/OBJ format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/OBJ format/flag-pirate-high-pennant.obj": "1ae52934d9a2a8785cf3d770a2d11bb58e0258bf4d9d5952c6509705f1fe4c6e",
+    "Models/OBJ format/flag-pirate-high-pennant.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/flag-pirate-high-pennant.png": "64ae3260e500b81dd78cb1527840d97de727bdeee1340013638a383f5b1d78af"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "FBX format/flag-pirate-high-pennant.fbx": "f4bce6107e3553f1ba6573f92f075bc429ee2f7f99f4afc6b15671acde0d7862",
+    "Textures/GLB/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "GLB format/flag-pirate-high-pennant.glb": "baa86b7557b1875afa56054bd41963acbb39e6a7cd5667162066f505a6a3664e",
+    "Textures/OBJ/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "OBJ format/flag-pirate-high-pennant.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/flag-pirate-high-pennant.obj": "5851e69dd6cb58e3bad2ccf519ee3f1ec577b6d2cc19a7752934da6e7b63b074",
+    "Preview.png": "64ae3260e500b81dd78cb1527840d97de727bdeee1340013638a383f5b1d78af"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-detail-diagonal",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/wall-detail-diagonal.fbx": "a068b7b0463810ddd08fc2ef974621d4a65ce8faed12f5f8077671e96aa13474",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/wall-detail-diagonal.glb": "c568992d9f558b0f8778124c965770a7486d5ca7b371dc2fb3154cd6c0dfd528",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/wall-detail-diagonal.obj": "4da8b48eab527f02cb872d76f0a83d75b11f7c1b7bdf26546ee62bf146cd24a2",
+    "Models/OBJ format/wall-detail-diagonal.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-detail-diagonal.png": "af110cefb0bfb5846e601b15605c1846c61d30a71aec45c4b17dfd7a08ed7610"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/wall-detail-diagonal.fbx": "a068b7b0463810ddd08fc2ef974621d4a65ce8faed12f5f8077671e96aa13474",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/wall-detail-diagonal.glb": "c568992d9f558b0f8778124c965770a7486d5ca7b371dc2fb3154cd6c0dfd528",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/wall-detail-diagonal.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-detail-diagonal.obj": "d6c27e1c0c009a44cb4280bc267221860b3c908a1b622a41b3084fc064aec630",
+    "Preview.png": "af110cefb0bfb5846e601b15605c1846c61d30a71aec45c4b17dfd7a08ed7610"
+  },
+  "license": "../License.txt"
+}

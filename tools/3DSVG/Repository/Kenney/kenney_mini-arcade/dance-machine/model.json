@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "dance-machine",
+  "pack": "kenney_mini-arcade",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/Textures/variation-a.png": "5c07119cb871747ed78ff74f52f228564c7920c543b240727a877c47d123cd65",
+    "Models/Textures/variation-b.png": "f62d84198dae68ec5df788a335ea502b4fc2d51b0e912d188bb870693b469fa3",
+    "Models/FBX format/dance-machine.fbx": "9dc9986caa1a01433110b18a8078f4a535b05d20973b8cb464a6e640dd517506",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/dance-machine.glb": "6e95079a00b096b2201c00e7b5fa0284fd68a3f3512f5c6823025189e4b15eec",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/dance-machine.obj": "d800f4599d1867d0d1d62e3ea268e829580ff3283c4aee38bfb8864f4cbeba22",
+    "Models/OBJ format/dance-machine.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/dance-machine.png": "50cc171fe6525e734f7cc062d54c3d1d64a2599f21246b8648d55b0bf4722a44"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/FBX/variation-a.png": "5c07119cb871747ed78ff74f52f228564c7920c543b240727a877c47d123cd65",
+    "Textures/FBX/variation-b.png": "f62d84198dae68ec5df788a335ea502b4fc2d51b0e912d188bb870693b469fa3",
+    "FBX format/dance-machine.fbx": "9dc9986caa1a01433110b18a8078f4a535b05d20973b8cb464a6e640dd517506",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/GLB/variation-a.png": "5c07119cb871747ed78ff74f52f228564c7920c543b240727a877c47d123cd65",
+    "Textures/GLB/variation-b.png": "f62d84198dae68ec5df788a335ea502b4fc2d51b0e912d188bb870693b469fa3",
+    "GLB format/dance-machine.glb": "6e95079a00b096b2201c00e7b5fa0284fd68a3f3512f5c6823025189e4b15eec",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/OBJ/variation-a.png": "5c07119cb871747ed78ff74f52f228564c7920c543b240727a877c47d123cd65",
+    "Textures/OBJ/variation-b.png": "f62d84198dae68ec5df788a335ea502b4fc2d51b0e912d188bb870693b469fa3",
+    "OBJ format/dance-machine.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/dance-machine.obj": "cc548b35381bb26376166ddb556a78b3a9258c43b15c52c0959c861d4de544b1",
+    "Preview.png": "50cc171fe6525e734f7cc062d54c3d1d64a2599f21246b8648d55b0bf4722a44"
+  },
+  "license": "../License.txt"
+}

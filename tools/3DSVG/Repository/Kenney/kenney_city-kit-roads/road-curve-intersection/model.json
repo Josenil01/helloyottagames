@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-curve-intersection",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-curve-intersection.fbx": "9ab5b6e02de7b6bc9d26275faf8900dfdf80c601e01b2df60f852d5959192aa4",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-curve-intersection.glb": "76aa1cd40ab3fb649920c8c06d8a37d25d2dda990425603be370e360d587759c",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-curve-intersection.obj": "c2d2a0ec5c658ec6682587f3aa7d0b4b535d75049e55b79bc26b024a5c42fe9a",
+    "Models/OBJ format/road-curve-intersection.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-curve-intersection.png": "c21e4171c552cc153bd3add7d40e240d29bc4be21c656e67aafee65bd555f439"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-curve-intersection.fbx": "9ab5b6e02de7b6bc9d26275faf8900dfdf80c601e01b2df60f852d5959192aa4",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-curve-intersection.glb": "76aa1cd40ab3fb649920c8c06d8a37d25d2dda990425603be370e360d587759c",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-curve-intersection.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-curve-intersection.obj": "afd5eb0baf9dfa5d5d523ae5345cde6124a2779b23a7ab138cabeb33f45d43fa",
+    "Preview.png": "c21e4171c552cc153bd3add7d40e240d29bc4be21c656e67aafee65bd555f439"
+  },
+  "license": "../License.txt"
+}

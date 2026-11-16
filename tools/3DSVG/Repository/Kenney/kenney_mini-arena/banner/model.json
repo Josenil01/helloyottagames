@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "banner",
+  "pack": "kenney_mini-arena",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/FBX format/banner.fbx": "1857dc721750a37d08fa4c9809462bcfb6412bdde1a40c035a4fa067cb486808",
+    "Models/GLB format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/GLB format/banner.glb": "5f4d18fa9b72689593eb85fb9c755203de37bfb2d373da3a38f6d704f99b04bb",
+    "Models/OBJ format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/OBJ format/banner.obj": "8567d218e29e49f5c3c57109d1c33a326e49ad4cb6bbe278688cfc26e76aea59",
+    "Models/OBJ format/banner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/banner.png": "5565cd1ec2519c15c067f81a765953f3a6508a4311d76caa93327852598a12ce"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "FBX format/banner.fbx": "1857dc721750a37d08fa4c9809462bcfb6412bdde1a40c035a4fa067cb486808",
+    "Textures/GLB/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "GLB format/banner.glb": "5f4d18fa9b72689593eb85fb9c755203de37bfb2d373da3a38f6d704f99b04bb",
+    "Textures/OBJ/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "OBJ format/banner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/banner.obj": "b5297481db4b27682361af13595938c633e38c20bbcfbae4a222c008df7d4264",
+    "Preview.png": "5565cd1ec2519c15c067f81a765953f3a6508a4311d76caa93327852598a12ce"
+  },
+  "license": "../License.txt"
+}

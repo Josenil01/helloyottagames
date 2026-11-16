@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "fountain-curved",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/fountain-curved.fbx": "4b708a9417991c23173d7fbab986970c4b6beb94acae6e7298911115eabfb77d",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/fountain-curved.glb": "aec3a6ebb4eda01f392054d3ee203d8cee74c9c45d584d3d9e5e2052949bca3e",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/fountain-curved.obj": "697428f3fce8019b165c2634118c78377d2a4f3467070ffe818d4675f5779d5c",
+    "Models/OBJ format/fountain-curved.mtl": "dfb8d91b6e73e7057517d31492fb6c1bcfff48e79e0c452b2d307cbb4f1367d3",
+    "Previews/fountain-curved.png": "630172b79c86f10ea4c643789e3f3cd81b98f6b006a44880ecf68c6b1f2db733"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/fountain-curved.fbx": "4b708a9417991c23173d7fbab986970c4b6beb94acae6e7298911115eabfb77d",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/fountain-curved.glb": "aec3a6ebb4eda01f392054d3ee203d8cee74c9c45d584d3d9e5e2052949bca3e",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/fountain-curved.mtl": "0388a4cd0dfed1b2233210415efb76a411bcd384c4cf2f26cc0ad3c195bd1671",
+    "OBJ format/fountain-curved.obj": "b58790e598de89f7633e2b920607193fbeb009c7b3d5c19f357fb589686fac0a",
+    "Preview.png": "630172b79c86f10ea4c643789e3f3cd81b98f6b006a44880ecf68c6b1f2db733"
+  },
+  "license": "../License.txt"
+}

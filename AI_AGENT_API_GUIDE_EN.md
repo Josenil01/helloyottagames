@@ -2,6 +2,14 @@
 
 This guide explains how an AI agent can connect to the Hello Yotta Games public API and consume catalog data.
 
+## Local documentation review — 2026-10-08
+
+These endpoints are static JSON files generated from game cards in the root `index.html`; they are not a gameplay, student progress or authentication service. The local catalog contains 40 games and its `generatedAt` value is `2026-09-25T19:58:21Z`. Consumers must still read `total` dynamically.
+
+The local schema and game paths were checked; production availability was not tested. Descriptions can lag behind the active game: Potions currently loads a color sorting puzzle, while its catalog description still mentions arithmetic. Monster Duel, Organiza Tudo and Rhyme Factory also have descriptions requiring review. Geometry Galaxy and Sphinx Riddles preserve the original folder URLs. Correct the root cards before regenerating both JSON files; do not treat `generatedAt` as proof that every description matches gameplay.
+
+See [local documentation audit](docs/auditoria-documentacao-2026-10-08.md) for the current implementation inventory. The contracts documented below remain unchanged.
+
 ## API Base
 
 - Public domain: https://games.helloyotta.com

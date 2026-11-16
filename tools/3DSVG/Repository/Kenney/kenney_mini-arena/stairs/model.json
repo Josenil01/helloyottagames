@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stairs",
+  "pack": "kenney_mini-arena",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/FBX format/stairs.fbx": "6692baeacb71d2ef1c797286c9149d56019009639dd545200d9ff748c4ce23db",
+    "Models/GLB format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/GLB format/stairs.glb": "0720b8dc1c595f8325a40db3c01ebd1564d3ad82c7e8ecaf67228c9a0fde93cc",
+    "Models/OBJ format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/OBJ format/stairs.obj": "b6773c2d359e518ae366c3c6cb180c2e8a8a1c338dceb40225327d3dd8a2df6c",
+    "Models/OBJ format/stairs.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/stairs.png": "2e8a5de13f0ab90f2eba3b8d8a26271c2e4a7e5980d7080023817a5174f7dcbf"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "FBX format/stairs.fbx": "6692baeacb71d2ef1c797286c9149d56019009639dd545200d9ff748c4ce23db",
+    "Textures/GLB/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "GLB format/stairs.glb": "0720b8dc1c595f8325a40db3c01ebd1564d3ad82c7e8ecaf67228c9a0fde93cc",
+    "Textures/OBJ/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "OBJ format/stairs.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/stairs.obj": "97422d06921906f7796159973f369af71f6a05c1877ae04310bd704b5c335225",
+    "Preview.png": "2e8a5de13f0ab90f2eba3b8d8a26271c2e4a7e5980d7080023817a5174f7dcbf"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "trap-spikes",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/trap-spikes.fbx": "b487891f1ce62c1e44039caf30de61273e5de03d0fc50b0119c9964472e16dca",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/trap-spikes.glb": "ca34a7b762154f0c43992f01a4e3f6f800d42f6451e954c07fea4d7a72f17b1b",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/trap-spikes.obj": "3d14e461812e7a435c919dbce83812254e45afc1188c06c1cd17f6904ef85fc5",
+    "Models/OBJ format/trap-spikes.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/trap-spikes.png": "29d3eaa31e163b998314741cd3b10285b71053b5761449a102c7c233ac864306"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/trap-spikes.fbx": "b487891f1ce62c1e44039caf30de61273e5de03d0fc50b0119c9964472e16dca",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/trap-spikes.glb": "ca34a7b762154f0c43992f01a4e3f6f800d42f6451e954c07fea4d7a72f17b1b",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/trap-spikes.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/trap-spikes.obj": "2b871b9d993c0f88d60a21a2b045e8d58cdd3a30869d700fab5d4f9cd232e7ea",
+    "Preview.png": "29d3eaa31e163b998314741cd3b10285b71053b5761449a102c7c233ac864306"
+  },
+  "license": "../License.txt"
+}

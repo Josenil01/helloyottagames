@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "hot-dog",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/hot-dog.fbx": "f8b989260bef397a6b52edb75183f827139599c676eecc3cf8edae945888f473",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/hot-dog.glb": "9248794c75184c195d495d93281a756e850a0f299e9734ac2bd88aa900d720d6",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/hot-dog.obj": "95a5c16364a26a8b3658952393876bb74a772d5ebfab966fa4be788beaf6e157",
+    "Models/OBJ format/hot-dog.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/hot-dog.png": "66a0ec8c0379a0ec0f47343d8110bbd4b74b5a3da8795a19d229426dad2eb530"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/hot-dog.fbx": "f8b989260bef397a6b52edb75183f827139599c676eecc3cf8edae945888f473",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/hot-dog.glb": "9248794c75184c195d495d93281a756e850a0f299e9734ac2bd88aa900d720d6",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/hot-dog.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/hot-dog.obj": "9b4b40c0f683d200822bbc20b6ef290a6862101d1e4a8a48cf6115332d95a0c5",
+    "Preview.png": "66a0ec8c0379a0ec0f47343d8110bbd4b74b5a3da8795a19d229426dad2eb530"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-intersection-barrier",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-intersection-barrier.fbx": "ec61c63fab696ad8a30e5a4736368a49aafce8ab71df2665b63b895d0c99207c",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-intersection-barrier.glb": "924922890e2d01eb1c953b6def47b87392717cd7243e44ae4b4117f5eae0c670",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-intersection-barrier.obj": "0d1a7481322db7cd6c7a9214edb63a2ff821a262aa971f34b3ffea679cde43d2",
+    "Models/OBJ format/road-intersection-barrier.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-intersection-barrier.png": "9e665ea85313494812a68e86ec2d1d220168555d3c5c5c730af201d158000187"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-intersection-barrier.fbx": "ec61c63fab696ad8a30e5a4736368a49aafce8ab71df2665b63b895d0c99207c",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-intersection-barrier.glb": "924922890e2d01eb1c953b6def47b87392717cd7243e44ae4b4117f5eae0c670",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-intersection-barrier.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-intersection-barrier.obj": "4812d41936d7776de947d5e8bb42febff1176a807ad318ad7085405f29a466c6",
+    "Preview.png": "9e665ea85313494812a68e86ec2d1d220168555d3c5c5c730af201d158000187"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stall-toilets",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/stall-toilets.fbx": "5ce6f8b039469ffe0592a1d0c9486ca3e64ffec70b3f61d0bfbf6cd33d252087",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/stall-toilets.glb": "7c06bc0d9d4a2823089d093679d2d988930eac92fb07f4255fc922d423b6ba3f",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/stall-toilets.obj": "5f8a78038a1a292a599d946308b331be90048da243a76d3c3df26b924cdc31fa",
+    "Models/OBJ format/stall-toilets.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/stall-toilets.png": "996a87f22ef368364beaf07d9b0d366c81a4475115f037350892c337fef973f8"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/stall-toilets.fbx": "5ce6f8b039469ffe0592a1d0c9486ca3e64ffec70b3f61d0bfbf6cd33d252087",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/stall-toilets.glb": "7c06bc0d9d4a2823089d093679d2d988930eac92fb07f4255fc922d423b6ba3f",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/stall-toilets.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/stall-toilets.obj": "10d510f7f736a1e4448638de2009f01685b1b9796ceb3fc96298c1100e572c77",
+    "Preview.png": "996a87f22ef368364beaf07d9b0d366c81a4475115f037350892c337fef973f8"
+  },
+  "license": "../License.txt"
+}

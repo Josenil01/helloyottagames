@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "conveyor-stripe-part-middle",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/conveyor-stripe-part-middle.fbx": "36348157d72434affda5829e4d3ec8ab7328d979d952f29505a64817d890febc",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/conveyor-stripe-part-middle.glb": "142f84e8968faa035a235ba10b0363284ef5a6449a3f9ae9e9f7f33749c5beaa",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/conveyor-stripe-part-middle.obj": "f3352a9bbace6f6838524713dfc36f39f0d8c05974059bc6db671946733283d3",
+    "Models/OBJ format/conveyor-stripe-part-middle.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/conveyor-stripe-part-middle.png": "3ca1973d20ae1454365f6d281d5bc906e2a1094cf72f93520098d7dda7259daf"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/conveyor-stripe-part-middle.fbx": "36348157d72434affda5829e4d3ec8ab7328d979d952f29505a64817d890febc",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/conveyor-stripe-part-middle.glb": "142f84e8968faa035a235ba10b0363284ef5a6449a3f9ae9e9f7f33749c5beaa",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/conveyor-stripe-part-middle.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/conveyor-stripe-part-middle.obj": "1816527bc0054cd477484ed94bddb6441df09bdd70a05b9cdebf43e9a18d18ea",
+    "Preview.png": "3ca1973d20ae1454365f6d281d5bc906e2a1094cf72f93520098d7dda7259daf"
+  },
+  "license": "../License.txt"
+}

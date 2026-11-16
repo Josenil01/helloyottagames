@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "arrow-standing",
+  "pack": "kenney_watercraft-pack",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/FBX format/arrow-standing.fbx": "363b6cc43690448a01777ef3337d1efc74d1bd57a7a6e25d97fd5f4a416eef96",
+    "Models/GLB format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/GLB format/arrow-standing.glb": "d780459e3403e03285034ba4c4258b4f60ed09b600b28943d09d144fa895649a",
+    "Models/OBJ format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/OBJ format/arrow-standing.obj": "c07cfbb67c443e3b52df2d1a966c49a611e255a7585fab527d2d9f507dafe3a5",
+    "Models/OBJ format/arrow-standing.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/arrow-standing.png": "39ff8de05211f2398cb3bb8fad9cebb802fe8d7c340c796fab9dddc947aeb9a0"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "FBX format/arrow-standing.fbx": "363b6cc43690448a01777ef3337d1efc74d1bd57a7a6e25d97fd5f4a416eef96",
+    "Textures/GLB/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "GLB format/arrow-standing.glb": "d780459e3403e03285034ba4c4258b4f60ed09b600b28943d09d144fa895649a",
+    "Textures/OBJ/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "OBJ format/arrow-standing.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/arrow-standing.obj": "4b52f0671414c08db00084c4abe9d4c69dbe6c50835bcb0ced7d7f569310982b",
+    "Preview.png": "39ff8de05211f2398cb3bb8fad9cebb802fe8d7c340c796fab9dddc947aeb9a0"
+  },
+  "license": "../License.txt"
+}

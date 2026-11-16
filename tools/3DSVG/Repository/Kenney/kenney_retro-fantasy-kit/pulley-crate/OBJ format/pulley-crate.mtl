@@ -1,0 +1,14 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl planks
+Kd 1 1 1
+map_Kd ../Textures/OBJ/planks.png
+
+newmtl details
+Kd 1 1 1
+map_Kd ../Textures/OBJ/details.png
+
+newmtl barrel
+Kd 1 1 1
+map_Kd ../Textures/OBJ/barrel.png
+

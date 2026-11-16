@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "roof-slanted-corner-b",
+  "pack": "kenney_modular-buildings",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Models/Textures/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Models/Textures/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "Models/FBX format/roof-slanted-corner-b.fbx": "46cf97f4fe54fbce9ead1759f40fbefe00f50be5c63c30feed3b9e643816cc0f",
+    "Models/GLB format/Textures/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Models/GLB format/roof-slanted-corner-b.glb": "6d898e694bc230b16de71f4a43f5d1269f8324e03ffe723775ec5944873f104d",
+    "Models/OBJ format/Textures/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Models/OBJ format/roof-slanted-corner-b.obj": "77baddf0760ae61a84a6e57f01d36542e3c0e1b778e74e30b367ef3df852e2c2",
+    "Models/OBJ format/roof-slanted-corner-b.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/roof-slanted-corner-b.png": "6e4edb800935d9664efed13d144f4792d711fa9f565a6b1756b0ecf9a38d61ab"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Textures/FBX/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Textures/FBX/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "FBX format/roof-slanted-corner-b.fbx": "46cf97f4fe54fbce9ead1759f40fbefe00f50be5c63c30feed3b9e643816cc0f",
+    "Textures/GLB/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Textures/GLB/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Textures/GLB/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "GLB format/roof-slanted-corner-b.glb": "6d898e694bc230b16de71f4a43f5d1269f8324e03ffe723775ec5944873f104d",
+    "Textures/OBJ/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Textures/OBJ/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Textures/OBJ/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "OBJ format/roof-slanted-corner-b.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/roof-slanted-corner-b.obj": "10e9159075a9e9f83eb8c7e85683f5c4d937559b213ff695a48c7ef3c6a7f0bb",
+    "Preview.png": "6e4edb800935d9664efed13d144f4792d711fa9f565a6b1756b0ecf9a38d61ab"
+  },
+  "license": "../License.txt"
+}

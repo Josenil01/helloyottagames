@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bench",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/bench.fbx": "2c570d3a665509f8f246b7dae42900f07a285b2db86743f0fccce7ad6cdf262f",
+    "Models/GLTF format/bench.glb": "ba05a6d23a5a5a44da016757632070e47ff7587ce10e2f6d6d52328b4cf5489b",
+    "Models/OBJ format/bench.obj": "49b730f0a276ee02ed5478d653f54cf9a5ec4755f1e94986939ba047780ba255",
+    "Models/OBJ format/bench.mtl": "eb2bffff6262d9b032d9ae1de51467559b6a03da66cd68ac5ecd34ecd004c0c5"
+  },
+  "files": {
+    "FBX format/bench.fbx": "2c570d3a665509f8f246b7dae42900f07a285b2db86743f0fccce7ad6cdf262f",
+    "GLB format/bench.glb": "ba05a6d23a5a5a44da016757632070e47ff7587ce10e2f6d6d52328b4cf5489b",
+    "OBJ format/bench.mtl": "9e288bee18bb8b6b628dec6d8d8acbaba02d65903f607a1be6681b4207798c0b",
+    "OBJ format/bench.obj": "e0a1e969e506d2b496b0ae8164c291ce8a48ba2053ef7b45274c9c725540f30a"
+  },
+  "license": "../License.txt"
+}

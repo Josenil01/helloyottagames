@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "building-edges-door",
+  "pack": "kenney_modular-buildings",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Models/Textures/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Models/Textures/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "Models/FBX format/building-edges-door.fbx": "ce2a6ca286dbfec2a01ed90dd234fde0db26da1d1c1845144c8fb27d4e82dc6a",
+    "Models/GLB format/Textures/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Models/GLB format/building-edges-door.glb": "557a9ffc5584b6973afa5a0ac388558ec16dfd6fc6b61fb39198ebdeda306fbd",
+    "Models/OBJ format/Textures/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Models/OBJ format/building-edges-door.obj": "15fa57fbec2f6b5962d9a4b8f03de2123b5e5aee99402606f13068f5b3aa5e74",
+    "Models/OBJ format/building-edges-door.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/building-edges-door.png": "35f902c21641a5bf47904efa5df7f87b8999d2b76549fb13236d312ad04ff47d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Textures/FBX/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Textures/FBX/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "FBX format/building-edges-door.fbx": "ce2a6ca286dbfec2a01ed90dd234fde0db26da1d1c1845144c8fb27d4e82dc6a",
+    "Textures/GLB/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Textures/GLB/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Textures/GLB/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "GLB format/building-edges-door.glb": "557a9ffc5584b6973afa5a0ac388558ec16dfd6fc6b61fb39198ebdeda306fbd",
+    "Textures/OBJ/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Textures/OBJ/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Textures/OBJ/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "OBJ format/building-edges-door.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/building-edges-door.obj": "8534aa5571632f4ac35d1e6adc3c5de0fc9557bd86ea0cf708117a71acb3debd",
+    "Preview.png": "35f902c21641a5bf47904efa5df7f87b8999d2b76549fb13236d312ad04ff47d"
+  },
+  "license": "../License.txt"
+}

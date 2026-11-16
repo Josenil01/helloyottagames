@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "conveyor-long-sides",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/conveyor-long-sides.fbx": "bd1d24e0aa10846a18586798d7eb3286a632edf422eb620f6713fecbc8f439d5",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/conveyor-long-sides.glb": "511a8f3613c20ccf8039cdc63b7635b9e2fba928c2c9a8a13a63b3e33864b310",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/conveyor-long-sides.obj": "406337d26f6df95f73079344307648d0999775476289b04a7a1fb6ff187ee190",
+    "Models/OBJ format/conveyor-long-sides.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/conveyor-long-sides.png": "e484f11bc45578413533c041c6fd0c6ba4a3b88432dad41a174563841c33636f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/conveyor-long-sides.fbx": "bd1d24e0aa10846a18586798d7eb3286a632edf422eb620f6713fecbc8f439d5",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/conveyor-long-sides.glb": "511a8f3613c20ccf8039cdc63b7635b9e2fba928c2c9a8a13a63b3e33864b310",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/conveyor-long-sides.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/conveyor-long-sides.obj": "1e9ae5306cbf9788ee621381f1d7bcd3b74a8397a7f7bac109ae24751f0ba4c4",
+    "Preview.png": "e484f11bc45578413533c041c6fd0c6ba4a3b88432dad41a174563841c33636f"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "train-carriage-tank-large",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/train-carriage-tank-large.fbx": "b49e462b86012737695de049250facfb8d12827f459bf5770bc0fdcf547be2f7",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/train-carriage-tank-large.glb": "12ef83eea173dcceb180b4fa1909276d094477ea06235e27c4bcfd9257fa45fe",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/train-carriage-tank-large.obj": "085b0cf78da7203d87f6d83f4acdca5d09267b141edbc0d437263bb25003c7d2",
+    "Models/OBJ format/train-carriage-tank-large.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/train-carriage-tank-large.png": "278dfc2ffad14165cd6c2084a449881053587e5321d833d2cbdc5881824e9f27"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/train-carriage-tank-large.fbx": "b49e462b86012737695de049250facfb8d12827f459bf5770bc0fdcf547be2f7",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/train-carriage-tank-large.glb": "12ef83eea173dcceb180b4fa1909276d094477ea06235e27c4bcfd9257fa45fe",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/train-carriage-tank-large.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/train-carriage-tank-large.obj": "713bdf8c8f8c3e8708127b6161a6ec833a109c4c9b2b0835d05c29fbf76afebd",
+    "Preview.png": "278dfc2ffad14165cd6c2084a449881053587e5321d833d2cbdc5881824e9f27"
+  },
+  "license": "../License.txt"
+}

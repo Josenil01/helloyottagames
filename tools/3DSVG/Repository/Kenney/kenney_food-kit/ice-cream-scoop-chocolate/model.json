@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "ice-cream-scoop-chocolate",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/ice-cream-scoop-chocolate.fbx": "7e86b183a33db17b78bc0b34e2396242deafc4e290c401a3a865a0c6eadfb9b4",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/ice-cream-scoop-chocolate.glb": "875c88628bb286744d7c17540fdff00fca0bfff7254a42326b32ec2bb9ffecd7",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/ice-cream-scoop-chocolate.obj": "028d081ad2ad58a5eb36c3a9b3e3298496bcc6d0749d148da85db52cbfa2f2ee",
+    "Models/OBJ format/ice-cream-scoop-chocolate.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/ice-cream-scoop-chocolate.png": "e696d99587d35823fb5ff23994468ee3f85c23258bd51bc0637692b57ecf1449"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/ice-cream-scoop-chocolate.fbx": "7e86b183a33db17b78bc0b34e2396242deafc4e290c401a3a865a0c6eadfb9b4",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/ice-cream-scoop-chocolate.glb": "875c88628bb286744d7c17540fdff00fca0bfff7254a42326b32ec2bb9ffecd7",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/ice-cream-scoop-chocolate.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/ice-cream-scoop-chocolate.obj": "1d3f1cf0597db14c14aafc0d3d0e94f18b6a4944065c79afbad5156a0072cd5d",
+    "Preview.png": "e696d99587d35823fb5ff23994468ee3f85c23258bd51bc0637692b57ecf1449"
+  },
+  "license": "../License.txt"
+}

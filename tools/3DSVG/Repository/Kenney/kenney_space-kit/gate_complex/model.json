@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "gate_complex",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/gate_complex.fbx": "db9294fdba717b51c5783ac4c7d6fb9c77258a2ecbf805cde2c89689c8ad9732",
+    "Models/GLTF format/gate_complex.glb": "6c0914bd5886928760fab54fc602aafd1441314a7c08c9cd30fad2a3f9191b90",
+    "Models/OBJ format/gate_complex.obj": "43de38c80654c858449e595d9e5b5044f27415f3acb5e96af9169e37a2bbd4d5",
+    "Models/OBJ format/gate_complex.mtl": "939c8ed4258c12063d16b6e82797d554347c25ad64f24cd008cdb63131a78b76"
+  },
+  "files": {
+    "FBX format/gate_complex.fbx": "db9294fdba717b51c5783ac4c7d6fb9c77258a2ecbf805cde2c89689c8ad9732",
+    "GLB format/gate_complex.glb": "6c0914bd5886928760fab54fc602aafd1441314a7c08c9cd30fad2a3f9191b90",
+    "OBJ format/gate_complex.mtl": "939c8ed4258c12063d16b6e82797d554347c25ad64f24cd008cdb63131a78b76",
+    "OBJ format/gate_complex.obj": "e8b4b0603912697f6fc19ab0bc81d43eadb9cd5697b48657152571e4c6af34dd"
+  },
+  "license": "../License.txt"
+}

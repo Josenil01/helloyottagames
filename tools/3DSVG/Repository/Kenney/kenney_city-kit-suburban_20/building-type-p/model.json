@@ -1,0 +1,44 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "building-type-p",
+  "pack": "kenney_city-kit-suburban_20",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "9b5de86078c25ef02351a80d35ff3c978693a1044565b73eedd9ae9b5b80665d",
+    "Models/Textures/variation-a.png": "7d49db8b291751640ace09430d37da5b00ce35d00f71ea03979a0f47656abd5e",
+    "Models/Textures/variation-b.png": "476b218961c0485bc4c32f80368db7cfdd5d3f1aba2573ad941069996c89bc5f",
+    "Models/Textures/variation-c.png": "f11cf0a7b0a110da56602851b2fc65fd3ce10065f9359691da8a5689732c5903",
+    "Models/FBX format/building-type-p.fbx": "a6fc4771147c14b7f1719a8092e03570e38dc76aa5060ce72ffc4d9ba97f7357",
+    "Models/GLB format/Textures/colormap.png": "9b5de86078c25ef02351a80d35ff3c978693a1044565b73eedd9ae9b5b80665d",
+    "Models/GLB format/building-type-p.glb": "561b2eff15bd2bfe2799a8a049cafc70a1c7bfb6e35f3b2a4d95c8f4f376458c",
+    "Models/OBJ format/Textures/colormap.png": "9b5de86078c25ef02351a80d35ff3c978693a1044565b73eedd9ae9b5b80665d",
+    "Models/OBJ format/building-type-p.obj": "f5d0e7b156db4da273954da42effc7a97c4e01e923bd86ed3e68b827b452a160",
+    "Models/OBJ format/building-type-p.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/building-type-p.png": "d2938a875c9c5470d2988c0e6ef4e19f281f876dc82a664d6fc1042c94c02662"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "9b5de86078c25ef02351a80d35ff3c978693a1044565b73eedd9ae9b5b80665d",
+    "Textures/FBX/variation-a.png": "7d49db8b291751640ace09430d37da5b00ce35d00f71ea03979a0f47656abd5e",
+    "Textures/FBX/variation-b.png": "476b218961c0485bc4c32f80368db7cfdd5d3f1aba2573ad941069996c89bc5f",
+    "Textures/FBX/variation-c.png": "f11cf0a7b0a110da56602851b2fc65fd3ce10065f9359691da8a5689732c5903",
+    "FBX format/building-type-p.fbx": "a6fc4771147c14b7f1719a8092e03570e38dc76aa5060ce72ffc4d9ba97f7357",
+    "Textures/GLB/colormap.png": "9b5de86078c25ef02351a80d35ff3c978693a1044565b73eedd9ae9b5b80665d",
+    "Textures/GLB/variation-a.png": "7d49db8b291751640ace09430d37da5b00ce35d00f71ea03979a0f47656abd5e",
+    "Textures/GLB/variation-b.png": "476b218961c0485bc4c32f80368db7cfdd5d3f1aba2573ad941069996c89bc5f",
+    "Textures/GLB/variation-c.png": "f11cf0a7b0a110da56602851b2fc65fd3ce10065f9359691da8a5689732c5903",
+    "GLB format/building-type-p.glb": "561b2eff15bd2bfe2799a8a049cafc70a1c7bfb6e35f3b2a4d95c8f4f376458c",
+    "Textures/OBJ/colormap.png": "9b5de86078c25ef02351a80d35ff3c978693a1044565b73eedd9ae9b5b80665d",
+    "Textures/OBJ/variation-a.png": "7d49db8b291751640ace09430d37da5b00ce35d00f71ea03979a0f47656abd5e",
+    "Textures/OBJ/variation-b.png": "476b218961c0485bc4c32f80368db7cfdd5d3f1aba2573ad941069996c89bc5f",
+    "Textures/OBJ/variation-c.png": "f11cf0a7b0a110da56602851b2fc65fd3ce10065f9359691da8a5689732c5903",
+    "OBJ format/building-type-p.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/building-type-p.obj": "be4f9f4c9251b221dfcc143e17226f5e0523ffc95f1bb17ff96d3c01b66a748d",
+    "Preview.png": "d2938a875c9c5470d2988c0e6ef4e19f281f876dc82a664d6fc1042c94c02662"
+  },
+  "license": "../License.txt"
+}

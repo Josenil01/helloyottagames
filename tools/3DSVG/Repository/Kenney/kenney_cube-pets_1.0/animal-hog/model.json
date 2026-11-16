@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "animal-hog",
+  "pack": "kenney_cube-pets_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/FBX format/animal-hog.fbx": "ac3671aff1f4e852d9ebe5b0247c076c086b5f1a9a688ff275a42fc78d25211a",
+    "Models/GLB format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/GLB format/animal-hog.glb": "978b137c139f65c5659632bd9c12a521fbd44b5756168653157b069db8f2faf9",
+    "Models/OBJ format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/OBJ format/animal-hog.obj": "4c1ffe8809078e42d501173007d072ec949fe4e36553fa82520a1357ae78436a",
+    "Models/OBJ format/animal-hog.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/animal-hog.png": "1054159727c7d0e4ba5d3fdd3e601aab3eb6dd4724403900e38de2f4d5bd957d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "FBX format/animal-hog.fbx": "ac3671aff1f4e852d9ebe5b0247c076c086b5f1a9a688ff275a42fc78d25211a",
+    "Textures/GLB/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "GLB format/animal-hog.glb": "978b137c139f65c5659632bd9c12a521fbd44b5756168653157b069db8f2faf9",
+    "Textures/OBJ/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "OBJ format/animal-hog.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/animal-hog.obj": "602a28436bfb5705a64f0b717d2677eb507a56a9af992837c44ff762df6fa8ba",
+    "Preview.png": "1054159727c7d0e4ba5d3fdd3e601aab3eb6dd4724403900e38de2f4d5bd957d"
+  },
+  "license": "../License.txt"
+}

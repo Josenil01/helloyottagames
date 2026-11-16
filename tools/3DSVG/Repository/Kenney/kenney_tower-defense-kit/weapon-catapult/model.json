@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "weapon-catapult",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/weapon-catapult.fbx": "17e710d32d0fcdc3e42762fd8e0b165c0a48f5b90ad220f0b58f60c23063cd07",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/weapon-catapult.glb": "fdc0d340bf8920b13238b0172727a524b2d433ddd3536a9fbd9b67e370310404",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/weapon-catapult.obj": "563d89e012a31722320f75ba06dfaa6f37cb3dcc45e26e765e1128795a0b1b27",
+    "Models/OBJ format/weapon-catapult.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/weapon-catapult.png": "0ccfffd5f042b1e320c73263a0bc2ef562cacd3e68aa2a61c6c1edff7b95865b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/weapon-catapult.fbx": "17e710d32d0fcdc3e42762fd8e0b165c0a48f5b90ad220f0b58f60c23063cd07",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/weapon-catapult.glb": "fdc0d340bf8920b13238b0172727a524b2d433ddd3536a9fbd9b67e370310404",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/weapon-catapult.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/weapon-catapult.obj": "8db6d4817c329e3597fd9a2b84e38ad5b02296091a5b16f60dad83599cb1049b",
+    "Preview.png": "0ccfffd5f042b1e320c73263a0bc2ef562cacd3e68aa2a61c6c1edff7b95865b"
+  },
+  "license": "../License.txt"
+}

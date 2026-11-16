@@ -1,6 +1,7 @@
 const { useState, useEffect, useRef } = React;
 
-if (window.HY && window.HY.stars) HY.stars.init('canhoes-ouro');
+// A versão matemática abaixo fica preservada como referência; a aplicação ativa é Enigmas da Esfinge.
+if (window.HY && window.HY.stars) HY.stars.init('enigmas-esfinge');
 
     // Texto de tarefa por trilha (decorativo)
     const TRACK_TASKS = [
@@ -410,4 +411,4 @@ if (window.HY && window.HY.stars) HY.stars.init('canhoes-ouro');
     }
 
     const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(<App />);
+    root.render(<window.SphinxApp />);

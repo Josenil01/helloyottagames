@@ -1,0 +1,44 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "animal-bison",
+  "pack": "kenney_prototype-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/Textures/variation-a.png": "7729166aa03f419ba26c5b884b9ddf28939c279fc35534ce0cdc3be590563bc7",
+    "Models/Textures/variation-b.png": "18a20d60a2fb19ae2ecb76d0a0756c956bd9c9e5138e10978fb82be4ed74cc17",
+    "Models/Textures/variation-c.png": "73a4547b1332a1a43d5bf2412f974f0df0e27576e7ce75ac34588061d99a304d",
+    "Models/FBX format/animal-bison.fbx": "fb273a7e9813aed6c13300612bee1652408143a644e74aff421e33bddecaed74",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/animal-bison.glb": "5ea84c8e9e6aa717125881096450436db320cfd22dcc31300807ea9c3d24040b",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/animal-bison.obj": "ec8888f2c3a26e0bc5644fa8fa0f2b26adfa45673d43b90098e64123e405bd8f",
+    "Models/OBJ format/animal-bison.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/animal-bison.png": "1f0ddde6e9380e54db0e91757dc3e6e4e24324d10eb59ad40aba6953b82f0d43"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/FBX/variation-a.png": "7729166aa03f419ba26c5b884b9ddf28939c279fc35534ce0cdc3be590563bc7",
+    "Textures/FBX/variation-b.png": "18a20d60a2fb19ae2ecb76d0a0756c956bd9c9e5138e10978fb82be4ed74cc17",
+    "Textures/FBX/variation-c.png": "73a4547b1332a1a43d5bf2412f974f0df0e27576e7ce75ac34588061d99a304d",
+    "FBX format/animal-bison.fbx": "fb273a7e9813aed6c13300612bee1652408143a644e74aff421e33bddecaed74",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/GLB/variation-a.png": "7729166aa03f419ba26c5b884b9ddf28939c279fc35534ce0cdc3be590563bc7",
+    "Textures/GLB/variation-b.png": "18a20d60a2fb19ae2ecb76d0a0756c956bd9c9e5138e10978fb82be4ed74cc17",
+    "Textures/GLB/variation-c.png": "73a4547b1332a1a43d5bf2412f974f0df0e27576e7ce75ac34588061d99a304d",
+    "GLB format/animal-bison.glb": "5ea84c8e9e6aa717125881096450436db320cfd22dcc31300807ea9c3d24040b",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/OBJ/variation-a.png": "7729166aa03f419ba26c5b884b9ddf28939c279fc35534ce0cdc3be590563bc7",
+    "Textures/OBJ/variation-b.png": "18a20d60a2fb19ae2ecb76d0a0756c956bd9c9e5138e10978fb82be4ed74cc17",
+    "Textures/OBJ/variation-c.png": "73a4547b1332a1a43d5bf2412f974f0df0e27576e7ce75ac34588061d99a304d",
+    "OBJ format/animal-bison.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/animal-bison.obj": "ad4aaa39182a78d1fe01849385122ce9275d79a151c36f5fa39af20de407546b",
+    "Preview.png": "1f0ddde6e9380e54db0e91757dc3e6e4e24324d10eb59ad40aba6953b82f0d43"
+  },
+  "license": "../License.txt"
+}

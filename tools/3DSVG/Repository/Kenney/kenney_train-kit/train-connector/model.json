@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "train-connector",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/train-connector.fbx": "e52c6dd43cde6db13626ad68b40aae8c7ed7079e8025a86f5bb89d96e563905e",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/train-connector.glb": "9d9d5154308e9298c0904be683d7471d23ab80bf00523f1d82326258ab7c2a4e",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/train-connector.obj": "07443e9281839b88036eceb5cba1aa6ba524c8b6948b7644dd495dc589b02d74",
+    "Models/OBJ format/train-connector.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/train-connector.png": "9ed2723cfbc0aa3ffd19a4bc0d9f852fbb0f6e40e12f050ef472fd57a5e69b78"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/train-connector.fbx": "e52c6dd43cde6db13626ad68b40aae8c7ed7079e8025a86f5bb89d96e563905e",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/train-connector.glb": "9d9d5154308e9298c0904be683d7471d23ab80bf00523f1d82326258ab7c2a4e",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/train-connector.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/train-connector.obj": "de927ffd7bd4a9c19c9f7bc7281d46b2987102c30261bee03c434cdb565a0580",
+    "Preview.png": "9ed2723cfbc0aa3ffd19a4bc0d9f852fbb0f6e40e12f050ef472fd57a5e69b78"
+  },
+  "license": "../License.txt"
+}

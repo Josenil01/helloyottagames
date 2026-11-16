@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tree-autumn-trunk",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/tree-autumn-trunk.fbx": "d9c1bb1c86862aec7c2d7747b7293e2e29975225af3c22b806585fa13d64f6f0",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/tree-autumn-trunk.glb": "72815ab1b66d91c3f00f309d3715a10a3b202ef8fc86bef35ad6722a47d01aed",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/tree-autumn-trunk.obj": "e5f4b32855a209f1cb3044fdecf72ddfb1fea182519a41153a0f5c5046d54191",
+    "Models/OBJ format/tree-autumn-trunk.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tree-autumn-trunk.png": "9c530d31b60776bd4979bcca38877204c00b35b5d97f4561844af85218f9ddd4"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/tree-autumn-trunk.fbx": "d9c1bb1c86862aec7c2d7747b7293e2e29975225af3c22b806585fa13d64f6f0",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/tree-autumn-trunk.glb": "72815ab1b66d91c3f00f309d3715a10a3b202ef8fc86bef35ad6722a47d01aed",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/tree-autumn-trunk.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tree-autumn-trunk.obj": "86bcbd807c07846e65f66bc0de963efbb05ae5c3a56c788c6a0bf42d78080452",
+    "Preview.png": "9c530d31b60776bd4979bcca38877204c00b35b5d97f4561844af85218f9ddd4"
+  },
+  "license": "../License.txt"
+}

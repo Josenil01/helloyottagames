@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "train-electric-subway-a",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/train-electric-subway-a.fbx": "71b7ac55c231f6e67a9e5c6c7b8ad79f1f792abfcd88d3a03b184e29e8585958",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/train-electric-subway-a.glb": "394f305ad8f27ec3af59080bdbc362961946541dca8925301979e75696787f7e",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/train-electric-subway-a.obj": "d553ca86c698521305f83bdaaea6ce00b7ee4a014381bd56058f81801e571ec5",
+    "Models/OBJ format/train-electric-subway-a.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/train-electric-subway-a.png": "34ea6663d7594babbf309cf7f92004a6c47c4491a909d48d67f1cd1b3ece36c7"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/train-electric-subway-a.fbx": "71b7ac55c231f6e67a9e5c6c7b8ad79f1f792abfcd88d3a03b184e29e8585958",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/train-electric-subway-a.glb": "394f305ad8f27ec3af59080bdbc362961946541dca8925301979e75696787f7e",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/train-electric-subway-a.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/train-electric-subway-a.obj": "86e18a28191b5b4f908da61629df6c2e1085b225e6719d9012c976b6f8e9b7f7",
+    "Preview.png": "34ea6663d7594babbf309cf7f92004a6c47c4491a909d48d67f1cd1b3ece36c7"
+  },
+  "license": "../License.txt"
+}

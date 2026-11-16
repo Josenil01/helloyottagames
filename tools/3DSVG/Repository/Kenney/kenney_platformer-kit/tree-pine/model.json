@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tree-pine",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/tree-pine.fbx": "c2246529af8621df96a60f3941715569748b46c22e5ac8ebaab1dcf2c70e40b3",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/tree-pine.glb": "520ddf910ae7904871fc906169d5e76364d5ff643a92cb983563c1a24d995ebb",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/tree-pine.obj": "3340492a4ec1f0d0ef9f68dcebb552905beb4dcab4cd8823345dc615c9992f86",
+    "Models/OBJ format/tree-pine.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tree-pine.png": "e3852a53269b5dc43484555494a46d12b4626c1796894aa8b3b3e6ef8017b4b2"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/tree-pine.fbx": "c2246529af8621df96a60f3941715569748b46c22e5ac8ebaab1dcf2c70e40b3",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/tree-pine.glb": "520ddf910ae7904871fc906169d5e76364d5ff643a92cb983563c1a24d995ebb",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/tree-pine.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tree-pine.obj": "67e8ce1f777246859cc442e045a2cc520da79a7417193bc7a1c7d38f0007d071",
+    "Preview.png": "e3852a53269b5dc43484555494a46d12b4626c1796894aa8b3b3e6ef8017b4b2"
+  },
+  "license": "../License.txt"
+}

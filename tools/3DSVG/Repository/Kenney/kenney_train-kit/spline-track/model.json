@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "spline-track",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/spline-track.fbx": "ff3a85f6e4e8f3109aeb0b00f42d64f14da0b95621e22bb154606da7a87c5bde",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/spline-track.glb": "75940a354bda3a39ed12beaf657912ead4d78e0d83ee5cb1379f0c79de00e25b",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/spline-track.obj": "a6a37e5cbd2368f122c8309a30386597a568f679680d8b086582425ec5e937c1",
+    "Models/OBJ format/spline-track.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/spline-track.png": "0270c4f7efcc7a253ca8261a06a90f893604aa5a9744cdc9a9ecf848305bf0fc"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/spline-track.fbx": "ff3a85f6e4e8f3109aeb0b00f42d64f14da0b95621e22bb154606da7a87c5bde",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/spline-track.glb": "75940a354bda3a39ed12beaf657912ead4d78e0d83ee5cb1379f0c79de00e25b",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/spline-track.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/spline-track.obj": "ad8be314d94ecf21d1cc2f3fa6a263c985bc5ab34ca6837c393ff4b06238f634",
+    "Preview.png": "0270c4f7efcc7a253ca8261a06a90f893604aa5a9744cdc9a9ecf848305bf0fc"
+  },
+  "license": "../License.txt"
+}

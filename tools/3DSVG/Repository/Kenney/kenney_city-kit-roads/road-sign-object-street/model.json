@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-sign-object-street",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-sign-object-street.fbx": "b5a34207fa5c668ba8df519bceffc38a3a3ef23bfe68b378f75f9fc67072c354",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-sign-object-street.glb": "c44690d1d12f1a45dd1a24254fecf95c62c1ba088ef6104d677bf716f2a1cad3",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-sign-object-street.obj": "86873d9b2a973a1fdeeb5125bc0f17ed6b96169d7f506fa84bda52de9e7fa211",
+    "Models/OBJ format/road-sign-object-street.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-sign-object-street.png": "6c6386dea42566c45bf460a27bcd79a9f97359862267166d1bda6efc787144a6"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-sign-object-street.fbx": "b5a34207fa5c668ba8df519bceffc38a3a3ef23bfe68b378f75f9fc67072c354",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-sign-object-street.glb": "c44690d1d12f1a45dd1a24254fecf95c62c1ba088ef6104d677bf716f2a1cad3",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-sign-object-street.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-sign-object-street.obj": "aff8aa98ff2261a03f211fc76e0d0e5f62c3cc9e64d2f4e821caece38fd58225",
+    "Preview.png": "6c6386dea42566c45bf460a27bcd79a9f97359862267166d1bda6efc787144a6"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "plating-wide",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/plating-wide.fbx": "8fb3610b4b5e4870e4b5c36c29c211aa0c071c411aa8093f829f78f669c4bf59",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/plating-wide.glb": "a257871403fa58c079520f3f470347ca36f77a1356248d238f0b22eb6b03c55c",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/plating-wide.obj": "f1fe530d0f63151e21b271b50bcfc5fdb1f914e7eaa1a34ea7e8c51d9d0b86da",
+    "Models/OBJ format/plating-wide.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/plating-wide.png": "6901a5c1f43113a5d72fc716e3989d03ea7c8a5f76a3f84f1007adbcdb6470c8"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/plating-wide.fbx": "8fb3610b4b5e4870e4b5c36c29c211aa0c071c411aa8093f829f78f669c4bf59",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/plating-wide.glb": "a257871403fa58c079520f3f470347ca36f77a1356248d238f0b22eb6b03c55c",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/plating-wide.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/plating-wide.obj": "baf39616d456ffa3f60f7d8dcdd8475573d51ce0db857ef48993a4bbda8161d3",
+    "Preview.png": "6901a5c1f43113a5d72fc716e3989d03ea7c8a5f76a3f84f1007adbcdb6470c8"
+  },
+  "license": "../License.txt"
+}

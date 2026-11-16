@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bones",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/bones.fbx": "b5046661a92934d8b7a2ed9bc67fcdd81a5c990a8ceb6b46dd1007d267d25485",
+    "Models/GLTF format/bones.glb": "d42d859e91beb903a09c4eecf4ccb169ae77b84e475a6b773d6ecf30644371be",
+    "Models/OBJ format/bones.obj": "bff31f9d9ca1988b52d3e1363c3aced12b5ce4178d638a5e9c5c589879fc4fd6",
+    "Models/OBJ format/bones.mtl": "4fa1affe2fc38e3d7795c17ba2310b7f6a00bed2204ce5526ff1c77004fb699c"
+  },
+  "files": {
+    "FBX format/bones.fbx": "b5046661a92934d8b7a2ed9bc67fcdd81a5c990a8ceb6b46dd1007d267d25485",
+    "GLB format/bones.glb": "d42d859e91beb903a09c4eecf4ccb169ae77b84e475a6b773d6ecf30644371be",
+    "OBJ format/bones.mtl": "4fa1affe2fc38e3d7795c17ba2310b7f6a00bed2204ce5526ff1c77004fb699c",
+    "OBJ format/bones.obj": "c2440d4eaed47eecb92ddf5068b694b226383b19f54b549b705826ecd85bdc69"
+  },
+  "license": "../License.txt"
+}

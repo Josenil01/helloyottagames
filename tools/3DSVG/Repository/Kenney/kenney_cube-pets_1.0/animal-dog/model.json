@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "animal-dog",
+  "pack": "kenney_cube-pets_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/FBX format/animal-dog.fbx": "4ce6bc9180b03f7c4c51acac6ef1d6e77e5fa1202588720fb80c5fef0ce8d72b",
+    "Models/GLB format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/GLB format/animal-dog.glb": "c127d71ac8794f9710313bbb44800ae33a79f1182cf5c523c4233cc10a93851f",
+    "Models/OBJ format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/OBJ format/animal-dog.obj": "4c93cfed52ae47aee37acb71692cef01969398bfd1bc9ae2b3789c132ade113a",
+    "Models/OBJ format/animal-dog.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/animal-dog.png": "d40a34a1980ae0a6f3ce204da196185d163b2836f642403350b8125f05f537fe"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "FBX format/animal-dog.fbx": "4ce6bc9180b03f7c4c51acac6ef1d6e77e5fa1202588720fb80c5fef0ce8d72b",
+    "Textures/GLB/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "GLB format/animal-dog.glb": "c127d71ac8794f9710313bbb44800ae33a79f1182cf5c523c4233cc10a93851f",
+    "Textures/OBJ/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "OBJ format/animal-dog.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/animal-dog.obj": "7eb2887067b5cbf00bca6079c6bee68c7af905009d2e8bf636a344321f9766a0",
+    "Preview.png": "d40a34a1980ae0a6f3ce204da196185d163b2836f642403350b8125f05f537fe"
+  },
+  "license": "../License.txt"
+}

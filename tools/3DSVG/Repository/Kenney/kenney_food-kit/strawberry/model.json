@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "strawberry",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/strawberry.fbx": "0c34ffe0344ad3da14aae118ff6489ba47a44253348bc1530998b0989f80eff8",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/strawberry.glb": "685828642a92681b474c29abbd9cabe98c7bcade62cc50da57ec6658a5b7e8f7",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/strawberry.obj": "1be28091f09494cf22194638d3f92f0159072b55af6ba66c285db22739a2e4bf",
+    "Models/OBJ format/strawberry.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/strawberry.png": "a061081a90391857467cef0898ce20afd94b9f4a93e7571e9de282511c24c91b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/strawberry.fbx": "0c34ffe0344ad3da14aae118ff6489ba47a44253348bc1530998b0989f80eff8",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/strawberry.glb": "685828642a92681b474c29abbd9cabe98c7bcade62cc50da57ec6658a5b7e8f7",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/strawberry.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/strawberry.obj": "57f309482575f1b36b5ecc25ad80f8fb4671126a83671b02f23c017d073a4916",
+    "Preview.png": "a061081a90391857467cef0898ce20afd94b9f4a93e7571e9de282511c24c91b"
+  },
+  "license": "../License.txt"
+}

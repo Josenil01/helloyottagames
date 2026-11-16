@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pine-fall-crooked",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/pine-fall-crooked.fbx": "965b5a093cbc5697aa92419b66d442cff078af2610a589066ee553e4e252240b",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/pine-fall-crooked.glb": "299d2ceb57f8ca20048b955e4e2aa509ea16b1403dd2f178db9396dec5221760",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/pine-fall-crooked.obj": "51d9809527056bc3753e727c5aa4c4221128e9e7bd982899b05b774b2d4a3326",
+    "Models/OBJ format/pine-fall-crooked.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/pine-fall-crooked.png": "0fc7d418ff2a20de237fc08054173214ca977ab3a10cead8f5770ba57c85ca7d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/pine-fall-crooked.fbx": "965b5a093cbc5697aa92419b66d442cff078af2610a589066ee553e4e252240b",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/pine-fall-crooked.glb": "299d2ceb57f8ca20048b955e4e2aa509ea16b1403dd2f178db9396dec5221760",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/pine-fall-crooked.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/pine-fall-crooked.obj": "60e51d2a2380c365aad4ca238d5ae906e2c2de9b4ef6453aa2c4d3440670c346",
+    "Preview.png": "0fc7d418ff2a20de237fc08054173214ca977ab3a10cead8f5770ba57c85ca7d"
+  },
+  "license": "../License.txt"
+}

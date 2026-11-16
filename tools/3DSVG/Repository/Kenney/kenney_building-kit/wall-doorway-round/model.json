@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-doorway-round",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/wall-doorway-round.fbx": "b93fc0cb38504b57a3f355fec41808dffbce28661ddf94136833148be4804616",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/wall-doorway-round.glb": "4ab09a9817ec7400a5b3b3724c0612f3935a2aeb925f2cbdffdd7e403814d413",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/wall-doorway-round.obj": "0f6aea624f1c96e8ef443b76cb3f570e693d088800056b35270435a1b9e8c21c",
+    "Models/OBJ format/wall-doorway-round.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-doorway-round.png": "83449d7800a041c00c916bf66fb08503bba4797648808ce75b0ac18a50552bab"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/wall-doorway-round.fbx": "b93fc0cb38504b57a3f355fec41808dffbce28661ddf94136833148be4804616",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/wall-doorway-round.glb": "4ab09a9817ec7400a5b3b3724c0612f3935a2aeb925f2cbdffdd7e403814d413",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/wall-doorway-round.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-doorway-round.obj": "88ccaafcb393e5649927153b0c639d7b91b7e432c5d27e7bdc4c259d2d54bdcc",
+    "Preview.png": "83449d7800a041c00c916bf66fb08503bba4797648808ce75b0ac18a50552bab"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pipe-glass-large-bend",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/pipe-glass-large-bend.fbx": "eaba3f1a923ae59f913596c4f1461f825ec45045758852044addbeb73985c5be",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/pipe-glass-large-bend.glb": "821d5ce62e358f19d3a2397d0023c4e7e3586184479ea76316b522f2d2da67cb",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/pipe-glass-large-bend.obj": "9bd7385006cf2d02d54c81c8b97de37593d38f28463b8491c3b4f33f211cf6ea",
+    "Models/OBJ format/pipe-glass-large-bend.mtl": "53f9f0317b94fa0df059759ac1c28746aa1bf52dce5688752ac7c9e4f4c5bdbb",
+    "Previews/pipe-glass-large-bend.png": "f0938abd61ac5f7acdc2b50d93d759e76cecafee6bba8fde002ff1b5ba019fda"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/pipe-glass-large-bend.fbx": "eaba3f1a923ae59f913596c4f1461f825ec45045758852044addbeb73985c5be",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/pipe-glass-large-bend.glb": "821d5ce62e358f19d3a2397d0023c4e7e3586184479ea76316b522f2d2da67cb",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/pipe-glass-large-bend.mtl": "41d8c4aecc23107c9cb0c45feda0075a6c31b45573e6eb563b7933f6b5b59284",
+    "OBJ format/pipe-glass-large-bend.obj": "0653aba03b4019353ec4aae873dddcfee7971be98cf8c718bdfb05bfa8dae8ac",
+    "Preview.png": "f0938abd61ac5f7acdc2b50d93d759e76cecafee6bba8fde002ff1b5ba019fda"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "fence_simple",
+  "pack": "kenney_nature-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/fence_simple.fbx": "da2730f7311c83b3d2026d7f636c19950075ece9395c675d00ff67772e09b30d",
+    "Models/GLTF format/fence_simple.glb": "ecaf6c29532aa9fd305a8ef71df769d60748bd797f2eb1c63bdefc4edb8062a7",
+    "Models/OBJ format/fence_simple.obj": "fa29015d17fd89bb29b221235883089b6ee8eed0e949989740445c3b0cba9fba",
+    "Models/OBJ format/fence_simple.mtl": "3b03b52eebf8ddc01804cb28de43b537c0d0b4ea61a99bad235e2a3c904aed89"
+  },
+  "files": {
+    "FBX format/fence_simple.fbx": "da2730f7311c83b3d2026d7f636c19950075ece9395c675d00ff67772e09b30d",
+    "GLB format/fence_simple.glb": "ecaf6c29532aa9fd305a8ef71df769d60748bd797f2eb1c63bdefc4edb8062a7",
+    "OBJ format/fence_simple.mtl": "3b03b52eebf8ddc01804cb28de43b537c0d0b4ea61a99bad235e2a3c904aed89",
+    "OBJ format/fence_simple.obj": "90cfdb46ff12618e19a229add87c50e996883d3c76d94c7a5ea76635d6284abe"
+  },
+  "license": "../License.txt"
+}

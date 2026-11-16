@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "light-square-cross",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/light-square-cross.fbx": "8d116cc7ff2d82fd2ac9d16eacef19c508899a4b9b5a56911d0424a3935a581b",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/light-square-cross.glb": "0492d4389579336c0385e3e786bff351be43434b8a2805fb09aa380e28e2d108",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/light-square-cross.obj": "0b638c860fb19c491d3a63fb9be4541462f68c566392b66e08c59f0d53cb0f48",
+    "Models/OBJ format/light-square-cross.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/light-square-cross.png": "bf506ef3bce37bb04a0d535507839c1ebd8592da242d93ea0241b77791e872cb"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/light-square-cross.fbx": "8d116cc7ff2d82fd2ac9d16eacef19c508899a4b9b5a56911d0424a3935a581b",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/light-square-cross.glb": "0492d4389579336c0385e3e786bff351be43434b8a2805fb09aa380e28e2d108",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/light-square-cross.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/light-square-cross.obj": "4686c636b128907d751279d0b68d6f9a6e9c8583d806af82bf62e48aa2bbf08b",
+    "Preview.png": "bf506ef3bce37bb04a0d535507839c1ebd8592da242d93ea0241b77791e872cb"
+  },
+  "license": "../License.txt"
+}

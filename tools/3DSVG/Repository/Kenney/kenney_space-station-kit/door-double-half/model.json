@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "door-double-half",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/door-double-half.fbx": "a7d21aec856c0542699c896d3ccca32a7b33a9ce580e8f712b815b2d6e8f0672",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/door-double-half.glb": "ae76af7119b9760c074fafa860ca6ac28f8c8fd9b147ac77d8a861c70531150e",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/door-double-half.obj": "b74614ae171550a60e151ed774a88430b292b009676e3297d126e9f6139a1f8b",
+    "Models/OBJ format/door-double-half.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/door-double-half.png": "3ff1e811ae0d449341e3a4464f721fdd221fd9f025160e05dfc6d55c28622a96"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/door-double-half.fbx": "a7d21aec856c0542699c896d3ccca32a7b33a9ce580e8f712b815b2d6e8f0672",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/door-double-half.glb": "ae76af7119b9760c074fafa860ca6ac28f8c8fd9b147ac77d8a861c70531150e",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/door-double-half.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/door-double-half.obj": "0545a74e54c76e284bb2c58da80bfe8a98464b4452f603dfe95c5de8c32af18c",
+    "Preview.png": "3ff1e811ae0d449341e3a4464f721fdd221fd9f025160e05dfc6d55c28622a96"
+  },
+  "license": "../License.txt"
+}

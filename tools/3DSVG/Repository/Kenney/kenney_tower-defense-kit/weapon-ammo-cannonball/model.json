@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "weapon-ammo-cannonball",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/weapon-ammo-cannonball.fbx": "eb689c916a596da776fae26ac76db0b868547f604f7ff341b026f21eee14e59b",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/weapon-ammo-cannonball.glb": "4391846f4e906e985979ee12dd82085118690762c0119bedc48ff027ac2865c4",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/weapon-ammo-cannonball.obj": "9e37406a22fb01e00bfa6180fde9239fca7859c8e137be761827133ebb961490",
+    "Models/OBJ format/weapon-ammo-cannonball.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/weapon-ammo-cannonball.png": "21789f5a63d7242596bdf49d513a370091e91018b246adcf2aabeac6cf8de55d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/weapon-ammo-cannonball.fbx": "eb689c916a596da776fae26ac76db0b868547f604f7ff341b026f21eee14e59b",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/weapon-ammo-cannonball.glb": "4391846f4e906e985979ee12dd82085118690762c0119bedc48ff027ac2865c4",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/weapon-ammo-cannonball.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/weapon-ammo-cannonball.obj": "003a90df643348ebe1a6068944dca30ade0a711613185e8d2bbffd4943177449",
+    "Preview.png": "21789f5a63d7242596bdf49d513a370091e91018b246adcf2aabeac6cf8de55d"
+  },
+  "license": "../License.txt"
+}

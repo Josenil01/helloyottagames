@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-monorail-straight-skew-left-side",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-monorail-straight-skew-left-side.fbx": "1221dba66b2419bd63cfa7dfe22a0e96f96e62b603efd70ef41bc7b7edf46f54",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-monorail-straight-skew-left-side.glb": "bdd1034f50c707fbdfef7b4910523d59d72fd5b3c5da9c48e5c953cb41d69fbe",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-monorail-straight-skew-left-side.obj": "d8a1fa64f0455f1bb51cae25566b48ad6b7bd1c01b2da25f8b8c4ad364dd5561",
+    "Models/OBJ format/coaster-monorail-straight-skew-left-side.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-monorail-straight-skew-left-side.png": "b0a9676015abb0ead5a79370bf6bd42782610c1c5fe27f145989ce2807175dda"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-monorail-straight-skew-left-side.fbx": "1221dba66b2419bd63cfa7dfe22a0e96f96e62b603efd70ef41bc7b7edf46f54",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-monorail-straight-skew-left-side.glb": "bdd1034f50c707fbdfef7b4910523d59d72fd5b3c5da9c48e5c953cb41d69fbe",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-monorail-straight-skew-left-side.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-monorail-straight-skew-left-side.obj": "1c4f6f526553fd9e22cc984ddb7cb19ef88009e6b707399f2c21bd9ead0531ba",
+    "Preview.png": "b0a9676015abb0ead5a79370bf6bd42782610c1c5fe27f145989ce2807175dda"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bedroll",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/bedroll.fbx": "3f5ad7678e44c07435c7b15f39c3bb6e62ef49f6d55d3890409bc7ba35a5f3df",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/bedroll.glb": "2ad9baa2d800845195c7c92bd8423b0d99519530dee0afd3bd0ac4b2e255d728",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/bedroll.obj": "593e0c1bca840a3225edb5669d82792d33c7e77dfb23bec90fceb7c99439337a",
+    "Models/OBJ format/bedroll.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/bedroll.png": "6eecf400f7c26572b3a951acec162ae41137f87f43b7a9cf53eb37a61d380686"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/bedroll.fbx": "3f5ad7678e44c07435c7b15f39c3bb6e62ef49f6d55d3890409bc7ba35a5f3df",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/bedroll.glb": "2ad9baa2d800845195c7c92bd8423b0d99519530dee0afd3bd0ac4b2e255d728",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/bedroll.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/bedroll.obj": "9c5dd54e8ae9421f4f3b427cee400a4cd76e8fed05942e9c689f34530270a5bf",
+    "Preview.png": "6eecf400f7c26572b3a951acec162ae41137f87f43b7a9cf53eb37a61d380686"
+  },
+  "license": "../License.txt"
+}

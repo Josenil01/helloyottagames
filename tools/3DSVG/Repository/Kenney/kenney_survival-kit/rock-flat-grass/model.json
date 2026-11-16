@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "rock-flat-grass",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/rock-flat-grass.fbx": "7da0b3161ea32876dece99d47ae61892a987d65e4c4025eea6fb7366ae66d22c",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/rock-flat-grass.glb": "1e14dbd2603467f607f7a099aa40a7b8abfdb6fcbd63b7c06bb746bdd085ecac",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/rock-flat-grass.obj": "7877dce993fa38acc71318f0430ffb760eed308398fe5a10f125e0809df666cd",
+    "Models/OBJ format/rock-flat-grass.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/rock-flat-grass.png": "4cea318628dadd540be9bd5cba3a4fe41b63b9127618548a4f3c094da98f83b9"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/rock-flat-grass.fbx": "7da0b3161ea32876dece99d47ae61892a987d65e4c4025eea6fb7366ae66d22c",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/rock-flat-grass.glb": "1e14dbd2603467f607f7a099aa40a7b8abfdb6fcbd63b7c06bb746bdd085ecac",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/rock-flat-grass.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/rock-flat-grass.obj": "1d16e1410870df9def480ce25654520db0ffa8c5a94e4377947617d8e3b91198",
+    "Preview.png": "4cea318628dadd540be9bd5cba3a4fe41b63b9127618548a4f3c094da98f83b9"
+  },
+  "license": "../License.txt"
+}

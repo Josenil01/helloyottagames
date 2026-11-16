@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "hopper-square",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/hopper-square.fbx": "235962414352e1abca78d803a029ee7b15727cf13375d77bb53a365914f73c2b",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/hopper-square.glb": "1b88e30011629015cea65777c5157026088ea557163bee43596d5083f1df0f39",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/hopper-square.obj": "114870d6293819ed929892c62f9cb2a126fd04355064f70925c44eb7f1e26f24",
+    "Models/OBJ format/hopper-square.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/hopper-square.png": "c9e63fb91eea0ca9c10916d87bd23b2a5abe67bc2d58fc29d2bbdf934380070a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/hopper-square.fbx": "235962414352e1abca78d803a029ee7b15727cf13375d77bb53a365914f73c2b",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/hopper-square.glb": "1b88e30011629015cea65777c5157026088ea557163bee43596d5083f1df0f39",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/hopper-square.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/hopper-square.obj": "5dd23c7d108305d87b22a49412b993161bdf028485e856650aa45d3d772b25ae",
+    "Preview.png": "c9e63fb91eea0ca9c10916d87bd23b2a5abe67bc2d58fc29d2bbdf934380070a"
+  },
+  "license": "../License.txt"
+}

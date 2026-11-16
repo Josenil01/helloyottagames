@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-hanging-corner-small-ramp",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-hanging-corner-small-ramp.fbx": "67e7a06a8dc95ed88eed26075cc897237614801353f8283b379ad743f65fa53f",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-hanging-corner-small-ramp.glb": "c978a56adaf84a091680538b594208cd923143abfaf6be7736a0a45c60c8087b",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-hanging-corner-small-ramp.obj": "59a279c3fb3d6dbd6e2ea3aa2953c8d0e98b2e504e6435445958fdeb8a147b77",
+    "Models/OBJ format/coaster-hanging-corner-small-ramp.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-hanging-corner-small-ramp.png": "00c9f7fcdaf24d36d093587e3f8b587809bed1d0a6b4aed679437b6a060eefe2"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-hanging-corner-small-ramp.fbx": "67e7a06a8dc95ed88eed26075cc897237614801353f8283b379ad743f65fa53f",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-hanging-corner-small-ramp.glb": "c978a56adaf84a091680538b594208cd923143abfaf6be7736a0a45c60c8087b",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-hanging-corner-small-ramp.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-hanging-corner-small-ramp.obj": "9c5464765faf19b5eae7b37f82163cf9f76d73b3ea83ac52ddccb43e8cf752d0",
+    "Preview.png": "00c9f7fcdaf24d36d093587e3f8b587809bed1d0a6b4aed679437b6a060eefe2"
+  },
+  "license": "../License.txt"
+}

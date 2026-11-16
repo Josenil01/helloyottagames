@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stall-food",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/stall-food.fbx": "a6c42afb404032f3931fa6c844995b96a2501f813a74c4755c921f27a1fa1032",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/stall-food.glb": "c2598eaec07802394740e77b1248066522caf678e8306cf7ab7c53e7b22e4e43",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/stall-food.obj": "9a19887f82bcbaae2994e45f0561e369efdbd033f6f426e3a7d4b19163bcc3ec",
+    "Models/OBJ format/stall-food.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/stall-food.png": "7cd0b64e9dbdbd96c754ce434deb971b44a6589478e738494427695d332b422c"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/stall-food.fbx": "a6c42afb404032f3931fa6c844995b96a2501f813a74c4755c921f27a1fa1032",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/stall-food.glb": "c2598eaec07802394740e77b1248066522caf678e8306cf7ab7c53e7b22e4e43",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/stall-food.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/stall-food.obj": "bd7a3e9790f254af858d4516b99caedb7ebb81be0445249e7c9bca6e7f104113",
+    "Preview.png": "7cd0b64e9dbdbd96c754ce434deb971b44a6589478e738494427695d332b422c"
+  },
+  "license": "../License.txt"
+}

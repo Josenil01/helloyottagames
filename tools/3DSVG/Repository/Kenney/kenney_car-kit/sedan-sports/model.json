@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "sedan-sports",
+  "pack": "kenney_car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/FBX format/sedan-sports.fbx": "2dbcb4e218ee32d1bb4884d0e96bd29a0f3891d54e31e480c957752567ffea7c",
+    "Models/GLB format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/GLB format/sedan-sports.glb": "2889c428ca1dd9c975c3ff760eb8757883490410555ab60b818f712f583826d6",
+    "Models/OBJ format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/OBJ format/sedan-sports.obj": "818ebc108112506d2ab6d23f959eb1de35cefbe123688c8c223ad82a64b31e40",
+    "Models/OBJ format/sedan-sports.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/sedan-sports.png": "e90757944428f2ae2d7f6a76201602176529b00d81ce8835771c328f9e35fbe4"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "FBX format/sedan-sports.fbx": "2dbcb4e218ee32d1bb4884d0e96bd29a0f3891d54e31e480c957752567ffea7c",
+    "Textures/GLB/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "GLB format/sedan-sports.glb": "2889c428ca1dd9c975c3ff760eb8757883490410555ab60b818f712f583826d6",
+    "Textures/OBJ/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "OBJ format/sedan-sports.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/sedan-sports.obj": "6b975d4f4cc42b7f10f1127374087c0abd0bb89d9fa2e13a4e1aaeca4c217d5d",
+    "Preview.png": "e90757944428f2ae2d7f6a76201602176529b00d81ce8835771c328f9e35fbe4"
+  },
+  "license": "../License.txt"
+}

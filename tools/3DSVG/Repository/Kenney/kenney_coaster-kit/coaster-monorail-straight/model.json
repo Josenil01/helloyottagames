@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-monorail-straight",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-monorail-straight.fbx": "b2532a59b99947b59acc1633ff371417965cf6cecf12f357050da6acdcd4b9ef",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-monorail-straight.glb": "d35f70da0b878bbfb59e6582d484c0944135a951ad71dd7482d9fd61b619dde1",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-monorail-straight.obj": "b8895934db58a1f25b38c4f1da5bc9a2226509aa3f277a991aa73f85ce0c16c5",
+    "Models/OBJ format/coaster-monorail-straight.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-monorail-straight.png": "9ef04e1bbc9cc66428cb9f243672fbb8074dab132d15c95e8298785a71945997"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-monorail-straight.fbx": "b2532a59b99947b59acc1633ff371417965cf6cecf12f357050da6acdcd4b9ef",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-monorail-straight.glb": "d35f70da0b878bbfb59e6582d484c0944135a951ad71dd7482d9fd61b619dde1",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-monorail-straight.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-monorail-straight.obj": "eef16ca433e34c8bb446f9877ca258b2de82338228c4cdc3d679181be5e9b5b2",
+    "Preview.png": "9ef04e1bbc9cc66428cb9f243672fbb8074dab132d15c95e8298785a71945997"
+  },
+  "license": "../License.txt"
+}

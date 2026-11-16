@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "rocks",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/rocks.fbx": "6f1c67bc576b0fa8f0460a62c6dcb967939d1c7581f5d8177e937319176d3f9f",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/rocks.glb": "cdad530e15972f1f3cdf4dec1d1ca2d3b9406b46c2bbd67bb67abf3bbf173aa3",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/rocks.obj": "58518ed765f1accb1d10dbbfb65af76f74e2e84af0b1137a27464857d3ff1151",
+    "Models/OBJ format/rocks.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/rocks.png": "0e0228e00b0be69aa064a6742c194f1195acf693e3ad365d25775929b12881aa"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/rocks.fbx": "6f1c67bc576b0fa8f0460a62c6dcb967939d1c7581f5d8177e937319176d3f9f",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/rocks.glb": "cdad530e15972f1f3cdf4dec1d1ca2d3b9406b46c2bbd67bb67abf3bbf173aa3",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/rocks.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/rocks.obj": "72630b123f0eba54501ffebf71da6d5ef4c345faa7199bb5ad34cfdc9026da3f",
+    "Preview.png": "0e0228e00b0be69aa064a6742c194f1195acf693e3ad365d25775929b12881aa"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bottle-oil",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/bottle-oil.fbx": "4c50cf0404ce7999ccedcdbaa3f11736d16b2b5d06471abe60557bcd2929f077",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/bottle-oil.glb": "a87a7a6146be0996b17aca3ccd011cfe0d045593db03f89829f88b6228b49d57",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/bottle-oil.obj": "fdaebb933ab65094c529f96e1bde957fccdd1ceb2a6a7250f62071fcdde019a4",
+    "Models/OBJ format/bottle-oil.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/bottle-oil.png": "fd8969b62e38262c76d08f078152de8036e8bfc4ec6c9257c38afc822cc0315a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/bottle-oil.fbx": "4c50cf0404ce7999ccedcdbaa3f11736d16b2b5d06471abe60557bcd2929f077",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/bottle-oil.glb": "a87a7a6146be0996b17aca3ccd011cfe0d045593db03f89829f88b6228b49d57",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/bottle-oil.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/bottle-oil.obj": "557c93f75c019dfd6d843a4cb4b1346b3fcd89ca6eb81b3f97e5871e4acdd815",
+    "Preview.png": "fd8969b62e38262c76d08f078152de8036e8bfc4ec6c9257c38afc822cc0315a"
+  },
+  "license": "../License.txt"
+}

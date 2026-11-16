@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "train-monorail",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/train-monorail.fbx": "d68a30de51637c31b576976ada2eea12eca1d9b010d8d2918a4c37e4b60f4c4b",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/train-monorail.glb": "68cf31c38b660c5a92cd48aae226b6aed26038b3c0641dbb59c492d882a6d070",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/train-monorail.obj": "bef389ef2755610c16cc37498fe86f89a5d02ba7efb6d3c3fec757c4e29f817d",
+    "Models/OBJ format/train-monorail.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/train-monorail.png": "ec688109ecf7fa074b23a3a0f3b177a1bd2301d68d54eb3c38c714db97b263ef"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/train-monorail.fbx": "d68a30de51637c31b576976ada2eea12eca1d9b010d8d2918a4c37e4b60f4c4b",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/train-monorail.glb": "68cf31c38b660c5a92cd48aae226b6aed26038b3c0641dbb59c492d882a6d070",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/train-monorail.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/train-monorail.obj": "0512a6f9810d568ffbbfdc815cab2e622d395e0f6b307a0c8786b2a01fbedc6e",
+    "Preview.png": "ec688109ecf7fa074b23a3a0f3b177a1bd2301d68d54eb3c38c714db97b263ef"
+  },
+  "license": "../License.txt"
+}

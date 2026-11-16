@@ -1,0 +1,44 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "animal-dog",
+  "pack": "kenney_prototype-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/Textures/variation-a.png": "7729166aa03f419ba26c5b884b9ddf28939c279fc35534ce0cdc3be590563bc7",
+    "Models/Textures/variation-b.png": "18a20d60a2fb19ae2ecb76d0a0756c956bd9c9e5138e10978fb82be4ed74cc17",
+    "Models/Textures/variation-c.png": "73a4547b1332a1a43d5bf2412f974f0df0e27576e7ce75ac34588061d99a304d",
+    "Models/FBX format/animal-dog.fbx": "52bb9de2e70deb2f8af1e9f504cf0a3516090da1d801396ea0f5e580b1f0beb1",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/animal-dog.glb": "847fadbce5c2d17c2917a0f0a4cf2d1a0f6093aede73680dc0dd5d05e0788b95",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/animal-dog.obj": "262ee60ef32ad4e553150197f700d8465b0e31b767ce174cc53a80901986e256",
+    "Models/OBJ format/animal-dog.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/animal-dog.png": "93bd6036030ed478768d38790902cb7e3f89be6de92a91d242fb7e1fb3a99747"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/FBX/variation-a.png": "7729166aa03f419ba26c5b884b9ddf28939c279fc35534ce0cdc3be590563bc7",
+    "Textures/FBX/variation-b.png": "18a20d60a2fb19ae2ecb76d0a0756c956bd9c9e5138e10978fb82be4ed74cc17",
+    "Textures/FBX/variation-c.png": "73a4547b1332a1a43d5bf2412f974f0df0e27576e7ce75ac34588061d99a304d",
+    "FBX format/animal-dog.fbx": "52bb9de2e70deb2f8af1e9f504cf0a3516090da1d801396ea0f5e580b1f0beb1",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/GLB/variation-a.png": "7729166aa03f419ba26c5b884b9ddf28939c279fc35534ce0cdc3be590563bc7",
+    "Textures/GLB/variation-b.png": "18a20d60a2fb19ae2ecb76d0a0756c956bd9c9e5138e10978fb82be4ed74cc17",
+    "Textures/GLB/variation-c.png": "73a4547b1332a1a43d5bf2412f974f0df0e27576e7ce75ac34588061d99a304d",
+    "GLB format/animal-dog.glb": "847fadbce5c2d17c2917a0f0a4cf2d1a0f6093aede73680dc0dd5d05e0788b95",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/OBJ/variation-a.png": "7729166aa03f419ba26c5b884b9ddf28939c279fc35534ce0cdc3be590563bc7",
+    "Textures/OBJ/variation-b.png": "18a20d60a2fb19ae2ecb76d0a0756c956bd9c9e5138e10978fb82be4ed74cc17",
+    "Textures/OBJ/variation-c.png": "73a4547b1332a1a43d5bf2412f974f0df0e27576e7ce75ac34588061d99a304d",
+    "OBJ format/animal-dog.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/animal-dog.obj": "84d05ee7248d1936e2c7611f57d565a5d05b365e3a96fb8dd4237a05650cb1ec",
+    "Preview.png": "93bd6036030ed478768d38790902cb7e3f89be6de92a91d242fb7e1fb3a99747"
+  },
+  "license": "../License.txt"
+}

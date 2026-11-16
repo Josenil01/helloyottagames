@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "roof-gable",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/roof-gable.fbx": "3eeadd1fba05db6be2124679877931a8b968c581cac8934bcf8e51d933f59f7e",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/roof-gable.glb": "4bb6bdbcadbb8ebeb69d720e29f6c2e57c99d98966baa41fd86914d3c13d6039",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/roof-gable.obj": "ddebb8c724d6423ed9c852d5174c1887d9c197012b95d246b892d3933aa571f8",
+    "Models/OBJ format/roof-gable.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/roof-gable.png": "7c02ab1cfb53c03c2cd7bf6d87fdf95c57277a6447f01cf7e6ab3b0f4354268a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/roof-gable.fbx": "3eeadd1fba05db6be2124679877931a8b968c581cac8934bcf8e51d933f59f7e",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/roof-gable.glb": "4bb6bdbcadbb8ebeb69d720e29f6c2e57c99d98966baa41fd86914d3c13d6039",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/roof-gable.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/roof-gable.obj": "05ef99f810104ecc40ffedd6b713776f24961c59cbebca43172822b33a47f24c",
+    "Preview.png": "7c02ab1cfb53c03c2cd7bf6d87fdf95c57277a6447f01cf7e6ab3b0f4354268a"
+  },
+  "license": "../License.txt"
+}

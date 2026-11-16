@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "grave",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/grave.fbx": "acc05822a48cf709ba55af5f5126d17b3df5c865570e9e0870e54b318bdb4e1c",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/grave.glb": "72218a70525389bb6dcb3b46e097a8637bde2a233b776344988aab6bb99a0e97",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/grave.obj": "f2121d09dbfc0ac0ad0e5b278f140872cc4eb376dab5323370affe86492743a0",
+    "Models/OBJ format/grave.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/grave.png": "ce84cbdcf88f77d97138591c14a1fc0b4c867288ca71992e53e13f1d28f56881"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/grave.fbx": "acc05822a48cf709ba55af5f5126d17b3df5c865570e9e0870e54b318bdb4e1c",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/grave.glb": "72218a70525389bb6dcb3b46e097a8637bde2a233b776344988aab6bb99a0e97",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/grave.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/grave.obj": "ca75ed5b2b1818f752455280154b652c11f18e9196c445b6bb0f7e30900364e6",
+    "Preview.png": "ce84cbdcf88f77d97138591c14a1fc0b4c867288ca71992e53e13f1d28f56881"
+  },
+  "license": "../License.txt"
+}

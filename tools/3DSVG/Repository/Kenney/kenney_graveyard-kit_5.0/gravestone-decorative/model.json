@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "gravestone-decorative",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/gravestone-decorative.fbx": "ab0875e13530d7ee392ce1184401e97bedbeb9a195d577bdac518a49d10fdbf3",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/gravestone-decorative.glb": "3011f6c20c7a3a26b2a9968ceabdede5a36374683817c84dff4ec334b4fe9708",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/gravestone-decorative.obj": "3a0b8f13aa5567b799ccb8d858c1dbe9b94bb8682713c874075c05027487df4a",
+    "Models/OBJ format/gravestone-decorative.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/gravestone-decorative.png": "b1551d011d28be407c581aacce1b9cc6afee00ec357972b07df7a50acf5796f6"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/gravestone-decorative.fbx": "ab0875e13530d7ee392ce1184401e97bedbeb9a195d577bdac518a49d10fdbf3",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/gravestone-decorative.glb": "3011f6c20c7a3a26b2a9968ceabdede5a36374683817c84dff4ec334b4fe9708",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/gravestone-decorative.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/gravestone-decorative.obj": "4512e1bf3d5f041f8d7abd6fd6b7e186f415affd4942154c917d58773ecd3b8a",
+    "Preview.png": "b1551d011d28be407c581aacce1b9cc6afee00ec357972b07df7a50acf5796f6"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "block-grass-edge",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/block-grass-edge.fbx": "ed05839abcce79277ac9cd88617b17ab8d0cefa719734fcee3c0cddd6e2b57f0",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/block-grass-edge.glb": "d0284b26c44d5a56415ccd0ca3fcb8a0b0045cc1f34fa29563a6285a73460a74",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/block-grass-edge.obj": "1e8f3eea800f594d2b030821b736fff6f85c39ad90cf4b16de0cf62d1a3eae70",
+    "Models/OBJ format/block-grass-edge.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/block-grass-edge.png": "8f5135bb9c8e68166d36dbaed2b7cb50f1198dbba5dae00c5ed13809b76cc17d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/block-grass-edge.fbx": "ed05839abcce79277ac9cd88617b17ab8d0cefa719734fcee3c0cddd6e2b57f0",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/block-grass-edge.glb": "d0284b26c44d5a56415ccd0ca3fcb8a0b0045cc1f34fa29563a6285a73460a74",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/block-grass-edge.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/block-grass-edge.obj": "85e1c64ad93587dcc78557cee2b2be72fde70ac6807abd46d31710d7f09ae511",
+    "Preview.png": "8f5135bb9c8e68166d36dbaed2b7cb50f1198dbba5dae00c5ed13809b76cc17d"
+  },
+  "license": "../License.txt"
+}

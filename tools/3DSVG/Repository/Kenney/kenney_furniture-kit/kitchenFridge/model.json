@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "kitchenFridge",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/kitchenFridge.fbx": "34e40151a28147c09ff6ec4cdd9135fc5a8e22b06242a10e96b31e60dd139390",
+    "Models/GLTF format/kitchenFridge.glb": "8af4f4bbb1b5525ad8226e97926a5af60fa8fb20a3cb74dbda5328a9d320dbab",
+    "Models/OBJ format/kitchenFridge.obj": "248f16c8dc188925a8c92029bb2f88a10d2e2e35af5fdfdbb91c59e3bb9dea0f",
+    "Models/OBJ format/kitchenFridge.mtl": "884fa6eb76dcec0503a248a1f02d91f1d658c52ec944d90de4842e397c2ea1fa"
+  },
+  "files": {
+    "FBX format/kitchenFridge.fbx": "34e40151a28147c09ff6ec4cdd9135fc5a8e22b06242a10e96b31e60dd139390",
+    "GLB format/kitchenFridge.glb": "8af4f4bbb1b5525ad8226e97926a5af60fa8fb20a3cb74dbda5328a9d320dbab",
+    "OBJ format/kitchenFridge.mtl": "a5412fe5f13e661890da98b3f52271da139557e1b85d0c03ac23a4549b4cbf63",
+    "OBJ format/kitchenFridge.obj": "4a046cfadf9cc314117b727e79bd0d99755ee6dd4af070cb46b536bdc7a4a425"
+  },
+  "license": "../License.txt"
+}

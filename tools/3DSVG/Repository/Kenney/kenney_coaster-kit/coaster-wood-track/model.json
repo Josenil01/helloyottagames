@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-wood-track",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-wood-track.fbx": "3db8e29231a7bbcd62751d0c35d299ee8ae70ae0b1620cc77b3596cd30053428",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-wood-track.glb": "b2933764d14b967732e1fa7eb4986e8e6134023f5a102744b0da5df6a2fa5d14",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-wood-track.obj": "8c49a9272ad1dcceda50acee308f41546f2d6f67fffb68ee3b60e6a6454602c4",
+    "Models/OBJ format/coaster-wood-track.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-wood-track.png": "69ca079d4dab31c2f855352764452cccf0aeec82f55361d914f5f00c84290717"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-wood-track.fbx": "3db8e29231a7bbcd62751d0c35d299ee8ae70ae0b1620cc77b3596cd30053428",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-wood-track.glb": "b2933764d14b967732e1fa7eb4986e8e6134023f5a102744b0da5df6a2fa5d14",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-wood-track.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-wood-track.obj": "d7f4bdbd046f2efb1fd50a141b53335e647cb245b02fb3c418b3bfe8edac0fc2",
+    "Preview.png": "69ca079d4dab31c2f855352764452cccf0aeec82f55361d914f5f00c84290717"
+  },
+  "license": "../License.txt"
+}

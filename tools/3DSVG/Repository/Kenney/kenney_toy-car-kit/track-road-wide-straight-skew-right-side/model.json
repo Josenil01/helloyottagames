@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "track-road-wide-straight-skew-right-side",
+  "pack": "kenney_toy-car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/Textures/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Models/Textures/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "Models/FBX format/track-road-wide-straight-skew-right-side.fbx": "6671eb4ddd67115efeb6fccb84f33fe07663aad1821be2a745e11fc192214dc0",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/track-road-wide-straight-skew-right-side.glb": "1c9e61346390af09e201f70f50d75c63fab3fa6517236cd70b02c18433dd1746",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/track-road-wide-straight-skew-right-side.obj": "5ab58e6c11109b28821fb0db54253dc9e957676dadd3d5e758f2fd8494308894",
+    "Models/OBJ format/track-road-wide-straight-skew-right-side.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/track-road-wide-straight-skew-right-side.png": "1b2afeba9088fb3ae44717cac29454472f4a4f6ea1a1f48b5699a3d7406c0650"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/FBX/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/FBX/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "FBX format/track-road-wide-straight-skew-right-side.fbx": "6671eb4ddd67115efeb6fccb84f33fe07663aad1821be2a745e11fc192214dc0",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/GLB/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/GLB/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "GLB format/track-road-wide-straight-skew-right-side.glb": "1c9e61346390af09e201f70f50d75c63fab3fa6517236cd70b02c18433dd1746",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/OBJ/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/OBJ/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "OBJ format/track-road-wide-straight-skew-right-side.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/track-road-wide-straight-skew-right-side.obj": "6d1423e24c75a5a66c5e0198297f083e9ade44ce8c835a2819c4a55767a7a63c",
+    "Preview.png": "1b2afeba9088fb3ae44717cac29454472f4a4f6ea1a1f48b5699a3d7406c0650"
+  },
+  "license": "../License.txt"
+}

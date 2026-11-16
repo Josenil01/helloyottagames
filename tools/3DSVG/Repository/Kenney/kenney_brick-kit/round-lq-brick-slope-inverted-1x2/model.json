@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "round-lq-brick-slope-inverted-1x2",
+  "pack": "kenney_brick-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/FBX format/round-lq-brick-slope-inverted-1x2.fbx": "c0f209cc0a735c5907a3accded0b227a559bdc196095a83d944390f51caa3f54",
+    "Models/GLB format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/GLB format/round-lq-brick-slope-inverted-1x2.glb": "724364fa056510c900f41cf30e44667649a3d9fd70733590212a47343c83a641",
+    "Models/OBJ format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/OBJ format/round-lq-brick-slope-inverted-1x2.obj": "af2c81f8e87b11328d4732047d4146d0a299085c77fcf0b904730bc4e61d38f7",
+    "Models/OBJ format/round-lq-brick-slope-inverted-1x2.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/round-lq-brick-slope-inverted-1x2.png": "a0977ae29655f8c4d84c57d036f1e4119ef7e7badf0f03f36565639404b33d90"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "FBX format/round-lq-brick-slope-inverted-1x2.fbx": "c0f209cc0a735c5907a3accded0b227a559bdc196095a83d944390f51caa3f54",
+    "Textures/GLB/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "GLB format/round-lq-brick-slope-inverted-1x2.glb": "724364fa056510c900f41cf30e44667649a3d9fd70733590212a47343c83a641",
+    "Textures/OBJ/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "OBJ format/round-lq-brick-slope-inverted-1x2.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/round-lq-brick-slope-inverted-1x2.obj": "d76c34afa37a190e5bda26e9435c8401a56e7f98bd5ee630d50e1acb187b5881",
+    "Preview.png": "a0977ae29655f8c4d84c57d036f1e4119ef7e7badf0f03f36565639404b33d90"
+  },
+  "license": "../License.txt"
+}

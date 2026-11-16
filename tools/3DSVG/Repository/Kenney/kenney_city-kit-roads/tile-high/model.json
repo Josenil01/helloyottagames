@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tile-high",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/tile-high.fbx": "d9a99199193afc7ec2481eb08e27ac90e62a973dd33e33049df79f6756125bb8",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/tile-high.glb": "b3628407e66c95605c0290d177128e0a0dccead3e9b079399a7eb56aa8b86525",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/tile-high.obj": "d13ed9840c59220d795059fac1bbc4d98114e8b516317f8ea4690b1bac9eb3bc",
+    "Models/OBJ format/tile-high.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tile-high.png": "fbf4571c9e9446daa0d0a2d8a57ae5265f47dd63db2e84319a86f2a3e6c5e9ab"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/tile-high.fbx": "d9a99199193afc7ec2481eb08e27ac90e62a973dd33e33049df79f6756125bb8",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/tile-high.glb": "b3628407e66c95605c0290d177128e0a0dccead3e9b079399a7eb56aa8b86525",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/tile-high.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tile-high.obj": "c5fef07a05843c04d6b97bd68ea5e5fb360022cc2675463449131d14f8f3354a",
+    "Preview.png": "fbf4571c9e9446daa0d0a2d8a57ae5265f47dd63db2e84319a86f2a3e6c5e9ab"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coin",
+  "pack": "kenney_mini-dungeon",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/Textures/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "Models/FBX format/coin.fbx": "9cae80180de20b04231e0d3409ab25eb4859f0bedff86b39c3f04bda9310dc0f",
+    "Models/GLB format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/GLB format/coin.glb": "5e108e4b013961a60fa1b92b2b55248f19ac56e48771ce9ccbb74adb3a335455",
+    "Models/OBJ format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/OBJ format/coin.obj": "c2ed941f57bc750e32bb294b204f335816c90e1d398c4fa77cb57cdf352363d7",
+    "Models/OBJ format/coin.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coin.png": "ffc15cbcaf9bc5f4416e81d4c37f1d57f6041b0000c97156f2c6c7a79048d9f5"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/FBX/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "FBX format/coin.fbx": "9cae80180de20b04231e0d3409ab25eb4859f0bedff86b39c3f04bda9310dc0f",
+    "Textures/GLB/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/GLB/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "GLB format/coin.glb": "5e108e4b013961a60fa1b92b2b55248f19ac56e48771ce9ccbb74adb3a335455",
+    "Textures/OBJ/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/OBJ/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "OBJ format/coin.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coin.obj": "fd3fc605787b183b36c69cc5187e2f8d1d4856c3ff92ddc5fbae802c703952b3",
+    "Preview.png": "ffc15cbcaf9bc5f4416e81d4c37f1d57f6041b0000c97156f2c6c7a79048d9f5"
+  },
+  "license": "../License.txt"
+}

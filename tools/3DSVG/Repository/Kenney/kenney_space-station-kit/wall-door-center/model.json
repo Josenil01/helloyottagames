@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-door-center",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/wall-door-center.fbx": "b0960addc0b727c670e00649f4839cbe6420aec19a4a8008f499f18c8cc5b909",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/wall-door-center.glb": "f0549ba2346d3400cce85212910117d915911f90bf8552432417e6eaec944fea",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/wall-door-center.obj": "ffdda846d5bb9bffcc5153e7b706b6d4edc10090098e2a0d8d6132f8ca6cce03",
+    "Models/OBJ format/wall-door-center.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-door-center.png": "2bbf84a3f91c149df2b4e7578d9c62e5f686fc03355a5408bf8f5cedd2d3e1d7"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/wall-door-center.fbx": "b0960addc0b727c670e00649f4839cbe6420aec19a4a8008f499f18c8cc5b909",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/wall-door-center.glb": "f0549ba2346d3400cce85212910117d915911f90bf8552432417e6eaec944fea",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/wall-door-center.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-door-center.obj": "8895102e90d8dbaa0e650b1bc4e33fa283daf15a163baadc72229ef5ef3f38f7",
+    "Preview.png": "2bbf84a3f91c149df2b4e7578d9c62e5f686fc03355a5408bf8f5cedd2d3e1d7"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "weapon_gun",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/weapon_gun.fbx": "119d6d4491683c05788ec09024b772883c9b7a519ef6be4ce79d0aafe32441d7",
+    "Models/GLTF format/weapon_gun.glb": "f8e0edea00355789f9fac087e40c7a710468cf6a6c1c22a86426d44883f438b5",
+    "Models/OBJ format/weapon_gun.obj": "fca04d351908849f6931aaa6d6d0b6bacb22e1270ca52a42b9f03e849ca318a6",
+    "Models/OBJ format/weapon_gun.mtl": "00aebd519b57121159dd3e308556612a9bc21840e3acee44441bb637ec74df3a"
+  },
+  "files": {
+    "FBX format/weapon_gun.fbx": "119d6d4491683c05788ec09024b772883c9b7a519ef6be4ce79d0aafe32441d7",
+    "GLB format/weapon_gun.glb": "f8e0edea00355789f9fac087e40c7a710468cf6a6c1c22a86426d44883f438b5",
+    "OBJ format/weapon_gun.mtl": "00aebd519b57121159dd3e308556612a9bc21840e3acee44441bb637ec74df3a",
+    "OBJ format/weapon_gun.obj": "255e2dd0ceb33695d282e7e00977186adc9ed579c3c3f7d97d33b182e620a2cd"
+  },
+  "license": "../License.txt"
+}

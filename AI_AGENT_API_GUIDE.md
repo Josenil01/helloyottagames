@@ -2,6 +2,14 @@
 
 Este guia ensina um agente de IA a se conectar na API pública da plataforma Hello Yotta Games e consumir os dados de catálogo.
 
+## Revisão documental local — 08/10/2026
+
+Os endpoints são arquivos JSON estáticos gerados dos cartões do `index.html` raiz; não oferecem execução de jogos, progresso de alunos ou autenticação. O catálogo local contém 40 jogos e `generatedAt: 2026-09-25T19:58:21Z`. Consumidores devem continuar lendo `total` dinamicamente.
+
+O esquema local e os caminhos dos jogos foram conferidos; a disponibilidade em produção não foi testada. Descrições podem estar atrasadas: Poções já carrega um quebra-cabeça de separar cores, mas o catálogo ainda descreve aritmética. Duelo dos Monstros, Organiza Tudo e Fábrica de Rimas também precisam de revisão das descrições. Galáxia Geométrica e Enigmas da Esfinge preservam as pastas/URLs antigas. Corrigir os cartões raiz antes de regenerar os dois JSONs; `generatedAt` não comprova correspondência de todas as descrições com o gameplay.
+
+Ver [auditoria documental](docs/auditoria-documentacao-2026-10-08.md) para o inventário das implementações atuais. Os contratos documentados abaixo permanecem inalterados.
+
 ## Base da API
 
 - Domínio público: https://games.helloyotta.com

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "door-open",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/door-open.fbx": "cccb802cce39e3ed46a00f64d31ca715ca7691ee87e9e73f62ed25a8e4d884fc",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/door-open.glb": "a14487caa5adf4a5311669efb348700975c704a0ca1b129858f86bca1f7f1cfd",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/door-open.obj": "42414490c770697004787af7d71048768104fc6e466482d43f676244a9941b89",
+    "Models/OBJ format/door-open.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/door-open.png": "37b4adcbd4764333fece379f06ad454eaabc8f7a65e72487c7408e5abeae38f4"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/door-open.fbx": "cccb802cce39e3ed46a00f64d31ca715ca7691ee87e9e73f62ed25a8e4d884fc",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/door-open.glb": "a14487caa5adf4a5311669efb348700975c704a0ca1b129858f86bca1f7f1cfd",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/door-open.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/door-open.obj": "ebafbd4081d4ae06b0adddb016278b30da99ff5d9b91decefd8b3f7b97ca6ea5",
+    "Preview.png": "37b4adcbd4764333fece379f06ad454eaabc8f7a65e72487c7408e5abeae38f4"
+  },
+  "license": "../License.txt"
+}

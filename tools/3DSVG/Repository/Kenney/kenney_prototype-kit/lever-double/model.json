@@ -1,0 +1,44 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "lever-double",
+  "pack": "kenney_prototype-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/Textures/variation-a.png": "7729166aa03f419ba26c5b884b9ddf28939c279fc35534ce0cdc3be590563bc7",
+    "Models/Textures/variation-b.png": "18a20d60a2fb19ae2ecb76d0a0756c956bd9c9e5138e10978fb82be4ed74cc17",
+    "Models/Textures/variation-c.png": "73a4547b1332a1a43d5bf2412f974f0df0e27576e7ce75ac34588061d99a304d",
+    "Models/FBX format/lever-double.fbx": "2018353800c49c61cf1a2dde5f7f52693c89791cad395d529fcef3b2cd2d9223",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/lever-double.glb": "40eabc2802b4c93e98213293d5ddbf303039b14ada96ff5a682549dc4ab13730",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/lever-double.obj": "d6c536ba16a0613f42519106aff2e54e6a88b860b0738d14c548793b233f931c",
+    "Models/OBJ format/lever-double.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/lever-double.png": "a143b3c746c3017e81320c0119b1e048572a93bdb7117d66e3ed01229e08c7a0"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/FBX/variation-a.png": "7729166aa03f419ba26c5b884b9ddf28939c279fc35534ce0cdc3be590563bc7",
+    "Textures/FBX/variation-b.png": "18a20d60a2fb19ae2ecb76d0a0756c956bd9c9e5138e10978fb82be4ed74cc17",
+    "Textures/FBX/variation-c.png": "73a4547b1332a1a43d5bf2412f974f0df0e27576e7ce75ac34588061d99a304d",
+    "FBX format/lever-double.fbx": "2018353800c49c61cf1a2dde5f7f52693c89791cad395d529fcef3b2cd2d9223",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/GLB/variation-a.png": "7729166aa03f419ba26c5b884b9ddf28939c279fc35534ce0cdc3be590563bc7",
+    "Textures/GLB/variation-b.png": "18a20d60a2fb19ae2ecb76d0a0756c956bd9c9e5138e10978fb82be4ed74cc17",
+    "Textures/GLB/variation-c.png": "73a4547b1332a1a43d5bf2412f974f0df0e27576e7ce75ac34588061d99a304d",
+    "GLB format/lever-double.glb": "40eabc2802b4c93e98213293d5ddbf303039b14ada96ff5a682549dc4ab13730",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/OBJ/variation-a.png": "7729166aa03f419ba26c5b884b9ddf28939c279fc35534ce0cdc3be590563bc7",
+    "Textures/OBJ/variation-b.png": "18a20d60a2fb19ae2ecb76d0a0756c956bd9c9e5138e10978fb82be4ed74cc17",
+    "Textures/OBJ/variation-c.png": "73a4547b1332a1a43d5bf2412f974f0df0e27576e7ce75ac34588061d99a304d",
+    "OBJ format/lever-double.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/lever-double.obj": "385e954c2f7bae5bb34599d401929516efa6dacfade3d44bd41e01bced819a1f",
+    "Preview.png": "a143b3c746c3017e81320c0119b1e048572a93bdb7117d66e3ed01229e08c7a0"
+  },
+  "license": "../License.txt"
+}

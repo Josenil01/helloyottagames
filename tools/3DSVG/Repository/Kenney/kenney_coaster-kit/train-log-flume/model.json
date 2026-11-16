@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "train-log-flume",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/train-log-flume.fbx": "c972456f2296a6d0be1bb96f04930fcaa76a56df6900412b2405ea864261cc89",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/train-log-flume.glb": "6f20d5f4f9775178a79a02bedfa8a6d33dc050ec9a038a2a22e210ece1f83bc2",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/train-log-flume.obj": "58060e5462af9a3914e5b50b8b317655a56091efc2489ad27be152e79d02494d",
+    "Models/OBJ format/train-log-flume.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/train-log-flume.png": "f7d8e55b13b41d783ab6b2eeda7f9cc7da1e14a485fce950238fcf8d869875a4"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/train-log-flume.fbx": "c972456f2296a6d0be1bb96f04930fcaa76a56df6900412b2405ea864261cc89",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/train-log-flume.glb": "6f20d5f4f9775178a79a02bedfa8a6d33dc050ec9a038a2a22e210ece1f83bc2",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/train-log-flume.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/train-log-flume.obj": "ddab7aa7b9a63264a6c721d02d6870a14a321ce464de6ca83d56a6b0df4625b3",
+    "Preview.png": "f7d8e55b13b41d783ab6b2eeda7f9cc7da1e14a485fce950238fcf8d869875a4"
+  },
+  "license": "../License.txt"
+}

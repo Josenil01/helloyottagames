@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "chair-cushion",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/chair-cushion.fbx": "5d4eb36c2bbf2805078e0a3f1172aed7079175c88c10e36f35aef1aa3e5f3719",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/chair-cushion.glb": "c46da13f8891d38331142972ec53275490cbad4ed3693af6565f974738af12cc",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/chair-cushion.obj": "363d9de30268bc0928376573609599ab77cc380dbfa19334482e8b78ec95fcba",
+    "Models/OBJ format/chair-cushion.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/chair-cushion.png": "21b825d3e73f91497061951e71d69728a4ca0face67ea2085bb17034ee5521da"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/chair-cushion.fbx": "5d4eb36c2bbf2805078e0a3f1172aed7079175c88c10e36f35aef1aa3e5f3719",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/chair-cushion.glb": "c46da13f8891d38331142972ec53275490cbad4ed3693af6565f974738af12cc",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/chair-cushion.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/chair-cushion.obj": "bf8471f0764cfcf86092413b7c07ea4353ec2c7a9bc2a56840bd49bf9a9dab91",
+    "Preview.png": "21b825d3e73f91497061951e71d69728a4ca0face67ea2085bb17034ee5521da"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,10 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl doors
+Kd 1 1 1
+map_Kd ../Textures/OBJ/doors.png
+
+newmtl metal
+Kd 1 1 1
+map_Kd ../Textures/OBJ/metal.png
+

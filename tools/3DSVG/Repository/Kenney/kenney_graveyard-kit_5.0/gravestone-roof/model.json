@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "gravestone-roof",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/gravestone-roof.fbx": "118fa1e31188231dacf7a176895bc15ac6a797e60ffe8899d0f4097009c862f5",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/gravestone-roof.glb": "991feaac46ce1f72cb455c540d034d75a8683fc6bf110fdf3a985506d8174d24",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/gravestone-roof.obj": "b477e18a152c37cecde7b8e9ea2099c609cc55dceaf04ec8e6425162979d8153",
+    "Models/OBJ format/gravestone-roof.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/gravestone-roof.png": "f85dd5d26c46a3247a267cca47b86a5f70e3b1a96af54ea62b0f8a8782090c89"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/gravestone-roof.fbx": "118fa1e31188231dacf7a176895bc15ac6a797e60ffe8899d0f4097009c862f5",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/gravestone-roof.glb": "991feaac46ce1f72cb455c540d034d75a8683fc6bf110fdf3a985506d8174d24",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/gravestone-roof.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/gravestone-roof.obj": "bae71f282e03c22f6768bc1d8463ea2d5c491976043b60cc2714bd942f29df24",
+    "Preview.png": "f85dd5d26c46a3247a267cca47b86a5f70e3b1a96af54ea62b0f8a8782090c89"
+  },
+  "license": "../License.txt"
+}

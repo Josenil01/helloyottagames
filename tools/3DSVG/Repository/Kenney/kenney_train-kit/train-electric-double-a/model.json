@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "train-electric-double-a",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/train-electric-double-a.fbx": "49b510b1ff0582d57610dc46b1b2af8b611197b7e8665fa26a60c175b17da0e0",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/train-electric-double-a.glb": "1086113a2fb6d805959bdf2ffbeea1a3c48e8a8b9b0542f514ee07debe30a17b",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/train-electric-double-a.obj": "9c1ee812e4180b2448a4f37063d167dd2fe33aa0c5f203e15a3f48ee95611922",
+    "Models/OBJ format/train-electric-double-a.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/train-electric-double-a.png": "b76daa94304f89dd6dd8884865b2f82244e20f3b1d023507f9dfbfd487fc782f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/train-electric-double-a.fbx": "49b510b1ff0582d57610dc46b1b2af8b611197b7e8665fa26a60c175b17da0e0",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/train-electric-double-a.glb": "1086113a2fb6d805959bdf2ffbeea1a3c48e8a8b9b0542f514ee07debe30a17b",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/train-electric-double-a.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/train-electric-double-a.obj": "f6284199a26be6dbc7c25465b2d4f8db0b43c5b48b538f763de24526b5eddad4",
+    "Preview.png": "b76daa94304f89dd6dd8884865b2f82244e20f3b1d023507f9dfbfd487fc782f"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-corner-column-small",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/wall-corner-column-small.fbx": "2f2a9480f4577823c4db160fdd06ce0b2f63fe840a9f01ee3ee0ef9cefa2e78c",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/wall-corner-column-small.glb": "df87b34452da8178d6b73877e1351f467b1d9ffdd86e0f1235573ba247fdc7ea",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/wall-corner-column-small.obj": "4d30d773eb505f5c31e4559adc8895ec73bd16bc89907b3db50c484beba7cdcb",
+    "Models/OBJ format/wall-corner-column-small.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-corner-column-small.png": "eb9c7da67904e4776173df007eeeda070049542db959c3430ed6ca686ae345ed"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/wall-corner-column-small.fbx": "2f2a9480f4577823c4db160fdd06ce0b2f63fe840a9f01ee3ee0ef9cefa2e78c",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/wall-corner-column-small.glb": "df87b34452da8178d6b73877e1351f467b1d9ffdd86e0f1235573ba247fdc7ea",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/wall-corner-column-small.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-corner-column-small.obj": "5168241897d1a2c670756be5c393f706c3b0d91c8f79f0679ecb8222ed5e05ea",
+    "Preview.png": "eb9c7da67904e4776173df007eeeda070049542db959c3430ed6ca686ae345ed"
+  },
+  "license": "../License.txt"
+}

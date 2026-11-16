@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "snow-tile-wide-corner",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/snow-tile-wide-corner.fbx": "8f976a9976fea9d797d931b380ed442870c312961f4470af7fede1ebfd82befd",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/snow-tile-wide-corner.glb": "382662f40eec05584106f9c28a4c5fdf5dfcf37bb2ac3feeb3c80e3c9c626a49",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/snow-tile-wide-corner.obj": "e7ea18c906a1fba6c96b7cc6f7a6f71dbd52616eff89fbe84f6cf08beb1b59ab",
+    "Models/OBJ format/snow-tile-wide-corner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/snow-tile-wide-corner.png": "2b815179220eb6f1a689785d80d55778bebd309d719502bbeeb05722c5365ebe"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/snow-tile-wide-corner.fbx": "8f976a9976fea9d797d931b380ed442870c312961f4470af7fede1ebfd82befd",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/snow-tile-wide-corner.glb": "382662f40eec05584106f9c28a4c5fdf5dfcf37bb2ac3feeb3c80e3c9c626a49",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/snow-tile-wide-corner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/snow-tile-wide-corner.obj": "a1a6a724d5b5c9ad620ddea3abb3279fb956cb2dff12d3647e29da3458d46722",
+    "Preview.png": "2b815179220eb6f1a689785d80d55778bebd309d719502bbeeb05722c5365ebe"
+  },
+  "license": "../License.txt"
+}

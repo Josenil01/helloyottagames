@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "sign-highway-wide",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/sign-highway-wide.fbx": "b4e4062473f538b09a0d34336f11998797982bc36e83365ffbdf61b2bc7c450f",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/sign-highway-wide.glb": "9b133033576388d10fdced59d2ef92bc30409fda3dfb40d6334f35276729d1fd",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/sign-highway-wide.obj": "e54ad32c0be84001d213c1a255452daa26bc0258ed3e37f9e2464342641bace3",
+    "Models/OBJ format/sign-highway-wide.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/sign-highway-wide.png": "c4d6cb631974dc1bfea97c68dda11daf0b30609b0d79cb429deaf86087f89805"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/sign-highway-wide.fbx": "b4e4062473f538b09a0d34336f11998797982bc36e83365ffbdf61b2bc7c450f",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/sign-highway-wide.glb": "9b133033576388d10fdced59d2ef92bc30409fda3dfb40d6334f35276729d1fd",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/sign-highway-wide.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/sign-highway-wide.obj": "3a51959935bea1eff24059c3c375a5e0b1667719a90a4e3847420c1ba3223caf",
+    "Preview.png": "c4d6cb631974dc1bfea97c68dda11daf0b30609b0d79cb429deaf86087f89805"
+  },
+  "license": "../License.txt"
+}

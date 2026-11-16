@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "track-single-detailed",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/track-single-detailed.fbx": "6feb65b85f81c131d8878e596b524daec4931099a3b43db42b604e902fd016b7",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/track-single-detailed.glb": "511dc965864bba9c3c0fb0e4e60beefe13d00b1dd23beb8eb02cb662b9e7a7d7",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/track-single-detailed.obj": "1c48332b96b61fa372b0795e231d87cd2cfbc9ff2867ecc41d8f744d8dc8f07e",
+    "Models/OBJ format/track-single-detailed.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/track-single-detailed.png": "198b5ed6c90a7c7380a4c4aedf44f5cdf1070879caf78c8883e969d23ff8e541"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/track-single-detailed.fbx": "6feb65b85f81c131d8878e596b524daec4931099a3b43db42b604e902fd016b7",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/track-single-detailed.glb": "511dc965864bba9c3c0fb0e4e60beefe13d00b1dd23beb8eb02cb662b9e7a7d7",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/track-single-detailed.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/track-single-detailed.obj": "7bace8822b2016eb2aa12333ec7ef7a0634fa2f46d296be92d7231ee07ed6fe0",
+    "Preview.png": "198b5ed6c90a7c7380a4c4aedf44f5cdf1070879caf78c8883e969d23ff8e541"
+  },
+  "license": "../License.txt"
+}

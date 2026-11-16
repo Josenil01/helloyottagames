@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stone-wall-damaged",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/stone-wall-damaged.fbx": "ddf3c57866d336e66a0adc1c5855d4e84bdbf35ef187b8df549247cb74e0d664",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/stone-wall-damaged.glb": "2e0357e73f5fc0bc95f12469474c39191c93a67d586b5d3ad749edf2ec021c88",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/stone-wall-damaged.obj": "bcd1124332df11820bb2e245f18417cb4abad240a4a844169c7c13dec711539b",
+    "Models/OBJ format/stone-wall-damaged.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/stone-wall-damaged.png": "6594192a31d35875e37ba82e17c9dfeae3a8c1e0cfd8a0001e9ba8cf89628c96"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/stone-wall-damaged.fbx": "ddf3c57866d336e66a0adc1c5855d4e84bdbf35ef187b8df549247cb74e0d664",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/stone-wall-damaged.glb": "2e0357e73f5fc0bc95f12469474c39191c93a67d586b5d3ad749edf2ec021c88",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/stone-wall-damaged.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/stone-wall-damaged.obj": "d995f67faf90d5d861cc937de6394f3f3cd2a60308c05c4b6a94f7b4103b0f4b",
+    "Preview.png": "6594192a31d35875e37ba82e17c9dfeae3a8c1e0cfd8a0001e9ba8cf89628c96"
+  },
+  "license": "../License.txt"
+}

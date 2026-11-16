@@ -1,0 +1,25 @@
+{
+  "source": "character-female-d",
+  "checks": [
+    {
+      "format": "blend",
+      "triangles": 1633,
+      "texturesLoaded": true
+    },
+    {
+      "format": "fbx",
+      "triangles": 1633,
+      "texturesLoaded": true
+    },
+    {
+      "format": "glb",
+      "triangles": 1633,
+      "texturesLoaded": true
+    },
+    {
+      "format": "obj",
+      "triangles": 1633,
+      "texturesLoaded": true
+    }
+  ]
+}

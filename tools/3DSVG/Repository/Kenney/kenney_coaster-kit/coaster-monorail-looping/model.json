@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-monorail-looping",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-monorail-looping.fbx": "467ad3ba6f7ec7671937c1d13ac516fdd44c10cbafdce980eee22cd089ef3a12",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-monorail-looping.glb": "db1405863263741be6fb273f795542af68c1e435752f49df192c6b4b616e82c1",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-monorail-looping.obj": "712ef23ad29e0d12c49e05873ba5807010ae01e7915e523b831c826f34282e4c",
+    "Models/OBJ format/coaster-monorail-looping.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-monorail-looping.png": "75ba4a9df9c2bf3db1281a02c1f5bf2630a565c5e8ff27816a7ca7ffce3525bc"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-monorail-looping.fbx": "467ad3ba6f7ec7671937c1d13ac516fdd44c10cbafdce980eee22cd089ef3a12",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-monorail-looping.glb": "db1405863263741be6fb273f795542af68c1e435752f49df192c6b4b616e82c1",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-monorail-looping.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-monorail-looping.obj": "3607d42d07c1bab0f79d2c0a131c04f56d45e7c3235040cee7345052561b350c",
+    "Preview.png": "75ba4a9df9c2bf3db1281a02c1f5bf2630a565c5e8ff27816a7ca7ffce3525bc"
+  },
+  "license": "../License.txt"
+}

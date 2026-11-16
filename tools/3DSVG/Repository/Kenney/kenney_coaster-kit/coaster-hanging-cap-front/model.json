@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-hanging-cap-front",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-hanging-cap-front.fbx": "a442bda45e91cbbc46cb9e634d55c82bb47b771b699081030b960e5588f0ba50",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-hanging-cap-front.glb": "297dc6a15d08461642d4052fcd6e36be37900b58c8c8552c3a96264d10868424",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-hanging-cap-front.obj": "9bdf1239aa1ff99c9ae4953bc5cc3837791856179274af31441a269234e9ce8f",
+    "Models/OBJ format/coaster-hanging-cap-front.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-hanging-cap-front.png": "5b0d77eb00420ce2134bd3235cc3a100b7a6c21b353e232fbe15e90435c194b3"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-hanging-cap-front.fbx": "a442bda45e91cbbc46cb9e634d55c82bb47b771b699081030b960e5588f0ba50",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-hanging-cap-front.glb": "297dc6a15d08461642d4052fcd6e36be37900b58c8c8552c3a96264d10868424",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-hanging-cap-front.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-hanging-cap-front.obj": "166a25e2c3b2430b4d334adf8efa649056deaf14542835ce409dc08e748bf4e6",
+    "Preview.png": "5b0d77eb00420ce2134bd3235cc3a100b7a6c21b353e232fbe15e90435c194b3"
+  },
+  "license": "../License.txt"
+}

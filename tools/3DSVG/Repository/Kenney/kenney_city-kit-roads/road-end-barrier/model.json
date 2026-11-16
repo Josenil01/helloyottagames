@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-end-barrier",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-end-barrier.fbx": "206afdeda01f6508f3cc737ffff60b8e3eaa8c0d252e09f4b9c1d7c1af755d67",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-end-barrier.glb": "c7a73cfae01de7441c8dcc89a9dd77d64c34af467fc3f03a3cd644a85f1ca8bc",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-end-barrier.obj": "dd8c300e93c1203b79f0291b5b3cf54cbb1da4cccefaef017e025a949ceb5cb9",
+    "Models/OBJ format/road-end-barrier.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-end-barrier.png": "96690fc5a993ef72dfb2b5cb39b240edf242b5b3ca0c4c6080c99d17731ea1d4"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-end-barrier.fbx": "206afdeda01f6508f3cc737ffff60b8e3eaa8c0d252e09f4b9c1d7c1af755d67",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-end-barrier.glb": "c7a73cfae01de7441c8dcc89a9dd77d64c34af467fc3f03a3cd644a85f1ca8bc",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-end-barrier.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-end-barrier.obj": "58d2ba73ebed8fdaf94b89954122e4cd21ddf191545a2bf641d9463ca6ce7941",
+    "Preview.png": "96690fc5a993ef72dfb2b5cb39b240edf242b5b3ca0c4c6080c99d17731ea1d4"
+  },
+  "license": "../License.txt"
+}

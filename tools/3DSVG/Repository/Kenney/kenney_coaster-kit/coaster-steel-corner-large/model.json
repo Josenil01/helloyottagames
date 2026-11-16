@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-steel-corner-large",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-steel-corner-large.fbx": "b57e2d4e55b9cdf22e1c5e4f297ea11bed724d493e49fab61e3fcb8dc42da577",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-steel-corner-large.glb": "f4a894880482b38f7fe2a9a709f1f4751ae0a18af8131ff57d61fbfd47880fdb",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-steel-corner-large.obj": "35e76990c670c2c280eb2978b60d89940d74e6d11b2046199e7bb7c9c1d52617",
+    "Models/OBJ format/coaster-steel-corner-large.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-steel-corner-large.png": "ad408e5f1549a1b31a87ad01fcfae6240fd340fb84fa5d5c179d3c78582947b7"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-steel-corner-large.fbx": "b57e2d4e55b9cdf22e1c5e4f297ea11bed724d493e49fab61e3fcb8dc42da577",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-steel-corner-large.glb": "f4a894880482b38f7fe2a9a709f1f4751ae0a18af8131ff57d61fbfd47880fdb",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-steel-corner-large.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-steel-corner-large.obj": "e9cda1e7528140b5fcf6c2716d75c9d495e4948cc2663047a2496d6201175c55",
+    "Preview.png": "ad408e5f1549a1b31a87ad01fcfae6240fd340fb84fa5d5c179d3c78582947b7"
+  },
+  "license": "../License.txt"
+}

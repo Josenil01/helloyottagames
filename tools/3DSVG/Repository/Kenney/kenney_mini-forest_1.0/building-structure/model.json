@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "building-structure",
+  "pack": "kenney_mini-forest_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "Models/FBX format/building-structure.fbx": "6567daea84c2e48bab7011d8865c2f81863dc1ab997b144b4b8afefff31d796c",
+    "Models/GLB format/Textures/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "Models/GLB format/building-structure.glb": "d991f7b82d66791a37e18c218a3127b15fc4ebe799c104b9e3bdcda878a8873f",
+    "Models/OBJ format/Textures/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "Models/OBJ format/building-structure.obj": "872d26089aa693c3548ea14b494bea75b3b5c830431727aac68c4a0ccc0fce6c",
+    "Models/OBJ format/building-structure.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/building-structure.png": "93e6cc48f9193bbbea5b6fc804f77b36acb649ce98d616e537b22937eb3ee6eb"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "FBX format/building-structure.fbx": "6567daea84c2e48bab7011d8865c2f81863dc1ab997b144b4b8afefff31d796c",
+    "Textures/GLB/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "GLB format/building-structure.glb": "d991f7b82d66791a37e18c218a3127b15fc4ebe799c104b9e3bdcda878a8873f",
+    "Textures/OBJ/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "OBJ format/building-structure.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/building-structure.obj": "7c475fd54c57bebbb55ec3ae0d99cf614db20203fdc1f7db85eed03586c48456",
+    "Preview.png": "93e6cc48f9193bbbea5b6fc804f77b36acb649ce98d616e537b22937eb3ee6eb"
+  },
+  "license": "../License.txt"
+}

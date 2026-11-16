@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "toaster",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/toaster.fbx": "01bd4951d4dbfe3f7a788703d185373c8e15c14c001f3860af4a6e90e6a23c76",
+    "Models/GLTF format/toaster.glb": "38c1fb7b122be9997758c8ee855d87f28014cf282f24d66d39f4e8d8b236d2af",
+    "Models/OBJ format/toaster.obj": "3b31dcf94a636198039b2789743b99629b9d738ba973fd232617be549c2ca07a",
+    "Models/OBJ format/toaster.mtl": "ba7cc7738650bf1c54aa565a42bd11ec78dc1ccdf8590f6e90fb0667d7f80d59"
+  },
+  "files": {
+    "FBX format/toaster.fbx": "01bd4951d4dbfe3f7a788703d185373c8e15c14c001f3860af4a6e90e6a23c76",
+    "GLB format/toaster.glb": "38c1fb7b122be9997758c8ee855d87f28014cf282f24d66d39f4e8d8b236d2af",
+    "OBJ format/toaster.mtl": "a0ece1e3238a2d2dd6bd35d9a69bd5dcc7b63acbc2ba736068ca5dc715c947ca",
+    "OBJ format/toaster.obj": "898599f1a482cab83ea92106a534c17f1583191b5f04c3c13f5268568503f9b9"
+  },
+  "license": "../License.txt"
+}

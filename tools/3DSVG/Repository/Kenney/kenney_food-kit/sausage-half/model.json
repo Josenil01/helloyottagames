@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "sausage-half",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/sausage-half.fbx": "f4559b510125ae1be858e2cab53b1cc574add9d6e87dc700f9ea3afbffc6cdd6",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/sausage-half.glb": "cf296464799fbbf1e9bb3d30c400d5df337707aa6cfa44a90a0a4a3a50cbb1c8",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/sausage-half.obj": "d5ae78171ed50792c0fd9f63790c0c6d43b85501e391df6c973c3fef5d7cd205",
+    "Models/OBJ format/sausage-half.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/sausage-half.png": "11a7cb3f8f492e4afd1983b7dd0fa27e95f4c868e75e9beab8a3cde5410bffd3"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/sausage-half.fbx": "f4559b510125ae1be858e2cab53b1cc574add9d6e87dc700f9ea3afbffc6cdd6",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/sausage-half.glb": "cf296464799fbbf1e9bb3d30c400d5df337707aa6cfa44a90a0a4a3a50cbb1c8",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/sausage-half.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/sausage-half.obj": "f27cbccd07f12e56f2e9f89cf39eb442d4a6689a6c3e34fd3bd0d73c0d085014",
+    "Preview.png": "11a7cb3f8f492e4afd1983b7dd0fa27e95f4c868e75e9beab8a3cde5410bffd3"
+  },
+  "license": "../License.txt"
+}

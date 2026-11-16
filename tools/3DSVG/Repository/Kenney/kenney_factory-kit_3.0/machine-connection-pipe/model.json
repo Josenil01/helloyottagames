@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "machine-connection-pipe",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/machine-connection-pipe.fbx": "a4943d655f52aeddcb6023a41a01ae45b3ef644c8d576dd32bfa3a5f81a43e1e",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/machine-connection-pipe.glb": "b2893e5f6ae2484b8d5be0d4538bc90e50dba98715976ac8c82f55b413f8985f",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/machine-connection-pipe.obj": "e99ccc2ffe36cb1a62d734d83ca96737a95a58871219e3f63fabf50dbdd2b917",
+    "Models/OBJ format/machine-connection-pipe.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/machine-connection-pipe.png": "26f661ca923386f28ec8611735b6d65260a1f5dc6c95284fb7d23dd60d1ff223"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/machine-connection-pipe.fbx": "a4943d655f52aeddcb6023a41a01ae45b3ef644c8d576dd32bfa3a5f81a43e1e",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/machine-connection-pipe.glb": "b2893e5f6ae2484b8d5be0d4538bc90e50dba98715976ac8c82f55b413f8985f",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/machine-connection-pipe.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/machine-connection-pipe.obj": "2f47c79192d5dfbec1eb44221dde717a43d8bd38d7d8254f15665a1907082385",
+    "Preview.png": "26f661ca923386f28ec8611735b6d65260a1f5dc6c95284fb7d23dd60d1ff223"
+  },
+  "license": "../License.txt"
+}

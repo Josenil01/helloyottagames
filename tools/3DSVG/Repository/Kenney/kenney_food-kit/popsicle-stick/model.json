@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "popsicle-stick",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/popsicle-stick.fbx": "910bf273cf9734ea880efd5dbe4e71b63cb87e3df291339e791e12d3564cd8f8",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/popsicle-stick.glb": "0866c4dda26e1f481231fea1d4681b88f20d1d4933cfb57d2661fc3ea951572e",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/popsicle-stick.obj": "afb304ee0bdd0172ccfefce1bf4c41ce5a2ecd47dd3f637a7ec0e7d9f6f9f719",
+    "Models/OBJ format/popsicle-stick.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/popsicle-stick.png": "1881b447a3d7fca90f16d452a04c0a533e7bce49305f1f43d411193ee0569f02"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/popsicle-stick.fbx": "910bf273cf9734ea880efd5dbe4e71b63cb87e3df291339e791e12d3564cd8f8",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/popsicle-stick.glb": "0866c4dda26e1f481231fea1d4681b88f20d1d4933cfb57d2661fc3ea951572e",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/popsicle-stick.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/popsicle-stick.obj": "e27d9d8ddfd55b8fa2d6493f2c6feb52b911a9cac22494262da4efb26a48e9f7",
+    "Preview.png": "1881b447a3d7fca90f16d452a04c0a533e7bce49305f1f43d411193ee0569f02"
+  },
+  "license": "../License.txt"
+}

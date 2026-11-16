@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "railroad-rail-straight-bump-down",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/railroad-rail-straight-bump-down.fbx": "254c5a1d791575dfcbdf1a738b3dc9f66347a0d5c19c0f97589f018203d4910c",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/railroad-rail-straight-bump-down.glb": "9f9299c9b7239d0499adc91b0f35689d7abeed7b7638f02341b8bd51dc8695fc",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/railroad-rail-straight-bump-down.obj": "4047139ed209d35e3322f113b4d9000eec84b8ffdfb459c1d2d5636b2cd18bc9",
+    "Models/OBJ format/railroad-rail-straight-bump-down.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/railroad-rail-straight-bump-down.png": "97006fde009443143dc0e4325b4706a868f1187bf59a101e0add1456258bcc0c"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/railroad-rail-straight-bump-down.fbx": "254c5a1d791575dfcbdf1a738b3dc9f66347a0d5c19c0f97589f018203d4910c",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/railroad-rail-straight-bump-down.glb": "9f9299c9b7239d0499adc91b0f35689d7abeed7b7638f02341b8bd51dc8695fc",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/railroad-rail-straight-bump-down.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/railroad-rail-straight-bump-down.obj": "effee98fe8a7b5f43feb67f6c37cb8042c6c2f7c39ffbe98d0693cfb64113251",
+    "Preview.png": "97006fde009443143dc0e4325b4706a868f1187bf59a101e0add1456258bcc0c"
+  },
+  "license": "../License.txt"
+}

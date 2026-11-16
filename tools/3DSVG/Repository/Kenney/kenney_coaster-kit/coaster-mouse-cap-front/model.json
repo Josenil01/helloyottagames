@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-mouse-cap-front",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-mouse-cap-front.fbx": "c84d9ce7739a361b53f9e04b2fbdac65878daf6ed045022f3f4b6bc46df6c7b5",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-mouse-cap-front.glb": "3019e580bca39e8457abb6935e6d20b11228733e84940c7dff1c879895963661",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-mouse-cap-front.obj": "b1d4aa575e0eb1bba0c96ef51eb4ce18f5c5913f3b603ac468c0b06338c1cc79",
+    "Models/OBJ format/coaster-mouse-cap-front.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-mouse-cap-front.png": "4c79a36650daec4678d51decf683389d134c27c8c5ee38e463f23629e32089b4"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-mouse-cap-front.fbx": "c84d9ce7739a361b53f9e04b2fbdac65878daf6ed045022f3f4b6bc46df6c7b5",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-mouse-cap-front.glb": "3019e580bca39e8457abb6935e6d20b11228733e84940c7dff1c879895963661",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-mouse-cap-front.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-mouse-cap-front.obj": "2d690a0f2f17ff196127b5e14ae3ad42e4963c940abd0f7cb900f7c52ce4ef86",
+    "Preview.png": "4c79a36650daec4678d51decf683389d134c27c8c5ee38e463f23629e32089b4"
+  },
+  "license": "../License.txt"
+}

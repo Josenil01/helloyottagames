@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pancakes",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/pancakes.fbx": "ef0a16d3f173d9cdde03fdab9ba984dafa69454b7f94c6aa0cebc9593fd74ae6",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/pancakes.glb": "75550fb0eae1169ce4f59b054b0bbaa3de3be67765cd457a7e3e99488e93546e",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/pancakes.obj": "562f8650daebe9543c4e07204d084cbc6aa3a28363a4ed9a8cd6779b86dc4085",
+    "Models/OBJ format/pancakes.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/pancakes.png": "d2434e7c3d2b0e928427379674b0b0325dc42ed193a2bc8c61fe830769ad9b4d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/pancakes.fbx": "ef0a16d3f173d9cdde03fdab9ba984dafa69454b7f94c6aa0cebc9593fd74ae6",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/pancakes.glb": "75550fb0eae1169ce4f59b054b0bbaa3de3be67765cd457a7e3e99488e93546e",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/pancakes.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/pancakes.obj": "78447d0216608b3c58ab0cda49c617d1df13688ed07207cbc4605fa9bd96ab1b",
+    "Preview.png": "d2434e7c3d2b0e928427379674b0b0325dc42ed193a2bc8c61fe830769ad9b4d"
+  },
+  "license": "../License.txt"
+}

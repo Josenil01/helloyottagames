@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tableCross",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/tableCross.fbx": "71f302158858f96f733ac1074665a06610335a88cb33632420ace9663d75deb9",
+    "Models/GLTF format/tableCross.glb": "f0d83392aff5df82f6c9585cadff694643dbd30a4ff2b8bb01a00a7a161338a3",
+    "Models/OBJ format/tableCross.obj": "627c01e3d51e9ba7bb62911de7f2f657a8e010ff4868b59799cf944fe9b9a8aa",
+    "Models/OBJ format/tableCross.mtl": "eb2bffff6262d9b032d9ae1de51467559b6a03da66cd68ac5ecd34ecd004c0c5"
+  },
+  "files": {
+    "FBX format/tableCross.fbx": "71f302158858f96f733ac1074665a06610335a88cb33632420ace9663d75deb9",
+    "GLB format/tableCross.glb": "f0d83392aff5df82f6c9585cadff694643dbd30a4ff2b8bb01a00a7a161338a3",
+    "OBJ format/tableCross.mtl": "9e288bee18bb8b6b628dec6d8d8acbaba02d65903f607a1be6681b4207798c0b",
+    "OBJ format/tableCross.obj": "e2a93b36542213da41a28e6a56965d73016c5f7ace196ebd49605ee70c9491af"
+  },
+  "license": "../License.txt"
+}

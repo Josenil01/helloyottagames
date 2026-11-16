@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coffin-old",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/coffin-old.fbx": "1723ce6c6d4004a9329dba442a2644c1470f29ff12f72c8f912b526817dd5b24",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/coffin-old.glb": "46974a0a6bc94e1e8873c6629b17733746d0643764ae0d849cac9ed1daaae796",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/coffin-old.obj": "b6b1fb0c572f672239257c708dddbc8d3c68966dc943b0b3a172d6244bd2f3ba",
+    "Models/OBJ format/coffin-old.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coffin-old.png": "4a602e47c1c251f8b194eeb29fe7ebff6ac5bb139cfe570216b34ee53241b14b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/coffin-old.fbx": "1723ce6c6d4004a9329dba442a2644c1470f29ff12f72c8f912b526817dd5b24",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/coffin-old.glb": "46974a0a6bc94e1e8873c6629b17733746d0643764ae0d849cac9ed1daaae796",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/coffin-old.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coffin-old.obj": "f4a9e243a492df535095abd4c1cf7b0229c79145f282b2b8ae8536fb1cf54097",
+    "Preview.png": "4a602e47c1c251f8b194eeb29fe7ebff6ac5bb139cfe570216b34ee53241b14b"
+  },
+  "license": "../License.txt"
+}

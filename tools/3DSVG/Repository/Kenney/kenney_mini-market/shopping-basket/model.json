@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "shopping-basket",
+  "pack": "kenney_mini-market",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/Textures/variation-a.png": "0190d68fc48bad4c980b8b10f7891741aca590a0a13cd8ecbaeb33537d47044e",
+    "Models/Textures/variation-b.png": "bb14943d14fa3382ae9d132b32c065c1f7312c4bf4f2600b50b9b265a4e4dda2",
+    "Models/FBX format/shopping-basket.fbx": "2941e739597573fb6087f7a990048bc2e802a0c879d7ccf733660924595d56d4",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/shopping-basket.glb": "a7704926cb56c5a9ab74488230fc7c4d7b914387c59e9c1b6f62376965c0ea7d",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/shopping-basket.obj": "1565cf73c61f44205c7962a69699b1b1c660c74bc7adf6e90e0f238208d7e496",
+    "Models/OBJ format/shopping-basket.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/shopping-basket.png": "570b86dca4869f287a1293726492ee864aae68e0bb59ce61beb6bffdfde52777"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/FBX/variation-a.png": "0190d68fc48bad4c980b8b10f7891741aca590a0a13cd8ecbaeb33537d47044e",
+    "Textures/FBX/variation-b.png": "bb14943d14fa3382ae9d132b32c065c1f7312c4bf4f2600b50b9b265a4e4dda2",
+    "FBX format/shopping-basket.fbx": "2941e739597573fb6087f7a990048bc2e802a0c879d7ccf733660924595d56d4",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/GLB/variation-a.png": "0190d68fc48bad4c980b8b10f7891741aca590a0a13cd8ecbaeb33537d47044e",
+    "Textures/GLB/variation-b.png": "bb14943d14fa3382ae9d132b32c065c1f7312c4bf4f2600b50b9b265a4e4dda2",
+    "GLB format/shopping-basket.glb": "a7704926cb56c5a9ab74488230fc7c4d7b914387c59e9c1b6f62376965c0ea7d",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/OBJ/variation-a.png": "0190d68fc48bad4c980b8b10f7891741aca590a0a13cd8ecbaeb33537d47044e",
+    "Textures/OBJ/variation-b.png": "bb14943d14fa3382ae9d132b32c065c1f7312c4bf4f2600b50b9b265a4e4dda2",
+    "OBJ format/shopping-basket.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/shopping-basket.obj": "2659e7691579b9fe5658a79fa1f8fbb2441419758b851eacb52ddef3b6b3a82a",
+    "Preview.png": "570b86dca4869f287a1293726492ee864aae68e0bb59ce61beb6bffdfde52777"
+  },
+  "license": "../License.txt"
+}

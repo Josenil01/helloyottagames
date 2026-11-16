@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wreath-decorated",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/wreath-decorated.fbx": "53cc1d00bafa4c41bda64ac694c78887b5d4ee8247ce3c400238efb8acea4f76",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/wreath-decorated.glb": "643709c4bc32d4a14e1aaddbf82b09e3136a8988be4c171be129531b3b167ab3",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/wreath-decorated.obj": "ae85dc7ac0187e5f8b4ffdf6d5896eb5ec36f6945f7c1e85110a8a58b6b00f6b",
+    "Models/OBJ format/wreath-decorated.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wreath-decorated.png": "d27ca424c804186808cac902292d9ad8a189952577f5c151c7a1676b0fa42cc8"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/wreath-decorated.fbx": "53cc1d00bafa4c41bda64ac694c78887b5d4ee8247ce3c400238efb8acea4f76",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/wreath-decorated.glb": "643709c4bc32d4a14e1aaddbf82b09e3136a8988be4c171be129531b3b167ab3",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/wreath-decorated.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wreath-decorated.obj": "2ceb70e0a35e403a83015b7ca98e9f87894a34639761317d311b573bcd1f6e0e",
+    "Preview.png": "d27ca424c804186808cac902292d9ad8a189952577f5c151c7a1676b0fa42cc8"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "conveyor-long-stripe",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/conveyor-long-stripe.fbx": "f40fed36a620530cb6d71172044ef664d9b6bf98fd562b88e3e4eeace57838ff",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/conveyor-long-stripe.glb": "d6a45a89299e48faf519667f0af33c334e50be068c2ba75bc690d7198bf67c13",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/conveyor-long-stripe.obj": "4a9d040608434ff387db572a35cc2e0e95d3e39b50990f9fe4be603d3021b74b",
+    "Models/OBJ format/conveyor-long-stripe.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/conveyor-long-stripe.png": "c1d1b22f5721e1c4d19e75358c3e0fd1a4ca24e60ebbe94520da829b41929a56"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/conveyor-long-stripe.fbx": "f40fed36a620530cb6d71172044ef664d9b6bf98fd562b88e3e4eeace57838ff",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/conveyor-long-stripe.glb": "d6a45a89299e48faf519667f0af33c334e50be068c2ba75bc690d7198bf67c13",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/conveyor-long-stripe.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/conveyor-long-stripe.obj": "fd27c87c9f13581dbd0cd33bba10700a74e395d5cbeb345fe777befb95d0e783",
+    "Preview.png": "c1d1b22f5721e1c4d19e75358c3e0fd1a4ca24e60ebbe94520da829b41929a56"
+  },
+  "license": "../License.txt"
+}

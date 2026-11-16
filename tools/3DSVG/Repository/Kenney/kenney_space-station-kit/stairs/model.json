@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stairs",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/stairs.fbx": "69476c030078162e90bdec05327ff1dfc1f28118cff1e8e2117855a144bb4823",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/stairs.glb": "c288069628036c179f030e8669e020a94d40efa932bf8610a08dc81fec6b9e60",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/stairs.obj": "aa0795231d9deeba5abd40c4c0ea74af3861be9bf168f521ccf16b054c98d5e2",
+    "Models/OBJ format/stairs.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/stairs.png": "ef3065df4bc532965b675c37fe82ce0dcec9c3dabd213df5d1d3e7ea24aae0ff"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/stairs.fbx": "69476c030078162e90bdec05327ff1dfc1f28118cff1e8e2117855a144bb4823",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/stairs.glb": "c288069628036c179f030e8669e020a94d40efa932bf8610a08dc81fec6b9e60",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/stairs.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/stairs.obj": "24a94a34b6e005bc02b8a61a396c0edb2e794f17d2ea7a211747255df6adedc4",
+    "Preview.png": "ef3065df4bc532965b675c37fe82ce0dcec9c3dabd213df5d1d3e7ea24aae0ff"
+  },
+  "license": "../License.txt"
+}

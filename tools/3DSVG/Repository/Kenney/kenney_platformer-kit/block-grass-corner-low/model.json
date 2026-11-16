@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "block-grass-corner-low",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/block-grass-corner-low.fbx": "dc4eacf3b73033a948b11b72847e5d10b4db937861afec535f1879dae32f14da",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/block-grass-corner-low.glb": "eea2add8735b7dd1570483706e7e960ed816fd7053f92a7b6736c9f32f09378e",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/block-grass-corner-low.obj": "538d6f72a1e2f39bb4321816c097288120297f23f37b6501df8ec2b7464e9e57",
+    "Models/OBJ format/block-grass-corner-low.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/block-grass-corner-low.png": "bdf86f0469ce3fdedca5ed77ee9d31a801ba3aa8297fc0d458a6077b89640577"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/block-grass-corner-low.fbx": "dc4eacf3b73033a948b11b72847e5d10b4db937861afec535f1879dae32f14da",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/block-grass-corner-low.glb": "eea2add8735b7dd1570483706e7e960ed816fd7053f92a7b6736c9f32f09378e",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/block-grass-corner-low.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/block-grass-corner-low.obj": "81f3607a591f08c261c34aef51995641738899188eede65ca1a6f6b960c67115",
+    "Preview.png": "bdf86f0469ce3fdedca5ed77ee9d31a801ba3aa8297fc0d458a6077b89640577"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "roadCornerLarge",
+  "pack": "kenney_racing-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/checkers.png": "8eb3d9d77c1165cf2b1c68a07f808d83d6565ce3db9e930ca500cbd7296f4c4d",
+    "Models/FBX format/Textures/net.png": "c8e5d6fc69bafe6c3df797ae3175d9f1bf606bc1a9df5e12463a74087a4ea3fc",
+    "Models/FBX format/Textures/tankco.png": "5355b8f2c0155034d2bc2170517ae815ad0fe659cd2fb5e195245b7c9165d9f5",
+    "Models/FBX format/roadCornerLarge.fbx": "f66f7eccfdc489b39c614cffc94b0797c057bac56982ea84158ec590f8fedb49",
+    "Models/GLTF format/roadCornerLarge.glb": "fe6e9db43a5f3fde04b56d9f9905bb69b725325053002627968b5cd9e0f72d15",
+    "Models/OBJ format/Textures/checkers.png": "8eb3d9d77c1165cf2b1c68a07f808d83d6565ce3db9e930ca500cbd7296f4c4d",
+    "Models/OBJ format/Textures/net.png": "c8e5d6fc69bafe6c3df797ae3175d9f1bf606bc1a9df5e12463a74087a4ea3fc",
+    "Models/OBJ format/Textures/tankco.png": "5355b8f2c0155034d2bc2170517ae815ad0fe659cd2fb5e195245b7c9165d9f5",
+    "Models/OBJ format/roadCornerLarge.obj": "cdfd1b34426aaea4b90a29b927db993089bcda688044cc45bb592ff625292d69",
+    "Models/OBJ format/roadCornerLarge.mtl": "f6cfdd180117ba30f258bfcbbf73848f9af74a4d680ed33f0cf3f3bdfa5f0384"
+  },
+  "files": {
+    "Textures/FBX/checkers.png": "8eb3d9d77c1165cf2b1c68a07f808d83d6565ce3db9e930ca500cbd7296f4c4d",
+    "Textures/FBX/net.png": "c8e5d6fc69bafe6c3df797ae3175d9f1bf606bc1a9df5e12463a74087a4ea3fc",
+    "Textures/FBX/tankco.png": "5355b8f2c0155034d2bc2170517ae815ad0fe659cd2fb5e195245b7c9165d9f5",
+    "FBX format/roadCornerLarge.fbx": "f66f7eccfdc489b39c614cffc94b0797c057bac56982ea84158ec590f8fedb49",
+    "GLB format/roadCornerLarge.glb": "fe6e9db43a5f3fde04b56d9f9905bb69b725325053002627968b5cd9e0f72d15",
+    "Textures/OBJ/checkers.png": "8eb3d9d77c1165cf2b1c68a07f808d83d6565ce3db9e930ca500cbd7296f4c4d",
+    "Textures/OBJ/net.png": "c8e5d6fc69bafe6c3df797ae3175d9f1bf606bc1a9df5e12463a74087a4ea3fc",
+    "Textures/OBJ/tankco.png": "5355b8f2c0155034d2bc2170517ae815ad0fe659cd2fb5e195245b7c9165d9f5",
+    "OBJ format/roadCornerLarge.mtl": "519358fd0edce661aef9f2398071f5c940350a806ef71d03dbdff8057107daf4",
+    "OBJ format/roadCornerLarge.obj": "e24247f53b3e96d05b85df0c22c5e35d865998c0fad708db4755ce4c832cf171"
+  },
+  "license": "../License.txt"
+}

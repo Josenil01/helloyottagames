@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "roof-flat-detail-d",
+  "pack": "kenney_modular-buildings",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Models/Textures/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Models/Textures/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "Models/FBX format/roof-flat-detail-d.fbx": "64c5b5752e202dc8b73749b5ef19932ea1e94f24a737228291e2bcb71ac8a0c9",
+    "Models/GLB format/Textures/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Models/GLB format/roof-flat-detail-d.glb": "de2bd3691c5cdfceb8d991d87a57ca565822457ac6bd116b60c9adca285b3c95",
+    "Models/OBJ format/Textures/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Models/OBJ format/roof-flat-detail-d.obj": "ceebd039052ebf3eadee14894590d368e108157f659c30ef95917ab7c0d9997d",
+    "Models/OBJ format/roof-flat-detail-d.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/roof-flat-detail-d.png": "f0e15f1a6206d59c0f5c9f911a33afe401da7e86a63f7052a4fa33cec266c4be"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Textures/FBX/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Textures/FBX/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "FBX format/roof-flat-detail-d.fbx": "64c5b5752e202dc8b73749b5ef19932ea1e94f24a737228291e2bcb71ac8a0c9",
+    "Textures/GLB/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Textures/GLB/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Textures/GLB/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "GLB format/roof-flat-detail-d.glb": "de2bd3691c5cdfceb8d991d87a57ca565822457ac6bd116b60c9adca285b3c95",
+    "Textures/OBJ/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Textures/OBJ/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Textures/OBJ/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "OBJ format/roof-flat-detail-d.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/roof-flat-detail-d.obj": "c5bf8bc70b17007af6c5512ba62f38246406cd592ed704304c55c3c994f46d82",
+    "Preview.png": "f0e15f1a6206d59c0f5c9f911a33afe401da7e86a63f7052a4fa33cec266c4be"
+  },
+  "license": "../License.txt"
+}

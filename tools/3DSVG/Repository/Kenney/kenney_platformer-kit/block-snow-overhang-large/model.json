@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "block-snow-overhang-large",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/block-snow-overhang-large.fbx": "1f3c98c7fdeccec440b2641c5b55bad3ef5ab2d721f0a07ff646421fb0b694ed",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/block-snow-overhang-large.glb": "fb6b8f2024ab4ad611a53283430e5b438637c35499c540f8d1d077c58d12e2bf",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/block-snow-overhang-large.obj": "a678b072e18bf1e9191c24bf30173f686e884f82663339cca6696cf1548d77da",
+    "Models/OBJ format/block-snow-overhang-large.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/block-snow-overhang-large.png": "8d2df9acdcd0a91bf5144055879567f2c6c3f09217f9a30f0db7a02bd3442f06"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/block-snow-overhang-large.fbx": "1f3c98c7fdeccec440b2641c5b55bad3ef5ab2d721f0a07ff646421fb0b694ed",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/block-snow-overhang-large.glb": "fb6b8f2024ab4ad611a53283430e5b438637c35499c540f8d1d077c58d12e2bf",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/block-snow-overhang-large.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/block-snow-overhang-large.obj": "41c8778f69312b5659737bb85b51f1d2a9b0db73cb3a4c334a105bbef6645e16",
+    "Preview.png": "8d2df9acdcd0a91bf5144055879567f2c6c3f09217f9a30f0db7a02bd3442f06"
+  },
+  "license": "../License.txt"
+}

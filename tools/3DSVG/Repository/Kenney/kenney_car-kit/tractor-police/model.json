@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tractor-police",
+  "pack": "kenney_car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/FBX format/tractor-police.fbx": "1b21862bfd5dfe64e7a79e587f38326f9246c32bd295c089fdd4debad6872c0a",
+    "Models/GLB format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/GLB format/tractor-police.glb": "25cd7801798fd1c81bb82cd8e9d5ec1ec1797b9fb720304efff5e6cbc7949142",
+    "Models/OBJ format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/OBJ format/tractor-police.obj": "7304188c4fd6641ed170352b86cc23b214a0a18a24c91438be1527e3f9a2ca8d",
+    "Models/OBJ format/tractor-police.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tractor-police.png": "d5b3d26476802b3b174d8b5f6f32edce8dc6a6a0257aff69a7c00083fa790394"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "FBX format/tractor-police.fbx": "1b21862bfd5dfe64e7a79e587f38326f9246c32bd295c089fdd4debad6872c0a",
+    "Textures/GLB/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "GLB format/tractor-police.glb": "25cd7801798fd1c81bb82cd8e9d5ec1ec1797b9fb720304efff5e6cbc7949142",
+    "Textures/OBJ/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "OBJ format/tractor-police.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tractor-police.obj": "303d0d9af1e563aa5409cc8badaebf83ef750c9defda84e5066ea54623e3241a",
+    "Preview.png": "d5b3d26476802b3b174d8b5f6f32edce8dc6a6a0257aff69a7c00083fa790394"
+  },
+  "license": "../License.txt"
+}

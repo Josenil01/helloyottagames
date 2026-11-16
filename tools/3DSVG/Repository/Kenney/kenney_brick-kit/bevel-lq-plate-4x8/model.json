@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bevel-lq-plate-4x8",
+  "pack": "kenney_brick-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/FBX format/bevel-lq-plate-4x8.fbx": "0e44b16a8b168ccc7a186c0924340c220f58ed42a939a154cab4ce727023ded7",
+    "Models/GLB format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/GLB format/bevel-lq-plate-4x8.glb": "05867c4b7654a4ad25705d081d0de80af9eacf53d67273e0d6315515085a0cea",
+    "Models/OBJ format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/OBJ format/bevel-lq-plate-4x8.obj": "07788bb9788241c50d5dec7d18b1be58b76e650f58f9f8fa8b9aa683b431c6c3",
+    "Models/OBJ format/bevel-lq-plate-4x8.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/bevel-lq-plate-4x8.png": "1c927ea982fc8d24c27b2ebadfe4091d878d2e223230080793ebfe31d98ff683"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "FBX format/bevel-lq-plate-4x8.fbx": "0e44b16a8b168ccc7a186c0924340c220f58ed42a939a154cab4ce727023ded7",
+    "Textures/GLB/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "GLB format/bevel-lq-plate-4x8.glb": "05867c4b7654a4ad25705d081d0de80af9eacf53d67273e0d6315515085a0cea",
+    "Textures/OBJ/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "OBJ format/bevel-lq-plate-4x8.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/bevel-lq-plate-4x8.obj": "5ebe179999b5b21cc07932009316d0cbe8b4557f1d1db500d00190a9afa3bf4f",
+    "Preview.png": "1c927ea982fc8d24c27b2ebadfe4091d878d2e223230080793ebfe31d98ff683"
+  },
+  "license": "../License.txt"
+}

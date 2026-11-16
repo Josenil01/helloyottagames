@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stairs-center-short",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/stairs-center-short.fbx": "12e6be896d889e705cdf77eb0bb584b655180d851e14bfcc2e92cd3d2b8bf0e2",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/stairs-center-short.glb": "2ea7e4253ae510d8bca19354d5bf237fd2513c09b7637634fb6ed37f52984e43",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/stairs-center-short.obj": "2d04aad0ae5eaeef8463c262bccdfe1f147c94d26a2f49ae0072d420522660c8",
+    "Models/OBJ format/stairs-center-short.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/stairs-center-short.png": "8d95998a232d43b71fab355525ff678242ecada515d2dcafc27d40dc6859f97f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/stairs-center-short.fbx": "12e6be896d889e705cdf77eb0bb584b655180d851e14bfcc2e92cd3d2b8bf0e2",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/stairs-center-short.glb": "2ea7e4253ae510d8bca19354d5bf237fd2513c09b7637634fb6ed37f52984e43",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/stairs-center-short.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/stairs-center-short.obj": "36ca0ce72bf10b5eb251222fc607e31317af07f8b2dc161b4e20342c30014c92",
+    "Preview.png": "8d95998a232d43b71fab355525ff678242ecada515d2dcafc27d40dc6859f97f"
+  },
+  "license": "../License.txt"
+}

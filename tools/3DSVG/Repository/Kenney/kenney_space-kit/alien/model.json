@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "alien",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/alien.fbx": "eeb487038abe5687b790b54f0f3b3e033a29c3106e58a92eb93d9af9d5f456d6",
+    "Models/GLTF format/alien.glb": "c041e8ed0eff82f0b25b944a8107f1268ddbec9c2c93afedc4ee0e8b047d983d",
+    "Models/OBJ format/alien.obj": "ccdbb987926231ea2a3631cc5b552b34cb1ea875cd7395cb6e643f7cec0ee09d",
+    "Models/OBJ format/alien.mtl": "e087640cac88e120f9fedc427c821bb62771b8d7bf914e4dcb6cd577edd9a0f6"
+  },
+  "files": {
+    "FBX format/alien.fbx": "eeb487038abe5687b790b54f0f3b3e033a29c3106e58a92eb93d9af9d5f456d6",
+    "GLB format/alien.glb": "c041e8ed0eff82f0b25b944a8107f1268ddbec9c2c93afedc4ee0e8b047d983d",
+    "OBJ format/alien.mtl": "e087640cac88e120f9fedc427c821bb62771b8d7bf914e4dcb6cd577edd9a0f6",
+    "OBJ format/alien.obj": "bc35173d72472a3d19b5b83d0ea82d7722383d75e68e2006ce4b73baa32bb87c"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "kitchenStove",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/kitchenStove.fbx": "d5f63b683ad9c2f4b849442a5c8b9afec61c66bb7a220f6ff5ee998480f84db9",
+    "Models/GLTF format/kitchenStove.glb": "3239edb36295dfca9530a9b9a6ad0aff98ce62e7cf8d13ca2a5a1a6b2a904656",
+    "Models/OBJ format/kitchenStove.obj": "4aa86c3d38159c8a62b31de12ef6ba867b03b7aafae4f3984b1f078ac6cc8323",
+    "Models/OBJ format/kitchenStove.mtl": "356614b9a12b5024d661136358ace56ace70f1cefa9d27cdf2077716d3ad2dc4"
+  },
+  "files": {
+    "FBX format/kitchenStove.fbx": "d5f63b683ad9c2f4b849442a5c8b9afec61c66bb7a220f6ff5ee998480f84db9",
+    "GLB format/kitchenStove.glb": "3239edb36295dfca9530a9b9a6ad0aff98ce62e7cf8d13ca2a5a1a6b2a904656",
+    "OBJ format/kitchenStove.mtl": "3fbbc2039f47a8375f511fab97e9e7087e8e15d0eb696e846f7ea75ae49ff2f8",
+    "OBJ format/kitchenStove.obj": "06b6c2f6d21739dcc87edd261659c751e4d2034edcb32a812199dc0f9f86e250"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "template-wall",
+  "pack": "kenney_modular-dungeon-kit_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "fc9e729b10296cccc9466ecbb4dac7ea0575e2a0798a72ed94d41b0b8a73d824",
+    "Models/Textures/variation-a.png": "5429990fc32206c84c5e8a656f787ad05506f6c05251ba09acb92d58755be881",
+    "Models/Textures/variation-b.png": "fc8a0f62bf9820c5f4fd5136353d8511f5643d06483403214fbb2ba76880a380",
+    "Models/FBX format/template-wall.fbx": "2138c3b279f47ddbcb316139033b3f0202ce7b61cb13466f1f04aeaef3483f23",
+    "Models/GLB format/Textures/colormap.png": "fc9e729b10296cccc9466ecbb4dac7ea0575e2a0798a72ed94d41b0b8a73d824",
+    "Models/GLB format/template-wall.glb": "58a34df2429968d82b45f0666ed1371cdcaa1e42468c1d4697c04bff47e9fbe5",
+    "Models/OBJ format/Textures/colormap.png": "fc9e729b10296cccc9466ecbb4dac7ea0575e2a0798a72ed94d41b0b8a73d824",
+    "Models/OBJ format/template-wall.obj": "4f687cdd4b120ae83433e54b66082513bd12e7467389cf80fb98fdfe1ae67578",
+    "Models/OBJ format/template-wall.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/template-wall.png": "953fe7235db1caea1e440c1fa4a30f2862791c79391d979cf342c5648f4e532e"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "fc9e729b10296cccc9466ecbb4dac7ea0575e2a0798a72ed94d41b0b8a73d824",
+    "Textures/FBX/variation-a.png": "5429990fc32206c84c5e8a656f787ad05506f6c05251ba09acb92d58755be881",
+    "Textures/FBX/variation-b.png": "fc8a0f62bf9820c5f4fd5136353d8511f5643d06483403214fbb2ba76880a380",
+    "FBX format/template-wall.fbx": "2138c3b279f47ddbcb316139033b3f0202ce7b61cb13466f1f04aeaef3483f23",
+    "Textures/GLB/colormap.png": "fc9e729b10296cccc9466ecbb4dac7ea0575e2a0798a72ed94d41b0b8a73d824",
+    "Textures/GLB/variation-a.png": "5429990fc32206c84c5e8a656f787ad05506f6c05251ba09acb92d58755be881",
+    "Textures/GLB/variation-b.png": "fc8a0f62bf9820c5f4fd5136353d8511f5643d06483403214fbb2ba76880a380",
+    "GLB format/template-wall.glb": "58a34df2429968d82b45f0666ed1371cdcaa1e42468c1d4697c04bff47e9fbe5",
+    "Textures/OBJ/colormap.png": "fc9e729b10296cccc9466ecbb4dac7ea0575e2a0798a72ed94d41b0b8a73d824",
+    "Textures/OBJ/variation-a.png": "5429990fc32206c84c5e8a656f787ad05506f6c05251ba09acb92d58755be881",
+    "Textures/OBJ/variation-b.png": "fc8a0f62bf9820c5f4fd5136353d8511f5643d06483403214fbb2ba76880a380",
+    "OBJ format/template-wall.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/template-wall.obj": "8387fb70d44e37610b3623f69b936e8ddb6537900a2b93e9c56b966f89a83422",
+    "Preview.png": "953fe7235db1caea1e440c1fa4a30f2862791c79391d979cf342c5648f4e532e"
+  },
+  "license": "../License.txt"
+}

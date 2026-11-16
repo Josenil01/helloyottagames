@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pipe_cross",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/pipe_cross.fbx": "a373f9b93e246537a516a83f4ccaf5466e33b594ba94c3713d23aecf939a396c",
+    "Models/GLTF format/pipe_cross.glb": "9550af4d18bd747fddfca37439c9b46264dd588b68401f3b3cbf9d41a878c33c",
+    "Models/OBJ format/pipe_cross.obj": "ec9599a5a63ab1007b6ef5fd0297a89ab9f7ac3185490f070465d2e199846ee7",
+    "Models/OBJ format/pipe_cross.mtl": "fe836210b80486b3a3ff93b7b6303661895581f4e42b403544d1c3ecc42d3883"
+  },
+  "files": {
+    "FBX format/pipe_cross.fbx": "a373f9b93e246537a516a83f4ccaf5466e33b594ba94c3713d23aecf939a396c",
+    "GLB format/pipe_cross.glb": "9550af4d18bd747fddfca37439c9b46264dd588b68401f3b3cbf9d41a878c33c",
+    "OBJ format/pipe_cross.mtl": "fe836210b80486b3a3ff93b7b6303661895581f4e42b403544d1c3ecc42d3883",
+    "OBJ format/pipe_cross.obj": "a02fe50f7e0505107b4f1beed9040176aa99c20de4421dcd8fdf693c30bbb207"
+  },
+  "license": "../License.txt"
+}

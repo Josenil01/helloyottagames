@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "track-striped-narrow-straight-skew-right-side",
+  "pack": "kenney_toy-car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/Textures/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Models/Textures/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "Models/FBX format/track-striped-narrow-straight-skew-right-side.fbx": "120f422711ea284f2eaa1c99a710755796963704404abc7873f6e7660867ef6b",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/track-striped-narrow-straight-skew-right-side.glb": "2fd2663c623283db8c46ad089a14b3c5cb385345ee3d9e4e98db41685aa34056",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/track-striped-narrow-straight-skew-right-side.obj": "632b08e5a6969518e0051efaaeec82947caadf033eb499176fe8781c2de3284c",
+    "Models/OBJ format/track-striped-narrow-straight-skew-right-side.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/track-striped-narrow-straight-skew-right-side.png": "7f57b7b061993869c74ed28a7f36b63bce73f05649b31a4c8853b237c7fc0369"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/FBX/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/FBX/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "FBX format/track-striped-narrow-straight-skew-right-side.fbx": "120f422711ea284f2eaa1c99a710755796963704404abc7873f6e7660867ef6b",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/GLB/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/GLB/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "GLB format/track-striped-narrow-straight-skew-right-side.glb": "2fd2663c623283db8c46ad089a14b3c5cb385345ee3d9e4e98db41685aa34056",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/OBJ/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/OBJ/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "OBJ format/track-striped-narrow-straight-skew-right-side.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/track-striped-narrow-straight-skew-right-side.obj": "4526f901140402b9a415ac8d9aac8169595336a0884b1bb5754713b29763d6c5",
+    "Preview.png": "7f57b7b061993869c74ed28a7f36b63bce73f05649b31a4c8853b237c7fc0369"
+  },
+  "license": "../License.txt"
+}

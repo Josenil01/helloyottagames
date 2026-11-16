@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "gate",
+  "pack": "kenney_modular-cave-kit_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4a19ed0e790c888e0c8097bef5178f9316a5cbc93b17fca66c1a4660a85078b9",
+    "Models/Textures/variation-a.png": "e1151ed367dacc2f86c037358870aeaa4123e1108857a0546f66ba9eebdeee48",
+    "Models/Textures/variation-b.png": "3e3fceb35524118f2209d1f995ca7623b17cc22e39635b7a15284f18a93567ff",
+    "Models/FBX format/gate.fbx": "0a1ca28abaedbb2510ecad7343422169f30156c0e64886d711e2a2d686d8fb20",
+    "Models/GLB format/Textures/colormap.png": "4a19ed0e790c888e0c8097bef5178f9316a5cbc93b17fca66c1a4660a85078b9",
+    "Models/GLB format/gate.glb": "daf5571564f4168e707e4cbd017a413db60034246aeab8323e2172848dfd88fa",
+    "Models/OBJ format/Textures/colormap.png": "4a19ed0e790c888e0c8097bef5178f9316a5cbc93b17fca66c1a4660a85078b9",
+    "Models/OBJ format/gate.obj": "1b643d89a19151a43d78a01405d5dca2fe8e5cb0afcb69af3e82e0795a2ad520",
+    "Models/OBJ format/gate.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/gate.png": "7127012d05f13ac888ad32354b1b23c52cef2fc1d6c0a4139d6a43aca9d559db"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4a19ed0e790c888e0c8097bef5178f9316a5cbc93b17fca66c1a4660a85078b9",
+    "Textures/FBX/variation-a.png": "e1151ed367dacc2f86c037358870aeaa4123e1108857a0546f66ba9eebdeee48",
+    "Textures/FBX/variation-b.png": "3e3fceb35524118f2209d1f995ca7623b17cc22e39635b7a15284f18a93567ff",
+    "FBX format/gate.fbx": "0a1ca28abaedbb2510ecad7343422169f30156c0e64886d711e2a2d686d8fb20",
+    "Textures/GLB/colormap.png": "4a19ed0e790c888e0c8097bef5178f9316a5cbc93b17fca66c1a4660a85078b9",
+    "Textures/GLB/variation-a.png": "e1151ed367dacc2f86c037358870aeaa4123e1108857a0546f66ba9eebdeee48",
+    "Textures/GLB/variation-b.png": "3e3fceb35524118f2209d1f995ca7623b17cc22e39635b7a15284f18a93567ff",
+    "GLB format/gate.glb": "daf5571564f4168e707e4cbd017a413db60034246aeab8323e2172848dfd88fa",
+    "Textures/OBJ/colormap.png": "4a19ed0e790c888e0c8097bef5178f9316a5cbc93b17fca66c1a4660a85078b9",
+    "Textures/OBJ/variation-a.png": "e1151ed367dacc2f86c037358870aeaa4123e1108857a0546f66ba9eebdeee48",
+    "Textures/OBJ/variation-b.png": "3e3fceb35524118f2209d1f995ca7623b17cc22e39635b7a15284f18a93567ff",
+    "OBJ format/gate.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/gate.obj": "e70cafb9827989f9da87aee5d2550cbd882141acf8fa44e0ef121d7e0f5b9774",
+    "Preview.png": "7127012d05f13ac888ad32354b1b23c52cef2fc1d6c0a4139d6a43aca9d559db"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "structure-roof",
+  "pack": "kenney_pirate-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/FBX format/structure-roof.fbx": "023a6bfad5ba6d011a18b8e4c3d7bf35660179594588aa2c4e14219ede353abe",
+    "Models/GLB format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/GLB format/structure-roof.glb": "d7518ffa7cf209b91dc07920e762f28706a367742edc45c27ae45c434b089329",
+    "Models/OBJ format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/OBJ format/structure-roof.obj": "7399e6629ca90f82960b23880b136569cb9c845648ab2d3df2d3dbd63994f02e",
+    "Models/OBJ format/structure-roof.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/structure-roof.png": "ba0b8a7dac196f6322f9025a52d5380937f3f881887fa0c110b21b10b97517a7"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "FBX format/structure-roof.fbx": "023a6bfad5ba6d011a18b8e4c3d7bf35660179594588aa2c4e14219ede353abe",
+    "Textures/GLB/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "GLB format/structure-roof.glb": "d7518ffa7cf209b91dc07920e762f28706a367742edc45c27ae45c434b089329",
+    "Textures/OBJ/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "OBJ format/structure-roof.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/structure-roof.obj": "cc3b3b0cf1f3af0193d415268a10d2d356f51f80b47f918e45d450770bb31b0c",
+    "Preview.png": "ba0b8a7dac196f6322f9025a52d5380937f3f881887fa0c110b21b10b97517a7"
+  },
+  "license": "../License.txt"
+}

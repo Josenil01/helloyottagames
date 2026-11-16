@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pipe-glass-large-curve",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/pipe-glass-large-curve.fbx": "f7fb9aafe6623e1d076606753063a01e7b7a8b8b63dedc789ef15188b8b5687a",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/pipe-glass-large-curve.glb": "d055d697d4e60fa977142e830571f9cb00c4f4ce5f8454c26a4d1811738ed11e",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/pipe-glass-large-curve.obj": "e88e25370142cfa14f74d9ba86641714f766b499d7acc1b9b9c65619d74543de",
+    "Models/OBJ format/pipe-glass-large-curve.mtl": "53f9f0317b94fa0df059759ac1c28746aa1bf52dce5688752ac7c9e4f4c5bdbb",
+    "Previews/pipe-glass-large-curve.png": "70fd675bb7b04c37fa74fa6e77fbb5f728f1c702a1cc3a6894fe6b2476203c43"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/pipe-glass-large-curve.fbx": "f7fb9aafe6623e1d076606753063a01e7b7a8b8b63dedc789ef15188b8b5687a",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/pipe-glass-large-curve.glb": "d055d697d4e60fa977142e830571f9cb00c4f4ce5f8454c26a4d1811738ed11e",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/pipe-glass-large-curve.mtl": "41d8c4aecc23107c9cb0c45feda0075a6c31b45573e6eb563b7933f6b5b59284",
+    "OBJ format/pipe-glass-large-curve.obj": "1db10d1dae79a1bcc90b868400de993e88f5a4ef4686655985794f0f161c61e2",
+    "Preview.png": "70fd675bb7b04c37fa74fa6e77fbb5f728f1c702a1cc3a6894fe6b2476203c43"
+  },
+  "license": "../License.txt"
+}

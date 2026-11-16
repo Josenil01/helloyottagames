@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tower-round-crystals",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/tower-round-crystals.fbx": "c97bae896095bfd359fb5214ab0491ea380a7f0d1334325a82682bad681249f5",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/tower-round-crystals.glb": "529ca218e1d096275d6e46aa2dd5578b0444a81998e73d38781c94b9c3484f2c",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/tower-round-crystals.obj": "33515dbc97faf32d18ba08ddc336efeabefe2bf2a554a75a19667f90210481c3",
+    "Models/OBJ format/tower-round-crystals.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tower-round-crystals.png": "369613f01eb049d9d2835e3dfbde026ea63e28f2379f81b9b0bfb984c20da2fa"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/tower-round-crystals.fbx": "c97bae896095bfd359fb5214ab0491ea380a7f0d1334325a82682bad681249f5",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/tower-round-crystals.glb": "529ca218e1d096275d6e46aa2dd5578b0444a81998e73d38781c94b9c3484f2c",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/tower-round-crystals.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tower-round-crystals.obj": "37d5c28b4aa88657ac83aeafb1c374ba267e9421de023bb1485398f590e05202",
+    "Preview.png": "369613f01eb049d9d2835e3dfbde026ea63e28f2379f81b9b0bfb984c20da2fa"
+  },
+  "license": "../License.txt"
+}

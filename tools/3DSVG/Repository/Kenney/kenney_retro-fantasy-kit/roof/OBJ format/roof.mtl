@@ -1,0 +1,18 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl planks
+Kd 1 1 1
+map_Kd ../Textures/OBJ/planks.png
+
+newmtl roof
+Kd 1 1 1
+map_Kd ../Textures/OBJ/roof.png
+
+newmtl bricks
+Kd 1 1 1
+map_Kd ../Textures/OBJ/cobblestoneAlternative.png
+
+newmtl stones
+Kd 1 1 1
+map_Kd ../Textures/OBJ/cobblestone.png
+

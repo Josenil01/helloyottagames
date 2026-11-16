@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pumpkin-tall",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/pumpkin-tall.fbx": "481fa457604ec54356baac6ce5781b99833b374fa0b50014af7e524a80fb4000",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/pumpkin-tall.glb": "2a4fa002453d7ea458ea1509879c0b006b70317060d40e520d132b16ca4eed0e",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/pumpkin-tall.obj": "e5c1cb279108273ad48abef24452328e04ab3dc6fc700712f1f95314d2c38533",
+    "Models/OBJ format/pumpkin-tall.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/pumpkin-tall.png": "e02ed13255542b2033a6c6e324378a37185192162da79dd78ce453076a9b48b4"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/pumpkin-tall.fbx": "481fa457604ec54356baac6ce5781b99833b374fa0b50014af7e524a80fb4000",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/pumpkin-tall.glb": "2a4fa002453d7ea458ea1509879c0b006b70317060d40e520d132b16ca4eed0e",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/pumpkin-tall.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/pumpkin-tall.obj": "8a3e89d716e904d573438ff35596edc0ecec05f6549a1393eb1de7ce7e815871",
+    "Preview.png": "e02ed13255542b2033a6c6e324378a37185192162da79dd78ce453076a9b48b4"
+  },
+  "license": "../License.txt"
+}

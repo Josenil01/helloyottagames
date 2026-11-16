@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "jewel",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/jewel.fbx": "94817c30d68036cc1439d5a218ede373ba7807fb64b36f1fa0cc81dbe7d3db47",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/jewel.glb": "cec20d8ae2678c292b3885aaee468ba39d165a7e2043af5ba8102b6cd974c2c3",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/jewel.obj": "2cec4e8df7efe0b3a0c6093166be025a449df12789818fec563e78dddd5f975a",
+    "Models/OBJ format/jewel.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/jewel.png": "5bec119e22a7870306fe5d8b0a4d6935878e9a4a0f751c84b6a50f7a7137d338"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/jewel.fbx": "94817c30d68036cc1439d5a218ede373ba7807fb64b36f1fa0cc81dbe7d3db47",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/jewel.glb": "cec20d8ae2678c292b3885aaee468ba39d165a7e2043af5ba8102b6cd974c2c3",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/jewel.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/jewel.obj": "99a1c31731ca3410a4d708b1beaf3a309782b44636146102e190bd59a6a45800",
+    "Preview.png": "5bec119e22a7870306fe5d8b0a4d6935878e9a4a0f751c84b6a50f7a7137d338"
+  },
+  "license": "../License.txt"
+}

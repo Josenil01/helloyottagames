@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-steel-cap-front",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-steel-cap-front.fbx": "4b4b4914a7071849fe95043e3a74e7c6f513c33f1236099186624b53fc3c6b16",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-steel-cap-front.glb": "40e5f0e316ab0aecae182a993705bcf975fc4cfe4fdc9e1d1dfbd0f95c74807b",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-steel-cap-front.obj": "8ca56eb65d22bc02a46b29692e5140dbad6a34c902b25c312b8810007c99c62c",
+    "Models/OBJ format/coaster-steel-cap-front.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-steel-cap-front.png": "e6b6d7697076bd28e50430bfcc3b3f78c863daf5f7172c28c78e34763578e002"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-steel-cap-front.fbx": "4b4b4914a7071849fe95043e3a74e7c6f513c33f1236099186624b53fc3c6b16",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-steel-cap-front.glb": "40e5f0e316ab0aecae182a993705bcf975fc4cfe4fdc9e1d1dfbd0f95c74807b",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-steel-cap-front.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-steel-cap-front.obj": "c0790255c7e742040904f9464c9c73522442449703c5821e9da92d182dff209c",
+    "Preview.png": "e6b6d7697076bd28e50430bfcc3b3f78c863daf5f7172c28c78e34763578e002"
+  },
+  "license": "../License.txt"
+}

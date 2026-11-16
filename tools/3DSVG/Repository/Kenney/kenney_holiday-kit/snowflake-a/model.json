@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "snowflake-a",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/snowflake-a.fbx": "5d691770db4d1966e642707ca7794a808f6641ebe947635f17c9e9cd0c8e37b2",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/snowflake-a.glb": "efe937959a3841eb4207affe010186b262701a8c9eb17c3157688e66a5c15e99",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/snowflake-a.obj": "c6d8fbfa2680c43e8ff706358782ea9ec49a2877563f881102fefcad48dbbbee",
+    "Models/OBJ format/snowflake-a.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/snowflake-a.png": "47f67e3065698ebc4db00c62524de7c11cec58e6ff2000c25ebc08529a7aad9a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/snowflake-a.fbx": "5d691770db4d1966e642707ca7794a808f6641ebe947635f17c9e9cd0c8e37b2",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/snowflake-a.glb": "efe937959a3841eb4207affe010186b262701a8c9eb17c3157688e66a5c15e99",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/snowflake-a.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/snowflake-a.obj": "8a3c5f7559ca2fa5340033d8cda123507f2ea5b47eeb79f0c368f90eba6cbafc",
+    "Preview.png": "47f67e3065698ebc4db00c62524de7c11cec58e6ff2000c25ebc08529a7aad9a"
+  },
+  "license": "../License.txt"
+}

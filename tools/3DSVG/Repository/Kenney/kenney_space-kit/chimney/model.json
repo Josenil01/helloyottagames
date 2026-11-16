@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "chimney",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/chimney.fbx": "673c830b3424eafa2341d0aec659fb3940979b32f904b8353199b13eb4d8b00e",
+    "Models/GLTF format/chimney.glb": "92db1a53b46eea2f2f045fe1dcc1493b4674309f76909e4ecf1078576070b14b",
+    "Models/OBJ format/chimney.obj": "9d9f7a41c7ce167d0536598445b4d8daac9a29a3f41f5db62a5bc528fd3411cb",
+    "Models/OBJ format/chimney.mtl": "d93438263ecf68bceb2f727e0629db782a7f83f3684aa7c63943fbec65795d2b"
+  },
+  "files": {
+    "FBX format/chimney.fbx": "673c830b3424eafa2341d0aec659fb3940979b32f904b8353199b13eb4d8b00e",
+    "GLB format/chimney.glb": "92db1a53b46eea2f2f045fe1dcc1493b4674309f76909e4ecf1078576070b14b",
+    "OBJ format/chimney.mtl": "d93438263ecf68bceb2f727e0629db782a7f83f3684aa7c63943fbec65795d2b",
+    "OBJ format/chimney.obj": "4217f475ce25bcc3adfd5f0da6dfef534d04d5a1324db37a215220a0cabc0ad3"
+  },
+  "license": "../License.txt"
+}

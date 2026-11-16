@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tower-square-roof-a",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/tower-square-roof-a.fbx": "5357af8b577675b38fadc946acd95e7032224f97d74c2dbfcf808b687493e920",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/tower-square-roof-a.glb": "f939cd8aba6df1439fb2f39b2b549f847abe26acef9f62ff603850d01377fe0a",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/tower-square-roof-a.obj": "1e7c01c5d7333d7df072c4859d199fcacad069b43b3ac7c3852f01f1d04174a8",
+    "Models/OBJ format/tower-square-roof-a.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tower-square-roof-a.png": "094425e0c9321d64f885eb528af92393227409a448d5527bb1c2c62c0998925b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/tower-square-roof-a.fbx": "5357af8b577675b38fadc946acd95e7032224f97d74c2dbfcf808b687493e920",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/tower-square-roof-a.glb": "f939cd8aba6df1439fb2f39b2b549f847abe26acef9f62ff603850d01377fe0a",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/tower-square-roof-a.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tower-square-roof-a.obj": "de303b080d8ec9364d30f67cf6aa5e7fd6cd2413edeb5450c4924a7be811ef94",
+    "Preview.png": "094425e0c9321d64f885eb528af92393227409a448d5527bb1c2c62c0998925b"
+  },
+  "license": "../License.txt"
+}

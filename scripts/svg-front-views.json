@@ -1,0 +1,1436 @@
+{
+  "version": 1,
+  "description": "Front directions visually checked in four-axis contact sheets; camera faces the object front, never the rear. Symmetric objects use a consistent main face.",
+  "views": {
+    "beaver": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-beaver"
+    },
+    "bee": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-bee"
+    },
+    "bunny": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-bunny"
+    },
+    "cat": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-cat"
+    },
+    "caterpillar": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-caterpillar"
+    },
+    "chick": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-chick"
+    },
+    "cow": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-cow"
+    },
+    "crab": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-crab"
+    },
+    "deer": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-deer"
+    },
+    "dog": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-dog"
+    },
+    "elephant": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-elephant"
+    },
+    "fish": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-fish"
+    },
+    "fox": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-fox"
+    },
+    "giraffe": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-giraffe"
+    },
+    "hog": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-hog"
+    },
+    "koala": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-koala"
+    },
+    "lion": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-lion"
+    },
+    "monkey": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-monkey"
+    },
+    "panda": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-panda"
+    },
+    "parrot": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-parrot"
+    },
+    "penguin": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-penguin"
+    },
+    "pig": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-pig"
+    },
+    "polar": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-polar"
+    },
+    "tiger": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-tiger"
+    },
+    "food-apple": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "apple"
+    },
+    "food-banana": {
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X",
+      "pack": "kenney_food-kit",
+      "model": "banana"
+    },
+    "food-bread": {
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X",
+      "pack": "kenney_food-kit",
+      "model": "bread"
+    },
+    "food-broccoli": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "broccoli"
+    },
+    "food-burger": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "burger"
+    },
+    "food-cake": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "cake"
+    },
+    "food-carrot": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "carrot"
+    },
+    "food-cherries": {
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X",
+      "pack": "kenney_food-kit",
+      "model": "cherries"
+    },
+    "food-cheese": {
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "cheese"
+    },
+    "food-cookie": {
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "cookie"
+    },
+    "food-corn": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "corn"
+    },
+    "food-croissant": {
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X",
+      "pack": "kenney_food-kit",
+      "model": "croissant"
+    },
+    "food-cup-coffee": {
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X",
+      "pack": "kenney_food-kit",
+      "model": "cup-coffee"
+    },
+    "food-cupcake": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "cupcake"
+    },
+    "food-donut": {
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "donut"
+    },
+    "food-egg": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "egg"
+    },
+    "food-eggplant": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "eggplant"
+    },
+    "food-fish": {
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X",
+      "pack": "kenney_food-kit",
+      "model": "fish"
+    },
+    "food-fries": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "fries"
+    },
+    "food-grapes": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "grapes"
+    },
+    "food-hot-dog": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "hot-dog"
+    },
+    "food-ice-cream": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "ice-cream"
+    },
+    "food-lemon": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "lemon"
+    },
+    "food-lollypop": {
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X",
+      "pack": "kenney_food-kit",
+      "model": "lollypop"
+    },
+    "food-mushroom": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "mushroom"
+    },
+    "food-orange": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "orange"
+    },
+    "food-pear": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "pear"
+    },
+    "food-pineapple": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "pineapple"
+    },
+    "food-pizza": {
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "pizza"
+    },
+    "food-pumpkin": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "pumpkin"
+    },
+    "food-strawberry": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "strawberry"
+    },
+    "food-tomato": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "tomato"
+    },
+    "food-watermelon": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "watermelon"
+    },
+    "food-chocolate": {
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X",
+      "pack": "kenney_food-kit",
+      "model": "chocolate"
+    },
+    "food-pot": {
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "pot"
+    },
+    "food-bottle-oil": {
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X",
+      "pack": "kenney_food-kit",
+      "model": "bottle-oil"
+    },
+    "food-soda": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "soda"
+    },
+    "food-ice-cream-cne": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_food-kit",
+      "model": "ice-cream-cne"
+    },
+    "books": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_furniture-kit",
+      "model": "books"
+    },
+    "keyboard": {
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_furniture-kit",
+      "model": "computerKeyboard"
+    },
+    "mouse": {
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_furniture-kit",
+      "model": "computerMouse"
+    },
+    "laptop": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_furniture-kit",
+      "model": "laptop"
+    },
+    "mirror": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_furniture-kit",
+      "model": "bathroomMirror"
+    },
+    "chair": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_furniture-kit",
+      "model": "chair"
+    },
+    "bed": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_furniture-kit",
+      "model": "bedSingle"
+    },
+    "plant": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_furniture-kit",
+      "model": "pottedPlant"
+    },
+    "lamp": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_furniture-kit",
+      "model": "lampSquareTable"
+    },
+    "bear": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_furniture-kit",
+      "model": "bear"
+    },
+    "castle": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_castle-kit",
+      "model": "tower-square-top-roof-high"
+    },
+    "castle-tower": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_castle-kit",
+      "model": "tower-hexagon-roof"
+    },
+    "catapult": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_castle-kit",
+      "model": "siege-catapult"
+    },
+    "flag": {
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X",
+      "pack": "kenney_castle-kit",
+      "model": "flag"
+    },
+    "bridge": {
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X",
+      "pack": "kenney_castle-kit",
+      "model": "bridge-draw"
+    },
+    "factory": {
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X",
+      "pack": "kenney_factory-kit_3.0",
+      "model": "machine"
+    },
+    "gear": {
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_factory-kit_3.0",
+      "model": "cog-a"
+    },
+    "robot-arm": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_factory-kit_3.0",
+      "model": "robot-arm-a"
+    },
+    "conveyor": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_factory-kit_3.0",
+      "model": "conveyor"
+    },
+    "crate": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_factory-kit_3.0",
+      "model": "box-small"
+    },
+    "potion": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_mini-dungeon",
+      "model": "potion"
+    },
+    "orc": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_mini-dungeon",
+      "model": "character-orc"
+    },
+    "dungeon-column": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_mini-dungeon",
+      "model": "column"
+    },
+    "coin": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_mini-dungeon",
+      "model": "coin"
+    },
+    "key": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_mini-dungeon",
+      "model": "key"
+    },
+    "sword": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_mini-dungeon",
+      "model": "weapon-sword"
+    },
+    "shield": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_mini-dungeon",
+      "model": "shield-round"
+    },
+    "spaceship": {
+      "camera": [
+        0,
+        2,
+        -8
+      ],
+      "front": "-Z",
+      "pack": "kenney_space-kit",
+      "model": "craft_speederA"
+    },
+    "astronaut": {
+      "camera": [
+        0,
+        2,
+        -8
+      ],
+      "front": "-Z",
+      "pack": "kenney_space-kit",
+      "model": "astronautA"
+    },
+    "alien": {
+      "camera": [
+        0,
+        2,
+        -8
+      ],
+      "front": "-Z",
+      "pack": "kenney_space-kit",
+      "model": "alien"
+    },
+    "meteor": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_space-kit",
+      "model": "meteor"
+    },
+    "crystal": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_space-kit",
+      "model": "rock_crystals"
+    },
+    "rover": {
+      "camera": [
+        0,
+        2,
+        -8
+      ],
+      "front": "-Z",
+      "pack": "kenney_space-kit",
+      "model": "rover"
+    },
+    "satellite": {
+      "camera": [
+        0,
+        2,
+        -8
+      ],
+      "front": "-Z",
+      "pack": "kenney_space-kit",
+      "model": "satelliteDish"
+    },
+    "ship": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "ship-pirate-large"
+    },
+    "treasure": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "chest"
+    },
+    "barrel": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "barrel"
+    },
+    "palm": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "palm-bend"
+    },
+    "island": {
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "patch-sand-foliage"
+    },
+    "cannon": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "cannon"
+    },
+    "pirate-flag": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "flag-pirate"
+    },
+    "cart": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_mini-market",
+      "model": "shopping-cart"
+    },
+    "basket": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_mini-market",
+      "model": "shopping-basket"
+    },
+    "cash-register": {
+      "camera": [
+        0,
+        2,
+        -8
+      ],
+      "front": "-Z",
+      "pack": "kenney_mini-market",
+      "model": "cash-register"
+    },
+    "market": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_mini-market",
+      "model": "display-fruit"
+    },
+    "train": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_train-kit",
+      "model": "train-locomotive-a"
+    },
+    "carriage": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_train-kit",
+      "model": "train-carriage-box"
+    },
+    "car": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_car-kit",
+      "model": "sedan"
+    },
+    "taxi": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_car-kit",
+      "model": "taxi"
+    },
+    "ambulance": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_car-kit",
+      "model": "ambulance"
+    },
+    "firetruck": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_car-kit",
+      "model": "firetruck"
+    },
+    "police": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_car-kit",
+      "model": "police"
+    },
+    "truck": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_car-kit",
+      "model": "truck"
+    },
+    "tree": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_mini-forest_1.0",
+      "model": "tree"
+    },
+    "tent": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_mini-forest_1.0",
+      "model": "tent"
+    },
+    "house": {
+      "camera": [
+        0,
+        2,
+        -8
+      ],
+      "front": "-Z",
+      "pack": "kenney_city-kit-suburban_20",
+      "model": "building-type-a"
+    },
+    "road": {
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_city-kit-roads",
+      "model": "road-bend"
+    },
+    "trophy": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_mini-arena",
+      "model": "trophy"
+    },
+    "horse": {
+      "camera": [
+        -8,
+        2,
+        3
+      ],
+      "front": "-X",
+      "pack": "kenney_prototype-kit",
+      "model": "animal-horse"
+    },
+    "cube": {
+      "camera": [
+        3,
+        3,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_prototype-kit",
+      "model": "shape-cube"
+    },
+    "cylinder": {
+      "camera": [
+        3,
+        3,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_prototype-kit",
+      "model": "shape-cylinder"
+    },
+    "pirate-barrel": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "barrel"
+    },
+    "pirate-ship-pirate-large": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "ship-pirate-large"
+    },
+    "pirate-palm-bend": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "palm-bend"
+    },
+    "pirate-palm-straight": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "palm-straight"
+    },
+    "pirate-cannon-ball": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "cannon-ball"
+    },
+    "pirate-patch-sand": {
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "patch-sand"
+    },
+    "pirate-crate": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "crate"
+    },
+    "pirate-tower-complete-small": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "tower-complete-small"
+    },
+    "pirate-cannon": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "cannon"
+    },
+    "pirate-flag-pirate": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "flag-pirate"
+    },
+    "pirate-patch-sand-foliage": {
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "patch-sand-foliage"
+    },
+    "pirate-ship-pirate-medium": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "ship-pirate-medium"
+    },
+    "pirate-chest": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "chest"
+    },
+    "pirate-patch-grass": {
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "patch-grass"
+    },
+    "pirate-rocks-sand-a": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "rocks-sand-a"
+    },
+    "pirate-boat-row-small": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "boat-row-small"
+    },
+    "pirate-ship-pirate-small": {
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "kenney_pirate-kit",
+      "model": "ship-pirate-small"
+    },
+    "sphinx": {
+      "camera": [
+        1.2,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "Hello Yotta · Blockie",
+      "model": "esfinge-blockie"
+    },
+    "sphinx-happy": {
+      "camera": [
+        1.2,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "Hello Yotta · Blockie",
+      "model": "esfinge-blockie-feliz"
+    },
+    "sphinx-sucking": {
+      "camera": [
+        1.2,
+        2,
+        8
+      ],
+      "front": "+Z",
+      "pack": "Hello Yotta · Blockie",
+      "model": "esfinge-blockie-redemoinho"
+    }
+  }
+}

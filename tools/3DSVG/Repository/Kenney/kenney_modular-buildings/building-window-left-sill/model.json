@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "building-window-left-sill",
+  "pack": "kenney_modular-buildings",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Models/Textures/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Models/Textures/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "Models/FBX format/building-window-left-sill.fbx": "8f72747b4f0881f34f3563baf0d2f3d4c7f9a83a43ce355ba961f82ee5e614ac",
+    "Models/GLB format/Textures/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Models/GLB format/building-window-left-sill.glb": "45cdf315157e8425c07b83bac8dc003d9dd0607866eaa5d3acb06a37310e31ca",
+    "Models/OBJ format/Textures/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Models/OBJ format/building-window-left-sill.obj": "010b206b6a353152882fc50fef23d2702589978d741b6d866af304d4e0649636",
+    "Models/OBJ format/building-window-left-sill.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/building-window-left-sill.png": "7f5d9a9b2f21b0b1d312f312fca2eb0d3c624a7ddf9dc908a8d69ed02d28b1a5"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Textures/FBX/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Textures/FBX/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "FBX format/building-window-left-sill.fbx": "8f72747b4f0881f34f3563baf0d2f3d4c7f9a83a43ce355ba961f82ee5e614ac",
+    "Textures/GLB/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Textures/GLB/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Textures/GLB/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "GLB format/building-window-left-sill.glb": "45cdf315157e8425c07b83bac8dc003d9dd0607866eaa5d3acb06a37310e31ca",
+    "Textures/OBJ/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Textures/OBJ/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Textures/OBJ/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "OBJ format/building-window-left-sill.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/building-window-left-sill.obj": "e00d435af08fda3992c31ffa022b78a9cb817de6dbe4b0011a31ae233bd00f8d",
+    "Preview.png": "7f5d9a9b2f21b0b1d312f312fca2eb0d3c624a7ddf9dc908a8d69ed02d28b1a5"
+  },
+  "license": "../License.txt"
+}

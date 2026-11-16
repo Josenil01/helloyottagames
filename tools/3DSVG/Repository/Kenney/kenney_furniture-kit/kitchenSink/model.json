@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "kitchenSink",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/kitchenSink.fbx": "0ec1e912c5c5e361ea3038c7644ff5f67a389dcf3fa249c09143ee8884504665",
+    "Models/GLTF format/kitchenSink.glb": "7b9610277d71f00dcf1bba49cf4d98d77ce5177e84bf76c7da2f8893e542f743",
+    "Models/OBJ format/kitchenSink.obj": "26721edf3f58ace82a6301150f8719818ff6b29b5a026dcfe8e8b56598eaf860",
+    "Models/OBJ format/kitchenSink.mtl": "4d94f3ded3a98a7a607e8280a34af0ce2f3d31431d2475ea5e10c5e5dd7c9fd0"
+  },
+  "files": {
+    "FBX format/kitchenSink.fbx": "0ec1e912c5c5e361ea3038c7644ff5f67a389dcf3fa249c09143ee8884504665",
+    "GLB format/kitchenSink.glb": "7b9610277d71f00dcf1bba49cf4d98d77ce5177e84bf76c7da2f8893e542f743",
+    "OBJ format/kitchenSink.mtl": "2ff8427f907d87465e89734cb2dce9ba44e3d242164cd4354dd3f3e5dca584c7",
+    "OBJ format/kitchenSink.obj": "a0b8d97203e8f6cd1e106148bf0f9682c2f527f7dba0e1b9cde14c2fa28fe2e7"
+  },
+  "license": "../License.txt"
+}

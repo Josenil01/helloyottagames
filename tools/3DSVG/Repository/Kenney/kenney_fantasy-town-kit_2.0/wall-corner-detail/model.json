@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-corner-detail",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/wall-corner-detail.fbx": "dd3705de8c63660fdff9456c5fd5bb7e8142ba7ecfb78c5f2ff35cfe78ffaddb",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/wall-corner-detail.glb": "2382ce760563264c57e3e5fcccd9b31a80a97dc316b289813558d053ec22495b",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/wall-corner-detail.obj": "0f61fa4096970e5bd54c47367985a54d1b2d3843701a77187d6bcaf899b528ed",
+    "Models/OBJ format/wall-corner-detail.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-corner-detail.png": "4a26f4e3e97406d10df00f14463640c976e6f92145374f32c4a342aa5d19c7dd"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/wall-corner-detail.fbx": "dd3705de8c63660fdff9456c5fd5bb7e8142ba7ecfb78c5f2ff35cfe78ffaddb",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/wall-corner-detail.glb": "2382ce760563264c57e3e5fcccd9b31a80a97dc316b289813558d053ec22495b",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/wall-corner-detail.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-corner-detail.obj": "6b27c08e577e09d0baecc69db9e5cc248ef86bb8581cb3a43326be6af13df006",
+    "Preview.png": "4a26f4e3e97406d10df00f14463640c976e6f92145374f32c4a342aa5d19c7dd"
+  },
+  "license": "../License.txt"
+}

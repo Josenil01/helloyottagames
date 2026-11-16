@@ -2,13 +2,13 @@
 
 ## Graphify — arquitetura do projeto
 
-Consulte `graphify-out/` para entender fluxo, dependências e acoplamento antes de ler código-fonte. Só leia arquivos diretamente quando precisar da sintaxe exata de um arquivo já identificado pelo grafo.
+Consulte `graphify-out/` para orientar a leitura de fluxo e dependências. O relatório atual é de 22/06/2026 e pode estar desatualizado: confirme fatos nas páginas HTML e nos scripts efetivamente carregados, especialmente após mudanças de mecânica. Ver `docs/auditoria-documentacao-2026-10-08.md`.
 
 ---
 
 ## O que é este repositório
 
-Plataforma de jogos educacionais browser-based para crianças falantes de português (`games.helloyotta.com`). 25 jogos de Português e Matemática, cada um como SPA self-contained em HTML/CSS/JS. Hospedado como site estático no GitHub Pages — sem build step, sem bundler, sem npm.
+Plataforma de jogos educacionais browser-based para crianças falantes de português (`games.helloyotta.com`). 40 jogos de Português, Matemática e Lógica (12 React+Babel e 28 Vanilla JS), cada um como SPA self-contained em HTML/CSS/JS. Hospedado como site estático no GitHub Pages — sem build step, sem bundler, sem npm.
 
 **Worktree:** use `isolation: "worktree"` no Agent tool para tarefas experimentais ou refatorações de maior risco.
 
@@ -20,7 +20,7 @@ Esses jogos usam **React 18 + Babel standalone com `main.js` externo** e **quebr
 
 | Jogo                    | Pasta                      |
 | ----------------------- | -------------------------- |
-| Canhões de Ouro         | `Canhões de ouro/`         |
+| Enigmas da Esfinge      | `Canhões de ouro/`         |
 | Caçadores de Coletivos  | `Caçadores de Coletivos/`  |
 | Detetives da Ortografia | `Detetives da Ortografia/` |
 | Digitado                | `Digitado/`                |
@@ -52,9 +52,9 @@ O `index.html` carrega o Babel, que transpila `main.js` em tempo de execução. 
    <script type="text/babel" src="main.js"></script>
    ```
 
-2. **`<script type="text/babel" src="main.js">` nunca deve ser alterado.** Qualquer mudança nesse tag provoca tela branca sem erro no console.
+2. **`<script type="text/babel" src="main.js">` nunca deve ser alterado.** Preserve esse ponto de entrada; mudanças na carga e na ordem de dependências exigem verificação no navegador.
 
-3. **Todo o jogo vive em `main.js`.** Leia o arquivo inteiro antes de editar — React state e closures se entrelaçam.
+3. **Confira todos os scripts ativos.** `main.js` continua sendo o ponto de entrada dos jogos React, mas há componentes compartilhados em `utils/challenges/`. Enigmas da Esfinge define `SphinxApp` em `sphinx.js` e os enigmas em `riddles.js`; `main.js` preserva o legado e monta o novo componente. Leia os arquivos afetados antes de editar.
 
 ### Regras de edição
 
@@ -78,7 +78,7 @@ O `index.html` carrega o Babel, que transpila `main.js` em tempo de execução. 
 2. Console sem erros (`is not defined`, `cannot read properties of undefined`).
 3. Tela de capa renderiza e consegue interagir no gameplay.
 
-> Tela branca sem erro = Babel falhou silenciosamente. Verifique a ordem dos scripts.
+> Tela branca pode indicar falha de carregamento, transpilação ou execução. Verifique a ordem dos scripts, a rede e o console.
 
 > **⚠️ PowerShell:** nunca escreva conteúdo de arquivo com string interpolada (`"..."`) em PowerShell — o `` `n `` vira literal em vez de newline. Use single-quote heredoc (`@'...'@`) ou a ferramenta Write/Edit do Claude. Esse bug já corrompeu 25 arquivos de uma vez.
 
@@ -134,7 +134,7 @@ Pastas de jogos já existentes com acento **não devem ser renomeadas** só por 
   "title": "Matemática Pirata",
   "description": "...",
   "icon": "🏴‍☠️",
-  "href": "/Matem%C3%A1tica%20Pirata/index.html",
+  "href": "/Matematica%20Pirata/index.html",
   "url": "https://games.helloyotta.com/...",
   "categories": ["matematica"]
 }
@@ -162,7 +162,7 @@ Atributos obrigatórios: `href`, `class` (com `game-card`), `data-category`. Div
 powershell -ExecutionPolicy Bypass -File ./scripts/generate-games-api.ps1
 ```
 
-Commite os JSONs gerados junto com as mudanças no `index.html`.
+Inclua os JSONs gerados na entrega junto com as mudanças no `index.html`; o usuário faz o controle de versão manualmente.
 
 ---
 
@@ -194,13 +194,13 @@ Auto-injeta badge `⭐ N`. Fica oculto até `reset()`.
 | `HY.score.reset()`          | Zera e exibe badge. Chamar no início de cada nível/jogo.                |
 | `HY.score.hide()`           | Esconde o badge.                                                        |
 | `HY.score.startChallenge()` | Registra timestamp de início. Chamar antes de cada questão.             |
-| `HY.score.correct()`        | +100 + bônus de velocidade (`Math.max(0, 50 - segs*5)`). Retorna total. |
+| `HY.score.correct()`        | +100 + bônus de velocidade (`Math.max(0, Math.round(50 - segs*5))`). Retorna total. |
 | `HY.score.wrong()`          | -50 (mínimo 0). Retorna total.                                          |
 | `HY.score.get()`            | Retorna total sem alterar.                                              |
 
 - **Vanilla JS:** `reset()` em `startLevel()`, `startChallenge()` ao fim de `loadQuestion()`, `correct()`/`wrong()` nos handlers.
 - **React:** `reset()` em `startGame()`/`startPhase()`, `startChallenge()` ao fim de `resetTurn()`.
-- **Piratas do Troco:** único jogo sem `wrong()` — intencional.
+- **Exceções:** Piratas do Troco não usa `wrong()`; Poções não registra transferências inválidas como erro em `HY.score`; Galáxia Geométrica usa implementação própria de pontuação fixa, sem bônus de velocidade.
 
 ### `utils/elapsed.js` — `window.HY.elapsed`
 
@@ -314,9 +314,18 @@ const desafios = HY.rand.pickByTrack(POOL, 5, CRITERIOS, trackIdx);
 
 ### `utils/audio.js` — `HY.playWin()` / `HY.playLose()`
 
-MPs3 em `/assets/audio/win.mp3` e `/assets/audio/lose.mp3` — ainda não existem, funcionarão quando criados.
+MP3 em `/assets/audio/win.mp3` e `/assets/audio/lose.mp3` — ainda não existem, funcionarão quando criados.
 
 ---
+
+## Implementações substituídas e código legado
+
+- `Canhões de ouro/`: nome público Enigmas da Esfinge. `main.js` monta `SphinxApp` de `sphinx.js`; `riddles.js` fornece o banco.
+- `Galáxia da Matemática/`: nome público Galáxia Geométrica. A página carrega `geometry-score.js`, `geometry-core.js` e `geometry.js`; o `main.js` antigo não é carregado.
+- `Laboratorio das Pocoes/`: jogo ativo de separação de cores em `color-sort.js`; `main.js` aritmético não é carregado.
+- `utils/challenges/`: quatro componentes já consumidos por Detetives, VSA, Coletivos, Rimas, Opostos e Sinônimos.
+
+Conteúdo confirmado por inspeção estática em 08/10/2026; não equivale a confirmação de deploy ou de gameplay. Não usar a existência de código legado para afirmar que sua mecânica está ativa.
 
 ## Identidade Visual
 
@@ -356,6 +365,14 @@ Drag & Drop: `.draggable`, `.dropzone`, `.dragging` (no item), `.drag-over` (na 
 ---
 
 ## Padrões de código
+
+**Ferramenta 3DSVG:** por solicitação explícita do usuário, `tools/3DSVG/` abriga o estúdio local de modelos e exportação SVG (a antiga pasta `GPT` foi renomeada). É uma ferramenta independente dos jogos e da API pública. Consulte seu `README.md`; o iniciador é `Iniciar-3DSVG.cmd`. O botão **Abrir pasta raiz** importa subpastas por modelo com formatos e texturas para `Repository/Imports/`; permite atualizar um acervo existente, preservando versões alteradas em `.history/`. Os 4.198 modelos dos 44 pacotes Kenney estão adaptados em `Repository/Kenney/`, com originais preservados. O catálogo reúne formatos do mesmo modelo, distingue pastas diferentes e mantém compatibilidade com `assets/image/*/Models/`. Projetos `.blend` não são necessários. Preserve o processamento local e os arquivos originais.
+
+**Padrão visual aprovado:** usar os modelos preservados em `tools/3DSVG/Repository/Kenney/` e o exportador real do 3DSVG para gerar SVGs transparentes em `assets/image/SVG/`; nunca ampliar miniaturas nem embutir bitmaps em SVGs. O manifesto ativo é `assets/image/SVG/manifest.json`, publicado em `utils/visual-manifest.js`. Os pacotes Kenney do nível superior foram removidos pelo usuário; os modelos do repositório 3DSVG são a fonte atual. A biblioteca compartilhada, o mapeamento temático e as instruções de manutenção estão em `docs/biblioteca-visual.md`. Preservar cores, formas, quantidades e propriedades usadas como pistas nos exercícios.
+
+**Orientação dos assets:** exibir a face frontal de cada modelo. Respeitar `scripts/svg-front-views.json`, revisado visualmente em quatro direções para os 140 modelos usados. Não aplicar câmera universal: astronautas, alienígenas, casas, móveis e outros pacotes têm frentes em eixos diferentes. Novos modelos precisam de uma orientação frontal conferida antes de exportar.
+
+**Esfinge Blockie:** modelos originais em `tools/3DSVG/Repository/HelloYotta/`, gerados por `scripts/build-sphinx-blockie.py`. O jogo e o catálogo usam SVGs do modelo. Preservar as três expressões e o elemento `.sphinx-mouth-anchor`, usado para calcular o destino da animação de redemoinho. O componente `LegacySphinx` permanece como fallback.
 
 **Fluxo de telas:** seleção → gameplay → resultado.
 

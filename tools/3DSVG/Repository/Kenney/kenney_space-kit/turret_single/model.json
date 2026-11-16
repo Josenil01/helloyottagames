@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "turret_single",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/turret_single.fbx": "b3fade6c2efc3fd2dc74b73f84472bbda2eccfbea5deaeaff08838729d9d1f73",
+    "Models/GLTF format/turret_single.glb": "ef27f43718c846297f90a0b20446b13c6a1f092cd995ea730f27d6e003efd1e0",
+    "Models/OBJ format/turret_single.obj": "2b3492cde9c9496d73963669d8d59e9f5ebccb9dcbf15dbf5336e7ca630c6a89",
+    "Models/OBJ format/turret_single.mtl": "762ff003991e23328663179e8246dbe450f15f2467cc1947ff144c0ff1f49c8b"
+  },
+  "files": {
+    "FBX format/turret_single.fbx": "b3fade6c2efc3fd2dc74b73f84472bbda2eccfbea5deaeaff08838729d9d1f73",
+    "GLB format/turret_single.glb": "ef27f43718c846297f90a0b20446b13c6a1f092cd995ea730f27d6e003efd1e0",
+    "OBJ format/turret_single.mtl": "762ff003991e23328663179e8246dbe450f15f2467cc1947ff144c0ff1f49c8b",
+    "OBJ format/turret_single.obj": "55dd2defd414fd992e35c46746cec5ee6801a209db1a983f4eaf499f2b5efd28"
+  },
+  "license": "../License.txt"
+}

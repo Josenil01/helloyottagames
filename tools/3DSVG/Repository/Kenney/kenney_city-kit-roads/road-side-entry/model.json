@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-side-entry",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-side-entry.fbx": "dc434dcfe93bd0d1a664c2568f08c07169f27f43ebcb3e9d24ef9d4f0326959d",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-side-entry.glb": "94828a34b4987f1dcbc7972df1612a7ee72f7d9fab207ffd234e021a7093027f",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-side-entry.obj": "8e4612f250de7f662806321bbc70aae8ddb67c7bf38f3f1f9986b28ee54f098d",
+    "Models/OBJ format/road-side-entry.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-side-entry.png": "38e61a527de5967428def859911d2a5359d31e3a3252457b1f1bdee577406a67"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-side-entry.fbx": "dc434dcfe93bd0d1a664c2568f08c07169f27f43ebcb3e9d24ef9d4f0326959d",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-side-entry.glb": "94828a34b4987f1dcbc7972df1612a7ee72f7d9fab207ffd234e021a7093027f",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-side-entry.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-side-entry.obj": "0ce3fe589ba9c8a107fa4b5be856b0567b6d64e70c5b4d6f89aa313b1a82907d",
+    "Preview.png": "38e61a527de5967428def859911d2a5359d31e3a3252457b1f1bdee577406a67"
+  },
+  "license": "../License.txt"
+}

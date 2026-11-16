@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "structure-barrier-high",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/structure-barrier-high.fbx": "c569d27de1540a9c446fde7c6f24fe2b248e7aea5a38ffc3a3e50b61b8f83651",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/structure-barrier-high.glb": "7c2c9a3ec930baa18200ebf72ae2995f63bbc30d457c199e49ede20c6743871e",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/structure-barrier-high.obj": "5b4b3c029673c6c6c192f66b145b2c9bec8131b50c21b41bd820fbdc10f3bfe3",
+    "Models/OBJ format/structure-barrier-high.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/structure-barrier-high.png": "f00f30f88cbd1b436e6aa225bc8f0616d0ecc4c5c1ba9caaa71f22cca2cf4e04"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/structure-barrier-high.fbx": "c569d27de1540a9c446fde7c6f24fe2b248e7aea5a38ffc3a3e50b61b8f83651",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/structure-barrier-high.glb": "7c2c9a3ec930baa18200ebf72ae2995f63bbc30d457c199e49ede20c6743871e",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/structure-barrier-high.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/structure-barrier-high.obj": "332bbe62b8fea8893c73b4eac135d80395d03dc48b2f4d38191c25cd02d64314",
+    "Preview.png": "f00f30f88cbd1b436e6aa225bc8f0616d0ecc4c5c1ba9caaa71f22cca2cf4e04"
+  },
+  "license": "../License.txt"
+}

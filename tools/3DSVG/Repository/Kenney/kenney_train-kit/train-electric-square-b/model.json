@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "train-electric-square-b",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/train-electric-square-b.fbx": "7793dcb33b4402dd41da82dfb731a4f9ce5f2f887aaf895c667ac70b2d7887f0",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/train-electric-square-b.glb": "d7cd7143803677d5ade54e927185b6543a5528dd084773ecc6d8c3380a29ce71",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/train-electric-square-b.obj": "e6e89ac7ec73c7dc1ab552b02c7fa14075b29e924f19a11a18e0c12dfa14e0d0",
+    "Models/OBJ format/train-electric-square-b.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/train-electric-square-b.png": "839b11491c387dbc9ce7af4a7976121fee3cbe616e3380c89d74857b413079f2"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/train-electric-square-b.fbx": "7793dcb33b4402dd41da82dfb731a4f9ce5f2f887aaf895c667ac70b2d7887f0",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/train-electric-square-b.glb": "d7cd7143803677d5ade54e927185b6543a5528dd084773ecc6d8c3380a29ce71",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/train-electric-square-b.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/train-electric-square-b.obj": "b884496c329ca722cd2137744172d78f8ed4e2a8fb0876e094026c6902a38c4d",
+    "Preview.png": "839b11491c387dbc9ce7af4a7976121fee3cbe616e3380c89d74857b413079f2"
+  },
+  "license": "../License.txt"
+}

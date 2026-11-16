@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "gingerbread-man",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/gingerbread-man.fbx": "3f35dfcf701b7c5bdf7db48c59066d6e4a2eaff37e33c04c54183218edd39922",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/gingerbread-man.glb": "cea459983f5c02a70c2ad95e445b4b289ee100503637e8e57f943bab277a8fdd",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/gingerbread-man.obj": "bcd686bab09e81a593217f1a6fd26553fd916d899d9e2d064d9fe3c001c1c707",
+    "Models/OBJ format/gingerbread-man.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/gingerbread-man.png": "1a13a3295309f42c8da004a57c2908f4cbb8d6e053cefe613f0b0af93734d489"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/gingerbread-man.fbx": "3f35dfcf701b7c5bdf7db48c59066d6e4a2eaff37e33c04c54183218edd39922",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/gingerbread-man.glb": "cea459983f5c02a70c2ad95e445b4b289ee100503637e8e57f943bab277a8fdd",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/gingerbread-man.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/gingerbread-man.obj": "36aa81a975a3d8f091799b21b104129aaddf4fcd5ff9b1cadc2381da62d7dbd5",
+    "Preview.png": "1a13a3295309f42c8da004a57c2908f4cbb8d6e053cefe613f0b0af93734d489"
+  },
+  "license": "../License.txt"
+}

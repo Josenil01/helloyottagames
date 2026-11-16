@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stall-green",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/stall-green.fbx": "0200dd0e85fe061618fe221e72c8f1b6337a36024d0922efe5cefd68ea75be57",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/stall-green.glb": "2da2f7b31cde5d943d7c08c457bbb39797ef0a607921fde0b8455f338ce40205",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/stall-green.obj": "bb1a866f0cc8713bb59007706418af09134ab966cafdf50de9a74667c4464a00",
+    "Models/OBJ format/stall-green.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/stall-green.png": "49025cb0115033b7fc41d58336b3eda452d0c37c8c13f324027d685ce50c16e7"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/stall-green.fbx": "0200dd0e85fe061618fe221e72c8f1b6337a36024d0922efe5cefd68ea75be57",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/stall-green.glb": "2da2f7b31cde5d943d7c08c457bbb39797ef0a607921fde0b8455f338ce40205",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/stall-green.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/stall-green.obj": "62476e83c08e4028341ef59d2c283f700936934223f3fe8f5b44926370efd14f",
+    "Preview.png": "49025cb0115033b7fc41d58336b3eda452d0c37c8c13f324027d685ce50c16e7"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "template-wall-stairs",
+  "pack": "kenney_modular-cave-kit_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4a19ed0e790c888e0c8097bef5178f9316a5cbc93b17fca66c1a4660a85078b9",
+    "Models/Textures/variation-a.png": "e1151ed367dacc2f86c037358870aeaa4123e1108857a0546f66ba9eebdeee48",
+    "Models/Textures/variation-b.png": "3e3fceb35524118f2209d1f995ca7623b17cc22e39635b7a15284f18a93567ff",
+    "Models/FBX format/template-wall-stairs.fbx": "f51f5ba84bf073641449d3bbfaa23550391c031933475a2fe31f610df4c8e92e",
+    "Models/GLB format/Textures/colormap.png": "4a19ed0e790c888e0c8097bef5178f9316a5cbc93b17fca66c1a4660a85078b9",
+    "Models/GLB format/template-wall-stairs.glb": "3b42a0837f1dd0953fbb4762c00804d90fb336ec1232b57a56a6aae563e517d4",
+    "Models/OBJ format/Textures/colormap.png": "4a19ed0e790c888e0c8097bef5178f9316a5cbc93b17fca66c1a4660a85078b9",
+    "Models/OBJ format/template-wall-stairs.obj": "260d5c61cfa6c5e974b1173a093530f3ec5e3ea4084bf4f786cd5a9c3b351079",
+    "Models/OBJ format/template-wall-stairs.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/template-wall-stairs.png": "3575001cbe3d0d9c48d4d9497cce96ac5a18c161c66944d7d9ae72e645c60dfe"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4a19ed0e790c888e0c8097bef5178f9316a5cbc93b17fca66c1a4660a85078b9",
+    "Textures/FBX/variation-a.png": "e1151ed367dacc2f86c037358870aeaa4123e1108857a0546f66ba9eebdeee48",
+    "Textures/FBX/variation-b.png": "3e3fceb35524118f2209d1f995ca7623b17cc22e39635b7a15284f18a93567ff",
+    "FBX format/template-wall-stairs.fbx": "f51f5ba84bf073641449d3bbfaa23550391c031933475a2fe31f610df4c8e92e",
+    "Textures/GLB/colormap.png": "4a19ed0e790c888e0c8097bef5178f9316a5cbc93b17fca66c1a4660a85078b9",
+    "Textures/GLB/variation-a.png": "e1151ed367dacc2f86c037358870aeaa4123e1108857a0546f66ba9eebdeee48",
+    "Textures/GLB/variation-b.png": "3e3fceb35524118f2209d1f995ca7623b17cc22e39635b7a15284f18a93567ff",
+    "GLB format/template-wall-stairs.glb": "3b42a0837f1dd0953fbb4762c00804d90fb336ec1232b57a56a6aae563e517d4",
+    "Textures/OBJ/colormap.png": "4a19ed0e790c888e0c8097bef5178f9316a5cbc93b17fca66c1a4660a85078b9",
+    "Textures/OBJ/variation-a.png": "e1151ed367dacc2f86c037358870aeaa4123e1108857a0546f66ba9eebdeee48",
+    "Textures/OBJ/variation-b.png": "3e3fceb35524118f2209d1f995ca7623b17cc22e39635b7a15284f18a93567ff",
+    "OBJ format/template-wall-stairs.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/template-wall-stairs.obj": "48ac7ee8da4a798bd691d860c98162c536b497d261759533f2cced60a50b996d",
+    "Preview.png": "3575001cbe3d0d9c48d4d9497cce96ac5a18c161c66944d7d9ae72e645c60dfe"
+  },
+  "license": "../License.txt"
+}

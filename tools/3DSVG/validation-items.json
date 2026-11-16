@@ -1,0 +1,83 @@
+[
+  {
+    "asset": "cano-blockie",
+    "format": "fbx",
+    "mesh": true,
+    "uv": true,
+    "texture": true,
+    "dimensions": true,
+    "triangles": 156
+  },
+  {
+    "asset": "cano-blockie",
+    "format": "glb",
+    "mesh": true,
+    "uv": true,
+    "texture": true,
+    "dimensions": true,
+    "triangles": 156
+  },
+  {
+    "asset": "cano-blockie",
+    "format": "obj",
+    "mesh": true,
+    "uv": true,
+    "texture": true,
+    "dimensions": true,
+    "triangles": 156
+  },
+  {
+    "asset": "moeda-blockie",
+    "format": "fbx",
+    "mesh": true,
+    "uv": true,
+    "texture": true,
+    "dimensions": true,
+    "triangles": 356
+  },
+  {
+    "asset": "moeda-blockie",
+    "format": "glb",
+    "mesh": true,
+    "uv": true,
+    "texture": true,
+    "dimensions": true,
+    "triangles": 356
+  },
+  {
+    "asset": "moeda-blockie",
+    "format": "obj",
+    "mesh": true,
+    "uv": true,
+    "texture": true,
+    "dimensions": true,
+    "triangles": 356
+  },
+  {
+    "asset": "bloco-blockie",
+    "format": "fbx",
+    "mesh": true,
+    "uv": true,
+    "texture": true,
+    "dimensions": true,
+    "triangles": 796
+  },
+  {
+    "asset": "bloco-blockie",
+    "format": "glb",
+    "mesh": true,
+    "uv": true,
+    "texture": true,
+    "dimensions": true,
+    "triangles": 796
+  },
+  {
+    "asset": "bloco-blockie",
+    "format": "obj",
+    "mesh": true,
+    "uv": true,
+    "texture": true,
+    "dimensions": true,
+    "triangles": 796
+  }
+]

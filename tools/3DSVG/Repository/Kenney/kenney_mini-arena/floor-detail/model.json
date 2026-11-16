@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "floor-detail",
+  "pack": "kenney_mini-arena",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/FBX format/floor-detail.fbx": "df5a39cd78faad12d6423d4f9a80ec062462f6709410e9c2858a05a541278494",
+    "Models/GLB format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/GLB format/floor-detail.glb": "32bdfdb26a87327a6415b7c6eba44eb8876a91c1c5caf09a9822ccccafce5482",
+    "Models/OBJ format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/OBJ format/floor-detail.obj": "286bc5726395ea877624af7961b196a38f8a5c896690b1c859ffb04f396d77f6",
+    "Models/OBJ format/floor-detail.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/floor-detail.png": "61573156ce7d69b10b2ff3148972f25efe9bfdbc92bcced47860fb0b88acc532"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "FBX format/floor-detail.fbx": "df5a39cd78faad12d6423d4f9a80ec062462f6709410e9c2858a05a541278494",
+    "Textures/GLB/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "GLB format/floor-detail.glb": "32bdfdb26a87327a6415b7c6eba44eb8876a91c1c5caf09a9822ccccafce5482",
+    "Textures/OBJ/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "OBJ format/floor-detail.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/floor-detail.obj": "f704c3ada1542db01fc780aecdf24d99b5ada0c3869d3b0f848a7d51dad9dffe",
+    "Preview.png": "61573156ce7d69b10b2ff3148972f25efe9bfdbc92bcced47860fb0b88acc532"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-mouse-curve",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-mouse-curve.fbx": "65b0d7a5dc6284c4030d45be04dcb3b30104db130c5113899963eee621835e2c",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-mouse-curve.glb": "8f7645eab5c022b7b809384875c0f248000e2ec5dabf567d4807446f7eb04779",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-mouse-curve.obj": "696dbe198892522a37130ecd61a79e31038b101505ad1a8e23695d5eede476f1",
+    "Models/OBJ format/coaster-mouse-curve.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-mouse-curve.png": "88196f0ceaf10980c176f42caf6cd269181489a78459068e059756b48353bf50"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-mouse-curve.fbx": "65b0d7a5dc6284c4030d45be04dcb3b30104db130c5113899963eee621835e2c",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-mouse-curve.glb": "8f7645eab5c022b7b809384875c0f248000e2ec5dabf567d4807446f7eb04779",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-mouse-curve.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-mouse-curve.obj": "b1cf4f9b77f97640ca29a688defad4f7b3f6dac47573a1c3c29b8fd8de9ca55e",
+    "Preview.png": "88196f0ceaf10980c176f42caf6cd269181489a78459068e059756b48353bf50"
+  },
+  "license": "../License.txt"
+}

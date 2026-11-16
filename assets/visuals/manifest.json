@@ -1,0 +1,2108 @@
+{
+  "version": 1,
+  "license": "Kenney CC0 models (source licenses retained); original Sphinx SVG from the existing game",
+  "resolution": 512,
+  "supersampling": 2,
+  "assets": {
+    "beaver": {
+      "file": "objects/beaver.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-beaver",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-beaver.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "bee": {
+      "file": "objects/bee.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-bee",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-bee.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "bunny": {
+      "file": "objects/bunny.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-bunny",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-bunny.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "cat": {
+      "file": "objects/cat.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-cat",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-cat.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "caterpillar": {
+      "file": "objects/caterpillar.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-caterpillar",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-caterpillar.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "chick": {
+      "file": "objects/chick.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-chick",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-chick.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "cow": {
+      "file": "objects/cow.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-cow",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-cow.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "crab": {
+      "file": "objects/crab.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-crab",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-crab.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "deer": {
+      "file": "objects/deer.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-deer",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-deer.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "dog": {
+      "file": "objects/dog.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-dog",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-dog.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "elephant": {
+      "file": "objects/elephant.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-elephant",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-elephant.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "fish": {
+      "file": "objects/fish.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-fish",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-fish.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "fox": {
+      "file": "objects/fox.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-fox",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-fox.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "giraffe": {
+      "file": "objects/giraffe.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-giraffe",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-giraffe.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "hog": {
+      "file": "objects/hog.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-hog",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-hog.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "koala": {
+      "file": "objects/koala.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-koala",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-koala.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "lion": {
+      "file": "objects/lion.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-lion",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-lion.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "monkey": {
+      "file": "objects/monkey.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-monkey",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-monkey.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "panda": {
+      "file": "objects/panda.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-panda",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-panda.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "parrot": {
+      "file": "objects/parrot.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-parrot",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-parrot.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "penguin": {
+      "file": "objects/penguin.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-penguin",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-penguin.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "pig": {
+      "file": "objects/pig.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-pig",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-pig.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "polar": {
+      "file": "objects/polar.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-polar",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-polar.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "tiger": {
+      "file": "objects/tiger.webp",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-tiger",
+      "source": "assets/image/kenney_cube-pets_1.0/Models/OBJ format/animal-tiger.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-apple": {
+      "file": "objects/food-apple.webp",
+      "pack": "kenney_food-kit",
+      "model": "apple",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/apple.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-banana": {
+      "file": "objects/food-banana.webp",
+      "pack": "kenney_food-kit",
+      "model": "banana",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/banana.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-bread": {
+      "file": "objects/food-bread.webp",
+      "pack": "kenney_food-kit",
+      "model": "bread",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/bread.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-broccoli": {
+      "file": "objects/food-broccoli.webp",
+      "pack": "kenney_food-kit",
+      "model": "broccoli",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/broccoli.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-burger": {
+      "file": "objects/food-burger.webp",
+      "pack": "kenney_food-kit",
+      "model": "burger",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/burger.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-cake": {
+      "file": "objects/food-cake.webp",
+      "pack": "kenney_food-kit",
+      "model": "cake",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/cake.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-carrot": {
+      "file": "objects/food-carrot.webp",
+      "pack": "kenney_food-kit",
+      "model": "carrot",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/carrot.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-cherries": {
+      "file": "objects/food-cherries.webp",
+      "pack": "kenney_food-kit",
+      "model": "cherries",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/cherries.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-cheese": {
+      "file": "objects/food-cheese.webp",
+      "pack": "kenney_food-kit",
+      "model": "cheese",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/cheese.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-cookie": {
+      "file": "objects/food-cookie.webp",
+      "pack": "kenney_food-kit",
+      "model": "cookie",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/cookie.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-corn": {
+      "file": "objects/food-corn.webp",
+      "pack": "kenney_food-kit",
+      "model": "corn",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/corn.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-croissant": {
+      "file": "objects/food-croissant.webp",
+      "pack": "kenney_food-kit",
+      "model": "croissant",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/croissant.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-cup-coffee": {
+      "file": "objects/food-cup-coffee.webp",
+      "pack": "kenney_food-kit",
+      "model": "cup-coffee",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/cup-coffee.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-cupcake": {
+      "file": "objects/food-cupcake.webp",
+      "pack": "kenney_food-kit",
+      "model": "cupcake",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/cupcake.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-donut": {
+      "file": "objects/food-donut.webp",
+      "pack": "kenney_food-kit",
+      "model": "donut",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/donut.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-egg": {
+      "file": "objects/food-egg.webp",
+      "pack": "kenney_food-kit",
+      "model": "egg",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/egg.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-eggplant": {
+      "file": "objects/food-eggplant.webp",
+      "pack": "kenney_food-kit",
+      "model": "eggplant",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/eggplant.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-fish": {
+      "file": "objects/food-fish.webp",
+      "pack": "kenney_food-kit",
+      "model": "fish",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/fish.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-fries": {
+      "file": "objects/food-fries.webp",
+      "pack": "kenney_food-kit",
+      "model": "fries",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/fries.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-grapes": {
+      "file": "objects/food-grapes.webp",
+      "pack": "kenney_food-kit",
+      "model": "grapes",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/grapes.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-hot-dog": {
+      "file": "objects/food-hot-dog.webp",
+      "pack": "kenney_food-kit",
+      "model": "hot-dog",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/hot-dog.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-ice-cream": {
+      "file": "objects/food-ice-cream.webp",
+      "pack": "kenney_food-kit",
+      "model": "ice-cream",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/ice-cream.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-lemon": {
+      "file": "objects/food-lemon.webp",
+      "pack": "kenney_food-kit",
+      "model": "lemon",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/lemon.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-lollypop": {
+      "file": "objects/food-lollypop.webp",
+      "pack": "kenney_food-kit",
+      "model": "lollypop",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/lollypop.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-mushroom": {
+      "file": "objects/food-mushroom.webp",
+      "pack": "kenney_food-kit",
+      "model": "mushroom",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/mushroom.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-orange": {
+      "file": "objects/food-orange.webp",
+      "pack": "kenney_food-kit",
+      "model": "orange",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/orange.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-pear": {
+      "file": "objects/food-pear.webp",
+      "pack": "kenney_food-kit",
+      "model": "pear",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/pear.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-pineapple": {
+      "file": "objects/food-pineapple.webp",
+      "pack": "kenney_food-kit",
+      "model": "pineapple",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/pineapple.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-pizza": {
+      "file": "objects/food-pizza.webp",
+      "pack": "kenney_food-kit",
+      "model": "pizza",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/pizza.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-pumpkin": {
+      "file": "objects/food-pumpkin.webp",
+      "pack": "kenney_food-kit",
+      "model": "pumpkin",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/pumpkin.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-strawberry": {
+      "file": "objects/food-strawberry.webp",
+      "pack": "kenney_food-kit",
+      "model": "strawberry",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/strawberry.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-tomato": {
+      "file": "objects/food-tomato.webp",
+      "pack": "kenney_food-kit",
+      "model": "tomato",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/tomato.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-watermelon": {
+      "file": "objects/food-watermelon.webp",
+      "pack": "kenney_food-kit",
+      "model": "watermelon",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/watermelon.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-chocolate": {
+      "file": "objects/food-chocolate.webp",
+      "pack": "kenney_food-kit",
+      "model": "chocolate",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/chocolate.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-pot": {
+      "file": "objects/food-pot.webp",
+      "pack": "kenney_food-kit",
+      "model": "pot",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/pot.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-bottle-oil": {
+      "file": "objects/food-bottle-oil.webp",
+      "pack": "kenney_food-kit",
+      "model": "bottle-oil",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/bottle-oil.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-soda": {
+      "file": "objects/food-soda.webp",
+      "pack": "kenney_food-kit",
+      "model": "soda",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/soda.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "food-ice-cream-cne": {
+      "file": "objects/food-ice-cream-cne.webp",
+      "pack": "kenney_food-kit",
+      "model": "ice-cream-cne",
+      "source": "assets/image/kenney_food-kit/Models/OBJ format/ice-cream-cne.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "books": {
+      "file": "objects/books.webp",
+      "pack": "kenney_furniture-kit",
+      "model": "books",
+      "source": "assets/image/kenney_furniture-kit/Models/OBJ format/books.obj",
+      "assembly": null,
+      "camera": [
+        6.0,
+        5.0,
+        -8.0
+      ]
+    },
+    "keyboard": {
+      "file": "objects/keyboard.webp",
+      "pack": "kenney_furniture-kit",
+      "model": "computerKeyboard",
+      "source": "assets/image/kenney_furniture-kit/Models/OBJ format/computerKeyboard.obj",
+      "assembly": null,
+      "camera": [
+        6.0,
+        5.0,
+        -8.0
+      ]
+    },
+    "mouse": {
+      "file": "objects/mouse.webp",
+      "pack": "kenney_furniture-kit",
+      "model": "computerMouse",
+      "source": "assets/image/kenney_furniture-kit/Models/OBJ format/computerMouse.obj",
+      "assembly": null,
+      "camera": [
+        6.0,
+        5.0,
+        -8.0
+      ]
+    },
+    "laptop": {
+      "file": "objects/laptop.webp",
+      "pack": "kenney_furniture-kit",
+      "model": "laptop",
+      "source": "assets/image/kenney_furniture-kit/Models/OBJ format/laptop.obj",
+      "assembly": null,
+      "camera": [
+        6.0,
+        5.0,
+        -8.0
+      ]
+    },
+    "mirror": {
+      "file": "objects/mirror.webp",
+      "pack": "kenney_furniture-kit",
+      "model": "bathroomMirror",
+      "source": "assets/image/kenney_furniture-kit/Models/OBJ format/bathroomMirror.obj",
+      "assembly": null,
+      "camera": [
+        6.0,
+        5.0,
+        -8.0
+      ]
+    },
+    "chair": {
+      "file": "objects/chair.webp",
+      "pack": "kenney_furniture-kit",
+      "model": "chair",
+      "source": "assets/image/kenney_furniture-kit/Models/OBJ format/chair.obj",
+      "assembly": null,
+      "camera": [
+        6.0,
+        5.0,
+        -8.0
+      ]
+    },
+    "bed": {
+      "file": "objects/bed.webp",
+      "pack": "kenney_furniture-kit",
+      "model": "bedSingle",
+      "source": "assets/image/kenney_furniture-kit/Models/OBJ format/bedSingle.obj",
+      "assembly": null,
+      "camera": [
+        6.0,
+        5.0,
+        -8.0
+      ]
+    },
+    "plant": {
+      "file": "objects/plant.webp",
+      "pack": "kenney_furniture-kit",
+      "model": "pottedPlant",
+      "source": "assets/image/kenney_furniture-kit/Models/OBJ format/pottedPlant.obj",
+      "assembly": null,
+      "camera": [
+        6.0,
+        5.0,
+        -8.0
+      ]
+    },
+    "lamp": {
+      "file": "objects/lamp.webp",
+      "pack": "kenney_furniture-kit",
+      "model": "lampSquareTable",
+      "source": "assets/image/kenney_furniture-kit/Models/OBJ format/lampSquareTable.obj",
+      "assembly": null,
+      "camera": [
+        6.0,
+        5.0,
+        -8.0
+      ]
+    },
+    "bear": {
+      "file": "objects/bear.webp",
+      "pack": "kenney_furniture-kit",
+      "model": "bear",
+      "source": "assets/image/kenney_furniture-kit/Models/OBJ format/bear.obj",
+      "assembly": null,
+      "camera": [
+        6.0,
+        5.0,
+        -8.0
+      ]
+    },
+    "castle": {
+      "file": "objects/castle.webp",
+      "pack": "kenney_castle-kit",
+      "model": "tower-square-top-roof-high",
+      "source": "assets/image/kenney_castle-kit/Models/OBJ format/tower-square-top-roof-high.obj",
+      "assembly": [
+        "tower-square-base",
+        "tower-square-mid",
+        "tower-square-top-roof-high"
+      ],
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "castle-tower": {
+      "file": "objects/castle-tower.webp",
+      "pack": "kenney_castle-kit",
+      "model": "tower-hexagon-roof",
+      "source": "assets/image/kenney_castle-kit/Models/OBJ format/tower-hexagon-roof.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "catapult": {
+      "file": "objects/catapult.webp",
+      "pack": "kenney_castle-kit",
+      "model": "siege-catapult",
+      "source": "assets/image/kenney_castle-kit/Models/OBJ format/siege-catapult.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "flag": {
+      "file": "objects/flag.webp",
+      "pack": "kenney_castle-kit",
+      "model": "flag",
+      "source": "assets/image/kenney_castle-kit/Models/OBJ format/flag.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "bridge": {
+      "file": "objects/bridge.webp",
+      "pack": "kenney_castle-kit",
+      "model": "bridge-draw",
+      "source": "assets/image/kenney_castle-kit/Models/OBJ format/bridge-draw.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "factory": {
+      "file": "objects/factory.webp",
+      "pack": "kenney_factory-kit_3.0",
+      "model": "machine",
+      "source": "assets/image/kenney_factory-kit_3.0/Models/OBJ format/machine.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "gear": {
+      "file": "objects/gear.webp",
+      "pack": "kenney_factory-kit_3.0",
+      "model": "cog-a",
+      "source": "assets/image/kenney_factory-kit_3.0/Models/OBJ format/cog-a.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "robot-arm": {
+      "file": "objects/robot-arm.webp",
+      "pack": "kenney_factory-kit_3.0",
+      "model": "robot-arm-a",
+      "source": "assets/image/kenney_factory-kit_3.0/Models/OBJ format/robot-arm-a.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "conveyor": {
+      "file": "objects/conveyor.webp",
+      "pack": "kenney_factory-kit_3.0",
+      "model": "conveyor",
+      "source": "assets/image/kenney_factory-kit_3.0/Models/OBJ format/conveyor.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "crate": {
+      "file": "objects/crate.webp",
+      "pack": "kenney_factory-kit_3.0",
+      "model": "box-small",
+      "source": "assets/image/kenney_factory-kit_3.0/Models/OBJ format/box-small.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "potion": {
+      "file": "objects/potion.webp",
+      "pack": "kenney_mini-dungeon",
+      "model": "potion",
+      "source": "assets/image/kenney_mini-dungeon/Models/OBJ format/potion.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "orc": {
+      "file": "objects/orc.webp",
+      "pack": "kenney_mini-dungeon",
+      "model": "character-orc",
+      "source": "assets/image/kenney_mini-dungeon/Models/OBJ format/character-orc.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "dungeon-column": {
+      "file": "objects/dungeon-column.webp",
+      "pack": "kenney_mini-dungeon",
+      "model": "column",
+      "source": "assets/image/kenney_mini-dungeon/Models/OBJ format/column.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "coin": {
+      "file": "objects/coin.webp",
+      "pack": "kenney_mini-dungeon",
+      "model": "coin",
+      "source": "assets/image/kenney_mini-dungeon/Models/OBJ format/coin.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "key": {
+      "file": "objects/key.webp",
+      "pack": "kenney_mini-dungeon",
+      "model": "key",
+      "source": "assets/image/kenney_mini-dungeon/Models/OBJ format/key.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "sword": {
+      "file": "objects/sword.webp",
+      "pack": "kenney_mini-dungeon",
+      "model": "weapon-sword",
+      "source": "assets/image/kenney_mini-dungeon/Models/OBJ format/weapon-sword.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "shield": {
+      "file": "objects/shield.webp",
+      "pack": "kenney_mini-dungeon",
+      "model": "shield-round",
+      "source": "assets/image/kenney_mini-dungeon/Models/OBJ format/shield-round.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "spaceship": {
+      "file": "objects/spaceship.webp",
+      "pack": "kenney_space-kit",
+      "model": "craft_speederA",
+      "source": "assets/image/kenney_space-kit/Models/OBJ format/craft_speederA.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "astronaut": {
+      "file": "objects/astronaut.webp",
+      "pack": "kenney_space-kit",
+      "model": "astronautA",
+      "source": "assets/image/kenney_space-kit/Models/OBJ format/astronautA.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "alien": {
+      "file": "objects/alien.webp",
+      "pack": "kenney_space-kit",
+      "model": "alien",
+      "source": "assets/image/kenney_space-kit/Models/OBJ format/alien.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "meteor": {
+      "file": "objects/meteor.webp",
+      "pack": "kenney_space-kit",
+      "model": "meteor",
+      "source": "assets/image/kenney_space-kit/Models/OBJ format/meteor.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "crystal": {
+      "file": "objects/crystal.webp",
+      "pack": "kenney_space-kit",
+      "model": "rock_crystals",
+      "source": "assets/image/kenney_space-kit/Models/OBJ format/rock_crystals.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "rover": {
+      "file": "objects/rover.webp",
+      "pack": "kenney_space-kit",
+      "model": "rover",
+      "source": "assets/image/kenney_space-kit/Models/OBJ format/rover.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "satellite": {
+      "file": "objects/satellite.webp",
+      "pack": "kenney_space-kit",
+      "model": "satelliteDish",
+      "source": "assets/image/kenney_space-kit/Models/OBJ format/satelliteDish.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "ship": {
+      "file": "objects/ship.webp",
+      "pack": "kenney_pirate-kit",
+      "model": "ship-pirate-large",
+      "source": "assets/image/kenney_pirate-kit/Models/OBJ format/ship-pirate-large.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "treasure": {
+      "file": "objects/treasure.webp",
+      "pack": "kenney_pirate-kit",
+      "model": "chest",
+      "source": "assets/image/kenney_pirate-kit/Models/OBJ format/chest.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "barrel": {
+      "file": "objects/barrel.webp",
+      "pack": "kenney_pirate-kit",
+      "model": "barrel",
+      "source": "assets/image/kenney_pirate-kit/Models/OBJ format/barrel.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "palm": {
+      "file": "objects/palm.webp",
+      "pack": "kenney_pirate-kit",
+      "model": "palm-bend",
+      "source": "assets/image/kenney_pirate-kit/Models/OBJ format/palm-bend.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "island": {
+      "file": "objects/island.webp",
+      "pack": "kenney_pirate-kit",
+      "model": "patch-sand-foliage",
+      "source": "assets/image/kenney_pirate-kit/Models/OBJ format/patch-sand-foliage.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "cannon": {
+      "file": "objects/cannon.webp",
+      "pack": "kenney_pirate-kit",
+      "model": "cannon",
+      "source": "assets/image/kenney_pirate-kit/Models/OBJ format/cannon.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "pirate-flag": {
+      "file": "objects/pirate-flag.webp",
+      "pack": "kenney_pirate-kit",
+      "model": "flag-pirate",
+      "source": "assets/image/kenney_pirate-kit/Models/OBJ format/flag-pirate.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "cart": {
+      "file": "objects/cart.webp",
+      "pack": "kenney_mini-market",
+      "model": "shopping-cart",
+      "source": "assets/image/kenney_mini-market/Models/OBJ format/shopping-cart.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "basket": {
+      "file": "objects/basket.webp",
+      "pack": "kenney_mini-market",
+      "model": "shopping-basket",
+      "source": "assets/image/kenney_mini-market/Models/OBJ format/shopping-basket.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "cash-register": {
+      "file": "objects/cash-register.webp",
+      "pack": "kenney_mini-market",
+      "model": "cash-register",
+      "source": "assets/image/kenney_mini-market/Models/OBJ format/cash-register.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "market": {
+      "file": "objects/market.webp",
+      "pack": "kenney_mini-market",
+      "model": "display-fruit",
+      "source": "assets/image/kenney_mini-market/Models/OBJ format/display-fruit.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "train": {
+      "file": "objects/train.webp",
+      "pack": "kenney_train-kit",
+      "model": "train-locomotive-a",
+      "source": "assets/image/kenney_train-kit/Models/OBJ format/train-locomotive-a.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "carriage": {
+      "file": "objects/carriage.webp",
+      "pack": "kenney_train-kit",
+      "model": "train-carriage-box",
+      "source": "assets/image/kenney_train-kit/Models/OBJ format/train-carriage-box.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "car": {
+      "file": "objects/car.webp",
+      "pack": "kenney_car-kit",
+      "model": "sedan",
+      "source": "assets/image/kenney_car-kit/Models/OBJ format/sedan.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "taxi": {
+      "file": "objects/taxi.webp",
+      "pack": "kenney_car-kit",
+      "model": "taxi",
+      "source": "assets/image/kenney_car-kit/Models/OBJ format/taxi.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "ambulance": {
+      "file": "objects/ambulance.webp",
+      "pack": "kenney_car-kit",
+      "model": "ambulance",
+      "source": "assets/image/kenney_car-kit/Models/OBJ format/ambulance.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "firetruck": {
+      "file": "objects/firetruck.webp",
+      "pack": "kenney_car-kit",
+      "model": "firetruck",
+      "source": "assets/image/kenney_car-kit/Models/OBJ format/firetruck.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "police": {
+      "file": "objects/police.webp",
+      "pack": "kenney_car-kit",
+      "model": "police",
+      "source": "assets/image/kenney_car-kit/Models/OBJ format/police.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "truck": {
+      "file": "objects/truck.webp",
+      "pack": "kenney_car-kit",
+      "model": "truck",
+      "source": "assets/image/kenney_car-kit/Models/OBJ format/truck.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "tree": {
+      "file": "objects/tree.webp",
+      "pack": "kenney_mini-forest_1.0",
+      "model": "tree",
+      "source": "assets/image/kenney_mini-forest_1.0/Models/OBJ format/tree.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "tent": {
+      "file": "objects/tent.webp",
+      "pack": "kenney_mini-forest_1.0",
+      "model": "tent",
+      "source": "assets/image/kenney_mini-forest_1.0/Models/OBJ format/tent.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "house": {
+      "file": "objects/house.webp",
+      "pack": "kenney_city-kit-suburban_20",
+      "model": "building-type-a",
+      "source": "assets/image/kenney_city-kit-suburban_20/Models/OBJ format/building-type-a.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "road": {
+      "file": "objects/road.webp",
+      "pack": "kenney_city-kit-roads",
+      "model": "road-bend",
+      "source": "assets/image/kenney_city-kit-roads/Models/OBJ format/road-bend.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "trophy": {
+      "file": "objects/trophy.webp",
+      "pack": "kenney_mini-arena",
+      "model": "trophy",
+      "source": "assets/image/kenney_mini-arena/Models/OBJ format/trophy.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "horse": {
+      "file": "objects/horse.webp",
+      "pack": "kenney_prototype-kit",
+      "model": "animal-horse",
+      "source": "assets/image/kenney_prototype-kit/Models/OBJ format/animal-horse.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "cube": {
+      "file": "objects/cube.webp",
+      "pack": "kenney_prototype-kit",
+      "model": "shape-cube",
+      "source": "assets/image/kenney_prototype-kit/Models/OBJ format/shape-cube.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "cylinder": {
+      "file": "objects/cylinder.webp",
+      "pack": "kenney_prototype-kit",
+      "model": "shape-cylinder",
+      "source": "assets/image/kenney_prototype-kit/Models/OBJ format/shape-cylinder.obj",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    },
+    "sphinx": {
+      "file": "objects/sphinx.webp",
+      "pack": "Arte original Hello Yotta",
+      "model": "Sphinx SVG",
+      "source": "Canhões de ouro/sphinx.js",
+      "assembly": null,
+      "camera": [
+        6,
+        4,
+        8
+      ]
+    }
+  },
+  "emoji": {
+    "🐝": "bee",
+    "🐰": "bunny",
+    "🐱": "cat",
+    "🐈": "cat",
+    "🐄": "cow",
+    "🦀": "crab",
+    "🦌": "deer",
+    "🐶": "dog",
+    "🐘": "elephant",
+    "🐠": "fish",
+    "🦊": "fox",
+    "🦒": "giraffe",
+    "🐨": "koala",
+    "🦁": "lion",
+    "🐒": "monkey",
+    "🐵": "monkey",
+    "🐼": "panda",
+    "🦜": "parrot",
+    "🐧": "penguin",
+    "🐷": "pig",
+    "🐻": "bear",
+    "🐴": "horse",
+    "🍎": "food-apple",
+    "🍌": "food-banana",
+    "🍞": "food-bread",
+    "🥦": "food-broccoli",
+    "🍔": "food-burger",
+    "🍰": "food-cake",
+    "🥕": "food-carrot",
+    "🍒": "food-cherries",
+    "🧀": "food-cheese",
+    "🍪": "food-cookie",
+    "🌽": "food-corn",
+    "🥐": "food-croissant",
+    "☕": "food-cup-coffee",
+    "🧁": "food-cupcake",
+    "🍩": "food-donut",
+    "🥚": "food-egg",
+    "🍆": "food-eggplant",
+    "🍟": "food-fries",
+    "🍇": "food-grapes",
+    "🌭": "food-hot-dog",
+    "🍦": "food-ice-cream",
+    "🍋": "food-lemon",
+    "🍭": "food-lollypop",
+    "🍄": "food-mushroom",
+    "🍊": "food-orange",
+    "🍐": "food-pear",
+    "🍍": "food-pineapple",
+    "🍕": "food-pizza",
+    "🎃": "food-pumpkin",
+    "🍓": "food-strawberry",
+    "🍅": "food-tomato",
+    "🍉": "food-watermelon",
+    "🍫": "food-chocolate",
+    "📚": "books",
+    "📖": "books",
+    "⌨️": "keyboard",
+    "🖱️": "mouse",
+    "💻": "laptop",
+    "🪞": "mirror",
+    "🛏️": "bed",
+    "🪴": "plant",
+    "🏰": "castle",
+    "⚙️": "gear",
+    "🏭": "factory",
+    "📦": "crate",
+    "🧪": "potion",
+    "🗝️": "key",
+    "🪙": "coin",
+    "💎": "crystal",
+    "🛡️": "shield",
+    "🗡️": "sword",
+    "🚀": "spaceship",
+    "👨‍🚀": "astronaut",
+    "👽": "alien",
+    "🪨": "meteor",
+    "🏴‍☠️": "pirate-flag",
+    "🛢️": "barrel",
+    "🧰": "treasure",
+    "🌴": "palm",
+    "🛒": "cart",
+    "🧺": "basket",
+    "🚂": "train",
+    "🚗": "car",
+    "🚕": "taxi",
+    "🚑": "ambulance",
+    "🚒": "firetruck",
+    "🚓": "police",
+    "🚚": "truck",
+    "🌲": "tree",
+    "⛺": "tent",
+    "🏠": "house",
+    "🏆": "trophy"
+  },
+  "games": {
+    "Canhões de ouro": {
+      "key": "canhoes-de-ouro",
+      "title": "Enigmas da Esfinge",
+      "hero": "games/canhoes-de-ouro.webp",
+      "objects": [
+        "sphinx",
+        "dungeon-column"
+      ],
+      "accent": "#bd863e",
+      "coverSymbol": "",
+      "guards": [
+        ".sphinx-scene"
+      ]
+    },
+    "Caçadores de Coletivos": {
+      "key": "cacadores-de-coletivos",
+      "title": "Caçadores de Coletivos",
+      "hero": "games/cacadores-de-coletivos.webp",
+      "objects": [
+        "lion",
+        "giraffe",
+        "tree"
+      ],
+      "accent": "#558a3a",
+      "coverSymbol": "🔦",
+      "guards": []
+    },
+    "vowel": {
+      "key": "vowel-vowel",
+      "title": "Complete com Vogais",
+      "hero": "games/vowel-vowel.webp",
+      "objects": [
+        "books",
+        "keyboard"
+      ],
+      "accent": "#d57ab4",
+      "coverSymbol": "🎹",
+      "guards": []
+    },
+    "Defesa do Castelo Matematico": {
+      "key": "defesa-do-castelo-matematico",
+      "title": "Defesa do Castelo Matemático",
+      "hero": "games/defesa-do-castelo-matematico.webp",
+      "objects": [
+        "castle",
+        "catapult"
+      ],
+      "accent": "#537fba",
+      "coverSymbol": "",
+      "guards": []
+    },
+    "Detetives da Ortografia": {
+      "key": "detetives-da-ortografia",
+      "title": "Detetives da Ortografia",
+      "hero": "games/detetives-da-ortografia.webp",
+      "objects": [
+        "books",
+        "lamp"
+      ],
+      "accent": "#c18b3a",
+      "coverSymbol": "🔍",
+      "guards": []
+    },
+    "Digite o resultado": {
+      "key": "digite-o-resultado",
+      "title": "Digite o Resultado",
+      "hero": "games/digite-o-resultado.webp",
+      "objects": [
+        "keyboard",
+        "food-apple"
+      ],
+      "accent": "#ed7585",
+      "coverSymbol": "",
+      "guards": []
+    },
+    "Digitado": {
+      "key": "digitado",
+      "title": "Digitado",
+      "hero": "games/digitado.webp",
+      "objects": [
+        "keyboard",
+        "laptop"
+      ],
+      "accent": "#19a998",
+      "coverSymbol": "⌨️",
+      "guards": []
+    },
+    "Duelo dos Monstros": {
+      "key": "duelo-dos-monstros",
+      "title": "Duelo dos Monstros",
+      "hero": "games/duelo-dos-monstros.webp",
+      "objects": [
+        "orc",
+        "alien"
+      ],
+      "accent": "#aa71b7",
+      "coverSymbol": "",
+      "guards": []
+    },
+    "Escola de Magia VSA": {
+      "key": "escola-de-magia-vsa",
+      "title": "Escola de Magia VSA",
+      "hero": "games/escola-de-magia-vsa.webp",
+      "objects": [
+        "potion",
+        "books"
+      ],
+      "accent": "#bb64d6",
+      "coverSymbol": "🧙‍♂️",
+      "guards": []
+    },
+    "Fabrica de Acentos": {
+      "key": "fabrica-de-acentos",
+      "title": "Fábrica de Acentos",
+      "hero": "games/fabrica-de-acentos.webp",
+      "objects": [
+        "factory",
+        "books"
+      ],
+      "accent": "#9b77d2",
+      "coverSymbol": "🎩",
+      "guards": []
+    },
+    "Fábrica de Rimas": {
+      "key": "fabrica-de-rimas",
+      "title": "Fábrica de Rimas",
+      "hero": "games/fabrica-de-rimas.webp",
+      "objects": [
+        "conveyor",
+        "gear",
+        "books"
+      ],
+      "accent": "#d78b46",
+      "coverSymbol": "🏭",
+      "guards": []
+    },
+    "Galáxia da Matemática": {
+      "key": "galaxia-da-matematica",
+      "title": "Galáxia Geométrica",
+      "hero": "games/galaxia-da-matematica.webp",
+      "objects": [
+        "spaceship",
+        "crystal"
+      ],
+      "accent": "#6c83db",
+      "coverSymbol": "",
+      "guards": [
+        "#geo-options",
+        "#geo-objects",
+        "#geo-target"
+      ]
+    },
+    "Galaxia dos Opostos": {
+      "key": "galaxia-dos-opostos",
+      "title": "Galáxia dos Opostos",
+      "hero": "games/galaxia-dos-opostos.webp",
+      "objects": [
+        "astronaut",
+        "spaceship"
+      ],
+      "accent": "#8670cf",
+      "coverSymbol": "🌌",
+      "guards": []
+    },
+    "Laboratorio das Pocoes": {
+      "key": "laboratorio-das-pocoes",
+      "title": "Laboratório das Poções",
+      "hero": "games/laboratorio-das-pocoes.webp",
+      "objects": [
+        "potion",
+        "food-pot"
+      ],
+      "accent": "#ad75ce",
+      "coverSymbol": "✨",
+      "guards": [
+        "#active-shelf"
+      ]
+    },
+    "Maisculo vs Minusculo": {
+      "key": "maisculo-vs-minusculo",
+      "title": "Maiúsculo vs Minúsculo",
+      "hero": "games/maisculo-vs-minusculo.webp",
+      "objects": [
+        "books",
+        "keyboard"
+      ],
+      "accent": "#c276c5",
+      "coverSymbol": "🔤",
+      "guards": []
+    },
+    "Matematica Pirata": {
+      "key": "matematica-pirata",
+      "title": "Matemática Pirata",
+      "hero": "games/matematica-pirata.webp",
+      "objects": [
+        "ship",
+        "treasure"
+      ],
+      "accent": "#359eae",
+      "coverSymbol": "",
+      "guards": []
+    },
+    "Mercado Alien": {
+      "key": "mercado-alien",
+      "title": "Mercado Alien",
+      "hero": "games/mercado-alien.webp",
+      "objects": [
+        "alien",
+        "spaceship",
+        "cart"
+      ],
+      "accent": "#53bca2",
+      "coverSymbol": "🛸",
+      "guards": []
+    },
+    "Mercado Maior ou Menor": {
+      "key": "mercado-maior-ou-menor",
+      "title": "Mercado Maior ou Menor",
+      "hero": "games/mercado-maior-ou-menor.webp",
+      "objects": [
+        "cart",
+        "food-apple"
+      ],
+      "accent": "#e29f58",
+      "coverSymbol": "",
+      "guards": [
+        "#items-area"
+      ]
+    },
+    "monster_typer I": {
+      "key": "monster-typer-i",
+      "title": "Monster Typer I",
+      "hero": "games/monster-typer-i.webp",
+      "objects": [
+        "orc",
+        "keyboard"
+      ],
+      "accent": "#41ab9d",
+      "coverSymbol": "",
+      "guards": []
+    },
+    "monster_typer II": {
+      "key": "monster-typer-ii",
+      "title": "Monster Typer II",
+      "hero": "games/monster-typer-ii.webp",
+      "objects": [
+        "alien",
+        "keyboard"
+      ],
+      "accent": "#4baea6",
+      "coverSymbol": "",
+      "guards": []
+    },
+    "Organiza Tudo": {
+      "key": "organiza-tudo",
+      "title": "Organiza Tudo",
+      "hero": "games/organiza-tudo.webp",
+      "objects": [
+        "crate",
+        "food-apple",
+        "car"
+      ],
+      "accent": "#5ebac6",
+      "coverSymbol": "📦",
+      "guards": [
+        "#root"
+      ]
+    },
+    "Piratas do Troco": {
+      "key": "piratas-do-troco",
+      "title": "Piratas do Troco",
+      "hero": "games/piratas-do-troco.webp",
+      "objects": [
+        "treasure",
+        "coin"
+      ],
+      "accent": "#c59644",
+      "coverSymbol": "",
+      "guards": []
+    },
+    "syllables": {
+      "key": "syllables",
+      "title": "Separando Sílabas",
+      "hero": "games/syllables.webp",
+      "objects": [
+        "books",
+        "keyboard"
+      ],
+      "accent": "#a17bce",
+      "coverSymbol": "📚",
+      "guards": []
+    },
+    "Sinonimos": {
+      "key": "sinonimos",
+      "title": "Sinônimos",
+      "hero": "games/sinonimos.webp",
+      "objects": [
+        "parrot",
+        "tree",
+        "books"
+      ],
+      "accent": "#61a36c",
+      "coverSymbol": "🧭",
+      "guards": []
+    },
+    "Trem da Soma e Subtracao": {
+      "key": "trem-da-soma-e-subtracao",
+      "title": "Trem da Soma e Subtração",
+      "hero": "games/trem-da-soma-e-subtracao.webp",
+      "objects": [
+        "train",
+        "carriage"
+      ],
+      "accent": "#e39357",
+      "coverSymbol": "",
+      "guards": []
+    },
+    "Mapa da Ilha do Tesouro": {
+      "key": "mapa-da-ilha-do-tesouro",
+      "title": "Mapa da Ilha do Tesouro",
+      "hero": "games/mapa-da-ilha-do-tesouro.webp",
+      "objects": [
+        "island",
+        "treasure",
+        "palm"
+      ],
+      "accent": "#45a6ae",
+      "coverSymbol": "🗺️",
+      "guards": []
+    },
+    "Espelho Magico": {
+      "key": "espelho-magico",
+      "title": "Espelho Mágico",
+      "hero": "games/espelho-magico.webp",
+      "objects": [
+        "mirror"
+      ],
+      "accent": "#ad83d8",
+      "coverSymbol": "🪞",
+      "guards": []
+    },
+    "Grafico em Acao": {
+      "key": "grafico-em-acao",
+      "title": "Gráfico em Ação",
+      "hero": "games/grafico-em-acao.webp",
+      "objects": [
+        "food-apple",
+        "food-banana"
+      ],
+      "accent": "#539cce",
+      "coverSymbol": "📊",
+      "guards": [
+        "#scene-area",
+        "#panel-type",
+        "#panel-color"
+      ]
+    },
+    "Qual e o proximo": {
+      "key": "qual-e-o-proximo",
+      "title": "Qual é o próximo",
+      "hero": "games/qual-e-o-proximo.webp",
+      "objects": [
+        "cube",
+        "cylinder"
+      ],
+      "accent": "#ad89ce",
+      "coverSymbol": "🔮",
+      "guards": []
+    },
+    "Fabrica das Formas": {
+      "key": "fabrica-das-formas",
+      "title": "Fábrica das Formas",
+      "hero": "games/fabrica-das-formas.webp",
+      "objects": [
+        "conveyor",
+        "robot-arm"
+      ],
+      "accent": "#dca150",
+      "coverSymbol": "🏭",
+      "guards": []
+    },
+    "Que horas sao": {
+      "key": "que-horas-sao",
+      "title": "Que horas são",
+      "hero": "games/que-horas-sao.webp",
+      "objects": [
+        "house"
+      ],
+      "accent": "#6eaccc",
+      "coverSymbol": "🕐",
+      "guards": [
+        "#clock-svg"
+      ]
+    },
+    "Complete a Cobra": {
+      "key": "complete-a-cobra",
+      "title": "Complete a Cobra",
+      "hero": "games/complete-a-cobra.webp",
+      "objects": [
+        "caterpillar",
+        "tree"
+      ],
+      "accent": "#68af7c",
+      "coverSymbol": "🐍",
+      "guards": []
+    },
+    "Sudoku Magico": {
+      "key": "sudoku-magico",
+      "title": "Sudoku Mágico",
+      "hero": "games/sudoku-magico.webp",
+      "objects": [
+        "cube"
+      ],
+      "accent": "#9f87ce",
+      "coverSymbol": "🧩",
+      "guards": []
+    },
+    "Combinando Sorvete": {
+      "key": "combinando-sorvete",
+      "title": "Combinando Sorvete",
+      "hero": "games/combinando-sorvete.webp",
+      "objects": [
+        "food-ice-cream",
+        "food-ice-cream-cne"
+      ],
+      "accent": "#e7a1ba",
+      "coverSymbol": "🍦",
+      "guards": [
+        "#cones-row",
+        "#flavor-box"
+      ]
+    },
+    "Mercado Matematico": {
+      "key": "mercado-matematico",
+      "title": "Mercado Matemágico",
+      "hero": "games/mercado-matematico.webp",
+      "objects": [
+        "cart",
+        "cash-register",
+        "food-apple"
+      ],
+      "accent": "#57ac8a",
+      "coverSymbol": "🛒",
+      "guards": []
+    },
+    "O Caminho Mais Rapido": {
+      "key": "o-caminho-mais-rapido",
+      "title": "O Caminho Mais Rápido",
+      "hero": "games/o-caminho-mais-rapido.webp",
+      "objects": [
+        "house",
+        "road",
+        "car"
+      ],
+      "accent": "#69a1bd",
+      "coverSymbol": "🗺️",
+      "guards": []
+    },
+    "Balanca da Descoberta": {
+      "key": "balanca-da-descoberta",
+      "title": "Balança da Descoberta",
+      "hero": "games/balanca-da-descoberta.webp",
+      "objects": [
+        "food-apple",
+        "crate"
+      ],
+      "accent": "#cd995a",
+      "coverSymbol": "⚖️",
+      "guards": []
+    },
+    "Complete a Sequencia": {
+      "key": "complete-a-sequencia",
+      "title": "Complete a Sequência",
+      "hero": "games/complete-a-sequencia.webp",
+      "objects": [
+        "cube"
+      ],
+      "accent": "#6aafbd",
+      "coverSymbol": "🔢",
+      "guards": []
+    },
+    "Contando as Patas": {
+      "key": "contando-as-patas",
+      "title": "Contando as Patas",
+      "hero": "games/contando-as-patas.webp",
+      "objects": [
+        "horse",
+        "cow"
+      ],
+      "accent": "#a7af5e",
+      "coverSymbol": "🐾",
+      "guards": [
+        "#screen-game"
+      ]
+    },
+    "Qual e o Grupo": {
+      "key": "qual-e-o-grupo",
+      "title": "Qual é o Grupo?",
+      "hero": "games/qual-e-o-grupo.webp",
+      "objects": [
+        "food-apple",
+        "food-carrot",
+        "food-broccoli"
+      ],
+      "accent": "#7ba8a4",
+      "coverSymbol": "🎯",
+      "guards": [
+        "#screen-game"
+      ]
+    }
+  }
+}

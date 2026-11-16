@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cables",
+  "pack": "kenney_modular-space-kit_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "5aa7d186416e85310d99308c8e5510ededda181f3354ba9f4887cd56273f2b1e",
+    "Models/Textures/variation-a.png": "2a25e6aa7e175639b627d6a9dfe20588b2f95da5ac5baa983bd65bb85df372de",
+    "Models/Textures/variation-b.png": "9438dcdd3225d5144eefa6026238604e8ebe19bd47c200873e1a5421fbf664f9",
+    "Models/FBX format/cables.fbx": "5f162556aff6d47577a41ed95e80af787fab3521c3e0d761b5c089621636c445",
+    "Models/GLB format/Textures/colormap.png": "5aa7d186416e85310d99308c8e5510ededda181f3354ba9f4887cd56273f2b1e",
+    "Models/GLB format/cables.glb": "f689e942aad71167bde86c559061aea03537bfb07f2851aeac9fb538fec72526",
+    "Models/OBJ format/Textures/colormap.png": "5aa7d186416e85310d99308c8e5510ededda181f3354ba9f4887cd56273f2b1e",
+    "Models/OBJ format/cables.obj": "7fadfea603a7bf0cd9e1c7a4b0b25e3582aaa35dcfebc146ad54a85157368481",
+    "Models/OBJ format/cables.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cables.png": "1d9f8a8f999941e965f6df6b10038d31128551f096aa24b9948a8a41d023897e"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "5aa7d186416e85310d99308c8e5510ededda181f3354ba9f4887cd56273f2b1e",
+    "Textures/FBX/variation-a.png": "2a25e6aa7e175639b627d6a9dfe20588b2f95da5ac5baa983bd65bb85df372de",
+    "Textures/FBX/variation-b.png": "9438dcdd3225d5144eefa6026238604e8ebe19bd47c200873e1a5421fbf664f9",
+    "FBX format/cables.fbx": "5f162556aff6d47577a41ed95e80af787fab3521c3e0d761b5c089621636c445",
+    "Textures/GLB/colormap.png": "5aa7d186416e85310d99308c8e5510ededda181f3354ba9f4887cd56273f2b1e",
+    "Textures/GLB/variation-a.png": "2a25e6aa7e175639b627d6a9dfe20588b2f95da5ac5baa983bd65bb85df372de",
+    "Textures/GLB/variation-b.png": "9438dcdd3225d5144eefa6026238604e8ebe19bd47c200873e1a5421fbf664f9",
+    "GLB format/cables.glb": "f689e942aad71167bde86c559061aea03537bfb07f2851aeac9fb538fec72526",
+    "Textures/OBJ/colormap.png": "5aa7d186416e85310d99308c8e5510ededda181f3354ba9f4887cd56273f2b1e",
+    "Textures/OBJ/variation-a.png": "2a25e6aa7e175639b627d6a9dfe20588b2f95da5ac5baa983bd65bb85df372de",
+    "Textures/OBJ/variation-b.png": "9438dcdd3225d5144eefa6026238604e8ebe19bd47c200873e1a5421fbf664f9",
+    "OBJ format/cables.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cables.obj": "db47581bb390521c5f9aeb4f089ea36f248532d70ec7ff0704f4468be84c7f79",
+    "Preview.png": "1d9f8a8f999941e965f6df6b10038d31128551f096aa24b9948a8a41d023897e"
+  },
+  "license": "../License.txt"
+}

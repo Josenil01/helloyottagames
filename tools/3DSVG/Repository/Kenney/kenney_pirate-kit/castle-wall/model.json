@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "castle-wall",
+  "pack": "kenney_pirate-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/FBX format/castle-wall.fbx": "52859101a5854644d804dfe1995f44f50a32714ac7c1d08de4878b26a1a28361",
+    "Models/GLB format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/GLB format/castle-wall.glb": "92cd2e842f4bda218289a7c7b5ca7714780dfc943735e7ff60097b08114dd40f",
+    "Models/OBJ format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/OBJ format/castle-wall.obj": "5855c17f878f893640f8e2ec52a3dfecb2b89a43508436756a6543e3e9a16c5b",
+    "Models/OBJ format/castle-wall.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/castle-wall.png": "75c07076e11d4af5ce3753b128b708d53c574c46ca66abd29b7985b23ee849e6"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "FBX format/castle-wall.fbx": "52859101a5854644d804dfe1995f44f50a32714ac7c1d08de4878b26a1a28361",
+    "Textures/GLB/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "GLB format/castle-wall.glb": "92cd2e842f4bda218289a7c7b5ca7714780dfc943735e7ff60097b08114dd40f",
+    "Textures/OBJ/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "OBJ format/castle-wall.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/castle-wall.obj": "d109c594f25962ce52f85406f8a3f102cfa7f11c6b02060a295e33e3ece828da",
+    "Preview.png": "75c07076e11d4af5ce3753b128b708d53c574c46ca66abd29b7985b23ee849e6"
+  },
+  "license": "../License.txt"
+}

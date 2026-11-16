@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "chest",
+  "pack": "kenney_mini-dungeon",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/Textures/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "Models/FBX format/chest.fbx": "bfab9f2623544ce480159b57db45db2a14d71e0b4a8971f2b55be44212857ac4",
+    "Models/GLB format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/GLB format/chest.glb": "64cc6c44786a0833bbe53c694cbad9f10d4fdd9e99d4b5ec03fcb3b8b5dd71e0",
+    "Models/OBJ format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/OBJ format/chest.obj": "376fa661508ee297e9ab7f0dbcb73a35743d6567e27c2f22f2409b1744969f16",
+    "Models/OBJ format/chest.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/chest.png": "60ffac4610988a5e0ffdc782926a5bd134377419847ab6abf39a3da8a08558c6"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/FBX/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "FBX format/chest.fbx": "bfab9f2623544ce480159b57db45db2a14d71e0b4a8971f2b55be44212857ac4",
+    "Textures/GLB/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/GLB/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "GLB format/chest.glb": "64cc6c44786a0833bbe53c694cbad9f10d4fdd9e99d4b5ec03fcb3b8b5dd71e0",
+    "Textures/OBJ/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/OBJ/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "OBJ format/chest.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/chest.obj": "ccf15ee67c7a14ccb000a9c76de8c826589b5da942416bd706e0652ef6611adf",
+    "Preview.png": "60ffac4610988a5e0ffdc782926a5bd134377419847ab6abf39a3da8a08558c6"
+  },
+  "license": "../License.txt"
+}

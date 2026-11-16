@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-wood-straight-hill-complete-half",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-wood-straight-hill-complete-half.fbx": "4069db97723ebed1c545532499d7d97013a59a6396eace29ec6cd794df751e48",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-wood-straight-hill-complete-half.glb": "99e4ef48462a9489892d30487f67c382b6f3ce8ba13fa9be4cbc3912949873bf",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-wood-straight-hill-complete-half.obj": "061ec62cc299be6a90c1c3c0a340b3dc8a299d957ca02b773ca2a798f56086e7",
+    "Models/OBJ format/coaster-wood-straight-hill-complete-half.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-wood-straight-hill-complete-half.png": "0d6906cb72b255f9a3c099c3e387abf69ff52266ad663d6e6b0392800753b9ea"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-wood-straight-hill-complete-half.fbx": "4069db97723ebed1c545532499d7d97013a59a6396eace29ec6cd794df751e48",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-wood-straight-hill-complete-half.glb": "99e4ef48462a9489892d30487f67c382b6f3ce8ba13fa9be4cbc3912949873bf",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-wood-straight-hill-complete-half.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-wood-straight-hill-complete-half.obj": "0b8c9859e45bbd1de2c423f9f3a5d8e5402f7b0dc24fc5e027bcb4b3ea468811",
+    "Preview.png": "0d6906cb72b255f9a3c099c3e387abf69ff52266ad663d6e6b0392800753b9ea"
+  },
+  "license": "../License.txt"
+}

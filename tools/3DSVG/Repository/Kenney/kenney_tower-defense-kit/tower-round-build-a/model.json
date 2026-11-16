@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tower-round-build-a",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/tower-round-build-a.fbx": "991ae47712984c3e6153ac5fddb808b8171f78b46198cbe22b12e173154c6a1d",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/tower-round-build-a.glb": "dfca03e57064d035b5dcaf9a58c12a80de78e11d19a821803d287fde274103f2",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/tower-round-build-a.obj": "bd21ab8f1aaa90e8b3c7098fee4929524655b3d6b34cdbf61d2f320beafa87db",
+    "Models/OBJ format/tower-round-build-a.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tower-round-build-a.png": "8eb853e45e6a808eadfbb19fd6f54d8a129e88bbf0148689fbc1585e2c639e8b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/tower-round-build-a.fbx": "991ae47712984c3e6153ac5fddb808b8171f78b46198cbe22b12e173154c6a1d",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/tower-round-build-a.glb": "dfca03e57064d035b5dcaf9a58c12a80de78e11d19a821803d287fde274103f2",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/tower-round-build-a.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tower-round-build-a.obj": "16e711b3dda7dff0921146d4f2e8ee2ec6f402a89649600cc2a5e50b6c65cab4",
+    "Preview.png": "8eb853e45e6a808eadfbb19fd6f54d8a129e88bbf0148689fbc1585e2c639e8b"
+  },
+  "license": "../License.txt"
+}

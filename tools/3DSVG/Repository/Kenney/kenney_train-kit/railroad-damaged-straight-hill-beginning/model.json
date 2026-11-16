@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "railroad-damaged-straight-hill-beginning",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/railroad-damaged-straight-hill-beginning.fbx": "c1f157e101114468088ed1ec9dcaceef4dd60660e100a8f596181e5eb9fc64ab",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/railroad-damaged-straight-hill-beginning.glb": "551324b1b06f612772d9f9148380246ced931415bc03768cc9808290bebdd860",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/railroad-damaged-straight-hill-beginning.obj": "8942e318b2338d2e29c1bf05a0fb6a6cd5020e340cfa34581a335fd4b9601e32",
+    "Models/OBJ format/railroad-damaged-straight-hill-beginning.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/railroad-damaged-straight-hill-beginning.png": "97400bfe7585d2b51caf54b0752cbc878e708327fda1a66fee74b59ea71dd539"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/railroad-damaged-straight-hill-beginning.fbx": "c1f157e101114468088ed1ec9dcaceef4dd60660e100a8f596181e5eb9fc64ab",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/railroad-damaged-straight-hill-beginning.glb": "551324b1b06f612772d9f9148380246ced931415bc03768cc9808290bebdd860",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/railroad-damaged-straight-hill-beginning.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/railroad-damaged-straight-hill-beginning.obj": "737db0c0a87b048e8aaad63b43e93807844dc54188cc21d102a5702c5d6db992",
+    "Preview.png": "97400bfe7585d2b51caf54b0752cbc878e708327fda1a66fee74b59ea71dd539"
+  },
+  "license": "../License.txt"
+}

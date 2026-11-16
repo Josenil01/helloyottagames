@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stairs-corner",
+  "pack": "kenney_mini-arena",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/FBX format/stairs-corner.fbx": "d4f3bffceef56b030c5f19c5481920da873846e3ac635f0fd6536ede261c6d65",
+    "Models/GLB format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/GLB format/stairs-corner.glb": "a978af5ad5c7adcec1433b1c8b7428dd134e1ead809212698bec285263253157",
+    "Models/OBJ format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/OBJ format/stairs-corner.obj": "4fc754abfca331e974c5a584c84dac32bf2c1a8bc9059dc8d41f9a3bae7f2480",
+    "Models/OBJ format/stairs-corner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/stairs-corner.png": "9fcb3e61e3ed914c684c7821b8bb5ed3d7a676e748d9bd9bda46c731bea44926"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "FBX format/stairs-corner.fbx": "d4f3bffceef56b030c5f19c5481920da873846e3ac635f0fd6536ede261c6d65",
+    "Textures/GLB/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "GLB format/stairs-corner.glb": "a978af5ad5c7adcec1433b1c8b7428dd134e1ead809212698bec285263253157",
+    "Textures/OBJ/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "OBJ format/stairs-corner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/stairs-corner.obj": "412b42ae15c25f624de98dbfa534fe434ac6198c194f89147ffb59c200941c05",
+    "Preview.png": "9fcb3e61e3ed914c684c7821b8bb5ed3d7a676e748d9bd9bda46c731bea44926"
+  },
+  "license": "../License.txt"
+}

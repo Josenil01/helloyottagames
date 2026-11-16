@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "track-striped-wide-straight-hill-beginning",
+  "pack": "kenney_toy-car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/Textures/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Models/Textures/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "Models/FBX format/track-striped-wide-straight-hill-beginning.fbx": "6a09e98ad92724edd2aa7a0f8fca298d27601048fdc59b1b6895197b93b23ea9",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/track-striped-wide-straight-hill-beginning.glb": "7032803c8e76f83d2b2491ea71a5cf26acc531e5513274ac167b3b417d4983ef",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/track-striped-wide-straight-hill-beginning.obj": "b71b8bdfaf86eeac2e7f30784881ee1eb900660f01c8986ce8b06004090e636c",
+    "Models/OBJ format/track-striped-wide-straight-hill-beginning.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/track-striped-wide-straight-hill-beginning.png": "25e14ebf89759bf1992f5630e6903d2206fd87e0a38811fa4a1fee270bd52123"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/FBX/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/FBX/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "FBX format/track-striped-wide-straight-hill-beginning.fbx": "6a09e98ad92724edd2aa7a0f8fca298d27601048fdc59b1b6895197b93b23ea9",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/GLB/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/GLB/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "GLB format/track-striped-wide-straight-hill-beginning.glb": "7032803c8e76f83d2b2491ea71a5cf26acc531e5513274ac167b3b417d4983ef",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/OBJ/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/OBJ/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "OBJ format/track-striped-wide-straight-hill-beginning.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/track-striped-wide-straight-hill-beginning.obj": "5fcd1160c53ddc56e47b929b020fdf6935bc5f82aedbafc0a1970c86e6ef4555",
+    "Preview.png": "25e14ebf89759bf1992f5630e6903d2206fd87e0a38811fa4a1fee270bd52123"
+  },
+  "license": "../License.txt"
+}

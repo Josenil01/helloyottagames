@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "rail",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/rail.fbx": "33ec09a77fe3b70f7a80b411c5f5544c4b411e9f6a4e74c1d58ca51fc3f696d4",
+    "Models/GLTF format/rail.glb": "ce9c3ece35b86e97c21463f491acbe824e4af4220e621db5d7a8f067bc2868fb",
+    "Models/OBJ format/rail.obj": "66f9aeef7e24f59d22ca094e389c858cbae8ccfd468fb5de0a1e3aac9bcca775",
+    "Models/OBJ format/rail.mtl": "d1fe9287aaed7f653eb92a878b514c62cb4d4702008e4d14ea29645dad6f226b"
+  },
+  "files": {
+    "FBX format/rail.fbx": "33ec09a77fe3b70f7a80b411c5f5544c4b411e9f6a4e74c1d58ca51fc3f696d4",
+    "GLB format/rail.glb": "ce9c3ece35b86e97c21463f491acbe824e4af4220e621db5d7a8f067bc2868fb",
+    "OBJ format/rail.mtl": "d1fe9287aaed7f653eb92a878b514c62cb4d4702008e4d14ea29645dad6f226b",
+    "OBJ format/rail.obj": "a25e242918d5bd484837f98e0e5f0a921f66370a837c926ddb59f202f8d5f88e"
+  },
+  "license": "../License.txt"
+}

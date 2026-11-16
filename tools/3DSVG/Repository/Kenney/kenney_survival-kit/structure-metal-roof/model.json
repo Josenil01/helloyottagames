@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "structure-metal-roof",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/structure-metal-roof.fbx": "e0ae20916e169a2a9d7a9d5b00739592d01a26aa2943e7dd4c7d4c2662245a80",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/structure-metal-roof.glb": "7dbcfa227640df53dcd2f54dd9198413b78d5cd26f3ea062c9371be4284709f3",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/structure-metal-roof.obj": "092c01fde5a3e88aaa122da1e981da5f9604a70c86dd4b6573b31a2b56aca7a7",
+    "Models/OBJ format/structure-metal-roof.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/structure-metal-roof.png": "a87b189b0c3f70fa96a7087563f7f93f6c7e1348d20fc259258e757129d93c88"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/structure-metal-roof.fbx": "e0ae20916e169a2a9d7a9d5b00739592d01a26aa2943e7dd4c7d4c2662245a80",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/structure-metal-roof.glb": "7dbcfa227640df53dcd2f54dd9198413b78d5cd26f3ea062c9371be4284709f3",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/structure-metal-roof.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/structure-metal-roof.obj": "521e75b27fc3850c4220e26401ff3b7289a2bbf5c45a6641f702c2775fa6a401",
+    "Preview.png": "a87b189b0c3f70fa96a7087563f7f93f6c7e1348d20fc259258e757129d93c88"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "gravestone-cross",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/gravestone-cross.fbx": "0eb9b76eb1f7de849df40694d89a9956dded9d165c23e8d86bfa4a34daa69751",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/gravestone-cross.glb": "ef49164a4ca545cb2bb491f592d63b1611f6f8f640db77db62f9651ec33fb849",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/gravestone-cross.obj": "0a4ffb12dfa521b3d9942c0011db473753c089e722bbdac46ab0bb21ae856c0b",
+    "Models/OBJ format/gravestone-cross.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/gravestone-cross.png": "9e2362f571d59586ebd1a3eb41aaa78b29143d529191022fa8d628ebe259bf8b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/gravestone-cross.fbx": "0eb9b76eb1f7de849df40694d89a9956dded9d165c23e8d86bfa4a34daa69751",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/gravestone-cross.glb": "ef49164a4ca545cb2bb491f592d63b1611f6f8f640db77db62f9651ec33fb849",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/gravestone-cross.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/gravestone-cross.obj": "bbf8a2379bb66628c78f92eba40fb45de3ee29216651daaaa84b87c58071c992",
+    "Preview.png": "9e2362f571d59586ebd1a3eb41aaa78b29143d529191022fa8d628ebe259bf8b"
+  },
+  "license": "../License.txt"
+}

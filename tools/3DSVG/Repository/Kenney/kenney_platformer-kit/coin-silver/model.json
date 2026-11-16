@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coin-silver",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/coin-silver.fbx": "0fc961c0a199ddd56137859673f0f904357804b6f06d2994ed90366020584f2a",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/coin-silver.glb": "267012feb04e773cbb6c82a477f38743a69a34249b506a6eb551370392acc55c",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/coin-silver.obj": "f6ac60603f0bbdf3f6b74c6c76eb2bb36151a8709d08b4bd1f6d3c4424832d58",
+    "Models/OBJ format/coin-silver.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coin-silver.png": "df462a507b3efd9b54262d6204bb062aaae64603c0e6fed6b540d8b2aee94758"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/coin-silver.fbx": "0fc961c0a199ddd56137859673f0f904357804b6f06d2994ed90366020584f2a",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/coin-silver.glb": "267012feb04e773cbb6c82a477f38743a69a34249b506a6eb551370392acc55c",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/coin-silver.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coin-silver.obj": "6ded5f701c3ecdf935c48ec0d31ca9eb58e68ca86f528f0cfc40b96bb87d1cd2",
+    "Preview.png": "df462a507b3efd9b54262d6204bb062aaae64603c0e6fed6b540d8b2aee94758"
+  },
+  "license": "../License.txt"
+}

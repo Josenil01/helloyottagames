@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-wood-straight-bend-large",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-wood-straight-bend-large.fbx": "f1ef55e4963eb485bd84c8b3ef0ced17bbb83561849eeb99fc46e8b7d73705a9",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-wood-straight-bend-large.glb": "1c28e346ed5191e031f6fd620cadd75d90d7fd4585cd1f92ea0643189b8e7bdb",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-wood-straight-bend-large.obj": "02080bb585b2e0ef521b6032fee19ea6c561e4abc67cbc484c4966e87ea8f1da",
+    "Models/OBJ format/coaster-wood-straight-bend-large.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-wood-straight-bend-large.png": "f07689c98e1a14224e71d16c396d66e95ce6859b1108f9350dde2b6fbd3a3f6f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-wood-straight-bend-large.fbx": "f1ef55e4963eb485bd84c8b3ef0ced17bbb83561849eeb99fc46e8b7d73705a9",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-wood-straight-bend-large.glb": "1c28e346ed5191e031f6fd620cadd75d90d7fd4585cd1f92ea0643189b8e7bdb",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-wood-straight-bend-large.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-wood-straight-bend-large.obj": "a0d967392b4cdd3b52e40b7a0b10ec3f9a3f30c39991490767a581d65968d7e7",
+    "Preview.png": "f07689c98e1a14224e71d16c396d66e95ce6859b1108f9350dde2b6fbd3a3f6f"
+  },
+  "license": "../License.txt"
+}

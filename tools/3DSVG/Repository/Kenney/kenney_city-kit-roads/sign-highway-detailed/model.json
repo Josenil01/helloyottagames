@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "sign-highway-detailed",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/sign-highway-detailed.fbx": "f6ea80beb8634b785be939d1177739f34c6b7fbbfa7ee291cd7ec4b55fdbf2f2",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/sign-highway-detailed.glb": "122d293bc9ee3378ab2492242ac615fee1c791066ec747599829a801f6a5b99d",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/sign-highway-detailed.obj": "49b6537cca2b250cd7874468a57835130c18cdbe9c11ac481c48407be3f90ac5",
+    "Models/OBJ format/sign-highway-detailed.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/sign-highway-detailed.png": "a4c5711a7ec7a67df054602fea818a89505ce429a05a0786baba5b13bb782b17"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/sign-highway-detailed.fbx": "f6ea80beb8634b785be939d1177739f34c6b7fbbfa7ee291cd7ec4b55fdbf2f2",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/sign-highway-detailed.glb": "122d293bc9ee3378ab2492242ac615fee1c791066ec747599829a801f6a5b99d",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/sign-highway-detailed.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/sign-highway-detailed.obj": "75c83337897c906c43299e9c1fe3ea0789092e66f0f94c81d484af4d2946134c",
+    "Preview.png": "a4c5711a7ec7a67df054602fea818a89505ce429a05a0786baba5b13bb782b17"
+  },
+  "license": "../License.txt"
+}

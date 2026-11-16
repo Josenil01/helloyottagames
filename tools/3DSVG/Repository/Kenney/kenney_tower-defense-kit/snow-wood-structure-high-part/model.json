@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "snow-wood-structure-high-part",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/snow-wood-structure-high-part.fbx": "1df7363bfa15400fda06e9760d18e816467311d08b885cb827f6374978e26f1e",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/snow-wood-structure-high-part.glb": "9b15294bfe300be908daadf0c50793ec2781ebd5f4b2bf37f865be44d3c132d1",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/snow-wood-structure-high-part.obj": "68aaf064bfc4fd7b6b6c916a20fe5c60f1d1cb5817e0a165acecbc50d34ac25a",
+    "Models/OBJ format/snow-wood-structure-high-part.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/snow-wood-structure-high-part.png": "a96dba62f8cfc66923155d3958a3136bffa35a258fcf95921648ac72fca8eee1"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/snow-wood-structure-high-part.fbx": "1df7363bfa15400fda06e9760d18e816467311d08b885cb827f6374978e26f1e",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/snow-wood-structure-high-part.glb": "9b15294bfe300be908daadf0c50793ec2781ebd5f4b2bf37f865be44d3c132d1",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/snow-wood-structure-high-part.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/snow-wood-structure-high-part.obj": "1275e4b25fd06dee8cb5728f8bcd4bd023b8c43e46d7255fa8178dcd1a4a303a",
+    "Preview.png": "a96dba62f8cfc66923155d3958a3136bffa35a258fcf95921648ac72fca8eee1"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wheel-truck",
+  "pack": "kenney_car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/FBX format/wheel-truck.fbx": "21090484ab58c404b3001fbfce09221a790f41faf5c9fd010b895c4846ce392e",
+    "Models/GLB format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/GLB format/wheel-truck.glb": "411ff9692f72e9b0490d20574e3efd94b20058732a587abc26f4952e2c91351e",
+    "Models/OBJ format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/OBJ format/wheel-truck.obj": "b4deed247fef1a193cd59b6b0f5ae46e9effb554dcc000153df6a706830e6673",
+    "Models/OBJ format/wheel-truck.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wheel-truck.png": "c356555093a1097fed07456ad7c247123b502b904ca8114929348d071df25b06"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "FBX format/wheel-truck.fbx": "21090484ab58c404b3001fbfce09221a790f41faf5c9fd010b895c4846ce392e",
+    "Textures/GLB/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "GLB format/wheel-truck.glb": "411ff9692f72e9b0490d20574e3efd94b20058732a587abc26f4952e2c91351e",
+    "Textures/OBJ/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "OBJ format/wheel-truck.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wheel-truck.obj": "b5551b4303b421524d77be229bf56a5dd4813083c1122b39c699015f22f87ada",
+    "Preview.png": "c356555093a1097fed07456ad7c247123b502b904ca8114929348d071df25b06"
+  },
+  "license": "../License.txt"
+}

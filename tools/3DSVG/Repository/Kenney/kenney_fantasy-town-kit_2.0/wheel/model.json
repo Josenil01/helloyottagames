@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wheel",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/wheel.fbx": "4cd22693e497a4e59e3d458115e325827a04f33f984da99715a62fb4a3b18a95",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/wheel.glb": "c049e479d0fa31d7cae7a3f4fe239172e7117789fdd10be4be5bddde6239d59f",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/wheel.obj": "11d1b3bee06bb8ebf91b73ea216319df0520568bd08e80cc03621bb31cf15fd3",
+    "Models/OBJ format/wheel.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wheel.png": "5e68ba5d5855a08a598aacc481bae95d2bc650d6e62cb89af31eb9df2f7ce9f0"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/wheel.fbx": "4cd22693e497a4e59e3d458115e325827a04f33f984da99715a62fb4a3b18a95",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/wheel.glb": "c049e479d0fa31d7cae7a3f4fe239172e7117789fdd10be4be5bddde6239d59f",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/wheel.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wheel.obj": "d4529dd19f20c98269f28519e3712a612bcc79e2eee5ebfbd3ae52b9b3abbbfb",
+    "Preview.png": "5e68ba5d5855a08a598aacc481bae95d2bc650d6e62cb89af31eb9df2f7ce9f0"
+  },
+  "license": "../License.txt"
+}

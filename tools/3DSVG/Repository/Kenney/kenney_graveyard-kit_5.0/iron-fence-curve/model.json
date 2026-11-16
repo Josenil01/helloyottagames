@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "iron-fence-curve",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/iron-fence-curve.fbx": "99b211c1e30b477e4689a6ba669e30ea7bc3edfdc14d1c4fb7a395c9e522cbc0",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/iron-fence-curve.glb": "fc6281a993e1b5c773d4ebf4373d2af1e7aaf571a695275355a57d0c7164aac6",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/iron-fence-curve.obj": "ec7c6549eb8187221ca5fa73f05bc16e70726b51ee4bd8f3a37abe71904d52ba",
+    "Models/OBJ format/iron-fence-curve.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/iron-fence-curve.png": "92abe74ebbc40b131e6e3419ce553beefdc3258dd78208c13947719a5979e97c"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/iron-fence-curve.fbx": "99b211c1e30b477e4689a6ba669e30ea7bc3edfdc14d1c4fb7a395c9e522cbc0",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/iron-fence-curve.glb": "fc6281a993e1b5c773d4ebf4373d2af1e7aaf571a695275355a57d0c7164aac6",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/iron-fence-curve.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/iron-fence-curve.obj": "1de24db08792098fb4cad512ca1e9acd59eeb4d12239bb3118336d18b17ebeb2",
+    "Preview.png": "92abe74ebbc40b131e6e3419ce553beefdc3258dd78208c13947719a5979e97c"
+  },
+  "license": "../License.txt"
+}

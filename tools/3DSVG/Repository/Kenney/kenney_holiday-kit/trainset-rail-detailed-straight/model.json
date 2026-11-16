@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "trainset-rail-detailed-straight",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/trainset-rail-detailed-straight.fbx": "5539e751bfd5854d12afb9cab7c866f770688fce083c10c2a3ddf71bfa337620",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/trainset-rail-detailed-straight.glb": "0a70fe3864d62b0b91ecec9354dd2a1dca798e9989839384ef7a40ba77b51f8b",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/trainset-rail-detailed-straight.obj": "b963875fecb1b896bca9ef2b4f5e78f48fb6e12ce842fc2c33ac81b14c934615",
+    "Models/OBJ format/trainset-rail-detailed-straight.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/trainset-rail-detailed-straight.png": "0035619f38aafb53c3c2015b92b226dfda5197705afed7f0a4fb78836015c851"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/trainset-rail-detailed-straight.fbx": "5539e751bfd5854d12afb9cab7c866f770688fce083c10c2a3ddf71bfa337620",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/trainset-rail-detailed-straight.glb": "0a70fe3864d62b0b91ecec9354dd2a1dca798e9989839384ef7a40ba77b51f8b",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/trainset-rail-detailed-straight.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/trainset-rail-detailed-straight.obj": "0848c81e7c2523e1b225289b55597fff15b36dae86f2b7f658f75aab36c41771",
+    "Preview.png": "0035619f38aafb53c3c2015b92b226dfda5197705afed7f0a4fb78836015c851"
+  },
+  "license": "../License.txt"
+}

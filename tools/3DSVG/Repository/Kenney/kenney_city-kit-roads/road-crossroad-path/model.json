@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-crossroad-path",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-crossroad-path.fbx": "548298b901500aa41e0fa648b2b63a2d7a06fe0f3385f50eeafcb0cbc340411c",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-crossroad-path.glb": "5876a578474fabaac8608819936c499bec3d5c68b8096e27498b2163efe1ca78",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-crossroad-path.obj": "1e1eaaf890354a75b53da76398f7592d4dcc223cc4f30adc843ee0d48ffb98f3",
+    "Models/OBJ format/road-crossroad-path.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-crossroad-path.png": "7bf68196d8d1820d4102f6a5c6e50c799a725fd14ee11834efadf65ff141ecd9"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-crossroad-path.fbx": "548298b901500aa41e0fa648b2b63a2d7a06fe0f3385f50eeafcb0cbc340411c",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-crossroad-path.glb": "5876a578474fabaac8608819936c499bec3d5c68b8096e27498b2163efe1ca78",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-crossroad-path.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-crossroad-path.obj": "8cdd062c544eedff10717ee572e378b5152d32f88d808ef258598d5796ae2b3f",
+    "Preview.png": "7bf68196d8d1820d4102f6a5c6e50c799a725fd14ee11834efadf65ff141ecd9"
+  },
+  "license": "../License.txt"
+}

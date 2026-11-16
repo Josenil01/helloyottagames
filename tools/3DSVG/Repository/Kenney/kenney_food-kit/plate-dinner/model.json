@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "plate-dinner",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/plate-dinner.fbx": "c08dfbccbb2b943eba22fa1ec631a588427438a5b4a5602cb7022f14a0de6f0b",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/plate-dinner.glb": "f6085c9caae201e0d2f0e6ea816ba3ed38e22df0eb08b10c0b9356b0212ad18f",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/plate-dinner.obj": "a63dc6fe46e18eba605ef5c30d695cb0e3e983f50e02b0c9fc601373c506bd8b",
+    "Models/OBJ format/plate-dinner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/plate-dinner.png": "aa251f8b4d09c088f04c2c327473e1a3479f1c29233d532fe9acbd71faf48dfb"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/plate-dinner.fbx": "c08dfbccbb2b943eba22fa1ec631a588427438a5b4a5602cb7022f14a0de6f0b",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/plate-dinner.glb": "f6085c9caae201e0d2f0e6ea816ba3ed38e22df0eb08b10c0b9356b0212ad18f",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/plate-dinner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/plate-dinner.obj": "a140b8a39e2e84a3d2ee3a0df773199ab71155cf0e29d48ebd8d7d4e34baa33f",
+    "Preview.png": "aa251f8b4d09c088f04c2c327473e1a3479f1c29233d532fe9acbd71faf48dfb"
+  },
+  "license": "../License.txt"
+}

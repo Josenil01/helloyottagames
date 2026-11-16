@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "blaster-a",
+  "pack": "kenney_blaster-kit_2.1",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Models/Textures/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "Models/FBX format/blaster-a.fbx": "7656ec60fbe8e02b713f7bd359708a6d4ad626f4fb4eda78c9beb7dc14fa6ec6",
+    "Models/GLB format/Textures/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Models/GLB format/blaster-a.glb": "d6d6fe0ec5baf21d7717449220799d45b95d2d663ace7b22612b255dc1a8b308",
+    "Models/OBJ format/Textures/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Models/OBJ format/blaster-a.obj": "840bf438e76ad104d964f064472553fb80e70856e5d95ce2e3145ca9fdc275ed",
+    "Models/OBJ format/blaster-a.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/blaster-a.png": "f2c5429ac788196f6b1f4f1b576efb09a45aa095af8bbdfe1e76fd2d875651f5"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Textures/FBX/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "FBX format/blaster-a.fbx": "7656ec60fbe8e02b713f7bd359708a6d4ad626f4fb4eda78c9beb7dc14fa6ec6",
+    "Textures/GLB/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Textures/GLB/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "GLB format/blaster-a.glb": "d6d6fe0ec5baf21d7717449220799d45b95d2d663ace7b22612b255dc1a8b308",
+    "Textures/OBJ/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Textures/OBJ/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "OBJ format/blaster-a.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/blaster-a.obj": "487e1f21358ba7fa51dd945b9c351262e3cac4cdb7cb71e36a26e6ea27701da0",
+    "Preview.png": "f2c5429ac788196f6b1f4f1b576efb09a45aa095af8bbdfe1e76fd2d875651f5"
+  },
+  "license": "../License.txt"
+}

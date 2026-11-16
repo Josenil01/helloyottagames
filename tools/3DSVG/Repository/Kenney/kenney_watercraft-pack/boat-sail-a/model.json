@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "boat-sail-a",
+  "pack": "kenney_watercraft-pack",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/FBX format/boat-sail-a.fbx": "a60292d2eea984a2841189b344b461c6b681392d5227c87caca3ee400bfb1b41",
+    "Models/GLB format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/GLB format/boat-sail-a.glb": "35c8e2adae1d3f0fe9d0e37c65422f1c6c6f1f10d818f9bde273a9da264eef4c",
+    "Models/OBJ format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/OBJ format/boat-sail-a.obj": "5cd1b57568833c8e2964322f6953dcd78b05d12cdb7fa73cc9505423da2da5b1",
+    "Models/OBJ format/boat-sail-a.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/boat-sail-a.png": "93758b4663eb616dc6d40643006df8184aa87225ea46867569e5e82b6a3f9eda"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "FBX format/boat-sail-a.fbx": "a60292d2eea984a2841189b344b461c6b681392d5227c87caca3ee400bfb1b41",
+    "Textures/GLB/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "GLB format/boat-sail-a.glb": "35c8e2adae1d3f0fe9d0e37c65422f1c6c6f1f10d818f9bde273a9da264eef4c",
+    "Textures/OBJ/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "OBJ format/boat-sail-a.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/boat-sail-a.obj": "a838de6c29d00b58d1fbd7f8e978f132c0867870c5873a18c67b4d93e97913a6",
+    "Preview.png": "93758b4663eb616dc6d40643006df8184aa87225ea46867569e5e82b6a3f9eda"
+  },
+  "license": "../License.txt"
+}

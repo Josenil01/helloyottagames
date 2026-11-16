@@ -1,0 +1,35 @@
+{
+  "theme": "Reino dos Cogumelos — Super Mario",
+  "generated": "2026-10-29",
+  "method": "Built-in image generation",
+  "format": "PNG",
+  "assets": [
+    {
+      "name": "cogumelo",
+      "file": "cogumelo.png",
+      "prompt": "Use case: stylized-concept. Asset type: individual transparent PNG game prop for a cohesive Mushroom Kingdom Super Mario fan art asset pack. Create exactly ONE isolated object: Super Mario Mushroom Kingdom red Super Mushroom power-up, red rounded cap with large white spots, cream stem and two black oval eyes. Art direction: polished low-poly 3D toy render, broad clean polygonal surfaces, rounded beveled edges, vibrant Nintendo Mushroom Kingdom colors, matte materials, gentle soft highlights. Orthographic three-quarter camera from front-right, slightly above, consistent soft studio light from upper left. Object centered, entirely visible, occupies 78 percent of square canvas, generous transparent padding. Genuinely transparent background, clean alpha edges, no backdrop, no ground plane, no cast shadow outside object, no text labels, no logo or watermark. Faithful recognizable prop design. This is an asset, not a scene, no surrounding objects."
+    },
+    {
+      "name": "cano",
+      "file": "cano.png",
+      "prompt": "Use case: stylized-concept. Asset type: individual transparent PNG game prop for a cohesive Mushroom Kingdom Super Mario fan art asset pack. Create exactly ONE isolated object: Super Mario Mushroom Kingdom iconic green warp pipe, squat cylindrical green tube with wide thick upper rim and dark hollow opening. Art direction: polished low-poly 3D toy render, broad clean polygonal surfaces, rounded beveled edges, vibrant Nintendo Mushroom Kingdom colors, matte materials, gentle soft highlights. Orthographic three-quarter camera from front-right, slightly above, consistent soft studio light from upper left. Object centered, entirely visible, occupies 78 percent of square canvas, generous transparent padding. Genuinely transparent background, clean alpha edges, no backdrop, no ground plane, no cast shadow outside object, no text labels, no logo or watermark. Faithful recognizable prop design. This is an asset, not a scene, no surrounding objects."
+    },
+    {
+      "name": "bloco-interrogacao",
+      "file": "bloco-interrogacao.png",
+      "prompt": "Use case: stylized-concept. Asset type: individual transparent PNG game prop for a cohesive Mushroom Kingdom Super Mario fan art asset pack. Create exactly ONE isolated object: Super Mario Mushroom Kingdom golden yellow Question Block, softly beveled cube, large embossed white question mark on front face. Art direction: polished low-poly 3D toy render, broad clean polygonal surfaces, rounded beveled edges, vibrant Nintendo Mushroom Kingdom colors, matte materials, gentle soft highlights. Orthographic three-quarter camera from front-right, slightly above, consistent soft studio light from upper left. Object centered, entirely visible, occupies 78 percent of square canvas, generous transparent padding. Genuinely transparent background, clean alpha edges, no backdrop, no ground plane, no cast shadow outside object, no text labels, no logo or watermark. Faithful recognizable prop design. This is an asset, not a scene, no surrounding objects."
+    },
+    {
+      "name": "moeda",
+      "file": "moeda.png",
+      "prompt": "Use case: stylized-concept. Asset type: individual transparent PNG game prop for a cohesive Mushroom Kingdom Super Mario fan art asset pack. Create exactly ONE isolated object: Super Mario Mushroom Kingdom golden collectible coin, upright thick gold coin with vertical recessed oblong mark. Art direction: polished low-poly 3D toy render, broad clean polygonal surfaces, rounded beveled edges, vibrant Nintendo Mushroom Kingdom colors, matte materials, gentle soft highlights. Orthographic three-quarter camera from front-right, slightly above, consistent soft studio light from upper left. Object centered, entirely visible, occupies 78 percent of square canvas, generous transparent padding. Genuinely transparent background, clean alpha edges, no backdrop, no ground plane, no cast shadow outside object, no text labels, no logo or watermark. Faithful recognizable prop design. This is an asset, not a scene, no surrounding objects."
+    }
+  ],
+  "notGenerated": [
+    "estrela",
+    "flor-de-fogo",
+    "goomba",
+    "castelo"
+  ],
+  "note": "As quatro solicitações adicionais foram recusadas pelo serviço de imagens. Fan art gerada; não é pacote Kenney CC0 nem material oficial da Nintendo."
+}

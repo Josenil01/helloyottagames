@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "rock-wide",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/rock-wide.fbx": "414d413d20c6c22f06554d60c713388618d2d9ddff24fb622454b1802e714d70",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/rock-wide.glb": "236082a8c9dec4cef61f00f7f77e4a2050d1083852af65d27dd3c16a53c54b64",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/rock-wide.obj": "5787a867872dd426cd7ace4f34b21dd14dce86ea2496f77fe96fc91d41ba34d1",
+    "Models/OBJ format/rock-wide.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/rock-wide.png": "7a48e1879673d12e79999fbe93795e2838fd44f75dccce48eb502fdba90723ce"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/rock-wide.fbx": "414d413d20c6c22f06554d60c713388618d2d9ddff24fb622454b1802e714d70",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/rock-wide.glb": "236082a8c9dec4cef61f00f7f77e4a2050d1083852af65d27dd3c16a53c54b64",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/rock-wide.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/rock-wide.obj": "de282744e46ea3e3722ca479c1bf62ad48f6a0a3ddd5317db10c553b7c8af1bf",
+    "Preview.png": "7a48e1879673d12e79999fbe93795e2838fd44f75dccce48eb502fdba90723ce"
+  },
+  "license": "../License.txt"
+}

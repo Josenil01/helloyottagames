@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tile-hill",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/tile-hill.fbx": "88a0d52e997a125e6d7b27e568a6e024b5e4e95048b4a1010d6ac55acf9b6e8b",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/tile-hill.glb": "2921d78035f8393b0750de0729d5169f2a28c9dda7009c4b409f03b6619c0b8c",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/tile-hill.obj": "69428bbae1044598696a51672da4b5d0561ca696efd75e4b11345cc3aa21858a",
+    "Models/OBJ format/tile-hill.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tile-hill.png": "684a29d0e14b3683374a0d1f428adc7ea369cb1e0754a1b25ecba4bd6dd668b4"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/tile-hill.fbx": "88a0d52e997a125e6d7b27e568a6e024b5e4e95048b4a1010d6ac55acf9b6e8b",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/tile-hill.glb": "2921d78035f8393b0750de0729d5169f2a28c9dda7009c4b409f03b6619c0b8c",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/tile-hill.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tile-hill.obj": "533339b82b2f6ff7ad6539e7aae2b4d7c1e2495c3ecc0d6962c9fec5d5a1981c",
+    "Preview.png": "684a29d0e14b3683374a0d1f428adc7ea369cb1e0754a1b25ecba4bd6dd668b4"
+  },
+  "license": "../License.txt"
+}

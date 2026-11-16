@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "snow-detail-rocks",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/snow-detail-rocks.fbx": "7243e72825d738a0d8ba0fa5007d2185d67eb98aa08dc68d615b1dad58565afd",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/snow-detail-rocks.glb": "fe1998f12b4d2d9eb134a8cc04e53903f48f08151ac2097a12eccc95089d66ba",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/snow-detail-rocks.obj": "dcd20c3d15ac1b43671e3cb5ed1cf9bc200762bd7d3f01d0336e2d6905ff11e9",
+    "Models/OBJ format/snow-detail-rocks.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/snow-detail-rocks.png": "759757eae065da51c3622ec4539a5c0c302dbf307d97b94168909ac40b107554"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/snow-detail-rocks.fbx": "7243e72825d738a0d8ba0fa5007d2185d67eb98aa08dc68d615b1dad58565afd",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/snow-detail-rocks.glb": "fe1998f12b4d2d9eb134a8cc04e53903f48f08151ac2097a12eccc95089d66ba",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/snow-detail-rocks.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/snow-detail-rocks.obj": "d918b433055d78f79fd8613d9e67a093bd9b5534c1dfddf3bcd86772cc2b3e49",
+    "Preview.png": "759757eae065da51c3622ec4539a5c0c302dbf307d97b94168909ac40b107554"
+  },
+  "license": "../License.txt"
+}

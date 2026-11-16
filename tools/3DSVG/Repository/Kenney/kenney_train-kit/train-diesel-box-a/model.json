@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "train-diesel-box-a",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/train-diesel-box-a.fbx": "50e7d5a826fad380da674563b173234b0e1936bd0e9913173261944cfe3633e2",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/train-diesel-box-a.glb": "396a7d723d748efb249f16083e9ec5bf9a017a4eab3ed16a30facd3faea8d4b1",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/train-diesel-box-a.obj": "d52be42b1da17a1e9d732574fbf8a52858b2a74a272b831d36486c13a62270c9",
+    "Models/OBJ format/train-diesel-box-a.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/train-diesel-box-a.png": "b80a4aa7c771bdfa9059b361be4d150c7c53a411b58c6eb5ebe94c9280cb8e32"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/train-diesel-box-a.fbx": "50e7d5a826fad380da674563b173234b0e1936bd0e9913173261944cfe3633e2",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/train-diesel-box-a.glb": "396a7d723d748efb249f16083e9ec5bf9a017a4eab3ed16a30facd3faea8d4b1",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/train-diesel-box-a.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/train-diesel-box-a.obj": "a4c92e0084876a60fd9aa9ada6b6ce9ba8e98de9c6d848ae189221abfbd2a86c",
+    "Preview.png": "b80a4aa7c771bdfa9059b361be4d150c7c53a411b58c6eb5ebe94c9280cb8e32"
+  },
+  "license": "../License.txt"
+}

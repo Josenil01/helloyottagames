@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-hanging-segment",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-hanging-segment.fbx": "6d6f165387c4ae964467a44db39430b307a767c7ccc151ba30907843ec35bbd1",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-hanging-segment.glb": "d6ee67382c85174d81a8f4db78761d68f26eb280ce25845793671c8c615d64f5",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-hanging-segment.obj": "3a9a8692e037c8de368c3c16961a03dc291d49dad6f285d8c4ff1ff8fff1303b",
+    "Models/OBJ format/coaster-hanging-segment.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-hanging-segment.png": "ae27969330bb4af62487a25bf9d5c35f50fd568736b6044ea232e4ef4020828d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-hanging-segment.fbx": "6d6f165387c4ae964467a44db39430b307a767c7ccc151ba30907843ec35bbd1",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-hanging-segment.glb": "d6ee67382c85174d81a8f4db78761d68f26eb280ce25845793671c8c615d64f5",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-hanging-segment.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-hanging-segment.obj": "23a950581b97a37d0cfaebd611f40bdd9e2b7a2aed7a6df9c211ebe85f8e7979",
+    "Preview.png": "ae27969330bb4af62487a25bf9d5c35f50fd568736b6044ea232e4ef4020828d"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "corridor-wide-intersection",
+  "pack": "kenney_modular-space-kit_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "5aa7d186416e85310d99308c8e5510ededda181f3354ba9f4887cd56273f2b1e",
+    "Models/Textures/variation-a.png": "2a25e6aa7e175639b627d6a9dfe20588b2f95da5ac5baa983bd65bb85df372de",
+    "Models/Textures/variation-b.png": "9438dcdd3225d5144eefa6026238604e8ebe19bd47c200873e1a5421fbf664f9",
+    "Models/FBX format/corridor-wide-intersection.fbx": "34f0618afb7ca78ff8998da489add25d6128971012d6bff4ae6f0329c9a3d48a",
+    "Models/GLB format/Textures/colormap.png": "5aa7d186416e85310d99308c8e5510ededda181f3354ba9f4887cd56273f2b1e",
+    "Models/GLB format/corridor-wide-intersection.glb": "61867258442de764a66f4af3a6d038284a321f05523de477b0d507bdd77fa513",
+    "Models/OBJ format/Textures/colormap.png": "5aa7d186416e85310d99308c8e5510ededda181f3354ba9f4887cd56273f2b1e",
+    "Models/OBJ format/corridor-wide-intersection.obj": "cdf4acc4e5112f8c67d543622f9747d9bf20a297252f8a5924b76dbbf8dbccc9",
+    "Models/OBJ format/corridor-wide-intersection.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/corridor-wide-intersection.png": "02871a4605ddbe12e6d714dfbd8cfc7b04e53f7e29af02991432fc66a637545a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "5aa7d186416e85310d99308c8e5510ededda181f3354ba9f4887cd56273f2b1e",
+    "Textures/FBX/variation-a.png": "2a25e6aa7e175639b627d6a9dfe20588b2f95da5ac5baa983bd65bb85df372de",
+    "Textures/FBX/variation-b.png": "9438dcdd3225d5144eefa6026238604e8ebe19bd47c200873e1a5421fbf664f9",
+    "FBX format/corridor-wide-intersection.fbx": "34f0618afb7ca78ff8998da489add25d6128971012d6bff4ae6f0329c9a3d48a",
+    "Textures/GLB/colormap.png": "5aa7d186416e85310d99308c8e5510ededda181f3354ba9f4887cd56273f2b1e",
+    "Textures/GLB/variation-a.png": "2a25e6aa7e175639b627d6a9dfe20588b2f95da5ac5baa983bd65bb85df372de",
+    "Textures/GLB/variation-b.png": "9438dcdd3225d5144eefa6026238604e8ebe19bd47c200873e1a5421fbf664f9",
+    "GLB format/corridor-wide-intersection.glb": "61867258442de764a66f4af3a6d038284a321f05523de477b0d507bdd77fa513",
+    "Textures/OBJ/colormap.png": "5aa7d186416e85310d99308c8e5510ededda181f3354ba9f4887cd56273f2b1e",
+    "Textures/OBJ/variation-a.png": "2a25e6aa7e175639b627d6a9dfe20588b2f95da5ac5baa983bd65bb85df372de",
+    "Textures/OBJ/variation-b.png": "9438dcdd3225d5144eefa6026238604e8ebe19bd47c200873e1a5421fbf664f9",
+    "OBJ format/corridor-wide-intersection.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/corridor-wide-intersection.obj": "9b1cfad15f1c61fbcef66f3b118523bce33e574fe6ccb16bdd40fd15280b1656",
+    "Preview.png": "02871a4605ddbe12e6d714dfbd8cfc7b04e53f7e29af02991432fc66a637545a"
+  },
+  "license": "../License.txt"
+}

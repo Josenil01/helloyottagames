@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tower-watch",
+  "pack": "kenney_pirate-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/FBX format/tower-watch.fbx": "ff7b5c18eae0fea8707d383f7ca3dae7fc290536a8a539d9cf25f40f3023f96b",
+    "Models/GLB format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/GLB format/tower-watch.glb": "0cdba767016b9ee8831084f94357f6b6dd00e2f10c6db41d81f15352dff5c4b4",
+    "Models/OBJ format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/OBJ format/tower-watch.obj": "a125b68955899a63538d23d3772000ff9aae661a0ccd87c1c16a63c02ac9bfab",
+    "Models/OBJ format/tower-watch.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tower-watch.png": "b9fcb90cfb3e481d58fcf26dfd67e478f8cb210a4c9c172cf05c4a0c28872af0"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "FBX format/tower-watch.fbx": "ff7b5c18eae0fea8707d383f7ca3dae7fc290536a8a539d9cf25f40f3023f96b",
+    "Textures/GLB/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "GLB format/tower-watch.glb": "0cdba767016b9ee8831084f94357f6b6dd00e2f10c6db41d81f15352dff5c4b4",
+    "Textures/OBJ/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "OBJ format/tower-watch.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tower-watch.obj": "8bf2be23f705282a07b8af3d2d9349d94ce270e027f24f17c5b3dc80fcfff2a4",
+    "Preview.png": "b9fcb90cfb3e481d58fcf26dfd67e478f8cb210a4c9c172cf05c4a0c28872af0"
+  },
+  "license": "../License.txt"
+}

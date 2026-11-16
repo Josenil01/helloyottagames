@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pinball",
+  "pack": "kenney_mini-arcade",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/Textures/variation-a.png": "5c07119cb871747ed78ff74f52f228564c7920c543b240727a877c47d123cd65",
+    "Models/Textures/variation-b.png": "f62d84198dae68ec5df788a335ea502b4fc2d51b0e912d188bb870693b469fa3",
+    "Models/FBX format/pinball.fbx": "0008d672aa0bfc80ed19bd0aad76432ac618a76cf92dc41de2d730e33f228e1e",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/pinball.glb": "2193f7630f83cc6ad5f5447b10a1a2c22fad65d279f39acb8c718d35b58d7578",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/pinball.obj": "bc61b649be62295bdb6bddd489e5a31c40f018d26154a105d6aec5762cbc640a",
+    "Models/OBJ format/pinball.mtl": "fc5318c707671e979d7557a4cd6478d2f64a2d8092e8a0ae48dbf94a0f94d125",
+    "Previews/pinball.png": "72781472a5a7f31daf60c45436ce6dc85c86b1129d5148fc70e0cb43371734cb"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/FBX/variation-a.png": "5c07119cb871747ed78ff74f52f228564c7920c543b240727a877c47d123cd65",
+    "Textures/FBX/variation-b.png": "f62d84198dae68ec5df788a335ea502b4fc2d51b0e912d188bb870693b469fa3",
+    "FBX format/pinball.fbx": "0008d672aa0bfc80ed19bd0aad76432ac618a76cf92dc41de2d730e33f228e1e",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/GLB/variation-a.png": "5c07119cb871747ed78ff74f52f228564c7920c543b240727a877c47d123cd65",
+    "Textures/GLB/variation-b.png": "f62d84198dae68ec5df788a335ea502b4fc2d51b0e912d188bb870693b469fa3",
+    "GLB format/pinball.glb": "2193f7630f83cc6ad5f5447b10a1a2c22fad65d279f39acb8c718d35b58d7578",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/OBJ/variation-a.png": "5c07119cb871747ed78ff74f52f228564c7920c543b240727a877c47d123cd65",
+    "Textures/OBJ/variation-b.png": "f62d84198dae68ec5df788a335ea502b4fc2d51b0e912d188bb870693b469fa3",
+    "OBJ format/pinball.mtl": "bfd22eb960a9a522303bab64cec20fa322ab1d792a7943f8ac1ea4761fea8cb7",
+    "OBJ format/pinball.obj": "51eed28cde17d7eeee864abf7ee6071ebc219f2dd786afffb372aec29c270220",
+    "Preview.png": "72781472a5a7f31daf60c45436ce6dc85c86b1129d5148fc70e0cb43371734cb"
+  },
+  "license": "../License.txt"
+}

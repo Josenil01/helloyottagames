@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "lever-single",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/lever-single.fbx": "3e1107e1d199ffe6489ff30a8462eaecb24a0f95a2dba33ccaa1dcaef4c112ab",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/lever-single.glb": "d7056a698ecb46c972d51848a77c8a9aca86f085cc5800347fce1c19c6c59477",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/lever-single.obj": "d905055f7b2ac9016c8d049d0a957e438241444203dc33c5c1283158ea411b2b",
+    "Models/OBJ format/lever-single.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/lever-single.png": "e857bb5bd895117df9c02fc206aeedb57064e18837e1ed280a091478b3226192"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/lever-single.fbx": "3e1107e1d199ffe6489ff30a8462eaecb24a0f95a2dba33ccaa1dcaef4c112ab",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/lever-single.glb": "d7056a698ecb46c972d51848a77c8a9aca86f085cc5800347fce1c19c6c59477",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/lever-single.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/lever-single.obj": "9a478ec48361bdc68bf27ac1fd8629bf5bba5ea18e8bf43a37d0c8567f09c64e",
+    "Preview.png": "e857bb5bd895117df9c02fc206aeedb57064e18837e1ed280a091478b3226192"
+  },
+  "license": "../License.txt"
+}

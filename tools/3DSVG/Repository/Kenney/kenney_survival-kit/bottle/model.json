@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bottle",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/bottle.fbx": "d070862a5bb40b85aaa1859724be436b37fb41040260053c230c6dd0246d77c4",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/bottle.glb": "23f847b8812838830df686fb8b472fa225693a3b85c526f2796f7b0790831a9a",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/bottle.obj": "eeff2dd611663857af7c85808f807d87e21e4ac6346bc55178dce60fc34a6bee",
+    "Models/OBJ format/bottle.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/bottle.png": "d91f3de294b1f9125caf01c8b7857cec32fd6feab92ddd05f93d904030ea42d4"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/bottle.fbx": "d070862a5bb40b85aaa1859724be436b37fb41040260053c230c6dd0246d77c4",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/bottle.glb": "23f847b8812838830df686fb8b472fa225693a3b85c526f2796f7b0790831a9a",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/bottle.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/bottle.obj": "f87ad6ee039fcd1d5e7d22ff6bfea7e9f5c9678ce7c35380d1c946e664789342",
+    "Preview.png": "d91f3de294b1f9125caf01c8b7857cec32fd6feab92ddd05f93d904030ea42d4"
+  },
+  "license": "../License.txt"
+}

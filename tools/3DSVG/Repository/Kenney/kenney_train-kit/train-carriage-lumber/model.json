@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "train-carriage-lumber",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/train-carriage-lumber.fbx": "26f47f3f32026b780457a6f6ff4a86faa9127bf1a6467631b736440a0e0e0d43",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/train-carriage-lumber.glb": "c205eff406b60d1c3df668c688ec5841a476568aaccc970a195287aa863b9bf6",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/train-carriage-lumber.obj": "0433863bd00bb1a25ed37544bae921a4d1fad1472d5332f7b4dd2557fec10431",
+    "Models/OBJ format/train-carriage-lumber.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/train-carriage-lumber.png": "71c85aa70e8b7d735f861531f9a563e9792a423e29b39b2024f1e3494e9fbcc8"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/train-carriage-lumber.fbx": "26f47f3f32026b780457a6f6ff4a86faa9127bf1a6467631b736440a0e0e0d43",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/train-carriage-lumber.glb": "c205eff406b60d1c3df668c688ec5841a476568aaccc970a195287aa863b9bf6",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/train-carriage-lumber.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/train-carriage-lumber.obj": "0a247ee8fc600c9d13fca4c4b124039bd339f8cfb41e9a019943b0fd20bf2d57",
+    "Preview.png": "71c85aa70e8b7d735f861531f9a563e9792a423e29b39b2024f1e3494e9fbcc8"
+  },
+  "license": "../License.txt"
+}

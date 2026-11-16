@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "catwalk-cross",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/catwalk-cross.fbx": "1bd6b97f1b63f6f45a1541abad1abc8ae62a6f61076877c3494f275846a21636",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/catwalk-cross.glb": "9d566e8de315a62ef66e5a86d0cd97e0f75eaaa380a0a57680e3a06b1506d996",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/catwalk-cross.obj": "2409b53b6c1ee7c290fa1476fd6992dd3c2266607ceab72cd58d777a59b2b946",
+    "Models/OBJ format/catwalk-cross.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/catwalk-cross.png": "56230165bad0c528ba28ed29527c9f44cdc2720d445ba8bfb4e3b7c9aa920870"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/catwalk-cross.fbx": "1bd6b97f1b63f6f45a1541abad1abc8ae62a6f61076877c3494f275846a21636",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/catwalk-cross.glb": "9d566e8de315a62ef66e5a86d0cd97e0f75eaaa380a0a57680e3a06b1506d996",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/catwalk-cross.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/catwalk-cross.obj": "64dec0c05729eed5d3586f2e8f8199d19b212d1fdbd9de847b70a837294f30d7",
+    "Preview.png": "56230165bad0c528ba28ed29527c9f44cdc2720d445ba8bfb4e3b7c9aa920870"
+  },
+  "license": "../License.txt"
+}

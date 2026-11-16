@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "plating-detailed-wide",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/plating-detailed-wide.fbx": "78b7df85fe6aedd59655471cb3440bbe33db9734d2a115144b8921301bdeae72",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/plating-detailed-wide.glb": "bb99ba099a93e43269bb6c16db8d2944cb58ef5190393f32cadb42a1de1f034d",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/plating-detailed-wide.obj": "fb9cd4393879891caec227c66a92a7b1c9667aad6508c63bbd600c3ae929d836",
+    "Models/OBJ format/plating-detailed-wide.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/plating-detailed-wide.png": "046c770ad5f6c1c7773c232501db23ca376471c2271ee89f9a011cda9bb9095e"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/plating-detailed-wide.fbx": "78b7df85fe6aedd59655471cb3440bbe33db9734d2a115144b8921301bdeae72",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/plating-detailed-wide.glb": "bb99ba099a93e43269bb6c16db8d2944cb58ef5190393f32cadb42a1de1f034d",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/plating-detailed-wide.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/plating-detailed-wide.obj": "f626ce2a70e555df1f7039b2e8b295cd24866430e37a3bd0c13f14cdac94c106",
+    "Preview.png": "046c770ad5f6c1c7773c232501db23ca376471c2271ee89f9a011cda9bb9095e"
+  },
+  "license": "../License.txt"
+}

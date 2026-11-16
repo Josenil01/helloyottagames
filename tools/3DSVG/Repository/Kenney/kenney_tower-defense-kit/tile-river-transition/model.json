@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tile-river-transition",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/tile-river-transition.fbx": "d4cc56e07144325030b55585fedd5618315363bab3b81b28126e48fe4b2be2af",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/tile-river-transition.glb": "a8da5ea17c5b38a8de8030369195b4d2bdcf6d753ce16b7c10ea8c3e4990b4fc",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/tile-river-transition.obj": "6fe19ae53aea26e375dc19a13f4232f04df59e1ac6b5d905e12a34e88b58208a",
+    "Models/OBJ format/tile-river-transition.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tile-river-transition.png": "132b3999933204a4b1421efa771b0f22e736b54a9d9a30481273a22665dc53af"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/tile-river-transition.fbx": "d4cc56e07144325030b55585fedd5618315363bab3b81b28126e48fe4b2be2af",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/tile-river-transition.glb": "a8da5ea17c5b38a8de8030369195b4d2bdcf6d753ce16b7c10ea8c3e4990b4fc",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/tile-river-transition.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tile-river-transition.obj": "51954f88a395b61fc6df1d468ee300f8744cda9711dd39dc03c7e9fb45c0e09b",
+    "Preview.png": "132b3999933204a4b1421efa771b0f22e736b54a9d9a30481273a22665dc53af"
+  },
+  "license": "../License.txt"
+}

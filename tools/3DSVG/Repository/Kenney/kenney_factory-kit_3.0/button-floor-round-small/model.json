@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "button-floor-round-small",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/button-floor-round-small.fbx": "366e2024b13dfc6af14f7b27177ef272bdf49c458857afa79fedcae3034821c8",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/button-floor-round-small.glb": "1c44ded2a6cdb4085f4f5c473b795a4ec811c4789cd4cea32c7eaa8adc4d7e15",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/button-floor-round-small.obj": "527a7b6b15ac856e63c8b9960d7c5f004b57cc331ed0920540920e85903b2d98",
+    "Models/OBJ format/button-floor-round-small.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/button-floor-round-small.png": "0c856ec599e38a81634cd2490b77a45696469f5f2738fbf65ba7ce42edf48f75"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/button-floor-round-small.fbx": "366e2024b13dfc6af14f7b27177ef272bdf49c458857afa79fedcae3034821c8",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/button-floor-round-small.glb": "1c44ded2a6cdb4085f4f5c473b795a4ec811c4789cd4cea32c7eaa8adc4d7e15",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/button-floor-round-small.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/button-floor-round-small.obj": "8208e9526f6323565e26906c4a1c94c86842474077fa49780b0abe581673871e",
+    "Preview.png": "0c856ec599e38a81634cd2490b77a45696469f5f2738fbf65ba7ce42edf48f75"
+  },
+  "license": "../License.txt"
+}

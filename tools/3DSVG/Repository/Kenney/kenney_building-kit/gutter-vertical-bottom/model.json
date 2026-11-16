@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "gutter-vertical-bottom",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/gutter-vertical-bottom.fbx": "4c99434a7c95fbcc0b054fc9590e2423577c1a831da68f86728c93229d73e612",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/gutter-vertical-bottom.glb": "8f324e680d03a3d6f4935dec9fd387a9e0b437a64b58f4e973eaa1ab97e91de9",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/gutter-vertical-bottom.obj": "171e445c4f624401234640d9fcea4138a84cec77730e0a54868d3afe9e6eca14",
+    "Models/OBJ format/gutter-vertical-bottom.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/gutter-vertical-bottom.png": "1a6a4bfbad039823f5c7dce2c0cbf7f4698ee7178761f7d5dc08ab515efba04b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/gutter-vertical-bottom.fbx": "4c99434a7c95fbcc0b054fc9590e2423577c1a831da68f86728c93229d73e612",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/gutter-vertical-bottom.glb": "8f324e680d03a3d6f4935dec9fd387a9e0b437a64b58f4e973eaa1ab97e91de9",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/gutter-vertical-bottom.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/gutter-vertical-bottom.obj": "34e26058f7452e74166352fefc0d7013d923fc750775dd6f1e8dc18a2f89754d",
+    "Preview.png": "1a6a4bfbad039823f5c7dce2c0cbf7f4698ee7178761f7d5dc08ab515efba04b"
+  },
+  "license": "../License.txt"
+}

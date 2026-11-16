@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "block-grass-curve-low",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/block-grass-curve-low.fbx": "e5d2e38b9df0e7f99c2367d8558c3a3b8967d98c2a9a2d4d852a026fe1a5769b",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/block-grass-curve-low.glb": "9a6074f6a26f3fda8f19e07cf556318b1bb3e4d5db6835e91d7a5a10a2ff3373",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/block-grass-curve-low.obj": "85ce7797582f9b2163f80a0a8cc6d30cfcd54728a66890a197adf92d51dff5c9",
+    "Models/OBJ format/block-grass-curve-low.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/block-grass-curve-low.png": "c649de52c34b8278eed1fed98d83fbc283e1e76df2abc714ae03791e550fa397"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/block-grass-curve-low.fbx": "e5d2e38b9df0e7f99c2367d8558c3a3b8967d98c2a9a2d4d852a026fe1a5769b",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/block-grass-curve-low.glb": "9a6074f6a26f3fda8f19e07cf556318b1bb3e4d5db6835e91d7a5a10a2ff3373",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/block-grass-curve-low.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/block-grass-curve-low.obj": "f48d7800d6bd41feb9557c44dd534dfe9800f3c5b8ca45d6cafeaf156d7d1a95",
+    "Preview.png": "c649de52c34b8278eed1fed98d83fbc283e1e76df2abc714ae03791e550fa397"
+  },
+  "license": "../License.txt"
+}

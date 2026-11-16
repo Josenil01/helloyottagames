@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "spline-default-straight-skew-left-side",
+  "pack": "kenney_minigolf-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/Textures/variation-a.png": "fbc1dff0b0b58b05f95eedca50f8397508f8eba671d63b3e2dc4797793167c3a",
+    "Models/Textures/variation-b.png": "5e8b8bc4f23902d4efa3fdbd75c3836f6d9bb2b0715713d5c4835c7cca15b6ab",
+    "Models/FBX format/spline-default-straight-skew-left-side.fbx": "9f17b4132c81debb2559798e4641c995161313e2a0be53c7dfacf99afa26bff2",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/spline-default-straight-skew-left-side.glb": "d575f79db0521784f36e10491202b9073c844567ff797ccdf56f7c445ba13638",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/spline-default-straight-skew-left-side.obj": "917ebdbd295f20f1778f6f8c35488718fc80f44ae5371b829ca85b561d214532",
+    "Models/OBJ format/spline-default-straight-skew-left-side.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/spline-default-straight-skew-left-side.png": "d07dc8263ffd5b43d82d2beecc0cd5ecc29e4d7b83a6875a951a1e86793f2087"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/FBX/variation-a.png": "fbc1dff0b0b58b05f95eedca50f8397508f8eba671d63b3e2dc4797793167c3a",
+    "Textures/FBX/variation-b.png": "5e8b8bc4f23902d4efa3fdbd75c3836f6d9bb2b0715713d5c4835c7cca15b6ab",
+    "FBX format/spline-default-straight-skew-left-side.fbx": "9f17b4132c81debb2559798e4641c995161313e2a0be53c7dfacf99afa26bff2",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/GLB/variation-a.png": "fbc1dff0b0b58b05f95eedca50f8397508f8eba671d63b3e2dc4797793167c3a",
+    "Textures/GLB/variation-b.png": "5e8b8bc4f23902d4efa3fdbd75c3836f6d9bb2b0715713d5c4835c7cca15b6ab",
+    "GLB format/spline-default-straight-skew-left-side.glb": "d575f79db0521784f36e10491202b9073c844567ff797ccdf56f7c445ba13638",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/OBJ/variation-a.png": "fbc1dff0b0b58b05f95eedca50f8397508f8eba671d63b3e2dc4797793167c3a",
+    "Textures/OBJ/variation-b.png": "5e8b8bc4f23902d4efa3fdbd75c3836f6d9bb2b0715713d5c4835c7cca15b6ab",
+    "OBJ format/spline-default-straight-skew-left-side.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/spline-default-straight-skew-left-side.obj": "57e533eaf82ef60b3188e8c157c99240813e4d6b7eba1f7cc6fb1aaf33ae19cd",
+    "Preview.png": "d07dc8263ffd5b43d82d2beecc0cd5ecc29e4d7b83a6875a951a1e86793f2087"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "lantern",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/lantern.fbx": "2badd791727db8e2a1a984ab261bc6ace6d5f7d20c948b55f04f13bf915a7f9f",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/lantern.glb": "42c4851862b3ea223c49e387c10353b4ee3cfb95dc178020bcabd123d0abeb85",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/lantern.obj": "6dc6658e2f9b78cefbdccd758063e3074e33717fe1e8f673fa9d5b0b3435148e",
+    "Models/OBJ format/lantern.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/lantern.png": "e72722079a39d600b5d93fc66c1c3bdc740abf2e2525684d40b3d8bd974ab352"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/lantern.fbx": "2badd791727db8e2a1a984ab261bc6ace6d5f7d20c948b55f04f13bf915a7f9f",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/lantern.glb": "42c4851862b3ea223c49e387c10353b4ee3cfb95dc178020bcabd123d0abeb85",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/lantern.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/lantern.obj": "cfc9ddf87a5b3577922891c012d2506440afcbd99feb50546ac0fb5d46eac955",
+    "Preview.png": "e72722079a39d600b5d93fc66c1c3bdc740abf2e2525684d40b3d8bd974ab352"
+  },
+  "license": "../License.txt"
+}

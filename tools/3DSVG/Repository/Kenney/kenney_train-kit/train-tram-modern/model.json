@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "train-tram-modern",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/train-tram-modern.fbx": "83a18656b490832b52259c535ae88ca655163bd45164e81e1e3eb3c87354aab2",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/train-tram-modern.glb": "a4c82a34554adfc27a2847832d82d1cb75f3e1ff98ad2cbaf7aad35bb292aecc",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/train-tram-modern.obj": "bac869484833bc76ba827358c7e9e91a1457ad5b94c81160a8124287e9a2437f",
+    "Models/OBJ format/train-tram-modern.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/train-tram-modern.png": "de86a40429863bf56fd593eb04c917dcf6327b4b22ba644a5fb00d9897a3ed52"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/train-tram-modern.fbx": "83a18656b490832b52259c535ae88ca655163bd45164e81e1e3eb3c87354aab2",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/train-tram-modern.glb": "a4c82a34554adfc27a2847832d82d1cb75f3e1ff98ad2cbaf7aad35bb292aecc",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/train-tram-modern.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/train-tram-modern.obj": "cf85c7cb2d4c4b2310d5825a17d59092edf8d92c532018e6a221ff092bdae3fd",
+    "Preview.png": "de86a40429863bf56fd593eb04c917dcf6327b4b22ba644a5fb00d9897a3ed52"
+  },
+  "license": "../License.txt"
+}

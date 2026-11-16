@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "fence-corner-curved",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/fence-corner-curved.fbx": "848eb663f68af76d9759a2295ddcdf468a7ae6d47e41c0629a8bc36f8e416d4c",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/fence-corner-curved.glb": "d6dc580f56fb1389ff62c376950946b48504073042e2c1b828a2b791e82d875e",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/fence-corner-curved.obj": "a3aa33bf6b6dbf129fcba6bf0767bd20a6d3e9e4ddd624d87306b3cb82cad4d7",
+    "Models/OBJ format/fence-corner-curved.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/fence-corner-curved.png": "8c5c6d39edad7d15321fc473ee2d6136e156d37379dd92f4e65857db76da97ca"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/fence-corner-curved.fbx": "848eb663f68af76d9759a2295ddcdf468a7ae6d47e41c0629a8bc36f8e416d4c",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/fence-corner-curved.glb": "d6dc580f56fb1389ff62c376950946b48504073042e2c1b828a2b791e82d875e",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/fence-corner-curved.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/fence-corner-curved.obj": "1b68d8b79469e96a64f0f552d5edefb14b855ea00e42237a8332d8c30370ac71",
+    "Preview.png": "8c5c6d39edad7d15321fc473ee2d6136e156d37379dd92f4e65857db76da97ca"
+  },
+  "license": "../License.txt"
+}

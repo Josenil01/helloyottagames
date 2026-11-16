@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "square-hq-brick-1x1-round",
+  "pack": "kenney_brick-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/FBX format/square-hq-brick-1x1-round.fbx": "0d01937ae795dc091a624b0b34559569bcac207cc04b9fd11043a750504e6926",
+    "Models/GLB format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/GLB format/square-hq-brick-1x1-round.glb": "ee58de6715bbff361f7e967c32f7ccb3e30a0bbd57a9caa84a493f997ebdd100",
+    "Models/OBJ format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/OBJ format/square-hq-brick-1x1-round.obj": "a573c8c9c0b95d09c021b56c2804910c8f45fdc9e46b1851bae6f70b398921ac",
+    "Models/OBJ format/square-hq-brick-1x1-round.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/square-hq-brick-1x1-round.png": "490f770e511a4a8259da1b39e394bfe5ff1c62c56d2b77dcd475a8e2b8d7a199"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "FBX format/square-hq-brick-1x1-round.fbx": "0d01937ae795dc091a624b0b34559569bcac207cc04b9fd11043a750504e6926",
+    "Textures/GLB/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "GLB format/square-hq-brick-1x1-round.glb": "ee58de6715bbff361f7e967c32f7ccb3e30a0bbd57a9caa84a493f997ebdd100",
+    "Textures/OBJ/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "OBJ format/square-hq-brick-1x1-round.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/square-hq-brick-1x1-round.obj": "e3b5e61f48a58234969098e0ae37dd05866400128879beb07ce6418c2afedf82",
+    "Preview.png": "490f770e511a4a8259da1b39e394bfe5ff1c62c56d2b77dcd475a8e2b8d7a199"
+  },
+  "license": "../License.txt"
+}

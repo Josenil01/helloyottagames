@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pitsGarageCorner",
+  "pack": "kenney_racing-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/checkers.png": "8eb3d9d77c1165cf2b1c68a07f808d83d6565ce3db9e930ca500cbd7296f4c4d",
+    "Models/FBX format/Textures/net.png": "c8e5d6fc69bafe6c3df797ae3175d9f1bf606bc1a9df5e12463a74087a4ea3fc",
+    "Models/FBX format/Textures/tankco.png": "5355b8f2c0155034d2bc2170517ae815ad0fe659cd2fb5e195245b7c9165d9f5",
+    "Models/FBX format/pitsGarageCorner.fbx": "84d94e8c837cbda9e18664e27d0024b563d0314f9dd6ad2d4780510ba0c38076",
+    "Models/GLTF format/pitsGarageCorner.glb": "ee10061e40fa63e1b8a1d473a39f164b6cf3927c3b20cdbe0b5a46d67b6b858a",
+    "Models/OBJ format/Textures/checkers.png": "8eb3d9d77c1165cf2b1c68a07f808d83d6565ce3db9e930ca500cbd7296f4c4d",
+    "Models/OBJ format/Textures/net.png": "c8e5d6fc69bafe6c3df797ae3175d9f1bf606bc1a9df5e12463a74087a4ea3fc",
+    "Models/OBJ format/Textures/tankco.png": "5355b8f2c0155034d2bc2170517ae815ad0fe659cd2fb5e195245b7c9165d9f5",
+    "Models/OBJ format/pitsGarageCorner.obj": "96f7f39c4cf169702c28a56b615bf19d22eb45a1152b51ed7e2e89950e4dd01a",
+    "Models/OBJ format/pitsGarageCorner.mtl": "3ef5e927b46f05abf5679ab12a408a749eb39aa0eb63ecbe4c36c55a7fba8066"
+  },
+  "files": {
+    "Textures/FBX/checkers.png": "8eb3d9d77c1165cf2b1c68a07f808d83d6565ce3db9e930ca500cbd7296f4c4d",
+    "Textures/FBX/net.png": "c8e5d6fc69bafe6c3df797ae3175d9f1bf606bc1a9df5e12463a74087a4ea3fc",
+    "Textures/FBX/tankco.png": "5355b8f2c0155034d2bc2170517ae815ad0fe659cd2fb5e195245b7c9165d9f5",
+    "FBX format/pitsGarageCorner.fbx": "84d94e8c837cbda9e18664e27d0024b563d0314f9dd6ad2d4780510ba0c38076",
+    "GLB format/pitsGarageCorner.glb": "ee10061e40fa63e1b8a1d473a39f164b6cf3927c3b20cdbe0b5a46d67b6b858a",
+    "Textures/OBJ/checkers.png": "8eb3d9d77c1165cf2b1c68a07f808d83d6565ce3db9e930ca500cbd7296f4c4d",
+    "Textures/OBJ/net.png": "c8e5d6fc69bafe6c3df797ae3175d9f1bf606bc1a9df5e12463a74087a4ea3fc",
+    "Textures/OBJ/tankco.png": "5355b8f2c0155034d2bc2170517ae815ad0fe659cd2fb5e195245b7c9165d9f5",
+    "OBJ format/pitsGarageCorner.mtl": "99e7efc1817bf7c013dfff850e60b3f9a60218c97e5f39762f3947c57cc4862c",
+    "OBJ format/pitsGarageCorner.obj": "44820ede166aa64a0a8f524e3edc082cf86532e51d1e1c88e842e2cfbe8983a1"
+  },
+  "license": "../License.txt"
+}

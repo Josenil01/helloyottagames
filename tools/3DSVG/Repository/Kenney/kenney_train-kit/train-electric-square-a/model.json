@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "train-electric-square-a",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/train-electric-square-a.fbx": "0690b7b6a5c9b1474396d58043ee1a8498419c5ff7b2dbb218540631c9bbd987",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/train-electric-square-a.glb": "eda1492a88b08655e92958fdf1ec1c47ac58fe974d7cb207bf59ae74cee0c74a",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/train-electric-square-a.obj": "2fa6845b46d76c5172f69f6e04b142cc63c97a26abdb04723dcaf34e43aa0456",
+    "Models/OBJ format/train-electric-square-a.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/train-electric-square-a.png": "b08fcca9d76adfb6c6ca381f9b496e68e081d943535616e924d4d6c85b028ffd"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/train-electric-square-a.fbx": "0690b7b6a5c9b1474396d58043ee1a8498419c5ff7b2dbb218540631c9bbd987",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/train-electric-square-a.glb": "eda1492a88b08655e92958fdf1ec1c47ac58fe974d7cb207bf59ae74cee0c74a",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/train-electric-square-a.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/train-electric-square-a.obj": "451ab8b47333177918388e5e7b82270887a0de358ec4e3de876790f25e25a62b",
+    "Preview.png": "b08fcca9d76adfb6c6ca381f9b496e68e081d943535616e924d4d6c85b028ffd"
+  },
+  "license": "../License.txt"
+}

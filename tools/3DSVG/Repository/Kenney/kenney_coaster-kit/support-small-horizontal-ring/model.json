@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "support-small-horizontal-ring",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/support-small-horizontal-ring.fbx": "8240ff1db31a9d235300f516c9b2a2f77c282a48cf646d4b44823fb1e51aee12",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/support-small-horizontal-ring.glb": "f14edef6c53a44132c4cf5909adfb9098fcadb8ae11889389cc1ca9e5e7e83e7",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/support-small-horizontal-ring.obj": "f2389e3e1429143208c3d54865c2cc4a8e8426dff8c213cdfbeff1a1d65f2cfb",
+    "Models/OBJ format/support-small-horizontal-ring.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/support-small-horizontal-ring.png": "dddac198aba445e368eda8e1397ce2382d929fec644d9f727f5ffdcdbefa5122"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/support-small-horizontal-ring.fbx": "8240ff1db31a9d235300f516c9b2a2f77c282a48cf646d4b44823fb1e51aee12",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/support-small-horizontal-ring.glb": "f14edef6c53a44132c4cf5909adfb9098fcadb8ae11889389cc1ca9e5e7e83e7",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/support-small-horizontal-ring.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/support-small-horizontal-ring.obj": "c64a2720737e6032fe1bfae95d728a9e03082eb2627ab20ba0e1f05dbfa5a4ce",
+    "Preview.png": "dddac198aba445e368eda8e1397ce2382d929fec644d9f727f5ffdcdbefa5122"
+  },
+  "license": "../License.txt"
+}

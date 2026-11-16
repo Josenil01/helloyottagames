@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-low",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/wall-low.fbx": "a49d25db386acb4956120ef28a6bb02db61f94398c845d554a176f124b8c22be",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/wall-low.glb": "21954aa215ae8243126be5a7aff9a48552134c399e1b16c9d46f807ae20b8ca3",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/wall-low.obj": "6f1313a9e0accf8f7e2ab1b07d35a9a6111af1e33359e0ff7fee51a55b48c841",
+    "Models/OBJ format/wall-low.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-low.png": "3301eebf79d62ed778bdbae5b98c5bfe582dfa748282eb71db993e0b1ec74a59"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/wall-low.fbx": "a49d25db386acb4956120ef28a6bb02db61f94398c845d554a176f124b8c22be",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/wall-low.glb": "21954aa215ae8243126be5a7aff9a48552134c399e1b16c9d46f807ae20b8ca3",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/wall-low.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-low.obj": "5c605095459ee4742bdf00eca577149b01f718557ac7fff6ddea25984ebb7438",
+    "Preview.png": "3301eebf79d62ed778bdbae5b98c5bfe582dfa748282eb71db993e0b1ec74a59"
+  },
+  "license": "../License.txt"
+}

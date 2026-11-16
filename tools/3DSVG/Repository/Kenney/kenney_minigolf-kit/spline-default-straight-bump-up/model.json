@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "spline-default-straight-bump-up",
+  "pack": "kenney_minigolf-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/Textures/variation-a.png": "fbc1dff0b0b58b05f95eedca50f8397508f8eba671d63b3e2dc4797793167c3a",
+    "Models/Textures/variation-b.png": "5e8b8bc4f23902d4efa3fdbd75c3836f6d9bb2b0715713d5c4835c7cca15b6ab",
+    "Models/FBX format/spline-default-straight-bump-up.fbx": "841c1fb032f37cc793e385aa73666daeb1f39c7a5f5d2a4a9c46b5683ee66b90",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/spline-default-straight-bump-up.glb": "e7cbad0b9b2c2a5f2c87966befbbd86c41ed5ed3eba61921df022058c547e7de",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/spline-default-straight-bump-up.obj": "25911018da9bd4e6846f22e872b841c065a24d8adddbefab85199208dc8f8d43",
+    "Models/OBJ format/spline-default-straight-bump-up.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/spline-default-straight-bump-up.png": "76666073c5cb9b908b7f0797fba3a45bd3dc80f94feee65b5fae0ff838dec2bb"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/FBX/variation-a.png": "fbc1dff0b0b58b05f95eedca50f8397508f8eba671d63b3e2dc4797793167c3a",
+    "Textures/FBX/variation-b.png": "5e8b8bc4f23902d4efa3fdbd75c3836f6d9bb2b0715713d5c4835c7cca15b6ab",
+    "FBX format/spline-default-straight-bump-up.fbx": "841c1fb032f37cc793e385aa73666daeb1f39c7a5f5d2a4a9c46b5683ee66b90",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/GLB/variation-a.png": "fbc1dff0b0b58b05f95eedca50f8397508f8eba671d63b3e2dc4797793167c3a",
+    "Textures/GLB/variation-b.png": "5e8b8bc4f23902d4efa3fdbd75c3836f6d9bb2b0715713d5c4835c7cca15b6ab",
+    "GLB format/spline-default-straight-bump-up.glb": "e7cbad0b9b2c2a5f2c87966befbbd86c41ed5ed3eba61921df022058c547e7de",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/OBJ/variation-a.png": "fbc1dff0b0b58b05f95eedca50f8397508f8eba671d63b3e2dc4797793167c3a",
+    "Textures/OBJ/variation-b.png": "5e8b8bc4f23902d4efa3fdbd75c3836f6d9bb2b0715713d5c4835c7cca15b6ab",
+    "OBJ format/spline-default-straight-bump-up.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/spline-default-straight-bump-up.obj": "0a9b454698cde55eb81755aa85d4f30ffe05ff8c16b14fd971cd83505ed64d8e",
+    "Preview.png": "76666073c5cb9b908b7f0797fba3a45bd3dc80f94feee65b5fae0ff838dec2bb"
+  },
+  "license": "../License.txt"
+}

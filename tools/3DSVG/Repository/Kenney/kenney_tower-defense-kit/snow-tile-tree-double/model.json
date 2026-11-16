@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "snow-tile-tree-double",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/snow-tile-tree-double.fbx": "e57b2acd7c298826625af64766d4076304102d4d960464c4e8df309759319f29",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/snow-tile-tree-double.glb": "f64b56e2f1d6ee36c2961a7b31f540ae65439488a143bb7ebf8eef51693d7a17",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/snow-tile-tree-double.obj": "2304e653c12cbb82f67539a2b051049c35f5a17611fab1356e84f83cc6df9ded",
+    "Models/OBJ format/snow-tile-tree-double.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/snow-tile-tree-double.png": "b4b1154c390d6db08f265cbb565049a7b97760375cbf2bc9032b29e48b0b76ed"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/snow-tile-tree-double.fbx": "e57b2acd7c298826625af64766d4076304102d4d960464c4e8df309759319f29",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/snow-tile-tree-double.glb": "f64b56e2f1d6ee36c2961a7b31f540ae65439488a143bb7ebf8eef51693d7a17",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/snow-tile-tree-double.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/snow-tile-tree-double.obj": "12896d16e4cdfc47fc9294d9852a360d290b26d86b01a88eda672e2002018319",
+    "Preview.png": "b4b1154c390d6db08f265cbb565049a7b97760375cbf2bc9032b29e48b0b76ed"
+  },
+  "license": "../License.txt"
+}

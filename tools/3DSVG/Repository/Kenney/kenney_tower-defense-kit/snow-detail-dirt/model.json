@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "snow-detail-dirt",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/snow-detail-dirt.fbx": "4c6b9bf1a5469af5511afbdd46e54521f9a563e9bcfbb4c5f79e85152195f6c0",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/snow-detail-dirt.glb": "6e3fbf86e0d242ced698ff6772737133d67e45b7867f9bbd99ab3910d64dccb7",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/snow-detail-dirt.obj": "28a1a9ca0f22371eb939ad3215913f17fb2073c4709b00f3bb97916ad638015a",
+    "Models/OBJ format/snow-detail-dirt.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/snow-detail-dirt.png": "a95402ed9a59324cec1749a3096176306c97168172187af865bce976357ecfcc"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/snow-detail-dirt.fbx": "4c6b9bf1a5469af5511afbdd46e54521f9a563e9bcfbb4c5f79e85152195f6c0",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/snow-detail-dirt.glb": "6e3fbf86e0d242ced698ff6772737133d67e45b7867f9bbd99ab3910d64dccb7",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/snow-detail-dirt.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/snow-detail-dirt.obj": "3cfa3e2b9bb51f37665c0d6572161c079dd98427a6b480c53ff974a0047d6b22",
+    "Preview.png": "a95402ed9a59324cec1749a3096176306c97168172187af865bce976357ecfcc"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cooking-fork",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/cooking-fork.fbx": "60ed96fe5ca8234fde6247e495311cc71defa35f2f064416dd7d5d0c7fbc025b",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/cooking-fork.glb": "ca4e6250c1ae655833f456e4f4288cdb9954ad19a0ce4becd3eed882676d2a04",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/cooking-fork.obj": "0a378d663ecd1c4820ac4ae0174254380a797d92e5fa40d40b82314ca46d173f",
+    "Models/OBJ format/cooking-fork.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cooking-fork.png": "0cbfbb3799cfe71148e41cdec08c6e21d4c214c5949175e686be24dfc727a72b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/cooking-fork.fbx": "60ed96fe5ca8234fde6247e495311cc71defa35f2f064416dd7d5d0c7fbc025b",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/cooking-fork.glb": "ca4e6250c1ae655833f456e4f4288cdb9954ad19a0ce4becd3eed882676d2a04",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/cooking-fork.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cooking-fork.obj": "5b0f4f3661003f9eb33f9c0d101ded2e8fb0cb7aee65baf543554b84230445b3",
+    "Preview.png": "0cbfbb3799cfe71148e41cdec08c6e21d4c214c5949175e686be24dfc727a72b"
+  },
+  "license": "../License.txt"
+}

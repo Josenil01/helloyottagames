@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "frying-pan",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/frying-pan.fbx": "603f2a599eabbdd5fbb55d2e640f9799d66fca8777d75282e7508931672deade",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/frying-pan.glb": "66cd36e3361d47f068cd1fc06df422b550058adde2017f306ed93dad7c3d2b9f",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/frying-pan.obj": "9d48d5f37f88df52b287d6727aed981cd5f3deec2406575d3f72917b059fde70",
+    "Models/OBJ format/frying-pan.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/frying-pan.png": "96bbb9c3206e4ac524e83f9c3ca783d58ed76e923b0cab65c3ace4eb57ddc843"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/frying-pan.fbx": "603f2a599eabbdd5fbb55d2e640f9799d66fca8777d75282e7508931672deade",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/frying-pan.glb": "66cd36e3361d47f068cd1fc06df422b550058adde2017f306ed93dad7c3d2b9f",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/frying-pan.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/frying-pan.obj": "ff2a2575d11611008e994d8607783c698d675697d316ab64382faa6c796cff55",
+    "Preview.png": "96bbb9c3206e4ac524e83f9c3ca783d58ed76e923b0cab65c3ace4eb57ddc843"
+  },
+  "license": "../License.txt"
+}

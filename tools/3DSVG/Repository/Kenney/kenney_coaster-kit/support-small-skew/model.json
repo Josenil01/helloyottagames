@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "support-small-skew",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/support-small-skew.fbx": "1ac6bdfd15b9609768b18d6cd76024e682f5ed47af8a5d79ccddf55d0be45377",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/support-small-skew.glb": "20a7f41c21ce14f17d5fe80da3bc726d7784818d37947e97568cdd826fdefdd7",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/support-small-skew.obj": "de6b809896281d1c45cf8bb942ad51582f70d1eb4535fe8dae3567af4c7ee777",
+    "Models/OBJ format/support-small-skew.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/support-small-skew.png": "a4feaa232d78fce0a4bd80fccff2f2dce35648f0dbf1d6d7061d0c84cb8d057b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/support-small-skew.fbx": "1ac6bdfd15b9609768b18d6cd76024e682f5ed47af8a5d79ccddf55d0be45377",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/support-small-skew.glb": "20a7f41c21ce14f17d5fe80da3bc726d7784818d37947e97568cdd826fdefdd7",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/support-small-skew.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/support-small-skew.obj": "3e55f547e4886d656df8044d8f549ed0c6620c15c375741b87358f5d4e984fef",
+    "Preview.png": "a4feaa232d78fce0a4bd80fccff2f2dce35648f0dbf1d6d7061d0c84cb8d057b"
+  },
+  "license": "../License.txt"
+}

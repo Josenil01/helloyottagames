@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "structure-roof",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/structure-roof.fbx": "11a0e8239f85927ae92ca3f39c80f35de25852658c3344fedc4a205c1f73665b",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/structure-roof.glb": "645e0454780d0b07084e3d5ffc6c5b164742f62b07b810e1cb838897c7ca83ac",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/structure-roof.obj": "b5ed112d9849400790dd5e10b24c2e559d9c708a81f55832dc707b3bb14e956c",
+    "Models/OBJ format/structure-roof.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/structure-roof.png": "0c7df130189edf3513e27303966f22a48cbe1244d500e414ca2cfb899464d7a5"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/structure-roof.fbx": "11a0e8239f85927ae92ca3f39c80f35de25852658c3344fedc4a205c1f73665b",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/structure-roof.glb": "645e0454780d0b07084e3d5ffc6c5b164742f62b07b810e1cb838897c7ca83ac",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/structure-roof.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/structure-roof.obj": "0e4c54bd381f86fd77cb6620e4a899d637c1245c1761921977afa94a6b9ee3ff",
+    "Preview.png": "0c7df130189edf3513e27303966f22a48cbe1244d500e414ca2cfb899464d7a5"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "grapes",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/grapes.fbx": "633cec2d06814f7f85b216a9ebbca2e51c5d30a073550bd9c82ab3fca7ca2db3",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/grapes.glb": "4ea095cc74bbea4215b4e1a35a95af0b6997b9290091a2babc480ad6840ea5b2",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/grapes.obj": "3208c85baaa3755f73a220aea8f0845e7f8648a4745f24d2d5d4617a7c1e0e81",
+    "Models/OBJ format/grapes.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/grapes.png": "b0c12d946808ff8d71aaac497a45b70bf9742dfc2cd0fd3bf33e761c11887436"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/grapes.fbx": "633cec2d06814f7f85b216a9ebbca2e51c5d30a073550bd9c82ab3fca7ca2db3",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/grapes.glb": "4ea095cc74bbea4215b4e1a35a95af0b6997b9290091a2babc480ad6840ea5b2",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/grapes.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/grapes.obj": "4edc7d88e9cbf988301845333b6d5cb159b3b1138d87fa9bfb8c552199f488cc",
+    "Preview.png": "b0c12d946808ff8d71aaac497a45b70bf9742dfc2cd0fd3bf33e761c11887436"
+  },
+  "license": "../License.txt"
+}

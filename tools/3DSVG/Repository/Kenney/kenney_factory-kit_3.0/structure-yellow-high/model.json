@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "structure-yellow-high",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/structure-yellow-high.fbx": "5c8164ce0b9950e145c28a2136f240502471b1a22f8d4a31c271d8f51e612f8a",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/structure-yellow-high.glb": "c80cba545977536bb68e0595372dd32f591047395484deee281cfadd0727cc16",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/structure-yellow-high.obj": "ee5daa273592db7f44330dd3bf96bc4ebe7285f17ca48777e246f1be165223ad",
+    "Models/OBJ format/structure-yellow-high.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/structure-yellow-high.png": "85da8bb3f00381ec1d540b9c8ded535f2d83d0a2332ed7105fe463401afd41cb"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/structure-yellow-high.fbx": "5c8164ce0b9950e145c28a2136f240502471b1a22f8d4a31c271d8f51e612f8a",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/structure-yellow-high.glb": "c80cba545977536bb68e0595372dd32f591047395484deee281cfadd0727cc16",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/structure-yellow-high.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/structure-yellow-high.obj": "c6124a270845b1c81c9c80c2d4421e75ab70e22f30fb415798d8af62dc303c90",
+    "Preview.png": "85da8bb3f00381ec1d540b9c8ded535f2d83d0a2332ed7105fe463401afd41cb"
+  },
+  "license": "../License.txt"
+}

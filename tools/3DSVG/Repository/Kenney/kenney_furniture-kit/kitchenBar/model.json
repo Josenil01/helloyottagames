@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "kitchenBar",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/kitchenBar.fbx": "a3f2c36b74c0856ee9e2d2554deb7d1cbf72a6804a139a7f30a2cae61badea39",
+    "Models/GLTF format/kitchenBar.glb": "792c3d31e60c8a8d8c7a28cf7d1efe004c5a601adc1b163a8799dde32c1b559d",
+    "Models/OBJ format/kitchenBar.obj": "d36463061937173ead16e1c6a73a96fded75e3527e65ec7f8b0473c96e243dee",
+    "Models/OBJ format/kitchenBar.mtl": "944c5959c0bcbc0fd9e5cebe2b2702b68efd11f2b135a888e5e4284a480364ce"
+  },
+  "files": {
+    "FBX format/kitchenBar.fbx": "a3f2c36b74c0856ee9e2d2554deb7d1cbf72a6804a139a7f30a2cae61badea39",
+    "GLB format/kitchenBar.glb": "792c3d31e60c8a8d8c7a28cf7d1efe004c5a601adc1b163a8799dde32c1b559d",
+    "OBJ format/kitchenBar.mtl": "192892b80583fdbc632af7e415d08c1d691084beff7364eb95a89688ba9e2bf6",
+    "OBJ format/kitchenBar.obj": "cfccd4db672f9fab412c5d1b15f7b565a8beed6b1358e0e3cda81e2acb14c7d5"
+  },
+  "license": "../License.txt"
+}

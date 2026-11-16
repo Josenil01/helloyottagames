@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stairs",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/stairs.fbx": "ff3d9c70b34d12d4764f234e6f576052c45c3a55d291822a21c6270dcc768516",
+    "Models/GLTF format/stairs.glb": "b442f997583e417fcb32ec89470ecc441b0556f416d3afe00e3f18c806e556a0",
+    "Models/OBJ format/stairs.obj": "22dd886b72cf8fa613025d5f8e99a6568e2d6c6aa7f8507d5005cb5d5cb3d5bd",
+    "Models/OBJ format/stairs.mtl": "aeb33dfccdf381881fd065ef5724709610fe7748f818090a755b4eb46002a952"
+  },
+  "files": {
+    "FBX format/stairs.fbx": "ff3d9c70b34d12d4764f234e6f576052c45c3a55d291822a21c6270dcc768516",
+    "GLB format/stairs.glb": "b442f997583e417fcb32ec89470ecc441b0556f416d3afe00e3f18c806e556a0",
+    "OBJ format/stairs.mtl": "0ac68702597c9259a08a93077fdd83875d9d0d2daa228fe77400cdecd07be7af",
+    "OBJ format/stairs.obj": "da5508d97e3e52e1961213b16ae784b57e1da971e5d61f7c26bca6cfe1841a36"
+  },
+  "license": "../License.txt"
+}

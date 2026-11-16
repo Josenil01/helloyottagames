@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "park-entrance",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/park-entrance.fbx": "50b6d97da58d800b2ed2b7438defe3ac520bd027031d2e148acda7df11b64bf6",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/park-entrance.glb": "bddb62f3de0368312809b9351764dc22c963ee4797b15a89a3e16005077eef37",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/park-entrance.obj": "e37593dca954fd5839dfcf76f9e827391465775e5357c0b7fba992d4ae60e5c3",
+    "Models/OBJ format/park-entrance.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/park-entrance.png": "eb721a2f523ff9dc5931b35e073e76b11c55fce3dd37540f129a17adac8ebc60"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/park-entrance.fbx": "50b6d97da58d800b2ed2b7438defe3ac520bd027031d2e148acda7df11b64bf6",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/park-entrance.glb": "bddb62f3de0368312809b9351764dc22c963ee4797b15a89a3e16005077eef37",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/park-entrance.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/park-entrance.obj": "3a201be9c47ae27f328c618ad61923cc4edfcad319c5861e37c76181e261b568",
+    "Preview.png": "eb721a2f523ff9dc5931b35e073e76b11c55fce3dd37540f129a17adac8ebc60"
+  },
+  "license": "../License.txt"
+}

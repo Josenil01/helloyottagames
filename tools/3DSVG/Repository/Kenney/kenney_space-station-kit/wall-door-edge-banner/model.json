@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-door-edge-banner",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/wall-door-edge-banner.fbx": "3e5cb0bac0bede8fa048f873fec6b5f2bd7493096df4a2c0ac9e2c2950f08f3f",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/wall-door-edge-banner.glb": "0f1972185a4e84d467f37133c60b2396c47d48dd0c28b82563709738db75042f",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/wall-door-edge-banner.obj": "7a1f5fbb553a55e8c427126458c0c1e30525eb370f1b365e2c868984bfd5eb95",
+    "Models/OBJ format/wall-door-edge-banner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-door-edge-banner.png": "d920354f27c9d64a48f5a2412dbf3c7562cacbd53ba965a4a4c60711fdf0537f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/wall-door-edge-banner.fbx": "3e5cb0bac0bede8fa048f873fec6b5f2bd7493096df4a2c0ac9e2c2950f08f3f",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/wall-door-edge-banner.glb": "0f1972185a4e84d467f37133c60b2396c47d48dd0c28b82563709738db75042f",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/wall-door-edge-banner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-door-edge-banner.obj": "b52cd24a6c76aea56b31da594b8f78ed0c62d55e041fbe60167d2d5239e1774c",
+    "Preview.png": "d920354f27c9d64a48f5a2412dbf3c7562cacbd53ba965a4a4c60711fdf0537f"
+  },
+  "license": "../License.txt"
+}

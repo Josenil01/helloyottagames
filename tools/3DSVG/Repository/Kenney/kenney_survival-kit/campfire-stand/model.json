@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "campfire-stand",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/campfire-stand.fbx": "7b0d6357ce1bbdcb740c003189bcef693d4e155995336428dab55afbf77e2be6",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/campfire-stand.glb": "12fe58a0aa3f73bc4cc0a817f4e8bfa331bb304703384852ca38b38ab38ee5ea",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/campfire-stand.obj": "1c6438a26fdfec0ab705c205319b8f6f137f66c535cea812b97c0d99de4c87cd",
+    "Models/OBJ format/campfire-stand.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/campfire-stand.png": "fb5929602b44455a06cab6e62945775402e705b7af126334fbdf7f18b1b6cf32"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/campfire-stand.fbx": "7b0d6357ce1bbdcb740c003189bcef693d4e155995336428dab55afbf77e2be6",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/campfire-stand.glb": "12fe58a0aa3f73bc4cc0a817f4e8bfa331bb304703384852ca38b38ab38ee5ea",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/campfire-stand.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/campfire-stand.obj": "ccf760ebbcb278612ea16b05accfd01faded3e61eb0a117fe4f40da2d1640388",
+    "Preview.png": "fb5929602b44455a06cab6e62945775402e705b7af126334fbdf7f18b1b6cf32"
+  },
+  "license": "../License.txt"
+}

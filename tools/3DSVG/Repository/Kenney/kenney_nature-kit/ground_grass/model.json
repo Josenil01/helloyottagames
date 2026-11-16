@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "ground_grass",
+  "pack": "kenney_nature-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/ground_grass.fbx": "acd2c15d51451c77d82ce2a43028611e6749699a072238deecb3ab47fd0c86e1",
+    "Models/GLTF format/ground_grass.glb": "da741e8ab34ca70c0c85ccda21538558a798188db2f1e265885bcdd226a5cca2",
+    "Models/OBJ format/ground_grass.obj": "fe97b607673adcff0d56cc995496d4b73e673c51243478311492e04c45658be1",
+    "Models/OBJ format/ground_grass.mtl": "b186368ad09ddb6673f90f63c45ecac3f793b36fe14f96bd62e6d44922e7e874"
+  },
+  "files": {
+    "FBX format/ground_grass.fbx": "acd2c15d51451c77d82ce2a43028611e6749699a072238deecb3ab47fd0c86e1",
+    "GLB format/ground_grass.glb": "da741e8ab34ca70c0c85ccda21538558a798188db2f1e265885bcdd226a5cca2",
+    "OBJ format/ground_grass.mtl": "b186368ad09ddb6673f90f63c45ecac3f793b36fe14f96bd62e6d44922e7e874",
+    "OBJ format/ground_grass.obj": "fa2dd6a5411f040a1472486e4ad5bbea3f21a236fe1b5a5b4de905bc77c9aceb"
+  },
+  "license": "../License.txt"
+}

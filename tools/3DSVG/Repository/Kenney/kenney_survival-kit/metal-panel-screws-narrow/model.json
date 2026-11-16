@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "metal-panel-screws-narrow",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/metal-panel-screws-narrow.fbx": "e9c098d5925c8b57058ebb805308105fca293080edac3a4e466ea1c1ffcbf93a",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/metal-panel-screws-narrow.glb": "0ff152364e2982565acbe699d38e68056191990b99dcf52186a115919faa6ffd",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/metal-panel-screws-narrow.obj": "b46a42db71388911b75ef5166667abdda3b2021d8b324c236d1a89ea6f31ad07",
+    "Models/OBJ format/metal-panel-screws-narrow.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/metal-panel-screws-narrow.png": "64078e6746d48824d16131245d9deb27613810618d31ea43ce3dfdb5615c79b7"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/metal-panel-screws-narrow.fbx": "e9c098d5925c8b57058ebb805308105fca293080edac3a4e466ea1c1ffcbf93a",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/metal-panel-screws-narrow.glb": "0ff152364e2982565acbe699d38e68056191990b99dcf52186a115919faa6ffd",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/metal-panel-screws-narrow.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/metal-panel-screws-narrow.obj": "fc74f0206450a07543a219f1a9e1c6d76cea3b3b5bba25ce682f19e8835014e6",
+    "Preview.png": "64078e6746d48824d16131245d9deb27613810618d31ea43ce3dfdb5615c79b7"
+  },
+  "license": "../License.txt"
+}

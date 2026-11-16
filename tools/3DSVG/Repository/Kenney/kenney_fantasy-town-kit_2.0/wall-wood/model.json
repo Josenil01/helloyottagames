@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-wood",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/wall-wood.fbx": "dddbb478341216c732aaa64d3daaa9f86ccce8a04fb516aea2e7db87383c9277",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/wall-wood.glb": "8699614fdbc99f565942709c0977c964e2c12f3b3c60098a6e2c397c973f08db",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/wall-wood.obj": "1a94c9eaed75df954fff2a56db32cff17f6b8fdb7d531a7c7d008dde72e918b7",
+    "Models/OBJ format/wall-wood.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-wood.png": "624ee821eb33b3aa527092dd73bec57fe11950420a366bc4dff618805ad3e974"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/wall-wood.fbx": "dddbb478341216c732aaa64d3daaa9f86ccce8a04fb516aea2e7db87383c9277",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/wall-wood.glb": "8699614fdbc99f565942709c0977c964e2c12f3b3c60098a6e2c397c973f08db",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/wall-wood.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-wood.obj": "a782c48700d5008cd45f7da4aed417cc9c5d5d96c74c37d40b3a7314672a996f",
+    "Preview.png": "624ee821eb33b3aa527092dd73bec57fe11950420a366bc4dff618805ad3e974"
+  },
+  "license": "../License.txt"
+}

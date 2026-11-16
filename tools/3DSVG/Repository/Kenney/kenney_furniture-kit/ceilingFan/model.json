@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "ceilingFan",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/ceilingFan.fbx": "5b88967b77526fab623126a14b7299c86f5e9b7eb62254cb620afb519b938029",
+    "Models/GLTF format/ceilingFan.glb": "5fdf7b3c4328875462c9887c6b1f2fad08126ea42e758cf86534639b9ea72044",
+    "Models/OBJ format/ceilingFan.obj": "732c31d47290abb03d2e138aba3b5666ee7ccb64f9a774a67c9610dc4a12c654",
+    "Models/OBJ format/ceilingFan.mtl": "9e2d6874fd60885a3702e4863d76b417df8f673756f0a32f68c7c468f03f3b9b"
+  },
+  "files": {
+    "FBX format/ceilingFan.fbx": "5b88967b77526fab623126a14b7299c86f5e9b7eb62254cb620afb519b938029",
+    "GLB format/ceilingFan.glb": "5fdf7b3c4328875462c9887c6b1f2fad08126ea42e758cf86534639b9ea72044",
+    "OBJ format/ceilingFan.mtl": "d08cc2975a568b557f1f3c6be6219170cb204f79e16b3f273bd5b875de3f0df5",
+    "OBJ format/ceilingFan.obj": "99a2ee4aeec14367aeb991b1b5a1c7dea7b688d0d9032379a0c20e65b278afb3"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,2235 @@
+{
+  "version": 2,
+  "license": "Kenney CC0 models (licenses retained); original Hello Yotta Blockie Sphinx authored in Blender",
+  "resolution": "vector",
+  "assets": {
+    "beaver": {
+      "file": "objects/beaver.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-beaver",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-beaver/GLB format/animal-beaver.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "bee": {
+      "file": "objects/bee.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-bee",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-bee/GLB format/animal-bee.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "bunny": {
+      "file": "objects/bunny.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-bunny",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-bunny/GLB format/animal-bunny.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "cat": {
+      "file": "objects/cat.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-cat",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-cat/GLB format/animal-cat.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "caterpillar": {
+      "file": "objects/caterpillar.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-caterpillar",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-caterpillar/GLB format/animal-caterpillar.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "chick": {
+      "file": "objects/chick.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-chick",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-chick/GLB format/animal-chick.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "cow": {
+      "file": "objects/cow.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-cow",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-cow/GLB format/animal-cow.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "crab": {
+      "file": "objects/crab.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-crab",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-crab/GLB format/animal-crab.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "deer": {
+      "file": "objects/deer.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-deer",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-deer/GLB format/animal-deer.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "dog": {
+      "file": "objects/dog.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-dog",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-dog/GLB format/animal-dog.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "elephant": {
+      "file": "objects/elephant.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-elephant",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-elephant/GLB format/animal-elephant.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "fish": {
+      "file": "objects/fish.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-fish",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-fish/GLB format/animal-fish.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "fox": {
+      "file": "objects/fox.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-fox",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-fox/GLB format/animal-fox.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "giraffe": {
+      "file": "objects/giraffe.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-giraffe",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-giraffe/GLB format/animal-giraffe.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "hog": {
+      "file": "objects/hog.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-hog",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-hog/GLB format/animal-hog.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "koala": {
+      "file": "objects/koala.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-koala",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-koala/GLB format/animal-koala.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "lion": {
+      "file": "objects/lion.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-lion",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-lion/GLB format/animal-lion.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "monkey": {
+      "file": "objects/monkey.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-monkey",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-monkey/GLB format/animal-monkey.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "panda": {
+      "file": "objects/panda.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-panda",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-panda/GLB format/animal-panda.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "parrot": {
+      "file": "objects/parrot.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-parrot",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-parrot/GLB format/animal-parrot.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "penguin": {
+      "file": "objects/penguin.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-penguin",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-penguin/GLB format/animal-penguin.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "pig": {
+      "file": "objects/pig.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-pig",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-pig/GLB format/animal-pig.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "polar": {
+      "file": "objects/polar.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-polar",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-polar/GLB format/animal-polar.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "tiger": {
+      "file": "objects/tiger.svg",
+      "pack": "kenney_cube-pets_1.0",
+      "model": "animal-tiger",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_cube-pets_1.0/animal-tiger/GLB format/animal-tiger.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-apple": {
+      "file": "objects/food-apple.svg",
+      "pack": "kenney_food-kit",
+      "model": "apple",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/apple/GLB format/apple.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-banana": {
+      "file": "objects/food-banana.svg",
+      "pack": "kenney_food-kit",
+      "model": "banana",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/banana/GLB format/banana.glb",
+      "assembly": null,
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X"
+    },
+    "food-bread": {
+      "file": "objects/food-bread.svg",
+      "pack": "kenney_food-kit",
+      "model": "bread",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/bread/GLB format/bread.glb",
+      "assembly": null,
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X"
+    },
+    "food-broccoli": {
+      "file": "objects/food-broccoli.svg",
+      "pack": "kenney_food-kit",
+      "model": "broccoli",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/broccoli/GLB format/broccoli.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-burger": {
+      "file": "objects/food-burger.svg",
+      "pack": "kenney_food-kit",
+      "model": "burger",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/burger/GLB format/burger.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-cake": {
+      "file": "objects/food-cake.svg",
+      "pack": "kenney_food-kit",
+      "model": "cake",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/cake/GLB format/cake.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-carrot": {
+      "file": "objects/food-carrot.svg",
+      "pack": "kenney_food-kit",
+      "model": "carrot",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/carrot/GLB format/carrot.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-cherries": {
+      "file": "objects/food-cherries.svg",
+      "pack": "kenney_food-kit",
+      "model": "cherries",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/cherries/GLB format/cherries.glb",
+      "assembly": null,
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X"
+    },
+    "food-cheese": {
+      "file": "objects/food-cheese.svg",
+      "pack": "kenney_food-kit",
+      "model": "cheese",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/cheese/GLB format/cheese.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-cookie": {
+      "file": "objects/food-cookie.svg",
+      "pack": "kenney_food-kit",
+      "model": "cookie",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/cookie/GLB format/cookie.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-corn": {
+      "file": "objects/food-corn.svg",
+      "pack": "kenney_food-kit",
+      "model": "corn",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/corn/GLB format/corn.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-croissant": {
+      "file": "objects/food-croissant.svg",
+      "pack": "kenney_food-kit",
+      "model": "croissant",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/croissant/GLB format/croissant.glb",
+      "assembly": null,
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X"
+    },
+    "food-cup-coffee": {
+      "file": "objects/food-cup-coffee.svg",
+      "pack": "kenney_food-kit",
+      "model": "cup-coffee",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/cup-coffee/GLB format/cup-coffee.glb",
+      "assembly": null,
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X"
+    },
+    "food-cupcake": {
+      "file": "objects/food-cupcake.svg",
+      "pack": "kenney_food-kit",
+      "model": "cupcake",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/cupcake/GLB format/cupcake.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-donut": {
+      "file": "objects/food-donut.svg",
+      "pack": "kenney_food-kit",
+      "model": "donut",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/donut/GLB format/donut.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-egg": {
+      "file": "objects/food-egg.svg",
+      "pack": "kenney_food-kit",
+      "model": "egg",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/egg/GLB format/egg.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-eggplant": {
+      "file": "objects/food-eggplant.svg",
+      "pack": "kenney_food-kit",
+      "model": "eggplant",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/eggplant/GLB format/eggplant.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-fish": {
+      "file": "objects/food-fish.svg",
+      "pack": "kenney_food-kit",
+      "model": "fish",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/fish/GLB format/fish.glb",
+      "assembly": null,
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X"
+    },
+    "food-fries": {
+      "file": "objects/food-fries.svg",
+      "pack": "kenney_food-kit",
+      "model": "fries",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/fries/GLB format/fries.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-grapes": {
+      "file": "objects/food-grapes.svg",
+      "pack": "kenney_food-kit",
+      "model": "grapes",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/grapes/GLB format/grapes.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-hot-dog": {
+      "file": "objects/food-hot-dog.svg",
+      "pack": "kenney_food-kit",
+      "model": "hot-dog",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/hot-dog/GLB format/hot-dog.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-ice-cream": {
+      "file": "objects/food-ice-cream.svg",
+      "pack": "kenney_food-kit",
+      "model": "ice-cream",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/ice-cream/GLB format/ice-cream.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-lemon": {
+      "file": "objects/food-lemon.svg",
+      "pack": "kenney_food-kit",
+      "model": "lemon",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/lemon/GLB format/lemon.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-lollypop": {
+      "file": "objects/food-lollypop.svg",
+      "pack": "kenney_food-kit",
+      "model": "lollypop",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/lollypop/GLB format/lollypop.glb",
+      "assembly": null,
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X"
+    },
+    "food-mushroom": {
+      "file": "objects/food-mushroom.svg",
+      "pack": "kenney_food-kit",
+      "model": "mushroom",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/mushroom/GLB format/mushroom.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-orange": {
+      "file": "objects/food-orange.svg",
+      "pack": "kenney_food-kit",
+      "model": "orange",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/orange/GLB format/orange.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-pear": {
+      "file": "objects/food-pear.svg",
+      "pack": "kenney_food-kit",
+      "model": "pear",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/pear/GLB format/pear.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-pineapple": {
+      "file": "objects/food-pineapple.svg",
+      "pack": "kenney_food-kit",
+      "model": "pineapple",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/pineapple/GLB format/pineapple.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-pizza": {
+      "file": "objects/food-pizza.svg",
+      "pack": "kenney_food-kit",
+      "model": "pizza",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/pizza/GLB format/pizza.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-pumpkin": {
+      "file": "objects/food-pumpkin.svg",
+      "pack": "kenney_food-kit",
+      "model": "pumpkin",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/pumpkin/GLB format/pumpkin.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-strawberry": {
+      "file": "objects/food-strawberry.svg",
+      "pack": "kenney_food-kit",
+      "model": "strawberry",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/strawberry/GLB format/strawberry.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-tomato": {
+      "file": "objects/food-tomato.svg",
+      "pack": "kenney_food-kit",
+      "model": "tomato",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/tomato/GLB format/tomato.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-watermelon": {
+      "file": "objects/food-watermelon.svg",
+      "pack": "kenney_food-kit",
+      "model": "watermelon",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/watermelon/GLB format/watermelon.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-chocolate": {
+      "file": "objects/food-chocolate.svg",
+      "pack": "kenney_food-kit",
+      "model": "chocolate",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/chocolate/GLB format/chocolate.glb",
+      "assembly": null,
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X"
+    },
+    "food-pot": {
+      "file": "objects/food-pot.svg",
+      "pack": "kenney_food-kit",
+      "model": "pot",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/pot/GLB format/pot.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-bottle-oil": {
+      "file": "objects/food-bottle-oil.svg",
+      "pack": "kenney_food-kit",
+      "model": "bottle-oil",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/bottle-oil/GLB format/bottle-oil.glb",
+      "assembly": null,
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X"
+    },
+    "food-soda": {
+      "file": "objects/food-soda.svg",
+      "pack": "kenney_food-kit",
+      "model": "soda",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/soda/GLB format/soda.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "food-ice-cream-cne": {
+      "file": "objects/food-ice-cream-cne.svg",
+      "pack": "kenney_food-kit",
+      "model": "ice-cream-cne",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_food-kit/ice-cream-cne/GLB format/ice-cream-cne.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "books": {
+      "file": "objects/books.svg",
+      "pack": "kenney_furniture-kit",
+      "model": "books",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_furniture-kit/books/GLB format/books.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "keyboard": {
+      "file": "objects/keyboard.svg",
+      "pack": "kenney_furniture-kit",
+      "model": "computerKeyboard",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_furniture-kit/computerKeyboard/GLB format/computerKeyboard.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z"
+    },
+    "mouse": {
+      "file": "objects/mouse.svg",
+      "pack": "kenney_furniture-kit",
+      "model": "computerMouse",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_furniture-kit/computerMouse/GLB format/computerMouse.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z"
+    },
+    "laptop": {
+      "file": "objects/laptop.svg",
+      "pack": "kenney_furniture-kit",
+      "model": "laptop",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_furniture-kit/laptop/GLB format/laptop.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "mirror": {
+      "file": "objects/mirror.svg",
+      "pack": "kenney_furniture-kit",
+      "model": "bathroomMirror",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_furniture-kit/bathroomMirror/GLB format/bathroomMirror.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "chair": {
+      "file": "objects/chair.svg",
+      "pack": "kenney_furniture-kit",
+      "model": "chair",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_furniture-kit/chair/GLB format/chair.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "bed": {
+      "file": "objects/bed.svg",
+      "pack": "kenney_furniture-kit",
+      "model": "bedSingle",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_furniture-kit/bedSingle/GLB format/bedSingle.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "plant": {
+      "file": "objects/plant.svg",
+      "pack": "kenney_furniture-kit",
+      "model": "pottedPlant",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_furniture-kit/pottedPlant/GLB format/pottedPlant.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "lamp": {
+      "file": "objects/lamp.svg",
+      "pack": "kenney_furniture-kit",
+      "model": "lampSquareTable",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_furniture-kit/lampSquareTable/GLB format/lampSquareTable.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "bear": {
+      "file": "objects/bear.svg",
+      "pack": "kenney_furniture-kit",
+      "model": "bear",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_furniture-kit/bear/GLB format/bear.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "castle": {
+      "file": "objects/castle.svg",
+      "pack": "kenney_castle-kit",
+      "model": "tower-square-top-roof-high",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_castle-kit/tower-square-top-roof-high/GLB format/tower-square-top-roof-high.glb",
+      "assembly": [
+        "tower-square-base",
+        "tower-square-mid",
+        "tower-square-top-roof-high"
+      ],
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "castle-tower": {
+      "file": "objects/castle-tower.svg",
+      "pack": "kenney_castle-kit",
+      "model": "tower-hexagon-roof",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_castle-kit/tower-hexagon-roof/GLB format/tower-hexagon-roof.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "catapult": {
+      "file": "objects/catapult.svg",
+      "pack": "kenney_castle-kit",
+      "model": "siege-catapult",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_castle-kit/siege-catapult/GLB format/siege-catapult.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "flag": {
+      "file": "objects/flag.svg",
+      "pack": "kenney_castle-kit",
+      "model": "flag",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_castle-kit/flag/GLB format/flag.glb",
+      "assembly": null,
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X"
+    },
+    "bridge": {
+      "file": "objects/bridge.svg",
+      "pack": "kenney_castle-kit",
+      "model": "bridge-draw",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_castle-kit/bridge-draw/GLB format/bridge-draw.glb",
+      "assembly": null,
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X"
+    },
+    "factory": {
+      "file": "objects/factory.svg",
+      "pack": "kenney_factory-kit_3.0",
+      "model": "machine",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_factory-kit_3.0/machine/GLB format/machine.glb",
+      "assembly": null,
+      "camera": [
+        8,
+        2,
+        0
+      ],
+      "front": "+X"
+    },
+    "gear": {
+      "file": "objects/gear.svg",
+      "pack": "kenney_factory-kit_3.0",
+      "model": "cog-a",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_factory-kit_3.0/cog-a/GLB format/cog-a.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z"
+    },
+    "robot-arm": {
+      "file": "objects/robot-arm.svg",
+      "pack": "kenney_factory-kit_3.0",
+      "model": "robot-arm-a",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_factory-kit_3.0/robot-arm-a/GLB format/robot-arm-a.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "conveyor": {
+      "file": "objects/conveyor.svg",
+      "pack": "kenney_factory-kit_3.0",
+      "model": "conveyor",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_factory-kit_3.0/conveyor/GLB format/conveyor.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "crate": {
+      "file": "objects/crate.svg",
+      "pack": "kenney_factory-kit_3.0",
+      "model": "box-small",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_factory-kit_3.0/box-small/GLB format/box-small.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "potion": {
+      "file": "objects/potion.svg",
+      "pack": "kenney_mini-dungeon",
+      "model": "potion",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_mini-dungeon/potion/GLB format/potion.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "orc": {
+      "file": "objects/orc.svg",
+      "pack": "kenney_mini-dungeon",
+      "model": "character-orc",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_mini-dungeon/character-orc/OBJ format/character-orc.obj",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "dungeon-column": {
+      "file": "objects/dungeon-column.svg",
+      "pack": "kenney_mini-dungeon",
+      "model": "column",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_mini-dungeon/column/GLB format/column.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "coin": {
+      "file": "objects/coin.svg",
+      "pack": "kenney_mini-dungeon",
+      "model": "coin",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_mini-dungeon/coin/GLB format/coin.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "key": {
+      "file": "objects/key.svg",
+      "pack": "kenney_mini-dungeon",
+      "model": "key",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_mini-dungeon/key/GLB format/key.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "sword": {
+      "file": "objects/sword.svg",
+      "pack": "kenney_mini-dungeon",
+      "model": "weapon-sword",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_mini-dungeon/weapon-sword/GLB format/weapon-sword.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "shield": {
+      "file": "objects/shield.svg",
+      "pack": "kenney_mini-dungeon",
+      "model": "shield-round",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_mini-dungeon/shield-round/GLB format/shield-round.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "spaceship": {
+      "file": "objects/spaceship.svg",
+      "pack": "kenney_space-kit",
+      "model": "craft_speederA",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_space-kit/craft_speederA/GLB format/craft_speederA.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        -8
+      ],
+      "front": "-Z"
+    },
+    "astronaut": {
+      "file": "objects/astronaut.svg",
+      "pack": "kenney_space-kit",
+      "model": "astronautA",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_space-kit/astronautA/GLB format/astronautA.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        -8
+      ],
+      "front": "-Z"
+    },
+    "alien": {
+      "file": "objects/alien.svg",
+      "pack": "kenney_space-kit",
+      "model": "alien",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_space-kit/alien/GLB format/alien.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        -8
+      ],
+      "front": "-Z"
+    },
+    "meteor": {
+      "file": "objects/meteor.svg",
+      "pack": "kenney_space-kit",
+      "model": "meteor",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_space-kit/meteor/GLB format/meteor.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "crystal": {
+      "file": "objects/crystal.svg",
+      "pack": "kenney_space-kit",
+      "model": "rock_crystals",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_space-kit/rock_crystals/GLB format/rock_crystals.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "rover": {
+      "file": "objects/rover.svg",
+      "pack": "kenney_space-kit",
+      "model": "rover",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_space-kit/rover/GLB format/rover.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        -8
+      ],
+      "front": "-Z"
+    },
+    "satellite": {
+      "file": "objects/satellite.svg",
+      "pack": "kenney_space-kit",
+      "model": "satelliteDish",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_space-kit/satelliteDish/GLB format/satelliteDish.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        -8
+      ],
+      "front": "-Z"
+    },
+    "ship": {
+      "file": "objects/ship.svg",
+      "pack": "kenney_pirate-kit",
+      "model": "ship-pirate-large",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_pirate-kit/ship-pirate-large/GLB format/ship-pirate-large.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "treasure": {
+      "file": "objects/treasure.svg",
+      "pack": "kenney_pirate-kit",
+      "model": "chest",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_pirate-kit/chest/GLB format/chest.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "barrel": {
+      "file": "objects/barrel.svg",
+      "pack": "kenney_pirate-kit",
+      "model": "barrel",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_pirate-kit/barrel/GLB format/barrel.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "palm": {
+      "file": "objects/palm.svg",
+      "pack": "kenney_pirate-kit",
+      "model": "palm-bend",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_pirate-kit/palm-bend/GLB format/palm-bend.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "island": {
+      "file": "objects/island.svg",
+      "pack": "kenney_pirate-kit",
+      "model": "patch-sand-foliage",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_pirate-kit/patch-sand-foliage/GLB format/patch-sand-foliage.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z"
+    },
+    "cannon": {
+      "file": "objects/cannon.svg",
+      "pack": "kenney_pirate-kit",
+      "model": "cannon",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_pirate-kit/cannon/GLB format/cannon.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "pirate-flag": {
+      "file": "objects/pirate-flag.svg",
+      "pack": "kenney_pirate-kit",
+      "model": "flag-pirate",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_pirate-kit/flag-pirate/GLB format/flag-pirate.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "cart": {
+      "file": "objects/cart.svg",
+      "pack": "kenney_mini-market",
+      "model": "shopping-cart",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_mini-market/shopping-cart/GLB format/shopping-cart.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "basket": {
+      "file": "objects/basket.svg",
+      "pack": "kenney_mini-market",
+      "model": "shopping-basket",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_mini-market/shopping-basket/GLB format/shopping-basket.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "cash-register": {
+      "file": "objects/cash-register.svg",
+      "pack": "kenney_mini-market",
+      "model": "cash-register",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_mini-market/cash-register/GLB format/cash-register.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        -8
+      ],
+      "front": "-Z"
+    },
+    "market": {
+      "file": "objects/market.svg",
+      "pack": "kenney_mini-market",
+      "model": "display-fruit",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_mini-market/display-fruit/GLB format/display-fruit.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "train": {
+      "file": "objects/train.svg",
+      "pack": "kenney_train-kit",
+      "model": "train-locomotive-a",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_train-kit/train-locomotive-a/GLB format/train-locomotive-a.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "carriage": {
+      "file": "objects/carriage.svg",
+      "pack": "kenney_train-kit",
+      "model": "train-carriage-box",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_train-kit/train-carriage-box/GLB format/train-carriage-box.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "car": {
+      "file": "objects/car.svg",
+      "pack": "kenney_car-kit",
+      "model": "sedan",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_car-kit/sedan/GLB format/sedan.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "taxi": {
+      "file": "objects/taxi.svg",
+      "pack": "kenney_car-kit",
+      "model": "taxi",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_car-kit/taxi/GLB format/taxi.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "ambulance": {
+      "file": "objects/ambulance.svg",
+      "pack": "kenney_car-kit",
+      "model": "ambulance",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_car-kit/ambulance/GLB format/ambulance.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "firetruck": {
+      "file": "objects/firetruck.svg",
+      "pack": "kenney_car-kit",
+      "model": "firetruck",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_car-kit/firetruck/GLB format/firetruck.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "police": {
+      "file": "objects/police.svg",
+      "pack": "kenney_car-kit",
+      "model": "police",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_car-kit/police/GLB format/police.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "truck": {
+      "file": "objects/truck.svg",
+      "pack": "kenney_car-kit",
+      "model": "truck",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_car-kit/truck/GLB format/truck.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "tree": {
+      "file": "objects/tree.svg",
+      "pack": "kenney_mini-forest_1.0",
+      "model": "tree",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_mini-forest_1.0/tree/GLB format/tree.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "tent": {
+      "file": "objects/tent.svg",
+      "pack": "kenney_mini-forest_1.0",
+      "model": "tent",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_mini-forest_1.0/tent/GLB format/tent.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "house": {
+      "file": "objects/house.svg",
+      "pack": "kenney_city-kit-suburban_20",
+      "model": "building-type-a",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_city-kit-suburban_20/building-type-a/GLB format/building-type-a.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        -8
+      ],
+      "front": "-Z"
+    },
+    "road": {
+      "file": "objects/road.svg",
+      "pack": "kenney_city-kit-roads",
+      "model": "road-bend",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_city-kit-roads/road-bend/GLB format/road-bend.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        5,
+        8
+      ],
+      "front": "+Z"
+    },
+    "trophy": {
+      "file": "objects/trophy.svg",
+      "pack": "kenney_mini-arena",
+      "model": "trophy",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_mini-arena/trophy/GLB format/trophy.glb",
+      "assembly": null,
+      "camera": [
+        0,
+        2,
+        8
+      ],
+      "front": "+Z"
+    },
+    "horse": {
+      "file": "objects/horse.svg",
+      "pack": "kenney_prototype-kit",
+      "model": "animal-horse",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_prototype-kit/animal-horse/GLB format/animal-horse.glb",
+      "assembly": null,
+      "camera": [
+        -8,
+        2,
+        3
+      ],
+      "front": "-X"
+    },
+    "cube": {
+      "file": "objects/cube.svg",
+      "pack": "kenney_prototype-kit",
+      "model": "shape-cube",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_prototype-kit/shape-cube/GLB format/shape-cube.glb",
+      "assembly": null,
+      "camera": [
+        3,
+        3,
+        8
+      ],
+      "front": "+Z"
+    },
+    "cylinder": {
+      "file": "objects/cylinder.svg",
+      "pack": "kenney_prototype-kit",
+      "model": "shape-cylinder",
+      "source": "tools/3DSVG/Repository/Kenney/kenney_prototype-kit/shape-cylinder/GLB format/shape-cylinder.glb",
+      "assembly": null,
+      "camera": [
+        3,
+        3,
+        8
+      ],
+      "front": "+Z"
+    },
+    "sphinx": {
+      "file": "objects/sphinx.svg",
+      "pack": "Hello Yotta · Blockie",
+      "model": "esfinge-blockie",
+      "source": "tools/3DSVG/Repository/HelloYotta/esfinge-blockie/GLB format/esfinge-blockie.glb",
+      "assembly": null,
+      "camera": [
+        1.2,
+        2,
+        8
+      ],
+      "front": "+Z"
+    }
+  },
+  "emoji": {
+    "🐝": "bee",
+    "🐰": "bunny",
+    "🐱": "cat",
+    "🐈": "cat",
+    "🐄": "cow",
+    "🦀": "crab",
+    "🦌": "deer",
+    "🐶": "dog",
+    "🐘": "elephant",
+    "🐠": "fish",
+    "🦊": "fox",
+    "🦒": "giraffe",
+    "🐨": "koala",
+    "🦁": "lion",
+    "🐒": "monkey",
+    "🐵": "monkey",
+    "🐼": "panda",
+    "🦜": "parrot",
+    "🐧": "penguin",
+    "🐷": "pig",
+    "🐻": "bear",
+    "🐴": "horse",
+    "🍎": "food-apple",
+    "🍌": "food-banana",
+    "🍞": "food-bread",
+    "🥦": "food-broccoli",
+    "🍔": "food-burger",
+    "🍰": "food-cake",
+    "🥕": "food-carrot",
+    "🍒": "food-cherries",
+    "🧀": "food-cheese",
+    "🍪": "food-cookie",
+    "🌽": "food-corn",
+    "🥐": "food-croissant",
+    "☕": "food-cup-coffee",
+    "🧁": "food-cupcake",
+    "🍩": "food-donut",
+    "🥚": "food-egg",
+    "🍆": "food-eggplant",
+    "🍟": "food-fries",
+    "🍇": "food-grapes",
+    "🌭": "food-hot-dog",
+    "🍦": "food-ice-cream",
+    "🍋": "food-lemon",
+    "🍭": "food-lollypop",
+    "🍄": "food-mushroom",
+    "🍊": "food-orange",
+    "🍐": "food-pear",
+    "🍍": "food-pineapple",
+    "🍕": "food-pizza",
+    "🎃": "food-pumpkin",
+    "🍓": "food-strawberry",
+    "🍅": "food-tomato",
+    "🍉": "food-watermelon",
+    "🍫": "food-chocolate",
+    "📚": "books",
+    "📖": "books",
+    "⌨️": "keyboard",
+    "🖱️": "mouse",
+    "💻": "laptop",
+    "🪞": "mirror",
+    "🛏️": "bed",
+    "🪴": "plant",
+    "🏰": "castle",
+    "⚙️": "gear",
+    "🏭": "factory",
+    "📦": "crate",
+    "🧪": "potion",
+    "🗝️": "key",
+    "🪙": "coin",
+    "💎": "crystal",
+    "🛡️": "shield",
+    "🗡️": "sword",
+    "🚀": "spaceship",
+    "👨‍🚀": "astronaut",
+    "👽": "alien",
+    "🪨": "meteor",
+    "🏴‍☠️": "pirate-flag",
+    "🛢️": "barrel",
+    "🧰": "treasure",
+    "🌴": "palm",
+    "🛒": "cart",
+    "🧺": "basket",
+    "🚂": "train",
+    "🚗": "car",
+    "🚕": "taxi",
+    "🚑": "ambulance",
+    "🚒": "firetruck",
+    "🚓": "police",
+    "🚚": "truck",
+    "🌲": "tree",
+    "⛺": "tent",
+    "🏠": "house",
+    "🏆": "trophy"
+  },
+  "games": {
+    "Canhões de ouro": {
+      "key": "canhoes-de-ouro",
+      "title": "Enigmas da Esfinge",
+      "hero": "games/canhoes-de-ouro.svg",
+      "objects": [
+        "sphinx",
+        "dungeon-column"
+      ],
+      "accent": "#bd863e",
+      "coverSymbol": "",
+      "guards": [
+        ".sphinx-scene"
+      ]
+    },
+    "Caçadores de Coletivos": {
+      "key": "cacadores-de-coletivos",
+      "title": "Caçadores de Coletivos",
+      "hero": "games/cacadores-de-coletivos.svg",
+      "objects": [
+        "lion",
+        "giraffe",
+        "tree"
+      ],
+      "accent": "#558a3a",
+      "coverSymbol": "🔦",
+      "guards": []
+    },
+    "vowel": {
+      "key": "vowel-vowel",
+      "title": "Complete com Vogais",
+      "hero": "games/vowel-vowel.svg",
+      "objects": [
+        "books",
+        "keyboard"
+      ],
+      "accent": "#d57ab4",
+      "coverSymbol": "🎹",
+      "guards": []
+    },
+    "Defesa do Castelo Matematico": {
+      "key": "defesa-do-castelo-matematico",
+      "title": "Defesa do Castelo Matemático",
+      "hero": "games/defesa-do-castelo-matematico.svg",
+      "objects": [
+        "castle",
+        "catapult"
+      ],
+      "accent": "#537fba",
+      "coverSymbol": "",
+      "guards": []
+    },
+    "Detetives da Ortografia": {
+      "key": "detetives-da-ortografia",
+      "title": "Detetives da Ortografia",
+      "hero": "games/detetives-da-ortografia.svg",
+      "objects": [
+        "books",
+        "lamp"
+      ],
+      "accent": "#c18b3a",
+      "coverSymbol": "🔍",
+      "guards": []
+    },
+    "Digite o resultado": {
+      "key": "digite-o-resultado",
+      "title": "Digite o Resultado",
+      "hero": "games/digite-o-resultado.svg",
+      "objects": [
+        "keyboard",
+        "food-apple"
+      ],
+      "accent": "#ed7585",
+      "coverSymbol": "",
+      "guards": []
+    },
+    "Digitado": {
+      "key": "digitado",
+      "title": "Digitado",
+      "hero": "games/digitado.svg",
+      "objects": [
+        "keyboard",
+        "laptop"
+      ],
+      "accent": "#19a998",
+      "coverSymbol": "⌨️",
+      "guards": []
+    },
+    "Duelo dos Monstros": {
+      "key": "duelo-dos-monstros",
+      "title": "Duelo dos Monstros",
+      "hero": "games/duelo-dos-monstros.svg",
+      "objects": [
+        "orc",
+        "alien"
+      ],
+      "accent": "#aa71b7",
+      "coverSymbol": "",
+      "guards": []
+    },
+    "Escola de Magia VSA": {
+      "key": "escola-de-magia-vsa",
+      "title": "Escola de Magia VSA",
+      "hero": "games/escola-de-magia-vsa.svg",
+      "objects": [
+        "potion",
+        "books"
+      ],
+      "accent": "#bb64d6",
+      "coverSymbol": "🧙‍♂️",
+      "guards": []
+    },
+    "Fabrica de Acentos": {
+      "key": "fabrica-de-acentos",
+      "title": "Fábrica de Acentos",
+      "hero": "games/fabrica-de-acentos.svg",
+      "objects": [
+        "factory",
+        "books"
+      ],
+      "accent": "#9b77d2",
+      "coverSymbol": "🎩",
+      "guards": []
+    },
+    "Fábrica de Rimas": {
+      "key": "fabrica-de-rimas",
+      "title": "Fábrica de Rimas",
+      "hero": "games/fabrica-de-rimas.svg",
+      "objects": [
+        "conveyor",
+        "gear",
+        "books"
+      ],
+      "accent": "#d78b46",
+      "coverSymbol": "🏭",
+      "guards": []
+    },
+    "Galáxia da Matemática": {
+      "key": "galaxia-da-matematica",
+      "title": "Galáxia Geométrica",
+      "hero": "games/galaxia-da-matematica.svg",
+      "objects": [
+        "spaceship",
+        "crystal"
+      ],
+      "accent": "#6c83db",
+      "coverSymbol": "",
+      "guards": [
+        "#geo-options",
+        "#geo-objects",
+        "#geo-target"
+      ]
+    },
+    "Galaxia dos Opostos": {
+      "key": "galaxia-dos-opostos",
+      "title": "Galáxia dos Opostos",
+      "hero": "games/galaxia-dos-opostos.svg",
+      "objects": [
+        "astronaut",
+        "spaceship"
+      ],
+      "accent": "#8670cf",
+      "coverSymbol": "🌌",
+      "guards": []
+    },
+    "Laboratorio das Pocoes": {
+      "key": "laboratorio-das-pocoes",
+      "title": "Laboratório das Poções",
+      "hero": "games/laboratorio-das-pocoes.svg",
+      "objects": [
+        "potion",
+        "food-pot"
+      ],
+      "accent": "#ad75ce",
+      "coverSymbol": "✨",
+      "guards": [
+        "#active-shelf"
+      ]
+    },
+    "Maisculo vs Minusculo": {
+      "key": "maisculo-vs-minusculo",
+      "title": "Maiúsculo vs Minúsculo",
+      "hero": "games/maisculo-vs-minusculo.svg",
+      "objects": [
+        "books",
+        "keyboard"
+      ],
+      "accent": "#c276c5",
+      "coverSymbol": "🔤",
+      "guards": []
+    },
+    "Matematica Pirata": {
+      "key": "matematica-pirata",
+      "title": "Matemática Pirata",
+      "hero": "games/matematica-pirata.svg",
+      "objects": [
+        "ship",
+        "treasure"
+      ],
+      "accent": "#359eae",
+      "coverSymbol": "",
+      "guards": []
+    },
+    "Mercado Alien": {
+      "key": "mercado-alien",
+      "title": "Mercado Alien",
+      "hero": "games/mercado-alien.svg",
+      "objects": [
+        "alien",
+        "spaceship",
+        "cart"
+      ],
+      "accent": "#53bca2",
+      "coverSymbol": "🛸",
+      "guards": []
+    },
+    "Mercado Maior ou Menor": {
+      "key": "mercado-maior-ou-menor",
+      "title": "Mercado Maior ou Menor",
+      "hero": "games/mercado-maior-ou-menor.svg",
+      "objects": [
+        "cart",
+        "food-apple"
+      ],
+      "accent": "#e29f58",
+      "coverSymbol": "",
+      "guards": [
+        "#items-area"
+      ]
+    },
+    "monster_typer I": {
+      "key": "monster-typer-i",
+      "title": "Monster Typer I",
+      "hero": "games/monster-typer-i.svg",
+      "objects": [
+        "orc",
+        "keyboard"
+      ],
+      "accent": "#41ab9d",
+      "coverSymbol": "",
+      "guards": []
+    },
+    "monster_typer II": {
+      "key": "monster-typer-ii",
+      "title": "Monster Typer II",
+      "hero": "games/monster-typer-ii.svg",
+      "objects": [
+        "alien",
+        "keyboard"
+      ],
+      "accent": "#4baea6",
+      "coverSymbol": "",
+      "guards": []
+    },
+    "Organiza Tudo": {
+      "key": "organiza-tudo",
+      "title": "Organiza Tudo",
+      "hero": "games/organiza-tudo.svg",
+      "objects": [
+        "crate",
+        "food-apple",
+        "car"
+      ],
+      "accent": "#5ebac6",
+      "coverSymbol": "📦",
+      "guards": [
+        "#root"
+      ]
+    },
+    "Piratas do Troco": {
+      "key": "piratas-do-troco",
+      "title": "Piratas do Troco",
+      "hero": "games/piratas-do-troco.svg",
+      "objects": [
+        "treasure",
+        "coin"
+      ],
+      "accent": "#c59644",
+      "coverSymbol": "",
+      "guards": []
+    },
+    "syllables": {
+      "key": "syllables",
+      "title": "Separando Sílabas",
+      "hero": "games/syllables.svg",
+      "objects": [
+        "books",
+        "keyboard"
+      ],
+      "accent": "#a17bce",
+      "coverSymbol": "📚",
+      "guards": []
+    },
+    "Sinonimos": {
+      "key": "sinonimos",
+      "title": "Sinônimos",
+      "hero": "games/sinonimos.svg",
+      "objects": [
+        "parrot",
+        "tree",
+        "books"
+      ],
+      "accent": "#61a36c",
+      "coverSymbol": "🧭",
+      "guards": []
+    },
+    "Trem da Soma e Subtracao": {
+      "key": "trem-da-soma-e-subtracao",
+      "title": "Trem da Soma e Subtração",
+      "hero": "games/trem-da-soma-e-subtracao.svg",
+      "objects": [
+        "train",
+        "carriage"
+      ],
+      "accent": "#e39357",
+      "coverSymbol": "",
+      "guards": []
+    },
+    "Mapa da Ilha do Tesouro": {
+      "key": "mapa-da-ilha-do-tesouro",
+      "title": "Mapa da Ilha do Tesouro",
+      "hero": "games/mapa-da-ilha-do-tesouro.svg",
+      "objects": [
+        "island",
+        "treasure",
+        "palm"
+      ],
+      "accent": "#45a6ae",
+      "coverSymbol": "🗺️",
+      "guards": []
+    },
+    "Espelho Magico": {
+      "key": "espelho-magico",
+      "title": "Espelho Mágico",
+      "hero": "games/espelho-magico.svg",
+      "objects": [
+        "mirror"
+      ],
+      "accent": "#ad83d8",
+      "coverSymbol": "🪞",
+      "guards": []
+    },
+    "Grafico em Acao": {
+      "key": "grafico-em-acao",
+      "title": "Gráfico em Ação",
+      "hero": "games/grafico-em-acao.svg",
+      "objects": [
+        "food-apple",
+        "food-banana"
+      ],
+      "accent": "#539cce",
+      "coverSymbol": "📊",
+      "guards": [
+        "#scene-area",
+        "#panel-type",
+        "#panel-color"
+      ]
+    },
+    "Qual e o proximo": {
+      "key": "qual-e-o-proximo",
+      "title": "Qual é o próximo",
+      "hero": "games/qual-e-o-proximo.svg",
+      "objects": [
+        "cube",
+        "cylinder"
+      ],
+      "accent": "#ad89ce",
+      "coverSymbol": "🔮",
+      "guards": []
+    },
+    "Fabrica das Formas": {
+      "key": "fabrica-das-formas",
+      "title": "Fábrica das Formas",
+      "hero": "games/fabrica-das-formas.svg",
+      "objects": [
+        "conveyor",
+        "robot-arm"
+      ],
+      "accent": "#dca150",
+      "coverSymbol": "🏭",
+      "guards": []
+    },
+    "Que horas sao": {
+      "key": "que-horas-sao",
+      "title": "Que horas são",
+      "hero": "games/que-horas-sao.svg",
+      "objects": [
+        "house"
+      ],
+      "accent": "#6eaccc",
+      "coverSymbol": "🕐",
+      "guards": [
+        "#clock-svg"
+      ]
+    },
+    "Complete a Cobra": {
+      "key": "complete-a-cobra",
+      "title": "Complete a Cobra",
+      "hero": "games/complete-a-cobra.svg",
+      "objects": [
+        "caterpillar",
+        "tree"
+      ],
+      "accent": "#68af7c",
+      "coverSymbol": "🐍",
+      "guards": []
+    },
+    "Sudoku Magico": {
+      "key": "sudoku-magico",
+      "title": "Sudoku Mágico",
+      "hero": "games/sudoku-magico.svg",
+      "objects": [
+        "cube"
+      ],
+      "accent": "#9f87ce",
+      "coverSymbol": "🧩",
+      "guards": []
+    },
+    "Combinando Sorvete": {
+      "key": "combinando-sorvete",
+      "title": "Combinando Sorvete",
+      "hero": "games/combinando-sorvete.svg",
+      "objects": [
+        "food-ice-cream",
+        "food-ice-cream-cne"
+      ],
+      "accent": "#e7a1ba",
+      "coverSymbol": "🍦",
+      "guards": [
+        "#cones-row",
+        "#flavor-box"
+      ]
+    },
+    "Mercado Matematico": {
+      "key": "mercado-matematico",
+      "title": "Mercado Matemágico",
+      "hero": "games/mercado-matematico.svg",
+      "objects": [
+        "cart",
+        "cash-register",
+        "food-apple"
+      ],
+      "accent": "#57ac8a",
+      "coverSymbol": "🛒",
+      "guards": []
+    },
+    "O Caminho Mais Rapido": {
+      "key": "o-caminho-mais-rapido",
+      "title": "O Caminho Mais Rápido",
+      "hero": "games/o-caminho-mais-rapido.svg",
+      "objects": [
+        "house",
+        "road",
+        "car"
+      ],
+      "accent": "#69a1bd",
+      "coverSymbol": "🗺️",
+      "guards": []
+    },
+    "Balanca da Descoberta": {
+      "key": "balanca-da-descoberta",
+      "title": "Balança da Descoberta",
+      "hero": "games/balanca-da-descoberta.svg",
+      "objects": [
+        "food-apple",
+        "crate"
+      ],
+      "accent": "#cd995a",
+      "coverSymbol": "⚖️",
+      "guards": []
+    },
+    "Complete a Sequencia": {
+      "key": "complete-a-sequencia",
+      "title": "Complete a Sequência",
+      "hero": "games/complete-a-sequencia.svg",
+      "objects": [
+        "cube"
+      ],
+      "accent": "#6aafbd",
+      "coverSymbol": "🔢",
+      "guards": []
+    },
+    "Contando as Patas": {
+      "key": "contando-as-patas",
+      "title": "Contando as Patas",
+      "hero": "games/contando-as-patas.svg",
+      "objects": [
+        "horse",
+        "cow"
+      ],
+      "accent": "#a7af5e",
+      "coverSymbol": "🐾",
+      "guards": [
+        "#screen-game"
+      ]
+    },
+    "Qual e o Grupo": {
+      "key": "qual-e-o-grupo",
+      "title": "Qual é o Grupo?",
+      "hero": "games/qual-e-o-grupo.svg",
+      "objects": [
+        "food-apple",
+        "food-carrot",
+        "food-broccoli"
+      ],
+      "accent": "#7ba8a4",
+      "coverSymbol": "🎯",
+      "guards": [
+        "#screen-game"
+      ]
+    }
+  },
+  "format": "svg",
+  "generator": "3DSVG convert_model.py + blockie-svg.js",
+  "base": "../assets/image/SVG/",
+  "cameraPolicy": "Individually reviewed front views: scripts/svg-front-views.json"
+}

@@ -1,416 +1,232 @@
 # Próximos Passos — Hello Yotta Games
 
-> **Como usar este documento:**
-> Cada seção descreve tarefas pendentes por escopo. Itens marcados com 🐛 são bugs confirmados. Itens marcados com ✨ são novas funcionalidades. Itens marcados com 🔧 são refatorações estruturais.
+> Revisado em 08/10/2026 por inspeção estática das páginas, scripts ativos e bancos locais. Situações implementadas e pendências foram confrontadas com o código. Esta revisão não executou gameplay nem confirma publicação em produção.
+> Documento oficial de planejamento: `docs/proximos_passos.md`. Sempre que o usuário mencionar `proximos_passos.md`, considerar este arquivo.
+> Consolidado em 25/09/2026 com o planejamento antes mantido na raiz e com as decisões sobre diversificação de mecânicas. A consolidação não constitui uma nova auditoria dos jogos; os itens abaixo são planejamento, salvo indicação explícita de implementação.
 
----
+## Mudanças ativas confirmadas em 08/10/2026
 
-Tornar o jogo "Laboratorio das poçoes" em um jogo de Color Sort
+- **Enigmas da Esfinge:** substituiu a experiência de Canhões de Ouro, preservando a pasta/URL e a montagem por `main.js`. 60 enigmas, três alternativas, explicação e animação de erro.
+- **Matemática Pirata:** feedback de navio e barril está integrado por `PirateCannonFeedback`.
+- **Galáxia Geométrica:** página da antiga Galáxia da Matemática usa os scripts `geometry*.js`; são três reconhecimentos e dois voos por trilha. Código aritmético preservado e inativo.
+- **Laboratório das Poções:** página usa `color-sort.js` para separar cores com desfazer/reiniciar. Código aritmético preservado e inativo.
 
-## Todos os Jogos
+## Pendências de catálogo e documentação gerada
 
-Estas tarefas se aplicam a **todos os jogos** da plataforma e devem ser implementadas de forma padronizada.
+- Atualizar a descrição de Poções no `index.html`, que ainda promete soma/subtração, e então regenerar os dois JSONs. Duelo dos Monstros ainda descreve contas em vez de comparação, Organiza Tudo descreve letras em vez de classificação, e Rimas promete criação de versos apesar da escolha de relações.
+- Preservar URLs e campos da API; os 40 caminhos locais e referências de scripts foram conferidos nesta revisão. Nenhum JSON foi regenerado porque a correção do catálogo ainda é uma tarefa de produto/código.
+- `graphify-out/GRAPH_REPORT.md` registra 22/06/2026 e não representa integralmente as substituições atuais. Atualizar o grafo em tarefa própria; não corrigir manualmente apenas o relatório gerado.
 
-### ✅ Sistema de Pontuação [IMPLEMENTADO]
+## Pendências de conteúdo e progressão confirmadas
 
-Implementado via `utils/score.js`. Todos os 25 jogos integrados com `HY.score.reset()`, `HY.score.startChallenge()`, `HY.score.correct()` e `HY.score.wrong()`. Sistemas de pontuação individuais removidos. Ver CLAUDE.md seção "Utilitários compartilhados (utils/)".
+- **Vogais:** há 39 entradas para uma grade de 60; sete trilhas completas e quatro itens da oitava. Completar/reorganizar o banco e tratar ausência de item antes de liberar o percurso inteiro.
+- **Sílabas:** os primeiros 60 itens ordenados têm oito monossílabos e 52 dissílabos. Implementar seleção por faixa para obter a progressão prevista de três/quatro sílabas.
+- **Organiza Tudo:** seis conjuntos de nove objetos para grade de 12 trilhas. Definir seis trilhas ou ampliar o banco; a sétima não encontra `levelData`.
+- **Monster Typer II:** revisar grafias sem acento no banco, incluindo `MACA`, `BALAO` e `AGUA`, e o contrato de entrada esperado.
+- **Estrelas e avaliação:** Poções não penaliza transferência inválida em `HY.score`; Galáxia Geométrica soma múltiplas coletas por desafio. Rever métricas se houver decisão de avaliar eficiência; a revisão documental não altera a regra compartilhada.
 
-### ✅ Feedback Visual e Auditivo [IMPLEMENTADO]
+## Todos os jogos
 
-Feedback auditivo implementado via `utils/audio.js` (`HY.playWin()` / `HY.playLose()`). Os arquivos de áudio ainda não existem fisicamente — quando o usuário copiar `win.mp3` e `lose.mp3` para `/assets/audio/`, funcionará automaticamente sem alteração de código.
-
-### ✅ Cronômetro de Tempo [IMPLEMENTADO]
-
-Implementado via `utils/elapsed.js`. Funciona automaticamente via wrapping de `HY.score.reset()` e `HY.score.startChallenge()` — nenhum código adicional por jogo é necessário para exibir o tempo decorrido durante o desafio. Todos os 25 jogos carregam `elapsed.js` e chamam `HY.elapsed.stopTrail()` na tela de resultado.
-
-### 🔧 Padronização de Estrutura: 12 Trilhas × 5 Desafios [IMPLEMENTADO]
-
-Todos os jogos devem ser refatorados para seguir a estrutura:
-
-- **12 trilhas** (níveis progressivos)
-- **5 desafios por trilha**
-
-### 🔧 Banco de Palavras Global para Jogos de Português
-
-> **Status:** Partes 1 e 2 implementadas. Partes 3–5 pendentes.
-
-#### Objetivo
-
-Centralizar todos os dados linguísticos em bancos globais (`utils/words.js` e `utils/letters.js`), eliminar listas hardcoded nos jogos e criar um utilitário de geração de desafios compartilhado (`utils/challenges.js`). Com isso, adicionar novas palavras ao banco propaga automaticamente conteúdo para todos os jogos que as consomem.
-
-#### Regra de ouro para esta refatoração
-
-> Se **mais de 1 jogo** utiliza a mesma lógica → vai para `utils/`. Se **somente 1 jogo** usa uma mecânica específica → permanece hardcoded naquele jogo.
-
-#### Regra para novos jogos de português (pós-refatoração)
-
-1. Adicionar o novo atributo à estrutura do objeto em `words.js`
-2. Preencher esse atributo em **todas as palavras já existentes** no banco (usar `null` onde não aplicável)
-3. Implementar o novo jogo consultando `window.HYWords`
-
-Nenhum jogo deve declarar listas de palavras ou atributos linguísticos localmente.
-
-> **Após concluir todas as partes:** adicionar essas regras ao `CLAUDE.md` como padrão permanente do projeto.
-
----
-
-#### Schema do objeto em `utils/words.js`
-
-```js
-window.HYWords = [
-  {
-    // Obrigatórios
-    palavra: "GATO", // string — palavra em maiúsculo
-    tamanho: 4, // number — palavra.length
-    minuscula: "gato", // string — palavra.toLowerCase()
-    emoji: "🐱", // string — emoji representativo da palavra
-
-    // Atributos linguísticos (null se não aplicável a esta palavra)
-    coletivo: "MATILHA", // string | null
-    sinonimos: ["FELINO"], // string[] | null
-    oposto: null, // string | null
-    rimas: ["PATO", "RATO"], // string[] | null
-    silabas: ["GA", "TO"], // string[] | null
-    dificuldade: "facil", // 'facil' | 'medio' | 'dificil' | null
-
-    // Para jogo Vogais (vowel.html)
-    vogalFaltante: { vogal: "O", prefix: "GAT", suffix: "" }, // object | null
-
-    // Para Fábrica de Acentos
-    acento: null,
-    // Formato quando preenchido:
-    // { tipo: 'agudo'|'circunflexo'|'til'|'grave', posicao: number, letra: string }
-
-    // Para Detetives da Ortografia
-    erroComum: null, // string | null — grafia incorreta comum (ex: 'XUVEIRO')
-    regra: null, // string | null — 'x-vs-ch'|'s-vs-ss'|'g-vs-j'|'c-vs-s-cedilha'|...
-
-    // Frases contextuais para o tipo de desafio 'sentence'
-    // (usadas por Sinônimos, Galáxia dos Opostos, Fábrica de Rimas, Caçadores de Coletivos)
-    frases: null,
-    // Formato quando preenchido:
-    // [{ pre: 'O animal é muito ', destaque: 'PEQUENO', pos: '.', resposta: 'GRANDE' }]
-
-    // Categorias para filtragem por jogo
-    categorias: ["animais"], // string[]
-  },
-];
-```
-
-#### Schema do objeto em `utils/letters.js`
-
-```js
-window.HYLetters = [
-  {
-    maiusculo: "A", // string — letra maiúscula
-    minusculo: "a", // string — letra minúscula
-    indice: 0, // number — posição no alfabeto (0 = A)
-    dificuldade: "facil", // 'facil' | 'medio' | 'dificil'
-    // Usado por: Maiúsculo vs Minúsculo
-  },
-];
-```
-
----
-
-#### Divisão em 5 partes
-
-##### ✅ Parte 1 — Bancos de dados (`utils/words.js` + `utils/letters.js`) [IMPLEMENTADO]
-
-- Criar `utils/words.js` com o schema acima
-- Extrair todas as palavras de: Caçadores de Coletivos, Sinônimos, Fábrica de Rimas, Galáxia dos Opostos, Digitado, Syllables, Vogais (vowel), Detetives da Ortografia, Fábrica de Acentos
-- Preencher todos os atributos para cada palavra; `null` onde não aplicável
-- Criar `utils/letters.js` com as 26 letras do alfabeto
-- **Nenhum jogo é alterado nesta parte**
-
-##### ✅ Parte 2 — `utils/challenges.js` + 4 jogos de par linguístico [IMPLEMENTADO]
-
-Criar `utils/challenges.js` com `window.HY.challenges`:
-
-```js
-HY.challenges.gerarMatch(palavra, atributo, banco);
-// Retorna: { type:'match', target, answer, options:[...3], emoji, instruction }
-
-HY.challenges.gerarConnect(palavras, atributo, banco);
-// Retorna: { type:'connect', leftWords, rightWords, matches, emoji, instruction }
-
-HY.challenges.gerarIntruder(palavras, atributo, banco);
-// Retorna: { type:'intruder', words:[...4], answer, emoji, instruction }
-
-HY.challenges.gerarSentence(palavra, atributo, banco);
-// Retorna: { type:'sentence', preText, boldText, postText, answer, options:[...3], emoji, instruction }
-```
-
-- Opções incorretas sorteadas aleatoriamente de outras entradas do banco com o mesmo atributo
-- Migrar: **Sinônimos** (`atributo: 'sinonimos'`), **Fábrica de Rimas** (`atributo: 'rimas'`), **Galáxia dos Opostos** (`atributo: 'oposto'`), **Caçadores de Coletivos** (`atributo: 'coletivo'`)
-- Adicionar `challenges.js` ao `index.html` de cada jogo migrado, antes do `main.js`
-
-##### Parte 3 — Digitado + Syllables + Vogais
-
-- **Digitado:** filtra `HYWords` por `dificuldade` e `tamanho`; lógica de digitação permanece hardcoded (único jogo com essa mecânica)
-- **Syllables:** filtra `HYWords` onde `silabas !== null`; lógica de arrastar sílabas permanece hardcoded
-- **Vogais:** filtra `HYWords` onde `vogalFaltante !== null`; lógica de completar vogal permanece hardcoded
-
-##### Parte 4 — Detetives da Ortografia + Fábrica de Acentos
-
-- **Detetives:** filtra `HYWords` onde `erroComum !== null`, agrupando por `regra`; geração dos tipos de desafio hardcoded (único jogo com essa mecânica)
-- **Fábrica de Acentos:** filtra `HYWords` onde `acento !== null`, agrupando por `acento.tipo`; lógica de arrastar acento hardcoded (único jogo)
-
-##### Parte 5 — Maiúsculo vs Minúsculo + documentação
-
-- Migrar para `HYLetters`; lógica de exibição maiúsculo/minúsculo hardcoded (único jogo com letras)
-- Atualizar `CLAUDE.md` com as regras do banco de palavras
-- Atualizar este documento marcando cada parte como `✅ [IMPLEMENTADO]`
-
----
-
-#### Ordem de carregamento nos `index.html` após a refatoração
-
-**Jogos Vanilla JS (Parte 2–5):**
-
-```html
-<script src="../utils/words.js"></script>
-<!-- ou letters.js -->
-<script src="../utils/challenges.js"></script>
-<!-- apenas jogos Parte 2 -->
-<script src="main.js"></script>
-```
-
-**Jogos React+Babel (Parte 2–4):**
-
-```html
-<!-- antes do babel@7.26.10.min.js -->
-<script src="../utils/words.js"></script>
-<script src="../utils/challenges.js"></script>
-<!-- apenas jogos Parte 2 -->
-<script src="../vendor/babel@7.26.10.min.js"></script>
-<script type="text/babel" src="main.js"></script>
-```
-
----
+- **Feedback auditivo padrão incompleto:** adicionar `assets/audio/win.mp3` e `assets/audio/lose.mp3`, ainda ausentes. A integração já existe.
+- **Estrutura de 12 trilhas × 5 desafios:** corrigir a exceção confirmada na Fábrica de Acentos, cuja trilha 8 tem quatro palavras. A correção dos dados e a centralização do banco estão detalhadas na seção de refatoração ao final deste documento.
 
 ## Caçadores de Coletivos
 
-### ✨ Sequência de Mecânicas por Trilha
-
-O jogo possui 3 mecânicas distintas:
-
-1. **Múltipla escolha** — clicar na resposta correta
-2. **Associação** — conectar cards da coluna esquerda com cards da coluna direita
-3. **Completar frases** — preencher o espaço em branco na frase
-
-Na nova estrutura de 5 desafios por trilha, a sequência obrigatória é:
-
-- Desafio 1 → Mecânica 1
-- Desafio 2 → Mecânica 1
-- Desafio 3 → Mecânica 2
-- Desafio 4 → Mecânica 2
-- Desafio 5 → Mecânica 3
-
----
-
-## Canhões de Ouro
-
-### ✨ Novos Tipos de Desafio
-
-- Adicionar desafios com operação de **subtração** (atualmente o jogo só tem adição)
-
----
+- Corrigir a sequência de mecânicas por trilha para: múltipla escolha, múltipla escolha, associação, associação e completar frase.
+- Atualmente o quarto desafio gerado é do tipo intruso. Ajustar a geração para este jogo sem alterar indevidamente os demais consumidores do gerador compartilhado.
 
 ## Defesa do Castelo Matemático
 
-### 🐛 Timer continua rodando ao voltar para a tela inicial
+- Substituir a estrutura atual de três lobos por cinco lobos simultâneos, com tamanhos crescentes.
+- Derrotar um lobo por desafio correto, do menor para o maior.
+- Aplicar animações individuais de entrada e derrota; atualmente o código manipula o grupo.
 
-**Causa confirmada:** a função `changeScreen()` não cancela o `timerInterval` ao sair da tela `game`. O timer continua em background e, ao atingir zero, dispara `destroyCastle()`, que exibe o modal de resultado mesmo o jogador estando na tela inicial.
+## Digitado
 
-**Correção:** dentro de `changeScreen()`, ao trocar para qualquer tela que não seja `game`, executar `clearInterval(timerInterval)`.
-
-**Comportamento esperado:** nenhuma mecânica de gameplay (timer, input, botões de resposta) deve estar ativa antes do jogador pressionar o botão de iniciar na tela inicial ou selecionar uma trilha na tela de níveis.
-
-### 🔧 Refatoração dos Inimigos para 5 Lobos
-
-Na estrutura atual há 3 lobos que são derrotados todos de uma vez ao acertar. Com a nova estrutura de 5 desafios por trilha:
-
-- Exibir **5 lobos simultaneamente** na tela
-- Os lobos devem ter **tamanhos crescentes**: o 1º (menor) ao 5º (maior)
-- A cada desafio acertado, o próximo lobo é derrotado individualmente (do menor para o maior)
-- Os lobos devem aparecer e desaparecer com animação individual
-
----
-
-## Digitado (ABC Palavras Mágicas)
-
-### 🐛 Letras digitadas não são contabilizadas
-
-O jogo não registra acertos nem erros por letra digitada. Implementar contagem de:
-
-- Letras digitadas corretamente
-- Letras digitadas incorretamente
-
-### 🐛 Jogador pode digitar mais caracteres que o tamanho da palavra
-
-O campo de input não possui limite de caracteres. O número máximo de caracteres digitáveis deve ser calculado dinamicamente com base no tamanho da palavra atual:
-
-```js
-inputElement.maxLength = palavraAtual.length;
-```
-
-### 🐛 Letras minúsculas com descendentes (g, p, q, y) estão sendo cortadas
-
-A parte inferior de letras com haste descendente está sendo cortada. Corrigir a centralização vertical e aumentar levemente a altura do campo de texto.
-
-### 🐛 Jogo não distingue letras com e sem acento
-
-O jogo aceita `A` como resposta correta para `Ã`. Implementar comparação estrita de caracteres, sem normalização (`normalize('NFD')`).
-
-### 🐛 Timer não pausa quando o cursor sai do campo de texto
-
-O cronômetro deve pausar quando o campo de texto perde o foco (`blur`) e retomar ao ganhar foco novamente (`focus`).
-
-### 🔧 Padrão de palavras por desafio
-
-Cada desafio deve apresentar **5 palavras** para o jogador digitar.
-
----
+- **Contagem por letra incompleta:** implementar contadores separados de letras corretas e incorretas. Atualmente há avanço por letra correta e penalização por erro, mas a pontuação positiva ocorre ao completar a palavra.
+- **Pausa por perda de foco pendente:** definir e implementar o comportamento equivalente na interface atual, que captura teclas globalmente e não possui mais campo de texto. Não há tratamento de foco para pausar e retomar o cronômetro.
+- **Quantidade de palavras divergente:** o requisito anterior solicita cinco palavras por desafio; a implementação apresenta cinco palavras por trilha, com uma palavra por desafio. Confirmar qual estrutura deve prevalecer antes de alterar a mecânica.
+- **Filtro por tamanho pendente:** o banco global já é consumido, mas os critérios atuais filtram apenas por dificuldade. O planejamento previa dificuldade e tamanho.
+- **Validação visual pendente:** verificar se letras minúsculas com descendentes (g, p, q, y) aparecem integralmente nos cartões atuais. O campo de texto citado no bug original deixou de existir; o corte não foi confirmado na interface atual.
 
 ## Maiúsculo vs Minúsculo
 
-### 🐛 Pontuação não é contabilizada
+- Implementar o sorteio das letras a partir do segundo desafio da trilha 6 e nas trilhas 7–12. Atualmente essas sequências são fixas.
+- Manter um pool embaralhado das 26 letras, retirar cada letra utilizada e renovar o pool somente quando se esgotar.
+- Preservar o Z como primeiro desafio da trilha 6 e evitar repetição dentro da sequência sorteada conforme o requisito original.
 
-O jogo não registra pontos por tentativas corretas e incorretas. Implementar o sistema de pontuação padrão descrito na seção "Todos os Jogos".
+## Diversificação de mecânicas — decisões e situação atual
 
-### 🔧 Estrutura das 12 Trilhas (26 letras do alfabeto)
+O 1º par foi implementado conforme o registro abaixo. Os demais pares continuam como planejamento para implementação futura.
 
-Cada desafio exibe **1 letra**. A distribuição das letras pelas 12 trilhas segue a regra abaixo:
+### 1º par — Canhões de Ouro e Matemática Pirata
 
-| Trilhas        | Regra                                                                              |
-| -------------- | ---------------------------------------------------------------------------------- |
-| Trilhas 1 a 5  | Letras A–Y em ordem alfabética (5 letras por trilha = 25 letras)                   |
-| Trilha 6       | 1º desafio sempre com a letra **Z**; desafios 2–5 em ordem aleatória sem repetição |
-| Trilhas 7 a 12 | Letras em ordem aleatória, sem repetir letras já utilizadas na mesma sequência     |
+> **Implementado em 25/09/2026 — aguardando avaliação do usuário.** Enigmas da Esfinge contém 12 trilhas com 5 enigmas, três alternativas por enigma, explicações de acerto, esfinge feliz e animação de sucção no erro com retorno para nova tentativa. Matemática Pirata recebeu o disparo parabólico do navio e a explosão do barril nos acertos, preservando sua mecânica matemática. Catálogo e APIs atualizados; endereços dos jogos preservados. Verificados: 60 enigmas distintos, carregamento dos arquivos React/Babel e fluxos de acerto e erro no navegador.
 
-**Comportamento do pool aleatório (trilhas 6–12):**
+#### Canhões de Ouro → Enigmas da Esfinge — especificação já implementada
 
-- Manter um pool das 26 letras embaralhado
-- Remover cada letra do pool conforme é utilizada
-- Quando o pool esgotar, reembaralhar todas as 26 letras e reiniciar
+- Substituir integralmente a mecânica matemática e a temática de Canhões de Ouro por um jogo de **Português e raciocínio lógico**, com enigmas no estilo “o que é, o que é?”.
+- Nome definido: **Enigmas da Esfinge**.
+- Temática: **Antigo Egito**.
+- No topo da tela, apresentar **uma pessoa à esquerda** e **uma esfinge à direita**. A esfinge deve ser maior que a pessoa.
+- Abaixo das personagens, apresentar o enunciado do enigma.
+- Abaixo do enunciado, apresentar **três alternativas** de resposta.
+- Ao acertar, a esfinge fica feliz.
+- Ao errar, a esfinge abre a boca e suga a pessoa, com animação inspirada no estilo Kirby.
+- Antes de substituir a experiência de Canhões de Ouro, preservar seu feedback de navio atingindo um barril para reutilização em Matemática Pirata.
 
----
+#### Matemática Pirata — feedback de acerto já incorporado
 
-## Detetives da Ortografia
+- Manter a temática e a mecânica atuais de Matemática Pirata.
+- Adicionar a animação de **navio atingindo um barril**, proveniente de Canhões de Ouro, **quando o jogador acertar**.
 
-> Sem anotações — jogo ainda não testado.
+### 2º par — Duelo dos Monstros e Mercado Alien
 
----
+#### Mercado Alien → Duelo Alien
 
-## Digite o Resultado
+- Alterar somente o nome exibido para **Duelo Alien**.
+- Preservar todo o restante: temática, mecânica e comportamento do jogo.
 
-> Sem anotações — jogo ainda não testado.
+#### Duelo dos Monstros → Tradutor da Antiguidade
 
----
+- Substituir a experiência matemática por um jogo de **Português e raciocínio lógico**, baseado na decifração de mensagens.
+- Nome definido: **Tradutor da Antiguidade**.
+- Temática: **arqueologia do Antigo Egito**.
+- Utilizar **emojis para representar os hieróglifos** da atividade.
+- Exibir uma sequência de símbolos e, abaixo de cada um, um espaço para digitar uma letra do nosso alfabeto.
+- O objetivo é decifrar o conteúdo representado pelos símbolos.
+- Apresentar algumas letras **já traduzidas e preenchidas**, oferecendo pistas iniciais ao jogador.
+- Manter coerência entre símbolos e letras dentro de cada enigma para permitir deduções a partir das pistas.
+- Definir em planejamento posterior o banco de mensagens e a progressão de dificuldade; não há uma sequência de palavras para frases aprovada nesta decisão.
 
-## Duelo dos Monstros
+### 3º par — Defesa do Castelo Matemático e Expresso do Trem da Soma e Subtração
 
-> Sem anotações — jogo ainda não testado.
+#### Substituição do Expresso por um jogo de palavras cruzadas
 
----
+- **Retirar o Expresso do Trem da Soma e Subtração do catálogo** e colocar **um novo jogo de palavras cruzadas em seu lugar**.
+- A solicitação de criar um jogo de palavras cruzadas é atendida por esta substituição: **não criar um segundo jogo de palavras cruzadas separado**.
+- O novo jogo será de **Português e raciocínio lógico**, com uma grade de palavras que se cruzam e pistas para descobrir e preencher as respostas. As letras compartilhadas entre palavras devem ajudar na resolução.
+- Nome, temática visual, conteúdo das pistas e progressão de dificuldade: **a definir**. Não presumir que a temática de trem será mantida.
+- A retirada é do catálogo; exclusão de arquivos e mudanças de endereço não foram definidas nesta decisão.
+- Preservar Defesa do Castelo Matemático nesta proposta de diferenciação. As pendências próprias desse jogo, registradas anteriormente neste documento, continuam válidas.
 
-## Escola de Magia VSA
+## Novo jogo — comparação de letra de forma e cursiva
 
-> Sem anotações — jogo ainda não testado.
-
----
-
-## Fábrica de Rimas
-
-> Sem anotações — jogo ainda não testado.
-
----
-
-## Fábrica de Acentos
-
-> Sem anotações — jogo ainda não testado.
-
----
-
-## Galáxia da Matemática
-
-> Sem anotações — jogo ainda não testado.
-
----
-
-## Galáxia dos Opostos
-
-> Sem anotações — jogo ainda não testado.
-
----
-
-## Laboratório das Poções
-
-> Sem anotações — jogo ainda não testado.
+- Criar um jogo com a **mesma jogabilidade de Maiúsculo vs Minúsculo**, adaptando o conteúdo para reconhecer correspondências entre **letra de forma e letra cursiva**.
+- Organizar **maiúsculas e minúsculas separadamente**, sem misturá-las no mesmo conjunto de desafios.
+- No conjunto de maiúsculas, comparar a letra maiúscula de forma com sua equivalente maiúscula cursiva.
+- No conjunto de minúsculas, comparar a letra minúscula de forma com sua equivalente minúscula cursiva.
+- Usar representações cursivas legíveis e adequadas à identificação de cada letra.
+- Nome do jogo e organização específica dos conjuntos em modos ou trilhas: **a definir**.
 
 ---
 
-## Matemática Pirata
+## 🎯 Objetivo Principal
 
-> Sem anotações — jogo ainda não testado.
-
----
-
-## Mercado Alien
-
-> Sem anotações — jogo ainda não testado.
+Implementar **mini-jogos intermediários** (na tela de login ou lobby) antes ou entre as fases principais com o propósito de realizar uma **coleta de dados telemétricos (método de interação)**, avaliando a precisão e a destreza dos alunos no uso dos periféricos (mouse ou teclado).
 
 ---
 
-## Mercado Maior ou Menor
+## ⚙️ Funcionamento Geral
 
-> Sem anotações — jogo ainda não testado.
-
----
-
-## Organiza Tudo
-
-> Sem anotações — jogo ainda não testado.
+- **Seleção Dinâmica:** O sistema verifica por telemetria qual é o método de interação adequado para o aluno ou jogo (mouse ou teclado) e direciona para o mini-jogo correspondente.
+- **Comando de Atalho:** Os mini-jogos ocorrem rotineiramente, mas podem ser encerrados e o acesso ao jogo principal liberado a qualquer momento através de uma combinação de teclas (**Ctrl+L**).
 
 ---
 
-## Piratas do Troco
+## 🎮 Detalhes dos Mini-Jogos
 
-> Sem anotações — jogo ainda não testado.
+### 1. Mini-Jogo de Teclado (Foco em Digitação)
 
----
+- **Dinâmica:** Um jogo de digitação onde a palavra solicitada será sempre o **nome e sobrenome do aluno**.
+- **Métrica Coletada:** Precisão e velocidade na digitação das letras.
 
-## Sinônimos
+### 2. Mini-Jogo de Mouse (Foco em Clique - "Caça-Quadrados")
 
-> Sem anotações — jogo ainda não testado.
+- **Dinâmica:**
+  1. Um quadrado vermelho (representando um botão) aparece em um local aleatório e espaçado da tela.
+  2. O aluno deve clicar no centro do quadrado.
+  3. Ao registrar o clique, o quadrado vermelho muda para a cor azul claro (com baixa opacidade e tamanho menor).
+  4. O cursor do mouse deve permanecer contido dentro dessa área azul até que um novo quadrado vermelho apareça em outro ponto aleatório da tela, permitindo que o usuário se desloque para o próximo botão.
+- **Métrica Coletada:** Precisão e tempo de resposta dos cliques.
 
----
+## 📊 Finalidade e Telemetria
 
-## Trem da Soma e Subtração
+Os dados coletados de precisão (letras no teclado e cliques no mouse) servirão para:
 
-> Sem anotações — jogo ainda não testado.
-
----
-
-## Monster Typer I
-
-> Sem anotações — jogo ainda não testado.
-
----
-
-## Monster Typer II
-
-> Sem anotações — jogo ainda não testado.
+- **Mapeamento de Desempenho:** Estabelecer um _range_ (intervalo) de resultados, identificando desde o desempenho mais otimizado (aluno com maior domínio e agilidade) até o menor resultado.
+- **Identificação de Necessidades:** Detectar quais alunos possuem alto domínio das ferramentas e quais precisam de **reforço específico no uso do mouse ou do teclado**.
 
 ---
 
-## Syllables (Sílabas)
+## Refatoração de dados e componentes — implementação parcial confirmada
 
-> Sem anotações — jogo ainda não testado.
+> A origem das fases de Acentos e os componentes React compartilhados já foram migrados. A lista abaixo preserva o contexto da decisão e explicita o que falta; não deve ser executada como se toda a refatoração ainda estivesse por começar.
+
+### Implementado no fluxo atual
+
+- `HYWords` contém 226 entradas, 97 com `classe`, e campos `acento` (objeto com `tipo`, `posicao`, `letra`) e `faseAcento`; não existe contrato ativo separado `posicaoAcento`.
+- Fábrica de Acentos agrupa `HYWords` por `faseAcento` 1–12. Os grupos somam 59 palavras; a trilha 8 mantém quatro.
+- `utils/challenges/ChallengeMatch.js`, `ChallengeConnect.js`, `ChallengeIntruder.js` e `ChallengeSentence.js` já existem e são usados por Detetives, Escola de Magia, Coletivos, Rimas, Opostos e Sinônimos.
+- Coletivos, Rimas, Opostos e Sinônimos já usam `HY.challenges.buildLevels` sobre `HYWords`. Ortografia e VSA mantêm bancos próprios.
+
+### Pendências desta refatoração
+
+- Revisar os valores de `acento.posicao` e `acento.tipo`, preservando a convenção de índice de caractere quando aprovada; o gabarito do jogo atual é extraído dos caracteres.
+- Completar a trilha 8 e validar os 12 grupos de Acentos.
+- Decidir a compatibilidade do legado `HYAcentos.phases`, ainda presente e marcado deprecated. Não remover sem verificar consumidores.
+- Revisar semanticamente intrusos e distratores do gerador; ausência de metadado não comprova relação linguística.
+- A extensão para um banco matemático compartilhado e componentes além das mecânicas atuais continua futura. `HY.rand.NUMEROS` já existe; avaliar seu uso antes de propor outro banco.
+
+### Contexto
+
+Este repositório é uma plataforma de jogos educacionais browser-based (sem build step, sem npm, sem bundler). Os jogos React+Babel são frágeis — leia o CLAUDE.md antes de tocar em qualquer arquivo.
+
+A refatoração tem como objetivo centralizar dados e mecânicas de jogo em arquivos compartilhados (`utils/`), eliminando duplicação entre os jogos.
 
 ---
 
-## Vowel (Vogais)
+### Arquitetura atual e direção futura
 
-> Sem anotações — jogo ainda não testado.
+```
+utils/
+  words.js          ← banco compartilhado; classe, acento e faseAcento já presentes
+  letters.js        ← fonte de verdade sobre letras (já existe)
+  ortografia.js     ← desafios de ortografia — manter como está
+  gramatica.js      ← desafios gramaticais — manter por ora, será parcialmente substituído
+  acentos.js        ← lookup de sinais e fases legadas deprecated; migração das fases já feita
+  challenges/
+    ChallengeMatch.js      ← componente React reutilizável (type="text/babel")
+    ChallengeConnect.js    ← componente React reutilizável (type="text/babel")
+    ChallengeIntruder.js   ← componente React reutilizável (type="text/babel")
+    ChallengeSentence.js   ← componente React reutilizável (type="text/babel")
+```
+
+---
+
+### Fase 1 — Dados migrados; revisão de qualidade pendente
+
+O contrato atual usa `classe`, `acento: { tipo, posicao, letra }` e `faseAcento`; a proposta antiga de `acento` como símbolo separado de `posicaoAcento` não corresponde ao formato implementado.
+
+A classificação e os metadados já foram preenchidos em parte do banco. Verificar consistência por palavra antes de usar esses campos em indicadores ou migrar VSA. A Fábrica de Acentos já deriva `PHASES` de `HYWords`; não repetir essa migração. `acentos.js` ainda conserva o banco anterior como legado deprecated, além das tabelas ativas.
+
+### Fase 2 — Componentes compartilhados implementados
+
+Os quatro componentes já estão em `utils/challenges/` e expõem `window.HYChallenges`. As páginas dos seis consumidores carregam esses scripts com `type="text/babel"` após Babel e antes de `main.js`.
+
+Detetives da Ortografia e Escola de Magia VSA já usam `HYChallenges.Match`, `.Connect`, `.Intruder` e `.Sentence`; a prova de conceito e expansão para a família foram executadas. Manter a interface e a ordem de carregamento. Novas migrações dependem de compatibilidade real com a mecânica; não há tarefa pendente de criar novamente esses arquivos.
+
+### Fase 3 — (Futuro) Novos domínios
+
+Com a arquitetura pronta, criar `utils/matematica.js` (ou similar) com desafios de matemática que reutilizam os mesmos componentes `ChallengeMatch`, `ChallengeConnect`, etc.
+
+---
+
+### Regras que devem ser seguidas durante toda a refatoração
+
+- **Nunca executar comandos git** — controle de versão é manual pelo usuário
+- **Nunca apagar código** sem garantir que o arquivo de origem foi atualizado para referenciar o novo arquivo
+- **Jogos React+Babel**: ordem de scripts é rígida; `<script type="text/babel" src="main.js">` nunca deve ser alterado
+- **Testar no Live Server** após cada fase — o preview interno do Claude Code não funciona para jogos React+Babel
+- **Pedir QA ao usuário** após cada jogo migrado antes de avançar
+- **Trabalhar em fases verificáveis** — não migrar todos os jogos de uma vez

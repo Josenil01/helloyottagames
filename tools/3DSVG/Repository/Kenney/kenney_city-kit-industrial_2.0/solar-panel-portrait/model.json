@@ -1,0 +1,44 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "solar-panel-portrait",
+  "pack": "kenney_city-kit-industrial_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "950f4f891ebd05a2affac810e6eeb0fea1511bc39039b65a3cbf2e17d17bc6a2",
+    "Models/Textures/variation-a.png": "eb8c1f4d904d3337ee14deb0b66f19b7da17d77d8217d896199caee43e3eadd1",
+    "Models/Textures/variation-b.png": "8f6e7998bc075f176c2395a100c43344ed21f052587325c62402704d2b38d1ff",
+    "Models/Textures/variation-c.png": "7234a1ca5cb7a2de90ef8ebc760abb98fb269b6364235343175249824a4689b4",
+    "Models/FBX format/solar-panel-portrait.fbx": "aae09a6d7e1dbaed9d234f8a41dafc53a18b0d9741779c2665de749ab2fe9ba7",
+    "Models/GLB format/Textures/colormap.png": "950f4f891ebd05a2affac810e6eeb0fea1511bc39039b65a3cbf2e17d17bc6a2",
+    "Models/GLB format/solar-panel-portrait.glb": "e48f998ef08510001b4a233c09a9c6e77ad8d5cb5dc32d543aa7f69bc2125e04",
+    "Models/OBJ format/Textures/colormap.png": "950f4f891ebd05a2affac810e6eeb0fea1511bc39039b65a3cbf2e17d17bc6a2",
+    "Models/OBJ format/solar-panel-portrait.obj": "362939f6a6327f06e125c4bd4c7fb257c1af84909f3319ae82d6e25c51c151e4",
+    "Models/OBJ format/solar-panel-portrait.mtl": "b7545e693bc7154f752f3d87798cbd41bce92c35b018eb5621ce8780fbf08bd4",
+    "Previews/solar-panel-portrait.png": "0ba851c05c28a877c38373bb3712473a6bd91129e7e46aa64647fffcf82a54aa"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "950f4f891ebd05a2affac810e6eeb0fea1511bc39039b65a3cbf2e17d17bc6a2",
+    "Textures/FBX/variation-a.png": "eb8c1f4d904d3337ee14deb0b66f19b7da17d77d8217d896199caee43e3eadd1",
+    "Textures/FBX/variation-b.png": "8f6e7998bc075f176c2395a100c43344ed21f052587325c62402704d2b38d1ff",
+    "Textures/FBX/variation-c.png": "7234a1ca5cb7a2de90ef8ebc760abb98fb269b6364235343175249824a4689b4",
+    "FBX format/solar-panel-portrait.fbx": "aae09a6d7e1dbaed9d234f8a41dafc53a18b0d9741779c2665de749ab2fe9ba7",
+    "Textures/GLB/colormap.png": "950f4f891ebd05a2affac810e6eeb0fea1511bc39039b65a3cbf2e17d17bc6a2",
+    "Textures/GLB/variation-a.png": "eb8c1f4d904d3337ee14deb0b66f19b7da17d77d8217d896199caee43e3eadd1",
+    "Textures/GLB/variation-b.png": "8f6e7998bc075f176c2395a100c43344ed21f052587325c62402704d2b38d1ff",
+    "Textures/GLB/variation-c.png": "7234a1ca5cb7a2de90ef8ebc760abb98fb269b6364235343175249824a4689b4",
+    "GLB format/solar-panel-portrait.glb": "e48f998ef08510001b4a233c09a9c6e77ad8d5cb5dc32d543aa7f69bc2125e04",
+    "Textures/OBJ/colormap.png": "950f4f891ebd05a2affac810e6eeb0fea1511bc39039b65a3cbf2e17d17bc6a2",
+    "Textures/OBJ/variation-a.png": "eb8c1f4d904d3337ee14deb0b66f19b7da17d77d8217d896199caee43e3eadd1",
+    "Textures/OBJ/variation-b.png": "8f6e7998bc075f176c2395a100c43344ed21f052587325c62402704d2b38d1ff",
+    "Textures/OBJ/variation-c.png": "7234a1ca5cb7a2de90ef8ebc760abb98fb269b6364235343175249824a4689b4",
+    "OBJ format/solar-panel-portrait.mtl": "0ebf82c93079d66986a3bfbcd65e3d5b34dc63131f32faad2042d2da4d4f5a86",
+    "OBJ format/solar-panel-portrait.obj": "5eeae9b70260310d4d9d159688eae9bd3619aa4e858277e8f209a82604afbd4c",
+    "Preview.png": "0ba851c05c28a877c38373bb3712473a6bd91129e7e46aa64647fffcf82a54aa"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-slant-high",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-slant-high.fbx": "841431366eb11a0828a9967b92200749645ad125b86e64888b22a99d60e9e4dd",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-slant-high.glb": "ecd06a3227745a7967a886ca80c6b467ca29430c17119334b6e1a26c4193b692",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-slant-high.obj": "3d8aa1020adbd187bb611c834df399decc612783f5072394596db477e6f89410",
+    "Models/OBJ format/road-slant-high.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-slant-high.png": "f2a306cb13225ccfe7af5d243b7e3b76194f038aa2152711be325005c54093d4"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-slant-high.fbx": "841431366eb11a0828a9967b92200749645ad125b86e64888b22a99d60e9e4dd",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-slant-high.glb": "ecd06a3227745a7967a886ca80c6b467ca29430c17119334b6e1a26c4193b692",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-slant-high.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-slant-high.obj": "c92697ba548df2f508b4c7996c13d53d87c77dba7cb9ea8075146115f84e3bf9",
+    "Preview.png": "f2a306cb13225ccfe7af5d243b7e3b76194f038aa2152711be325005c54093d4"
+  },
+  "license": "../License.txt"
+}

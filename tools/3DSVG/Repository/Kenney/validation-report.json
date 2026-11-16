@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-10-29T20:42:55.059144+00:00",
+  "models": 4198,
+  "packs": 44,
+  "verifiedFiles": 52365,
+  "checks": [
+    "All generated file hashes",
+    "All source file hashes unchanged",
+    "Catalog model and format identity",
+    "OBJ material texture references"
+  ],
+  "renderedSamples": 10,
+  "svgRegressionExports": 48,
+  "blenderProjectsRequired": false
+}

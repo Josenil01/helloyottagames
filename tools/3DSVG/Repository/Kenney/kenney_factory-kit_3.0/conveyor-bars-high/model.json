@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "conveyor-bars-high",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/conveyor-bars-high.fbx": "fcea1f645d9af6da191cab2d0d3ad25ac4a7db531ba7444a26f7c95d34f80d85",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/conveyor-bars-high.glb": "30c2f49b5c003e592337384d6fc469bea1b520f4cce6e32edf0e2eada22c3c3e",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/conveyor-bars-high.obj": "fd41e0956cec8f17e4bdff0c9c046bcd2bee79211d3b2352dedbb7c1aeaa987b",
+    "Models/OBJ format/conveyor-bars-high.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/conveyor-bars-high.png": "6bdacdd120ba1d0f2cb03e10290c3ebc717f68cfd9c07b700e4e99224e9ef395"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/conveyor-bars-high.fbx": "fcea1f645d9af6da191cab2d0d3ad25ac4a7db531ba7444a26f7c95d34f80d85",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/conveyor-bars-high.glb": "30c2f49b5c003e592337384d6fc469bea1b520f4cce6e32edf0e2eada22c3c3e",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/conveyor-bars-high.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/conveyor-bars-high.obj": "940c7d424caf19bf1b3b091cd73a3f423c2ff419fa33a26454054cd3aea1ba4d",
+    "Preview.png": "6bdacdd120ba1d0f2cb03e10290c3ebc717f68cfd9c07b700e4e99224e9ef395"
+  },
+  "license": "../License.txt"
+}

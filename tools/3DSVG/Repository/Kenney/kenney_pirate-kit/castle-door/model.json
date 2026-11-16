@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "castle-door",
+  "pack": "kenney_pirate-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/FBX format/castle-door.fbx": "ccf6a7feff22189d1d334131826de38a4eb957a3f1a6dd35796d1c50b787b0ff",
+    "Models/GLB format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/GLB format/castle-door.glb": "e91a7c08e36a1ca5d85189f8b375c6dc9ac27a4b6567d64d0bc3b517ab68cbbd",
+    "Models/OBJ format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/OBJ format/castle-door.obj": "d45535786f7d3baca8792d5df8b7b8e2988ca74dcb49720a15fe0ed5c7b30fbf",
+    "Models/OBJ format/castle-door.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/castle-door.png": "3ba0d88269b6f91c68ef1314a468191bd345f4bb1a65e22cd0fcbb26197ef319"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "FBX format/castle-door.fbx": "ccf6a7feff22189d1d334131826de38a4eb957a3f1a6dd35796d1c50b787b0ff",
+    "Textures/GLB/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "GLB format/castle-door.glb": "e91a7c08e36a1ca5d85189f8b375c6dc9ac27a4b6567d64d0bc3b517ab68cbbd",
+    "Textures/OBJ/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "OBJ format/castle-door.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/castle-door.obj": "250b10a042e36b5787be144ba3ed6047de3d18cfdb9d73fd69b7d071403373c1",
+    "Preview.png": "3ba0d88269b6f91c68ef1314a468191bd345f4bb1a65e22cd0fcbb26197ef319"
+  },
+  "license": "../License.txt"
+}

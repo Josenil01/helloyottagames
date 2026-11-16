@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "block-moving",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/block-moving.fbx": "bc15add45e216feac8c42fd14ff607ebe2c807cf07bb859384d57b7e4521de2e",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/block-moving.glb": "ea5265849096b61631a06e21917775a8f0c865d5974e5d1d7ab7b4240d985e60",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/block-moving.obj": "75063b6db8020a845a53f3f7ebbea6b193de7e99ec87a05b72788a8bce21f340",
+    "Models/OBJ format/block-moving.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/block-moving.png": "45e8a82a5d44c87eba7a6528a07ab2d3e2468f6bf21464a0708cf172666c8053"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/block-moving.fbx": "bc15add45e216feac8c42fd14ff607ebe2c807cf07bb859384d57b7e4521de2e",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/block-moving.glb": "ea5265849096b61631a06e21917775a8f0c865d5974e5d1d7ab7b4240d985e60",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/block-moving.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/block-moving.obj": "9ba397ff2910a8cdbe93f39aa7f0ef37e3eb36792786ef188768358cb68b9218",
+    "Preview.png": "45e8a82a5d44c87eba7a6528a07ab2d3e2468f6bf21464a0708cf172666c8053"
+  },
+  "license": "../License.txt"
+}

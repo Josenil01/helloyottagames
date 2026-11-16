@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-train-front",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-train-front.fbx": "9b2847f3d422694214aad4a93d21e700162e4ac6ec7d923ec94fa185db9eda2b",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-train-front.glb": "93ba6d909e281ac8ea9071e1f3b7138a6e806c5f829d520dc42125450ea97b39",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-train-front.obj": "bbf2fdbb45b0cc59178ce6f6b5f8fd8e5bbc0bf0df8debfa7d5097b45570a219",
+    "Models/OBJ format/coaster-train-front.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-train-front.png": "500be636d1eab25dca856867a006f351b462934a30b3ea2cbccb4e8fac551532"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-train-front.fbx": "9b2847f3d422694214aad4a93d21e700162e4ac6ec7d923ec94fa185db9eda2b",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-train-front.glb": "93ba6d909e281ac8ea9071e1f3b7138a6e806c5f829d520dc42125450ea97b39",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-train-front.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-train-front.obj": "e3ba95ddda930cf7685fb189fbfd6ac21e195b577837c90c789d1117cc1ecd67",
+    "Preview.png": "500be636d1eab25dca856867a006f351b462934a30b3ea2cbccb4e8fac551532"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stoolBar",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/stoolBar.fbx": "ef0cb173307d9fd46e9d37ae7e82d8f5f7f4ea4c79effe680baceb92b0b96585",
+    "Models/GLTF format/stoolBar.glb": "a86167a9f92401a61fec7e509ad089ecc552d0f299743add3aeb919acb24e341",
+    "Models/OBJ format/stoolBar.obj": "e5ea085e6011f4047cd0490ff022e474d88bc270906cc97bcc2cb8ab0566e804",
+    "Models/OBJ format/stoolBar.mtl": "1153157e639a95f01be9266437a34d8aff562b07a019f3fec1e923f1c505aaf6"
+  },
+  "files": {
+    "FBX format/stoolBar.fbx": "ef0cb173307d9fd46e9d37ae7e82d8f5f7f4ea4c79effe680baceb92b0b96585",
+    "GLB format/stoolBar.glb": "a86167a9f92401a61fec7e509ad089ecc552d0f299743add3aeb919acb24e341",
+    "OBJ format/stoolBar.mtl": "d178c6b62d225b4257ff27a758fd23b47a3f722fa5c757a0cc56d1881752cdec",
+    "OBJ format/stoolBar.obj": "268a7d55c14f13815c90073208817caf061e876d07be7fc7e4f00163d426040e"
+  },
+  "license": "../License.txt"
+}

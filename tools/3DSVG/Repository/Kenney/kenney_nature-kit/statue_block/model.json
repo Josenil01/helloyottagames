@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "statue_block",
+  "pack": "kenney_nature-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/statue_block.fbx": "ef39576895bd52a29f6c8b290e27d6329222c8e0a8b11ee891dd3c98db9378de",
+    "Models/GLTF format/statue_block.glb": "5caa9f4d0ede962d36f78355b73e59c88e4c978ba4ef44e6df6e52d484c60bac",
+    "Models/OBJ format/statue_block.obj": "963dc3bec68d46477ee5e5bfa946f484541a604487ef0500d2c019547121cb6d",
+    "Models/OBJ format/statue_block.mtl": "3a2c5542d2e4325abb7fb038b8ff12ad5254ed4599ce0682438adb3b866bba97"
+  },
+  "files": {
+    "FBX format/statue_block.fbx": "ef39576895bd52a29f6c8b290e27d6329222c8e0a8b11ee891dd3c98db9378de",
+    "GLB format/statue_block.glb": "5caa9f4d0ede962d36f78355b73e59c88e4c978ba4ef44e6df6e52d484c60bac",
+    "OBJ format/statue_block.mtl": "3a2c5542d2e4325abb7fb038b8ff12ad5254ed4599ce0682438adb3b866bba97",
+    "OBJ format/statue_block.obj": "fe07cca12f4a2a0305cafeec2721c2c73bc658256a464ff45ea18f8a68dbaf09"
+  },
+  "license": "../License.txt"
+}

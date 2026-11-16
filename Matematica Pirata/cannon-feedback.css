@@ -1,0 +1,12 @@
+.pirate-cannon-feedback { position: absolute; inset: 0; z-index: 30; pointer-events: none; overflow: hidden; background: linear-gradient(#4299e1f5, #2b6cb0fa); }
+.pirate-hit-label { position: absolute; top: 12px; left: 0; right: 0; text-align: center; color: #fff9b0; font-size: clamp(18px, 3vw, 30px); text-shadow: 0 2px #164e63; }
+.pirate-feedback-ship { position: absolute; width: clamp(110px, 20vw, 200px); left: 8%; bottom: 12%; animation: pirate-recoil .3s ease-in-out; }
+.pirate-feedback-ship svg { display: block; width: 100%; }
+.pirate-feedback-cannon { position: absolute; top: 68%; right: -5%; width: 26%; height: 14%; border: 2px solid #18181b; background: #27272a; border-radius: 0 20px 20px 0; }
+.pirate-feedback-cannon span { position: absolute; right: -24px; top: -12px; font-size: 30px; }
+.pirate-feedback-barrel { position: absolute; right: 10%; bottom: 16%; font-size: clamp(46px, 8vw, 80px); }
+.pirate-feedback-ball { position: absolute; top: 0; left: 0; width: 18px; height: 18px; background: radial-gradient(circle at 30% 30%, #4b5563, #000); border-radius: 50%; }
+.pirate-barrel-explode { animation: pirate-barrel-explode .5s ease-out forwards; }
+@keyframes pirate-recoil { 0%,100% { transform: translateX(0); } 50% { transform: translateX(-20px); } }
+@keyframes pirate-barrel-explode { 0% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.5) rotate(20deg); opacity: .8; } 100% { transform: scale(0); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .pirate-feedback-ship, .pirate-barrel-explode { animation: none; } .pirate-feedback-ball { display: none; } }

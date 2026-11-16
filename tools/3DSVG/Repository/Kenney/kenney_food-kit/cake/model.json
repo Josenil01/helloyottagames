@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cake",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/cake.fbx": "6bec580752c63d169d6c452936eba6860ca4f447627f3c566f24731b7eb0e474",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/cake.glb": "9594766d701142c4f5ab1d36cc40957667cd966281757e887de4d40557e63e09",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/cake.obj": "e4d50ca630f1a2b86204751b12f9abeceef7e7e6417fa492e312fa683284e5da",
+    "Models/OBJ format/cake.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cake.png": "f1d1f8879d7671b1c1228a736b754b29168f16e905c87369b7a57996dc420d0a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/cake.fbx": "6bec580752c63d169d6c452936eba6860ca4f447627f3c566f24731b7eb0e474",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/cake.glb": "9594766d701142c4f5ab1d36cc40957667cd966281757e887de4d40557e63e09",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/cake.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cake.obj": "022681195c01e703bb226c539d02295fbe057a822e9eb3de821b832862159760",
+    "Preview.png": "f1d1f8879d7671b1c1228a736b754b29168f16e905c87369b7a57996dc420d0a"
+  },
+  "license": "../License.txt"
+}

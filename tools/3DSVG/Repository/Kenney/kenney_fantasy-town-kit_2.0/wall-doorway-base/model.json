@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-doorway-base",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/wall-doorway-base.fbx": "0584b7873d6b523e23c16c96c5610b2627e587806d6a62c8458bbacea605fe6a",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/wall-doorway-base.glb": "4e2629d59e471e96c6661e29044cd32567191745671d00d75666328b2c7e1a05",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/wall-doorway-base.obj": "680752cb604560ccae7eb44ce072de2ea790f22670f40db9958c86e6eb911130",
+    "Models/OBJ format/wall-doorway-base.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-doorway-base.png": "84f202d74b711f1eab9f2f3f2df63c8de09ebea7822a8a44a273b07451acd1fb"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/wall-doorway-base.fbx": "0584b7873d6b523e23c16c96c5610b2627e587806d6a62c8458bbacea605fe6a",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/wall-doorway-base.glb": "4e2629d59e471e96c6661e29044cd32567191745671d00d75666328b2c7e1a05",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/wall-doorway-base.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-doorway-base.obj": "caa128f0269205f90395bb8f2f7514e34c8fdfacbc9801ebe9294b53a8c447f0",
+    "Preview.png": "84f202d74b711f1eab9f2f3f2df63c8de09ebea7822a8a44a273b07451acd1fb"
+  },
+  "license": "../License.txt"
+}

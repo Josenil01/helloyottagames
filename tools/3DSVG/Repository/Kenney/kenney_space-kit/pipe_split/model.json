@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pipe_split",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/pipe_split.fbx": "154d9c52936fb31c8b215111bd9bd028da2ad153e420093016fecc0b9b278b98",
+    "Models/GLTF format/pipe_split.glb": "e8a8f5ee14f61407eb874276f077818f706f8eaaafd71f205fb83b1763b73cb3",
+    "Models/OBJ format/pipe_split.obj": "b91780429c793aa6e32ab789ae3a489572ae1d04710f4bc9ed780030d6d12a43",
+    "Models/OBJ format/pipe_split.mtl": "c556ee9f958b045e1576177bf7725624958a6c75329d8ff32886a59031ae0813"
+  },
+  "files": {
+    "FBX format/pipe_split.fbx": "154d9c52936fb31c8b215111bd9bd028da2ad153e420093016fecc0b9b278b98",
+    "GLB format/pipe_split.glb": "e8a8f5ee14f61407eb874276f077818f706f8eaaafd71f205fb83b1763b73cb3",
+    "OBJ format/pipe_split.mtl": "c556ee9f958b045e1576177bf7725624958a6c75329d8ff32886a59031ae0813",
+    "OBJ format/pipe_split.obj": "30a7a7f98f4474ec152543307849281a907c6973c8475ea00a7878c9fdc1fb6f"
+  },
+  "license": "../License.txt"
+}

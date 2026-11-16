@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "toilet",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/toilet.fbx": "5cfddce7b35406c2ebf995133bac95b3bdae8e5cce39a24eaf6a0c148d5258c3",
+    "Models/GLTF format/toilet.glb": "16165cfd03c56c2cb443b800570810a22ef770f65e7a468f6761d9dc14eaaeae",
+    "Models/OBJ format/toilet.obj": "c4f8a6549289cef202a011d4b2a46ddae87013e609822f432d52a2030416efd6",
+    "Models/OBJ format/toilet.mtl": "fad9c63320e5f1646b355542414f6a105e68c216755a26f7962b2c5f1384fd14"
+  },
+  "files": {
+    "FBX format/toilet.fbx": "5cfddce7b35406c2ebf995133bac95b3bdae8e5cce39a24eaf6a0c148d5258c3",
+    "GLB format/toilet.glb": "16165cfd03c56c2cb443b800570810a22ef770f65e7a468f6761d9dc14eaaeae",
+    "OBJ format/toilet.mtl": "2d192dec1db5d42593edc8887ec32ee26944034dffcf5ced63816985a688a157",
+    "OBJ format/toilet.obj": "56f621187e859e969bd0f35648a57ea2dc7195b3d690d4d1f9499688469e1b1f"
+  },
+  "license": "../License.txt"
+}

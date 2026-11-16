@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "debris-drivetrain-axle",
+  "pack": "kenney_car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/FBX format/debris-drivetrain-axle.fbx": "6390ec331d39e68821c72d6900a884981a60b2d16ee00c21176b7902ec8f0266",
+    "Models/GLB format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/GLB format/debris-drivetrain-axle.glb": "5ac6335574ba941e8afa827a377d667686541668b71192972179b5439e53bf78",
+    "Models/OBJ format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/OBJ format/debris-drivetrain-axle.obj": "32e2da5ad76a80f5f220a6dfe1a1239e09bc96fc72bf7e5cb533b87537c8aa6d",
+    "Models/OBJ format/debris-drivetrain-axle.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/debris-drivetrain-axle.png": "a472bb526910e26fe8ecd1a10ab5a57b8e415304b8e61a243e0bbdb5970f792b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "FBX format/debris-drivetrain-axle.fbx": "6390ec331d39e68821c72d6900a884981a60b2d16ee00c21176b7902ec8f0266",
+    "Textures/GLB/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "GLB format/debris-drivetrain-axle.glb": "5ac6335574ba941e8afa827a377d667686541668b71192972179b5439e53bf78",
+    "Textures/OBJ/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "OBJ format/debris-drivetrain-axle.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/debris-drivetrain-axle.obj": "232267668bd64568873214c91b2c77a90a4120f700ba1a283bef697210389ab2",
+    "Preview.png": "a472bb526910e26fe8ecd1a10ab5a57b8e415304b8e61a243e0bbdb5970f792b"
+  },
+  "license": "../License.txt"
+}

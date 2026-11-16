@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "fence-rope",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/fence-rope.fbx": "444bd8ec8e3372849819bb000c2607f1e91f3e720fbc233f7c46f02dd7919354",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/fence-rope.glb": "589a777cd88bd301dfc86de01fa7821ebbd4c6aff82f3c59e2c09076506ccd37",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/fence-rope.obj": "bfa126b0da2a7153d6367f3838923789fdd02a6abedb25736ac14f8940caea30",
+    "Models/OBJ format/fence-rope.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/fence-rope.png": "d5a843abce57c2c2afa74830f1e80446e6ec2791a321e9c9427fee09b0c6bf35"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/fence-rope.fbx": "444bd8ec8e3372849819bb000c2607f1e91f3e720fbc233f7c46f02dd7919354",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/fence-rope.glb": "589a777cd88bd301dfc86de01fa7821ebbd4c6aff82f3c59e2c09076506ccd37",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/fence-rope.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/fence-rope.obj": "2af0dda29c01221c15723800727de02b06ba7286a2948a67ca0ba42a27dc55eb",
+    "Preview.png": "d5a843abce57c2c2afa74830f1e80446e6ec2791a321e9c9427fee09b0c6bf35"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "boat-row-large",
+  "pack": "kenney_watercraft-pack",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/FBX format/boat-row-large.fbx": "b90dcf650891b1389d786c400f198fedb7efee49ba8d94a8167e391cd1c83e26",
+    "Models/GLB format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/GLB format/boat-row-large.glb": "25eed6585c7398654522d338ec575509615443887362ca8e598559b4eca142a3",
+    "Models/OBJ format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/OBJ format/boat-row-large.obj": "883eb39597d2d447752c225edfd075d4ad4f8fa1f4c1bdae9f62822844b0d7b9",
+    "Models/OBJ format/boat-row-large.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/boat-row-large.png": "6a36769273d5e521552a34782e85af130987c4c381d00481dd515da36b217789"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "FBX format/boat-row-large.fbx": "b90dcf650891b1389d786c400f198fedb7efee49ba8d94a8167e391cd1c83e26",
+    "Textures/GLB/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "GLB format/boat-row-large.glb": "25eed6585c7398654522d338ec575509615443887362ca8e598559b4eca142a3",
+    "Textures/OBJ/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "OBJ format/boat-row-large.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/boat-row-large.obj": "d1f412fe9b149111a3f8bc64e7e6a656ec8e2508d280453b8f4077654cb300d8",
+    "Preview.png": "6a36769273d5e521552a34782e85af130987c4c381d00481dd515da36b217789"
+  },
+  "license": "../License.txt"
+}

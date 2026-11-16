@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "fence-low-broken",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/fence-low-broken.fbx": "72eb18493a0992a8fd7a437d7f24d1a2ef974eadbd8aabff984ab05e7b535c6e",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/fence-low-broken.glb": "66dba1e1a7dac0678906f40f8d3bed103276067ac5e1362e16b047954182818f",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/fence-low-broken.obj": "4d7d37f67ac425125246638a76a3e3d179fab935cc508db9a98ea5feed6febf4",
+    "Models/OBJ format/fence-low-broken.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/fence-low-broken.png": "18bf3a2f3bebbd0706ce45a41d64dd75abd9969feda1008ef84f6d12a3720ca7"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/fence-low-broken.fbx": "72eb18493a0992a8fd7a437d7f24d1a2ef974eadbd8aabff984ab05e7b535c6e",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/fence-low-broken.glb": "66dba1e1a7dac0678906f40f8d3bed103276067ac5e1362e16b047954182818f",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/fence-low-broken.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/fence-low-broken.obj": "95ce4e40d72fda372e7264b22d9dbf586c2f8e7266605d5bedd7ca3a61ca3e7e",
+    "Preview.png": "18bf3a2f3bebbd0706ce45a41d64dd75abd9969feda1008ef84f6d12a3720ca7"
+  },
+  "license": "../License.txt"
+}

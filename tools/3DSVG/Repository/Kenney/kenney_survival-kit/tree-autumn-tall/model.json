@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tree-autumn-tall",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/tree-autumn-tall.fbx": "d130c63c6e80d8dcb4c8bceaa8ff7b9b04c897354df3ef3ad97009f971d8202a",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/tree-autumn-tall.glb": "4d06aab26b6a4decf3888d637b6d3bb5199ecace33cb914fac1afdc2718ab2f9",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/tree-autumn-tall.obj": "cfc3d611ec4a2332bd059e83a76b3f008482be55650ac60177c7aceb44c97619",
+    "Models/OBJ format/tree-autumn-tall.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tree-autumn-tall.png": "5529b8a91a66fcb5dcfbfac29d54c1a0df4213eb8e1171ed78c8f0dbe4901adf"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/tree-autumn-tall.fbx": "d130c63c6e80d8dcb4c8bceaa8ff7b9b04c897354df3ef3ad97009f971d8202a",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/tree-autumn-tall.glb": "4d06aab26b6a4decf3888d637b6d3bb5199ecace33cb914fac1afdc2718ab2f9",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/tree-autumn-tall.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tree-autumn-tall.obj": "f9d85063ac591d5bbf9304026428486ced7b421ef2cbccb0aa5f2a947c06728d",
+    "Preview.png": "5529b8a91a66fcb5dcfbfac29d54c1a0df4213eb8e1171ed78c8f0dbe4901adf"
+  },
+  "license": "../License.txt"
+}

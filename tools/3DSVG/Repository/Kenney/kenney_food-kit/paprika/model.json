@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "paprika",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/paprika.fbx": "2a768031639e1888bab62573e2b9995bfca99be39528f2ee95934af804473098",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/paprika.glb": "7f98fa7f5a55331629706f4fc6b5b476ea32f26cab6cd25b944891fd30064f13",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/paprika.obj": "7e64379440cad4ebfb8c713fb7db6a2dae6734d90d650f83048378b39c3a45f2",
+    "Models/OBJ format/paprika.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/paprika.png": "e38948fdd6bdc70eb1464608558351c4213845f440d762b29789ed4b5b9a5c65"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/paprika.fbx": "2a768031639e1888bab62573e2b9995bfca99be39528f2ee95934af804473098",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/paprika.glb": "7f98fa7f5a55331629706f4fc6b5b476ea32f26cab6cd25b944891fd30064f13",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/paprika.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/paprika.obj": "badc2f75b7cf50badf5a308ebc79785ea6b256897e52edba0a3301cc0517a287",
+    "Preview.png": "e38948fdd6bdc70eb1464608558351c4213845f440d762b29789ed4b5b9a5c65"
+  },
+  "license": "../License.txt"
+}

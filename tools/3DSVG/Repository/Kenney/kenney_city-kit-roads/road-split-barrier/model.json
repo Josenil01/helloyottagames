@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-split-barrier",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-split-barrier.fbx": "227be9423fddc9f3a18b00c00dc14014a29a5235bd1f5eebd62f3627b7d112df",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-split-barrier.glb": "574e9ea5ae31b80ba02442d9c5f801877a75f0596e129a090e2ec540d8421a7b",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-split-barrier.obj": "19c6e620a4f980b6e79ee9c356cf6d96643244cd46d42eea8dd029259b0a1e15",
+    "Models/OBJ format/road-split-barrier.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-split-barrier.png": "dfcb4e89d161e0559b056027473c3b51afda9a7182982e734bd7d205d4aab2a1"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-split-barrier.fbx": "227be9423fddc9f3a18b00c00dc14014a29a5235bd1f5eebd62f3627b7d112df",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-split-barrier.glb": "574e9ea5ae31b80ba02442d9c5f801877a75f0596e129a090e2ec540d8421a7b",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-split-barrier.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-split-barrier.obj": "293ca313e764f0a39ce56b3cd86377b06b0a7fb86c956821f695dfa1adf9bb8a",
+    "Preview.png": "dfcb4e89d161e0559b056027473c3b51afda9a7182982e734bd7d205d4aab2a1"
+  },
+  "license": "../License.txt"
+}

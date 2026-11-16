@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "railroad-curve",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/railroad-curve.fbx": "c1ed4b9c2c5e0887073fa2ce035a38a5535017d7124f8fee43091d79e825de69",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/railroad-curve.glb": "2b82b46bf369a755e569f3990445b3189ad0e65c5d8ce23616d5ccfc25e54be9",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/railroad-curve.obj": "0834097d6dd61d1a308eec356bb4e4fd728594189502944071e8ff44f032095b",
+    "Models/OBJ format/railroad-curve.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/railroad-curve.png": "def11cc8b6e0bddfa874da0cdee66f213b8506c4d2d252985f8a1d8527e2ca04"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/railroad-curve.fbx": "c1ed4b9c2c5e0887073fa2ce035a38a5535017d7124f8fee43091d79e825de69",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/railroad-curve.glb": "2b82b46bf369a755e569f3990445b3189ad0e65c5d8ce23616d5ccfc25e54be9",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/railroad-curve.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/railroad-curve.obj": "270d0df6e4f8c1b39f7305d12b1a60860ce0830c7c473dfa3459c67ba6abd9d0",
+    "Preview.png": "def11cc8b6e0bddfa874da0cdee66f213b8506c4d2d252985f8a1d8527e2ca04"
+  },
+  "license": "../License.txt"
+}

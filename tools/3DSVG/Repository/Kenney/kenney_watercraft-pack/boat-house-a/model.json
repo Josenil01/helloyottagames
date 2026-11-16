@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "boat-house-a",
+  "pack": "kenney_watercraft-pack",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/FBX format/boat-house-a.fbx": "4874938c4ff0a0867cda5f68731b1da1a1e00493a401300be60e60983bd8b801",
+    "Models/GLB format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/GLB format/boat-house-a.glb": "8b912a92f6e12192fe360077377336990e214f6171cb7d68cad56feca84cdad6",
+    "Models/OBJ format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/OBJ format/boat-house-a.obj": "94e190812cd5be362e73c6f777af1352350e15c1cba902e6724a73c72550489d",
+    "Models/OBJ format/boat-house-a.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/boat-house-a.png": "324b71ccf865187a43dc27f398f500dd196da63d8882e5854b124ce4627d7fe0"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "FBX format/boat-house-a.fbx": "4874938c4ff0a0867cda5f68731b1da1a1e00493a401300be60e60983bd8b801",
+    "Textures/GLB/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "GLB format/boat-house-a.glb": "8b912a92f6e12192fe360077377336990e214f6171cb7d68cad56feca84cdad6",
+    "Textures/OBJ/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "OBJ format/boat-house-a.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/boat-house-a.obj": "c2f1a2acfaf13a65a205583717f64d635b136fef99fe4d572a8c9f9a831f6560",
+    "Preview.png": "324b71ccf865187a43dc27f398f500dd196da63d8882e5854b124ce4627d7fe0"
+  },
+  "license": "../License.txt"
+}

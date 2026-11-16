@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "round-hq-plate-1x4",
+  "pack": "kenney_brick-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/FBX format/round-hq-plate-1x4.fbx": "7c248f95191cc5d176494a4fdc0d9993606aa4dc3dea01c9c452de95f45d48ea",
+    "Models/GLB format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/GLB format/round-hq-plate-1x4.glb": "efeddeb4dacce134ba30d111e278aef0c023970f808990ac21c9199b0e1251e6",
+    "Models/OBJ format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/OBJ format/round-hq-plate-1x4.obj": "7db8fdce665e4a8f19699d70a1f2166afda870bab92f7941bc4ccc0808a54f1a",
+    "Models/OBJ format/round-hq-plate-1x4.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/round-hq-plate-1x4.png": "dd7c986306ddd4bf77bea4bc38ae9db814aff5e00affe6812d58dbc3ab1df375"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "FBX format/round-hq-plate-1x4.fbx": "7c248f95191cc5d176494a4fdc0d9993606aa4dc3dea01c9c452de95f45d48ea",
+    "Textures/GLB/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "GLB format/round-hq-plate-1x4.glb": "efeddeb4dacce134ba30d111e278aef0c023970f808990ac21c9199b0e1251e6",
+    "Textures/OBJ/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "OBJ format/round-hq-plate-1x4.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/round-hq-plate-1x4.obj": "fb3e5709a570c90cf1802bef82827898204a3926d47e7ca56a76c47f2faa5f96",
+    "Preview.png": "dd7c986306ddd4bf77bea4bc38ae9db814aff5e00affe6812d58dbc3ab1df375"
+  },
+  "license": "../License.txt"
+}

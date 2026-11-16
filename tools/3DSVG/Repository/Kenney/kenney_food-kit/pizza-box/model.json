@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pizza-box",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/pizza-box.fbx": "8e7337873dfd56770570d8aa784d6cdee6110a2b96b5fb063752bbbba6214643",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/pizza-box.glb": "6762e9233d74f720486630eb043e7f65cf0f437c6ac77f8b037b7bed2c4ddd23",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/pizza-box.obj": "636873fefef0500ab08be318ce9075636ebe9227185154a2bb66d5ec9bd35713",
+    "Models/OBJ format/pizza-box.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/pizza-box.png": "2167eb4b0150e781abbfe0963d17b08c4652982737748800786133fdccb6c4e8"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/pizza-box.fbx": "8e7337873dfd56770570d8aa784d6cdee6110a2b96b5fb063752bbbba6214643",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/pizza-box.glb": "6762e9233d74f720486630eb043e7f65cf0f437c6ac77f8b037b7bed2c4ddd23",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/pizza-box.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/pizza-box.obj": "458bea7f5b7fc7c0f615f2ce86a2c6baa0d73a9632c6499fb6c2f69c936583e1",
+    "Preview.png": "2167eb4b0150e781abbfe0963d17b08c4652982737748800786133fdccb6c4e8"
+  },
+  "license": "../License.txt"
+}

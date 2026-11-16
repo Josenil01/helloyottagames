@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "apple",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/apple.fbx": "077ac7cafd0e03c14023649fc9098163a16a16d03c15377b1c9d7feac01fde9e",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/apple.glb": "2a80ab65d5bc2cb4f2bca1e8176cbb591849a288596d4b2e76e411338761a526",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/apple.obj": "cb8d02f0860a426bdefa373d748ab6f4a65cfbbd757db3275e68738cdd2fa5ad",
+    "Models/OBJ format/apple.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/apple.png": "1fa189f9f6e88750743c93e97e548d70a3765c7fb2446edd5ed6355ffabb3259"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/apple.fbx": "077ac7cafd0e03c14023649fc9098163a16a16d03c15377b1c9d7feac01fde9e",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/apple.glb": "2a80ab65d5bc2cb4f2bca1e8176cbb591849a288596d4b2e76e411338761a526",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/apple.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/apple.obj": "f9efef616e05c8e1b09163b61da9af453c17c4ac6d4dd24a73c442b75af3c598",
+    "Preview.png": "1fa189f9f6e88750743c93e97e548d70a3765c7fb2446edd5ed6355ffabb3259"
+  },
+  "license": "../License.txt"
+}

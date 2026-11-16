@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tent-canvas-half",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/tent-canvas-half.fbx": "11c2614fdd548992c35d24a706a9349322495d8792f27df72057a03ef206490d",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/tent-canvas-half.glb": "f6e12c0de280a9d5e93e27652a3e80ea620374865a6053dbe6fd5fb7eaca9d93",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/tent-canvas-half.obj": "48f35b67256fb2698ebd1b068242bd225e55b40339112ff6e04fbeafa951893d",
+    "Models/OBJ format/tent-canvas-half.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tent-canvas-half.png": "e1abd64dc5f6d2352c67cbe713a46c3f74051298ce909fb2eb10fbf68ded43dc"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/tent-canvas-half.fbx": "11c2614fdd548992c35d24a706a9349322495d8792f27df72057a03ef206490d",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/tent-canvas-half.glb": "f6e12c0de280a9d5e93e27652a3e80ea620374865a6053dbe6fd5fb7eaca9d93",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/tent-canvas-half.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tent-canvas-half.obj": "3dcf265ec8d94be362a6d2842278e464eeece07273e794d23f8a8d88c34abe6e",
+    "Preview.png": "e1abd64dc5f6d2352c67cbe713a46c3f74051298ce909fb2eb10fbf68ded43dc"
+  },
+  "license": "../License.txt"
+}

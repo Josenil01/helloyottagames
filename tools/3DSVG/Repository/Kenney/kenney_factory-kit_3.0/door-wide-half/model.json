@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "door-wide-half",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/door-wide-half.fbx": "dc295b76457ea01ad2374f5f0387c792a0c56a433c72b740c1dfb7f40dff1cb8",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/door-wide-half.glb": "14642cac23d48dc324ac9a520eae1267cc9c5e017c877d0474ef66ab018af479",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/door-wide-half.obj": "b0d0b671f16ea9e6b056873a01d96999435357bd4101327fcc49273577cc2fd0",
+    "Models/OBJ format/door-wide-half.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/door-wide-half.png": "46845e9f86df848994c99f39b560a36a56874fb3b9375f667abcb412e9adf15e"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/door-wide-half.fbx": "dc295b76457ea01ad2374f5f0387c792a0c56a433c72b740c1dfb7f40dff1cb8",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/door-wide-half.glb": "14642cac23d48dc324ac9a520eae1267cc9c5e017c877d0474ef66ab018af479",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/door-wide-half.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/door-wide-half.obj": "5ae834d33555a273d935157666a9f844a08d9789fb2b9ac50de7e6a310de853f",
+    "Preview.png": "46845e9f86df848994c99f39b560a36a56874fb3b9375f667abcb412e9adf15e"
+  },
+  "license": "../License.txt"
+}

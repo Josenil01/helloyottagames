@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "signpost",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/signpost.fbx": "9d95f337fdb7d620eacd3783ff56a1f34119e899851183111cf3004dc088f33d",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/signpost.glb": "6d33757888c4ec9249610266ca8d60532b1138ae28fd37e93fa843ec4856fd25",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/signpost.obj": "eedd82df87c082d63a6f3464bfa35397ccfff799bdf6fafbc0d75a7fb14a4f9c",
+    "Models/OBJ format/signpost.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/signpost.png": "a27a6dc574a0d3baa7e610420a7a9ffac2a0ff6056d59b270bb36ac81d686062"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/signpost.fbx": "9d95f337fdb7d620eacd3783ff56a1f34119e899851183111cf3004dc088f33d",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/signpost.glb": "6d33757888c4ec9249610266ca8d60532b1138ae28fd37e93fa843ec4856fd25",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/signpost.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/signpost.obj": "60a8f50ff966f1a0e9b73f0c1772875dc43a272b805798f01ac9de8d69be9cb9",
+    "Preview.png": "a27a6dc574a0d3baa7e610420a7a9ffac2a0ff6056d59b270bb36ac81d686062"
+  },
+  "license": "../License.txt"
+}

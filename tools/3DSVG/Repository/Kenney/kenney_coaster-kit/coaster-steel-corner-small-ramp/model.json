@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-steel-corner-small-ramp",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-steel-corner-small-ramp.fbx": "c5bfd15a1c2afb60b1403cfd6b394bf99ddb24209cadaff1c29f90b7b7754bda",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-steel-corner-small-ramp.glb": "59428f81755fc7be823825244936bba4c3aff65488e147fcdf68c6c3c9553174",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-steel-corner-small-ramp.obj": "50d7f04b4ddc9febdb16d85b1b0280c8040e6782b36e2b8c728a8e5d79dabcd2",
+    "Models/OBJ format/coaster-steel-corner-small-ramp.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-steel-corner-small-ramp.png": "6e35c4f64126de035b3724a52f27f0451b569e7b4524523a4d34d94f23f0b353"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-steel-corner-small-ramp.fbx": "c5bfd15a1c2afb60b1403cfd6b394bf99ddb24209cadaff1c29f90b7b7754bda",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-steel-corner-small-ramp.glb": "59428f81755fc7be823825244936bba4c3aff65488e147fcdf68c6c3c9553174",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-steel-corner-small-ramp.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-steel-corner-small-ramp.obj": "c0d330c8ef23d8fbe06b9271ae6b8a2f07150526d185e246d8cfc0875d75ac71",
+    "Preview.png": "6e35c4f64126de035b3724a52f27f0451b569e7b4524523a4d34d94f23f0b353"
+  },
+  "license": "../License.txt"
+}

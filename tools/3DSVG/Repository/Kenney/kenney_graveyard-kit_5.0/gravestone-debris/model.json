@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "gravestone-debris",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/gravestone-debris.fbx": "0d24f8f322a574d3178f7d9dc76ba61011c71951a02e7b5643713ea2b3c341f6",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/gravestone-debris.glb": "b1ec5203d1372801ff0cc2b85c37f1c38a29b17b9c14360d66ee7a4febbbdd4f",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/gravestone-debris.obj": "ddbd1802586b0c8a41614ce8f7965d69539f9330812bb43c6b0a65608d3de4b4",
+    "Models/OBJ format/gravestone-debris.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/gravestone-debris.png": "3eb8f54812162f3a2befde38afd82212944478ea560d14bd80ef21e559a7e5a2"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/gravestone-debris.fbx": "0d24f8f322a574d3178f7d9dc76ba61011c71951a02e7b5643713ea2b3c341f6",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/gravestone-debris.glb": "b1ec5203d1372801ff0cc2b85c37f1c38a29b17b9c14360d66ee7a4febbbdd4f",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/gravestone-debris.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/gravestone-debris.obj": "04da3d4914c7f7ebb3de893522cc5a112252a3bbdfe4a688dc866e6688511a41",
+    "Preview.png": "3eb8f54812162f3a2befde38afd82212944478ea560d14bd80ef21e559a7e5a2"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "conveyor-sides-cross",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/conveyor-sides-cross.fbx": "4e7f80160e0a36007308ff26b3367c22f6da6ea2b4927ac127294539e9a52116",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/conveyor-sides-cross.glb": "843693066b24fbf8d4a887ab381746074f6df6610c3f6fbb03fed1267f61ca8b",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/conveyor-sides-cross.obj": "0a70e3c5f63f828be3fdca22a53f0e409a5bcb73da3bc799b361deef13a1d30d",
+    "Models/OBJ format/conveyor-sides-cross.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/conveyor-sides-cross.png": "9161c5aa507b79ab2b20229424c623e95aa5cc43fec6ee4f55fa44e5660d16a1"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/conveyor-sides-cross.fbx": "4e7f80160e0a36007308ff26b3367c22f6da6ea2b4927ac127294539e9a52116",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/conveyor-sides-cross.glb": "843693066b24fbf8d4a887ab381746074f6df6610c3f6fbb03fed1267f61ca8b",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/conveyor-sides-cross.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/conveyor-sides-cross.obj": "0a6737c1b27a7a6a55fcd86d1bbf53991b79f598c37144ddfc4e144fe28d37de",
+    "Preview.png": "9161c5aa507b79ab2b20229424c623e95aa5cc43fec6ee4f55fa44e5660d16a1"
+  },
+  "license": "../License.txt"
+}

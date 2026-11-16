@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "meat-sausage",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/meat-sausage.fbx": "3325b4e22d1be3cb36eb5fc68e285c5f90882ffe397603bd7a52c6e54458da6e",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/meat-sausage.glb": "5476fa020781ec57c9d260e40da71383dedb63e5bca6355568f2a9388d52a7ff",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/meat-sausage.obj": "6401d254db28e7029674361fbc49ba836608de5566082ab4b55167739d5bbf52",
+    "Models/OBJ format/meat-sausage.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/meat-sausage.png": "90372557b7a251809844d85f524df24a517903f2d0d84a888935d0a0a546d659"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/meat-sausage.fbx": "3325b4e22d1be3cb36eb5fc68e285c5f90882ffe397603bd7a52c6e54458da6e",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/meat-sausage.glb": "5476fa020781ec57c9d260e40da71383dedb63e5bca6355568f2a9388d52a7ff",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/meat-sausage.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/meat-sausage.obj": "cd7185d7da2972cd51a86dbce80381268bf297f054b0a6fe179fbc00bf3df083",
+    "Preview.png": "90372557b7a251809844d85f524df24a517903f2d0d84a888935d0a0a546d659"
+  },
+  "license": "../License.txt"
+}

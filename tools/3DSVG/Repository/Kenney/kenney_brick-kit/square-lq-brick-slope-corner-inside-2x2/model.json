@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "square-lq-brick-slope-corner-inside-2x2",
+  "pack": "kenney_brick-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/FBX format/square-lq-brick-slope-corner-inside-2x2.fbx": "099ed20d8b9981454ed97bfed669fd6c0e3b6054adc22ddd208080b0727f0179",
+    "Models/GLB format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/GLB format/square-lq-brick-slope-corner-inside-2x2.glb": "2b37fa94ed5803f3e101e255003297512f5e0e0398baa6ad3dc117020c15b266",
+    "Models/OBJ format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/OBJ format/square-lq-brick-slope-corner-inside-2x2.obj": "8408f0974e904678adcbd6a6d4ac34df2e675f42be52cd7b2555f61f85dffce2",
+    "Models/OBJ format/square-lq-brick-slope-corner-inside-2x2.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/square-lq-brick-slope-corner-inside-2x2.png": "72846dd5dfd21bc214dde07ec2e9d10f45366046b3145d4109e746e4638ab3f1"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "FBX format/square-lq-brick-slope-corner-inside-2x2.fbx": "099ed20d8b9981454ed97bfed669fd6c0e3b6054adc22ddd208080b0727f0179",
+    "Textures/GLB/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "GLB format/square-lq-brick-slope-corner-inside-2x2.glb": "2b37fa94ed5803f3e101e255003297512f5e0e0398baa6ad3dc117020c15b266",
+    "Textures/OBJ/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "OBJ format/square-lq-brick-slope-corner-inside-2x2.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/square-lq-brick-slope-corner-inside-2x2.obj": "d65e5ed60951590671ea5940c5d744fe38a7a2e80d297b52a38d44e82fbcf8cd",
+    "Preview.png": "72846dd5dfd21bc214dde07ec2e9d10f45366046b3145d4109e746e4638ab3f1"
+  },
+  "license": "../License.txt"
+}

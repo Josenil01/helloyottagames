@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "ice-cream",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/ice-cream.fbx": "9c10cc91251a5392da2374ce4d739b9e7df90c97265a56d360d312a9385e2b94",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/ice-cream.glb": "6258b20c40102ec4e86679e39a0618e1a025f302bf7bc8fdc618ebdd520cf83e",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/ice-cream.obj": "e6ddfe8313b12dc1c7356e0eea54b60df6e6e8f2e3b897ee2dbb32ad823f0107",
+    "Models/OBJ format/ice-cream.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/ice-cream.png": "0e376f5f0ef2829ec969d5fdaaecf4313c1e37b91f1474b08ee68990656782c1"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/ice-cream.fbx": "9c10cc91251a5392da2374ce4d739b9e7df90c97265a56d360d312a9385e2b94",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/ice-cream.glb": "6258b20c40102ec4e86679e39a0618e1a025f302bf7bc8fdc618ebdd520cf83e",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/ice-cream.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/ice-cream.obj": "c0a37e4b5a03e7316772e5cece738330e4bf06ec859ec6fdd9143a7df6bcede3",
+    "Preview.png": "0e376f5f0ef2829ec969d5fdaaecf4313c1e37b91f1474b08ee68990656782c1"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "kitchenBlender",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/kitchenBlender.fbx": "853647d49d53adb3fdbf0b4b6e82645c67fca58644b6c29425586bf31254fe34",
+    "Models/GLTF format/kitchenBlender.glb": "f471defb5b2b1cf3b949a1a8aaef0a8b727afe662b0815068cf4e963325a3c1f",
+    "Models/OBJ format/kitchenBlender.obj": "5c01a8820e4b41e5b1a88eaae08425c8459ea019c1d57d0896ad89e249d6c94c",
+    "Models/OBJ format/kitchenBlender.mtl": "78f76650586f70e59abb6d2e3a869d15a79fadff4eef528eb29ad28a3a0c9969"
+  },
+  "files": {
+    "FBX format/kitchenBlender.fbx": "853647d49d53adb3fdbf0b4b6e82645c67fca58644b6c29425586bf31254fe34",
+    "GLB format/kitchenBlender.glb": "f471defb5b2b1cf3b949a1a8aaef0a8b727afe662b0815068cf4e963325a3c1f",
+    "OBJ format/kitchenBlender.mtl": "a4a03851d6a573765fd7660bfecd95db3bf08102d608278f3227fe4a44cbfee2",
+    "OBJ format/kitchenBlender.obj": "8f14f37766d13cbba16bec7eb201d118836f3876b2f58d5e905dda3cea2f1ea1"
+  },
+  "license": "../License.txt"
+}

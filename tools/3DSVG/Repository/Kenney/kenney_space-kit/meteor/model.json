@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "meteor",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/meteor.fbx": "4cd385820e94b5dde07a88c13186683508611b516dce9839be62d67b9448d3de",
+    "Models/GLTF format/meteor.glb": "83c75071d3a48955ff3f719992f7d69dc13e915da988878bff441fd3dbb472f8",
+    "Models/OBJ format/meteor.obj": "0c0d99df405d0b1c583e395f2bbeb3b610707f175c6fa01e3adefd54a2fd7fd7",
+    "Models/OBJ format/meteor.mtl": "a820a15e18413e5db05e7bd704e2edaf8ad32f6b6e046984f404fcdb6f473566"
+  },
+  "files": {
+    "FBX format/meteor.fbx": "4cd385820e94b5dde07a88c13186683508611b516dce9839be62d67b9448d3de",
+    "GLB format/meteor.glb": "83c75071d3a48955ff3f719992f7d69dc13e915da988878bff441fd3dbb472f8",
+    "OBJ format/meteor.mtl": "a820a15e18413e5db05e7bd704e2edaf8ad32f6b6e046984f404fcdb6f473566",
+    "OBJ format/meteor.obj": "58e8edb6719a3cc2d93e4af643de7fdf2a97bb594eaaeb0eb5b3cbc70632b000"
+  },
+  "license": "../License.txt"
+}

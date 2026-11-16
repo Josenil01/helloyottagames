@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "animal-crab",
+  "pack": "kenney_cube-pets_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/FBX format/animal-crab.fbx": "630e228f1837fed0d75d59ca8e2c67c15d811d7f3e3c48e2a0d145eb25819529",
+    "Models/GLB format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/GLB format/animal-crab.glb": "80fa5fd7c3652938d9e3c3024bb97dc9391a0e174fcc8b9459b63c613ed050f6",
+    "Models/OBJ format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/OBJ format/animal-crab.obj": "ebc0fb63360326cefda753a769424d1b38b0b41945100f7619678d27328563db",
+    "Models/OBJ format/animal-crab.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/animal-crab.png": "b89ff3f907d4d88d730b271cfe0b7fb54dfbde617ae756f66a810cc658e3634a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "FBX format/animal-crab.fbx": "630e228f1837fed0d75d59ca8e2c67c15d811d7f3e3c48e2a0d145eb25819529",
+    "Textures/GLB/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "GLB format/animal-crab.glb": "80fa5fd7c3652938d9e3c3024bb97dc9391a0e174fcc8b9459b63c613ed050f6",
+    "Textures/OBJ/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "OBJ format/animal-crab.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/animal-crab.obj": "3c549f359827a9e0deda8f8e1571783420a0a1f698ea4054d6eaf2a386dbb36c",
+    "Preview.png": "b89ff3f907d4d88d730b271cfe0b7fb54dfbde617ae756f66a810cc658e3634a"
+  },
+  "license": "../License.txt"
+}

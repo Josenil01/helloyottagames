@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stall-drinks",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/stall-drinks.fbx": "500abed333c5e57cd5692b4c6ac56ae5b726bf71d3d325de89d9427609056620",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/stall-drinks.glb": "8027c20449276162a78ae0288130b5cae113009f7fddcd45712b90b6fb3f769c",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/stall-drinks.obj": "5f723ed63cffb4e192767703476648e55086d38900ee025716e5e323f2e0742f",
+    "Models/OBJ format/stall-drinks.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/stall-drinks.png": "d1e53650d0282897a8d8c38f3fcabe9488e4d054cffb2aeaec832d03bebf8ac4"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/stall-drinks.fbx": "500abed333c5e57cd5692b4c6ac56ae5b726bf71d3d325de89d9427609056620",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/stall-drinks.glb": "8027c20449276162a78ae0288130b5cae113009f7fddcd45712b90b6fb3f769c",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/stall-drinks.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/stall-drinks.obj": "830261443dce23a0aa0881885913dac4ec7c7b5b95787053ed2f71deacb9ff7d",
+    "Preview.png": "d1e53650d0282897a8d8c38f3fcabe9488e4d054cffb2aeaec832d03bebf8ac4"
+  },
+  "license": "../License.txt"
+}

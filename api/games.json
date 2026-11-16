@@ -1,17 +1,17 @@
 {
     "version":  "1.0.0",
-    "generatedAt":  "2026-09-20T13:38:38Z",
+    "generatedAt":  "2026-10-27T19:56:24Z",
     "total":  40,
     "games":  [
                   {
                       "slug":  "canhoes-de-ouro",
-                      "title":  "Canhões de Ouro",
-                      "description":  "Mire os canhões com cálculos corretos para conquistar tesouros.",
-                      "icon":  "💣",
+                      "title":  "Enigmas da Esfinge",
+                      "description":  "Decifre enigmas no Antigo Egito e conquiste a sabedoria da esfinge!",
+                      "icon":  "🏜️",
                       "href":  "/Canh%C3%B5es%20de%20ouro/index.html",
                       "url":  "https://games.helloyotta.com/Canh%C3%B5es%20de%20ouro/index.html",
                       "categories":  [
-                                         "matematica",
+                                         "portugues",
                                          "logica",
                                          "novos"
                                      ]
@@ -19,7 +19,7 @@
                   {
                       "slug":  "cacadores-de-coletivos",
                       "title":  "Caçadores de Coletivos",
-                      "description":  "Encontre o coletivo correto para cada grupo! Pratique gramática de\n            forma interativa.",
+                      "description":  "Encontre o coletivo correto para cada grupo! Pratique gramática de\r\n            forma interativa.",
                       "icon":  "🕵️‍♂️",
                       "href":  "/Ca%C3%A7adores%20de%20Coletivos/index.html",
                       "url":  "https://games.helloyotta.com/Ca%C3%A7adores%20de%20Coletivos/index.html",
@@ -30,7 +30,7 @@
                   {
                       "slug":  "vowel-vowel",
                       "title":  "Complete com Vogais",
-                      "description":  "Complete as palavras escolhendo a vogal certa! Exercite ortografia e\n            leitura de forma divertida.",
+                      "description":  "Complete as palavras escolhendo a vogal certa! Exercite ortografia e\r\n            leitura de forma divertida.",
                       "icon":  "🔠",
                       "href":  "/vowel/vowel.html",
                       "url":  "https://games.helloyotta.com/vowel/vowel.html",
@@ -41,7 +41,7 @@
                   {
                       "slug":  "defesa-do-castelo-matematico",
                       "title":  "Defesa do Castelo Matemático",
-                      "description":  "Responda operações rápidas para defender o castelo antes que o tempo\n            acabe.",
+                      "description":  "Responda operações rápidas para defender o castelo antes que o tempo\r\n            acabe.",
                       "icon":  "🏰",
                       "href":  "/Defesa%20do%20Castelo%20Matematico/index.html",
                       "url":  "https://games.helloyotta.com/Defesa%20do%20Castelo%20Matematico/index.html",
@@ -54,7 +54,7 @@
                   {
                       "slug":  "detetives-da-ortografia",
                       "title":  "Detetives da Ortografia",
-                      "description":  "Investigue e corrija palavras! Torne-se um detetive da ortografia e\n            melhore sua escrita.",
+                      "description":  "Investigue e corrija palavras! Torne-se um detetive da ortografia e\r\n            melhore sua escrita.",
                       "icon":  "🕵️‍♀️",
                       "href":  "/Detetives%20da%20Ortografia/index.html",
                       "url":  "https://games.helloyotta.com/Detetives%20da%20Ortografia/index.html",
@@ -78,7 +78,7 @@
                   {
                       "slug":  "digitado",
                       "title":  "Digitado",
-                      "description":  "Teste sua digitação! Veja o emoji, digite a palavra correta e avance\n            de fase. Diversão e agilidade com emojis!",
+                      "description":  "Teste sua digitação! Veja o emoji, digite a palavra correta e avance\r\n            de fase. Diversão e agilidade com emojis!",
                       "icon":  "⌨️",
                       "href":  "/Digitado/index.html",
                       "url":  "https://games.helloyotta.com/Digitado/index.html",
@@ -90,7 +90,7 @@
                   {
                       "slug":  "duelo-dos-monstros",
                       "title":  "Duelo dos Monstros",
-                      "description":  "Vença monstros resolvendo contas e escolha a resposta certa para\n            atacar.",
+                      "description":  "Vença monstros resolvendo contas e escolha a resposta certa para\r\n            atacar.",
                       "icon":  "👾",
                       "href":  "/Duelo%20dos%20Monstros/index.html",
                       "url":  "https://games.helloyotta.com/Duelo%20dos%20Monstros/index.html",
@@ -103,7 +103,7 @@
                   {
                       "slug":  "escola-de-magia-vsa",
                       "title":  "Escola de Magia VSA",
-                      "description":  "Aprenda sobre classes gramaticais com magia! Descubra substantivos,\n            verbos e adjetivos de forma encantada.",
+                      "description":  "Aprenda sobre classes gramaticais com magia! Descubra substantivos,\r\n            verbos e adjetivos de forma encantada.",
                       "icon":  "🧙‍♂️",
                       "href":  "/Escola%20de%20Magia%20VSA/index.html",
                       "url":  "https://games.helloyotta.com/Escola%20de%20Magia%20VSA/index.html",
@@ -114,7 +114,7 @@
                   {
                       "slug":  "fabrica-de-acentos",
                       "title":  "Fábrica de Acentos",
-                      "description":  "Treine o uso correto dos acentos nas palavras! Aprenda brincando com\n            desafios de ortografia.",
+                      "description":  "Treine o uso correto dos acentos nas palavras! Aprenda brincando com\r\n            desafios de ortografia.",
                       "icon":  "🔠",
                       "href":  "/Fabrica%20de%20Acentos/index.html",
                       "url":  "https://games.helloyotta.com/Fabrica%20de%20Acentos/index.html",
@@ -125,7 +125,7 @@
                   {
                       "slug":  "fabrica-de-rimas",
                       "title":  "Fábrica de Rimas",
-                      "description":  "Crie rimas divertidas! Complete versos e desenvolva criatividade com\n            as palavras.",
+                      "description":  "Crie rimas divertidas! Complete versos e desenvolva criatividade com\r\n            as palavras.",
                       "icon":  "🎤",
                       "href":  "/F%C3%A1brica%20de%20Rimas/index.html",
                       "url":  "https://games.helloyotta.com/F%C3%A1brica%20de%20Rimas/index.html",
@@ -135,8 +135,8 @@
                   },
                   {
                       "slug":  "galaxia-da-matematica",
-                      "title":  "Galáxia da Matemática",
-                      "description":  "Embarque em missões espaciais e resolva adição e subtração com\n            rapidez.",
+                      "title":  "Galáxia Geométrica",
+                      "description":  "Reconheça figuras geométricas e pilote sua nave para coletar as\r\n            formas certas em missões espaciais!",
                       "icon":  "🚀",
                       "href":  "/Gal%C3%A1xia%20da%20Matem%C3%A1tica/index.html",
                       "url":  "https://games.helloyotta.com/Gal%C3%A1xia%20da%20Matem%C3%A1tica/index.html",
@@ -161,7 +161,7 @@
                   {
                       "slug":  "laboratorio-das-pocoes",
                       "title":  "Laboratório das Poções",
-                      "description":  "Ajuste as gotas do frasco com soma e subtração até alcançar a\n            receita perfeita.",
+                      "description":  "Ajuste as gotas do frasco com soma e subtração até alcançar a\r\n            receita perfeita.",
                       "icon":  "🧪",
                       "href":  "/Laboratorio%20das%20Pocoes/index.html",
                       "url":  "https://games.helloyotta.com/Laboratorio%20das%20Pocoes/index.html",
@@ -174,7 +174,7 @@
                   {
                       "slug":  "maisculo-vs-minusculo",
                       "title":  "Maiúsculo vs Minúsculo",
-                      "description":  "Descubra e combine letras maiúsculas e minúsculas, treinando a\n            percepção visual e a alfabetização!",
+                      "description":  "Descubra e combine letras maiúsculas e minúsculas, treinando a\r\n            percepção visual e a alfabetização!",
                       "icon":  "🔤",
                       "href":  "/Maisculo%20vs%20Minusculo/index.html",
                       "url":  "https://games.helloyotta.com/Maisculo%20vs%20Minusculo/index.html",
@@ -185,7 +185,7 @@
                   {
                       "slug":  "matematica-pirata",
                       "title":  "Matemática Pirata",
-                      "description":  "Resolva desafios matemáticos em alto-mar! Some, subtraia e encontre\n            o tesouro dos piratas.",
+                      "description":  "Resolva desafios matemáticos em alto-mar! Some, subtraia e encontre\r\n            o tesouro dos piratas.",
                       "icon":  "🏴‍☠️",
                       "href":  "/Matematica%20Pirata/index.html",
                       "url":  "https://games.helloyotta.com/Matematica%20Pirata/index.html",
@@ -197,7 +197,7 @@
                   {
                       "slug":  "mercado-alien",
                       "title":  "Mercado Alien",
-                      "description":  "Compare valores no mercado Alien e aprenda maior, menor e igualdade\n            brincando.",
+                      "description":  "Compare valores no mercado Alien e aprenda maior, menor e igualdade\r\n            brincando.",
                       "icon":  "🛸",
                       "href":  "/Mercado%20Alien/index.html",
                       "url":  "https://games.helloyotta.com/Mercado%20Alien/index.html",
@@ -208,7 +208,7 @@
                   {
                       "slug":  "mercado-maior-ou-menor",
                       "title":  "Mercado Maior ou Menor",
-                      "description":  "Compare valores no mercado e aprenda maior, menor e igualdade\n            brincando.",
+                      "description":  "Compare valores no mercado e aprenda maior, menor e igualdade\r\n            brincando.",
                       "icon":  "🛒",
                       "href":  "/Mercado%20Maior%20ou%20Menor/index.html",
                       "url":  "https://games.helloyotta.com/Mercado%20Maior%20ou%20Menor/index.html",
@@ -221,7 +221,7 @@
                   {
                       "slug":  "monster-typer-i",
                       "title":  "Monster Typer I",
-                      "description":  "Digite a letra inicial das palavras para derrotar monstros! Pratique\n            digitação e raciocínio rápido.",
+                      "description":  "Digite a letra inicial das palavras para derrotar monstros! Pratique\r\n            digitação e raciocínio rápido.",
                       "icon":  "👾",
                       "href":  "/monster_typer%20I/index.html",
                       "url":  "https://games.helloyotta.com/monster_typer%20I/index.html",
@@ -233,7 +233,7 @@
                   {
                       "slug":  "monster-typer-ii",
                       "title":  "Monster Typer II",
-                      "description":  "O desafio continua! Digite letras e palavras para vencer monstros\n            ainda mais rápidos e espertos.",
+                      "description":  "O desafio continua! Digite letras e palavras para vencer monstros\r\n            ainda mais rápidos e espertos.",
                       "icon":  "👹",
                       "href":  "/monster_typer%20II/index.html",
                       "url":  "https://games.helloyotta.com/monster_typer%20II/index.html",
@@ -245,7 +245,7 @@
                   {
                       "slug":  "organiza-tudo",
                       "title":  "Organiza Tudo",
-                      "description":  "Organize as letras e forme palavras! Desenvolva lógica e vocabulário\n            brincando.",
+                      "description":  "Organize as letras e forme palavras! Desenvolva lógica e vocabulário\r\n            brincando.",
                       "icon":  "🔠",
                       "href":  "/Organiza%20Tudo/index.html",
                       "url":  "https://games.helloyotta.com/Organiza%20Tudo/index.html",
@@ -257,7 +257,7 @@
                   {
                       "slug":  "piratas-do-troco",
                       "title":  "Piratas do Troco",
-                      "description":  "Calcule o troco certo em cada rodada e acumule moedas para abrir o\n            baú do tesouro.",
+                      "description":  "Calcule o troco certo em cada rodada e acumule moedas para abrir o\r\n            baú do tesouro.",
                       "icon":  "💰",
                       "href":  "/Piratas%20do%20Troco/index.html",
                       "url":  "https://games.helloyotta.com/Piratas%20do%20Troco/index.html",
@@ -270,7 +270,7 @@
                   {
                       "slug":  "syllables",
                       "title":  "Separando Sílabas",
-                      "description":  "Separe as sílabas corretamente e avance nos níveis! Ideal para\n            aprender a estrutura das palavras.",
+                      "description":  "Separe as sílabas corretamente e avance nos níveis! Ideal para\r\n            aprender a estrutura das palavras.",
                       "icon":  "✂️",
                       "href":  "/syllables/index.html",
                       "url":  "https://games.helloyotta.com/syllables/index.html",
@@ -281,7 +281,7 @@
                   {
                       "slug":  "sinonimos",
                       "title":  "Sinônimos",
-                      "description":  "Descubra palavras com significados parecidos! Enriqueça seu\n            vocabulário brincando com sinônimos.",
+                      "description":  "Descubra palavras com significados parecidos! Enriqueça seu\r\n            vocabulário brincando com sinônimos.",
                       "icon":  "🔁",
                       "href":  "/Sinonimos/index.html",
                       "url":  "https://games.helloyotta.com/Sinonimos/index.html",
@@ -292,7 +292,7 @@
                   {
                       "slug":  "trem-da-soma-e-subtracao",
                       "title":  "Trem da Soma e Subtração",
-                      "description":  "Complete contas com vagões numéricos e avance pelos trilhos da\n            adição e subtração.",
+                      "description":  "Complete contas com vagões numéricos e avance pelos trilhos da\r\n            adição e subtração.",
                       "icon":  "🚂",
                       "href":  "/Trem%20da%20Soma%20e%20Subtracao/index.html",
                       "url":  "https://games.helloyotta.com/Trem%20da%20Soma%20e%20Subtracao/index.html",
@@ -305,7 +305,7 @@
                   {
                       "slug":  "mapa-da-ilha-do-tesouro",
                       "title":  "Mapa da Ilha do Tesouro",
-                      "description":  "Decifre coordenadas e encontre tesouros escondidos no mapa da\n            ilha!",
+                      "description":  "Decifre coordenadas e encontre tesouros escondidos no mapa da\r\n            ilha!",
                       "icon":  "🗺️",
                       "href":  "/Mapa%20da%20Ilha%20do%20Tesouro/index.html",
                       "url":  "https://games.helloyotta.com/Mapa%20da%20Ilha%20do%20Tesouro/index.html",
@@ -318,7 +318,7 @@
                   {
                       "slug":  "espelho-magico",
                       "title":  "Espelho Mágico",
-                      "description":  "Descubra os reflexos das figuras coloridas e complete a simetria\n            do espelho mágico!",
+                      "description":  "Descubra os reflexos das figuras coloridas e complete a simetria\r\n            do espelho mágico!",
                       "icon":  "🪞",
                       "href":  "/Espelho%20Magico/index.html",
                       "url":  "https://games.helloyotta.com/Espelho%20Magico/index.html",
@@ -331,7 +331,7 @@
                   {
                       "slug":  "grafico-em-acao",
                       "title":  "Gráfico em Ação",
-                      "description":  "Conte os itens e monte gráficos de barra, pizza e linha de forma\n            divertida!",
+                      "description":  "Conte os itens e monte gráficos de barra, pizza e linha de forma\r\n            divertida!",
                       "icon":  "📊",
                       "href":  "/Grafico%20em%20Acao/index.html",
                       "url":  "https://games.helloyotta.com/Grafico%20em%20Acao/index.html",
@@ -344,7 +344,7 @@
                   {
                       "slug":  "qual-e-o-proximo",
                       "title":  "Qual é o próximo",
-                      "description":  "Descubra o padrão da sequência e escolha a figura que vem a\n            seguir!",
+                      "description":  "Descubra o padrão da sequência e escolha a figura que vem a\r\n            seguir!",
                       "icon":  "🔮",
                       "href":  "/Qual%20e%20o%20proximo/index.html",
                       "url":  "https://games.helloyotta.com/Qual%20e%20o%20proximo/index.html",
@@ -409,7 +409,7 @@
                   {
                       "slug":  "combinando-sorvete",
                       "title":  "Combinando Sorvete",
-                      "description":  "Monte cones de sorvete e descubra todas as combinações possíveis\n            de sabores!",
+                      "description":  "Monte cones de sorvete e descubra todas as combinações possíveis\r\n            de sabores!",
                       "icon":  "🍦",
                       "href":  "/Combinando%20Sorvete/index.html",
                       "url":  "https://games.helloyotta.com/Combinando%20Sorvete/index.html",
@@ -422,7 +422,7 @@
                   {
                       "slug":  "mercado-matematico",
                       "title":  "Mercado Matemágico",
-                      "description":  "Escolha os produtos certos sem estourar o saldo e calcule o troco\n            das compras!",
+                      "description":  "Escolha os produtos certos sem estourar o saldo e calcule o troco\r\n            das compras!",
                       "icon":  "🛒",
                       "href":  "/Mercado%20Matematico/index.html",
                       "url":  "https://games.helloyotta.com/Mercado%20Matematico/index.html",

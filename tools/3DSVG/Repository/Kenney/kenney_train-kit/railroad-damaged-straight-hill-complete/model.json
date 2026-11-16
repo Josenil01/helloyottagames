@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "railroad-damaged-straight-hill-complete",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/railroad-damaged-straight-hill-complete.fbx": "6c4fe894a6c98c5905aa4e27f8eadbecc1c260a15d7a568fd4c426dcf3aafb42",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/railroad-damaged-straight-hill-complete.glb": "79516f9cd98194127c6b6dd7fda8474ef7936fdf899b42bf9d6d417e7dac53ff",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/railroad-damaged-straight-hill-complete.obj": "af9554975efbacf7ad30d57c3ca7b1a14e9eba540dd131997026d8ff7d0727e9",
+    "Models/OBJ format/railroad-damaged-straight-hill-complete.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/railroad-damaged-straight-hill-complete.png": "29ab76e4d198e4f91d726f1982bda99ce07f396d48657b42b313df7825b92732"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/railroad-damaged-straight-hill-complete.fbx": "6c4fe894a6c98c5905aa4e27f8eadbecc1c260a15d7a568fd4c426dcf3aafb42",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/railroad-damaged-straight-hill-complete.glb": "79516f9cd98194127c6b6dd7fda8474ef7936fdf899b42bf9d6d417e7dac53ff",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/railroad-damaged-straight-hill-complete.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/railroad-damaged-straight-hill-complete.obj": "676cb996df95b147d84845142c8d4b49da97c662747829fcaa2e3775e93910f8",
+    "Preview.png": "29ab76e4d198e4f91d726f1982bda99ce07f396d48657b42b313df7825b92732"
+  },
+  "license": "../License.txt"
+}

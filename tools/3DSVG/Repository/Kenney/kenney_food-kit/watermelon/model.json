@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "watermelon",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/watermelon.fbx": "5e82366682d334e49c68edc979146463afe136df76824293497ba60f482a84f6",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/watermelon.glb": "5992fa8ea001949b01a5e2b035693b885146c575f740e5c4505532c4e7e6f1ba",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/watermelon.obj": "a104af3a607723f2dd77afd5a173889cc7acf96679b1b358b423a8572c3798c3",
+    "Models/OBJ format/watermelon.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/watermelon.png": "6cdf682d90bf388c596a2ed3dbed88de0677f3ca4444666b8475bd2ec13c173d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/watermelon.fbx": "5e82366682d334e49c68edc979146463afe136df76824293497ba60f482a84f6",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/watermelon.glb": "5992fa8ea001949b01a5e2b035693b885146c575f740e5c4505532c4e7e6f1ba",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/watermelon.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/watermelon.obj": "127401eceaf1ded69f5de2bc204ae920876c013bf4230da5a789fa77727878ad",
+    "Preview.png": "6cdf682d90bf388c596a2ed3dbed88de0677f3ca4444666b8475bd2ec13c173d"
+  },
+  "license": "../License.txt"
+}

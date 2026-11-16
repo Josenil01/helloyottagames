@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "conveyor-bars-stripe",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/conveyor-bars-stripe.fbx": "de1501c1e8a3dfa8c232764490c3916c1c4cf926e8979b1271fe12998846a5ab",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/conveyor-bars-stripe.glb": "ea5420c3840ba843de6b2f98efe31552e87df6d189f2943c0ad30d48424a9750",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/conveyor-bars-stripe.obj": "a2456c7e8e7e2c0648c4332ababd709a81246fca0d2bda3adc3393101a310a59",
+    "Models/OBJ format/conveyor-bars-stripe.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/conveyor-bars-stripe.png": "90d8a908650fd90e7b2dc3cc626eb151d6240c3995c0c31633aeb33900573eb8"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/conveyor-bars-stripe.fbx": "de1501c1e8a3dfa8c232764490c3916c1c4cf926e8979b1271fe12998846a5ab",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/conveyor-bars-stripe.glb": "ea5420c3840ba843de6b2f98efe31552e87df6d189f2943c0ad30d48424a9750",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/conveyor-bars-stripe.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/conveyor-bars-stripe.obj": "a271631f2db5c4d379b443843cb2c1446923fd9a40ab7fcd3cd13fdd1a3d9b99",
+    "Preview.png": "90d8a908650fd90e7b2dc3cc626eb151d6240c3995c0c31633aeb33900573eb8"
+  },
+  "license": "../License.txt"
+}

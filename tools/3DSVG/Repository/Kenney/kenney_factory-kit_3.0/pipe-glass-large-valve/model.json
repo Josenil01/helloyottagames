@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pipe-glass-large-valve",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/pipe-glass-large-valve.fbx": "8522519bb8418db0372568d81f982f5ec0002de0c0a8a0a02fb1628a84052782",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/pipe-glass-large-valve.glb": "13d2c9d0b3b0253c2019556c1cb16eb85d045ac0f09b268df75dc7761f768da3",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/pipe-glass-large-valve.obj": "7742fd6888b69dd9b337369d2356a600edafa3affe66953a99ea7867a2e68c33",
+    "Models/OBJ format/pipe-glass-large-valve.mtl": "53f9f0317b94fa0df059759ac1c28746aa1bf52dce5688752ac7c9e4f4c5bdbb",
+    "Previews/pipe-glass-large-valve.png": "4dafaad54ac864d1ab3a725f1ad5eeb19627e08c413a6c0f251e742125b98398"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/pipe-glass-large-valve.fbx": "8522519bb8418db0372568d81f982f5ec0002de0c0a8a0a02fb1628a84052782",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/pipe-glass-large-valve.glb": "13d2c9d0b3b0253c2019556c1cb16eb85d045ac0f09b268df75dc7761f768da3",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/pipe-glass-large-valve.mtl": "41d8c4aecc23107c9cb0c45feda0075a6c31b45573e6eb563b7933f6b5b59284",
+    "OBJ format/pipe-glass-large-valve.obj": "538de64a57d04245ea4988ef4a9722e07219c5a8faa11d2d0b551a68085865ca",
+    "Preview.png": "4dafaad54ac864d1ab3a725f1ad5eeb19627e08c413a6c0f251e742125b98398"
+  },
+  "license": "../License.txt"
+}

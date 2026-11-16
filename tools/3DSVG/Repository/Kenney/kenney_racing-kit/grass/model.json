@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "grass",
+  "pack": "kenney_racing-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/checkers.png": "8eb3d9d77c1165cf2b1c68a07f808d83d6565ce3db9e930ca500cbd7296f4c4d",
+    "Models/FBX format/Textures/net.png": "c8e5d6fc69bafe6c3df797ae3175d9f1bf606bc1a9df5e12463a74087a4ea3fc",
+    "Models/FBX format/Textures/tankco.png": "5355b8f2c0155034d2bc2170517ae815ad0fe659cd2fb5e195245b7c9165d9f5",
+    "Models/FBX format/grass.fbx": "916874c4c4abe073788b8939aca6b4fb2f25b04c3d141d1a586466cf7b81f169",
+    "Models/GLTF format/grass.glb": "892ca5d51fd4f733db7df48161e1fec2372880787ba1dc30ea1ff47ba342fbe8",
+    "Models/OBJ format/Textures/checkers.png": "8eb3d9d77c1165cf2b1c68a07f808d83d6565ce3db9e930ca500cbd7296f4c4d",
+    "Models/OBJ format/Textures/net.png": "c8e5d6fc69bafe6c3df797ae3175d9f1bf606bc1a9df5e12463a74087a4ea3fc",
+    "Models/OBJ format/Textures/tankco.png": "5355b8f2c0155034d2bc2170517ae815ad0fe659cd2fb5e195245b7c9165d9f5",
+    "Models/OBJ format/grass.obj": "7a4f464ab20ea19acda95aee11c980c83f24fd226b64c3e25ca278f810002664",
+    "Models/OBJ format/grass.mtl": "3870dc65fa102d872c9808d9f1eaa0b68070c1024024032e31c36628a0d8444f"
+  },
+  "files": {
+    "Textures/FBX/checkers.png": "8eb3d9d77c1165cf2b1c68a07f808d83d6565ce3db9e930ca500cbd7296f4c4d",
+    "Textures/FBX/net.png": "c8e5d6fc69bafe6c3df797ae3175d9f1bf606bc1a9df5e12463a74087a4ea3fc",
+    "Textures/FBX/tankco.png": "5355b8f2c0155034d2bc2170517ae815ad0fe659cd2fb5e195245b7c9165d9f5",
+    "FBX format/grass.fbx": "916874c4c4abe073788b8939aca6b4fb2f25b04c3d141d1a586466cf7b81f169",
+    "GLB format/grass.glb": "892ca5d51fd4f733db7df48161e1fec2372880787ba1dc30ea1ff47ba342fbe8",
+    "Textures/OBJ/checkers.png": "8eb3d9d77c1165cf2b1c68a07f808d83d6565ce3db9e930ca500cbd7296f4c4d",
+    "Textures/OBJ/net.png": "c8e5d6fc69bafe6c3df797ae3175d9f1bf606bc1a9df5e12463a74087a4ea3fc",
+    "Textures/OBJ/tankco.png": "5355b8f2c0155034d2bc2170517ae815ad0fe659cd2fb5e195245b7c9165d9f5",
+    "OBJ format/grass.mtl": "a1d3efd6b370c9eec075adabcdbdd5264695a8c29fdd920d6ae645f68dd91057",
+    "OBJ format/grass.obj": "37055e2036bb57449b488ff4ab957ca4b767211a7e6be316ace52f3dae373a71"
+  },
+  "license": "../License.txt"
+}

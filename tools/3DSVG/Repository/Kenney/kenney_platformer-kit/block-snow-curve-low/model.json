@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "block-snow-curve-low",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/block-snow-curve-low.fbx": "122bbe8f51cbd688072d385b46c94e6e2bdf8818276e904cf36bddd440b8b80e",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/block-snow-curve-low.glb": "0741017f3a29c75ba5ed39c3147d69b31bd44fd9ac7982d430679c1117fe586b",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/block-snow-curve-low.obj": "05b7a1feaf080b993ee9b4eccac5a5b21cd428e165474dfeb0cce2242cee0507",
+    "Models/OBJ format/block-snow-curve-low.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/block-snow-curve-low.png": "d475e48d1d7c3803bf166f4d6c702c34d54f40d16922a807bfa55b99b9db15cf"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/block-snow-curve-low.fbx": "122bbe8f51cbd688072d385b46c94e6e2bdf8818276e904cf36bddd440b8b80e",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/block-snow-curve-low.glb": "0741017f3a29c75ba5ed39c3147d69b31bd44fd9ac7982d430679c1117fe586b",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/block-snow-curve-low.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/block-snow-curve-low.obj": "f22dc3f3c2f07d6f6814ca22061429dab4f1cce0c8f766e60f44b3c81072250a",
+    "Preview.png": "d475e48d1d7c3803bf166f4d6c702c34d54f40d16922a807bfa55b99b9db15cf"
+  },
+  "license": "../License.txt"
+}

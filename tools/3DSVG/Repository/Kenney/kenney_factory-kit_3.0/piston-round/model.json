@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "piston-round",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/piston-round.fbx": "879d20fa1a5e43f8dd184af35cc788cf3a0e9c1ee0a074a350aa82fd2ab41f67",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/piston-round.glb": "cd67c755d4ea6f53b5a5583447f45e9abb5d87f344d9f053820d1b09d719fcdd",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/piston-round.obj": "e11928aaa60ca41d8ec847bb90d0a2ccddc9702fd80bd66b73def8a4cb266caf",
+    "Models/OBJ format/piston-round.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/piston-round.png": "23300a549019b8d57220ef4ef3df6da0011b5834ff66ae44e637e7dd66511477"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/piston-round.fbx": "879d20fa1a5e43f8dd184af35cc788cf3a0e9c1ee0a074a350aa82fd2ab41f67",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/piston-round.glb": "cd67c755d4ea6f53b5a5583447f45e9abb5d87f344d9f053820d1b09d719fcdd",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/piston-round.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/piston-round.obj": "00a7d3239257e261cb79845a0b352283e019dd72f8fdcd3823632b9f3181d2e5",
+    "Preview.png": "23300a549019b8d57220ef4ef3df6da0011b5834ff66ae44e637e7dd66511477"
+  },
+  "license": "../License.txt"
+}

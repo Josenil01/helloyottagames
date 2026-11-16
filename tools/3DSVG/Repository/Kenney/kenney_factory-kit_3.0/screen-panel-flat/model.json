@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "screen-panel-flat",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/screen-panel-flat.fbx": "eecbece007b7aa04af77e832c345b8eee456278c49c2e26cb5e22aec98577cf5",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/screen-panel-flat.glb": "6cd45b028859c216860b6436fb2660749038390b60cb3d1b5cc5e7d88072dd4b",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/screen-panel-flat.obj": "40ba4277184aea8a0a48dc7fc470e43aa03d03a9015e107e6ad76098fdbac40c",
+    "Models/OBJ format/screen-panel-flat.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/screen-panel-flat.png": "fd038060279174267e0c0439a02a47c3228ea38729f826d63c0d2cc280c00e17"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/screen-panel-flat.fbx": "eecbece007b7aa04af77e832c345b8eee456278c49c2e26cb5e22aec98577cf5",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/screen-panel-flat.glb": "6cd45b028859c216860b6436fb2660749038390b60cb3d1b5cc5e7d88072dd4b",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/screen-panel-flat.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/screen-panel-flat.obj": "73d6481ec0ab4442384df47ffb94422d28b487646d1c51a7aabf855563bed2f9",
+    "Preview.png": "fd038060279174267e0c0439a02a47c3228ea38729f826d63c0d2cc280c00e17"
+  },
+  "license": "../License.txt"
+}

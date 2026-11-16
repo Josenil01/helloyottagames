@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "conveyor-long-stripe-sides",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/conveyor-long-stripe-sides.fbx": "f87492a976e809cb0002f137003523f96134a2f9b6c5e1db1b4ee31d57e0ddad",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/conveyor-long-stripe-sides.glb": "727a56dfae9a04d12437123b7b051ef76327887f02c837090178b9781fa56534",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/conveyor-long-stripe-sides.obj": "4d6b9c30585ccb3e9b4cce967632b05e61304951faf8b17be626c2b4c46166eb",
+    "Models/OBJ format/conveyor-long-stripe-sides.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/conveyor-long-stripe-sides.png": "f710bb1cc568dbdefdfcc3087275fc7a588dbeee883b282bfa5cf9df88e5a75d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/conveyor-long-stripe-sides.fbx": "f87492a976e809cb0002f137003523f96134a2f9b6c5e1db1b4ee31d57e0ddad",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/conveyor-long-stripe-sides.glb": "727a56dfae9a04d12437123b7b051ef76327887f02c837090178b9781fa56534",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/conveyor-long-stripe-sides.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/conveyor-long-stripe-sides.obj": "75c524314501556304d0346a926f2e121ed5246842f3f8d448560942d3f2d431",
+    "Preview.png": "f710bb1cc568dbdefdfcc3087275fc7a588dbeee883b282bfa5cf9df88e5a75d"
+  },
+  "license": "../License.txt"
+}

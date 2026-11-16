@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "crate",
+  "pack": "kenney_pirate-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/FBX format/crate.fbx": "1aa54267698fa8bc335bc299f28a1b71262ce025a1e8cd994a8584b2c6ffa63c",
+    "Models/GLB format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/GLB format/crate.glb": "b525674e07c8b83667512a8dd93be0d7684358347d0e64d2bb16b156ac382ed1",
+    "Models/OBJ format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/OBJ format/crate.obj": "108e6c0c33f4126621d0aa744040adc073664e9745c64f825ec05c9c3ae9b701",
+    "Models/OBJ format/crate.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/crate.png": "69bcbe0ccc191c24dba92b461d5470a37876291d722e9d1213e567344a4419d2"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "FBX format/crate.fbx": "1aa54267698fa8bc335bc299f28a1b71262ce025a1e8cd994a8584b2c6ffa63c",
+    "Textures/GLB/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "GLB format/crate.glb": "b525674e07c8b83667512a8dd93be0d7684358347d0e64d2bb16b156ac382ed1",
+    "Textures/OBJ/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "OBJ format/crate.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/crate.obj": "30a68e58ec71cfd38f03a9be8a29e8a14cbec17885ef4d89f0980e2b83a3da05",
+    "Preview.png": "69bcbe0ccc191c24dba92b461d5470a37876291d722e9d1213e567344a4419d2"
+  },
+  "license": "../License.txt"
+}

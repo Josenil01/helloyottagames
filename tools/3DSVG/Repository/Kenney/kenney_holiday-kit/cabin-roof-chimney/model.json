@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cabin-roof-chimney",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/cabin-roof-chimney.fbx": "0e485ba5cd91a3cd8c9e10f30f17e9f8954d3b5501811fdb434c9578eab5b513",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/cabin-roof-chimney.glb": "fdee44be5069104ff9e8bd0b57a35411948b1fbc8a390d6907902c652eaed562",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/cabin-roof-chimney.obj": "9c272c05fbd0a4afdecde47f2a9440ee8cc8fcd0744052372054fed8a9ccdfad",
+    "Models/OBJ format/cabin-roof-chimney.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cabin-roof-chimney.png": "3e8a19e3815d9a66214a00c033febab3c6561cbb00c20b1b60407670970e817c"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/cabin-roof-chimney.fbx": "0e485ba5cd91a3cd8c9e10f30f17e9f8954d3b5501811fdb434c9578eab5b513",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/cabin-roof-chimney.glb": "fdee44be5069104ff9e8bd0b57a35411948b1fbc8a390d6907902c652eaed562",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/cabin-roof-chimney.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cabin-roof-chimney.obj": "e16ccfe3a2978b4b097304fca0529703653776949c9cdea6795849ff07913877",
+    "Preview.png": "3e8a19e3815d9a66214a00c033febab3c6561cbb00c20b1b60407670970e817c"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-gate",
+  "pack": "kenney_mini-arena",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/FBX format/wall-gate.fbx": "fbafc8a0ca48373331e2dd87841c36bbd79e1e1cb2fa4a6b525df90d9d11453c",
+    "Models/GLB format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/GLB format/wall-gate.glb": "5fedbd34c3f6f83676e9c6e9d6e3f005be1e2e1166d976aaa909ec9c5f3f9602",
+    "Models/OBJ format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/OBJ format/wall-gate.obj": "29327c61a9d1e66ce565423944d13c7323edbda02b9abe2a77ba60fb9485485d",
+    "Models/OBJ format/wall-gate.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-gate.png": "f974bec2c18b277f452e64ad355732eee232b7818e403acb452a88eb46f8bdbb"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "FBX format/wall-gate.fbx": "fbafc8a0ca48373331e2dd87841c36bbd79e1e1cb2fa4a6b525df90d9d11453c",
+    "Textures/GLB/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "GLB format/wall-gate.glb": "5fedbd34c3f6f83676e9c6e9d6e3f005be1e2e1166d976aaa909ec9c5f3f9602",
+    "Textures/OBJ/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "OBJ format/wall-gate.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-gate.obj": "599679a5bcd5f377a8a31ec6aa21e8f304cf0e36276034e987bbdea037d8382d",
+    "Preview.png": "f974bec2c18b277f452e64ad355732eee232b7818e403acb452a88eb46f8bdbb"
+  },
+  "license": "../License.txt"
+}

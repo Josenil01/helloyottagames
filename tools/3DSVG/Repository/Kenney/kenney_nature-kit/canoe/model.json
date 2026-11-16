@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "canoe",
+  "pack": "kenney_nature-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/canoe.fbx": "57a970147054b4aa5d19e98ddb8cab337b716b81f16228ad6ea0c90ec4010739",
+    "Models/GLTF format/canoe.glb": "ad9c7a315f55accbce8d1ee3dc853f919f01f97ab4e3096bb235d1815aed6941",
+    "Models/OBJ format/canoe.obj": "f99e74d6ad94ab12915c129b84c16e0693a37291dbcfd666bcc2df019c6b35bb",
+    "Models/OBJ format/canoe.mtl": "a6d00e8d5b2be1a5919d48ff50c08328d4a9dd94493c1bcb90fdc07d0206e145"
+  },
+  "files": {
+    "FBX format/canoe.fbx": "57a970147054b4aa5d19e98ddb8cab337b716b81f16228ad6ea0c90ec4010739",
+    "GLB format/canoe.glb": "ad9c7a315f55accbce8d1ee3dc853f919f01f97ab4e3096bb235d1815aed6941",
+    "OBJ format/canoe.mtl": "a6d00e8d5b2be1a5919d48ff50c08328d4a9dd94493c1bcb90fdc07d0206e145",
+    "OBJ format/canoe.obj": "adb52a02d7d3b7b3001e63e84a28d5fcae6b407c035da111ff3c2009ec89b1c8"
+  },
+  "license": "../License.txt"
+}

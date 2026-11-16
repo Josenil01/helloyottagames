@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "supports-wide-clamp",
+  "pack": "kenney_toy-car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/Textures/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Models/Textures/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "Models/FBX format/supports-wide-clamp.fbx": "b538e400a3de92c1c2a0b0d27ffe6b813c5a2809b015f5c6dd44912ed47d9d3a",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/supports-wide-clamp.glb": "7dee947f32deaf5c90c2fa96e61700cf9c36b2c189ee6df3b68d57e2b27f4efc",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/supports-wide-clamp.obj": "6ba81a49a7a16d9846c659c3f637ef5091e98321403d26493aa77b1a1f5c2076",
+    "Models/OBJ format/supports-wide-clamp.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/supports-wide-clamp.png": "e55dbeac01fc4bf361ab0910040ebfa1ac25e4625afebff3db3fd0ee3be4dd4b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/FBX/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/FBX/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "FBX format/supports-wide-clamp.fbx": "b538e400a3de92c1c2a0b0d27ffe6b813c5a2809b015f5c6dd44912ed47d9d3a",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/GLB/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/GLB/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "GLB format/supports-wide-clamp.glb": "7dee947f32deaf5c90c2fa96e61700cf9c36b2c189ee6df3b68d57e2b27f4efc",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/OBJ/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/OBJ/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "OBJ format/supports-wide-clamp.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/supports-wide-clamp.obj": "d5f9798db8f0e1a3c632e464ee2ebe5906c10ebb356cf05c3dd36e8ce1b5a5f6",
+    "Preview.png": "e55dbeac01fc4bf361ab0910040ebfa1ac25e4625afebff3db3fd0ee3be4dd4b"
+  },
+  "license": "../License.txt"
+}

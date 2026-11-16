@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stairs-wide-wood",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/stairs-wide-wood.fbx": "6173845d5bcb2015a7fb3c789310486e65467dddcfc10fdc419948458e7b123a",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/stairs-wide-wood.glb": "33f06f1d5f926997e2709741884fd1f4bd86ce4cfc753a74257d2a9e3efffdb6",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/stairs-wide-wood.obj": "2087f01c27b4a2c3ce9ddbb6abe1883713739d613e0d70d8397a5596834d181a",
+    "Models/OBJ format/stairs-wide-wood.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/stairs-wide-wood.png": "b980d797ffde91c9fadf714025af3c2dd4bc7c67f084d2bc1e8640304f3dcf6f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/stairs-wide-wood.fbx": "6173845d5bcb2015a7fb3c789310486e65467dddcfc10fdc419948458e7b123a",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/stairs-wide-wood.glb": "33f06f1d5f926997e2709741884fd1f4bd86ce4cfc753a74257d2a9e3efffdb6",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/stairs-wide-wood.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/stairs-wide-wood.obj": "a30c476723120a81a95a1179998acf58d5589823d8cfe77a7ef8073fa86717c9",
+    "Preview.png": "b980d797ffde91c9fadf714025af3c2dd4bc7c67f084d2bc1e8640304f3dcf6f"
+  },
+  "license": "../License.txt"
+}

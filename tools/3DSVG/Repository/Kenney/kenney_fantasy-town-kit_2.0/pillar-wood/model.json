@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pillar-wood",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/pillar-wood.fbx": "43ea3b04f682e490f95ac5f3af069fd8909401d2d8fded4d72b6acb64c6d0255",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/pillar-wood.glb": "569c83dade6063399576640e80db35c34e422817ec132419fc2e2695189be5cf",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/pillar-wood.obj": "adc5e4629aa60f48b713e5c4fdd044572fecac7a5c7f7ec32e792b4dec311ae1",
+    "Models/OBJ format/pillar-wood.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/pillar-wood.png": "7d3c29492d832628618800562c10013bc35c8f8e4ff5eb4dcdac66e637ef887b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/pillar-wood.fbx": "43ea3b04f682e490f95ac5f3af069fd8909401d2d8fded4d72b6acb64c6d0255",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/pillar-wood.glb": "569c83dade6063399576640e80db35c34e422817ec132419fc2e2695189be5cf",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/pillar-wood.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/pillar-wood.obj": "737b731a4c2178a1f0b3a36fd2924f160c0904e5e0e4f23b83c8fec6baa4b235",
+    "Preview.png": "7d3c29492d832628618800562c10013bc35c8f8e4ff5eb4dcdac66e637ef887b"
+  },
+  "license": "../License.txt"
+}

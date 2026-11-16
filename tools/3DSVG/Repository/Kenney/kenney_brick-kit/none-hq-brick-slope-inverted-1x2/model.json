@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "none-hq-brick-slope-inverted-1x2",
+  "pack": "kenney_brick-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/FBX format/none-hq-brick-slope-inverted-1x2.fbx": "3915fe348ce4b0efdcfb4c30001c1674810c1cc91b79fef79c5e37e9404a6d4c",
+    "Models/GLB format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/GLB format/none-hq-brick-slope-inverted-1x2.glb": "7bf318c419553977e6caec8c70e1fdc2617459c183650ca71a08b21bc19d4757",
+    "Models/OBJ format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/OBJ format/none-hq-brick-slope-inverted-1x2.obj": "37f3054c887ec94640b6cd4c7c21edf4765faf939d5236e4a792dabdc60b4042",
+    "Models/OBJ format/none-hq-brick-slope-inverted-1x2.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/none-hq-brick-slope-inverted-1x2.png": "b0f96d6e3795075410b439d1ff25ff254fa08fcca70ec1f7153974babc1128ec"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "FBX format/none-hq-brick-slope-inverted-1x2.fbx": "3915fe348ce4b0efdcfb4c30001c1674810c1cc91b79fef79c5e37e9404a6d4c",
+    "Textures/GLB/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "GLB format/none-hq-brick-slope-inverted-1x2.glb": "7bf318c419553977e6caec8c70e1fdc2617459c183650ca71a08b21bc19d4757",
+    "Textures/OBJ/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "OBJ format/none-hq-brick-slope-inverted-1x2.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/none-hq-brick-slope-inverted-1x2.obj": "d59901c235cc3277da7a15c984d1831b1c5494539c9ac3d1030ffccdedc8b81f",
+    "Preview.png": "b0f96d6e3795075410b439d1ff25ff254fa08fcca70ec1f7153974babc1128ec"
+  },
+  "license": "../License.txt"
+}

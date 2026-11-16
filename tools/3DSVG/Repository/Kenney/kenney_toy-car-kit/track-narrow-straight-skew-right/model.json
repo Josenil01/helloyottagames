@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "track-narrow-straight-skew-right",
+  "pack": "kenney_toy-car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/Textures/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Models/Textures/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "Models/FBX format/track-narrow-straight-skew-right.fbx": "87846c00ce3cc48ed9f09573fe245faa389df3ab9ae6c7eb9051c935e0eada92",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/track-narrow-straight-skew-right.glb": "62aadebea40d37fe0265a6174afe5dc08ae4d32461dbbb555989c01c71f2ae31",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/track-narrow-straight-skew-right.obj": "fd6b1b25ff8e033f4218703d10ad479066fe6548593ccf5a17d9313c1ca8c831",
+    "Models/OBJ format/track-narrow-straight-skew-right.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/track-narrow-straight-skew-right.png": "acad4fcbf01dd4d0fb2eb5905e22f89813e89020d3a260599b47ddbfc55dbed6"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/FBX/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/FBX/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "FBX format/track-narrow-straight-skew-right.fbx": "87846c00ce3cc48ed9f09573fe245faa389df3ab9ae6c7eb9051c935e0eada92",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/GLB/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/GLB/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "GLB format/track-narrow-straight-skew-right.glb": "62aadebea40d37fe0265a6174afe5dc08ae4d32461dbbb555989c01c71f2ae31",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Textures/OBJ/variation-a.png": "1bd0c9ca3ab8c4306d7fd985032324645eee2ba662369dc85d891bfb7e4e5515",
+    "Textures/OBJ/variation-b.png": "2c4b615b0625bfb0da86114dd71abef9d12b5e47824a314407faaaa2d02e94e5",
+    "OBJ format/track-narrow-straight-skew-right.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/track-narrow-straight-skew-right.obj": "cb2965351c6d7c3b41a6a1333a125206f58bdb12f68588400cdc647c958a0e35",
+    "Preview.png": "acad4fcbf01dd4d0fb2eb5905e22f89813e89020d3a260599b47ddbfc55dbed6"
+  },
+  "license": "../License.txt"
+}

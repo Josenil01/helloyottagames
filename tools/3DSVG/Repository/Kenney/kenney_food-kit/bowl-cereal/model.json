@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bowl-cereal",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/bowl-cereal.fbx": "86eaee6f05591861f5fc9b9b98aac8c55767ab74a4368cc9b2cf6698f0386d51",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/bowl-cereal.glb": "5b0fb4c50a4ef915f6136275714361ab7f46f4d865365d10439101f089bf693f",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/bowl-cereal.obj": "fc79b52dba74dd2d540e2d9102987c606867fe7674c8216bb18bd432ad57e104",
+    "Models/OBJ format/bowl-cereal.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/bowl-cereal.png": "68f794a9e51c9cc533cc2843d04873acd05fcc3ccdd1b20ee4a5dabb8b372cfd"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/bowl-cereal.fbx": "86eaee6f05591861f5fc9b9b98aac8c55767ab74a4368cc9b2cf6698f0386d51",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/bowl-cereal.glb": "5b0fb4c50a4ef915f6136275714361ab7f46f4d865365d10439101f089bf693f",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/bowl-cereal.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/bowl-cereal.obj": "f87a3ef295141bfd1c14797e0d985ba33683fd6f651165b392a2e2d16c2656f9",
+    "Preview.png": "68f794a9e51c9cc533cc2843d04873acd05fcc3ccdd1b20ee4a5dabb8b372cfd"
+  },
+  "license": "../License.txt"
+}

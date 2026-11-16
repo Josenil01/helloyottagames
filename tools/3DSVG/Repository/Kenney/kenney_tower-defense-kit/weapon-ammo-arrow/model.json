@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "weapon-ammo-arrow",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/weapon-ammo-arrow.fbx": "92cc628f3fa33fb6baa407fcdf1618cce21bc4c9b4af213b27cbe314f6c0b393",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/weapon-ammo-arrow.glb": "a09f256df1c01a68eb7012619c754f0a841fb66d438fee4274c53a643496a6dd",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/weapon-ammo-arrow.obj": "4331e4e3154b435718829f4e943b522d10214987bad3d04bfec68fcf1d78012f",
+    "Models/OBJ format/weapon-ammo-arrow.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/weapon-ammo-arrow.png": "1f517a6e23e4abc7fabc2a7c383363545a7a8d0585a95aa5057b563278dec62d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/weapon-ammo-arrow.fbx": "92cc628f3fa33fb6baa407fcdf1618cce21bc4c9b4af213b27cbe314f6c0b393",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/weapon-ammo-arrow.glb": "a09f256df1c01a68eb7012619c754f0a841fb66d438fee4274c53a643496a6dd",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/weapon-ammo-arrow.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/weapon-ammo-arrow.obj": "eabe417131cebf2ad79fa8592e91bc96e1b3f53a9a95bf44ddec34b2acb80e12",
+    "Preview.png": "1f517a6e23e4abc7fabc2a7c383363545a7a8d0585a95aa5057b563278dec62d"
+  },
+  "license": "../License.txt"
+}

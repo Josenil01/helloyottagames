@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "button-square",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/button-square.fbx": "484954c0b587d799c773dd37c5de3a68cafddd65e5a7ed8d511dacf54d42213b",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/button-square.glb": "e13067e31d726bbe8bc7e1a11fa9da90d0fa50027ae96772d47fd5c667985d7a",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/button-square.obj": "48200612264f91d365c112ee8e0b94a4963635dab28be021363c8678e80d359b",
+    "Models/OBJ format/button-square.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/button-square.png": "1c4a047acc198b21f8c23ae789c781c5c19a886e0c34867ecf9d0120765f8d2d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/button-square.fbx": "484954c0b587d799c773dd37c5de3a68cafddd65e5a7ed8d511dacf54d42213b",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/button-square.glb": "e13067e31d726bbe8bc7e1a11fa9da90d0fa50027ae96772d47fd5c667985d7a",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/button-square.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/button-square.obj": "37a17efe17f04cdd491f57a0199c8d9fa984466d1f5202c8d7cb59898a1ef260",
+    "Preview.png": "1c4a047acc198b21f8c23ae789c781c5c19a886e0c34867ecf9d0120765f8d2d"
+  },
+  "license": "../License.txt"
+}

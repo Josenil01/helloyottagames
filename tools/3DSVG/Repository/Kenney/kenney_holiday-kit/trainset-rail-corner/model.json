@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "trainset-rail-corner",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/trainset-rail-corner.fbx": "be80926c6aca21ff14b5ddc79493658fed1f01188d768ced262ecd3fbbb1d284",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/trainset-rail-corner.glb": "2f0a8b6ad4fcbbb5c1e90f8a1c2dec55f7f797f6001335c16c824c75830ad2dd",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/trainset-rail-corner.obj": "366d1f371584da7ab01bbcbcf18c5c84ba84f01b72ad056a780722cd02dca081",
+    "Models/OBJ format/trainset-rail-corner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/trainset-rail-corner.png": "e9557423647c445036fc430a71e470ff4091c4ac673825ecca80c2a462b04e41"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/trainset-rail-corner.fbx": "be80926c6aca21ff14b5ddc79493658fed1f01188d768ced262ecd3fbbb1d284",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/trainset-rail-corner.glb": "2f0a8b6ad4fcbbb5c1e90f8a1c2dec55f7f797f6001335c16c824c75830ad2dd",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/trainset-rail-corner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/trainset-rail-corner.obj": "679ed8981e7ab78edd367b1f946190eba9c0f8c57b5d79ef89c101f8d3e5d7da",
+    "Preview.png": "e9557423647c445036fc430a71e470ff4091c4ac673825ecca80c2a462b04e41"
+  },
+  "license": "../License.txt"
+}

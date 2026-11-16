@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "computerKeyboard",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/computerKeyboard.fbx": "bc8914be6f74442690180cd2218b752007ff5ff0380305a28c893c2dd5a30612",
+    "Models/GLTF format/computerKeyboard.glb": "9d9135789de2120e9f41ce3f0a56dd1b15f40adcc7888739bb842a2d820da322",
+    "Models/OBJ format/computerKeyboard.obj": "e33668db75a2cb9bc6ae64e1f062810d570aebb12f8ac58e13a63074b4cb652e",
+    "Models/OBJ format/computerKeyboard.mtl": "e445dc0b0ed0651fae2afb35a0581a9dd259bfff0a1c68f0edfcf11ba80e02ed"
+  },
+  "files": {
+    "FBX format/computerKeyboard.fbx": "bc8914be6f74442690180cd2218b752007ff5ff0380305a28c893c2dd5a30612",
+    "GLB format/computerKeyboard.glb": "9d9135789de2120e9f41ce3f0a56dd1b15f40adcc7888739bb842a2d820da322",
+    "OBJ format/computerKeyboard.mtl": "a6d7c831dc194284590b0777036387d1e6a64a6d029fa0be71f1b8fb8678929a",
+    "OBJ format/computerKeyboard.obj": "c2f12ce6869d4e14fca8ac90d88472248d8228b82d15b875322becdef6c403ca"
+  },
+  "license": "../License.txt"
+}

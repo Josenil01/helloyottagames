@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-intersection-line",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-intersection-line.fbx": "dc27dd0cb94cf2ad2ccf08bb2e55c86a2e276b43e3b045965f8aa212609b16be",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-intersection-line.glb": "a9a202594178362e89ae62b1d9cbfbc7c892f9fcb8564d014cdd96a81823a8d9",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-intersection-line.obj": "c3ffaa61b398f7c14cf67df21a761ce47878210a6c607b4d5a7aafbf51273235",
+    "Models/OBJ format/road-intersection-line.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-intersection-line.png": "4eb094ec27879185aa81c6c9977b3e7d74f1934634cf3b32deea20e359c34b0e"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-intersection-line.fbx": "dc27dd0cb94cf2ad2ccf08bb2e55c86a2e276b43e3b045965f8aa212609b16be",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-intersection-line.glb": "a9a202594178362e89ae62b1d9cbfbc7c892f9fcb8564d014cdd96a81823a8d9",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-intersection-line.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-intersection-line.obj": "82d6d4b33d61b5f411ff49920b3b757299e508dac702706038b3d82fc1d81b3a",
+    "Preview.png": "4eb094ec27879185aa81c6c9977b3e7d74f1934634cf3b32deea20e359c34b0e"
+  },
+  "license": "../License.txt"
+}

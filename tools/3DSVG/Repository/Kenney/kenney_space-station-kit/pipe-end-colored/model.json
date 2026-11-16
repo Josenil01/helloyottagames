@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pipe-end-colored",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/pipe-end-colored.fbx": "59fc10ffac2bb141b6091359c8dd1dbe1a28e13e8cbbc535ec9d83946e5dca73",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/pipe-end-colored.glb": "dc114061b60a441df6b32696481ba32e135a6c3d58f4ebfc3a7f9945d9ae23aa",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/pipe-end-colored.obj": "29f6cdd9a6256ee42a93d0e337cbc871441deaf3377056481c590783516c71c1",
+    "Models/OBJ format/pipe-end-colored.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/pipe-end-colored.png": "dbf072988ceda10c0b786879bf0a8fc44e6c663643ded49478ae9f81fd5ad2df"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/pipe-end-colored.fbx": "59fc10ffac2bb141b6091359c8dd1dbe1a28e13e8cbbc535ec9d83946e5dca73",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/pipe-end-colored.glb": "dc114061b60a441df6b32696481ba32e135a6c3d58f4ebfc3a7f9945d9ae23aa",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/pipe-end-colored.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/pipe-end-colored.obj": "5b3232267e9067f1717197193692cd268b696c166870baac19acdbf3b8d7a146",
+    "Preview.png": "dbf072988ceda10c0b786879bf0a8fc44e6c663643ded49478ae9f81fd5ad2df"
+  },
+  "license": "../License.txt"
+}

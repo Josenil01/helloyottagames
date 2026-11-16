@@ -1,0 +1,19 @@
+{
+  "name": "zombie-female-d-blockie",
+  "pack": "Hello Yotta · Blockie",
+  "status": "ready",
+  "sourceModel": "Kenney Mini Characters / character-female-d",
+  "sourceLicense": "CC0",
+  "changes": "Zombie palette, forward arm pose, asymmetric pale eyes, missing-tooth smile, worn shirt and patches. Non-gory.",
+  "statistics": {
+    "vertices": 1857,
+    "triangles": 1633
+  },
+  "formats": [
+    "blend",
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "front": "Blender -Y / 3DSVG +Z"
+}

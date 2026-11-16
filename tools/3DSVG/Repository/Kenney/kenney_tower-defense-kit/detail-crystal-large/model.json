@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "detail-crystal-large",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/detail-crystal-large.fbx": "a63a0baa9ba4cc7f0412ff05d083c5f8365a1797b82bd86581e16c6b40a38926",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/detail-crystal-large.glb": "f236176d2ebb5b751b3c326a63a05831719af070483c1f86f501dec5cd885518",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/detail-crystal-large.obj": "6871f00b55bf38d89648ade7cdee1425a6f23bd98f0ef3a472f79f843f9910df",
+    "Models/OBJ format/detail-crystal-large.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/detail-crystal-large.png": "015fa2ab7f7dfd292ef29c3e0a00cda3cb5f5f2ef0a0c5cfcd9379c719045472"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/detail-crystal-large.fbx": "a63a0baa9ba4cc7f0412ff05d083c5f8365a1797b82bd86581e16c6b40a38926",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/detail-crystal-large.glb": "f236176d2ebb5b751b3c326a63a05831719af070483c1f86f501dec5cd885518",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/detail-crystal-large.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/detail-crystal-large.obj": "bc883c1a512796bde1bc276401c3159f54bc00d9c18b6819f8003851c4be80f8",
+    "Preview.png": "015fa2ab7f7dfd292ef29c3e0a00cda3cb5f5f2ef0a0c5cfcd9379c719045472"
+  },
+  "license": "../License.txt"
+}

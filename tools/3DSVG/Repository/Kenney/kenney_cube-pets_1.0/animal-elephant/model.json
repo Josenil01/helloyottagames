@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "animal-elephant",
+  "pack": "kenney_cube-pets_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/FBX format/animal-elephant.fbx": "a54d700458fc5b9e9df2b8af8a68ab4e4040bb49932b1fe229d09c7c16d5b8b4",
+    "Models/GLB format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/GLB format/animal-elephant.glb": "0831346fb8ddb8e99e42e3f92fb48858551049dc7ea49e641d90fdfc65e057be",
+    "Models/OBJ format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/OBJ format/animal-elephant.obj": "ae0195267c15df895aa7430cb98b1d204b1b06f6540ca8a0e08792b6ca4f1e6b",
+    "Models/OBJ format/animal-elephant.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/animal-elephant.png": "2cb7dd14e7c340bf3d6dfdd10ef8c3d6475fec5ebbf87d27bd2a344b7501d6e2"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "FBX format/animal-elephant.fbx": "a54d700458fc5b9e9df2b8af8a68ab4e4040bb49932b1fe229d09c7c16d5b8b4",
+    "Textures/GLB/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "GLB format/animal-elephant.glb": "0831346fb8ddb8e99e42e3f92fb48858551049dc7ea49e641d90fdfc65e057be",
+    "Textures/OBJ/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "OBJ format/animal-elephant.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/animal-elephant.obj": "a8f03c4e441650c4167e5d37b72ffcd9283c1211c148c7b7dea374525d2a8ea9",
+    "Preview.png": "2cb7dd14e7c340bf3d6dfdd10ef8c3d6475fec5ebbf87d27bd2a344b7501d6e2"
+  },
+  "license": "../License.txt"
+}

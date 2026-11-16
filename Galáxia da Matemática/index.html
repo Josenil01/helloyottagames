@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/game-viewport.css" />
-    <title>Galáxia da Matemática - Adição e Subtração</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Galáxia Geométrica — Reconhecer e explorar</title>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -122,8 +121,16 @@
             opacity: 0.1;
         }
     </style>
+    <link rel="stylesheet" href="geometry.css">
+
+  <!-- Visual library: high-resolution CC0 assets; original game logic preserved. -->
+  <link rel="stylesheet" href="../styles/visual-assets.css">
+  <script defer src="../utils/visual-manifest.js"></script>
+  <script defer src="../utils/visual-assets.js"></script>
 </head>
 <body>
+    <!-- Interface anterior preservada como referência, sem executar seus controles. -->
+    <template id="legacy-math-interface">
 
     <div class="stars-bg"></div>
 
@@ -237,11 +244,56 @@
         </div>
     </div>
 
+    </template>
+    <main id="geometry-app">
+        <section id="geo-home" class="geo-scene">
+            <a class="geo-back" href="../index.html">← Todos os jogos</a>
+            <div class="geo-cover">
+                <p class="geo-eyebrow">UMA MISSÃO ENTRE FORMAS E ESTRELAS</p>
+                <h1>Galáxia<br><span>Geométrica</span></h1>
+                <div class="geo-orbit" aria-hidden="true"><span>△</span><strong>🚀</strong><span>⬡</span></div>
+                <p>Reconheça as figuras. Pilote sua nave.<br>Explore 12 trilhas pelo universo da geometria.</p>
+                <button class="geo-primary" id="geo-launch">INICIAR MISSÃO →</button>
+                <p class="geo-caption">3 desafios de reconhecimento + 2 missões de coleta por trilha</p>
+            </div>
+        </section>
+        <section id="geo-levels" class="geo-scene" hidden>
+            <header class="geo-header"><button class="geo-back" id="geo-home-btn">← Início</button><span id="geo-stars"></span></header>
+            <h1>Mapa estelar</h1><p>Escolha sua trilha. Novas figuras esperam por você!</p>
+            <div id="geo-grid"></div>
+        </section>
+        <section id="geo-game" class="geo-scene" hidden>
+            <header class="geo-header"><button class="geo-back" id="geo-exit">← Trilhas</button><span id="geo-phase"></span><strong id="geo-score" aria-live="polite">0 pontos</strong></header>
+            <div class="geo-progress" role="progressbar" aria-label="Desafios concluídos" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"><div id="geo-progress-fill"></div></div>
+            <section id="geo-recognition">
+                <p class="geo-eyebrow">RECONHECIMENTO DE FIGURAS</p>
+                <h2 id="geo-question"></h2><p>Escolha a figura e confirme sua resposta.</p>
+                <div id="geo-options" class="geo-options" role="group" aria-label="Opções de figuras"></div>
+                <p id="geo-answer-feedback" class="geo-feedback" role="status"></p>
+                <button id="geo-confirm" class="geo-primary" disabled>CONFIRMAR</button>
+            </section>
+            <section id="geo-flight" hidden>
+                <div class="geo-flight-hud"><div id="geo-target"></div><strong id="geo-collected">0 / 10</strong><button id="geo-pause" class="geo-back">Ⅱ Pausar</button></div>
+                <p class="geo-flight-help">No computador, mova o mouse. No celular, deslize o dedo na área de voo. +100 por acerto · −50 por erro.</p>
+                <div id="geo-arena" tabindex="0" aria-label="Área de pilotagem. Mova o ponteiro ou arraste o dedo para guiar a nave. Também é possível usar as setas do teclado.">
+                    <div id="geo-ship" aria-hidden="true"><svg viewBox="0 0 64 48"><path class="ship-flame" d="M18 16L0 24l18 8" fill="#fbbf24"/><path d="M13 15L8 2l30 12L60 24 38 34 8 46l5-15z" fill="#c7d2fe" stroke="#818cf8" stroke-width="2"/><path d="M22 18l18 6-18 6z" fill="#22d3ee"/></svg></div>
+                    <div id="geo-objects" aria-hidden="true"></div>
+                    <div id="geo-flight-overlay" hidden><div><p id="geo-overlay-title"></p><div id="geo-overlay-shape"></div><p id="geo-overlay-text"></p><button id="geo-resume" class="geo-primary">COMEÇAR VOO</button></div></div>
+                </div>
+                <p id="geo-flight-feedback" class="geo-feedback" role="status"></p>
+            </section>
+            <section id="geo-result" class="geo-result" hidden>
+                <div class="geo-result-icon" aria-hidden="true">🌟</div><h2 id="geo-result-title"></h2><p id="geo-result-text"></p><p id="geo-result-stars"></p>
+                <button id="geo-next" class="geo-primary">PRÓXIMO DESAFIO →</button>
+                <button id="geo-result-map" class="geo-back">Voltar às trilhas</button>
+            </section>
+        </section>
+    </main>
     <script src="../utils/audio.js"></script>
-    <script src="../utils/score.js"></script>
+    <script src="geometry-score.js"></script>
     <script src="../utils/elapsed.js"></script>
-    <script src="../utils/progress.js"></script>
     <script src="../utils/stars.js"></script>
-    <script src="main.js"></script>
+    <script src="geometry-core.js"></script>
+    <script src="geometry.js"></script>
 </body>
 </html>

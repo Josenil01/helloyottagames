@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "block-grass-overhang-low-large",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/block-grass-overhang-low-large.fbx": "b12e0de5bfb95d3611a9aca03b262a190b275ec90a603e72bb5f40ff27f0f160",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/block-grass-overhang-low-large.glb": "bbd7e30f0580c3d15cd51150d986f50535845b89f818f792d1cc8c8d416df706",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/block-grass-overhang-low-large.obj": "d2eb987c0cfa1d58fadc56a8f026256495397dd53694dca69f80997913129e69",
+    "Models/OBJ format/block-grass-overhang-low-large.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/block-grass-overhang-low-large.png": "09cc7c5963727e25d6fc09a415569b97534fa1da6ebe0307a56ae7be7fe82835"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/block-grass-overhang-low-large.fbx": "b12e0de5bfb95d3611a9aca03b262a190b275ec90a603e72bb5f40ff27f0f160",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/block-grass-overhang-low-large.glb": "bbd7e30f0580c3d15cd51150d986f50535845b89f818f792d1cc8c8d416df706",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/block-grass-overhang-low-large.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/block-grass-overhang-low-large.obj": "b6892b2c8ab07a2a3d633eaf8037fb1bc92f5ac4e3df7ea97bb74806060b0ce7",
+    "Preview.png": "09cc7c5963727e25d6fc09a415569b97534fa1da6ebe0307a56ae7be7fe82835"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "burger-cheese",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/burger-cheese.fbx": "1bcf864191a216cc97f30eac0d5cade576cf15560ad103237d0fb16071d7eba3",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/burger-cheese.glb": "1797e8031017d9d8ebdad93103f59e8ad56482b58665dcb2c6376172f997ef5b",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/burger-cheese.obj": "cf9a336c05436dbf1c56ce17f505f0cc9293ac573b1a5eb973baf7d1a30e7caa",
+    "Models/OBJ format/burger-cheese.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/burger-cheese.png": "c01f8df9404d6a8d5b33241bb72e8fd954749aee669393da1fc4f127c8a1f29a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/burger-cheese.fbx": "1bcf864191a216cc97f30eac0d5cade576cf15560ad103237d0fb16071d7eba3",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/burger-cheese.glb": "1797e8031017d9d8ebdad93103f59e8ad56482b58665dcb2c6376172f997ef5b",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/burger-cheese.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/burger-cheese.obj": "1fc9e24aa339a25a7866364aecac609dc82b64d18eeaddee618eb111763d7103",
+    "Preview.png": "c01f8df9404d6a8d5b33241bb72e8fd954749aee669393da1fc4f127c8a1f29a"
+  },
+  "license": "../License.txt"
+}

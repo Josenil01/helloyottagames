@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "rock",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/rock.fbx": "f4b3e12f7c6927da331bfde2894a22e883198d2876202b96cc95f95691e8882f",
+    "Models/GLTF format/rock.glb": "dbc02af619e176d10676ceb0e788d0bf8838731bef0d50972f11c7bf5d1f4922",
+    "Models/OBJ format/rock.obj": "322806bb2b616ced880e27361a25ec2233fdc233f7642efbdf3de34fb8722be0",
+    "Models/OBJ format/rock.mtl": "3866bde6b5c5e5fa05775c22d45ca7fd8086411ddb9ca0542e1abf4f231ec255"
+  },
+  "files": {
+    "FBX format/rock.fbx": "f4b3e12f7c6927da331bfde2894a22e883198d2876202b96cc95f95691e8882f",
+    "GLB format/rock.glb": "dbc02af619e176d10676ceb0e788d0bf8838731bef0d50972f11c7bf5d1f4922",
+    "OBJ format/rock.mtl": "3866bde6b5c5e5fa05775c22d45ca7fd8086411ddb9ca0542e1abf4f231ec255",
+    "OBJ format/rock.obj": "79e99b13d85e36568f37dbd75d1d48f92f4390c21dcb5b3300c9b1adfaa2a0ca"
+  },
+  "license": "../License.txt"
+}

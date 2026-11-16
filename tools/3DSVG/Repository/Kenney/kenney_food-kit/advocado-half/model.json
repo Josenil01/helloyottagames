@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "advocado-half",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/advocado-half.fbx": "15fa07c1368d2006a3e8a71477b10391bd9def0e9643985caad2303e776ecea1",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/advocado-half.glb": "d7f405407a6592677c3d38f2e0b23334727c30902178a22e6c54f993b68b1c3b",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/advocado-half.obj": "4a0be79dcc399f233cf3dbb5dc0bf111221b9d9153423bbd9f3c53c1d399a327",
+    "Models/OBJ format/advocado-half.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/advocado-half.png": "100cc6632a0c74a5e6adffa02c0229a5039202679a9d84c2eed6698a4685e31b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/advocado-half.fbx": "15fa07c1368d2006a3e8a71477b10391bd9def0e9643985caad2303e776ecea1",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/advocado-half.glb": "d7f405407a6592677c3d38f2e0b23334727c30902178a22e6c54f993b68b1c3b",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/advocado-half.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/advocado-half.obj": "b6a264543bf9e17e864ee4045c461e1aee18dd4acb419b941eae35a4cfca9cbf",
+    "Preview.png": "100cc6632a0c74a5e6adffa02c0229a5039202679a9d84c2eed6698a4685e31b"
+  },
+  "license": "../License.txt"
+}

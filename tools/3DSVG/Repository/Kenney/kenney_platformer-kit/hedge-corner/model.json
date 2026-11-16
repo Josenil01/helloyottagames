@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "hedge-corner",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/hedge-corner.fbx": "f9b5070279c423993dc830c8530095f07e08200e99eb122b2dfc707edef1ddda",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/hedge-corner.glb": "927602e30de4da6abf4c7264b148a745570b44c02bc42ae751a8976687dd15ea",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/hedge-corner.obj": "ea0686d65ff75cf3b65c924c19669d291937d86428df0c61340bf20cd9bac43e",
+    "Models/OBJ format/hedge-corner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/hedge-corner.png": "87f8a64aadfa39316adc09e8e26814760ddfe4a939aba9a9e313bb80090fb08d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/hedge-corner.fbx": "f9b5070279c423993dc830c8530095f07e08200e99eb122b2dfc707edef1ddda",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/hedge-corner.glb": "927602e30de4da6abf4c7264b148a745570b44c02bc42ae751a8976687dd15ea",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/hedge-corner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/hedge-corner.obj": "385734d77a3b48cd4395cdf9201172f8666832260f5c662252b52810d8bc3916",
+    "Preview.png": "87f8a64aadfa39316adc09e8e26814760ddfe4a939aba9a9e313bb80090fb08d"
+  },
+  "license": "../License.txt"
+}

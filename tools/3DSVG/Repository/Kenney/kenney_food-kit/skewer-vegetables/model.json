@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "skewer-vegetables",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/skewer-vegetables.fbx": "8f425a062e1a2243f2fa2772513ccde9123b564165c205b07f6a4a63df8d3e9e",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/skewer-vegetables.glb": "943cddcbddca0446f202b0331626d8b46b6126444dcb26d138ef13288b0c3905",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/skewer-vegetables.obj": "6bf4223243fd010a1c10226d0b74f0fbb87f334a81014a46828c3c235c65b567",
+    "Models/OBJ format/skewer-vegetables.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/skewer-vegetables.png": "5f17f696aa7e3918d12841b3d572e359baf28b0c0d4e654f5c4be64f92a64f17"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/skewer-vegetables.fbx": "8f425a062e1a2243f2fa2772513ccde9123b564165c205b07f6a4a63df8d3e9e",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/skewer-vegetables.glb": "943cddcbddca0446f202b0331626d8b46b6126444dcb26d138ef13288b0c3905",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/skewer-vegetables.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/skewer-vegetables.obj": "0e7ce2b1b0dd23f1f90bc4b6b4f8474e886edc49551c6508b34d2928d470810f",
+    "Preview.png": "5f17f696aa7e3918d12841b3d572e359baf28b0c0d4e654f5c4be64f92a64f17"
+  },
+  "license": "../License.txt"
+}

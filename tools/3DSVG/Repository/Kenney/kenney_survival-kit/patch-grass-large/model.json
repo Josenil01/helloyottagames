@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "patch-grass-large",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/patch-grass-large.fbx": "9254c99868870b462fb2e8b16e9c88fa0d5364aba49c5074fe80b54aa46aea99",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/patch-grass-large.glb": "458f467382babd3f0d075a8bef781119c8fead62f806366a274cbc0e7e65b3a1",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/patch-grass-large.obj": "793e18eac58371bad26ac64925777d95d7032ed5555e8f27a963fd16701a0de7",
+    "Models/OBJ format/patch-grass-large.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/patch-grass-large.png": "4fed63d807fe804df82c45ae274d363f106cef0d552f1b2c46a0836852f3f31d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/patch-grass-large.fbx": "9254c99868870b462fb2e8b16e9c88fa0d5364aba49c5074fe80b54aa46aea99",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/patch-grass-large.glb": "458f467382babd3f0d075a8bef781119c8fead62f806366a274cbc0e7e65b3a1",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/patch-grass-large.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/patch-grass-large.obj": "ad5ffc722273cfdf81da9e75f9811993f04aedb3c286fbaf94c7a4eb0f715d81",
+    "Preview.png": "4fed63d807fe804df82c45ae274d363f106cef0d552f1b2c46a0836852f3f31d"
+  },
+  "license": "../License.txt"
+}

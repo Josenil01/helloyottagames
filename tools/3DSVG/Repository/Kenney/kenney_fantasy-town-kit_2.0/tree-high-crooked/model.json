@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tree-high-crooked",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/tree-high-crooked.fbx": "24de52d31da0b754e59e80daeebfef4d09e32e521879be8f0861791c3c0b4370",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/tree-high-crooked.glb": "a9af8768a5328c62694a42f67858a88eea974ad4540c5c3c54a7a70fdead7505",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/tree-high-crooked.obj": "dc7dc881725de0453f1ca87665cc1ccb39009dbb3b8d933296439e753111d3a3",
+    "Models/OBJ format/tree-high-crooked.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tree-high-crooked.png": "96f9253f048e07325a70a3b86456d97790701b2ddd6d7ab04635332ae02b7bfd"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/tree-high-crooked.fbx": "24de52d31da0b754e59e80daeebfef4d09e32e521879be8f0861791c3c0b4370",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/tree-high-crooked.glb": "a9af8768a5328c62694a42f67858a88eea974ad4540c5c3c54a7a70fdead7505",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/tree-high-crooked.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tree-high-crooked.obj": "0a722cb25cf4ca74648ef5f1c76bcdc93e44e6c294025d6c03ced32991a91f7e",
+    "Preview.png": "96f9253f048e07325a70a3b86456d97790701b2ddd6d7ab04635332ae02b7bfd"
+  },
+  "license": "../License.txt"
+}

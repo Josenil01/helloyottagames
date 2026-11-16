@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bed-double-cover",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/bed-double-cover.fbx": "9a03b70335e788568d6aa75b2b021de86f8db0378e320773a6ad04b94798e889",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/bed-double-cover.glb": "7f2fd2e8b39aa07de8e538ff79239d7c2f6ba63b9a9b745fbc693df461dafbee",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/bed-double-cover.obj": "f920da5750db60d0e37b27e609450643408204910550b9594d0ac8c1e689cf46",
+    "Models/OBJ format/bed-double-cover.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/bed-double-cover.png": "1abf15baf1c355c45b1642e44735532a24e30c9625d21b0ab203bc0c7c376d00"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/bed-double-cover.fbx": "9a03b70335e788568d6aa75b2b021de86f8db0378e320773a6ad04b94798e889",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/bed-double-cover.glb": "7f2fd2e8b39aa07de8e538ff79239d7c2f6ba63b9a9b745fbc693df461dafbee",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/bed-double-cover.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/bed-double-cover.obj": "1069da2937b1dc2a8ec94923432b8f4898ac5aa015baa997ee74e8c7e06ceb33",
+    "Preview.png": "1abf15baf1c355c45b1642e44735532a24e30c9625d21b0ab203bc0c7c376d00"
+  },
+  "license": "../License.txt"
+}

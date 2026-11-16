@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "snow-tile-bump",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/snow-tile-bump.fbx": "1d3b1c46e8de6cabe79406963c2f6f4cf71c1350bfd923d1a8622869cb6ed8f4",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/snow-tile-bump.glb": "088466d75a8d7539731d09ccde0e818eb303ae1ea5e4644e329844edddcd742f",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/snow-tile-bump.obj": "1c4376d5d462f0a75b7c71d2ad916adf3e8a6f4860a9d7be69733dcd08ce8497",
+    "Models/OBJ format/snow-tile-bump.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/snow-tile-bump.png": "297133480e3c46fe7a93de6b71b17ae044aafc24db0b7fc37c9e1b5a4756a3cc"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/snow-tile-bump.fbx": "1d3b1c46e8de6cabe79406963c2f6f4cf71c1350bfd923d1a8622869cb6ed8f4",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/snow-tile-bump.glb": "088466d75a8d7539731d09ccde0e818eb303ae1ea5e4644e329844edddcd742f",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/snow-tile-bump.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/snow-tile-bump.obj": "317fa7863ae60555597430c783fc997819f52ef0d40871b65c8435892ea21394",
+    "Preview.png": "297133480e3c46fe7a93de6b71b17ae044aafc24db0b7fc37c9e1b5a4756a3cc"
+  },
+  "license": "../License.txt"
+}

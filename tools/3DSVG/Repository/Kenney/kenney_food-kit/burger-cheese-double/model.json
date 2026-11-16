@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "burger-cheese-double",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/burger-cheese-double.fbx": "26964adf66b64234f51c3d30cefe1362e533cb8fe515d315478312381bbdbf2b",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/burger-cheese-double.glb": "d82a5ac064d8c4afa696aea945c94ab6f74b419f589703f902b01c1cc0fdd757",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/burger-cheese-double.obj": "d6d72ce06887834a0946ed757f087dbb45ff4c890f37971233adcb19e7ee3aad",
+    "Models/OBJ format/burger-cheese-double.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/burger-cheese-double.png": "ebdbb4f4550326b85e22283c1a8d2ab1217cacc91b910943761830e9d9bcdab5"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/burger-cheese-double.fbx": "26964adf66b64234f51c3d30cefe1362e533cb8fe515d315478312381bbdbf2b",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/burger-cheese-double.glb": "d82a5ac064d8c4afa696aea945c94ab6f74b419f589703f902b01c1cc0fdd757",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/burger-cheese-double.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/burger-cheese-double.obj": "a4bb02c8437dc593f4345e56fd61e3fb8c4fc84c07e5f7ae3fe61d6e5e6384a4",
+    "Preview.png": "ebdbb4f4550326b85e22283c1a8d2ab1217cacc91b910943761830e9d9bcdab5"
+  },
+  "license": "../License.txt"
+}

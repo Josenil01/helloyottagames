@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "kitchenCabinet",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/kitchenCabinet.fbx": "dd52037b1eabdf79ad9aa5e124bd7977c6416482cbb50ec2c6f9162f0b7216bb",
+    "Models/GLTF format/kitchenCabinet.glb": "7238c57778935ae25db5e57e9f7af3ba7068c71b005ff7cfbff3b6f3b1a13200",
+    "Models/OBJ format/kitchenCabinet.obj": "4512ccf68ff5ae92b95e38fd32690ca85866e9058801571bce05a6626d386109",
+    "Models/OBJ format/kitchenCabinet.mtl": "65db6d4be22aa0659c3901a1d67df0acfa6383b0069f78d2fff25e8dcbdb2e7f"
+  },
+  "files": {
+    "FBX format/kitchenCabinet.fbx": "dd52037b1eabdf79ad9aa5e124bd7977c6416482cbb50ec2c6f9162f0b7216bb",
+    "GLB format/kitchenCabinet.glb": "7238c57778935ae25db5e57e9f7af3ba7068c71b005ff7cfbff3b6f3b1a13200",
+    "OBJ format/kitchenCabinet.mtl": "5d82650a151c9840b6ed813af7a5053afa3b1c441e22c4d03dd2fe6dc4ad1401",
+    "OBJ format/kitchenCabinet.obj": "6da116471a3a1a776bd2de3a1685c153b285d017dbbca01732e4d505d24ea074"
+  },
+  "license": "../License.txt"
+}

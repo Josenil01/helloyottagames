@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "character-vampire",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/character-vampire.fbx": "e0d453e03273d9370590ad4bb703ac9c7fc063096b824943f4bd805421f56742",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/character-vampire.glb": "89e646e46d9a067009a548d9b120ec358fbe9fa3b0d671136b8bf930be2f2cd4",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/character-vampire.obj": "b05d5600cd0fee264d2863b35c607f871d1eb5c97aed4e23cd07e110e3830949",
+    "Models/OBJ format/character-vampire.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/character-vampire.png": "37e94f3d39af4746b51122379f51da4aa877aea85ae61dd5d73766dcf4e64ae3"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/character-vampire.fbx": "e0d453e03273d9370590ad4bb703ac9c7fc063096b824943f4bd805421f56742",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/character-vampire.glb": "89e646e46d9a067009a548d9b120ec358fbe9fa3b0d671136b8bf930be2f2cd4",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/character-vampire.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/character-vampire.obj": "57e40c86491f7697273cd2dd55a88137005e34b0f9387eddaab5c0ba71ed8e3e",
+    "Preview.png": "37e94f3d39af4746b51122379f51da4aa877aea85ae61dd5d73766dcf4e64ae3"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "conveyor-bars-fence",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/conveyor-bars-fence.fbx": "bdedbe4226585c8a343c3caef6b65866b4886523c7186026799bb9bf4be64c1f",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/conveyor-bars-fence.glb": "a74427df45a69d714759bd76cd23014d3db8d8964e3222984078ea76cfcaadcb",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/conveyor-bars-fence.obj": "245f97996d5a03e422f807c7bc75e0df94c822e7d4d95ffd18b1a0eb6c79e8d8",
+    "Models/OBJ format/conveyor-bars-fence.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/conveyor-bars-fence.png": "91e8568903f0814257f5828732a91c43b412a65ea406f251ba1d8f7ae9dab061"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/conveyor-bars-fence.fbx": "bdedbe4226585c8a343c3caef6b65866b4886523c7186026799bb9bf4be64c1f",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/conveyor-bars-fence.glb": "a74427df45a69d714759bd76cd23014d3db8d8964e3222984078ea76cfcaadcb",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/conveyor-bars-fence.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/conveyor-bars-fence.obj": "4749ec327e6dba8f6e7c8b4e71bf913d68585de054e33628c137d9953ea9c78d",
+    "Preview.png": "91e8568903f0814257f5828732a91c43b412a65ea406f251ba1d8f7ae9dab061"
+  },
+  "license": "../License.txt"
+}

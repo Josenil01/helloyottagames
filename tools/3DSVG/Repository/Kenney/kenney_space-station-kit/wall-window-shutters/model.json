@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-window-shutters",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/wall-window-shutters.fbx": "59f8209b469a8f8fac3ed4f80d50196a51689c82be2f6fbbeb2043756412002d",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/wall-window-shutters.glb": "ba607af511db91c8ec6768550962cfb05fb7fcf3d6b834bf953ac25945abbb49",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/wall-window-shutters.obj": "bd6791844fa2e1809491ec8c67043c3bdf8d168e22e2d774594480013d5b1a42",
+    "Models/OBJ format/wall-window-shutters.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-window-shutters.png": "0ae1777ca31583628faf9927645e18b7cc96f2c481f5c2a94b5aa6afdc04c21b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/wall-window-shutters.fbx": "59f8209b469a8f8fac3ed4f80d50196a51689c82be2f6fbbeb2043756412002d",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/wall-window-shutters.glb": "ba607af511db91c8ec6768550962cfb05fb7fcf3d6b834bf953ac25945abbb49",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/wall-window-shutters.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-window-shutters.obj": "b032d6ec4f25191ceda3d18b95e9f8101ded87a11c154a6bb6fc9921b3c334b3",
+    "Preview.png": "0ae1777ca31583628faf9927645e18b7cc96f2c481f5c2a94b5aa6afdc04c21b"
+  },
+  "license": "../License.txt"
+}

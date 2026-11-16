@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "enemy-ufo-b-weapon",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/enemy-ufo-b-weapon.fbx": "15bb0f5957a957526b336bfab4277cd6140fb1ed5418f5952e2917d0abe3c19c",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/enemy-ufo-b-weapon.glb": "4490537636876e50bc5e1568fae0793a68c7bd85aaf264b3d1f783d4a8fed8de",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/enemy-ufo-b-weapon.obj": "eb7ec0ec6a1b1c8753662461224c675f6c9b0add2f644a5ee74f3507efa53134",
+    "Models/OBJ format/enemy-ufo-b-weapon.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/enemy-ufo-b-weapon.png": "b98b79f97a75a0f22093378922a8346b2daac14ab7e06980890858d970472760"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/enemy-ufo-b-weapon.fbx": "15bb0f5957a957526b336bfab4277cd6140fb1ed5418f5952e2917d0abe3c19c",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/enemy-ufo-b-weapon.glb": "4490537636876e50bc5e1568fae0793a68c7bd85aaf264b3d1f783d4a8fed8de",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/enemy-ufo-b-weapon.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/enemy-ufo-b-weapon.obj": "405212ea4743badc6851979ec3c5ecffa241819f68b389c44af5f7be3aaf0edd",
+    "Preview.png": "b98b79f97a75a0f22093378922a8346b2daac14ab7e06980890858d970472760"
+  },
+  "license": "../License.txt"
+}

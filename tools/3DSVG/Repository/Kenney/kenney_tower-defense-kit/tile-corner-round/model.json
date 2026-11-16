@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tile-corner-round",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/tile-corner-round.fbx": "28e1b493288b5fcb2c698fc30c17412b038a49230fd869b7dfda1070b369831b",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/tile-corner-round.glb": "292c5f5c6096a86e3b38e1b678f31a955a82ac1a0e99c17074e1f367e2da83ce",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/tile-corner-round.obj": "aa6128012ffae37f89302b6d8b4957311f00eef07a79e49547cdd509ba12b3f3",
+    "Models/OBJ format/tile-corner-round.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tile-corner-round.png": "f31f4a33aabd3d2eb3e85e2b3420b15f924ec313555533fb54db4ddca23ea5d2"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/tile-corner-round.fbx": "28e1b493288b5fcb2c698fc30c17412b038a49230fd869b7dfda1070b369831b",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/tile-corner-round.glb": "292c5f5c6096a86e3b38e1b678f31a955a82ac1a0e99c17074e1f367e2da83ce",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/tile-corner-round.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tile-corner-round.obj": "d1280e8fc7979353866becc63d9d8a83e0602ff6bf446aea11423c4378ecce99",
+    "Preview.png": "f31f4a33aabd3d2eb3e85e2b3420b15f924ec313555533fb54db4ddca23ea5d2"
+  },
+  "license": "../License.txt"
+}

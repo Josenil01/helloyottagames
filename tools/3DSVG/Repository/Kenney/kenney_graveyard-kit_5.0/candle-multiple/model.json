@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "candle-multiple",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/candle-multiple.fbx": "871467fcd7decbb5aadd33c101f4199253b2c153c246c21abc9a12eb8c88c532",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/candle-multiple.glb": "e747e04390e8f431e0d80b17696ef01cfa935dd8efff44f7008de6408236b547",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/candle-multiple.obj": "436298bba5e40914f40acf49e20e159b12bf9852e2d04d17dd632c88168e82a5",
+    "Models/OBJ format/candle-multiple.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/candle-multiple.png": "0326555994ce81316d7d4a7993e92fa2f762b3860a2c4c8c84059fdae0fbe590"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/candle-multiple.fbx": "871467fcd7decbb5aadd33c101f4199253b2c153c246c21abc9a12eb8c88c532",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/candle-multiple.glb": "e747e04390e8f431e0d80b17696ef01cfa935dd8efff44f7008de6408236b547",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/candle-multiple.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/candle-multiple.obj": "5a93f1b854f53abb913f029455c964521b1e248b7f52b61630431e72700f96b5",
+    "Preview.png": "0326555994ce81316d7d4a7993e92fa2f762b3860a2c4c8c84059fdae0fbe590"
+  },
+  "license": "../License.txt"
+}

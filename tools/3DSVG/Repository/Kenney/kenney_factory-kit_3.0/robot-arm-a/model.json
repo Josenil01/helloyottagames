@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "robot-arm-a",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/robot-arm-a.fbx": "e515dad2618a3ddc09a41770950709752e46d89a6a495e9bba42eeb5aa7096a9",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/robot-arm-a.glb": "ad3f766791adadd1cfb5ccc27d2b2ac8787848282f2a15b3c407f350dc281b68",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/robot-arm-a.obj": "ea2bd2e53e640d2ef215723acc7c7704df3c8d03408bd1413e44644f31b0a481",
+    "Models/OBJ format/robot-arm-a.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/robot-arm-a.png": "1f92cdefc702932e55bc60210727e91e933e8dd8c09635cbabf3db5ed4635849"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/robot-arm-a.fbx": "e515dad2618a3ddc09a41770950709752e46d89a6a495e9bba42eeb5aa7096a9",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/robot-arm-a.glb": "ad3f766791adadd1cfb5ccc27d2b2ac8787848282f2a15b3c407f350dc281b68",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/robot-arm-a.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/robot-arm-a.obj": "ae2332f9b872c1634c332b862a7f86968adec6694f31dc412d853f2aac886e73",
+    "Preview.png": "1f92cdefc702932e55bc60210727e91e933e8dd8c09635cbabf3db5ed4635849"
+  },
+  "license": "../License.txt"
+}

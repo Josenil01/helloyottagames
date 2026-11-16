@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "paneling",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/paneling.fbx": "4b83283bb89d52dca2e4980be747abdc79b9f88fb3e2c490ff03062ec425317d",
+    "Models/GLTF format/paneling.glb": "69234bb71f54b0241ef6b78c3c7aa8aa855aae745475645f9adec4895296a96c",
+    "Models/OBJ format/paneling.obj": "3ce14cc32e59048946fb9d5e254f0a529368c8f4f168d38d11e1181cf6b50deb",
+    "Models/OBJ format/paneling.mtl": "eb2bffff6262d9b032d9ae1de51467559b6a03da66cd68ac5ecd34ecd004c0c5"
+  },
+  "files": {
+    "FBX format/paneling.fbx": "4b83283bb89d52dca2e4980be747abdc79b9f88fb3e2c490ff03062ec425317d",
+    "GLB format/paneling.glb": "69234bb71f54b0241ef6b78c3c7aa8aa855aae745475645f9adec4895296a96c",
+    "OBJ format/paneling.mtl": "9e288bee18bb8b6b628dec6d8d8acbaba02d65903f607a1be6681b4207798c0b",
+    "OBJ format/paneling.obj": "f0f57dd1b49a9295a3f111e2d0f341b72a40e0778a6d2736d4bab74f5fbd0442"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tool-hammer",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/tool-hammer.fbx": "632fdb53fb8d78517c1c78bf63ec776ee5c90d47d0fe7732fe4433999baaf230",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/tool-hammer.glb": "9b27f03c26dabd49a7ea358615e63fe65e1c3d0157887d4ee1ecdfa1f0e688f3",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/tool-hammer.obj": "448b531208ab7fa1d4c44041a6ca26734e8c805f8284d39f8e72c863f30f55d6",
+    "Models/OBJ format/tool-hammer.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tool-hammer.png": "464507e151ac9708f253d04b8397635d0f0a99ffcb01f42ad2bb7c73c893d41c"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/tool-hammer.fbx": "632fdb53fb8d78517c1c78bf63ec776ee5c90d47d0fe7732fe4433999baaf230",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/tool-hammer.glb": "9b27f03c26dabd49a7ea358615e63fe65e1c3d0157887d4ee1ecdfa1f0e688f3",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/tool-hammer.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tool-hammer.obj": "c0908e2ba47fde1af9b7283dcc9fc061e59c4402e351c343350baa749208490d",
+    "Preview.png": "464507e151ac9708f253d04b8397635d0f0a99ffcb01f42ad2bb7c73c893d41c"
+  },
+  "license": "../License.txt"
+}

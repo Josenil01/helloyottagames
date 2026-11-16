@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tile-spawn",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/tile-spawn.fbx": "99e5c10416c0094ff75343df759f9f4bacd157d485ad3ad22b7769b0cc46b458",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/tile-spawn.glb": "819523457d6a43225d0b9d873326d8d87bfcb771274f99a94b23ce12fda7c65a",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/tile-spawn.obj": "b04270b66d5ae1e2f4a14bdcacb421e294c8c42cfb0368d40d27b4862260cb45",
+    "Models/OBJ format/tile-spawn.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tile-spawn.png": "6e26ac61095218b961f3d3f1a75267853a9d839d9c431b724f5092f5c35f3052"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/tile-spawn.fbx": "99e5c10416c0094ff75343df759f9f4bacd157d485ad3ad22b7769b0cc46b458",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/tile-spawn.glb": "819523457d6a43225d0b9d873326d8d87bfcb771274f99a94b23ce12fda7c65a",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/tile-spawn.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tile-spawn.obj": "e2d13b99d8eb476edc703c59cd58d82c91f3a8fda072bf7f408056258031bf8f",
+    "Preview.png": "6e26ac61095218b961f3d3f1a75267853a9d839d9c431b724f5092f5c35f3052"
+  },
+  "license": "../License.txt"
+}

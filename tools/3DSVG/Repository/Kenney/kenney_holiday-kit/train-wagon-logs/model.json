@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "train-wagon-logs",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/train-wagon-logs.fbx": "09f71b74819730d1623058f531658c5d862565e4be354b2e4adf732aa275bf5e",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/train-wagon-logs.glb": "aa823f961de34e37466044e915380aa5eb1d024a3eadba6149f448d8feb1c80f",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/train-wagon-logs.obj": "5731a8117fe76e099c8d02123e5ce7beef6861c19da449de3e690beb3905651a",
+    "Models/OBJ format/train-wagon-logs.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/train-wagon-logs.png": "da65aa5ad4b0f2b9c19ca12ed9aa16bc2ab124aba85dfc1e7226f818213916be"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/train-wagon-logs.fbx": "09f71b74819730d1623058f531658c5d862565e4be354b2e4adf732aa275bf5e",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/train-wagon-logs.glb": "aa823f961de34e37466044e915380aa5eb1d024a3eadba6149f448d8feb1c80f",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/train-wagon-logs.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/train-wagon-logs.obj": "f442b0c7caebc7ed281a558511e743da6030d8a3c86f532d7083a9d8a223abdc",
+    "Preview.png": "da65aa5ad4b0f2b9c19ca12ed9aa16bc2ab124aba85dfc1e7226f818213916be"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "rock-sand-a",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/rock-sand-a.fbx": "99a9add0a5e05910ca73c9b44afa08cc65a5a019336f814f6625710d2d04189c",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/rock-sand-a.glb": "df5e623e23d5d16ea24a754cbd4af5dbd086d4a2481566bf4abb05df0ac88be0",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/rock-sand-a.obj": "f6ea4df9bd880e9064af17f89e7526e4073b8e6ca2c91c2eca637d58074b7db1",
+    "Models/OBJ format/rock-sand-a.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/rock-sand-a.png": "569ee759ca6821208cbac3d73f412e43f87679a52aa7c9c2ef7b49ead5c29401"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/rock-sand-a.fbx": "99a9add0a5e05910ca73c9b44afa08cc65a5a019336f814f6625710d2d04189c",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/rock-sand-a.glb": "df5e623e23d5d16ea24a754cbd4af5dbd086d4a2481566bf4abb05df0ac88be0",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/rock-sand-a.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/rock-sand-a.obj": "a5d6a0dc064a7afb3e046ed7cae8e0f3b3842f2c16a1875d81e2d1a5c2d95734",
+    "Preview.png": "569ee759ca6821208cbac3d73f412e43f87679a52aa7c9c2ef7b49ead5c29401"
+  },
+  "license": "../License.txt"
+}

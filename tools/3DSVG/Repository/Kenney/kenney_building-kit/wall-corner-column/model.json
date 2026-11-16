@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-corner-column",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/wall-corner-column.fbx": "44fbb444649bc181692bd0a108fd0954b4d7debcf020737c70cc679fbdcf141f",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/wall-corner-column.glb": "41a014fe20aebd2ee7d5e162680d129c4ec8c7ff4cad8dc9a4a793ace597239c",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/wall-corner-column.obj": "9f3cb104d49b804121ecad964a099b46bbc736fa563641723d060567898e0528",
+    "Models/OBJ format/wall-corner-column.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-corner-column.png": "b656f47cc558992434280aacde9a1b07f5fe3607e13833b694fac03d5e576701"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/wall-corner-column.fbx": "44fbb444649bc181692bd0a108fd0954b4d7debcf020737c70cc679fbdcf141f",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/wall-corner-column.glb": "41a014fe20aebd2ee7d5e162680d129c4ec8c7ff4cad8dc9a4a793ace597239c",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/wall-corner-column.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-corner-column.obj": "5ca104d77f0556a90d941031d0bf1b91a002ee1d6197b264f27e0ea772835909",
+    "Preview.png": "b656f47cc558992434280aacde9a1b07f5fe3607e13833b694fac03d5e576701"
+  },
+  "license": "../License.txt"
+}

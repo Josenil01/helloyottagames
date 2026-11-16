@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "block-snow-low-long",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/block-snow-low-long.fbx": "4ba3a100fd1b6fe3f089eaec10f8eee3968327ce088ca7be4bad9aa0382ee071",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/block-snow-low-long.glb": "5c6507f4faa3846e12ce8750ef4910fc0858ed0953df7695366a129e5c8200c8",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/block-snow-low-long.obj": "40cdf5d0b1a5b3518cc1b1b314d321b009f1317d9c033e1d55bb328f7cf5c19e",
+    "Models/OBJ format/block-snow-low-long.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/block-snow-low-long.png": "8d87549a858e8486e7792331bd34b05dd59ca8c48a4229ad80406699eb0f3887"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/block-snow-low-long.fbx": "4ba3a100fd1b6fe3f089eaec10f8eee3968327ce088ca7be4bad9aa0382ee071",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/block-snow-low-long.glb": "5c6507f4faa3846e12ce8750ef4910fc0858ed0953df7695366a129e5c8200c8",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/block-snow-low-long.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/block-snow-low-long.obj": "e3a9472f67950b74ca6b3f90e0c73a721893b833e06d6054ae248483e787fceb",
+    "Preview.png": "8d87549a858e8486e7792331bd34b05dd59ca8c48a4229ad80406699eb0f3887"
+  },
+  "license": "../License.txt"
+}

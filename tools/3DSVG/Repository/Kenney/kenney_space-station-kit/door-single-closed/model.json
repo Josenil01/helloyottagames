@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "door-single-closed",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/door-single-closed.fbx": "370ba137986ab8d3b747c2d7d7d862d186754a02a829cc84b912cb32f81cf05b",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/door-single-closed.glb": "ef12008071c51503a0ba79d029430baacbd6466c9ce7ec20979f477b315cf45e",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/door-single-closed.obj": "b312ac7587c6c970d4ee8869799732175623264cba97163c71a45083488159cb",
+    "Models/OBJ format/door-single-closed.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/door-single-closed.png": "9f4ac8b4a0d2b86dc5e2ab4a9dc1aaeb7e29a59a4c8899ee04a2f9d7cca46c3e"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/door-single-closed.fbx": "370ba137986ab8d3b747c2d7d7d862d186754a02a829cc84b912cb32f81cf05b",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/door-single-closed.glb": "ef12008071c51503a0ba79d029430baacbd6466c9ce7ec20979f477b315cf45e",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/door-single-closed.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/door-single-closed.obj": "c7db6155440c8dff555261b4611db8717d8aa3e00869a06d889fb217dfcfa31a",
+    "Preview.png": "9f4ac8b4a0d2b86dc5e2ab4a9dc1aaeb7e29a59a4c8899ee04a2f9d7cca46c3e"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-sign-warning",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-sign-warning.fbx": "6616582c23bac914d189dc3f3cbdc89cbd7a4ec435c3bebe3779b40f97e5011b",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-sign-warning.glb": "db8049a51eb60c77e40253e8b5a9d41359a49d2a9083223dce361cfb0605c3a9",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-sign-warning.obj": "c8549cca14c89e95db13814f4009e1656aa3d134aebcbc589df2ed6e33c3d610",
+    "Models/OBJ format/road-sign-warning.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-sign-warning.png": "3eab5bd516e1fa18360be7f116b8b51d7686e098deda3a8f267a4ad82091d79e"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-sign-warning.fbx": "6616582c23bac914d189dc3f3cbdc89cbd7a4ec435c3bebe3779b40f97e5011b",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-sign-warning.glb": "db8049a51eb60c77e40253e8b5a9d41359a49d2a9083223dce361cfb0605c3a9",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-sign-warning.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-sign-warning.obj": "a66f503089414579a7411392c096c64296472725f2c010c3e0b65ff1b2f7416f",
+    "Preview.png": "3eab5bd516e1fa18360be7f116b8b51d7686e098deda3a8f267a4ad82091d79e"
+  },
+  "license": "../License.txt"
+}

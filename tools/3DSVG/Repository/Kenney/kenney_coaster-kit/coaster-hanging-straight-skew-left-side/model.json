@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-hanging-straight-skew-left-side",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-hanging-straight-skew-left-side.fbx": "f4be04f367289536f34e5f064db4be92b49bf3f79307bf01e737e5a0cb4df2f2",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-hanging-straight-skew-left-side.glb": "c4f8865165d7f8268664da0c202da99e8b18b695a4f6961e26dbf9f44e5ce8bf",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-hanging-straight-skew-left-side.obj": "8de125777e5b047a127156abf4403e8f13b96f741471c294706276cf4a9f7fc4",
+    "Models/OBJ format/coaster-hanging-straight-skew-left-side.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-hanging-straight-skew-left-side.png": "173279ba4e2938e6f7df2d9f43474600374ac71127871dde5d940c529d48ec30"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-hanging-straight-skew-left-side.fbx": "f4be04f367289536f34e5f064db4be92b49bf3f79307bf01e737e5a0cb4df2f2",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-hanging-straight-skew-left-side.glb": "c4f8865165d7f8268664da0c202da99e8b18b695a4f6961e26dbf9f44e5ce8bf",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-hanging-straight-skew-left-side.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-hanging-straight-skew-left-side.obj": "19e98c3212ac4b04fd8b024fa3b829db477ab485c2b8e1f714e6d77e72ab7fdf",
+    "Preview.png": "173279ba4e2938e6f7df2d9f43474600374ac71127871dde5d940c529d48ec30"
+  },
+  "license": "../License.txt"
+}

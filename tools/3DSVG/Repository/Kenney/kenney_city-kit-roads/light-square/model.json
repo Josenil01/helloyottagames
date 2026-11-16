@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "light-square",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/light-square.fbx": "31bbb793cc6b8d045a6b14d6ea72fc5f470b7565b109a8169d2bf75bdc47f300",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/light-square.glb": "6230d136c8883d7f9bc1b86f0309077e452e26e5e1e587ef1b77abef3c5f047c",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/light-square.obj": "32831e6bb1ff23b7ad1f572a597768f4d80db6773de6e4c5a310ef20dfc088fd",
+    "Models/OBJ format/light-square.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/light-square.png": "95460941c40d3b89ed1ff82c8d46afcff35115a4e3c59eea36b56c7f8e6b5ab4"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/light-square.fbx": "31bbb793cc6b8d045a6b14d6ea72fc5f470b7565b109a8169d2bf75bdc47f300",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/light-square.glb": "6230d136c8883d7f9bc1b86f0309077e452e26e5e1e587ef1b77abef3c5f047c",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/light-square.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/light-square.obj": "fd9c9723c0693cee2dc7fd69ae1603589236136570053b110fa746ef9a2274ea",
+    "Preview.png": "95460941c40d3b89ed1ff82c8d46afcff35115a4e3c59eea36b56c7f8e6b5ab4"
+  },
+  "license": "../License.txt"
+}

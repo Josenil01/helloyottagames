@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "crane-magnet",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/crane-magnet.fbx": "a00b0c48bc1d406f66c8e5b3f6fa81e2935a688fc2ff871e854068e2b361b66a",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/crane-magnet.glb": "9ed1d4690e03fd4cafcd30d182b2319cc6c743794a50108332cab9d76a083f6e",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/crane-magnet.obj": "eb0b2416534edc37cad85865d178e15d4f46a9273fcf3488ae0f67921b7df6fd",
+    "Models/OBJ format/crane-magnet.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/crane-magnet.png": "7bbaf2a548ac72b4ba81dbbae4de15c7f19523f1ab859ae9558a138faf01ad1c"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/crane-magnet.fbx": "a00b0c48bc1d406f66c8e5b3f6fa81e2935a688fc2ff871e854068e2b361b66a",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/crane-magnet.glb": "9ed1d4690e03fd4cafcd30d182b2319cc6c743794a50108332cab9d76a083f6e",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/crane-magnet.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/crane-magnet.obj": "712d6e6c3bf242fe8af4f23b0f3e8058476923bf928b5f56fd4abccfefe75215",
+    "Preview.png": "7bbaf2a548ac72b4ba81dbbae4de15c7f19523f1ab859ae9558a138faf01ad1c"
+  },
+  "license": "../License.txt"
+}

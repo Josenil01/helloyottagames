@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "meat-ribs",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/meat-ribs.fbx": "a877bc2e522c5eb3fe8b6e7da5901a1933cc6f356c94481e06e01fdc7ff0a7aa",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/meat-ribs.glb": "64469de217d3536c879d00c4dea773c169912503de03e516e29b6a0c9ca0341e",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/meat-ribs.obj": "544bef91d7f902873c2ed53fbb18bab08282a6b036f46838c795484a0030d151",
+    "Models/OBJ format/meat-ribs.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/meat-ribs.png": "849c80129c03efb705fba9aa434be85593795bc41298e630d198bdd29cba7346"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/meat-ribs.fbx": "a877bc2e522c5eb3fe8b6e7da5901a1933cc6f356c94481e06e01fdc7ff0a7aa",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/meat-ribs.glb": "64469de217d3536c879d00c4dea773c169912503de03e516e29b6a0c9ca0341e",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/meat-ribs.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/meat-ribs.obj": "68400d96a878afbc04106a68062235438033df030ede803879a8b7fe5c2c28a4",
+    "Preview.png": "849c80129c03efb705fba9aa434be85593795bc41298e630d198bdd29cba7346"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "campfire-fishing-stand",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/campfire-fishing-stand.fbx": "f38de3314d03644ad4757c3e170ee2e2329dfb27e94499d84418ae2908e56404",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/campfire-fishing-stand.glb": "7bb233454f69921f0eecfd8b5122eb19f0aae0d3740daa58075deab8cde461de",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/campfire-fishing-stand.obj": "491a8c58b9c992a35f1ccd64a4ed4890773d4d5b70a1d64aa6aae1b2b5896498",
+    "Models/OBJ format/campfire-fishing-stand.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/campfire-fishing-stand.png": "6012a4e2d52c506a64d48b6fafa97043fed1a39b48fb05d575953cdd01273da9"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/campfire-fishing-stand.fbx": "f38de3314d03644ad4757c3e170ee2e2329dfb27e94499d84418ae2908e56404",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/campfire-fishing-stand.glb": "7bb233454f69921f0eecfd8b5122eb19f0aae0d3740daa58075deab8cde461de",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/campfire-fishing-stand.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/campfire-fishing-stand.obj": "614c9de95667675cc5350eaff99c2c5a1b022120c3255ea3951d7234745924ee",
+    "Preview.png": "6012a4e2d52c506a64d48b6fafa97043fed1a39b48fb05d575953cdd01273da9"
+  },
+  "license": "../License.txt"
+}

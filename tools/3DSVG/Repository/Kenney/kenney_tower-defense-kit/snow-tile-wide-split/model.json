@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "snow-tile-wide-split",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/snow-tile-wide-split.fbx": "7cc4f13973e34ff7f5db88627609f5f0a78f9669a4b8a0bfe904c4e241c5597d",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/snow-tile-wide-split.glb": "a0f450307c3f1a4c8951048877b8b13760564ba61f19994ca3b41547352465de",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/snow-tile-wide-split.obj": "4299f4e98a8eee7eca03e1f913ed397d8d2cd303fd5e5add791e89b56bba644f",
+    "Models/OBJ format/snow-tile-wide-split.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/snow-tile-wide-split.png": "5a0f5602970d90df0c725ad6aa801e294d4c71f28e37704efebf856e82690a8f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/snow-tile-wide-split.fbx": "7cc4f13973e34ff7f5db88627609f5f0a78f9669a4b8a0bfe904c4e241c5597d",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/snow-tile-wide-split.glb": "a0f450307c3f1a4c8951048877b8b13760564ba61f19994ca3b41547352465de",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/snow-tile-wide-split.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/snow-tile-wide-split.obj": "c5d262c8765f8c05d045db2e4c8b5e74f001130670b87c1aee486f470f4baecf",
+    "Preview.png": "5a0f5602970d90df0c725ad6aa801e294d4c71f28e37704efebf856e82690a8f"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "structure-metal-doorway",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/structure-metal-doorway.fbx": "0d2fa7146af60f14bdfb01afcc5ccb678bffdb060aca22311bfd37c648bd24f0",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/structure-metal-doorway.glb": "c91e83d64cc0991e73758fe722618e07b0c282894f7a3f4b9040209a6d006b9e",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/structure-metal-doorway.obj": "e657d4f9a4d42f07f4ad8710038b831c556a779964731e260a281dd17f6f778d",
+    "Models/OBJ format/structure-metal-doorway.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/structure-metal-doorway.png": "45b2a13d35740b2ade6255bb969c3e79e9019d8c4e282867a7f3bc81c300ded8"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/structure-metal-doorway.fbx": "0d2fa7146af60f14bdfb01afcc5ccb678bffdb060aca22311bfd37c648bd24f0",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/structure-metal-doorway.glb": "c91e83d64cc0991e73758fe722618e07b0c282894f7a3f4b9040209a6d006b9e",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/structure-metal-doorway.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/structure-metal-doorway.obj": "ab92b062800e6a4dd18a9bd690c5f0b49b044af3c95e5794e07000fb03a6ae79",
+    "Preview.png": "45b2a13d35740b2ade6255bb969c3e79e9019d8c4e282867a7f3bc81c300ded8"
+  },
+  "license": "../License.txt"
+}

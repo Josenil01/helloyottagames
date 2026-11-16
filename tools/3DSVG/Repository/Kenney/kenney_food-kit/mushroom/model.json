@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "mushroom",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/mushroom.fbx": "4a7ae142579befa54582d7578d7504f3101af7a36bac651151c6057d16c93a2b",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/mushroom.glb": "9ba28f47de26738f31083e590180aba99568f4399de0ec271924f0b278bac997",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/mushroom.obj": "abe856209ebde07bb8dd937f64999fd42235fc27324431850d2e405d28541968",
+    "Models/OBJ format/mushroom.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/mushroom.png": "76913a26315d3c87ed6a57bc46f1124ad21035a9f1cb5698279506e8c88edb1e"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/mushroom.fbx": "4a7ae142579befa54582d7578d7504f3101af7a36bac651151c6057d16c93a2b",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/mushroom.glb": "9ba28f47de26738f31083e590180aba99568f4399de0ec271924f0b278bac997",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/mushroom.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/mushroom.obj": "ad044d01dc8e6e822173a52db526978f26834d5fcce40dbb7bf6a5448e71225a",
+    "Preview.png": "76913a26315d3c87ed6a57bc46f1124ad21035a9f1cb5698279506e8c88edb1e"
+  },
+  "license": "../License.txt"
+}

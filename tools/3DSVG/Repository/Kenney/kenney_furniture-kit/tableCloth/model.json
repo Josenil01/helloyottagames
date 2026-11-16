@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tableCloth",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/tableCloth.fbx": "5610259ebf41edec9e26ef35e364b1b16e4ee3340bf270f44bfdf1679ca5ef7f",
+    "Models/GLTF format/tableCloth.glb": "64de52b5c4370724c29feefd68a65b157c55c88592e2096987bbce007ae80bcb",
+    "Models/OBJ format/tableCloth.obj": "f4a903e12deb72122348bed876237b4dc8cd0416cc4a580e36d101d7b93d253b",
+    "Models/OBJ format/tableCloth.mtl": "1153157e639a95f01be9266437a34d8aff562b07a019f3fec1e923f1c505aaf6"
+  },
+  "files": {
+    "FBX format/tableCloth.fbx": "5610259ebf41edec9e26ef35e364b1b16e4ee3340bf270f44bfdf1679ca5ef7f",
+    "GLB format/tableCloth.glb": "64de52b5c4370724c29feefd68a65b157c55c88592e2096987bbce007ae80bcb",
+    "OBJ format/tableCloth.mtl": "d178c6b62d225b4257ff27a758fd23b47a3f722fa5c757a0cc56d1881752cdec",
+    "OBJ format/tableCloth.obj": "91910e437805fff1f63f916fb323ec7e43cad4c5d8c3eceeedc073615d35493b"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "mincemeat-pie",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/mincemeat-pie.fbx": "4e112091f4de40698f099ef0ed9f844b115091e663aef2705266c73b941dcc1d",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/mincemeat-pie.glb": "b3685d53cdaca2d6110fe5569fdcf45a6d9e18c17e025f28c8477eada0af2a94",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/mincemeat-pie.obj": "8aa8609e09fbac4ad172c3376fe10e6f98739d34ce389e052ef541ebf2c5b63b",
+    "Models/OBJ format/mincemeat-pie.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/mincemeat-pie.png": "9c885992c47d9a0bf9118ffb7823ae5b8f7c8446355b27fbb94a1e45e885283f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/mincemeat-pie.fbx": "4e112091f4de40698f099ef0ed9f844b115091e663aef2705266c73b941dcc1d",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/mincemeat-pie.glb": "b3685d53cdaca2d6110fe5569fdcf45a6d9e18c17e025f28c8477eada0af2a94",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/mincemeat-pie.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/mincemeat-pie.obj": "18ae0acb30fe40fd3c8c6a2e889545b8a8128e867190884ad4a0eb0db8dbaa6e",
+    "Preview.png": "9c885992c47d9a0bf9118ffb7823ae5b8f7c8446355b27fbb94a1e45e885283f"
+  },
+  "license": "../License.txt"
+}

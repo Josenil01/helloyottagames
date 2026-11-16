@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "grass",
+  "pack": "kenney_pirate-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/FBX format/grass.fbx": "c0465fe743d032bb0a9012708d0433d004e56daf745496f7081fcf0075e0b1a3",
+    "Models/GLB format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/GLB format/grass.glb": "0edde2aeb269b7d6498b27647b7e379ae177a12a0732b82bc966d5610f44008e",
+    "Models/OBJ format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/OBJ format/grass.obj": "a22341fdcb0e77d0872dbf110544e97781124ec6a7c5397d1952c7d61a023e70",
+    "Models/OBJ format/grass.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/grass.png": "afbd7da317eca244320d0abfa5300792c47592ba94b933ec689b0edbd6c4c353"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "FBX format/grass.fbx": "c0465fe743d032bb0a9012708d0433d004e56daf745496f7081fcf0075e0b1a3",
+    "Textures/GLB/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "GLB format/grass.glb": "0edde2aeb269b7d6498b27647b7e379ae177a12a0732b82bc966d5610f44008e",
+    "Textures/OBJ/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "OBJ format/grass.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/grass.obj": "3369f31d5015195f7e7d0c8b33348030d60bbd3978daf45077bc04f5a9a6cac9",
+    "Preview.png": "afbd7da317eca244320d0abfa5300792c47592ba94b933ec689b0edbd6c4c353"
+  },
+  "license": "../License.txt"
+}

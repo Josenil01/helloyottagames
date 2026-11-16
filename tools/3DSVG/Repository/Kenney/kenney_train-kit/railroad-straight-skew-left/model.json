@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "railroad-straight-skew-left",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/railroad-straight-skew-left.fbx": "6f41bdcfa2770c805a377b91ca72d8266f87ba3ec889cf8b1d3ee03eac48c3d8",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/railroad-straight-skew-left.glb": "431514c92815bf9eb52d0264d14aa9f384c56cbbe6c328f6dd44a35a56c62f9f",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/railroad-straight-skew-left.obj": "b3de7d57fc5d96a282fbd28ed757a7fdba71d1b4284845b0073287ecb7c76202",
+    "Models/OBJ format/railroad-straight-skew-left.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/railroad-straight-skew-left.png": "3af7c86609ccfbb69e112707cdcaa8c4c3717974e3410d7f56d1f0d186847e02"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/railroad-straight-skew-left.fbx": "6f41bdcfa2770c805a377b91ca72d8266f87ba3ec889cf8b1d3ee03eac48c3d8",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/railroad-straight-skew-left.glb": "431514c92815bf9eb52d0264d14aa9f384c56cbbe6c328f6dd44a35a56c62f9f",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/railroad-straight-skew-left.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/railroad-straight-skew-left.obj": "4beb3f182f5e39545e260a71552421fdfeef1354c158952f867e6ceb1dbb43b3",
+    "Preview.png": "3af7c86609ccfbb69e112707cdcaa8c4c3717974e3410d7f56d1f0d186847e02"
+  },
+  "license": "../License.txt"
+}

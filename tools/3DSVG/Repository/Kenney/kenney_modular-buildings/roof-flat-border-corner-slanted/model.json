@@ -1,0 +1,40 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "roof-flat-border-corner-slanted",
+  "pack": "kenney_modular-buildings",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Models/Textures/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Models/Textures/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "Models/FBX format/roof-flat-border-corner-slanted.fbx": "5fb1657e3f37332803c9f2fbf86d62af054617a5c45e8cd45f0da27795c94295",
+    "Models/GLB format/Textures/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Models/GLB format/roof-flat-border-corner-slanted.glb": "0c92d142424a23f3ac1ae7b715d2abf63e6c79f84864f2e4d0d13efd4d5d56e6",
+    "Models/OBJ format/Textures/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Models/OBJ format/roof-flat-border-corner-slanted.obj": "8e199566408a9a3951af04a4104807f0334b9b602c85edfc098499505fa86fa7",
+    "Models/OBJ format/roof-flat-border-corner-slanted.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/roof-flat-border-corner-slanted.png": "80402faade372631e1671a321935d8d74bfe97877936ef7fcbf93649e4fb9e7e"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Textures/FBX/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Textures/FBX/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "FBX format/roof-flat-border-corner-slanted.fbx": "5fb1657e3f37332803c9f2fbf86d62af054617a5c45e8cd45f0da27795c94295",
+    "Textures/GLB/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Textures/GLB/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Textures/GLB/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "GLB format/roof-flat-border-corner-slanted.glb": "0c92d142424a23f3ac1ae7b715d2abf63e6c79f84864f2e4d0d13efd4d5d56e6",
+    "Textures/OBJ/colormap.png": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+    "Textures/OBJ/variation-a.png": "d647fe9f147d818381e5522e51a81517907a7680fe77cb2b788a982b84ef5925",
+    "Textures/OBJ/variation-b.png": "43efdb48f10e9127f1fd9b83e6842f14dd01be0e825ae2c0e229b1da5d381eb5",
+    "OBJ format/roof-flat-border-corner-slanted.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/roof-flat-border-corner-slanted.obj": "e4d65de730244565d83187d6f944cbff7003992d3810af4fa7f689450ce4f478",
+    "Preview.png": "80402faade372631e1671a321935d8d74bfe97877936ef7fcbf93649e4fb9e7e"
+  },
+  "license": "../License.txt"
+}

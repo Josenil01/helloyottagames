@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tile-tree",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/tile-tree.fbx": "1ef53929af24ecd428fa196a363796a32caab7117cc117a13494e00ddf35df55",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/tile-tree.glb": "3fc7ee2c513201d2adef7b34a21a53a97e8c95b2bbb01d87a7e03782bd4a443c",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/tile-tree.obj": "53727802852f743581ac318d8f61e782c99d6ffa79f92294e4061b3f1cbb7232",
+    "Models/OBJ format/tile-tree.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tile-tree.png": "ae5518cb57558d4576b3733df58f4a01a6052306bbf14e8462341e5365d49c1a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/tile-tree.fbx": "1ef53929af24ecd428fa196a363796a32caab7117cc117a13494e00ddf35df55",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/tile-tree.glb": "3fc7ee2c513201d2adef7b34a21a53a97e8c95b2bbb01d87a7e03782bd4a443c",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/tile-tree.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tile-tree.obj": "9cb13fdd433c3150b720868a72f3c412984cd210471e50e67604c15b12943451",
+    "Preview.png": "ae5518cb57558d4576b3733df58f4a01a6052306bbf14e8462341e5365d49c1a"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "electricity-side-single",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/electricity-side-single.fbx": "a1f0a234aec75778efcc4da3fadfea42a5521e64ae96351439ce4588fd7b0f03",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/electricity-side-single.glb": "60d5641f288bf7fa30c6ecb181df8664034c307af27f15c65f54d066a7c8e738",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/electricity-side-single.obj": "eaa2464522b8186dd509c94a54c0a9c968c3ead1777bf13512a23ead69e40542",
+    "Models/OBJ format/electricity-side-single.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/electricity-side-single.png": "6e4b82b27ad9c737f861d47cc625146a13cebf25059b1236e85ec84125a11bd7"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/electricity-side-single.fbx": "a1f0a234aec75778efcc4da3fadfea42a5521e64ae96351439ce4588fd7b0f03",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/electricity-side-single.glb": "60d5641f288bf7fa30c6ecb181df8664034c307af27f15c65f54d066a7c8e738",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/electricity-side-single.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/electricity-side-single.obj": "735acae17abb3194fd163725ed1bdabd49a71a56c626db87e024aab43f7b1af7",
+    "Preview.png": "6e4b82b27ad9c737f861d47cc625146a13cebf25059b1236e85ec84125a11bd7"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cabin-roof-snow-point",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/cabin-roof-snow-point.fbx": "3842688c18a274008453bc51a6d45f810eded9f0be15c1988c1cea61d52d4740",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/cabin-roof-snow-point.glb": "8532387d6061a68e83723f0c0a301c601d0cfc6b0a78d2adaa7e18f9b4ee905d",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/cabin-roof-snow-point.obj": "21f4ff468e1d03db775b13972007e30bbab93c95b0b5fe898efe4523ac1d6f4b",
+    "Models/OBJ format/cabin-roof-snow-point.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cabin-roof-snow-point.png": "b2880adda582a341fcebdba0652cd82c43e2db4b613847ed8758d347ae51c91b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/cabin-roof-snow-point.fbx": "3842688c18a274008453bc51a6d45f810eded9f0be15c1988c1cea61d52d4740",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/cabin-roof-snow-point.glb": "8532387d6061a68e83723f0c0a301c601d0cfc6b0a78d2adaa7e18f9b4ee905d",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/cabin-roof-snow-point.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cabin-roof-snow-point.obj": "cee4dbce6a2aa442643c64a72ba2fbc29f54533f1ac774a5af1d2a8a67603c80",
+    "Preview.png": "b2880adda582a341fcebdba0652cd82c43e2db4b613847ed8758d347ae51c91b"
+  },
+  "license": "../License.txt"
+}

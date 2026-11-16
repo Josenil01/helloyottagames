@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "mortar-pestle",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/mortar-pestle.fbx": "54bd14ade97d4b3aa67ee44e03a1e79251b7e6f207541f73230ad31ebc503238",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/mortar-pestle.glb": "ecdbff18acbdc41d7094635e15eabfd182a73ce0397633f0290865d007b9985c",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/mortar-pestle.obj": "ff4a06b90287be5a61f0c142a23dc9a87434d7a55a00ea6ce38fc6ba6e5cb8a3",
+    "Models/OBJ format/mortar-pestle.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/mortar-pestle.png": "7d2f31e8f64e6aaec849b48789163a38557ffede516ee11a04f15f7854ce5a0e"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/mortar-pestle.fbx": "54bd14ade97d4b3aa67ee44e03a1e79251b7e6f207541f73230ad31ebc503238",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/mortar-pestle.glb": "ecdbff18acbdc41d7094635e15eabfd182a73ce0397633f0290865d007b9985c",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/mortar-pestle.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/mortar-pestle.obj": "25fd72febfe427b49ee1bceb30e6627cef85bb0ceaa216b94e2e34234e374c06",
+    "Preview.png": "7d2f31e8f64e6aaec849b48789163a38557ffede516ee11a04f15f7854ce5a0e"
+  },
+  "license": "../License.txt"
+}

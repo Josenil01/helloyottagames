@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "rover",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/rover.fbx": "04ea63fb81af3d7297e752f9c624cecfe94705d0e5d5006d41365c406f0ff04d",
+    "Models/GLTF format/rover.glb": "9784549775017e540ab84e6fc0eb8a1902dbeff9ba4285cecb97c086d2937fa5",
+    "Models/OBJ format/rover.obj": "e5ec326be88beedb4725886cb317497e150d527d2c6903b148044eaa352d1e37",
+    "Models/OBJ format/rover.mtl": "8599d05033c8fc7dab2d99ec71e3a3a04160e5dcdcfaafb83fad75ed3e9d12db"
+  },
+  "files": {
+    "FBX format/rover.fbx": "04ea63fb81af3d7297e752f9c624cecfe94705d0e5d5006d41365c406f0ff04d",
+    "GLB format/rover.glb": "9784549775017e540ab84e6fc0eb8a1902dbeff9ba4285cecb97c086d2937fa5",
+    "OBJ format/rover.mtl": "8599d05033c8fc7dab2d99ec71e3a3a04160e5dcdcfaafb83fad75ed3e9d12db",
+    "OBJ format/rover.obj": "72b9bc75ec6857d89d3d0a30a170a91ecb0d2a4759846220e652cdc1eff3606e"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-window-shutters",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/wall-window-shutters.fbx": "e4bc2e60e7816d2a6579cf47bc3f7cb1c9b18c07dee33878264690198e02e356",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/wall-window-shutters.glb": "58a641a03fc4a5a225663969cc257fcf4f2fc63c199b4aca16b612142ff9eed0",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/wall-window-shutters.obj": "1a772f3ad28c6caa4f37bac11b45d77ffa36d25e41f80655cd59c995215d02df",
+    "Models/OBJ format/wall-window-shutters.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-window-shutters.png": "48a46ce1dce892a908dae613eeed2c4d22c6f90918320d8c9da5937048c3510e"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/wall-window-shutters.fbx": "e4bc2e60e7816d2a6579cf47bc3f7cb1c9b18c07dee33878264690198e02e356",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/wall-window-shutters.glb": "58a641a03fc4a5a225663969cc257fcf4f2fc63c199b4aca16b612142ff9eed0",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/wall-window-shutters.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-window-shutters.obj": "946b54ee7ca72a094ba0361674182d7205338a74be6ba7706ff2bb5f100fe1be",
+    "Preview.png": "48a46ce1dce892a908dae613eeed2c4d22c6f90918320d8c9da5937048c3510e"
+  },
+  "license": "../License.txt"
+}

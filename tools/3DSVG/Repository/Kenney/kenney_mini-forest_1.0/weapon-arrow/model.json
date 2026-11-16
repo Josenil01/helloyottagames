@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "weapon-arrow",
+  "pack": "kenney_mini-forest_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "Models/FBX format/weapon-arrow.fbx": "db3f884e7c4c3c5411db62027bba87139ec2e4f6b8d6efab8e2c7587d5611459",
+    "Models/GLB format/Textures/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "Models/GLB format/weapon-arrow.glb": "d84f466836daea08ab3e954e2dd660b8bebe2f86463875173ff661fb4b606a52",
+    "Models/OBJ format/Textures/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "Models/OBJ format/weapon-arrow.obj": "e527eeb863f92705f08fb38295a8cc52be99a6dc713d75bb79e04548221d638d",
+    "Models/OBJ format/weapon-arrow.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/weapon-arrow.png": "c6d0964d9e9f93bb4182c77b7df8f35a589cf6d0e38677c3690beeda5a9c0230"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "FBX format/weapon-arrow.fbx": "db3f884e7c4c3c5411db62027bba87139ec2e4f6b8d6efab8e2c7587d5611459",
+    "Textures/GLB/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "GLB format/weapon-arrow.glb": "d84f466836daea08ab3e954e2dd660b8bebe2f86463875173ff661fb4b606a52",
+    "Textures/OBJ/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "OBJ format/weapon-arrow.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/weapon-arrow.obj": "887bae0df5ffaa7a29889f165012343cd442f01a0c455e85f27d893c427dea17",
+    "Preview.png": "c6d0964d9e9f93bb4182c77b7df8f35a589cf6d0e38677c3690beeda5a9c0230"
+  },
+  "license": "../License.txt"
+}

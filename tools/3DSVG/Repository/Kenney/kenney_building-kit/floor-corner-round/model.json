@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "floor-corner-round",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/floor-corner-round.fbx": "39a42f75c4bb567bca32b96aee6d24c91ca52a04ce31e4903015e61afb1a487a",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/floor-corner-round.glb": "df7bf069181fa70006435cd7493686aaaf8dfb288ef4749c2cc0b36319245a55",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/floor-corner-round.obj": "f523ddd2581bea40f4d1599f87b06c5e5a172364610abf304f628a1ea34141eb",
+    "Models/OBJ format/floor-corner-round.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/floor-corner-round.png": "c63d8664a221a7c90696dcbba18cc9a81a8004253e1097d0c386c6b22b2d7af1"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/floor-corner-round.fbx": "39a42f75c4bb567bca32b96aee6d24c91ca52a04ce31e4903015e61afb1a487a",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/floor-corner-round.glb": "df7bf069181fa70006435cd7493686aaaf8dfb288ef4749c2cc0b36319245a55",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/floor-corner-round.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/floor-corner-round.obj": "9c0b1cd8f6e4bf5ae7609526d09f46b0de80b4adf9e668fd6cd4e3763f403e65",
+    "Preview.png": "c63d8664a221a7c90696dcbba18cc9a81a8004253e1097d0c386c6b22b2d7af1"
+  },
+  "license": "../License.txt"
+}

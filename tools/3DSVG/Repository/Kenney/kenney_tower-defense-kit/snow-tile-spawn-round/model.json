@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "snow-tile-spawn-round",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/snow-tile-spawn-round.fbx": "67eceb1733f664b21432c7a0dd81cd28a4ae14f4a670ffad3af4224ea58683f8",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/snow-tile-spawn-round.glb": "77df04f0eacdb0a0152d1830c2afab5742200a951057643277f0d5f0b0ac5493",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/snow-tile-spawn-round.obj": "4e71eb82934466048afa139092a51634f8ce6cb0cdae6cbabb89dd0abd0bb5a5",
+    "Models/OBJ format/snow-tile-spawn-round.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/snow-tile-spawn-round.png": "6c6f5f7e7109d9d5cbd4440f9ecf8f2956ac269cab88225babf9d89d0f1981dd"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/snow-tile-spawn-round.fbx": "67eceb1733f664b21432c7a0dd81cd28a4ae14f4a670ffad3af4224ea58683f8",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/snow-tile-spawn-round.glb": "77df04f0eacdb0a0152d1830c2afab5742200a951057643277f0d5f0b0ac5493",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/snow-tile-spawn-round.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/snow-tile-spawn-round.obj": "6f404c7766973e13cdc63fd0c759529e3daeba36d437ffb85cd0161e3590645b",
+    "Preview.png": "6c6f5f7e7109d9d5cbd4440f9ecf8f2956ac269cab88225babf9d89d0f1981dd"
+  },
+  "license": "../License.txt"
+}

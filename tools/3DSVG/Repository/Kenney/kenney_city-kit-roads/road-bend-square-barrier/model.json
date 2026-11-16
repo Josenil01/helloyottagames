@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-bend-square-barrier",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-bend-square-barrier.fbx": "85e314bb78c8556efd0bc55113f27fe099df86213702c0e76a692eee95258094",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-bend-square-barrier.glb": "279a8aef4a6fc0603dbe970c1b251461fb3d66afc34280704e04976cd51651cc",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-bend-square-barrier.obj": "b5404a22bb7b27f34ce201ecc0b15cd9fa09d3e3deebca9f2df74bc2a0a99fd0",
+    "Models/OBJ format/road-bend-square-barrier.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-bend-square-barrier.png": "532e7926a27be2af6cba493dfdf44c7e078ad5f1dddca1e8204c5b7c12b61f0a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-bend-square-barrier.fbx": "85e314bb78c8556efd0bc55113f27fe099df86213702c0e76a692eee95258094",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-bend-square-barrier.glb": "279a8aef4a6fc0603dbe970c1b251461fb3d66afc34280704e04976cd51651cc",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-bend-square-barrier.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-bend-square-barrier.obj": "1dbecc60e3e6bcc7395002c16992c26bef46e16d80ad3bf5b24d442bf2ed7975",
+    "Preview.png": "532e7926a27be2af6cba493dfdf44c7e078ad5f1dddca1e8204c5b7c12b61f0a"
+  },
+  "license": "../License.txt"
+}

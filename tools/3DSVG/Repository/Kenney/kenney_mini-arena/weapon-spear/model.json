@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "weapon-spear",
+  "pack": "kenney_mini-arena",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/FBX format/weapon-spear.fbx": "3fc46ab5215cc565e9b3e96222a63232e7999fdc85ec6ac9d973eb7d95a9c3e4",
+    "Models/GLB format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/GLB format/weapon-spear.glb": "3f661110d7b8f6f7cda48eb14360432fe2e92fbb48184cde46dc70242e2bcbb4",
+    "Models/OBJ format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/OBJ format/weapon-spear.obj": "42be2486706b9d5b162a969f0d785bfaef42a5d2889e612bfcc99006f696c06f",
+    "Models/OBJ format/weapon-spear.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/weapon-spear.png": "1adb569e43c734e7840c136ee6ff69e91d678356f8288b45b6b8afb44e71dfcf"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "FBX format/weapon-spear.fbx": "3fc46ab5215cc565e9b3e96222a63232e7999fdc85ec6ac9d973eb7d95a9c3e4",
+    "Textures/GLB/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "GLB format/weapon-spear.glb": "3f661110d7b8f6f7cda48eb14360432fe2e92fbb48184cde46dc70242e2bcbb4",
+    "Textures/OBJ/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "OBJ format/weapon-spear.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/weapon-spear.obj": "b2e45f0a1183f7fee93218385b9c1c67b35f29aadd91a68cbe1b98a29d4fdd55",
+    "Preview.png": "1adb569e43c734e7840c136ee6ff69e91d678356f8288b45b6b8afb44e71dfcf"
+  },
+  "license": "../License.txt"
+}

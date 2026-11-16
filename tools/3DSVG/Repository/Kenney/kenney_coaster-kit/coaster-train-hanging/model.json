@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-train-hanging",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-train-hanging.fbx": "34f1c19a617391e326c99c37cad14152dc9134fa858049ab348cc58547cd6117",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-train-hanging.glb": "0e60c3916b9ae8c48b37fed551b9ff1e5f5116215736fcd7c26d3e7814bfca0b",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-train-hanging.obj": "fc547001f1f0bce7d23fd54fc3b54682257258fb6a399a235545c680dc3c0572",
+    "Models/OBJ format/coaster-train-hanging.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-train-hanging.png": "116964cff9d1216a21e19d29243a2f0df110190f631c94d58880c738d92806df"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-train-hanging.fbx": "34f1c19a617391e326c99c37cad14152dc9134fa858049ab348cc58547cd6117",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-train-hanging.glb": "0e60c3916b9ae8c48b37fed551b9ff1e5f5116215736fcd7c26d3e7814bfca0b",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-train-hanging.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-train-hanging.obj": "582a2fd5e5f056db241f2b57a58191a73fbd418b506e414e1d9e16785df63304",
+    "Preview.png": "116964cff9d1216a21e19d29243a2f0df110190f631c94d58880c738d92806df"
+  },
+  "license": "../License.txt"
+}

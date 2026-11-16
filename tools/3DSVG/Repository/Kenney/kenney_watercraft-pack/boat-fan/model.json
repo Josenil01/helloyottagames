@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "boat-fan",
+  "pack": "kenney_watercraft-pack",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/FBX format/boat-fan.fbx": "7806670207b4a7e8d6e76129c7ad3df29533a39766b469afda1187eb17dbfbcb",
+    "Models/GLB format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/GLB format/boat-fan.glb": "8a347193f6235821a3b5508a8937450190296b1e9344a01d61b0a503240e6a43",
+    "Models/OBJ format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/OBJ format/boat-fan.obj": "1a6233e9a3bb8075aee8e2c47a7ddd81178058f203ca452ece731aeb3044076c",
+    "Models/OBJ format/boat-fan.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/boat-fan.png": "74111a802217b6495f467baad89a35f91b9ea10be3dd396821d1d82b68902023"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "FBX format/boat-fan.fbx": "7806670207b4a7e8d6e76129c7ad3df29533a39766b469afda1187eb17dbfbcb",
+    "Textures/GLB/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "GLB format/boat-fan.glb": "8a347193f6235821a3b5508a8937450190296b1e9344a01d61b0a503240e6a43",
+    "Textures/OBJ/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "OBJ format/boat-fan.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/boat-fan.obj": "c0e2ec07bf3abf62c74f4d8fb31a9afb37119e6e3c3d48d71df85fbd12bd930f",
+    "Preview.png": "74111a802217b6495f467baad89a35f91b9ea10be3dd396821d1d82b68902023"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bedSingle",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/bedSingle.fbx": "fa8a585d757146fa6db244f627a6900e57b3ae980cda4aab0d6fba0fb0dac6a5",
+    "Models/GLTF format/bedSingle.glb": "ca00c63f9a12da3138d902b2f5f18e0360fb6e8a5ac42ccb4bc3f185724b65d1",
+    "Models/OBJ format/bedSingle.obj": "e93bf273166e0cbe5699cff5f95dd90da4c2c25d48931d92b1f9e077d60a9814",
+    "Models/OBJ format/bedSingle.mtl": "c68f3b5128ae18ed9a1723a1363b1c56cbbb17ae12de246de26af761ec822fc0"
+  },
+  "files": {
+    "FBX format/bedSingle.fbx": "fa8a585d757146fa6db244f627a6900e57b3ae980cda4aab0d6fba0fb0dac6a5",
+    "GLB format/bedSingle.glb": "ca00c63f9a12da3138d902b2f5f18e0360fb6e8a5ac42ccb4bc3f185724b65d1",
+    "OBJ format/bedSingle.mtl": "99cca7e9cdb494628b547ece760bcbd6a323e45b4111504c7bb4791def38876f",
+    "OBJ format/bedSingle.obj": "581b00de2b81b580a30fceb4e33339b13787f8a35da903b7da787f9f5bb97f62"
+  },
+  "license": "../License.txt"
+}

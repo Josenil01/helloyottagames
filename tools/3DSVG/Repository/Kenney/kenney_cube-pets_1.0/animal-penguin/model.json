@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "animal-penguin",
+  "pack": "kenney_cube-pets_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/FBX format/animal-penguin.fbx": "442f86b1bbcd814152998bc8fd1a90a58a8398715148950051c90c1d04c08ecb",
+    "Models/GLB format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/GLB format/animal-penguin.glb": "ff3d7ccae941ab06773a348b03446f97650043594ab1121a26514c3e2ea6cb29",
+    "Models/OBJ format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/OBJ format/animal-penguin.obj": "aed06c7a548005e419cc3807ecd96bdf8eb998093ee10b68aa38c3393be05a5f",
+    "Models/OBJ format/animal-penguin.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/animal-penguin.png": "c3cab0b4424661b59389b85e5d6e637202b3b958e897a555288f80d6c5685b71"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "FBX format/animal-penguin.fbx": "442f86b1bbcd814152998bc8fd1a90a58a8398715148950051c90c1d04c08ecb",
+    "Textures/GLB/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "GLB format/animal-penguin.glb": "ff3d7ccae941ab06773a348b03446f97650043594ab1121a26514c3e2ea6cb29",
+    "Textures/OBJ/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "OBJ format/animal-penguin.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/animal-penguin.obj": "4b8e559e945e772ac73ee6065eb4de7e4a2f2dc720c9d62ad0dba11e555eca91",
+    "Preview.png": "c3cab0b4424661b59389b85e5d6e637202b3b958e897a555288f80d6c5685b71"
+  },
+  "license": "../License.txt"
+}

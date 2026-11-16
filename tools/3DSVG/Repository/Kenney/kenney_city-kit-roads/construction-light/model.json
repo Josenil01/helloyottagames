@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "construction-light",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/construction-light.fbx": "25da1102b6a488061f5b508eec5075c439c507520d82616bf6d091e11817cbf4",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/construction-light.glb": "80dd781d6ad1bcb6e07670cc1ce03027031381768aca62b9c7b6e7df99c33650",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/construction-light.obj": "ff41943aee7fe8d9803c1c32a96e9f1632e24678b2738cfcff1b991a12be6ccf",
+    "Models/OBJ format/construction-light.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/construction-light.png": "6c25cb6b71fd4ceed1c21ca04f6690951b597d2179260956d42c0c535bdd53dc"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/construction-light.fbx": "25da1102b6a488061f5b508eec5075c439c507520d82616bf6d091e11817cbf4",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/construction-light.glb": "80dd781d6ad1bcb6e07670cc1ce03027031381768aca62b9c7b6e7df99c33650",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/construction-light.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/construction-light.obj": "de9f9c20602b05b6a25c68b891728bea9abc55bc3b4c143d9317d4ed815757a7",
+    "Preview.png": "6c25cb6b71fd4ceed1c21ca04f6690951b597d2179260956d42c0c535bdd53dc"
+  },
+  "license": "../License.txt"
+}

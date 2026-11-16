@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-crossroad-line",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-crossroad-line.fbx": "8b984c9e945f5f710ffbd13c2df30ac0abebe8f9feb75d2fed62bd836fca0a17",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-crossroad-line.glb": "87bde0f75b741d4d66e5992e003bb70ceb42847f32092e38c54893babbc4f7e9",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-crossroad-line.obj": "919072463c4e338eb763e1d266385487b3e21631e5b9f88f8fd83df1761e7531",
+    "Models/OBJ format/road-crossroad-line.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-crossroad-line.png": "c2457d55c7ede9aa027c48beb33f4952fcc3e4ae965b24dc62d334a927a4f0ef"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-crossroad-line.fbx": "8b984c9e945f5f710ffbd13c2df30ac0abebe8f9feb75d2fed62bd836fca0a17",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-crossroad-line.glb": "87bde0f75b741d4d66e5992e003bb70ceb42847f32092e38c54893babbc4f7e9",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-crossroad-line.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-crossroad-line.obj": "16040360ca5c0115de74a6cb094c2cb3db2fd082ba10f249eaf5040a57515578",
+    "Preview.png": "c2457d55c7ede9aa027c48beb33f4952fcc3e4ae965b24dc62d334a927a4f0ef"
+  },
+  "license": "../License.txt"
+}

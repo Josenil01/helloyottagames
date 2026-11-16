@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "fence-straight",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/fence-straight.fbx": "d8c0060321abd896ae4774bc5a3eaa5cc0593a5915187ab2fbc3230a1d9f7cdc",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/fence-straight.glb": "008d1895b4ac463bb7438d7ba4b34d66548cdb547130b228cc3526e575291f0a",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/fence-straight.obj": "6e1dfe742d7a2728d79b24fee405260e01702af1d32df5e10c0a885ea11c6145",
+    "Models/OBJ format/fence-straight.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/fence-straight.png": "45bc68aef000459edd78798f55ff5b0d57ecc64d3818161ce3f002e6a73fa254"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/fence-straight.fbx": "d8c0060321abd896ae4774bc5a3eaa5cc0593a5915187ab2fbc3230a1d9f7cdc",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/fence-straight.glb": "008d1895b4ac463bb7438d7ba4b34d66548cdb547130b228cc3526e575291f0a",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/fence-straight.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/fence-straight.obj": "eb3a94335e618fc532572440631b312c5b053dca269a2002fc1a85f80e22470b",
+    "Preview.png": "45bc68aef000459edd78798f55ff5b0d57ecc64d3818161ce3f002e6a73fa254"
+  },
+  "license": "../License.txt"
+}

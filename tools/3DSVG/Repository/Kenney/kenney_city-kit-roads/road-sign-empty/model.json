@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-sign-empty",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-sign-empty.fbx": "0c5b9c366d9ef3ff6fd0171caaa45a6a1c8e44593c83031ef7c590d90fe3c718",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-sign-empty.glb": "7681ee84c5363e2c95a37593fc3bdd0afb81b23fa46ae6be1c0939a112a4306a",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-sign-empty.obj": "9592a75853b6967b78d4c19940d4c91223919827be8ca27402129809d2889bd7",
+    "Models/OBJ format/road-sign-empty.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-sign-empty.png": "05e6a20410be119480ddd8ecae02e70d2474815d502f0bd3def17d25e1dbf43e"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-sign-empty.fbx": "0c5b9c366d9ef3ff6fd0171caaa45a6a1c8e44593c83031ef7c590d90fe3c718",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-sign-empty.glb": "7681ee84c5363e2c95a37593fc3bdd0afb81b23fa46ae6be1c0939a112a4306a",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-sign-empty.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-sign-empty.obj": "ed9853145be469c8fe54a4c21b50fd9a499dca7540af82109146375357f34e5c",
+    "Preview.png": "05e6a20410be119480ddd8ecae02e70d2474815d502f0bd3def17d25e1dbf43e"
+  },
+  "license": "../License.txt"
+}

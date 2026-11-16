@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "chairDesk",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/chairDesk.fbx": "61015377194c58d7371e30f718f9bf04332dfa8295949ad5de49f764d3f1a1ed",
+    "Models/GLTF format/chairDesk.glb": "46406619186034cbe92b19b79a5f1a8e3f442a17a70a7524ef2c0ad0f35095c6",
+    "Models/OBJ format/chairDesk.obj": "2e4448333f39ceda9f3e90f02236463e34fbae80d470084ae2009541c16c89c6",
+    "Models/OBJ format/chairDesk.mtl": "6d45d00e9569fe5b1abc4c9fb1caedc99cb7b519cdcd09a1377ecd8cb79f6f53"
+  },
+  "files": {
+    "FBX format/chairDesk.fbx": "61015377194c58d7371e30f718f9bf04332dfa8295949ad5de49f764d3f1a1ed",
+    "GLB format/chairDesk.glb": "46406619186034cbe92b19b79a5f1a8e3f442a17a70a7524ef2c0ad0f35095c6",
+    "OBJ format/chairDesk.mtl": "5b386859e4c30699e5dd2c48a917831211cf021ab27d73faf0bd226b304a8a35",
+    "OBJ format/chairDesk.obj": "cd90059cf6056801f48d2467f1ad9de0cc2c268d3f858e11f23aab42de516748"
+  },
+  "license": "../License.txt"
+}

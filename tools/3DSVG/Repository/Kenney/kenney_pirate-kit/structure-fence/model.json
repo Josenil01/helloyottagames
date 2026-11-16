@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "structure-fence",
+  "pack": "kenney_pirate-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/FBX format/structure-fence.fbx": "60092a5e6115231086dad1fc436e56c8166b86255e68a23ebe0f3a9709acd9c1",
+    "Models/GLB format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/GLB format/structure-fence.glb": "d4b9eca0f219efc7ec37d45170c5888a4ba6e0e8f39905f9d92d491ae5de7281",
+    "Models/OBJ format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/OBJ format/structure-fence.obj": "4f20bf6b31b168f5e2a3611d8c1fafe5a1b98a6411feed3f5664d7cdd4bb6da2",
+    "Models/OBJ format/structure-fence.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/structure-fence.png": "d7d9839341ed114d74e70417e3bb33426bce2664e5c71553b1657a161bd586ba"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "FBX format/structure-fence.fbx": "60092a5e6115231086dad1fc436e56c8166b86255e68a23ebe0f3a9709acd9c1",
+    "Textures/GLB/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "GLB format/structure-fence.glb": "d4b9eca0f219efc7ec37d45170c5888a4ba6e0e8f39905f9d92d491ae5de7281",
+    "Textures/OBJ/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "OBJ format/structure-fence.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/structure-fence.obj": "8329642fba6415eaf481be157cdea0e754d60e68a9bc3ddd52538034c234b89a",
+    "Preview.png": "d7d9839341ed114d74e70417e3bb33426bce2664e5c71553b1657a161bd586ba"
+  },
+  "license": "../License.txt"
+}

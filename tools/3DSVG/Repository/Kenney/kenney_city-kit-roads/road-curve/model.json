@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-curve",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-curve.fbx": "47099b56184212f2f9195ba8dc11514ce8b8fe6fbc3415fdf8b7a418c7bcea41",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-curve.glb": "d076717bfe3493dfd5a4b4207a7825e4aff1876273f0d58f5e16e8e8670906f7",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-curve.obj": "45ee59f72554c7a900fb6a622c117a9de0b3bea2c2e804972f6e51ce9bd9b457",
+    "Models/OBJ format/road-curve.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-curve.png": "d0d034b922030120c8202e94ed748568257e7940200ffcdbed72e2793b6b9d96"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-curve.fbx": "47099b56184212f2f9195ba8dc11514ce8b8fe6fbc3415fdf8b7a418c7bcea41",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-curve.glb": "d076717bfe3493dfd5a4b4207a7825e4aff1876273f0d58f5e16e8e8670906f7",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-curve.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-curve.obj": "7223086545fac11f89d01205948f2e7e083738990bfbf86eb89639f2825b32cd",
+    "Preview.png": "d0d034b922030120c8202e94ed748568257e7940200ffcdbed72e2793b6b9d96"
+  },
+  "license": "../License.txt"
+}

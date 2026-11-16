@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-curve-barrier",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-curve-barrier.fbx": "a83b72ffb271de43c463866712792560019bb682bfa64cffdb734ae4aae77d49",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-curve-barrier.glb": "32c812901deaa09dc3a7ae02ffc54d9cba6725c22e5fd0ada4069741dabe67aa",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-curve-barrier.obj": "c55dc12e5d8a396b8783a328be13dadd8348b694e170df4349175ae2d5b7d86c",
+    "Models/OBJ format/road-curve-barrier.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-curve-barrier.png": "0f962bb6bfddf64968b2444c64c94e331b2bf97c5a157bfac257ff6af3384217"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-curve-barrier.fbx": "a83b72ffb271de43c463866712792560019bb682bfa64cffdb734ae4aae77d49",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-curve-barrier.glb": "32c812901deaa09dc3a7ae02ffc54d9cba6725c22e5fd0ada4069741dabe67aa",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-curve-barrier.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-curve-barrier.obj": "9259530e0c057652d59367f2be8060041e7b1c46768a5abec68ef4858723d3f1",
+    "Preview.png": "0f962bb6bfddf64968b2444c64c94e331b2bf97c5a157bfac257ff6af3384217"
+  },
+  "license": "../License.txt"
+}

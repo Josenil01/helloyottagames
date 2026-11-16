@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tool-axe-upgraded",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/tool-axe-upgraded.fbx": "59701ce2182c5607291b4d04b3a9d244b2b44473f411dd08a3e25d97732acf73",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/tool-axe-upgraded.glb": "18ffed02c818a25bc0a87609ccebdf3c55e238131efa2c50bdd6991fc6a2d8f2",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/tool-axe-upgraded.obj": "5dc8e3881430290113643b6857515d7b70bf1585679a240f0bd1e210ab995fbc",
+    "Models/OBJ format/tool-axe-upgraded.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tool-axe-upgraded.png": "7d5b70cb08681d076ce7a9d5738cd6aeb9f12be72c1ddec2379309ea250f09f5"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/tool-axe-upgraded.fbx": "59701ce2182c5607291b4d04b3a9d244b2b44473f411dd08a3e25d97732acf73",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/tool-axe-upgraded.glb": "18ffed02c818a25bc0a87609ccebdf3c55e238131efa2c50bdd6991fc6a2d8f2",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/tool-axe-upgraded.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tool-axe-upgraded.obj": "ea0e88f9db233874184467019c9e4c6a079654b6912ecf9ae7b551ea9cba71aa",
+    "Preview.png": "7d5b70cb08681d076ce7a9d5738cd6aeb9f12be72c1ddec2379309ea250f09f5"
+  },
+  "license": "../License.txt"
+}

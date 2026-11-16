@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "shaker-salt",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/shaker-salt.fbx": "86a0f970e2d550208d6f9bfd5764b0078800f130dd6fc11123e8906695d2db41",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/shaker-salt.glb": "038d06e0e64aa8f5c0cfe70456ba09e4d49069c112b6807b214a62ab77ce41c1",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/shaker-salt.obj": "8c43ec16fc79bce8d22a75e835ac8fad6bcab5aef91dcf48918081ed12ead196",
+    "Models/OBJ format/shaker-salt.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/shaker-salt.png": "b4d35509e90410ff162a1c43ceb25785ef024902e7ea51befb9ca61e93b8a260"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/shaker-salt.fbx": "86a0f970e2d550208d6f9bfd5764b0078800f130dd6fc11123e8906695d2db41",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/shaker-salt.glb": "038d06e0e64aa8f5c0cfe70456ba09e4d49069c112b6807b214a62ab77ce41c1",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/shaker-salt.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/shaker-salt.obj": "d29712737391a1cc8c623e2284a088ee4f5521c9f654d6443ae5805c279bb761",
+    "Preview.png": "b4d35509e90410ff162a1c43ceb25785ef024902e7ea51befb9ca61e93b8a260"
+  },
+  "license": "../License.txt"
+}

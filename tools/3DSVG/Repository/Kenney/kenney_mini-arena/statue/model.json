@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "statue",
+  "pack": "kenney_mini-arena",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/FBX format/statue.fbx": "a0c8b0470d3e45cdc678979b00a1fa602f5d249864481fdbf59bebc3a1e68537",
+    "Models/GLB format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/GLB format/statue.glb": "e733e5f71d04f8e98cf852251dc5aef11073847c49f47f60ffb9ef827f931a4f",
+    "Models/OBJ format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/OBJ format/statue.obj": "b1ab1cebcea021ef4c986aa0f36950bb90971d5112df7c690c31a4d97412c62f",
+    "Models/OBJ format/statue.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/statue.png": "17e23d8438f6f23effee73889e9eedfa1219532b6d5a3c9eb38545aaaa2a194f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "FBX format/statue.fbx": "a0c8b0470d3e45cdc678979b00a1fa602f5d249864481fdbf59bebc3a1e68537",
+    "Textures/GLB/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "GLB format/statue.glb": "e733e5f71d04f8e98cf852251dc5aef11073847c49f47f60ffb9ef827f931a4f",
+    "Textures/OBJ/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "OBJ format/statue.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/statue.obj": "6143646b66299a8e896d70e8e1baf1d902352a9b2d36b56527f4ff5395b0f1d0",
+    "Preview.png": "17e23d8438f6f23effee73889e9eedfa1219532b6d5a3c9eb38545aaaa2a194f"
+  },
+  "license": "../License.txt"
+}

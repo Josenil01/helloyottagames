@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "screen-hanging-small",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/screen-hanging-small.fbx": "42f2cfd012daa94e0f96ba378191ea4b876a48eb2c5cdad4dc9485b6f0a5ee1c",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/screen-hanging-small.glb": "64cec276939dfd7925a73d399e1b32a643fe65a937bc1aab86d98677eebff760",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/screen-hanging-small.obj": "39619126316cd230f47413f24f0135dbebd3259a50997265fed74ca85493d7eb",
+    "Models/OBJ format/screen-hanging-small.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/screen-hanging-small.png": "71da079c586b83c973a654bd574ed8dbd763563fc2303a208e855f04dd67a0b4"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/screen-hanging-small.fbx": "42f2cfd012daa94e0f96ba378191ea4b876a48eb2c5cdad4dc9485b6f0a5ee1c",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/screen-hanging-small.glb": "64cec276939dfd7925a73d399e1b32a643fe65a937bc1aab86d98677eebff760",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/screen-hanging-small.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/screen-hanging-small.obj": "c720873256054fec36c16d2cc6051c2be82682a5a16a85f09fd727e758c306b6",
+    "Preview.png": "71da079c586b83c973a654bd574ed8dbd763563fc2303a208e855f04dd67a0b4"
+  },
+  "license": "../License.txt"
+}

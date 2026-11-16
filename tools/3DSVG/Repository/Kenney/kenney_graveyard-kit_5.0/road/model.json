@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/road.fbx": "581aa8fe5c62aaa56cd639a83124030789382c3e91f55e47c72dda5890e27e05",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/road.glb": "2c090747a40ff5fb70d61d04ae546b30329589609dd410509895713228f41984",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/road.obj": "c8e72d9c68e00c5e3ea782dfa8acb62f9e6228b317a5faf4208da1901a707b96",
+    "Models/OBJ format/road.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road.png": "547ceb5e1e882dcf4d383a4276254c1be699b1a85227e3c2d82be93298becf2d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/road.fbx": "581aa8fe5c62aaa56cd639a83124030789382c3e91f55e47c72dda5890e27e05",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/road.glb": "2c090747a40ff5fb70d61d04ae546b30329589609dd410509895713228f41984",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/road.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road.obj": "a870d4c7274d46a81ea88228cbfbdba62d6345dd3887899c6902453553fea4d2",
+    "Preview.png": "547ceb5e1e882dcf4d383a4276254c1be699b1a85227e3c2d82be93298becf2d"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "station-gate",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/station-gate.fbx": "39551832067d6c1748416935764bebffce363292ea3856e423f23192579d015b",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/station-gate.glb": "f657065f0f280bb6feb45d9db0fbacf9e47372a9d903d7cb084e780b5c64bcc4",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/station-gate.obj": "abcc5393208824ed8116d0f8809f3a1b526d156e4138b448bbbb4788875a210b",
+    "Models/OBJ format/station-gate.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/station-gate.png": "3ff945278d15e829f666872eee776c1d28bb1e9e9df2d17f0f879995d1bbf95f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/station-gate.fbx": "39551832067d6c1748416935764bebffce363292ea3856e423f23192579d015b",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/station-gate.glb": "f657065f0f280bb6feb45d9db0fbacf9e47372a9d903d7cb084e780b5c64bcc4",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/station-gate.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/station-gate.obj": "ca9c13a45d270db0f11099989a02c0cb726581ae3f742ec42f7bc0e0fcb29446",
+    "Preview.png": "3ff945278d15e829f666872eee776c1d28bb1e9e9df2d17f0f879995d1bbf95f"
+  },
+  "license": "../License.txt"
+}

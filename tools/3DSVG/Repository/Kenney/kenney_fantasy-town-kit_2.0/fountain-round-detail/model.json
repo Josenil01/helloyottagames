@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "fountain-round-detail",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/fountain-round-detail.fbx": "273951f4d9ea296a5dc6c2d34b17b5df2444727d796d7c7f0c92283ff7bb2c97",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/fountain-round-detail.glb": "05cdd740e3175c2d3208d4cb6630a279a9b4cbc48393b28c92e3e40cca2a5d6b",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/fountain-round-detail.obj": "53690b991c7c51d5bd17f72a8ed80e30ee68a35c423520fd3a1a12014d2e3b26",
+    "Models/OBJ format/fountain-round-detail.mtl": "dfb8d91b6e73e7057517d31492fb6c1bcfff48e79e0c452b2d307cbb4f1367d3",
+    "Previews/fountain-round-detail.png": "c41a59687f334faed538fa2075d85e31ed3f6fff0d0dcf08807ef9c32028013a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/fountain-round-detail.fbx": "273951f4d9ea296a5dc6c2d34b17b5df2444727d796d7c7f0c92283ff7bb2c97",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/fountain-round-detail.glb": "05cdd740e3175c2d3208d4cb6630a279a9b4cbc48393b28c92e3e40cca2a5d6b",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/fountain-round-detail.mtl": "0388a4cd0dfed1b2233210415efb76a411bcd384c4cf2f26cc0ad3c195bd1671",
+    "OBJ format/fountain-round-detail.obj": "e40f53bddcc8e83019a6ea4ed44de83c99c0a611ebdd3bd307bcfb5c0a38660e",
+    "Preview.png": "c41a59687f334faed538fa2075d85e31ed3f6fff0d0dcf08807ef9c32028013a"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "crypt-small-roof",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/crypt-small-roof.fbx": "fc0a4c1c845f7ebec3f8c8313f9e1a165516f3f369da514bcbf73b33bcf835e9",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/crypt-small-roof.glb": "d2b3fed2db2656823d5d8f963341bd55f58f18e6916c0808262b26c76c9ebc93",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/crypt-small-roof.obj": "82b59f100d5523ff9c55245f3fd583d9ea76ca90b779718542be869b224fc672",
+    "Models/OBJ format/crypt-small-roof.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/crypt-small-roof.png": "8c3f61d07ea84e045046f81001db431a3593153b0bf33e33927b44b87711ee3d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/crypt-small-roof.fbx": "fc0a4c1c845f7ebec3f8c8313f9e1a165516f3f369da514bcbf73b33bcf835e9",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/crypt-small-roof.glb": "d2b3fed2db2656823d5d8f963341bd55f58f18e6916c0808262b26c76c9ebc93",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/crypt-small-roof.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/crypt-small-roof.obj": "3658acb23aef7c90c56a738b792caa057baf95e13e6a0b59d2b76f6b0c039d92",
+    "Preview.png": "8c3f61d07ea84e045046f81001db431a3593153b0bf33e33927b44b87711ee3d"
+  },
+  "license": "../License.txt"
+}

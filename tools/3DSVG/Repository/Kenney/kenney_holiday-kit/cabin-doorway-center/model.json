@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cabin-doorway-center",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/cabin-doorway-center.fbx": "f28017dbdeabfe0a7b19a9514d95b1dfce3a347e43c077d9dce872ade2743dab",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/cabin-doorway-center.glb": "afdc6cfaeee2af0ea15e75fffaa2bf8a512bfe1fccc97032f313a4c27edccbf5",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/cabin-doorway-center.obj": "97c482640b270edec14e4b54f33671a54a2a8f49aa04a9c0e73d866ecba4fa69",
+    "Models/OBJ format/cabin-doorway-center.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cabin-doorway-center.png": "7a32c8b27140e1dd275a6466f99f47da1409d8c1d4209b185ad5443598eac336"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/cabin-doorway-center.fbx": "f28017dbdeabfe0a7b19a9514d95b1dfce3a347e43c077d9dce872ade2743dab",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/cabin-doorway-center.glb": "afdc6cfaeee2af0ea15e75fffaa2bf8a512bfe1fccc97032f313a4c27edccbf5",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/cabin-doorway-center.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cabin-doorway-center.obj": "af0824d45700e76675512818fac4dc2cecff2aee90fa8a08cb68a21c1b9af053",
+    "Preview.png": "7a32c8b27140e1dd275a6466f99f47da1409d8c1d4209b185ad5443598eac336"
+  },
+  "license": "../License.txt"
+}

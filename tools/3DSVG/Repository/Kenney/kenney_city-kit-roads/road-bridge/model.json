@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-bridge",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-bridge.fbx": "85fbb9c6c876e1df2247c06b9cdc376ac30e2c6a4245f355449e4c56de3c153d",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-bridge.glb": "5e2bdaabddf39b309a3b5d109d7c6423cd68829a8e63960fcc2d23d62c8425b0",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-bridge.obj": "0f1402867f0c087b3ea2667e1225f02658c8a2e7d670a49f5058c02f4f7ffbb6",
+    "Models/OBJ format/road-bridge.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-bridge.png": "5e0887735f98933c6f3464641e950373dbb9b6d192fd4e233977809c83a60d90"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-bridge.fbx": "85fbb9c6c876e1df2247c06b9cdc376ac30e2c6a4245f355449e4c56de3c153d",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-bridge.glb": "5e2bdaabddf39b309a3b5d109d7c6423cd68829a8e63960fcc2d23d62c8425b0",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-bridge.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-bridge.obj": "e73a73918891fe22bdad45d3df52c989608ce63a86cb544ff9e89d74addcf9a0",
+    "Preview.png": "5e0887735f98933c6f3464641e950373dbb9b6d192fd4e233977809c83a60d90"
+  },
+  "license": "../License.txt"
+}

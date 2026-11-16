@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "table-inset",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/table-inset.fbx": "e65570f58d03b4e138fa97b84451a8c4ac28ec3aaeee82abbad806740c9f93cf",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/table-inset.glb": "37d7aa8d45994313f7bb417dddf6b651201f42445a143ff1333ccca4de2dec6b",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/table-inset.obj": "1d8085b19b1ac462c24fbd9109f20f090c7807c39204a88e9a571625308b972f",
+    "Models/OBJ format/table-inset.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/table-inset.png": "07545bac0d80cc1a743add001d3685dba7b05e878d02d184d1deba02038944c9"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/table-inset.fbx": "e65570f58d03b4e138fa97b84451a8c4ac28ec3aaeee82abbad806740c9f93cf",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/table-inset.glb": "37d7aa8d45994313f7bb417dddf6b651201f42445a143ff1333ccca4de2dec6b",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/table-inset.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/table-inset.obj": "094d9100c136247e790e7c5191d604eb7a26ea2e7c11c0a7b124d4f665b8a8d7",
+    "Preview.png": "07545bac0d80cc1a743add001d3685dba7b05e878d02d184d1deba02038944c9"
+  },
+  "license": "../License.txt"
+}

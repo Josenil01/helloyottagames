@@ -1,6 +1,6 @@
 # Hello Yotta Games — Documentação Técnica dos Jogos
 
-> Gerado a partir da leitura direta dos arquivos `main.js` de cada jogo.
+> Revisão documental: 08/10/2026. Fontes: catálogo local, páginas HTML e scripts efetivamente carregados por cada jogo. Inspeção estática; esta revisão não executou gameplay no navegador.
 > Objetivo: servir de referência para desenvolvedores que vão dar manutenção e para o time de produto entender o que foi implementado.
 
 
@@ -9,16 +9,16 @@
 ## Índice
 
 1. [Caçadores de Coletivos](#1-caçadores-de-coletivos)
-2. [Canhões de Ouro](#2-canhões-de-ouro)
+2. [Enigmas da Esfinge](#2-enigmas-da-esfinge)
 3. [Defesa do Castelo Matemático](#3-defesa-do-castelo-matemático)
 4. [Detetives da Ortografia](#4-detetives-da-ortografia)
-5. [Digitado (ABC Palavras Mágicas)](#5-digitado-abc-palavras-mágicas)
+5. [Digitado](#5-digitado)
 6. [Digite o Resultado](#6-digite-o-resultado)
 7. [Duelo dos Monstros](#7-duelo-dos-monstros)
 8. [Escola de Magia VSA](#8-escola-de-magia-vsa)
 9. [Fábrica de Rimas](#9-fábrica-de-rimas)
 10. [Fábrica de Acentos](#10-fábrica-de-acentos)
-11. [Galáxia da Matemática](#11-galáxia-da-matemática)
+11. [Galáxia Geométrica](#11-galáxia-geométrica)
 12. [Galáxia dos Opostos](#12-galáxia-dos-opostos)
 13. [Laboratório das Poções](#13-laboratório-das-poções)
 14. [Maiúsculo vs Minúsculo](#14-maiúsculo-vs-minúsculo)
@@ -53,309 +53,45 @@
 
 ## Convenções deste documento
 
-- **Stack**: React 18 via CDN (Babel standalone) **ou** Vanilla JS — indicado em cada jogo.
-- **Persistência**: `localStorage` em jogos com progresso entre sessões.
-- **Áudio**: `Web Audio API` sintetizado (sem arquivos externos).
-- **Animações**: classes CSS definidas em `game-viewport.css` (`.shake-anim`, `.pop-anim`, `.line-anim` etc.).
-- **Jogos 26–40** (mais recentes): todos Vanilla JS, seguem um esqueleto unificado (`screen-cover` → `screen-tracks` → `screen-game`, 12 trilhas × 5 desafios, `HY.stars.init/renderGrid/trackComplete`, progressão de dificuldade em blocos de 3 trilhas via `blockForTrack(idx) = Math.min(3, Math.floor(idx/3))`). Persistência de estrelas via `sessionStorage` (chave gerenciada por `HY.stars`). Interações de arrastar usam o padrão Pointer Events (`startPointerDrag`/`onPointerDragMove`/`onPointerDragEnd`) em vez do HTML5 Drag and Drop nativo.
+- **Catálogo:** 40 jogos: 12 React 18 + Babel standalone e 28 Vanilla JS. React, ReactDOM e Babel são arquivos locais em `vendor/`; Tailwind e fontes podem depender de serviços externos.
+- **Execução:** a página HTML define a implementação ativa. Arquivos preservados como legado não descrevem necessariamente a experiência atual. Em particular, Galáxia Geométrica carrega `geometry.js` e Poções carrega `color-sort.js`; seus `main.js` antigos não são carregados. Enigmas mantém `main.js` como ponto de montagem de `SphinxApp`, definida em `sphinx.js`.
+- **Persistência:** `HY.stars` usa `sessionStorage`, chave `hy_stars_<gameKey>`, para melhores estrelas e desbloqueio da sessão. Alguns jogos também mantêm dados próprios em `localStorage`; as duas camadas não devem ser confundidas.
+- **Pontuação padrão:** +100 por conclusão registrada, com bônus inteiro de velocidade entre 0 e 50; erro registrado subtrai 50, com piso zero. Galáxia Geométrica tem pontuação fixa própria (+100/−50), sem bônus. A unidade pontuada varia: palavra, objeto, par ou desafio.
+- **Estrelas:** 3 com zero erros e média de até 8 s; 2 com até um erro **ou** média de até 18 s; 1 pela conclusão. A média usa tempo de relógio da trilha dividido por cinco, sem desconto geral de pausas, leitura ou animações.
+- **Áudio:** `HY.playWin/playLose` tenta reproduzir MP3 em `assets/audio/`, ausentes nesta revisão. Sons sintetizados locais de alguns jogos constituem uma camada separada.
+- **Trilhas:** a grade compartilhada oferece 12 trilhas. O padrão de cinco desafios tem exceções de conteúdo e de unidade de ação documentadas abaixo; a grade não comprova a existência de 60 itens válidos.
+- **Jogos 26–40:** compartilham trilhas, estrelas e cinco desafios, com progressão definida por cada gerador. Vários usam blocos de três trilhas e Pointer Events; isso não é uma regra universal para todos os geradores.
+- **Rastreabilidade:** [auditoria de 08/10/2026](auditoria-documentacao-2026-10-08.md) lista as páginas e scripts locais dos 40 jogos e as divergências de catálogo.
 
 ---
 
 ## 1. Caçadores de Coletivos
 
 **Pasta:** `Caçadores de Coletivos/`
-**Stack:** React 18
-**Categoria:** Português — Substantivos Coletivos
-**Fases:** 12
+**Stack:** React 18 + Babel
+**Categoria de conteúdo:** Português — coletivos
+**Estrutura ativa:** 12 trilhas × 5 desafios gerados
 
-### Descrição
+### Mecânica e comportamento atuais
 
-O jogador aprende substantivos coletivos (alcateia, cardume, enxame…) através de 4 mecânicas distintas aplicadas sequencialmente nas 12 fases.
+Usa `HY.challenges.buildLevels('coletivo', HYWords, 12)` e os quatro componentes React compartilhados. Cada trilha normalmente contém dois match, uma associação, um intruso e uma frase; há fallbacks para match quando faltam dados. A sequência solicitada de dois match, duas associações e uma frase ainda não foi implementada.
 
-### Mecânicas
-
-#### Mecânica 1 — Match (Arrastar e Largar)
-Fases 1–3. O jogador arrasta o coletivo correto para uma dropzone.
-
-**Dados de configuração:**
-```js
-{ id: 1, type: 'match', target: 'LOBOS', answer: 'ALCATEIA',
-  options: ['ALCATEIA', 'MATILHA', 'REBANHO'], emoji: '🐺',
-  instruction: 'Como chamamos um grupo de LOBOS? Arraste a palavra certa!' }
-```
-
-**Lógica de validação (checkAnswer):**
-```js
-const checkAnswer = (value) => {
-  if (isSuccess || wrongAnswers.includes(value)) return;
-  if (value === level.answer) {
-    handleWin();
-  } else {
-    setWrongAnswers(prev => [...prev, value]);
-    setShakeWrong(value);
-    setTimeout(() => setShakeWrong(null), 400);
-  }
-};
-```
-
-**Handlers de Drag & Drop:**
-```js
-const handleDragStart = (e, value) => {
-  setDraggedOption(value);
-  e.dataTransfer.setData('text/plain', value);
-};
-const handleDragOver = (e) => e.preventDefault();
-const handleDrop = (e) => {
-  e.preventDefault();
-  const value = e.dataTransfer.getData('text/plain');
-  if (value) checkAnswer(value);
-};
-```
-
-#### Mecânica 2 — Connect (Ligar os Pontos)
-Fases 4–6. O jogador clica numa palavra da esquerda e depois no seu par na direita; linhas SVG animadas são desenhadas entre os pares resolvidos.
-
-**Dados de configuração:**
-```js
-{ id: 4, type: 'connect',
-  leftWords: ['ESTRELAS', 'ILHAS', 'PÁSSAROS'],
-  rightWords: ['BANDO', 'CONSTELAÇÃO', 'ARQUIPÉLAGO'],
-  matches: { 'ESTRELAS': 'CONSTELAÇÃO', 'ILHAS': 'ARQUIPÉLAGO', 'PÁSSAROS': 'BANDO' } }
-```
-
-**Lógica de validação (handleConnectRight):**
-```js
-const handleConnectRight = (rightWord) => {
-  if (!selectedLeft) { alert("Caçador, escolha primeiro uma palavra da coluna da esquerda!"); return; }
-  if (level.matches[selectedLeft] === rightWord) {
-    const newSolved = [...solvedPairs, selectedLeft];
-    setSolvedPairs(newSolved);
-    setSelectedLeft(null);
-    if (newSolved.length === level.leftWords.length) handleWin();
-  } else {
-    setShakeWrong(rightWord);
-    setTimeout(() => setShakeWrong(null), 400);
-    setSelectedLeft(null);
-  }
-};
-```
-
-**Renderização das linhas SVG:**
-```jsx
-<svg className="absolute top-0 bottom-0 left-[35%] w-[30%] h-full pointer-events-none z-0">
-  {solvedPairs.map((leftWord) => {
-    const rightWord = level.matches[leftWord];
-    const leftIndex = level.leftWords.indexOf(leftWord);
-    const rightIndex = level.rightWords.indexOf(rightWord);
-    const y1 = ['16.66%', '50%', '83.33%'][leftIndex];
-    const y2 = ['16.66%', '50%', '83.33%'][rightIndex];
-    return (
-      <g key={`line-${leftWord}`}>
-        <line x1="0%" y1={y1} x2="100%" y2={y2} stroke="#ea580c" strokeWidth="6" strokeLinecap="round" className="line-anim" />
-        <circle cx="0%" cy={y1} r="8" fill="#9a3412" className="pop-anim" />
-        <circle cx="100%" cy={y2} r="8" fill="#9a3412" className="pop-anim" />
-      </g>
-    );
-  })}
-</svg>
-```
-
-#### Mecânica 3 — Intruder (O Intruso)
-Fases 7–9. O jogador identifica a palavra que **não** é um substantivo coletivo.
-
-**Dados de configuração:**
-```js
-{ id: 7, type: 'intruder',
-  words: ['ALCATEIA', 'CARDUME', 'CACHORRO', 'MANADA'],
-  answer: 'CACHORRO', emoji: '🐾',
-  instruction: 'Qual dessas palavras NÃO é um coletivo?' }
-```
-
-**Renderização dos botões (a mesma `checkAnswer` genérica valida):**
-```jsx
-{level.words.map((word, i) => {
-  const isCorrectAnswer = word === level.answer;
-  const isClickedAndNotIntruder = wrongAnswers.includes(word);
-  // Botão correto recebe pop-anim ao acertar; errados ficam vermelhos
-  return (
-    <button key={i} onClick={() => checkAnswer(word)} disabled={isClickedAndNotIntruder || isSuccess}>
-      {word}
-    </button>
-  );
-})}
-```
-
-#### Mecânica 4 — Sentence (Substituição na Frase)
-Fases 10–12. O jogador arrasta o coletivo para substituir uma expressão destacada numa frase.
-
-**Dados de configuração:**
-```js
-{ id: 10, type: 'sentence',
-  preText: 'Vimos um lindo ',
-  boldText: 'GRUPO DE PEIXES',
-  postText: ' no oceano.',
-  answer: 'CARDUME', options: ['CARDUME', 'BANDO', 'REBANHO'] }
-```
-
-**Dropzone da frase (aceita drag e click):**
-```jsx
-<span
-  onDragOver={handleDragOver}
-  onDrop={handleDrop}
-  onClick={() => { if(!isSuccess) alert("Toque ou arraste uma das opções de baixo aqui para dentro!"); }}
->
-  {isSuccess
-    ? <span>{level.answer}</span>
-    : <span className="line-through opacity-60">{level.boldText}</span>}
-</span>
-```
-
-### Fluxo de telas
-
-`cover` → `playing` (12 fases sequenciais) → `complete`
-
-**Função de vitória (handleWin) compartilhada entre todas as mecânicas:**
-```js
-const handleWin = () => {
-  setIsSuccess(true);
-  setStars(prev => prev + 1);
-  setTimeout(() => {
-    if (currentPhaseIndex + 1 < LEVELS.length) {
-      setCurrentPhaseIndex(prev => prev + 1);
-      resetTurn();
-    } else {
-      setGameState('complete');
-    }
-  }, 2500);
-};
-```
+**Fontes locais:** `utils/words.js`, `utils/challenges.js`, `utils/challenges/`.
 
 ---
 
-## 2. Canhões de Ouro
+## 2. Enigmas da Esfinge
 
 **Pasta:** `Canhões de ouro/`
-**Stack:** React 18
-**Categoria:** Matemática — Adição e Subtração
-**Fases:** 10 níveis selecionáveis
-**Persistência:** `localStorage` (chave `canhoes_pirata_v1_save`)
+**Stack:** React 18 + Babel
+**Categoria de conteúdo:** Português e lógica — interpretação de pistas
+**Estrutura ativa:** 12 trilhas × 5 enigmas fixos
 
-### Descrição
+### Mecânica e comportamento atuais
 
-Jogo de adição/subtração com estética pirata. O jogador escolhe a resposta correta e um canhão dispara uma bala em trajetória parabólica animada. Inclui sistema de estrelas por nível (1–3) e desbloqueio sequencial.
+O HTML carrega `riddles.js` e `sphinx.js` antes de `main.js`; o final de `main.js` monta `<window.SphinxApp />`. Cada enigma contém enunciado, resposta, dois distratores e explicação. As três alternativas são embaralhadas. Acerto deixa a esfinge feliz e libera avanço manual; erro desabilita a alternativa e anima a sucção do explorador por 1,7 s, permitindo nova tentativa. O código matemático antigo permanece preservado, mas seu componente `App` não é montado. Fluxo: capa → mapa → enigmas → conclusão. Estrelas usam a chave `enigmas-esfinge` inicializada em `main.js`.
 
-### Mecânicas
-
-#### Seleção de Resposta + Animação do Canhão
-
-**Dados de configuração (exemplo com parcela oculta):**
-```js
-{ id: 6, n1: 3, n2: null, op: '+', ans: 8, missing: 'n2',
-  options: [4, 5, 6], task: "Quem falta no canhão?" }
-```
-
-**Validação da resposta:**
-```js
-const checkAnswer = (val) => {
-  if (firing || hit) return;
-  const expected = level.missing
-    ? (level.missing === 'n2' ? level.ans - level.n1 : level.ans - level.n2)
-    : level.ans;
-  if (val === expected) {
-    animateShot();
-  } else {
-    setWrong(prev => [...prev, val]);
-    playTone(150, 'sawtooth', 0.3);
-  }
-};
-```
-
-**Animação parabólica da bala (requestAnimationFrame):**
-```js
-const animateShot = () => {
-  setFiring(true);
-  const ball = ballRef.current;
-  const cannon = cannonRef.current.getBoundingClientRect();
-  const target = targetRef.current.getBoundingClientRect();
-  const startX = cannon.right - 10;
-  const startY = cannon.top + cannon.height / 2;
-  const endX = target.left + target.width / 2;
-  const endY = target.top + target.height / 2;
-  ball.style.display = 'block';
-  const startTime = performance.now();
-  const duration = 900;
-  const peakHeight = 180;
-
-  function update(time) {
-    const elapsed = time - startTime;
-    const t = Math.min(elapsed / duration, 1);
-    const x = startX + (endX - startX) * t;
-    const y = startY + (endY - startY) * t - Math.sin(t * Math.PI) * peakHeight;
-    ball.style.left = `${x}px`;
-    ball.style.top = `${y}px`;
-    if (t < 1) requestAnimationFrame(update);
-    else {
-      ball.style.display = 'none';
-      setHit(true);
-      // calcula estrelas e avança nível
-    }
-  }
-  requestAnimationFrame(update);
-};
-```
-
-#### Sistema de Estrelas por Nível
-
-```js
-// 3 estrelas se não errou, 2 se errou 1, 1 se errou mais
-const earnedStars = Math.max(1, 3 - wrong.length);
-```
-
-#### Persistência de Progresso
-
-```js
-// Carregar
-useEffect(() => {
-  const saved = localStorage.getItem(STORAGE_KEY);
-  if (saved) {
-    const data = JSON.parse(saved);
-    setUnlockedLevel(data.unlockedLevel || 1);
-    setStarsByLevel(data.starsByLevel || Array(LEVELS.length).fill(0));
-    setScore(data.score || 0);
-  }
-}, []);
-
-// Salvar
-useEffect(() => {
-  if (gameState !== 'cover') {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({ unlockedLevel, starsByLevel, score }));
-  }
-}, [unlockedLevel, starsByLevel, score]);
-```
-
-#### Representação Visual de Quantidades
-
-```jsx
-const VisualItems = ({ count }) => {
-  if (count >= 10) {
-    return (
-      <div className="flex flex-wrap justify-center gap-1 max-w-[120px]">
-        {Array.from({ length: Math.floor(count/10) }).map((_, i) => <span key={`t-${i}`}>🧰</span>)}
-        {Array.from({ length: count % 10 }).map((_, i) => <span key={`o-${i}`}>🪙</span>)}
-      </div>
-    );
-  }
-  return (
-    <div className="flex flex-wrap justify-center gap-1 max-w-[120px]">
-      {Array.from({ length: count }).map((_, i) => <span key={i}>💎</span>)}
-    </div>
-  );
-};
-```
-
-### Fluxo de telas
-
-`cover` → `selection` (mapa de níveis) → `playing` → `level_complete`
+**Fontes locais:** `Canhões de ouro/riddles.js`, `sphinx.js`, `main.js`, `sphinx.css`.
 
 ---
 
@@ -363,259 +99,44 @@ const VisualItems = ({ count }) => {
 
 **Pasta:** `Defesa do Castelo Matematico/`
 **Stack:** Vanilla JS
-**Categoria:** Matemática — Adição e Subtração
-**Fases:** 12 níveis (torres)
-**Persistência:** `localStorage` (chave `math_castle_cannon_v3`)
+**Categoria de conteúdo:** Matemática — adição e subtração
+**Estrutura ativa:** 12 trilhas × 5 contas fixas
 
-### Descrição
+### Mecânica e comportamento atuais
 
-Jogo de defesa: o jogador resolve equações antes que lobos atravessem o timer e destruam o castelo. O timer é uma barra que esvazia; os lobos avançam proporcionalmente ao tempo restante. Erros aumentam o tamanho visual dos lobos e reduzem o tempo.
+Escolha do resultado entre alternativas, cronômetro e animação de disparo contra o grupo de lobos. Erros aumentam a escala do grupo. A soma predomina nas trilhas 1–4, subtração nas 5–8 e operações variam nas finais. Ainda não existem cinco lobos derrotados individualmente. Mantém dados próprios em `localStorage` (`math_castle_cannon_v3`) além de `HY.stars`.
 
-### Mecânicas
-
-#### Timer + Avanço dos Lobos
-
-```js
-function startTimer() {
-  if(timerInterval) clearInterval(timerInterval);
-  const bar = document.getElementById('timer-bar');
-  const wolves = document.getElementById('wolf-pack');
-
-  timerInterval = setInterval(() => {
-    if(isLocked) return;
-    timeLeft -= 0.5;
-    bar.style.width = timeLeft + '%';
-
-    const advance = (100 - timeLeft) * 0.7;
-    wolves.style.right = advance + '%';
-
-    if(timeLeft <= 0) {
-      clearInterval(timerInterval);
-      destroyCastle();
-    }
-  }, 150);
-}
-```
-
-#### Validação com Penalidade de Erro
-
-```js
-function checkAnswer(selected, correct, btn) {
-  if(isLocked) return;
-  if(selected === correct) {
-    isLocked = true;
-    clearInterval(timerInterval);
-    SFX.correct();
-    animateCannonShot();
-    score += 10 + Math.floor(timeLeft / 10);
-  } else {
-    tries++;
-    SFX.wrong();
-    wolfScale += 0.4;
-    const wolves = document.getElementById('wolf-pack');
-    wolves.style.transform = `scale(${wolfScale})`;
-    btn.style.opacity = '0.3';
-    btn.disabled = true;
-    timeLeft = Math.max(0, timeLeft - 20); // penalidade de tempo
-  }
-}
-```
-
-#### Animação Parabólica do Canhão (Vanilla JS)
-
-```js
-function animateCannonShot() {
-  const cannon = document.getElementById('cannon');
-  const ball = document.getElementById('cannon-ball');
-  const wolves = document.getElementById('wolf-pack');
-  const cannonRect = cannon.getBoundingClientRect();
-  const wolfRect = wolves.getBoundingClientRect();
-  const startX = cannonRect.right - 20;
-  const startY = cannonRect.top + 5;
-  const endX = wolfRect.left + (wolfRect.width / 2);
-  const endY = wolfRect.top + (wolfRect.height / 2);
-
-  cannon.style.transform = 'rotate(-35deg)';
-
-  setTimeout(() => {
-    ball.style.display = 'block';
-    const duration = 800;
-    const startTimestamp = performance.now();
-    const height = 180;
-
-    function step(timestamp) {
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      const currentX = startX + (endX - startX) * progress;
-      const currentY = startY + (endY - startY) * progress - (Math.sin(progress * Math.PI) * height);
-      ball.style.left = currentX + 'px';
-      ball.style.top = currentY + 'px';
-      if (progress < 1) requestAnimationFrame(step);
-      else {
-        ball.style.display = 'none';
-        wolves.classList.add('defeated');
-        setTimeout(() => endLevel(true), 1500);
-      }
-    }
-    requestAnimationFrame(step);
-  }, 300);
-}
-```
-
-#### Sistema de Estrelas e Desbloqueio
-
-```js
-if(success) {
-  let earned = tries === 0 ? 3 : tries === 1 ? 2 : 1;
-  userData.stars[currentLevel] = Math.max(userData.stars[currentLevel], earned);
-  userData.unlocked = Math.min(LEVELS.length, Math.max(userData.unlocked, currentLevel + 2));
-  saveGame();
-}
-```
-
-#### Geração de Opções com Distratores Aleatórios
-
-```js
-const ans = op === '+' ? a + b : a - b;
-const options = new Set([ans]);
-while(options.size < 3) {
-  const fake = Math.max(0, ans + (Math.floor(Math.random() * 7) - 3));
-  options.add(fake);
-}
-```
-
-### Fluxo de telas
-
-`home` → `levels` (grade de torres) → `game` (com modal de resultado overlay)
+**Fontes locais:** `main.js` (`LEVELS`, `checkAnswer`, `animateCannonShot`).
 
 ---
 
 ## 4. Detetives da Ortografia
 
 **Pasta:** `Detetives da Ortografia/`
-**Stack:** React 18
-**Categoria:** Português — Ortografia
-**Fases:** 12
+**Stack:** React 18 + Babel
+**Categoria de conteúdo:** Português — ortografia
+**Estrutura ativa:** 12 trilhas × 5 desafios
 
-### Descrição
+### Mecânica e comportamento atuais
 
-Estruturalmente **idêntico** ao jogo Caçadores de Coletivos — mesmas 4 mecânicas (match, connect, intruder, sentence), mesma arquitetura de estados React, mesma lógica de `checkAnswer` e `handleConnectRight`. O que muda são os dados de conteúdo (foco em ortografia: X/CH, S/SS, G/J etc.) e a identidade visual (tema detetive, cores escuras).
+Consome `window.HYOrtografia`, com escolhas, associação, intruso e completar frase. A renderização já usa `HYChallenges.Match/Connect/Intruder/Sentence`; os componentes são carregados via Babel antes de `main.js`. Não tratar os antigos trechos JSX duplicados como arquitetura atual.
 
-### Mecânicas
-
-As mesmas 4 mecânicas descritas em [Caçadores de Coletivos](#1-caçadores-de-coletivos). Apenas o conteúdo dos `LEVELS` difere.
-
-**Exemplo de dado (Mecânica 1 — ortografia):**
-```js
-{ id: 1, type: 'match', target: 'CAI__A', answer: 'X',
-  options: ['X', 'CH', 'SS'], emoji: '📦',
-  instruction: 'É com X ou CH? Arraste a letra certa para consertar a palavra!' }
-```
-
-**Exemplo de dado (Mecânica 3 — palavra escrita errada):**
-```js
-{ id: 7, type: 'intruder',
-  words: ['XÍCARA', 'ENXADA', 'XUVEIRO', 'CAIXA'],
-  answer: 'XUVEIRO', emoji: '🚿',
-  instruction: 'Qual dessas palavras está escrita ERRADA (é a intrusa)?' }
-```
-
-> **Nota para manutenção:** Este jogo é um fork temático de Caçadores de Coletivos. Qualquer bug corrigido na lógica de um deve ser verificado no outro.
+**Fontes locais:** `utils/ortografia.js`, `utils/challenges/`, `main.js`.
 
 ---
 
-## 5. Digitado (ABC Palavras Mágicas)
+## 5. Digitado
 
 **Pasta:** `Digitado/`
-**Stack:** React 18
-**Categoria:** Português — Digitação/Escrita
-**Fases:** 30 fases × 2 palavras = 60 palavras
+**Stack:** React 18 + Babel
+**Categoria de conteúdo:** Português — transcrição e digitação
+**Estrutura ativa:** 12 trilhas × 5 palavras sorteadas
 
-### Descrição
+### Mecânica e comportamento atuais
 
-O jogador digita palavras exibidas como emoji em um campo de texto. Dois modos: maiúsculas (Educação Infantil) e minúsculas (Ensino Fundamental). Exibe boletim com tempo por palavra ao fim de cada fase.
+Sorteia cinco entradas de `HY.rand.PALAVRAS` por dificuldade: fácil nas trilhas 1–4, médio nas 5–8 e difícil nas 9–12. Captura `keydown` global durante a partida, sem campo de texto. Mostra emoji e palavra com letras progressivamente preenchidas. Modo infantil usa maiúsculas; fundamental usa inicial maiúscula e demais minúsculas. Valida letra a letra sem remover acentos. Pontua ao completar a palavra; cada tecla incorreta registrada penaliza. Não há boletim por palavra nem pausa por perda de foco nesta implementação.
 
-### Mecânicas
-
-#### Digitação com Validação em Tempo Real
-
-```js
-const handleInputChange = (e) => {
-  let text = e.target.value;
-  if (level === 'infantil') {
-    text = text.toUpperCase();
-  } else {
-    text = text.toLowerCase();
-  }
-  setInputValue(text);
-  setIsError(false);
-
-  const currentWord = phaseWords[currentWordIndex].word;
-  const targetWord = level === 'infantil' ? currentWord.toUpperCase() : currentWord.toLowerCase();
-
-  if (removeAccents(text) === removeAccents(targetWord)) {
-    handleCorrectWord(targetWord, phaseWords);
-  } else if (text.length >= targetWord.length) {
-    setIsError(true);
-  }
-};
-```
-
-**Normalização de acentos (aceita versão sem acento):**
-```js
-const removeAccents = (str) => {
-  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-};
-```
-
-#### Desbloqueio Progressivo de Fases
-
-```js
-const handleCorrectWord = (targetWord, phaseWords) => {
-  const endTime = Date.now();
-  const timeTaken = ((endTime - startTime) / 1000).toFixed(1);
-  setMetrics(prev => [...prev, { word: targetWord, time: timeTaken }]);
-
-  if (currentWordIndex + 1 < phaseWords.length) {
-    setTimeout(() => {
-      setInputValue('');
-      setIsError(false);
-      setCurrentWordIndex(prev => prev + 1);
-    }, 300);
-  } else {
-    setTimeout(() => {
-      if (currentPhase === unlockedPhases[level] && currentPhase < 8) {
-        setUnlockedPhases(prev => ({ ...prev, [level]: prev[level] + 1 }));
-      }
-      setGameState('phaseComplete');
-    }, 500);
-  }
-};
-```
-
-#### Barra de Progresso Visual com Traços
-
-```jsx
-<div className="flex space-x-2 mb-6">
-  {currentItem.word.split('').map((_, i) => (
-    <div key={i} className={`h-3 w-8 rounded-full transition-colors ${i < inputValue.length ? 'bg-blue-500' : 'bg-gray-200'}`}></div>
-  ))}
-</div>
-```
-
-#### Foco Automático no Input
-
-```js
-useEffect(() => {
-  if (gameState === 'playing' && inputRef.current) {
-    inputRef.current.focus();
-    setStartTime(Date.now());
-  }
-}, [currentWordIndex, gameState]);
-```
-
-### Fluxo de telas
-
-`cover` → `levelSelect` (infantil/fundamental) → `phaseSelect` (mapa) → `playing` → `phaseComplete` (boletim)
+**Fontes locais:** `main.js`, `utils/rand.js`, `utils/words.js`.
 
 ---
 
@@ -623,99 +144,14 @@ useEffect(() => {
 
 **Pasta:** `Digite o resultado/`
 **Stack:** Vanilla JS
-**Categoria:** Matemática — Adição e Subtração
-**Fases:** 12 níveis × N operações
+**Categoria de conteúdo:** Matemática — cálculo e registro numérico
+**Estrutura ativa:** 12 trilhas × 5 operações
 
-### Descrição
+### Mecânica e comportamento atuais
 
-O jogador digita o resultado de equações usando o teclado físico. Timer por questão que reseta a cada resposta. Modo Infantil exibe grupos de ícones visuais para contar. Estruturalmente muito similar à Galáxia da Matemática.
+Gera adições e subtrações e recebe o resultado pelo teclado. `maxVal` vai de 5 a 100 e o prazo por questão de 15 a 8 segundos. Modo infantil acrescenta representações visuais de quantidades. Cada trilha usa `count: 5`; não são quantidades variáveis de operações.
 
-### Mecânicas
-
-#### Captura de Teclado e Validação Progressiva
-
-```js
-window.addEventListener('keydown', (e) => {
-  if (!document.getElementById('screen-game').classList.contains('active-screen') || !canType) return;
-
-  if (e.key >= '0' && e.key <= '9') {
-    typedInput += e.key;
-    const slot = document.getElementById('answer-slot');
-    slot.innerText = typedInput;
-
-    const targetStr = currentOperation.result.toString();
-
-    if (typedInput === targetStr) {
-      canType = false;
-      stopTimer();
-      const display = document.getElementById('math-op-display');
-      display.classList.add('correct-anim');
-      setTimeout(nextPhase, 1500);
-    } else if (typedInput.length >= targetStr.length) {
-      display.classList.add('shake-anim');
-      setTimeout(() => {
-        display.classList.remove('shake-anim');
-        typedInput = "";
-        slot.innerText = "?";
-      }, 500);
-    }
-  } else if (e.key === "Backspace") {
-    typedInput = "";
-    document.getElementById('answer-slot').innerText = "?";
-  }
-});
-```
-
-#### Geração Dinâmica de Operações
-
-```js
-function generateNewOperation() {
-  const config = gameLevels[activeLevelIdx];
-  const op = config.ops[Math.floor(Math.random() * config.ops.length)];
-  let n1, n2, result;
-
-  if (op === '+') {
-    n1 = Math.floor(Math.random() * (config.maxVal - 1)) + 1;
-    n2 = Math.floor(Math.random() * (config.maxVal - n1)) + 1;
-    result = n1 + n2;
-  } else {
-    n1 = Math.floor(Math.random() * (config.maxVal - 1)) + 2;
-    n2 = Math.floor(Math.random() * (n1 - 1)) + 1;
-    result = n1 - n2;
-  }
-  currentOperation = { n1, n2, op, result };
-  typedInput = "";
-  renderPhase();
-}
-```
-
-#### Timer com Mudança de Cor
-
-```js
-function updateTimerUI() {
-  const bar = document.getElementById('timer-bar');
-  bar.style.width = `${timeLeft}%`;
-  if (timeLeft > 50) bar.style.backgroundColor = '#10b981';
-  else if (timeLeft > 20) bar.style.backgroundColor = '#facc15';
-  else bar.style.backgroundColor = '#f43f5e';
-}
-```
-
-#### Ajuda Visual (Modo Infantil)
-
-```js
-function createIconGroup(num, colorClass) {
-  const group = document.createElement('div');
-  group.className = `flex flex-wrap gap-1 border-2 border-dashed ${colorClass} p-2 rounded-xl min-w-[40px] justify-center`;
-  for(let i=0; i<num; i++) {
-    const span = document.createElement('span');
-    span.className = "counter-icon";
-    span.innerText = currentIcon;
-    group.appendChild(span);
-  }
-  return group;
-}
-```
+**Fontes locais:** `main.js` (`gameLevels`, geração e handlers de teclado).
 
 ---
 
@@ -723,293 +159,89 @@ function createIconGroup(num, colorClass) {
 
 **Pasta:** `Duelo dos Monstros/`
 **Stack:** Vanilla JS
-**Categoria:** Matemática — Comparação de Números (>, <, =)
-**Fases:** 12
-**Persistência:** `localStorage` (chave `monstros_comparacao_v1`)
+**Categoria de conteúdo:** Matemática — comparação de números
+**Estrutura ativa:** 12 trilhas × 5 comparações fixas
 
-### Descrição
+### Mecânica e comportamento atuais
 
-Dois monstros SVG gerados proceduralmente representam dois números. O jogador escolhe o símbolo correto (>, <, =) entre eles.
+Compara pares numéricos por `>`, `<` ou `=`, com feedback de monstros. Não é um jogo de escolher o resultado de uma conta, apesar da descrição atual no catálogo. As faixas se sobrepõem e chegam a 100. Mantém `localStorage` próprio (`monstros_comparacao_v1`) e estrelas de sessão.
 
-### Mecânicas
-
-#### Monstros SVG Gerados Proceduralmente
-
-```js
-const MONSTERS = [
-  (color) => `<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="${color}"/>...</svg>`,
-  (color) => `<svg viewBox="0 0 100 100"><rect x="20" y="20" width="60" height="60" rx="10" fill="${color}"/>...</svg>`,
-  (color) => `<svg viewBox="0 0 100 100"><path d="M50 10 L90 90 L10 90 Z" fill="${color}"/>...</svg>`
-];
-
-// Na inicialização do nível:
-const colors = ['#a855f7', '#f97316', '#22c55e', '#db2777', '#3b82f6'];
-const m1 = MONSTERS[Math.floor(Math.random()*3)](colors[Math.floor(Math.random()*5)]);
-const m2 = MONSTERS[Math.floor(Math.random()*3)](colors[Math.floor(Math.random()*5)]);
-```
-
-#### Validação da Comparação
-
-```js
-function checkChoice(symbol) {
-  if(isLocked) return;
-  const correct = LEVELS[currentLevelIdx].ans;
-
-  if(symbol === correct) {
-    isLocked = true;
-    playSfx(880, 'sine', 0.3);
-    const slot = document.getElementById('slot');
-    slot.textContent = symbol;
-    slot.classList.add('filled');
-    stars[currentLevelIdx] = 1;
-    unlocked = Math.max(unlocked, currentLevelIdx + 2);
-    saveProgress();
-    setTimeout(() => document.getElementById('result-modal').style.display = 'flex', 800);
-  } else {
-    playSfx(150, 'sawtooth', 0.2);
-    const slot = document.getElementById('slot');
-    slot.style.borderColor = 'var(--danger)';
-    setTimeout(() => slot.style.borderColor = '', 400);
-  }
-}
-```
-
-#### Cenário com Estalactites Aleatórias
-
-```js
-function createScenery() {
-  const container = document.getElementById('scenery');
-  for(let i=0; i<15; i++) {
-    const s = document.createElement('div');
-    s.className = 'stalactite';
-    s.style.left = Math.random() * 100 + '%';
-    s.style.height = (20 + Math.random() * 60) + 'px';
-    container.appendChild(s);
-  }
-}
-```
+**Fontes locais:** `main.js` (`LEVELS`, validação de comparação).
 
 ---
 
 ## 8. Escola de Magia VSA
 
 **Pasta:** `Escola de Magia VSA/`
-**Stack:** React 18
-**Categoria:** Português — Classes Gramaticais (Substantivo, Verbo, Adjetivo)
-**Fases:** 12
+**Stack:** React 18 + Babel
+**Categoria de conteúdo:** Português — substantivos, verbos e adjetivos
+**Estrutura ativa:** 12 trilhas × 5 desafios
 
-### Descrição
+### Mecânica e comportamento atuais
 
-Estruturalmente **idêntico** a Caçadores de Coletivos e Detetives da Ortografia. Mesmas 4 mecânicas, mesmo fluxo de estados React. O conteúdo ensina a distinguir Nomes (Substantivos), Ações (Verbos) e Qualidades (Adjetivos). Identidade visual: tema de escola de magia (roxo/fúcsia).
+Consome `window.HYGramatica` de `utils/gramatica.js`. A renderização já foi migrada para os quatro componentes `HYChallenges`, carregados antes de `main.js`. Usa escolhas, associação, intruso e frases; a classificação gramatical presente em `HYWords` não substituiu este banco ativo.
 
-**Exemplo de dado:**
-```js
-{ id: 1, type: 'match', target: 'AÇÃO (VERBO)', answer: 'PULAR',
-  options: ['PULAR', 'BOLA', 'TRISTE'], emoji: '🏃‍♂️',
-  instruction: 'Qual destas palavras indica uma AÇÃO (algo que você faz)?' }
-```
-
-> Mesma lógica de `checkAnswer`, `handleConnectRight`, `handleWin`, drag & drop que os outros jogos da família de 4 mecânicas.
+**Fontes locais:** `utils/gramatica.js`, `utils/challenges/`, `main.js`.
 
 ---
 
 ## 9. Fábrica de Rimas
 
 **Pasta:** `Fábrica de Rimas/`
-**Stack:** React 18
-**Categoria:** Português — Rimas
-**Fases:** 12
+**Stack:** React 18 + Babel
+**Categoria de conteúdo:** Português — relações de rima
+**Estrutura ativa:** 12 trilhas × 5 desafios gerados
 
-### Descrição
+### Mecânica e comportamento atuais
 
-Estruturalmente **idêntico** à família de jogos de 4 mecânicas. O conteúdo foca em encontrar palavras que rimam. Identidade visual: tema industrial/fábrica (engrenagens, tons escuros).
+Usa `HY.challenges.buildLevels('rimas', HYWords, 12)` e componentes compartilhados. O gerador oferece escolhas, associação, intruso e completar frase, com fallbacks. Não exige produção livre de versos. Intrusos ainda são selecionados pela ausência do atributo no banco, sem comprovar diferença sonora em relação ao grupo.
 
-**Exemplo de dado (Mecânica 4 — completar verso):**
-```js
-{ id: 10, type: 'sentence',
-  preText: 'Lá na casa da vizinha, tem uma linda ',
-  boldText: 'GATA',
-  postText: '.',
-  answer: 'GALINHA',
-  options: ['GALINHA', 'PATA', 'CADELA'],
-  instruction: 'Escolha a palavra que RIMA com "vizinha" para completar o poema!' }
-```
-
-**Animação de engrenagem no cabeçalho (CSS personalizado):**
-```jsx
-<span className="gear-anim">⚙️</span>
-```
+**Fontes locais:** `utils/words.js`, `utils/challenges.js`, `utils/challenges/`, `main.js`.
 
 ---
 
 ## 10. Fábrica de Acentos
 
 **Pasta:** `Fabrica de Acentos/`
-**Stack:** React 18
-**Categoria:** Português — Acentuação
-**Fases:** 7 fases × 5 palavras
+**Stack:** React 18 + Babel
+**Categoria de conteúdo:** Português — acentuação
+**Estrutura ativa:** 12 trilhas; 59 palavras (trilha 8 com quatro)
 
-### Descrição
+### Mecânica e comportamento atuais
 
-O jogador arrasta o acento correto (´ agudo, ^ circunflexo, ~ til) para a letra correta da palavra. Nas fases 6 e 7, todas as letras têm uma dropzone individual — o jogador deve escolher a letra certa **e** o acento certo.
+As fases já são derivadas de `HYWords` agrupado por `faseAcento`, não de um array hardcoded no jogo. `HYAcentos.accentMap/accentOptions` fornece as tabelas de sinais. Nas trilhas 1–5 a posição-alvo é apoiada visualmente; a partir da 6 é preciso escolher letra e sinal por clique ou arrastar. O gabarito é calculado a partir dos caracteres da palavra. Erro de posição só anima a letra e não chama `HY.score.wrong()`. `HYAcentos.phases` continua preservado como legado.
 
-### Mecânicas
-
-#### Mapa de Acentos
-
-```js
-const ACCENT_MAP = {
-  'Á': { base: 'A', accent: '´' },
-  'É': { base: 'E', accent: '´' },
-  'Â': { base: 'A', accent: '^' },
-  'Ê': { base: 'E', accent: '^' },
-  'Ã': { base: 'A', accent: '~' },
-  'Õ': { base: 'O', accent: '~' }
-  // ...etc
-};
-```
-
-#### Validação com Dupla Checagem (letra + acento)
-
-```js
-const checkAnswer = (accentSymbol, dropIndex) => {
-  const wordArray = currentItem.word.split('');
-  const targetIndex = wordArray.findIndex(char => ACCENT_MAP[char]);
-  const targetChar = wordArray[targetIndex];
-  const expectedAccent = ACCENT_MAP[targetChar].accent;
-
-  const finalDropIndex = dropIndex !== undefined ? dropIndex
-    : (currentPhase >= 6 ? selectedLetterIndex : targetIndex);
-
-  // 1. Verifica se colocou na letra certa (importante para fases 6 e 7)
-  if (finalDropIndex !== targetIndex) {
-    setShakeIndex(finalDropIndex);
-    setTimeout(() => setShakeIndex(null), 300);
-    return;
-  }
-
-  // 2. Verifica se escolheu o acento certo
-  if (accentSymbol === expectedAccent) {
-    setIsSuccess(true);
-    // avança palavra...
-  } else {
-    setWrongAnswers(prev => [...prev, accentSymbol]);
-    setShakeIndex(targetIndex);
-    setTimeout(() => setShakeIndex(null), 300);
-  }
-};
-```
-
-#### Drag & Drop por Letra Individual (Fases 6 e 7)
-
-```js
-const handleDragOverLetter = (e, index) => {
-  e.preventDefault();
-  e.dataTransfer.dropEffect = 'move';
-  if (dragOverIndex !== index) setDragOverIndex(index);
-};
-
-const handleDropLetter = (e, index) => {
-  e.preventDefault();
-  setDragOverIndex(null);
-  const droppedSymbol = e.dataTransfer.getData('text/plain');
-  if (droppedSymbol) checkAnswer(droppedSymbol, index);
-};
-
-// Click como fallback (toque em tablet)
-const handleLetterClick = (index) => {
-  if (currentPhase >= 6 && !isSuccess) setSelectedLetterIndex(index);
-};
-```
-
-#### Renderização da Palavra Letra a Letra
-
-```jsx
-{wordArray.map((char, index) => {
-  const isTarget = index === targetIndex;
-  const showDropzone = currentPhase >= 6 || isTarget;
-  if (showDropzone) {
-    return (
-      <div key={index}
-           onDragOver={(e) => handleDragOverLetter(e, index)}
-           onDrop={(e) => handleDropLetter(e, index)}
-           onClick={() => handleLetterClick(index)}>
-        {/* Dropzone acima da letra */}
-        <div className="w-12 h-12 border-4 border-dashed rounded-xl">...</div>
-        {/* Letra base (sem acento) */}
-        <div className="bg-white rounded-xl">{isSuccessThisBox ? char : targetData.base}</div>
-      </div>
-    );
-  }
-  // Letras que não precisam de acento: renderiza normalmente
-  return <div key={index} className="bg-white rounded-xl">{char}</div>;
-})}
-```
+**Fontes locais:** `main.js`, `utils/words.js`, `utils/acentos.js`.
 
 ---
 
-## 11. Galáxia da Matemática
+## 11. Galáxia Geométrica
 
 **Pasta:** `Galáxia da Matemática/`
 **Stack:** Vanilla JS
-**Categoria:** Matemática — Adição e Subtração
-**Fases:** 12 setores × N missões
+**Categoria de conteúdo:** Matemática e lógica — reconhecimento de figuras
+**Estrutura ativa:** 12 trilhas × 5 desafios (3 escolhas + 2 voos)
 
-### Descrição
+### Mecânica e comportamento atuais
 
-Estruturalmente **idêntico** a "Digite o Resultado" (mesma lógica de digitação por teclado, timer, geração de operações, modo infantil com ícones). A diferença é a identidade visual (tema espacial) e uma **animação de transição entre setores** com foguete voando.
+A página carrega `geometry-score.js`, `geometry-core.js` e `geometry.js`, sem o `main.js` aritmético antigo. Os três primeiros desafios pedem selecionar uma figura entre três opções e confirmar; cada voo exige coletar dez figuras-alvo. O repertório cresce de três até doze figuras. A partir da trilha 6, o alvo muda após 3 e 6 coletas; a partir da 9, opções do reconhecimento podem aparecer rotacionadas. Nave guiada por mouse, toque ou setas. Há pausa manual e por perda de foco/visibilidade; isso pausa a simulação, sem descontar genericamente o tempo usado pelas estrelas. Pontuação fixa: +100 por resposta/coleta correta e −50 por incorreta, piso zero; erros não removem coletas. Barra de progresso própria e `HY.stars` com chave `galaxia-geometrica`.
 
-### Mecânicas
-
-As mesmas de [Digite o Resultado](#6-digite-o-resultado). Diferencial exclusivo:
-
-#### Animação de Transição com Foguete
-
-```js
-function startTransition() {
-  const transitionScreen = document.getElementById('screen-transition');
-  const rocket = document.getElementById('transition-rocket');
-  const planet = document.getElementById('target-planet');
-
-  planet.innerText = spacePlanets[Math.floor(Math.random() * spacePlanets.length)];
-  transitionScreen.classList.remove('hidden');
-  rocket.classList.remove('rocket-flying');
-  void rocket.offsetWidth; // força reflow para reiniciar animação CSS
-  rocket.classList.add('rocket-flying');
-
-  setTimeout(() => {
-    transitionScreen.classList.add('hidden');
-    showScreen('screen-game');
-    generateNewOperation();
-  }, 2000);
-}
-```
-
-**Nota:** A animação do foguete só ocorre ao clicar "Próximo Setor" no modal — não entre missões normais do mesmo setor.
+**Fontes locais:** `geometry.js`, `geometry-core.js`, `geometry-score.js`, `geometry.css`.
 
 ---
 
 ## 12. Galáxia dos Opostos
 
 **Pasta:** `Galaxia dos Opostos/`
-**Stack:** React 18
-**Categoria:** Português — Antônimos
-**Fases:** 12
+**Stack:** React 18 + Babel
+**Categoria de conteúdo:** Português — antônimos
+**Estrutura ativa:** 12 trilhas × 5 desafios gerados
 
-### Descrição
+### Mecânica e comportamento atuais
 
-Estruturalmente **idêntico** à família de jogos de 4 mecânicas. O conteúdo foca em antônimos (palavras opostas). Identidade visual: tema espacial (estrelas, galáxia, roxo/rosa).
+Usa `HY.challenges.buildLevels('oposto', HYWords, 12)` e componentes compartilhados. Normalmente dois match, uma associação, um match adicional no lugar do intruso e uma frase, com fallbacks. A ordem embaralhada não garante progressão lexical entre trilhas.
 
-**Exemplo de dado:**
-```js
-{ id: 10, type: 'sentence',
-  preText: 'O elefante é um animal muito ',
-  boldText: 'PEQUENO',
-  postText: '.',
-  answer: 'GRANDE',
-  options: ['GRANDE', 'MINÚSCULO', 'LEVE'],
-  instruction: 'Troque a palavra errada pelo seu OPOSTO para a frase fazer sentido!' }
-```
+**Fontes locais:** `utils/words.js`, `utils/challenges.js`, `utils/challenges/`, `main.js`.
 
 ---
 
@@ -1017,239 +249,44 @@ Estruturalmente **idêntico** à família de jogos de 4 mecânicas. O conteúdo 
 
 **Pasta:** `Laboratorio das Pocoes/`
 **Stack:** Vanilla JS
-**Categoria:** Matemática — Adição e Subtração
-**Fases:** 12
-**Persistência:** `localStorage` (chave `math_alchemy_v1`)
+**Categoria de conteúdo:** Lógica — separação de cores e planejamento
+**Estrutura ativa:** 12 trilhas × 5 quebra-cabeças
 
-### Descrição
+### Mecânica e comportamento atuais
 
-O jogador escolhe o ingrediente (número) correto. Ao acertar, uma animação de ingrediente voando em parábola até o frasco alvo. Ao errar, o ingrediente "foge" em direção aleatória. Sistema de 3 estrelas por tentativas.
+O HTML carrega `color-sort.js`; `main.js` mantém a aritmética anterior sem ser carregado. Cada frasco comporta quatro unidades. O jogador escolhe origem e destino por clique/toque; transfere o bloco contíguo do topo para frasco vazio ou com a mesma cor no topo, respeitando o espaço. Conclui quando todos estão vazios ou completos com uma única cor. Há contagem de movimentos, desfazer e reiniciar. Cores crescem de duas a seis a cada duas trilhas; o embaralhamento usa `12 + trilha*5 + desafio*3` passos (índices zero). Cores têm símbolos para identificação adicional. Movimento inválido toca feedback, mas não chama `HY.score.wrong()`; pontuação é concedida ao resolver o quebra-cabeça. Estrelas usam `laboratorio-pocoes`; o armazenamento antigo de aritmética não é usado pelo fluxo ativo.
 
-### Mecânicas
-
-#### Animação de Ingrediente Voando (Web Animations API)
-
-```js
-function checkAnswer(selected, correct, btn) {
-  const rect = btn.getBoundingClientRect();
-  const flying = document.createElement('div');
-  flying.className = 'flying-ingredient';
-  flying.textContent = selected;
-  flying.style.left = rect.left + 'px';
-  flying.style.top = rect.top + 'px';
-  document.body.appendChild(flying);
-
-  if(selected === correct) {
-    const target = document.getElementById('target-flask');
-    const targetRect = target.getBoundingClientRect();
-
-    // Parábola de acerto
-    flying.animate([
-      { left: rect.left + 'px', top: rect.top + 'px', transform: 'rotate(0deg) scale(1)' },
-      { left: targetRect.left + 'px', top: targetRect.top + 'px', transform: 'rotate(720deg) scale(0.8)' }
-    ], { duration: 700, easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)', fill: 'forwards' })
-    .onfinish = () => {
-      target.textContent = selected;
-      target.classList.add('filled');
-      flying.remove();
-      setTimeout(() => endLevel(true), 800);
-    };
-  } else {
-    // Foge em direção aleatória
-    const randomX = (Math.random() - 0.5) * 800;
-    flying.animate([
-      { transform: 'translate(0, 0) scale(1)', opacity: 1 },
-      { transform: `translate(${randomX}px, -400px) scale(0)`, opacity: 0 }
-    ], { duration: 1000, easing: 'ease-in' })
-    .onfinish = () => flying.remove();
-
-    btn.style.opacity = '0.3';
-    btn.disabled = true;
-  }
-}
-```
-
-#### Sistema de Estrelas por Tentativas
-
-```js
-if(success) {
-  let earned = tries === 1 ? 3 : tries === 2 ? 2 : 1;
-  userData.stars[currentLevel] = Math.max(userData.stars[currentLevel], earned);
-  userData.unlocked = Math.max(userData.unlocked, currentLevel + 2);
-  saveGame();
-}
-```
-
-#### Cenário com Faíscas Animadas
-
-```js
-function createScenery() {
-  const container = document.getElementById('scenery');
-  for(let i=0; i<40; i++) {
-    const s = document.createElement('div');
-    s.className = 'sparkle';
-    const size = 2 + Math.random() * 4;
-    s.style.width = size + 'px';
-    s.style.height = size + 'px';
-    s.style.top = Math.random() * 100 + '%';
-    s.style.left = Math.random() * 100 + '%';
-    s.style.animationDelay = Math.random() * 3 + 's';
-    container.appendChild(s);
-  }
-}
-```
+**Fontes locais:** `color-sort.js`, `color-sort.css`, `index.html`.
 
 ---
 
 ## 14. Maiúsculo vs Minúsculo
 
 **Pasta:** `Maisculo vs Minusculo/`
-**Stack:** React 18
-**Categoria:** Português — Letras Maiúsculas e Minúsculas
-**Fases:** 5 fases × 5–6 letras
+**Stack:** React 18 + Babel
+**Categoria de conteúdo:** Português — correspondência entre formas de letras
+**Estrutura ativa:** 12 trilhas × 5 letras
 
-### Descrição
+### Mecânica e comportamento atuais
 
-O jogador arrastra (ou clica) a letra correta para uma caixinha. Dois modos: encontrar a minúscula de uma maiúscula, ou vice-versa. As opções incluem distratores cuidadosamente escolhidos (ex: b/d/p/q para a letra B).
+Deriva os pares e distratores de `HYLetters`. Permite maiúscula → minúscula ou o inverso, por clique/arrastar. A sequência `TRACKS` é fixa: A–Y nas cinco primeiras trilhas, Z no início da sexta e revisões nas seguintes. O sorteio solicitado a partir do segundo desafio da trilha 6 ainda está pendente.
 
-### Mecânicas
-
-#### Dicionário com Distratores Pedagógicos
-
-```js
-const ALPHABET_DATA = [
-  { u: 'A', l: 'a', d_u: ['E', 'O', 'R'], d_l: ['e', 'o', 'c'] },
-  { u: 'B', l: 'b', d_u: ['D', 'P', 'R'], d_l: ['d', 'p', 'q'] }, // Clássica confusão b/d/p/q
-  { u: 'M', l: 'm', d_u: ['N', 'W', 'H'], d_l: ['n', 'w', 'u'] }, // Confusão m/n/w
-  // ...26 letras completas
-];
-```
-
-#### Geração de Opções Embaralhadas
-
-```js
-const generateOptions = (letterData, currentMode) => {
-  let correctAns, distractors;
-  if (currentMode === 'upperToLower') {
-    correctAns = letterData.l;
-    distractors = [...letterData.d_l];
-  } else {
-    correctAns = letterData.u;
-    distractors = [...letterData.d_u];
-  }
-  const selectedDistractors = HY.shuffle(distractors).slice(0, 2);
-  const finalOptions = HY.shuffle([correctAns, ...selectedDistractors]);
-  setOptions(finalOptions);
-  setWrongAnswers([]);
-  setIsSuccess(false);
-};
-```
-
-#### Drag & Drop com Feedback Visual
-
-```js
-const handleDrop = (e) => {
-  e.preventDefault();
-  setIsDragOver(false);
-  const droppedOption = e.dataTransfer.getData('text/plain');
-  if (droppedOption) checkAnswer(droppedOption);
-};
-```
-
-**Dropzone com estados visuais:**
-```jsx
-<div
-  onDragOver={handleDragOver}
-  onDragLeave={handleDragLeave}
-  onDrop={handleDrop}
-  className={`rounded-[2rem] border-8 transition-all ${
-    isSuccess ? 'bg-green-400 border-green-500 scale-110'
-    : isDragOver ? 'bg-sky-100 border-sky-400 border-dashed scale-105'
-    : 'bg-sky-50 border-sky-300 border-dashed'
-  }`}
->
-  {isSuccess ? (
-    <span>{correctMatchDisplay}</span>
-  ) : (
-    <span className="opacity-50">?</span>
-  )}
-</div>
-```
+**Fontes locais:** `main.js` (`TRACKS`), `utils/letters.js`.
 
 ---
 
 ## 15. Matemática Pirata
 
 **Pasta:** `Matematica Pirata/`
-**Stack:** React 18
-**Categoria:** Matemática — Adição, Subtração e Álgebra Inicial
-**Fases:** 15
+**Stack:** React 18 + Babel
+**Categoria de conteúdo:** Matemática — adição, subtração e termo desconhecido
+**Estrutura ativa:** 12 trilhas × 5 contas sorteadas
 
-### Descrição
+### Mecânica e comportamento atuais
 
-Jogo de operações matemáticas com representação visual de quantidades. Inclui mecânica de **parcela oculta** (álgebra inicial) e agrupamento em dezenas (Base 10 com baús = 10). O jogador arrasta ou clica no número correto.
+Sorteia de `HY.rand.NUMEROS` pelos critérios de cada trilha. O gabarito ativo é `level[level.unknown || 'answer']`; permite resultado ou termo oculto conforme o filtro. Acerto inclui `PirateCannonFeedback`, com navio, disparo parabólico e explosão do barril; o código está separado em `cannon-feedback.js/css`. Alternativas podem ser selecionadas/arrastadas; erros são desabilitados. O antigo array `_LEVELS_LEGADO` não define os itens da partida.
 
-### Mecânicas
-
-#### Parcela Oculta (Álgebra Inicial)
-
-```js
-// Configuração: 'unknown' indica qual valor está oculto
-{ id: 11, n1: 3, n2: 5, op: '+', answer: 8, options: [5, 4, 6], emoji: '🦜', unknown: 'n2' }
-
-// Validação dinâmica baseada no campo oculto
-const checkAnswer = (value) => {
-  const expectedValue = level[level.unknown || 'answer'];
-  if (value === expectedValue) { /* acerto */ }
-};
-```
-
-#### Representação Visual com Agrupamento em Dezenas
-
-```jsx
-const RenderVisualItems = ({ count, emoji }) => {
-  if (count >= 10) {
-    const tens = Math.floor(count / 10);
-    const ones = count % 10;
-    return (
-      <div>
-        <div className="flex gap-1">
-          {Array.from({ length: tens }).map((_, i) => (
-            <span key={`t-${i}`} title="1 Baú = 10">🧰</span>
-          ))}
-        </div>
-        {ones > 0 && (
-          <div>
-            {Array.from({ length: ones }).map((_, i) => (
-              <span key={`o-${i}`}>{emoji}</span>
-            ))}
-          </div>
-        )}
-      </div>
-    );
-  }
-  // Grade normal para < 10: cols dinâmicas
-  return (
-    <div className={`grid ${count <= 4 ? 'grid-cols-2' : count <= 6 ? 'grid-cols-3' : 'grid-cols-3'}`}>
-      {Array.from({ length: count }).map((_, i) => <span key={i}>{emoji}</span>)}
-    </div>
-  );
-};
-```
-
-#### Dropzone Dinâmica (mostra a caixa correta para o valor oculto)
-
-```jsx
-const Dropzone = () => {
-  const expectedValue = level[level.unknown || 'answer'];
-  return (
-    <div onDragOver={handleDragOver} onDrop={handleDrop}
-         className={`rounded-3xl border-4 w-28 h-28 ${isSuccess ? 'bg-green-400' : 'bg-white border-dashed'}`}>
-      {isSuccess ? <span>{expectedValue}</span> : <span className="opacity-40">?</span>}
-    </div>
-  );
-};
-```
+**Fontes locais:** `main.js`, `cannon-feedback.js`, `cannon-feedback.css`, `utils/rand.js`.
 
 ---
 
@@ -1257,76 +294,14 @@ const Dropzone = () => {
 
 **Pasta:** `Mercado Alien/`
 **Stack:** Vanilla JS
-**Categoria:** Matemática — Comparação de Números (>, <, =)
-**Fases:** 12 níveis × 10 problemas
+**Categoria de conteúdo:** Matemática — comparação e cálculo de expressões
+**Estrutura ativa:** 12 trilhas × 5 comparações
 
-### Descrição
+### Mecânica e comportamento atuais
 
-Comparação de números com tema espacial/alien. Diferencial: inclui comparação de **expressões** (ex: `12+3` vs `18`) nos níveis mais difíceis. Sistema de **3 vidas (escudos)** — o jogador pode errar até 3 vezes antes de game over.
+O nome ativo continua Mercado Alien; Duelo Alien é proposta futura. Compara valores usando maior, menor ou igual. `range` cresce de 10 a 100 e `time` cai de 15 a 7 segundos. `complex` passa a verdadeiro na trilha 7, introduzindo expressões na comparação. Possui modos de apresentação e escudos de tentativas.
 
-### Mecânicas
-
-#### Geração com Expressões (Níveis Complexos)
-
-```js
-function generateProblem() {
-  const config = levels[activeLevelIdx];
-  if (config.complex && Math.random() > 0.6) {
-    // Desafio de Soma Simples vs Número
-    const n1 = Math.floor(Math.random() * (config.range / 2)) + 5;
-    const n2 = Math.floor(Math.random() * 10) + 1;
-    v1 = n1 + n2;
-    displayV1 = `${n1}+${n2}`; // mostra a expressão
-    v2 = Math.floor(Math.random() * config.range) + 10;
-    displayV2 = v2;
-  } else {
-    // Comparação pura
-    v1 = Math.floor(Math.random() * config.range) + 1;
-    v2 = Math.floor(Math.random() * config.range) + 1;
-    if(Math.random() < 0.15) v2 = v1; // permite igualdade
-    displayV1 = v1;
-    displayV2 = v2;
-  }
-  // Calcula sinal correto
-  if (v1 < v2) correct = '<';
-  else if (v1 === v2) correct = '=';
-  else correct = '>';
-}
-```
-
-#### Sistema de Vidas (Escudos)
-
-```js
-function checkAnswer(choice) {
-  if (!canInteract) return;
-  canInteract = false;
-  stopTimer();
-
-  if (choice === currentProblem.correct) {
-    // acerto...
-    setTimeout(nextPhase, 1200);
-  } else {
-    shields--;
-    updateShieldsUI();
-    setTimeout(() => {
-      if (shields <= 0) {
-        document.getElementById('game-over-modal').classList.remove('hidden');
-      } else {
-        canInteract = true;
-        resetTimer();
-      }
-    }, 800);
-  }
-}
-
-function updateShieldsUI() {
-  const container = document.getElementById('shields-ui');
-  container.innerHTML = '';
-  for(let i=0; i<3; i++) {
-    container.innerHTML += i < shields ? '<span>🔋</span>' : '<span class="opacity-30 grayscale">🪫</span>';
-  }
-}
-```
+**Fontes locais:** `main.js` (`levels`, geração de comparações).
 
 ---
 
@@ -1334,144 +309,29 @@ function updateShieldsUI() {
 
 **Pasta:** `Mercado Maior ou Menor/`
 **Stack:** Vanilla JS
-**Categoria:** Matemática — Comparação de Tamanhos
-**Fases:** 12
-**Persistência:** `localStorage` (chave `mercado_gigantes_v1`)
+**Categoria de conteúdo:** Matemática — comparação de tamanho visual
+**Estrutura ativa:** 12 trilhas × 5 desafios
 
-### Descrição
+### Mecânica e comportamento atuais
 
-O jogador escolhe o objeto maior ou menor entre 2–3 opções, cujos tamanhos são representados visualmente por SVGs escalados proporcionalmente ao valor configurado. Conceito: comparação visual antes de números.
+Escolhe o maior ou menor entre objetos SVG de tamanhos diferentes. O gabarito usa os valores dos itens, não a comparação de preços. Mantém dados próprios em `localStorage` (`mercado_gigantes_v1`) e `HY.stars`.
 
-### Mecânicas
-
-#### SVGs Escalados pelo Valor
-
-```js
-const TYPES = {
-  fruit: (size) => `<svg width="${size}" height="${size}" viewBox="0 0 100 100">
-    <circle cx="50" cy="55" r="40" fill="#ef4444"/>...</svg>`,
-  bread: (size) => `<svg width="${size}" height="${size}" viewBox="0 0 100 100">...</svg>`,
-  // ...
-};
-
-// Dados de nível: val = tamanho do SVG em pixels
-{ id: 1, type: 'fruit', task: 'maior',
-  items: [{val: 40, label: 'Pequena'}, {val: 100, label: 'Grande'}] }
-```
-
-#### Determinação da Resposta Correta
-
-```js
-function startLevel(idx) {
-  const lvl = LEVELS[idx];
-  const targetVal = lvl.task === 'maior'
-    ? Math.max(...lvl.items.map(i => i.val))
-    : Math.min(...lvl.items.map(i => i.val));
-
-  lvl.items.forEach(item => {
-    const box = document.createElement('div');
-    box.innerHTML = `<div>${TYPES[lvl.type](item.val)}</div>`;
-    box.onclick = () => handleChoice(box, item.val === targetVal);
-    area.appendChild(box);
-  });
-}
-```
-
-#### Feedback Visual de Acerto
-
-```js
-function handleChoice(el, isCorrect) {
-  if(isLocked) return;
-  if(isCorrect) {
-    isLocked = true;
-    el.style.transform = 'scale(1.3) translateY(-20px)';
-    const visual = el.querySelector('.item-visual');
-    visual.style.filter = 'drop-shadow(0 0 20px gold)';
-    // salva e avança
-  } else {
-    el.style.animation = 'shake 0.4s';
-    setTimeout(() => el.style.animation = '', 400);
-  }
-}
-```
+**Fontes locais:** `main.js` (`TYPES`, `LEVELS`).
 
 ---
 
 ## 18. Organiza Tudo
 
 **Pasta:** `Organiza Tudo/`
-**Stack:** React 18
-**Categoria:** Lógica — Classificação e Categorização
-**Fases:** 6
+**Stack:** React 18 + Babel
+**Categoria de conteúdo:** Lógica e linguagem — classificação
+**Estrutura ativa:** 6 conjuntos de 9 objetos; grade compartilhada de 12 trilhas
 
-### Descrição
+### Mecânica e comportamento atuais
 
-O jogador arrasta (ou toca) emojis para as caixas corretas por cor, forma, tema, natureza, roupa ou tipo de comida. Todas as 9 peças precisam ser alocadas corretamente para completar a fase.
+Distribui objetos em caixas por cor, forma ou categoria temática, por arrastar ou selecionar item e caixa. O banco contém seis conjuntos, não 12 trilhas de cinco palavras; não é um jogo de reorganizar letras. Cada objeto correto pontua. A grade pode liberar a trilha 7, para a qual `LEVELS.find` não fornece conteúdo. Essa incompatibilidade permanece pendente.
 
-### Mecânicas
-
-#### Drag & Drop com Fallback de Clique
-
-```js
-// Iniciar arrasto
-const onDragStart = (e, item) => {
-  setDraggedItem(item);
-  setSelectedItem(item);
-  e.dataTransfer.setData('application/json', JSON.stringify(item));
-};
-
-// Soltar na zona
-const onDrop = (e, zoneId) => {
-  e.preventDefault();
-  setDragOverZone(null);
-  try {
-    const itemData = e.dataTransfer.getData('application/json');
-    if (itemData) {
-      const item = JSON.parse(itemData);
-      handleAttempt(item, zoneId);
-    } else if (draggedItem) {
-      handleAttempt(draggedItem, zoneId);
-    }
-  } catch (err) {
-    if (draggedItem) handleAttempt(draggedItem, zoneId);
-  }
-  setDraggedItem(null);
-};
-
-// Fallback: clique no item → clique na zona
-const handleItemClick = (item) => setSelectedItem(item);
-const handleZoneClick = (zoneId) => {
-  if (selectedItem) handleAttempt(selectedItem, zoneId);
-};
-```
-
-#### Validação e Verificação de Conclusão
-
-```js
-const handleAttempt = (item, zoneId) => {
-  if (!item) return;
-  if (item.category === zoneId) {
-    setSortedItems(prev => ({ ...prev, [zoneId]: [...prev[zoneId], item] }));
-    setPendingItems(prev => {
-      const newPending = prev.filter(i => i.id !== item.id);
-      if (newPending.length === 0) {
-        setTimeout(() => {
-          if (currentLevel.id === unlockedLevels && currentLevel.id < LEVELS.length) {
-            setUnlockedLevels(prev => prev + 1);
-          }
-          setGameState('levelComplete');
-        }, 800);
-      }
-      return newPending;
-    });
-    setSelectedItem(null);
-  } else {
-    setShakeZone(zoneId);
-    setTimeout(() => setShakeZone(null), 400);
-    setSelectedItem(null);
-  }
-};
-```
+**Fontes locais:** `main.js` (`LEVELS`, `startLevel`, `handleAttempt`).
 
 ---
 
@@ -1479,84 +339,29 @@ const handleAttempt = (item, zoneId) => {
 
 **Pasta:** `Piratas do Troco/`
 **Stack:** Vanilla JS
-**Categoria:** Matemática — Subtração / Troco
-**Fases:** 12
+**Categoria de conteúdo:** Matemática — pagamento e troco
+**Estrutura ativa:** 12 trilhas × 5 desafios
 
-### Descrição
+### Mecânica e comportamento atuais
 
-Jogo em duas fases por nível: (1) o jogador clica nas moedas para "gastar" o valor do custo; (2) arrasta ou clica as moedas restantes para o baú como "troco". Ensina subtração de forma concreta e manipulável.
+Usa pares fixos de custo e total de moedas. O jogador paga e guarda o restante no baú por arrastar ou selecionar. A conclusão exige distribuir corretamente as moedas; o fluxo não chama `HY.score.wrong()`. Não interpretar estrelas sem erro como evidência de ausência de tentativas inválidas.
 
-### Mecânicas
-
-#### Fase 1 — Gastar Moedas (Clique)
-
-```js
-function handleCoinClick(el, target) {
-  if(!isComplete) {
-    if(el.classList.contains('spent')) return;
-    el.classList.add('spent');
-    spentCount++;
-    updateCounter(target);
-    if(spentCount === target) {
-      isComplete = true;
-      prepareChestPhase();
-    }
-  } else {
-    // Fase 2: seleciona moeda para o baú
-    document.querySelectorAll('.coin').forEach(c => c.classList.remove('selected'));
-    selectedCoin = el;
-    el.classList.add('selected');
-  }
-}
-```
-
-#### Fase 2 — Guardar Troco no Baú (Drag & Drop + Click)
-
-```js
-function prepareChestPhase() {
-  const [cost, total] = LEVELS[currentLevelIdx];
-  const remaining = total - cost;
-  document.getElementById('equation-display').textContent = `${total} - ${cost} = ${remaining}`;
-  document.getElementById('chest-zone').classList.add('active');
-  // Ativa drag nas moedas não gastas
-  const coins = document.querySelectorAll('.coin:not(.spent)');
-  coins.forEach(c => {
-    c.classList.add('locked');
-    c.setAttribute('draggable', 'true');
-  });
-}
-
-function moveToChest(el) {
-  el.classList.add('spent');
-  el.classList.remove('selected');
-  chestCount++;
-  updateCounter();
-  const [cost, total] = LEVELS[currentLevelIdx];
-  const remaining = total - cost;
-  if(chestCount === remaining) setTimeout(showVictory, 600);
-}
-```
+**Fontes locais:** `main.js` (`LEVELS`, manipulação de moedas).
 
 ---
 
 ## 20. Sinônimos
 
 **Pasta:** `Sinonimos/`
-**Stack:** React 18
-**Categoria:** Português — Sinônimos
-**Fases:** 12
+**Stack:** React 18 + Babel
+**Categoria de conteúdo:** Português — relações de significado
+**Estrutura ativa:** 12 trilhas × 5 desafios gerados
 
-### Descrição
+### Mecânica e comportamento atuais
 
-Estruturalmente **idêntico** à família de jogos de 4 mecânicas. Conteúdo: encontrar palavras que significam o mesmo. Identidade visual: tema selva/aventura.
+Usa `HY.challenges.buildLevels('sinonimos', HYWords, 12)` e os componentes compartilhados. Oferece escolhas, associação, intruso e frases com fallbacks. Relações são selecionadas dos metadados; a ordem das trilhas não constitui escala lexical validada. A ausência do atributo ainda define o intruso.
 
-**Exemplo de dado:**
-```js
-{ id: 7, type: 'intruder',
-  words: ['LINDO', 'BONITO', 'BELO', 'FEIO'],
-  answer: 'FEIO', emoji: '🕵️‍♂️',
-  instruction: 'Atenção! Clique na palavra INTRUSA (a que é diferente das outras)!' }
-```
+**Fontes locais:** `utils/words.js`, `utils/challenges.js`, `utils/challenges/`, `main.js`.
 
 ---
 
@@ -1564,79 +369,14 @@ Estruturalmente **idêntico** à família de jogos de 4 mecânicas. Conteúdo: e
 
 **Pasta:** `Trem da Soma e Subtracao/`
 **Stack:** Vanilla JS
-**Categoria:** Matemática — Adição e Subtração
-**Fases:** 12
-**Persistência:** `localStorage` (chave `math_train_v4`)
+**Categoria de conteúdo:** Matemática — adição e subtração
+**Estrutura ativa:** 12 trilhas × 5 contas sorteadas
 
-### Descrição
+### Mecânica e comportamento atuais
 
-O trem exibe a equação em vagões. O jogador clica na resposta correta; o número voa em parábola até o vagão "?". Timer de 30 segundos por questão. Sistema de 3 estrelas baseado em acertos e tempo.
+Sorteia `HY.rand.NUMEROS` por `CRITERIOS`, com resultado desconhecido nas primeiras trilhas. Escolhe/preenche o vagão numérico e usa cronômetro. Mantém armazenamento próprio (`math_train_v4`) e `HY.stars`. A substituição do catálogo por palavras cruzadas permanece planejada; não há jogo de palavras cruzadas carregado nesta página.
 
-### Mecânicas
-
-#### Número Voando para o Vagão (Web Animations API)
-
-```js
-function checkAnswer(selected, correct, btn, event) {
-  const rect = btn.getBoundingClientRect();
-  const flying = document.createElement('div');
-  flying.className = 'flying-num';
-  flying.textContent = selected;
-  flying.style.left = rect.left + 'px';
-  flying.style.top = rect.top + 'px';
-  document.body.appendChild(flying);
-
-  if(selected === correct) {
-    const target = document.getElementById('target-wagon');
-    const targetRect = target.getBoundingClientRect();
-
-    flying.animate([
-      { left: rect.left + 'px', top: rect.top + 'px', transform: 'scale(1)' },
-      { left: targetRect.left + 'px', top: targetRect.top + 'px', transform: 'scale(0.8)' }
-    ], { duration: 600, easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)', fill: 'forwards' })
-    .onfinish = () => {
-      target.textContent = selected;
-      target.classList.add('filled');
-      flying.remove();
-      setTimeout(() => endLevel(true), 600);
-    };
-    score += 10 + Math.floor(timeLeft / 2); // bônus por tempo
-  } else {
-    // Número cai em direção aleatória
-    const randomX = (Math.random() - 0.5) * 1000;
-    const randomRot = (Math.random() - 0.5) * 1000;
-    flying.animate([
-      { transform: 'translate(0, 0) rotate(0deg)', opacity: 1 },
-      { transform: `translate(${randomX}px, 800px) rotate(${randomRot}deg)`, opacity: 0 }
-    ], { duration: 1000, easing: 'ease-in' })
-    .onfinish = () => flying.remove();
-    btn.style.opacity = '0.3';
-    btn.disabled = true;
-  }
-}
-```
-
-#### Sistema de Estrelas Composto (Acertos + Tempo)
-
-```js
-let earned = (tries === 1 && timeLeft > 15) ? 3
-  : (tries <= 2 && timeLeft > 5) ? 2
-  : 1;
-```
-
-#### SVG do Trem Embutido
-
-```js
-const SVG_ENGINE = `
-  <svg class="svg-icon" viewBox="0 0 100 100">
-    <rect x="10" y="40" width="70" height="40" fill="#ef4444" rx="5"/>
-    <rect x="50" y="20" width="25" height="30" fill="#ef4444" rx="2"/>
-    <rect x="55" y="10" width="10" height="15" fill="#334155"/>
-    <circle cx="25" cy="85" r="10" fill="#334155" stroke="white" stroke-width="2"/>
-    <circle cx="65" cy="85" r="10" fill="#334155" stroke="white" stroke-width="2"/>
-    <rect x="15" y="45" width="20" height="20" fill="#93c5fd" rx="2"/>
-  </svg>`;
-```
+**Fontes locais:** `main.js`, `utils/rand.js`.
 
 ---
 
@@ -1644,64 +384,14 @@ const SVG_ENGINE = `
 
 **Pasta:** `monster_typer I/`
 **Stack:** Vanilla JS
-**Categoria:** Português — Alfabeto e Digitação
-**Fases:** 3 níveis × 40 fases cada (embaralhadas)
-**Persistência:** `localStorage` (chave `mt1_unlockedLevels`)
+**Categoria de conteúdo:** Português — letra inicial e teclado
+**Estrutura ativa:** 12 trilhas × 5 palavras fixas
 
-### Descrição
+### Mecânica e comportamento atuais
 
-O jogador vê um emoji e o nome de um objeto; deve pressionar a tecla correspondente à **letra inicial** da palavra. As fases são embaralhadas a cada início de nível. Timer de 10 segundos por fase.
+Cada trilha pratica uma letra inicial: A, B, C, D, E, F, G, H, I, J, L ou M. O jogador digita a letra-alvo para cada palavra/emoji; não existem três níveis de 40 fases no fluxo atual. Possui cronômetro e modos de apresentação. A grade usa `HY.stars`; também há contador próprio `mt1_unlockedTracks` em `localStorage`.
 
-### Mecânicas
-
-#### Captura de Teclado e Comparação com Letra Inicial
-
-```js
-window.addEventListener('keydown', (e) => {
-  if (!document.getElementById('screen-game').classList.contains('active-screen') || !canType) return;
-
-  const typedKey = e.key.toUpperCase();
-  const targetKey = currentPhases[activePhaseIdx].letter.toUpperCase();
-  const bigLetter = document.getElementById('big-letter-display');
-
-  if (typedKey === targetKey) {
-    canType = false;
-    stopTimer();
-    bigLetter.classList.add('correct-anim');
-    bigLetter.style.color = '#22c55e';
-    setTimeout(nextPhase, 1100);
-  } else {
-    if (e.key.length === 1 && /[a-zA-Záàâãéèêíïóôõúüç]/.test(e.key)) {
-      HY.shake(bigLetter); // utilitário compartilhado
-    }
-  }
-});
-```
-
-#### Embaralhamento das Fases por Nível
-
-```js
-function startLevel(index) {
-  activeLevelIdx = index;
-  activePhaseIdx = 0;
-  currentPhases = HY.shuffle(gameData[index].phases); // embaralha no início
-  showScreen('screen-game');
-  initPhase();
-}
-```
-
-#### Dois Modos de Exibição
-
-```js
-if (gameMode === 'infantil') {
-  bigLetter.innerText = data.letter.toUpperCase();
-  wordName.innerText = data.word.toUpperCase();
-} else {
-  bigLetter.innerText = data.letter.toUpperCase() + " " + data.letter.toLowerCase();
-  const wordLower = data.word.charAt(0).toUpperCase() + data.word.slice(1).toLowerCase();
-  wordName.innerText = wordLower;
-}
-```
+**Fontes locais:** `main.js` (`TRACKS`, handler de teclado).
 
 ---
 
@@ -1709,72 +399,14 @@ if (gameMode === 'infantil') {
 
 **Pasta:** `monster_typer II/`
 **Stack:** Vanilla JS
-**Categoria:** Português — Digitação de Palavras Completas
+**Categoria de conteúdo:** Português — transcrição de palavras
+**Estrutura ativa:** 12 trilhas × 5 palavras fixas
 
-### Descrição
+### Mecânica e comportamento atuais
 
-O jogador digita palavras completas letra por letra. Cada letra correta é destacada; erros piscam os olhos do monstro de vermelho. Timer vertical que esvazia. A cada 50 pontos, avança de nível. Dificuldade aumenta com o nível (timer mais rápido).
+Captura teclas e avança letra a letra com cronômetro por palavra. Pontuação positiva ocorre na conclusão da palavra, negativa na tecla incorreta registrada. Usa `HY.stars` e contador próprio `mt2_unlockedTracks` em `localStorage`. O banco contém grafias `MACA`, `BALAO` e `AGUA`; não presumir acentuação ortográfica correta.
 
-### Mecânicas
-
-#### Digitação Letra a Letra com Feedback Visual
-
-```js
-window.addEventListener('keydown', (e) => {
-  if (!gameActive) return;
-  const key = e.key.toUpperCase();
-  if (!/^[A-Z]$/.test(key)) return;
-
-  if (key === currentWord[typedIndex]) {
-    typedIndex++;
-    renderWord();
-    monsterSvg.style.transform = "scale(1.1)";
-    setTimeout(() => monsterSvg.style.transform = "scale(1)", 100);
-    if (typedIndex === currentWord.length) wordComplete();
-  } else {
-    // Feedback de erro: olhos vermelhos
-    wordContainer.classList.add('shake-ui');
-    setTimeout(() => wordContainer.classList.remove('shake-ui'), 300);
-    document.getElementById('eye-l').style.fill = "#ef4444";
-    document.getElementById('eye-r').style.fill = "#ef4444";
-    setTimeout(() => {
-      document.getElementById('eye-l').style.fill = "#2563eb";
-      document.getElementById('eye-r').style.fill = "#2563eb";
-    }, 400);
-  }
-});
-```
-
-#### Renderização da Palavra com Classes por Estado
-
-```js
-function renderWord() {
-  wordContainer.innerHTML = '';
-  for (let i = 0; i < currentWord.length; i++) {
-    const span = document.createElement('span');
-    span.innerText = currentWord[i];
-    span.className = `letter-slot ${i < typedIndex ? 'letter-correct' : 'letter-pending'}`;
-    wordContainer.appendChild(span);
-  }
-}
-```
-
-#### Dificuldade Progressiva por Nível
-
-```js
-function resetTimer() {
-  clearInterval(timerInterval);
-  timeLeft = 100;
-  // Velocidade aumenta com o nível
-  const speed = 100 + (level * 2);
-  timerInterval = setInterval(() => {
-    if (!gameActive) return;
-    timeLeft -= 0.5;
-    updateTimerUI();
-    if (timeLeft <= 0) handleTimeOut();
-  }, 100);
-}
-```
+**Fontes locais:** `main.js` (`TRACKS`, `wordComplete`).
 
 ---
 
@@ -1782,82 +414,14 @@ function resetTimer() {
 
 **Pasta:** `syllables/`
 **Stack:** Vanilla JS
-**Categoria:** Português — Divisão Silábica
-**Fases:** 36 (12 Fácil, 12 Médio, 12 Difícil)
+**Categoria de conteúdo:** Português — composição silábica
+**Estrutura ativa:** 12 trilhas × 5 itens acessados
 
-### Descrição
+### Mecânica e comportamento atuais
 
-O jogador arrasta (ou clica) sílabas embaralhadas para os slots corretos, montando a palavra. Barra de progresso global acumulada. Três dificuldades: 2, 3 e 4 sílabas.
+Deriva itens com `silabas` de `HYWords`, ordena por quantidade de sílabas e acessa `trilha*5 + desafio`. Monta a palavra com blocos de sílabas por clique/arrastar. Os primeiros 60 itens atuais têm oito palavras monossilábicas e 52 dissilábicas; o comentário de progressão para três/quatro sílabas não corresponde ao percurso ativo.
 
-### Mecânicas
-
-#### Drag & Drop de Sílabas para Slots
-
-```js
-slot.ondrop = (e) => {
-  const text = e.dataTransfer.getData('text');
-  const id = e.dataTransfer.getData('id');
-  handleSyllablePlacement(slot, text, id);
-};
-
-function handleSyllablePlacement(slot, text, id) {
-  const index = parseInt(slot.dataset.index);
-  const target = slot.dataset.target;
-
-  if (text === target) {
-    // Acerto: slot vira verde, sílaba some do banco
-    slot.innerText = text;
-    slot.className = 'slot ... correct shadow-lg';
-    const syllableEl = document.getElementById(id);
-    if (syllableEl) syllableEl.style.visibility = 'hidden';
-    syllableState[index] = text;
-    checkWin();
-  } else {
-    // Erro: slot pisca vermelho e volta ao estado anterior
-    slot.innerText = text;
-    slot.className = 'slot ... incorrect shadow-lg';
-    setTimeout(() => {
-      if (!syllableState[index]) {
-        slot.innerText = oldText;
-        slot.className = oldClass;
-      }
-    }, 600);
-  }
-}
-```
-
-#### Clique como Fallback (Toque em Mobile)
-
-```js
-box.onclick = (e) => {
-  e.stopPropagation();
-  if (selectedSyllable?.id === id) {
-    deselectSyllable();
-  } else {
-    selectSyllable(box, syl, id);
-  }
-};
-
-slot.onclick = () => {
-  if (selectedSyllable) {
-    handleSyllablePlacement(slot, selectedSyllable.text, selectedSyllable.id);
-    deselectSyllable();
-  }
-};
-```
-
-#### Barra de Progresso Global Acumulada
-
-```js
-function updateProgressBar() {
-  const correctInLevel = syllableState.filter(s => s !== null).length;
-  const totalInLevel = syllableState.length;
-  const baseProgress = (currentLevelIdx / 12) * 100;
-  const subProgress = (correctInLevel / totalInLevel) * (100 / 12);
-  const totalProgress = baseProgress + subProgress;
-  document.getElementById('progress-bar').style.width = `${totalProgress}%`;
-}
-```
+**Fontes locais:** `main.js` (`levels`, `startTrack`), `utils/words.js`.
 
 ---
 
@@ -1865,70 +429,14 @@ function updateProgressBar() {
 
 **Pasta:** `vowel/`
 **Stack:** Vanilla JS
-**Categoria:** Português — Vogais
-**Fases:** 3 níveis × 20 fases
+**Categoria de conteúdo:** Português — completar vogal
+**Estrutura ativa:** Grade de 12 trilhas; banco com 39 itens
 
-### Descrição
+### Mecânica e comportamento atuais
 
-O jogador identifica a vogal que completa uma palavra (lacuna no meio ou no fim). Botões físicos de A/E/I/O/U na tela. Suporte a teclado físico. Dois modos: infantil (maiúsculas) e fundamental (minúsculas com capitalização correta).
+Entrada excepcional: `vowel.html`. Deriva itens com `vogalFaltante` de `HYWords`; recebe vogal por botão ou teclado e acessa `trilha*5 + desafio`. O banco cobre sete trilhas completas e quatro itens da oitava, em vez dos 60 necessários. A falta do quinto item da trilha 8 pode interromper o fluxo; a grade não representa conteúdo completo.
 
-### Mecânicas
-
-#### Validação de Vogal (Botão Virtual + Teclado)
-
-```js
-function checkVowel(vowel) {
-  if (!canType) return;
-  const data = gameData[activeLevelIdx].phases[activePhaseIdx];
-  const gapEl = document.getElementById('word-gap');
-
-  if (vowel === data.vowel) {
-    canType = false;
-    score++;
-    // Formatação correta da vogal conforme modo
-    let displayVowel = vowel;
-    if(gameMode === 'fundamental' && data.prefix.length > 0) {
-      displayVowel = vowel.toLowerCase();
-    }
-    gapEl.innerText = displayVowel;
-    gapEl.classList.add('text-green-500', 'correct-anim');
-    setTimeout(nextPhase, 1200);
-  } else {
-    HY.shake(gapEl); // tremida via utilitário compartilhado
-  }
-}
-
-// Suporte a teclado físico
-window.addEventListener('keydown', (e) => {
-  const typedKey = e.key.toUpperCase();
-  if (['A', 'E', 'I', 'O', 'U'].includes(typedKey)) {
-    checkVowel(typedKey);
-  }
-});
-```
-
-#### Estrutura de Dados com Prefixo/Sufixo e Lacuna
-
-```js
-// Nível 1: vogal no fim
-{ prefix: 'PIAN', vowel: 'O', suffix: '', emoji: '🎹' }
-
-// Nível 2: vogal no meio
-{ prefix: 'B', vowel: 'O', suffix: 'LA', emoji: '⚽' }
-
-// Nível 3: lacuna pode ser qualquer posição
-{ prefix: 'P', vowel: 'E', suffix: 'IXE', emoji: '🐟' }
-```
-
-#### Formatação por Modo
-
-```js
-function formatText(text) {
-  if (!text) return "";
-  if (gameMode === 'infantil') return text.toUpperCase();
-  else return text.toLowerCase();
-}
-```
+**Fontes locais:** `vowel.html`, `main.js`, `utils/words.js`.
 
 ---
 
@@ -3079,7 +1587,7 @@ CSS global. Define:
 
 ## Apêndice — Família de Jogos com 4 Mecânicas
 
-Os seguintes jogos compartilham **exatamente a mesma arquitetura React** (estados, lógica de validação, componentes). Apenas o conteúdo dos `LEVELS` e a identidade visual diferem:
+Os seguintes jogos compartilham os quatro componentes de apresentação React em `utils/challenges/`. A origem dos dados e os fallbacks diferem entre jogos:
 
 | Jogo | Conteúdo | Tema Visual |
 |---|---|---|
@@ -3091,10 +1599,12 @@ Os seguintes jogos compartilham **exatamente a mesma arquitetura React** (estado
 | Sinônimos | Sinônimos | Selva |
 
 **Arquitetura comum:**
-- `useState('cover')` → `useState('playing')` → `useState('complete')`
+- Capa → seleção de trilha → partida → conclusão; nomes dos estados variam por jogo.
 - `checkAnswer(value)` valida match/intruder/sentence
 - `handleConnectRight(rightWord)` valida connect
 - `handleWin()` avança fase ou encerra
 - `resetTurn()` limpa todos os estados de interação
 - Drag & Drop com `handleDragStart`, `handleDragOver`, `handleDrop`
 - SVG de linhas animadas no connect com posições em `['16.66%', '50%', '83.33%']`
+
+Os componentes compartilhados já são consumidos pelos seis jogos desta família. Ortografia e VSA usam bancos específicos; Coletivos, Rimas, Opostos e Sinônimos usam o gerador sobre `HYWords`. Opostos troca intruso por match. Não presumir que todos os quatro tipos sejam exibidos em toda trilha.

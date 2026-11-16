@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bedroll-frame",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/bedroll-frame.fbx": "66745ef3104505e8e220916d45fdff1bcae0214a5b361acd3da16494cf2af255",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/bedroll-frame.glb": "e1b311123e23b7bc5b724a818baaa45aab8401599781564aa4b0621aefcfcfbf",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/bedroll-frame.obj": "578e10aaf517197bc0e79ab154ebdfc4ad6482a9e504e927dcdee3c352705b30",
+    "Models/OBJ format/bedroll-frame.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/bedroll-frame.png": "b34cdfa998b3148d5d8ba90daaefd3f64d2b13bf22a9e2ef7ee03a72cdef78eb"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/bedroll-frame.fbx": "66745ef3104505e8e220916d45fdff1bcae0214a5b361acd3da16494cf2af255",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/bedroll-frame.glb": "e1b311123e23b7bc5b724a818baaa45aab8401599781564aa4b0621aefcfcfbf",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/bedroll-frame.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/bedroll-frame.obj": "bea62d85dfe1ca862e917d9fe17a17cfa8a7bc9aeeec6de151fc6430618578f2",
+    "Preview.png": "b34cdfa998b3148d5d8ba90daaefd3f64d2b13bf22a9e2ef7ee03a72cdef78eb"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "railroad-straight-hill-beginning",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/railroad-straight-hill-beginning.fbx": "861dc026df9ce7f81b45c506be71b873f8de3e7934062c497698b0784e5a1a1b",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/railroad-straight-hill-beginning.glb": "af10f6ca75a4ddf70da28efa3d5d54d502ff1514494fdf91f8058940e1709965",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/railroad-straight-hill-beginning.obj": "05956801876dbb5d2bf6ab3e90957d2423200540a51f88439e2d428e681b36c0",
+    "Models/OBJ format/railroad-straight-hill-beginning.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/railroad-straight-hill-beginning.png": "fcd5b8a74d315dbcac5394046aa0c6fa992bc532e8103a465b4808d043fbcf9e"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/railroad-straight-hill-beginning.fbx": "861dc026df9ce7f81b45c506be71b873f8de3e7934062c497698b0784e5a1a1b",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/railroad-straight-hill-beginning.glb": "af10f6ca75a4ddf70da28efa3d5d54d502ff1514494fdf91f8058940e1709965",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/railroad-straight-hill-beginning.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/railroad-straight-hill-beginning.obj": "57d146b8613c4daadcfa8f8c39dfb0796027240b576a7e6707f8734e1ebc0fb2",
+    "Preview.png": "fcd5b8a74d315dbcac5394046aa0c6fa992bc532e8103a465b4808d043fbcf9e"
+  },
+  "license": "../License.txt"
+}

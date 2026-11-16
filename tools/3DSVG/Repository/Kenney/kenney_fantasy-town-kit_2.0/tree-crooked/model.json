@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tree-crooked",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/tree-crooked.fbx": "06eff5ccca46b41f6612a05c63b37f5bd220794462adb7862ce747fc1da5fb9a",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/tree-crooked.glb": "da4349701dd3fc474f7bb03cfe8b230bec0919025d8d1ecac0d1061a23c5e910",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/tree-crooked.obj": "988b7d099345e6aec8db7f2524d27c70b3cd18d9ec2060d1b57272b8c48fcc48",
+    "Models/OBJ format/tree-crooked.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tree-crooked.png": "a5a9f15954c74e57a61e2f219febf0d0d04b5a352efbfbd20906febfc4228e60"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/tree-crooked.fbx": "06eff5ccca46b41f6612a05c63b37f5bd220794462adb7862ce747fc1da5fb9a",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/tree-crooked.glb": "da4349701dd3fc474f7bb03cfe8b230bec0919025d8d1ecac0d1061a23c5e910",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/tree-crooked.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tree-crooked.obj": "64b4a5b5be341d36a89452fe251d60675ec7328a6e0e2fdea7209549d5ae6b95",
+    "Preview.png": "a5a9f15954c74e57a61e2f219febf0d0d04b5a352efbfbd20906febfc4228e60"
+  },
+  "license": "../License.txt"
+}

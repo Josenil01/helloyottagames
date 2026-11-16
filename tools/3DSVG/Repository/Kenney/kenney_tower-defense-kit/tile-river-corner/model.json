@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tile-river-corner",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/tile-river-corner.fbx": "567384ef1d4c3c02607275f7b829974c85229ccca9ea8d139886e7d216e646a7",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/tile-river-corner.glb": "8facd512d7ea418610d92dc8a563c778de587b03b6c5bb4ae1356f663b703691",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/tile-river-corner.obj": "82806a7db4e076f135fb35debe35a9678762e3b6872c90be0b02231ab4b65de6",
+    "Models/OBJ format/tile-river-corner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tile-river-corner.png": "7b91c5a67caeaf814b63250bff95c8843df343f31d3857a37e2c2431212b9db7"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/tile-river-corner.fbx": "567384ef1d4c3c02607275f7b829974c85229ccca9ea8d139886e7d216e646a7",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/tile-river-corner.glb": "8facd512d7ea418610d92dc8a563c778de587b03b6c5bb4ae1356f663b703691",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/tile-river-corner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tile-river-corner.obj": "e169d65e84ecad33df6e974f29bf6b94bbca2b8b3ee5c8ce99724f4e7a242660",
+    "Preview.png": "7b91c5a67caeaf814b63250bff95c8843df343f31d3857a37e2c2431212b9db7"
+  },
+  "license": "../License.txt"
+}

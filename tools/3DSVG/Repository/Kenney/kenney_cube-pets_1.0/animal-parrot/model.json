@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "animal-parrot",
+  "pack": "kenney_cube-pets_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/FBX format/animal-parrot.fbx": "c11c244d2fe086b2609633adf67b330c5b1b6fae0ad8ff084ca57503adaf8fc6",
+    "Models/GLB format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/GLB format/animal-parrot.glb": "a028fcccd8559652ea100fabaceb82ef53633e3474025eca593a753b008f52ab",
+    "Models/OBJ format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/OBJ format/animal-parrot.obj": "77068278cc57e801d63d22ba4b18530f2780abd97c872251a495b02772f65b0a",
+    "Models/OBJ format/animal-parrot.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/animal-parrot.png": "eab6daeffe1ea4dfdc885403788679a734f0c84ca0cb4894be8bbc6845e09f4b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "FBX format/animal-parrot.fbx": "c11c244d2fe086b2609633adf67b330c5b1b6fae0ad8ff084ca57503adaf8fc6",
+    "Textures/GLB/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "GLB format/animal-parrot.glb": "a028fcccd8559652ea100fabaceb82ef53633e3474025eca593a753b008f52ab",
+    "Textures/OBJ/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "OBJ format/animal-parrot.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/animal-parrot.obj": "147ebd76d87281f4818dc315c0f734a7a6c7a81d9fab114f0098bcbe3a750e0b",
+    "Preview.png": "eab6daeffe1ea4dfdc885403788679a734f0c84ca0cb4894be8bbc6845e09f4b"
+  },
+  "license": "../License.txt"
+}

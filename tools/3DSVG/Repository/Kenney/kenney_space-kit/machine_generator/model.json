@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "machine_generator",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/machine_generator.fbx": "78396b739f8f0283a9b54ccd17da4373c25a0dd404496d77f9774445a28e916f",
+    "Models/GLTF format/machine_generator.glb": "98e8ac6aceada3b2483ed1eceb59bff7190ee774edac799350ccc11ad140f7f3",
+    "Models/OBJ format/machine_generator.obj": "cb235a40d4cfe8fcb9471fd6fd7b993187adb8c186d49bf248600ae171700945",
+    "Models/OBJ format/machine_generator.mtl": "901a3d5a79a8ace64fbec40db8e8fecb9173ae1b0997c40a8e00a709d5e3fa2d"
+  },
+  "files": {
+    "FBX format/machine_generator.fbx": "78396b739f8f0283a9b54ccd17da4373c25a0dd404496d77f9774445a28e916f",
+    "GLB format/machine_generator.glb": "98e8ac6aceada3b2483ed1eceb59bff7190ee774edac799350ccc11ad140f7f3",
+    "OBJ format/machine_generator.mtl": "901a3d5a79a8ace64fbec40db8e8fecb9173ae1b0997c40a8e00a709d5e3fa2d",
+    "OBJ format/machine_generator.obj": "042fcc81dbdac211a796d0280a07b9c5e969180ec70d90dad1f928f833856519"
+  },
+  "license": "../License.txt"
+}

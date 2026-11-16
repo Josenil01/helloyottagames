@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "hopper-high-square",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/hopper-high-square.fbx": "3d5a7fd74e1c85d43e82cd2e284bb55c98bf2e5adaeff5cabfd3cefaf59789a9",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/hopper-high-square.glb": "ebb427e3ab2bc1fabca3a0deadca1f65164943630c073f61d1a01029edb37f01",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/hopper-high-square.obj": "81d7a6d6673f0836aa69e90832bbd9eea0139b4a3b0d44e7108b8d8fadb47135",
+    "Models/OBJ format/hopper-high-square.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/hopper-high-square.png": "3741dcd2f2e0a5a4db2e6ba033f7b8caafc6d9e4c003cebee170e2c65104d80a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/hopper-high-square.fbx": "3d5a7fd74e1c85d43e82cd2e284bb55c98bf2e5adaeff5cabfd3cefaf59789a9",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/hopper-high-square.glb": "ebb427e3ab2bc1fabca3a0deadca1f65164943630c073f61d1a01029edb37f01",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/hopper-high-square.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/hopper-high-square.obj": "8ef535d3ace719131946a8ca4026587ee3d4427f859e05e9e23044d20e470f7d",
+    "Preview.png": "3741dcd2f2e0a5a4db2e6ba033f7b8caafc6d9e4c003cebee170e2c65104d80a"
+  },
+  "license": "../License.txt"
+}

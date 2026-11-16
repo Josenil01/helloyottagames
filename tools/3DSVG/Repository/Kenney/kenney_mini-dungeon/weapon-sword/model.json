@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "weapon-sword",
+  "pack": "kenney_mini-dungeon",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/Textures/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "Models/FBX format/weapon-sword.fbx": "554e8111488b5263d007eb7e16c2ce7618f2fa165486a19f88c20207e92e9112",
+    "Models/GLB format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/GLB format/weapon-sword.glb": "8e69eb27977f8c84a9b7cd423cd5830eddcf0d07ac1d7fed1969931387015b28",
+    "Models/OBJ format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/OBJ format/weapon-sword.obj": "56d70a3087f306286af283d835e1bd4378d584ee474071a0c362f4fe0cd04698",
+    "Models/OBJ format/weapon-sword.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/weapon-sword.png": "6f81b0bf793b9e5fcc8aef4f55e28350a22a925535247d9973378f0f0dcb4740"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/FBX/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "FBX format/weapon-sword.fbx": "554e8111488b5263d007eb7e16c2ce7618f2fa165486a19f88c20207e92e9112",
+    "Textures/GLB/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/GLB/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "GLB format/weapon-sword.glb": "8e69eb27977f8c84a9b7cd423cd5830eddcf0d07ac1d7fed1969931387015b28",
+    "Textures/OBJ/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/OBJ/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "OBJ format/weapon-sword.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/weapon-sword.obj": "f7a6de6ea2c53e20b69f175426c4fa4fae30e01c5f5d21c323c67883ff26707a",
+    "Preview.png": "6f81b0bf793b9e5fcc8aef4f55e28350a22a925535247d9973378f0f0dcb4740"
+  },
+  "license": "../License.txt"
+}

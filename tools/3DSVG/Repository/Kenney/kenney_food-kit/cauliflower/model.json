@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cauliflower",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/cauliflower.fbx": "cf41dbe5b818c8a25628fc0875c34c3ed6345df915cbce3d0f62468e588d8be1",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/cauliflower.glb": "3667f655936f1ad4de753d9b4e2123beb8723fb89b87a7500b462ea31e63f20a",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/cauliflower.obj": "83904e472d3bb1173f46e25e452b551f7e9f5ad0c2504a1c910437d0ffe7cc6c",
+    "Models/OBJ format/cauliflower.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cauliflower.png": "fd13072dbb86bf9d0f1441b678e66ec9656f32c4e6e1de1441b9dd99a528c2a2"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/cauliflower.fbx": "cf41dbe5b818c8a25628fc0875c34c3ed6345df915cbce3d0f62468e588d8be1",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/cauliflower.glb": "3667f655936f1ad4de753d9b4e2123beb8723fb89b87a7500b462ea31e63f20a",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/cauliflower.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cauliflower.obj": "d38e172cc8d5e02f0b6a6f654a30d451b5cc5ea1bbeb6c3bdf1e8ab6a7bef720",
+    "Preview.png": "fd13072dbb86bf9d0f1441b678e66ec9656f32c4e6e1de1441b9dd99a528c2a2"
+  },
+  "license": "../License.txt"
+}

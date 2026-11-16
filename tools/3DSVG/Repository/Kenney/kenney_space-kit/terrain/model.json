@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "terrain",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/terrain.fbx": "a0e65e8bfd463636d9427694d990f85dfc99617ea84b99b67d470e7b1b563e47",
+    "Models/GLTF format/terrain.glb": "c0daef0a3c92cf52b6d5a3f64288e50e41d3008397ae25b46ab55dd3e1630288",
+    "Models/OBJ format/terrain.obj": "377e06fb64e33e2daa9ceab2bf417ed54b6520739020bfefa9fdcafbb516fe11",
+    "Models/OBJ format/terrain.mtl": "d3f54402b0d723a5a7e2096930ed949b365fb7f7d1fd770a3754f2f01a3ae7e9"
+  },
+  "files": {
+    "FBX format/terrain.fbx": "a0e65e8bfd463636d9427694d990f85dfc99617ea84b99b67d470e7b1b563e47",
+    "GLB format/terrain.glb": "c0daef0a3c92cf52b6d5a3f64288e50e41d3008397ae25b46ab55dd3e1630288",
+    "OBJ format/terrain.mtl": "d3f54402b0d723a5a7e2096930ed949b365fb7f7d1fd770a3754f2f01a3ae7e9",
+    "OBJ format/terrain.obj": "7903cb93ac613a0f5e00815f593c3d0c1e9401d7c2d6d1f340c76e07ff129940"
+  },
+  "license": "../License.txt"
+}

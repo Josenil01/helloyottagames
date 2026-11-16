@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "weapon-cannon",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/weapon-cannon.fbx": "1bb2d406e73ba6c0a417a125b9b0e55172df21c4eeab930892eec28ae21b792f",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/weapon-cannon.glb": "bf28e5593118cc27ebc45788e586c3bfcfbfb1686a86eb1a3cefd5c9edd6ae5f",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/weapon-cannon.obj": "73a762a7c05447264248afd7255e80e3132299c794e6eb246e707e68ca83fa3a",
+    "Models/OBJ format/weapon-cannon.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/weapon-cannon.png": "24e3030859d97e6d6c96e68d88f347214fb43bc4b0794c0399fe8703a397d18d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/weapon-cannon.fbx": "1bb2d406e73ba6c0a417a125b9b0e55172df21c4eeab930892eec28ae21b792f",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/weapon-cannon.glb": "bf28e5593118cc27ebc45788e586c3bfcfbfb1686a86eb1a3cefd5c9edd6ae5f",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/weapon-cannon.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/weapon-cannon.obj": "97c4c1138726ef71a899b9d75efe2f07b56a2737420b697ec78a4dfc0a0260d8",
+    "Preview.png": "24e3030859d97e6d6c96e68d88f347214fb43bc4b0794c0399fe8703a397d18d"
+  },
+  "license": "../License.txt"
+}

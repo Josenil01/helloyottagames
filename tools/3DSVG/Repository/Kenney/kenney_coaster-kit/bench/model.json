@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bench",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/bench.fbx": "a77d4e5cc9e6ae17675e326764dba7bc2dd0cf2f68b122b794be674a6d1229f1",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/bench.glb": "186158dfd2cb41896a71e3bc73263be58458e0291456041861ecb3cb189a8461",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/bench.obj": "00cc20b688f4ae1ab3cbd339c3132922515ecffa1a62412377af893aa114ab96",
+    "Models/OBJ format/bench.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/bench.png": "b65d98a7dd539569c5fdbc51913822a436468c486101d3245345ecb7fdf08e02"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/bench.fbx": "a77d4e5cc9e6ae17675e326764dba7bc2dd0cf2f68b122b794be674a6d1229f1",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/bench.glb": "186158dfd2cb41896a71e3bc73263be58458e0291456041861ecb3cb189a8461",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/bench.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/bench.obj": "c1116c24091bf509e5f26e72b70dc842b82d1f0c30c2b40bd9acc254d959cc67",
+    "Preview.png": "b65d98a7dd539569c5fdbc51913822a436468c486101d3245345ecb7fdf08e02"
+  },
+  "license": "../License.txt"
+}

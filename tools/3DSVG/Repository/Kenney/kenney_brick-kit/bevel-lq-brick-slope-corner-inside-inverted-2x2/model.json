@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bevel-lq-brick-slope-corner-inside-inverted-2x2",
+  "pack": "kenney_brick-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/FBX format/bevel-lq-brick-slope-corner-inside-inverted-2x2.fbx": "3c727ed33e94b83e034e9bc4909e24793b9029f20549430b2671e689f099ec53",
+    "Models/GLB format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/GLB format/bevel-lq-brick-slope-corner-inside-inverted-2x2.glb": "1984bc697285fb133b23890bae49559fc755e2fcc8c33d57113fce4108781a66",
+    "Models/OBJ format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/OBJ format/bevel-lq-brick-slope-corner-inside-inverted-2x2.obj": "96dbc1018b77ed319b26223ffd0e621789e74533fa65343181c019579eea711e",
+    "Models/OBJ format/bevel-lq-brick-slope-corner-inside-inverted-2x2.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/bevel-lq-brick-slope-corner-inside-inverted-2x2.png": "1f5ae6905275da32b4ce40c72d573d6547f078b200b90ea157d7e7f4504762d6"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "FBX format/bevel-lq-brick-slope-corner-inside-inverted-2x2.fbx": "3c727ed33e94b83e034e9bc4909e24793b9029f20549430b2671e689f099ec53",
+    "Textures/GLB/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "GLB format/bevel-lq-brick-slope-corner-inside-inverted-2x2.glb": "1984bc697285fb133b23890bae49559fc755e2fcc8c33d57113fce4108781a66",
+    "Textures/OBJ/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "OBJ format/bevel-lq-brick-slope-corner-inside-inverted-2x2.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/bevel-lq-brick-slope-corner-inside-inverted-2x2.obj": "b011bf5c4c37b0bff54cab4fc27cac9bb007e2357d408d002121a213ef590f5c",
+    "Preview.png": "1f5ae6905275da32b4ce40c72d573d6547f078b200b90ea157d7e7f4504762d6"
+  },
+  "license": "../License.txt"
+}

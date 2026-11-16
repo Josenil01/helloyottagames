@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "door-wide-closed",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/door-wide-closed.fbx": "6ea7aa3698e689f773d58fd30897653dd0453a3387fccabf0c136a274b5360f8",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/door-wide-closed.glb": "987837d7b45bca466c5f2268fa0193e014374cc0d2ef0784f6c37092856b71d0",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/door-wide-closed.obj": "93748f2dd09ebb694459f5162dcfc18c48288376c73d786a8e219b6481ea2c31",
+    "Models/OBJ format/door-wide-closed.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/door-wide-closed.png": "2e7623bf4ba4849226f79caf032a74fb365b932562edd3bcf442cba1635e04ac"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/door-wide-closed.fbx": "6ea7aa3698e689f773d58fd30897653dd0453a3387fccabf0c136a274b5360f8",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/door-wide-closed.glb": "987837d7b45bca466c5f2268fa0193e014374cc0d2ef0784f6c37092856b71d0",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/door-wide-closed.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/door-wide-closed.obj": "e8852aa435e118a0b2321da6ba15f1ab6989de4eab44a631494c6173fce549f2",
+    "Preview.png": "2e7623bf4ba4849226f79caf032a74fb365b932562edd3bcf442cba1635e04ac"
+  },
+  "license": "../License.txt"
+}

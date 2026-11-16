@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "suv-luxury",
+  "pack": "kenney_car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/FBX format/suv-luxury.fbx": "b802c92d9aaa1c054f08822a692d7fde7870b51a5052d2d7cb9fad580db400cf",
+    "Models/GLB format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/GLB format/suv-luxury.glb": "9e2a79dc050189d4555a88d2e9da0f30ff946ba74f1d43b5b3bda3c193d1f7d7",
+    "Models/OBJ format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/OBJ format/suv-luxury.obj": "e2e5237bebd7a9835f1370d4063feaf1f504b9d293200747fb60feb43889e531",
+    "Models/OBJ format/suv-luxury.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/suv-luxury.png": "54a1ede8ea029a8c5e9ff23a7b39d9722768f367fddb0bc3326391bc534e033a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "FBX format/suv-luxury.fbx": "b802c92d9aaa1c054f08822a692d7fde7870b51a5052d2d7cb9fad580db400cf",
+    "Textures/GLB/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "GLB format/suv-luxury.glb": "9e2a79dc050189d4555a88d2e9da0f30ff946ba74f1d43b5b3bda3c193d1f7d7",
+    "Textures/OBJ/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "OBJ format/suv-luxury.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/suv-luxury.obj": "7c0ae24d29132956aad988c833f650a26f35b29fd7b901672e99f72812f341d7",
+    "Preview.png": "54a1ede8ea029a8c5e9ff23a7b39d9722768f367fddb0bc3326391bc534e033a"
+  },
+  "license": "../License.txt"
+}

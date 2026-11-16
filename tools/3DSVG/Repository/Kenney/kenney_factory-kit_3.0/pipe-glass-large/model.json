@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pipe-glass-large",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/pipe-glass-large.fbx": "ca6bc48051f1791ea1004e5ff598e4df0fe9c969b36ace01144b7d2b897d9cd7",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/pipe-glass-large.glb": "85ba4f7f8cbcddf6fe4376a16622145a1aed0a59fefc8c1348ce039c63fab6fa",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/pipe-glass-large.obj": "476eb069796a3dd24bfbc2bafeb5e933f9a83d9616e7b603846594c251f9a633",
+    "Models/OBJ format/pipe-glass-large.mtl": "53f9f0317b94fa0df059759ac1c28746aa1bf52dce5688752ac7c9e4f4c5bdbb",
+    "Previews/pipe-glass-large.png": "9148656ad8bf467838eb5e9d86030830485410cb652ebc6d17cb8f5687012b6e"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/pipe-glass-large.fbx": "ca6bc48051f1791ea1004e5ff598e4df0fe9c969b36ace01144b7d2b897d9cd7",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/pipe-glass-large.glb": "85ba4f7f8cbcddf6fe4376a16622145a1aed0a59fefc8c1348ce039c63fab6fa",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/pipe-glass-large.mtl": "41d8c4aecc23107c9cb0c45feda0075a6c31b45573e6eb563b7933f6b5b59284",
+    "OBJ format/pipe-glass-large.obj": "91a88df3bc6bfc0d76e5648cbe0f80658fd62c1c0bae1e606c41e068ac897389",
+    "Preview.png": "9148656ad8bf467838eb5e9d86030830485410cb652ebc6d17cb8f5687012b6e"
+  },
+  "license": "../License.txt"
+}

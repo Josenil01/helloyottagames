@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tree_thin",
+  "pack": "kenney_nature-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/tree_thin.fbx": "e8faba407a3e04ac12faa099ccf11a3013dcdb4c4f614291886ed07f08602010",
+    "Models/GLTF format/tree_thin.glb": "f0f1f6861fe0446963d3be216cc628324f538bb0841bc9a8e14140313f64e2f3",
+    "Models/OBJ format/tree_thin.obj": "acc30d58f5a259fd0103c50f8302cdba0cfc312027ca08a6577632d7716132ac",
+    "Models/OBJ format/tree_thin.mtl": "0d90ca9c9ac521fcc0a0889ac1aca36f6e4b4ab6cd6975c337ecaf764f08e2e7"
+  },
+  "files": {
+    "FBX format/tree_thin.fbx": "e8faba407a3e04ac12faa099ccf11a3013dcdb4c4f614291886ed07f08602010",
+    "GLB format/tree_thin.glb": "f0f1f6861fe0446963d3be216cc628324f538bb0841bc9a8e14140313f64e2f3",
+    "OBJ format/tree_thin.mtl": "0d90ca9c9ac521fcc0a0889ac1aca36f6e4b4ab6cd6975c337ecaf764f08e2e7",
+    "OBJ format/tree_thin.obj": "f469fa8437829a97e738e76c43d080565ae0bb23c5679b2da1ce461f8e0416cc"
+  },
+  "license": "../License.txt"
+}

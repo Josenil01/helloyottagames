@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "weapon-ballista",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/weapon-ballista.fbx": "62327aa8f630658bd3d9e8f7ff3ce3638ea277b1485853f52331b59a9a019759",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/weapon-ballista.glb": "0eea8913a488fb4255dd496951cac1f9de3cd6c28dd817c7307d812de7dac630",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/weapon-ballista.obj": "5b075032f3592b7f4074580d66ef51ae03b7504054df0ddb7369cfb730d260e5",
+    "Models/OBJ format/weapon-ballista.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/weapon-ballista.png": "e9a38dc586234aa81ac90037b54b4e8ee12daddc105514a728b1f8071281c9f3"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/weapon-ballista.fbx": "62327aa8f630658bd3d9e8f7ff3ce3638ea277b1485853f52331b59a9a019759",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/weapon-ballista.glb": "0eea8913a488fb4255dd496951cac1f9de3cd6c28dd817c7307d812de7dac630",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/weapon-ballista.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/weapon-ballista.obj": "9dd311711e13ee8007aef8617b2dac9d34e02be6d2e871c8938912ce213bd65f",
+    "Preview.png": "e9a38dc586234aa81ac90037b54b4e8ee12daddc105514a728b1f8071281c9f3"
+  },
+  "license": "../License.txt"
+}

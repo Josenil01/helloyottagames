@@ -1,0 +1,100 @@
+/* Arte local: Kenney Pirate Kit, CC0. Escopo exclusivo deste jogo. */
+.pirate-art { display: block; object-fit: contain; image-rendering: auto; flex-shrink: 0; user-select: none; -webkit-user-drag: none; }
+.pirate-art-fallback { display: inline-flex; align-items: center; justify-content: center; }
+.pirate-cover, .pirate-map, .pirate-complete, .pirate-game { isolation: isolate; }
+.pirate-cover { background: linear-gradient(#bcecf6 0%, #e5f8ed 66%, #42b8c2 66%, #146f98 100%); }
+.pirate-cover .sea-bg, .pirate-game .sea-bg { background: linear-gradient(180deg, #33adbb, #176b94); }
+.pirate-cover .pirate-cover-card { box-shadow: 0 12px 0 #174f66, 0 24px 50px #123b4930; }
+.pirate-cover-emblem { width: 96px; height: 80px; margin-bottom: 10px; }
+.pirate-cover-ship { width: 192px; height: 160px; position: absolute; left: max(4%, calc(50% - 370px)); bottom: 6%; animation: pirate-sail 4s ease-in-out infinite; }
+.pirate-scenery { position: absolute; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+.pirate-island { position: absolute; width: 220px; height: 180px; bottom: 2%; }
+.pirate-island-left { left: -25px; }
+.pirate-island-right { right: -15px; transform: scale(.85); }
+.pirate-island-ground { position: absolute; width: 220px; height: 120px; bottom: 0; }
+.pirate-island-palm { position: absolute; width: 144px; height: 144px; left: 25px; bottom: 40px; }
+.pirate-island-rock { position: absolute; width: 70px; height: 70px; right: 15px; bottom: 20px; }
+.pirate-map, .pirate-complete { background: radial-gradient(ellipse at 50% 10%, #175b78, #0a2f48 80%); position: relative; }
+.pirate-map > :not(.pirate-scenery), .pirate-complete > :not(.pirate-scenery) { position: relative; z-index: 1; }
+.pirate-map-heading { display: flex; align-items: center; gap: 12px; }
+.pirate-map-heading img { width: 64px; height: 64px; }
+.pirate-map .hy-track-card { background: #fff6dd; border-color: #edc885; box-shadow: 0 5px 0 #123e50; }
+.pirate-track-art { width: 64px; height: 64px; display: block; margin: 0 auto; image-rendering: auto; object-fit: contain; }
+.pirate-map .hy-track-emoji { height: 64px; margin-bottom: 4px; }
+.pirate-reward-art { width: 128px; height: 112px; margin-bottom: 12px; }
+.pirate-game { background: linear-gradient(#bcecf6, #def6f4); }
+.pirate-count-art { width: clamp(20px, 3.8vw, 48px); height: clamp(20px, 3.8vw, 48px); }
+.pirate-ten-art { width: clamp(32px, 5.4vw, 64px); height: clamp(32px, 5.4vw, 64px); }
+.pirate-game .pirate-quantity { padding: 6px; gap: 3px; }
+.pirate-game .pirate-tens { flex-wrap: wrap; justify-content: center; gap: 4px; }
+.pirate-game .pirate-ones { gap: 3px; max-width: 100%; }
+.pirate-quantity .pirate-count-art { width: 20px; height: 22px; }
+.pirate-quantity .pirate-ten-art { width: 28px; height: 30px; }
+.pirate-game .pirate-workspace { position: relative; z-index: 10; min-height: 0; display: grid; grid-template-columns: clamp(130px, 15vw, 230px) minmax(0, 1fr); align-items: center; gap: 16px; padding: 0 24px 20px; }
+.pirate-reference { color: #174f66; background: #fff9e9; border: 3px solid #312e81; border-radius: 22px; padding: 14px; box-shadow: 0 6px 0 #174f6620; }
+.pirate-reference table { width: 100%; border-collapse: collapse; text-align: center; }
+.pirate-reference caption { font-weight: 800; font-size: clamp(16px, 1.5vw, 23px); padding-bottom: 12px; }
+.pirate-reference th { font-size: 12px; color: #526a78; padding: 0 4px 8px; }
+.pirate-reference td { padding: 8px 4px; border-top: 1px solid #dfd6bd; font-weight: 700; font-size: clamp(13px, 1.1vw, 18px); }
+.pirate-reference .pirate-reference-art { width: 48px; height: 48px; margin: auto; }
+.pirate-game .pirate-treasure-count { color: #164e63; text-shadow: 0 1px #fff; }
+.pirate-counter-art { width: 64px; height: 64px; }
+.pirate-game .pirate-equation { min-height: 0; margin-top: 0; }
+.pirate-game .pirate-sea { flex-shrink: 0; }
+.pirate-feedback-ship .pirate-ship-art { width: 100%; height: 180px; }
+.pirate-feedback-barrel .pirate-barrel-art { width: 88px; height: 88px; }
+.pirate-feedback-ball .pirate-ball-art { width: 18px; height: 18px; }
+.pirate-feedback-ship .pirate-original-ship { width: 100%; height: 180px; }
+.pirate-cannon-feedback { background: linear-gradient(#33adbbf5, #176b94fa); }
+.pirate-feedback-cannon .pirate-cannon-art { position: absolute; width: 64px; height: 64px; right: -8px; top: -26px; }
+@keyframes pirate-sail { 0%, 100% { transform: translateY(0) rotate(-3deg); } 50% { transform: translateY(-9px) rotate(2deg); } }
+@media (max-width: 1000px) {
+  .pirate-game .pirate-workspace { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto; gap: 8px; padding: 0 12px 12px; }
+  .pirate-game .pirate-equation { grid-row: 1; }
+  .pirate-reference { grid-row: 2; justify-self: center; padding: 8px 16px; border-radius: 16px; }
+  .pirate-reference caption { font-size: 13px; padding-bottom: 4px; }
+  .pirate-reference thead { display: none; }
+  .pirate-reference tbody { display: flex; gap: 20px; }
+  .pirate-reference tr { display: flex; align-items: center; gap: 6px; }
+  .pirate-reference td { border: 0; padding: 0; font-size: 13px; }
+  .pirate-reference .pirate-reference-art { width: 36px; height: 36px; }
+}
+@media (max-width: 600px) {
+  .pirate-cover .pirate-cover-card { padding: 24px; max-width: 340px; margin-bottom: 60px; }
+  .pirate-cover-emblem { width: 72px; height: 64px; }
+  .pirate-cover-ship { width: 128px; height: 112px; bottom: 1%; left: 3%; }
+  .pirate-island { transform: scale(.55); transform-origin: bottom left; }
+  .pirate-island-right { transform: scale(.55); transform-origin: bottom right; }
+  .pirate-game .pirate-header { padding: 34px 14px 10px; }
+  .pirate-counter-art { width: 44px; height: 44px; }
+  .pirate-equation > div { gap: 5px; }
+  .pirate-game .pirate-number-box { width: clamp(66px, 22vw, 100px); height: 130px; border-width: 3px; border-radius: 18px; }
+  .pirate-game .pirate-quantity { padding: 4px; gap: 2px; }
+  .pirate-game .pirate-tens { flex-wrap: wrap; justify-content: center; gap: 2px; }
+  .pirate-game .pirate-ones { gap: 2px; max-width: 100%; }
+  .pirate-quantity .pirate-count-art { width: 14px; height: 16px; }
+  .pirate-quantity .pirate-ten-art { width: 22px; height: 24px; }
+  .pirate-game .pirate-operator { font-size: 26px; flex-shrink: 0; }
+  .pirate-game .pirate-option { width: 26vw; max-width: 112px; height: 92px; border-radius: 22px; }
+  .pirate-game .pirate-option > span { font-size: 52px; }
+  .pirate-game .pirate-sea { height: 35%; min-height: 135px; }
+  .pirate-feedback-ship .pirate-ship-art { height: 112px; }
+  .pirate-feedback-barrel .pirate-barrel-art { width: 64px; height: 64px; }
+  .pirate-map { padding-top: 22px; padding-bottom: 16px; }
+  .pirate-map-heading { font-size: 28px; margin-bottom: 12px; }
+  .pirate-map-heading img { width: 48px; height: 48px; }
+  .pirate-map .hy-track-card { padding: 5px 4px; aspect-ratio: auto; min-height: 68px; }
+  .pirate-map .hy-track-emoji { height: 32px; }
+  .pirate-track-art { width: 32px; height: 32px; }
+  .pirate-map .hy-track-label { font-size: 10px; }
+  .pirate-map .hy-track-stars { font-size: 10px; }
+}
+@media (max-height: 500px) and (min-width: 601px) {
+  .pirate-game .pirate-number-box { width: 112px; height: 112px; border-width: 4px; }
+  .pirate-game .pirate-header { padding: 24px 20px 0; }
+  .pirate-game .pirate-option { width: 100px; height: 100px; }
+  .pirate-game .pirate-option > span { font-size: 56px; }
+  .pirate-cover .pirate-cover-card { padding: 18px; margin-bottom: 0; }
+  .pirate-cover-emblem { width: 56px; height: 48px; }
+}
+@media (prefers-reduced-motion: reduce) { .pirate-cover-ship { animation: none; } }

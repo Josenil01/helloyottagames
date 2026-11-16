@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-steel-straight-bend",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-steel-straight-bend.fbx": "cac56af1450aab2cb0cf5de52978f0bf380d3fdc77c786ee70befbbdd3e6829f",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-steel-straight-bend.glb": "8a98cab8d3bec0ddcb1890fa635811c8ea32ecaea7c904a9cf9d61be37d3bc67",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-steel-straight-bend.obj": "4764d35492b4452e9803171a62047cdb61c452604b03313885c8febc2fc2b0ea",
+    "Models/OBJ format/coaster-steel-straight-bend.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-steel-straight-bend.png": "cbacbc8528d0d0d42ae4d1d1591e75ab313b664ffe6e48caacbe6cd48931e33b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-steel-straight-bend.fbx": "cac56af1450aab2cb0cf5de52978f0bf380d3fdc77c786ee70befbbdd3e6829f",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-steel-straight-bend.glb": "8a98cab8d3bec0ddcb1890fa635811c8ea32ecaea7c904a9cf9d61be37d3bc67",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-steel-straight-bend.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-steel-straight-bend.obj": "d361c0a570b31f564b1016e5a05417716224a1201d796dba343c6aa4a8c83c61",
+    "Preview.png": "cbacbc8528d0d0d42ae4d1d1591e75ab313b664ffe6e48caacbe6cd48931e33b"
+  },
+  "license": "../License.txt"
+}

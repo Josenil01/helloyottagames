@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "barricade-window-b",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/barricade-window-b.fbx": "0d624abcd0a9e92a35abe13e70a905eb211a6cf3955138e39b93a7954a778dad",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/barricade-window-b.glb": "a2e923d6927483825286922635c00c87dcddb94089cb2332ae41fba34b64606e",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/barricade-window-b.obj": "5a53126b11a98cdd80b7f1242abc330b8a19c6ed2abb71fa6e60ffb6b55e374c",
+    "Models/OBJ format/barricade-window-b.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/barricade-window-b.png": "57eba19d7accc784dd6b69b097d930f871b4497b179d775386121e9f1b89051a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/barricade-window-b.fbx": "0d624abcd0a9e92a35abe13e70a905eb211a6cf3955138e39b93a7954a778dad",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/barricade-window-b.glb": "a2e923d6927483825286922635c00c87dcddb94089cb2332ae41fba34b64606e",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/barricade-window-b.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/barricade-window-b.obj": "7eb913ab277d08254208031987d6fdabddc5e2b5672251ff2bb66fcb2e91b388",
+    "Preview.png": "57eba19d7accc784dd6b69b097d930f871b4497b179d775386121e9f1b89051a"
+  },
+  "license": "../License.txt"
+}

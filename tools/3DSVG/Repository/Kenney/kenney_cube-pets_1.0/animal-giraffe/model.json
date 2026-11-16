@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "animal-giraffe",
+  "pack": "kenney_cube-pets_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/FBX format/animal-giraffe.fbx": "e238cd743b53c941bb99f4c7d87c6d45e92fb97df0ab7ed567a0ae2830e8b08a",
+    "Models/GLB format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/GLB format/animal-giraffe.glb": "ab3562e1edb4dc6b14d5c7c9083ba3052a44ca0ccdcac2c15461d84397dc2f31",
+    "Models/OBJ format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/OBJ format/animal-giraffe.obj": "7f53bba3c57abca8d486894e4dfb23dfb5598886184a5528137b9be075e3775f",
+    "Models/OBJ format/animal-giraffe.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/animal-giraffe.png": "d5b970de7311f9e01d10d92f49d97de8f478928ebc5f903aaf99621eef0f9f06"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "FBX format/animal-giraffe.fbx": "e238cd743b53c941bb99f4c7d87c6d45e92fb97df0ab7ed567a0ae2830e8b08a",
+    "Textures/GLB/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "GLB format/animal-giraffe.glb": "ab3562e1edb4dc6b14d5c7c9083ba3052a44ca0ccdcac2c15461d84397dc2f31",
+    "Textures/OBJ/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "OBJ format/animal-giraffe.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/animal-giraffe.obj": "4e89098636bb65ce82df3ea9ece03d557e63c6ee3931e5bfc82664161aed89cf",
+    "Preview.png": "d5b970de7311f9e01d10d92f49d97de8f478928ebc5f903aaf99621eef0f9f06"
+  },
+  "license": "../License.txt"
+}

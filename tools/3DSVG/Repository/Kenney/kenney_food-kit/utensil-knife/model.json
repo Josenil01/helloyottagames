@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "utensil-knife",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/utensil-knife.fbx": "114817a471055a87e10ca05d02a23fdc974ba55ca5b9a8639db388b831faf499",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/utensil-knife.glb": "a8478aa01fa5113bba0cd39fdf9c1de3436d4b6c5a6dbc4a826e7fed958badc7",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/utensil-knife.obj": "59bc968c036e154cccb850e861a6cddff12d81fbdac8e38b1504745a44e11c85",
+    "Models/OBJ format/utensil-knife.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/utensil-knife.png": "d0358b2fab3d94f3757cd769aa8c7558630b5acb25c00a10fa7237afc72789e5"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/utensil-knife.fbx": "114817a471055a87e10ca05d02a23fdc974ba55ca5b9a8639db388b831faf499",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/utensil-knife.glb": "a8478aa01fa5113bba0cd39fdf9c1de3436d4b6c5a6dbc4a826e7fed958badc7",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/utensil-knife.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/utensil-knife.obj": "0316491ab92fa115d2227e10b4cd857ba5f80fa906cf27433d7cf02b3ca6d031",
+    "Preview.png": "d0358b2fab3d94f3757cd769aa8c7558630b5acb25c00a10fa7237afc72789e5"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pepper-mill",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/pepper-mill.fbx": "62790977c052ffd6c2a39c2bee5ca1694d95d1b32b58025172defcdbe0394a01",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/pepper-mill.glb": "7baa2a20d157cebf6a5be3a30550fb47bf2166523b824ba3c2130a1867ec3e3c",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/pepper-mill.obj": "9c369830483d68a5f91ffc91811a158682314efb4f14d8b90d7e4801f70d831a",
+    "Models/OBJ format/pepper-mill.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/pepper-mill.png": "fee6145c793d4147be8a61740ba88074e680a1a38d7362316b4c4d075c6ac48d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/pepper-mill.fbx": "62790977c052ffd6c2a39c2bee5ca1694d95d1b32b58025172defcdbe0394a01",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/pepper-mill.glb": "7baa2a20d157cebf6a5be3a30550fb47bf2166523b824ba3c2130a1867ec3e3c",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/pepper-mill.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/pepper-mill.obj": "56ff51f08c6e8eafc163783bbb14880b0712eff39537c9fbf378516016d00213",
+    "Preview.png": "fee6145c793d4147be8a61740ba88074e680a1a38d7362316b4c4d075c6ac48d"
+  },
+  "license": "../License.txt"
+}

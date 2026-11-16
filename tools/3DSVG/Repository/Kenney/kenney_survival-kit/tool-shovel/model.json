@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tool-shovel",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/tool-shovel.fbx": "9ae547f5a79c2cc7f747293efdaedbedfbbd97e3aa9649315b5c8c626d9d0747",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/tool-shovel.glb": "20abb2420f0215c59694287207b7a6324114552b9f59846ab2a2673e3a7c1147",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/tool-shovel.obj": "63b2b25dcbf0eae7481888de41a018a5c00e20e294301fdc4b4380f84746e38b",
+    "Models/OBJ format/tool-shovel.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tool-shovel.png": "7877b23a36644a9a0dd6c06b471bb3603f38e9b2273a3df95af0e00e185e561d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/tool-shovel.fbx": "9ae547f5a79c2cc7f747293efdaedbedfbbd97e3aa9649315b5c8c626d9d0747",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/tool-shovel.glb": "20abb2420f0215c59694287207b7a6324114552b9f59846ab2a2673e3a7c1147",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/tool-shovel.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tool-shovel.obj": "b1c38ded9d5c5f16569efe32d874429f671a78c770a015c70d4d911382b1aeb6",
+    "Preview.png": "7877b23a36644a9a0dd6c06b471bb3603f38e9b2273a3df95af0e00e185e561d"
+  },
+  "license": "../License.txt"
+}

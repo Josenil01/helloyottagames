@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "construction-barrier",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/construction-barrier.fbx": "ca6f00717adefcb9c5fb582e64590c0c5c59196ab7ea72426428ef5e56976d9a",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/construction-barrier.glb": "906f73a6d62d8de58a4c5a19e76ff95b460c42b37e5fa37478b8612f06793f26",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/construction-barrier.obj": "2abfd844589255c891710c08f51dc8e95882e63e336b0e78749e85f1f0bda2dd",
+    "Models/OBJ format/construction-barrier.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/construction-barrier.png": "5e430b55a7f3a8affd6955b73cf1e048aebf21f1200a910b4b06df21c7250d60"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/construction-barrier.fbx": "ca6f00717adefcb9c5fb582e64590c0c5c59196ab7ea72426428ef5e56976d9a",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/construction-barrier.glb": "906f73a6d62d8de58a4c5a19e76ff95b460c42b37e5fa37478b8612f06793f26",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/construction-barrier.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/construction-barrier.obj": "f3008815bb18b0099459dbf9953e4f880b630964d04ba1ac041d6cd7013cd48f",
+    "Preview.png": "5e430b55a7f3a8affd6955b73cf1e048aebf21f1200a910b4b06df21c7250d60"
+  },
+  "license": "../License.txt"
+}

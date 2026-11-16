@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "kart-ooli",
+  "pack": "kenney_car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/FBX format/kart-ooli.fbx": "65e98626b067c90bf72aee9bb9d9f1cd9ab12a3a5ae246a29e0489c57e5cc143",
+    "Models/GLB format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/GLB format/kart-ooli.glb": "8b496397361b92f481e83dd5d0b74649571bae53e900ffbd785bb2d384182cc2",
+    "Models/OBJ format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/OBJ format/kart-ooli.obj": "c53a9ae76f967e7a352fce4887c726bab9302deeb86c304317fe5f9ec548ec52",
+    "Models/OBJ format/kart-ooli.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/kart-ooli.png": "258eeb518d61803fe2bdd868dc4d8f973affcd20a4fe79033107cec5cc161528"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "FBX format/kart-ooli.fbx": "65e98626b067c90bf72aee9bb9d9f1cd9ab12a3a5ae246a29e0489c57e5cc143",
+    "Textures/GLB/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "GLB format/kart-ooli.glb": "8b496397361b92f481e83dd5d0b74649571bae53e900ffbd785bb2d384182cc2",
+    "Textures/OBJ/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "OBJ format/kart-ooli.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/kart-ooli.obj": "a93482679e6d88973e9e8e8049a22496d6807410302eddda00cde3314cc95f83",
+    "Preview.png": "258eeb518d61803fe2bdd868dc4d8f973affcd20a4fe79033107cec5cc161528"
+  },
+  "license": "../License.txt"
+}

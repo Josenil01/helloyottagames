@@ -1,0 +1,31 @@
+{
+  "asset": "cogumelo-blockie",
+  "created": "2026-10-29",
+  "generator": "build-gpt-blockie-test.py",
+  "blender": "5.2.3 LTS",
+  "statistics": {
+    "vertices": 264,
+    "polygons": 286,
+    "triangles": 484,
+    "materials": 1,
+    "dimensions_m": [
+      1.9199999570846558,
+      1.559999942779541,
+      1.5860000848770142
+    ]
+  },
+  "texture": "Models/Textures/blockie-palette.png",
+  "texture_size": [
+    256,
+    64
+  ],
+  "style": "Cubic volumes, flat-shaded geometry, square spots, matte palette",
+  "formats": [
+    "blend",
+    "fbx",
+    "glb",
+    "obj",
+    "mtl"
+  ],
+  "note": "Real authored mesh; not reconstructed from the earlier generated PNG."
+}

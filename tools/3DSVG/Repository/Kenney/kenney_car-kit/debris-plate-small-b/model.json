@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "debris-plate-small-b",
+  "pack": "kenney_car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/FBX format/debris-plate-small-b.fbx": "bd9f5e09dee233c894efb934156fb997678574027f034e52e35050b786cd6730",
+    "Models/GLB format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/GLB format/debris-plate-small-b.glb": "4bca4c02db94ba05a611bf835a638aa7b0a66208d9dc49a66799682c7cbe8446",
+    "Models/OBJ format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/OBJ format/debris-plate-small-b.obj": "430ed3aac1d0b344d07288cedf08676684d4c9426eed505b568d40b913f4e59e",
+    "Models/OBJ format/debris-plate-small-b.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/debris-plate-small-b.png": "3206be565e9db410e26ac62b316adb6d990653cdc15d0189228f2477eb5ede6f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "FBX format/debris-plate-small-b.fbx": "bd9f5e09dee233c894efb934156fb997678574027f034e52e35050b786cd6730",
+    "Textures/GLB/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "GLB format/debris-plate-small-b.glb": "4bca4c02db94ba05a611bf835a638aa7b0a66208d9dc49a66799682c7cbe8446",
+    "Textures/OBJ/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "OBJ format/debris-plate-small-b.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/debris-plate-small-b.obj": "e0deae46b444fe917aebab895d0d08dddd9f0393972d35e73b781920af466a99",
+    "Preview.png": "3206be565e9db410e26ac62b316adb6d990653cdc15d0189228f2477eb5ede6f"
+  },
+  "license": "../License.txt"
+}

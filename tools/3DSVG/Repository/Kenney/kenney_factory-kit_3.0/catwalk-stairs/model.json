@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "catwalk-stairs",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/catwalk-stairs.fbx": "9fa7ff96dcc3737435400394b27138c99b59522d5d8b5715d2e8546d3a54ff73",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/catwalk-stairs.glb": "0356a040ebbf632cd20dfe384a13108270df26426ad1dd51a2c767c8f6a6960c",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/catwalk-stairs.obj": "b5fb401d9cb4503cee19a0f067387fcfb582fa32d68eef77e1ce019faa1afb77",
+    "Models/OBJ format/catwalk-stairs.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/catwalk-stairs.png": "67c106fb984496e17311a3dddfcf4a1816bcbe48e283dcc47631fc4ba5f6b1a6"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/catwalk-stairs.fbx": "9fa7ff96dcc3737435400394b27138c99b59522d5d8b5715d2e8546d3a54ff73",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/catwalk-stairs.glb": "0356a040ebbf632cd20dfe384a13108270df26426ad1dd51a2c767c8f6a6960c",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/catwalk-stairs.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/catwalk-stairs.obj": "fe3db4bbe5668efb93de76b01a623faa947fa53beb24f4fda91d7c5b4c97bf6a",
+    "Preview.png": "67c106fb984496e17311a3dddfcf4a1816bcbe48e283dcc47631fc4ba5f6b1a6"
+  },
+  "license": "../License.txt"
+}

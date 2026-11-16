@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cone-flat",
+  "pack": "kenney_car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/FBX format/cone-flat.fbx": "410b68ada884b0345cb7717afa9b292edfb66af1f4e20a0f79221a4eb81ba1f5",
+    "Models/GLB format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/GLB format/cone-flat.glb": "ae3ffbf948c4c8c5c26d0d509f7de4c1dc66e3cc0dfd8ca8abf380aab2d6dd8e",
+    "Models/OBJ format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/OBJ format/cone-flat.obj": "ff3bce8f513252203e5134536fb4632ced857537732e4ab598cadaba02e9b05e",
+    "Models/OBJ format/cone-flat.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cone-flat.png": "e28fe943b09acaed14b8ba8518b86841c4b87189406e5b3962cf7ff30f1f0e78"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "FBX format/cone-flat.fbx": "410b68ada884b0345cb7717afa9b292edfb66af1f4e20a0f79221a4eb81ba1f5",
+    "Textures/GLB/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "GLB format/cone-flat.glb": "ae3ffbf948c4c8c5c26d0d509f7de4c1dc66e3cc0dfd8ca8abf380aab2d6dd8e",
+    "Textures/OBJ/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "OBJ format/cone-flat.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cone-flat.obj": "29c6c29da79737f152d95ef3a02de0cb42d69c9a8c59e0bb58064f41f380a7e2",
+    "Preview.png": "e28fe943b09acaed14b8ba8518b86841c4b87189406e5b3962cf7ff30f1f0e78"
+  },
+  "license": "../License.txt"
+}

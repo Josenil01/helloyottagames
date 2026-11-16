@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-wood-block-half",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/wall-wood-block-half.fbx": "6cfaab649891a3bb8588180abb5c9401d0c92a172fe8ad911659eac0fb2e51f5",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/wall-wood-block-half.glb": "8a31ac1fba82a195a02ef225f83e0bbe35208b604b4bd733142aa3c26810b490",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/wall-wood-block-half.obj": "925aef98125ae6512488657f5976f43e8abb4104f3233f621848b45e8237d479",
+    "Models/OBJ format/wall-wood-block-half.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-wood-block-half.png": "4808d5e2b1e91049108492ef2b07aae7f2253879499ee24bd7edbacc1df331e5"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/wall-wood-block-half.fbx": "6cfaab649891a3bb8588180abb5c9401d0c92a172fe8ad911659eac0fb2e51f5",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/wall-wood-block-half.glb": "8a31ac1fba82a195a02ef225f83e0bbe35208b604b4bd733142aa3c26810b490",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/wall-wood-block-half.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-wood-block-half.obj": "3f82f6bb3c2b0dcad4f7d317ade23632e2da491c5584610ed61abaf90d1f816f",
+    "Preview.png": "4808d5e2b1e91049108492ef2b07aae7f2253879499ee24bd7edbacc1df331e5"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "door-double",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/door-double.fbx": "36b07f8fe96672f6eb8eca1a1d8801a4ce59a216be924dfa9a3ff93d74139e2b",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/door-double.glb": "708642ab37f6c924200ebe61bc5feb3e4ce8614f7cb2af39546e97f1e7aaa3ae",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/door-double.obj": "9b66ac71762f7e5820a7018a8246aefddeaa404b52f0ee02f79bde7031afc2a5",
+    "Models/OBJ format/door-double.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/door-double.png": "9077b0bb61a7ce43a5533ceeda5ff5092d531d47818dc8e97c13fe6b2826d4ff"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/door-double.fbx": "36b07f8fe96672f6eb8eca1a1d8801a4ce59a216be924dfa9a3ff93d74139e2b",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/door-double.glb": "708642ab37f6c924200ebe61bc5feb3e4ce8614f7cb2af39546e97f1e7aaa3ae",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/door-double.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/door-double.obj": "84fb1ef9b945c57b540a1ce12cf2de4d862afd3839e29723436e0b689872ca50",
+    "Preview.png": "9077b0bb61a7ce43a5533ceeda5ff5092d531d47818dc8e97c13fe6b2826d4ff"
+  },
+  "license": "../License.txt"
+}

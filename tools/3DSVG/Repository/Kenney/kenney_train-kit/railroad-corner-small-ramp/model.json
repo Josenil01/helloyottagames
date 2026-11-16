@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "railroad-corner-small-ramp",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/railroad-corner-small-ramp.fbx": "2bf067e9c196051f6535c631ae5428d00f25575d7c40abc4c2cda3630fba833d",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/railroad-corner-small-ramp.glb": "721411ab71bb1b9c323262f3b84490059a7bd803087697f85f3e078dcbd725f1",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/railroad-corner-small-ramp.obj": "e89c6ff2eddd7de9fbe97f89ac07b5971982082841a29fcf1eb9a2fc389f571f",
+    "Models/OBJ format/railroad-corner-small-ramp.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/railroad-corner-small-ramp.png": "3195cd84ce66e0ec9dd950b3a4a84400af8a205f6218b77a0b2bbf7a1e2d5017"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/railroad-corner-small-ramp.fbx": "2bf067e9c196051f6535c631ae5428d00f25575d7c40abc4c2cda3630fba833d",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/railroad-corner-small-ramp.glb": "721411ab71bb1b9c323262f3b84490059a7bd803087697f85f3e078dcbd725f1",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/railroad-corner-small-ramp.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/railroad-corner-small-ramp.obj": "c5283f8e2845381fd6566a96fb950bf57dead9e03d2ac3e2c2b491fa368b9aa0",
+    "Preview.png": "3195cd84ce66e0ec9dd950b3a4a84400af8a205f6218b77a0b2bbf7a1e2d5017"
+  },
+  "license": "../License.txt"
+}

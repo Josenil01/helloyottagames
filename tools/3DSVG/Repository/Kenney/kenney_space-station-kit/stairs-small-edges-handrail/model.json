@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stairs-small-edges-handrail",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/stairs-small-edges-handrail.fbx": "d294423606aa51f9fd046ee006250f75c359f3e98ad54dfa5305e4c051ef6852",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/stairs-small-edges-handrail.glb": "4eda8c348ecf3130060aba270b39f18641acf80dad967ded2cc20707fbf85fd3",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/stairs-small-edges-handrail.obj": "a864023ffb8f7590dc62a95e1384fc9ae34772a1157f9ca1135cf0d4d7eb143d",
+    "Models/OBJ format/stairs-small-edges-handrail.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/stairs-small-edges-handrail.png": "2e3fb1eb82dd7f4fdd7aee191c1a18ca7b9cce6a530092ecab3028ccb816f930"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/stairs-small-edges-handrail.fbx": "d294423606aa51f9fd046ee006250f75c359f3e98ad54dfa5305e4c051ef6852",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/stairs-small-edges-handrail.glb": "4eda8c348ecf3130060aba270b39f18641acf80dad967ded2cc20707fbf85fd3",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/stairs-small-edges-handrail.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/stairs-small-edges-handrail.obj": "221bf063036de8804c423579f028e20cab4a99d581d3f8e045367c83c4422db2",
+    "Preview.png": "2e3fb1eb82dd7f4fdd7aee191c1a18ca7b9cce6a530092ecab3028ccb816f930"
+  },
+  "license": "../License.txt"
+}

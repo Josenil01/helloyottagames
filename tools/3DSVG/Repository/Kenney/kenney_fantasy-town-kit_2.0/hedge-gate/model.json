@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "hedge-gate",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/hedge-gate.fbx": "3198c401e28546c6a0008ad5286722f52520adaa574db96b4ce8912ff3f05eae",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/hedge-gate.glb": "688772aecf1c61410bfe0a257f51082bccaabed65d1794bad04226d444e7629e",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/hedge-gate.obj": "a843564b10732813947281b472f0a0d6fc980061a36b73a99f963061c571f1c7",
+    "Models/OBJ format/hedge-gate.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/hedge-gate.png": "375bb9a45b341506fb5ce8062dfa2ca42f835093a96f020e7bb90b338141fa74"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/hedge-gate.fbx": "3198c401e28546c6a0008ad5286722f52520adaa574db96b4ce8912ff3f05eae",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/hedge-gate.glb": "688772aecf1c61410bfe0a257f51082bccaabed65d1794bad04226d444e7629e",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/hedge-gate.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/hedge-gate.obj": "66dcf8b7634b73af1f3965df341b6ca7445a28a80cf9c4891250232d263dc5e8",
+    "Preview.png": "375bb9a45b341506fb5ce8062dfa2ca42f835093a96f020e7bb90b338141fa74"
+  },
+  "license": "../License.txt"
+}

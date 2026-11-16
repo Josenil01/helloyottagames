@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tableGlass",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/tableGlass.fbx": "c4fe5555a9e2d53cd191ab856da447ae1f0bb24ed8c81c0ce70d5d2ef60820a5",
+    "Models/GLTF format/tableGlass.glb": "a5ed516d18b51cf5db3cc78f1403451f853a81db45510543d3ed56c1dd9c412b",
+    "Models/OBJ format/tableGlass.obj": "eebcda6a4e44bb64c1035af655df1c5c51cd1fbfd09504f26b70d3aa00714976",
+    "Models/OBJ format/tableGlass.mtl": "a3e1b3eb3b6c8aa50455d8b479c7de9dc9de81b50f149888c7170cef65263778"
+  },
+  "files": {
+    "FBX format/tableGlass.fbx": "c4fe5555a9e2d53cd191ab856da447ae1f0bb24ed8c81c0ce70d5d2ef60820a5",
+    "GLB format/tableGlass.glb": "a5ed516d18b51cf5db3cc78f1403451f853a81db45510543d3ed56c1dd9c412b",
+    "OBJ format/tableGlass.mtl": "6953005e45763e031809f4da0b1173c05c9d14e44130ea536ada22757ef88ac3",
+    "OBJ format/tableGlass.obj": "0023374270c813ec8df427de82c92c9e0594524d6cdd26b0c47fa437c9b8fc35"
+  },
+  "license": "../License.txt"
+}

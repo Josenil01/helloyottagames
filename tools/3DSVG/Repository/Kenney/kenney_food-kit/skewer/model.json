@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "skewer",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/skewer.fbx": "65c9d80bfeb7c7c074b45f920aa8f6102f9f4a1180f273e2c12f7e1b53d10386",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/skewer.glb": "48427061cfbd066fa21d1dffc8a0fda0110062a1a43c816d4049adc0e17abed7",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/skewer.obj": "3d80cc582972bec32accc802a163b8e08e5f36bd0efdb8dc3ae416384cad97e0",
+    "Models/OBJ format/skewer.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/skewer.png": "3af141dcd81c56cd87cebc4787c93d64ad29e95ae27448f32decc66fe39b2de4"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/skewer.fbx": "65c9d80bfeb7c7c074b45f920aa8f6102f9f4a1180f273e2c12f7e1b53d10386",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/skewer.glb": "48427061cfbd066fa21d1dffc8a0fda0110062a1a43c816d4049adc0e17abed7",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/skewer.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/skewer.obj": "ca643a520ac97c95aa7285fcc9ef3598050da3ec2fad57b056e98ba6c3613f1c",
+    "Preview.png": "3af141dcd81c56cd87cebc4787c93d64ad29e95ae27448f32decc66fe39b2de4"
+  },
+  "license": "../License.txt"
+}

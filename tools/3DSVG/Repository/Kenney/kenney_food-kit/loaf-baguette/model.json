@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "loaf-baguette",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/loaf-baguette.fbx": "5c0124937b12aec4551f33eb1856993753f422a0c8185f234ca7409cd79c819c",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/loaf-baguette.glb": "c969ea026154653edc7062f1884ff2448a68fa0ec121012cfb1b4435eb2db1cf",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/loaf-baguette.obj": "4715e781152f4ccd978278c4730b7594d60fcd71f6a58ae9d0f63d327f3157f0",
+    "Models/OBJ format/loaf-baguette.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/loaf-baguette.png": "9383a0896702a9b462a6eef3ae0c355c0bd0dd1a97c0eec7ba83273f07ce079c"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/loaf-baguette.fbx": "5c0124937b12aec4551f33eb1856993753f422a0c8185f234ca7409cd79c819c",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/loaf-baguette.glb": "c969ea026154653edc7062f1884ff2448a68fa0ec121012cfb1b4435eb2db1cf",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/loaf-baguette.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/loaf-baguette.obj": "15145a4522ffcdc61f1a50554024297f31b32dd6c80657ffd311dd959c36c365",
+    "Preview.png": "9383a0896702a9b462a6eef3ae0c355c0bd0dd1a97c0eec7ba83273f07ce079c"
+  },
+  "license": "../License.txt"
+}

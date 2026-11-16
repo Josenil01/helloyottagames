@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "animal-koala",
+  "pack": "kenney_cube-pets_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/FBX format/animal-koala.fbx": "b7a5d464fe56f4b8934f03089f0b56784f60f7d41769d4fb432afe4353d475f7",
+    "Models/GLB format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/GLB format/animal-koala.glb": "ba13a1975bd746c59e2dce8309736c26597c8a9839602f736e4ec8570ba84fa0",
+    "Models/OBJ format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/OBJ format/animal-koala.obj": "769682198fc06224252baaa67a5f635eec33fc5df1635fe70035fd8df0856984",
+    "Models/OBJ format/animal-koala.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/animal-koala.png": "b2b84d94d76d43afe22ee9d7bf565b139cc81f43bea0fee2ea8421dcebc7a39e"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "FBX format/animal-koala.fbx": "b7a5d464fe56f4b8934f03089f0b56784f60f7d41769d4fb432afe4353d475f7",
+    "Textures/GLB/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "GLB format/animal-koala.glb": "ba13a1975bd746c59e2dce8309736c26597c8a9839602f736e4ec8570ba84fa0",
+    "Textures/OBJ/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "OBJ format/animal-koala.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/animal-koala.obj": "0a4e4a22c80108123c2d5d28f92f0cc65a2eca9dfc0e191d8086ebbaa3180bb1",
+    "Preview.png": "b2b84d94d76d43afe22ee9d7bf565b139cc81f43bea0fee2ea8421dcebc7a39e"
+  },
+  "license": "../License.txt"
+}

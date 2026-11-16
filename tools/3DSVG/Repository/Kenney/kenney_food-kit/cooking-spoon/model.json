@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cooking-spoon",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/cooking-spoon.fbx": "c4b83190083711d1b52bcbea59e627e95ddae8ab8fc3e863de167aadef3ba3c7",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/cooking-spoon.glb": "113270dd61d3a45929f8ed7ead0d16d6c129aab1131e108dd9304a28a51053a4",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/cooking-spoon.obj": "750c4f8de5670d27928d584fc99e628ba169eef9aca6e328956efd1b13cb1f0e",
+    "Models/OBJ format/cooking-spoon.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cooking-spoon.png": "c1341ce8b922aea41c0460bbf827a0d5e3dab3dc618eca14037a2da31d57f582"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/cooking-spoon.fbx": "c4b83190083711d1b52bcbea59e627e95ddae8ab8fc3e863de167aadef3ba3c7",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/cooking-spoon.glb": "113270dd61d3a45929f8ed7ead0d16d6c129aab1131e108dd9304a28a51053a4",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/cooking-spoon.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cooking-spoon.obj": "028ee89b1e7724099a6712d45a00503ae6a89f860ac7c55b5ccdfd33fd8178f6",
+    "Preview.png": "c1341ce8b922aea41c0460bbf827a0d5e3dab3dc618eca14037a2da31d57f582"
+  },
+  "license": "../License.txt"
+}

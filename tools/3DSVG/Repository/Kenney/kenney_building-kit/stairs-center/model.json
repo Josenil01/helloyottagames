@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stairs-center",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/stairs-center.fbx": "1e14e2d873e207a6f28990108cb65b42530653711a33bcfa55401284180f2453",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/stairs-center.glb": "0f34d1cc7a401b9da4301d685b6c1c2d78702dfed8799007863a88ba51aa05f0",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/stairs-center.obj": "fc9f61c796576861c491c258916cec52e2b3235fd365458c882949b96ebbeade",
+    "Models/OBJ format/stairs-center.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/stairs-center.png": "c330a95508ff8093aa7a19323fee67fa6a10034d496f9dad67e736e0ed0b3ebd"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/stairs-center.fbx": "1e14e2d873e207a6f28990108cb65b42530653711a33bcfa55401284180f2453",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/stairs-center.glb": "0f34d1cc7a401b9da4301d685b6c1c2d78702dfed8799007863a88ba51aa05f0",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/stairs-center.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/stairs-center.obj": "0645fbbd9aab197f1839b8f0c07b4496c54a4fdc446f7728252bfd25e39a2019",
+    "Preview.png": "c330a95508ff8093aa7a19323fee67fa6a10034d496f9dad67e736e0ed0b3ebd"
+  },
+  "license": "../License.txt"
+}

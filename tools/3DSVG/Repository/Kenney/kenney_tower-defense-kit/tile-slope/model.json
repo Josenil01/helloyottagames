@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tile-slope",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/tile-slope.fbx": "8e6a4b1e5e3b5e4347198890d676cbc517358b2cccd7e2a1a0fae04a9b31e233",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/tile-slope.glb": "724addee5c71ea9831f90595428203a396fc101b666180ea8656a3f07e2f898e",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/tile-slope.obj": "2271fac582c1cc2ff9f2389977f0ff3d1821ca9858b5ca7a7278384f4b9b057f",
+    "Models/OBJ format/tile-slope.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tile-slope.png": "01abaee538d40e957771ee8c0fcf98151d9f054711ec628ea043b57f120bfef3"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/tile-slope.fbx": "8e6a4b1e5e3b5e4347198890d676cbc517358b2cccd7e2a1a0fae04a9b31e233",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/tile-slope.glb": "724addee5c71ea9831f90595428203a396fc101b666180ea8656a3f07e2f898e",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/tile-slope.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tile-slope.obj": "a102c4fc58179eaeb736405a9bcdeee732db8f68beb5684dc77ff8d214fb968c",
+    "Preview.png": "01abaee538d40e957771ee8c0fcf98151d9f054711ec628ea043b57f120bfef3"
+  },
+  "license": "../License.txt"
+}

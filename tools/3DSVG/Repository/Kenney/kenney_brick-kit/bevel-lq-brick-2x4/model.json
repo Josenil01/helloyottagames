@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bevel-lq-brick-2x4",
+  "pack": "kenney_brick-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/FBX format/bevel-lq-brick-2x4.fbx": "db221d5905818cc42462b910f0f9d513e928b7590ede53f943cf1d15011939f0",
+    "Models/GLB format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/GLB format/bevel-lq-brick-2x4.glb": "338d6ca67bf876feb11ae7791ca891876b59d1c4c17fcdcb9219b23c498c8503",
+    "Models/OBJ format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/OBJ format/bevel-lq-brick-2x4.obj": "1254993306bc9858af2e690a4d924fa91bb2bc6f922f033d007bea4aaf4727da",
+    "Models/OBJ format/bevel-lq-brick-2x4.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/bevel-lq-brick-2x4.png": "117005db1dc5f1fbde0c58ef2928f63376cab55a5a7f5ae08fd88befff1ef4d6"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "FBX format/bevel-lq-brick-2x4.fbx": "db221d5905818cc42462b910f0f9d513e928b7590ede53f943cf1d15011939f0",
+    "Textures/GLB/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "GLB format/bevel-lq-brick-2x4.glb": "338d6ca67bf876feb11ae7791ca891876b59d1c4c17fcdcb9219b23c498c8503",
+    "Textures/OBJ/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "OBJ format/bevel-lq-brick-2x4.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/bevel-lq-brick-2x4.obj": "00a6886948a60a5b96f8a9f8b3373eb9fa5fe244fb4ea12d5f1135e0cacaf1a0",
+    "Preview.png": "117005db1dc5f1fbde0c58ef2928f63376cab55a5a7f5ae08fd88befff1ef4d6"
+  },
+  "license": "../License.txt"
+}

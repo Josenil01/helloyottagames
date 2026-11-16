@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "weapon-ammo-bullet",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/weapon-ammo-bullet.fbx": "274cb622c750c64d6cb3b26447e44490b6b47ef5b0da2b33004502652ca62b8e",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/weapon-ammo-bullet.glb": "ef128e48f9f6f7b99863cf7a1e3244e3f155bfe0062be91e34b91cb1e1037ed6",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/weapon-ammo-bullet.obj": "ae097e8a7915e3333564862ad4336b91423df48f0297fd90c0dc1202a32efbc5",
+    "Models/OBJ format/weapon-ammo-bullet.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/weapon-ammo-bullet.png": "4b4e9091bfd381679807f60b3d4dbcc16199600633fe9a972e108811a583ebc8"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/weapon-ammo-bullet.fbx": "274cb622c750c64d6cb3b26447e44490b6b47ef5b0da2b33004502652ca62b8e",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/weapon-ammo-bullet.glb": "ef128e48f9f6f7b99863cf7a1e3244e3f155bfe0062be91e34b91cb1e1037ed6",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/weapon-ammo-bullet.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/weapon-ammo-bullet.obj": "e0a36477e94c6f59093530ce34422c406f300efaeff92bd125e015974f40063e",
+    "Preview.png": "4b4e9091bfd381679807f60b3d4dbcc16199600633fe9a972e108811a583ebc8"
+  },
+  "license": "../License.txt"
+}

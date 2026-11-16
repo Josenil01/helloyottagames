@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "nutcracker",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/nutcracker.fbx": "58e9d0f86db13aa1da00d85b95c822b8683ce2245aaa210ec8c95b5b1d997095",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/nutcracker.glb": "a69d1e71903ef07d70d9b44ef7a17d855af784a9125069890a157e8abbd0a1e5",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/nutcracker.obj": "8f3b777e2462ff6b4fb3321ba45a34ab30438c47af7522c447697960b7d84e0f",
+    "Models/OBJ format/nutcracker.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/nutcracker.png": "0a1b9a06f9d96fb1486f3a4e78d130059dccbb9076f69bb6d37e7ee521c34619"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/nutcracker.fbx": "58e9d0f86db13aa1da00d85b95c822b8683ce2245aaa210ec8c95b5b1d997095",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/nutcracker.glb": "a69d1e71903ef07d70d9b44ef7a17d855af784a9125069890a157e8abbd0a1e5",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/nutcracker.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/nutcracker.obj": "54bc41dc1937cff442f5477c0ac668368c3d40c789b5354d4466dc110286907a",
+    "Preview.png": "0a1b9a06f9d96fb1486f3a4e78d130059dccbb9076f69bb6d37e7ee521c34619"
+  },
+  "license": "../License.txt"
+}

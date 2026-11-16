@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-bend",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/road-bend.fbx": "664ff78ebd746c18aefeb09379ed98a249316f427c6ed03ccd3ecfd62f0625df",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/road-bend.glb": "a4d8fbe9080849dccb45de7ac5f5ded2e17a3d893b8c07338e24193b28e1f03f",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/road-bend.obj": "ec83c0dbb78a31aa9abfe1f399d5822e98743ca482a6d97a7135b0b87896ba82",
+    "Models/OBJ format/road-bend.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-bend.png": "22000454371994bf84e72c0d907de6b8e29049cebda0cd012777a0e690f28198"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/road-bend.fbx": "664ff78ebd746c18aefeb09379ed98a249316f427c6ed03ccd3ecfd62f0625df",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/road-bend.glb": "a4d8fbe9080849dccb45de7ac5f5ded2e17a3d893b8c07338e24193b28e1f03f",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/road-bend.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-bend.obj": "1f6a035b4fe3c9e2b1d4f8a418230e57a58eae8cb7298deade2af0b6d2af5e9c",
+    "Preview.png": "22000454371994bf84e72c0d907de6b8e29049cebda0cd012777a0e690f28198"
+  },
+  "license": "../License.txt"
+}

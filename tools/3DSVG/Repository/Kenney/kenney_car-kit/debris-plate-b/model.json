@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "debris-plate-b",
+  "pack": "kenney_car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/FBX format/debris-plate-b.fbx": "9f15fc08f24d31e0eaeb297db366b762faf6f9d2bc92ed9561b29cc835ff903e",
+    "Models/GLB format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/GLB format/debris-plate-b.glb": "363f9baf530b25fe97b7c54f8ff186249cd974b34897d39dae4c95bafca2a181",
+    "Models/OBJ format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/OBJ format/debris-plate-b.obj": "73503844434415be7b44418137302420cdde1969b5b964334ba980d64d4eee57",
+    "Models/OBJ format/debris-plate-b.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/debris-plate-b.png": "309f87583c369455c24ef3f6614964e136e94e55f0a9893fbdcf5a694329fcba"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "FBX format/debris-plate-b.fbx": "9f15fc08f24d31e0eaeb297db366b762faf6f9d2bc92ed9561b29cc835ff903e",
+    "Textures/GLB/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "GLB format/debris-plate-b.glb": "363f9baf530b25fe97b7c54f8ff186249cd974b34897d39dae4c95bafca2a181",
+    "Textures/OBJ/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "OBJ format/debris-plate-b.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/debris-plate-b.obj": "4d98419c1d708cbfd159700d366f05707e39db35ade23ccde771e8694720b83e",
+    "Preview.png": "309f87583c369455c24ef3f6614964e136e94e55f0a9893fbdcf5a694329fcba"
+  },
+  "license": "../License.txt"
+}

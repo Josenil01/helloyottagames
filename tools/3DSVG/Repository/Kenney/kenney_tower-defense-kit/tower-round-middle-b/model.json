@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tower-round-middle-b",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/tower-round-middle-b.fbx": "8c2a7754cce15019853efebe1dca26bc647e048c3266474503a2e557f2f38a7f",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/tower-round-middle-b.glb": "a6f89329ef9652d215ac35ba308531bfdd8cdfa9cc5277c6a03a465e8b150c2a",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/tower-round-middle-b.obj": "958b3d10da543c615b158ba93e597d2718b0d219433099f5d135db00855e9694",
+    "Models/OBJ format/tower-round-middle-b.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tower-round-middle-b.png": "3b7c0f129d0cf576edb25ebc664c9be629b1b5f0fdca167db0577a695a767788"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/tower-round-middle-b.fbx": "8c2a7754cce15019853efebe1dca26bc647e048c3266474503a2e557f2f38a7f",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/tower-round-middle-b.glb": "a6f89329ef9652d215ac35ba308531bfdd8cdfa9cc5277c6a03a465e8b150c2a",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/tower-round-middle-b.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tower-round-middle-b.obj": "75088f4eee5ae89ffba738b3dcfbcaf947a20670a86601c1db7f7e57c93bc045",
+    "Preview.png": "3b7c0f129d0cf576edb25ebc664c9be629b1b5f0fdca167db0577a695a767788"
+  },
+  "license": "../License.txt"
+}

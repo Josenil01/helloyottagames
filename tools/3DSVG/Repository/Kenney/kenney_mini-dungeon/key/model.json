@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "key",
+  "pack": "kenney_mini-dungeon",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/Textures/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "Models/FBX format/key.fbx": "d62f098bfc1f406fc40d9ba54f3ff7b13d09e3bbe5c9d97da894dd579a083cb6",
+    "Models/GLB format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/GLB format/key.glb": "b13f87b22e157761f48016f0c905adc17f54f9bbc445e536b4857e3bc118894f",
+    "Models/OBJ format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/OBJ format/key.obj": "7e91013dfdd2f212d898704c167ec593b9892f335a639219c269725ea141d5d6",
+    "Models/OBJ format/key.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/key.png": "ee32da077f4398339fb687cfc11ddf8fde73defa61b60c6e7965ca4e0ee0a579"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/FBX/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "FBX format/key.fbx": "d62f098bfc1f406fc40d9ba54f3ff7b13d09e3bbe5c9d97da894dd579a083cb6",
+    "Textures/GLB/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/GLB/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "GLB format/key.glb": "b13f87b22e157761f48016f0c905adc17f54f9bbc445e536b4857e3bc118894f",
+    "Textures/OBJ/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/OBJ/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "OBJ format/key.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/key.obj": "7f0bf9ab53567d79ccacfab44590dd2615b57b3318df9b7b475421dc02e9c04a",
+    "Preview.png": "ee32da077f4398339fb687cfc11ddf8fde73defa61b60c6e7965ca4e0ee0a579"
+  },
+  "license": "../License.txt"
+}

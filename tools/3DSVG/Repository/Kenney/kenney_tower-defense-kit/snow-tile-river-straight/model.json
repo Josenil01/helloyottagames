@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "snow-tile-river-straight",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/snow-tile-river-straight.fbx": "a24abfe23008af00791c3920ae7d7de64596b6c13bdf5bd282bd22765da48d6a",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/snow-tile-river-straight.glb": "318ef73614a6cfb3a562c1fc13fea7ee0edadd5f1a3104cfda38d5b9015417f7",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/snow-tile-river-straight.obj": "ea8fd76c1a97d3898fc6422d0ccfca1fa70dd81a762ab701b2c6c92318dde99f",
+    "Models/OBJ format/snow-tile-river-straight.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/snow-tile-river-straight.png": "8637e080fa8d60d47b5c16b398646c1ecdfb9b8481db193b5502a9e289b05fa9"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/snow-tile-river-straight.fbx": "a24abfe23008af00791c3920ae7d7de64596b6c13bdf5bd282bd22765da48d6a",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/snow-tile-river-straight.glb": "318ef73614a6cfb3a562c1fc13fea7ee0edadd5f1a3104cfda38d5b9015417f7",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/snow-tile-river-straight.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/snow-tile-river-straight.obj": "3fea780648b8ef73889fbb6fef7b9dc6e30ddc95d8f6588392f40109646deff3",
+    "Preview.png": "8637e080fa8d60d47b5c16b398646c1ecdfb9b8481db193b5502a9e289b05fa9"
+  },
+  "license": "../License.txt"
+}

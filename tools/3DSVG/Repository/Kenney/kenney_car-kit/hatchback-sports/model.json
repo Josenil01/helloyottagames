@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "hatchback-sports",
+  "pack": "kenney_car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/FBX format/hatchback-sports.fbx": "ecd7df3d2be99bd0c798836031e093a02c259cfa0a4841233d4ab62e35cdd4bf",
+    "Models/GLB format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/GLB format/hatchback-sports.glb": "bd5c9d4c3b4bdd254a66b8426563a68b1487ae7a5076df3a2488e6ffed7be64f",
+    "Models/OBJ format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/OBJ format/hatchback-sports.obj": "5fc6d0adc2193fe3eef12a6cce4a665deae322edc74f4ffef76cbc0a617cdfd9",
+    "Models/OBJ format/hatchback-sports.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/hatchback-sports.png": "cd1f71fc81877bad0fc0bc2590434820a36b399dde4eac5a2134acf41c3fe669"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "FBX format/hatchback-sports.fbx": "ecd7df3d2be99bd0c798836031e093a02c259cfa0a4841233d4ab62e35cdd4bf",
+    "Textures/GLB/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "GLB format/hatchback-sports.glb": "bd5c9d4c3b4bdd254a66b8426563a68b1487ae7a5076df3a2488e6ffed7be64f",
+    "Textures/OBJ/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "OBJ format/hatchback-sports.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/hatchback-sports.obj": "61ed0087338bc0456b995b54ea96f3aa030c40d061ba0874a2f6c1a8588bcf21",
+    "Preview.png": "cd1f71fc81877bad0fc0bc2590434820a36b399dde4eac5a2134acf41c3fe669"
+  },
+  "license": "../License.txt"
+}

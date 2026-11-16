@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-detail",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/wall-detail.fbx": "24cfebfa67304cf327662d6f1d9f87d8bb73cdc6742f70fcfd55f5d9445a6037",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/wall-detail.glb": "7cee7abe1ea412acdf182da770bd3920bf023ecd165d5c9b3db3a60a0d7ae7d8",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/wall-detail.obj": "9a425a3e4b0977e483285f91cb75c9088291f5617d7bf6382761bff6c8f7477c",
+    "Models/OBJ format/wall-detail.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-detail.png": "65bf525583d1bb96cfec2c4f7f23766ebd355604834ea1949792059e7eacfd82"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/wall-detail.fbx": "24cfebfa67304cf327662d6f1d9f87d8bb73cdc6742f70fcfd55f5d9445a6037",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/wall-detail.glb": "7cee7abe1ea412acdf182da770bd3920bf023ecd165d5c9b3db3a60a0d7ae7d8",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/wall-detail.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-detail.obj": "a7e14d1525ca66d1c099e7ab42e2a31bd324277620fb687c6a0bc0997c081e47",
+    "Preview.png": "65bf525583d1bb96cfec2c4f7f23766ebd355604834ea1949792059e7eacfd82"
+  },
+  "license": "../License.txt"
+}

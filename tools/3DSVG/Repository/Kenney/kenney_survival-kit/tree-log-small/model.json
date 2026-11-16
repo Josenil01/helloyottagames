@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tree-log-small",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/tree-log-small.fbx": "efddf5dba72a16e6dc82a02bac1c009b147ad0e4e1e5671fd73b66307b9e3e66",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/tree-log-small.glb": "5b416addc4cb01d9d6ad30ec282606a8fefb018043d3253d5e42c1e353aab3c8",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/tree-log-small.obj": "5bd51b9df1e4ddae761cb4e9fd92f886be0f7be080d93dff72a3fc33b94182b4",
+    "Models/OBJ format/tree-log-small.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tree-log-small.png": "1e578de59e37a94d26e490dfc82e1770558e49dd55af65176d03237be8da70fd"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/tree-log-small.fbx": "efddf5dba72a16e6dc82a02bac1c009b147ad0e4e1e5671fd73b66307b9e3e66",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/tree-log-small.glb": "5b416addc4cb01d9d6ad30ec282606a8fefb018043d3253d5e42c1e353aab3c8",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/tree-log-small.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tree-log-small.obj": "2770fbfd0aa801b6ca84fd7c1c21cc6ee583790574e58db2e08c5d160fa5a8a7",
+    "Preview.png": "1e578de59e37a94d26e490dfc82e1770558e49dd55af65176d03237be8da70fd"
+  },
+  "license": "../License.txt"
+}

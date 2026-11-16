@@ -401,7 +401,12 @@
         }
       }
     </style>
-  </head>
+  
+  <!-- Visual library: high-resolution CC0 assets; original game logic preserved. -->
+  <link rel="stylesheet" href="styles/visual-assets.css">
+  <script defer src="utils/visual-manifest.js"></script>
+  <script defer src="utils/visual-assets.js"></script>
+</head>
   <body>
     <!-- Decoração de fundo -->
     <div class="bg-deco" aria-hidden="true">
@@ -450,16 +455,16 @@
         id="games-grid"
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full mt-6"
       >
-        <!-- Canhões de Ouro -->
+        <!-- Enigmas da Esfinge -->
         <a
           href="Canh%C3%B5es%20de%20ouro/index.html"
           class="game-card border-2 border-amber-200 hover:border-amber-400 shadow-lg"
-          data-category="matematica logica novos"
+          data-category="portugues logica novos"
         >
-          <div class="emoji">💣</div>
-          <div class="title">Canhões de Ouro</div>
+          <div class="emoji">🏜️</div>
+          <div class="title">Enigmas da Esfinge</div>
           <div class="description">
-            Mire os canhões com cálculos corretos para conquistar tesouros.
+            Decifre enigmas no Antigo Egito e conquiste a sabedoria da esfinge!
           </div>
         </a>
 
@@ -609,10 +614,10 @@
           data-category="matematica logica novos"
         >
           <div class="emoji">🚀</div>
-          <div class="title">Galáxia da Matemática</div>
+          <div class="title">Galáxia Geométrica</div>
           <div class="description">
-            Embarque em missões espaciais e resolva adição e subtração com
-            rapidez.
+            Reconheça figuras geométricas e pilote sua nave para coletar as
+            formas certas em missões espaciais!
           </div>
         </a>
 
@@ -1009,7 +1014,12 @@
       <!-- Script de Filtro de Categorias -->
       <script>
         const filterButtons = document.querySelectorAll(".category-btn");
-        const cards = document.querySelectorAll(".game-card");
+        const titleOrder = new Intl.Collator("pt-BR", { sensitivity: "base", numeric: true });
+        const cards = Array.from(document.querySelectorAll(".game-card")).sort((a, b) =>
+          titleOrder.compare(a.querySelector(".title").textContent.trim(), b.querySelector(".title").textContent.trim())
+        );
+        const gamesGrid = document.getElementById("games-grid");
+        cards.forEach(card => gamesGrid.appendChild(card));
         const countEl = document.getElementById("game-count");
         // Entrada escalonada dos cards
         cards.forEach((card, i) => card.style.setProperty("--i", Math.min(i, 12)));

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "electricity-pole-single",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/electricity-pole-single.fbx": "ead338e5539bb72c232faa08b65e403d365ac72daef24e1ef86b09cc2f70595f",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/electricity-pole-single.glb": "28d9b7a7ee300999b4ea59c1a5fd9ad197c599ad5be5ab299d63483049af337d",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/electricity-pole-single.obj": "c773fdf66e450b6d3a52b881e94bdf9381ed7f0591604c990d3f8bce34edb950",
+    "Models/OBJ format/electricity-pole-single.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/electricity-pole-single.png": "c1c44c8b4c7f796a209bddf3ff79fc3109a7563a66cd61d3ff0e896d535b7080"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/electricity-pole-single.fbx": "ead338e5539bb72c232faa08b65e403d365ac72daef24e1ef86b09cc2f70595f",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/electricity-pole-single.glb": "28d9b7a7ee300999b4ea59c1a5fd9ad197c599ad5be5ab299d63483049af337d",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/electricity-pole-single.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/electricity-pole-single.obj": "aa0ef39d953e247e8cd43f47c7a87f0b1a5eb3c7090ae725c9e69145e39a8206",
+    "Preview.png": "c1c44c8b4c7f796a209bddf3ff79fc3109a7563a66cd61d3ff0e896d535b7080"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "rocks-small",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/rocks-small.fbx": "cd57866755bd5924bdc1e044f9f3068b28a75f3afcc20f6828419a340f76ac01",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/rocks-small.glb": "073c084b23134a5748c8d45d37c1fc9a5f79eb644ccfcac9cd5932da09019981",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/rocks-small.obj": "45b0c6263ef02b5eee147b04187a746b73eb670cd96ea7f26d5107bbf96e2a22",
+    "Models/OBJ format/rocks-small.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/rocks-small.png": "4d20f99249a72d4971900e0730b9c5955e2a7e54be1542ca79cbc092a893e189"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/rocks-small.fbx": "cd57866755bd5924bdc1e044f9f3068b28a75f3afcc20f6828419a340f76ac01",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/rocks-small.glb": "073c084b23134a5748c8d45d37c1fc9a5f79eb644ccfcac9cd5932da09019981",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/rocks-small.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/rocks-small.obj": "823d44b62bf30b6a5c412ef785acc689c8e74e1243d3360b54c2468e4fe6f1a5",
+    "Preview.png": "4d20f99249a72d4971900e0730b9c5955e2a7e54be1542ca79cbc092a893e189"
+  },
+  "license": "../License.txt"
+}

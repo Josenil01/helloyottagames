@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "ship-ocean-liner",
+  "pack": "kenney_watercraft-pack",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/FBX format/ship-ocean-liner.fbx": "7ffdaed5a059c0265d71c3f7e14abe7772474f15b6aab74b0aa55ee7e0f1874f",
+    "Models/GLB format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/GLB format/ship-ocean-liner.glb": "3601dfb08920be829a35c49024940732e3f6c3ec5aa718cd2ef44d4ffa982475",
+    "Models/OBJ format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/OBJ format/ship-ocean-liner.obj": "5a9cc7660dc071b035d6ea802a5f6fc82ac247c8916069deb694c4f746ce85d2",
+    "Models/OBJ format/ship-ocean-liner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/ship-ocean-liner.png": "5d50c6bae276c64b4ec6a908eaf40617cb5ccda9cbfe3f67f235d99ca7b85332"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "FBX format/ship-ocean-liner.fbx": "7ffdaed5a059c0265d71c3f7e14abe7772474f15b6aab74b0aa55ee7e0f1874f",
+    "Textures/GLB/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "GLB format/ship-ocean-liner.glb": "3601dfb08920be829a35c49024940732e3f6c3ec5aa718cd2ef44d4ffa982475",
+    "Textures/OBJ/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "OBJ format/ship-ocean-liner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/ship-ocean-liner.obj": "c66ab9b892c699f48f8b130224bda3d3a647239b56343c36b8faac7c6b674fee",
+    "Preview.png": "5d50c6bae276c64b4ec6a908eaf40617cb5ccda9cbfe3f67f235d99ca7b85332"
+  },
+  "license": "../License.txt"
+}

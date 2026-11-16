@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stairs-small-corner",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/stairs-small-corner.fbx": "b786428b1317f6fe347ca5f563ace2bcb1a41addc646a7781e4c60ad3e937e9e",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/stairs-small-corner.glb": "24e5c3ea2a6e15a38663d275775d05d4a36aef5ece602d52f7d98b56c18a2ac7",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/stairs-small-corner.obj": "9464550d7785848334c69cd86718481c231a696924d97e9240521e6d6d2e9cf9",
+    "Models/OBJ format/stairs-small-corner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/stairs-small-corner.png": "a9a644e34b90f40aaa580e87fd61bf75311a12e83eec40a32b4c3d692b28c3ef"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/stairs-small-corner.fbx": "b786428b1317f6fe347ca5f563ace2bcb1a41addc646a7781e4c60ad3e937e9e",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/stairs-small-corner.glb": "24e5c3ea2a6e15a38663d275775d05d4a36aef5ece602d52f7d98b56c18a2ac7",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/stairs-small-corner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/stairs-small-corner.obj": "f793c2ce880c954f24f43f4dd10ee69d4d825a308c2c4bd48aac9a8b394fe0ce",
+    "Preview.png": "a9a644e34b90f40aaa580e87fd61bf75311a12e83eec40a32b4c3d692b28c3ef"
+  },
+  "license": "../License.txt"
+}

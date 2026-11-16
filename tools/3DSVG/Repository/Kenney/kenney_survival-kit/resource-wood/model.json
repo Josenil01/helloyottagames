@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "resource-wood",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/resource-wood.fbx": "dc6059125a7f7804de577cdde296f5601a8caf0f1c00e23a02fa90b990a43d25",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/resource-wood.glb": "1d5f559da9432f89bd323731ef76b60372e0deb261a96d0da8d5af570c485d80",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/resource-wood.obj": "9d0443ef3cc3f8d4cfc184f3f3ce751aed5d24afef32bb83c17fcacb29e0fc40",
+    "Models/OBJ format/resource-wood.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/resource-wood.png": "ebd1e6c5b776446dcce46d005432b2001eaf79150a3518493593fce94afcfa76"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/resource-wood.fbx": "dc6059125a7f7804de577cdde296f5601a8caf0f1c00e23a02fa90b990a43d25",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/resource-wood.glb": "1d5f559da9432f89bd323731ef76b60372e0deb261a96d0da8d5af570c485d80",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/resource-wood.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/resource-wood.obj": "00c649b4ab0e386a2260510e6b8229a6d1890e3a2605d661f5e85afd6f13897e",
+    "Preview.png": "ebd1e6c5b776446dcce46d005432b2001eaf79150a3518493593fce94afcfa76"
+  },
+  "license": "../License.txt"
+}

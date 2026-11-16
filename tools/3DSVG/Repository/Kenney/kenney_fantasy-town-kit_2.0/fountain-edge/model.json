@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "fountain-edge",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/fountain-edge.fbx": "ed9c755fc01127947dcd8d95fcb8ea90897b6bafcdae2ac363dde0bd7a138a46",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/fountain-edge.glb": "e75beda6d401c6c5f6a55ddc40f560a51f901156cc7ec17ad6a8150dfaec5650",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/fountain-edge.obj": "9a24f2e15eb83d2a23c2b1c968b67c362b5a5e35c4c2b42c8fb270d58a1d6484",
+    "Models/OBJ format/fountain-edge.mtl": "dfb8d91b6e73e7057517d31492fb6c1bcfff48e79e0c452b2d307cbb4f1367d3",
+    "Previews/fountain-edge.png": "99ce1aac83e3c04178d94aa95c1bd38d5c032dc36483293413aca307f8c7eea2"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/fountain-edge.fbx": "ed9c755fc01127947dcd8d95fcb8ea90897b6bafcdae2ac363dde0bd7a138a46",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/fountain-edge.glb": "e75beda6d401c6c5f6a55ddc40f560a51f901156cc7ec17ad6a8150dfaec5650",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/fountain-edge.mtl": "0388a4cd0dfed1b2233210415efb76a411bcd384c4cf2f26cc0ad3c195bd1671",
+    "OBJ format/fountain-edge.obj": "a240e265ffbe97efdb0789898a5f813de78c21113ebfbe49d3de5bdd8cbeb805",
+    "Preview.png": "99ce1aac83e3c04178d94aa95c1bd38d5c032dc36483293413aca307f8c7eea2"
+  },
+  "license": "../License.txt"
+}

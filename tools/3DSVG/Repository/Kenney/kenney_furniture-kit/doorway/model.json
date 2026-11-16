@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "doorway",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/doorway.fbx": "67cc16345f8a63dcc60beb947cd16220313d3eee877299f7b71409f21eeea111",
+    "Models/GLTF format/doorway.glb": "08983e299822140d580eb55d4b4e4e4552c37bb6e88571e41d2b7b5d2eef987e",
+    "Models/OBJ format/doorway.obj": "d264a079529d58aad8981c00be63fb8fa3f91058c5eeb6506f466171d51e7c77",
+    "Models/OBJ format/doorway.mtl": "5e5596841db7ef51c29d073c80e432ccca5240d0fc966255a0cb1fbcec3f6dc0"
+  },
+  "files": {
+    "FBX format/doorway.fbx": "67cc16345f8a63dcc60beb947cd16220313d3eee877299f7b71409f21eeea111",
+    "GLB format/doorway.glb": "08983e299822140d580eb55d4b4e4e4552c37bb6e88571e41d2b7b5d2eef987e",
+    "OBJ format/doorway.mtl": "f6919949f439a07368fde523f4a0da3d4881efbbaa4d432679224edc86c8c2ff",
+    "OBJ format/doorway.obj": "87198677e9bf87f0b37fa8931f8163ea383b5dd60220028b65846a5dddea53f5"
+  },
+  "license": "../License.txt"
+}

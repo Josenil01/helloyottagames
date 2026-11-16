@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "arrows",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/arrows.fbx": "8fc5c8fef4a0ed9abdcaba4bbe250701d6a9156cce9701b39888a21ed8135c3a",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/arrows.glb": "4de2d6446e83a2014e88416583a56829749eb843b7c313bf218490f15b0326ad",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/arrows.obj": "2f0842a6d21dbc1c1c7e959d0507ee11cb5c36bff64465f996fa0b3f9d9fa728",
+    "Models/OBJ format/arrows.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/arrows.png": "ce13c851f5ed2b6b732c74b845607b3da71413ed68b39825b9f7e2b62f03489f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/arrows.fbx": "8fc5c8fef4a0ed9abdcaba4bbe250701d6a9156cce9701b39888a21ed8135c3a",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/arrows.glb": "4de2d6446e83a2014e88416583a56829749eb843b7c313bf218490f15b0326ad",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/arrows.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/arrows.obj": "ec3f8dee74dc8da218b6431477624314862830061c71b963b46fac5adfbc2040",
+    "Preview.png": "ce13c851f5ed2b6b732c74b845607b3da71413ed68b39825b9f7e2b62f03489f"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "dirt",
+  "pack": "kenney_mini-dungeon",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/Textures/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "Models/FBX format/dirt.fbx": "2c0163aede24f9752ba8ba75222e7d63e2eb619267e0495ecb341a0082035069",
+    "Models/GLB format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/GLB format/dirt.glb": "dbdfaf6700dc11a64a630cc417d03a494856bd5f63409db68242a960eb490a7f",
+    "Models/OBJ format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/OBJ format/dirt.obj": "38e2fa509fc60ebcc28f2f61cbcf480bfd32820bb62decb82157bb7627df5dfc",
+    "Models/OBJ format/dirt.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/dirt.png": "e453bcaa60c3a7bc15ed08ed2dd8eb3dfbd33bd06653bad729d24f8a466fed58"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/FBX/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "FBX format/dirt.fbx": "2c0163aede24f9752ba8ba75222e7d63e2eb619267e0495ecb341a0082035069",
+    "Textures/GLB/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/GLB/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "GLB format/dirt.glb": "dbdfaf6700dc11a64a630cc417d03a494856bd5f63409db68242a960eb490a7f",
+    "Textures/OBJ/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/OBJ/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "OBJ format/dirt.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/dirt.obj": "304463045f0934912e9a36bd9b206350208defeca346714613fd68d5e014f197",
+    "Preview.png": "e453bcaa60c3a7bc15ed08ed2dd8eb3dfbd33bd06653bad729d24f8a466fed58"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-wood-corner",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/wall-wood-corner.fbx": "44c245555a28e179363c424b983dedfeaaee3ed9b07ddb8f07a385ae99db3b98",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/wall-wood-corner.glb": "f4c38de352c80c110874fabe7323577d985af191c25242887574238146dc7d82",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/wall-wood-corner.obj": "ae4175d7dd903cb5da5828e22d741a0f6f7451926d3610b2582d71024c6db14d",
+    "Models/OBJ format/wall-wood-corner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-wood-corner.png": "0645f222109bdba79a9e7a5d91de91089ee8902462961fcb6cfcc091a9aa7778"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/wall-wood-corner.fbx": "44c245555a28e179363c424b983dedfeaaee3ed9b07ddb8f07a385ae99db3b98",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/wall-wood-corner.glb": "f4c38de352c80c110874fabe7323577d985af191c25242887574238146dc7d82",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/wall-wood-corner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-wood-corner.obj": "ec19fbe0b53cc448b5aaaffebfcf944783c135918c6f5c34ec871c5aa3a99a1b",
+    "Preview.png": "0645f222109bdba79a9e7a5d91de91089ee8902462961fcb6cfcc091a9aa7778"
+  },
+  "license": "../License.txt"
+}

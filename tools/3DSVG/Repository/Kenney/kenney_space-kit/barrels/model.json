@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "barrels",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/barrels.fbx": "5c70ce3b3d79d9da54554395bf1c69d1cee25e6171857cbd2282b996a539ed9f",
+    "Models/GLTF format/barrels.glb": "5eefdb7cb192863ac6b6709293e196ae97e7cceb29c6ab754850a738f3b2379b",
+    "Models/OBJ format/barrels.obj": "e7fea2599c5dacbdbcc3dd7a7ad4605dabc63943b9a1a6d9b39e8e269b8c5e98",
+    "Models/OBJ format/barrels.mtl": "1e3feccef04f5e40a57ac21d7a142b4da8d5df0b09f5d2e6726c4b272a432a28"
+  },
+  "files": {
+    "FBX format/barrels.fbx": "5c70ce3b3d79d9da54554395bf1c69d1cee25e6171857cbd2282b996a539ed9f",
+    "GLB format/barrels.glb": "5eefdb7cb192863ac6b6709293e196ae97e7cceb29c6ab754850a738f3b2379b",
+    "OBJ format/barrels.mtl": "1e3feccef04f5e40a57ac21d7a142b4da8d5df0b09f5d2e6726c4b272a432a28",
+    "OBJ format/barrels.obj": "c92c174e250bef207f823b6ebc2631c3dee472331512c1d5722fcf2fc9b90667"
+  },
+  "license": "../License.txt"
+}

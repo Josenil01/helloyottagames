@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "broccoli",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/broccoli.fbx": "d71a948ab8fabfe203ed23a1c343003d1108f61eeb4c7aa770f2f35025304a3f",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/broccoli.glb": "ea4f789cf8ca924eba1f031d88e7984ff4705acdfb23977a1211cea9c77f2a41",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/broccoli.obj": "2896cf9807346b821900b9b934e6a36fd33821aa4fec0c7e69ba8e451bb2296d",
+    "Models/OBJ format/broccoli.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/broccoli.png": "3e4fc9f750d89c231bfe74046e9d729368dbe06fee9fb9dfd21a0a6f5c35a07a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/broccoli.fbx": "d71a948ab8fabfe203ed23a1c343003d1108f61eeb4c7aa770f2f35025304a3f",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/broccoli.glb": "ea4f789cf8ca924eba1f031d88e7984ff4705acdfb23977a1211cea9c77f2a41",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/broccoli.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/broccoli.obj": "f2736cc5dc188fb0c1408d2f16978d17d81b33d841b52909ae6f0c94a6a1cadb",
+    "Preview.png": "3e4fc9f750d89c231bfe74046e9d729368dbe06fee9fb9dfd21a0a6f5c35a07a"
+  },
+  "license": "../License.txt"
+}

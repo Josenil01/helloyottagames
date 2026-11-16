@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "terrain_sideEnd",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/terrain_sideEnd.fbx": "70dab00d4f1b7ba05aba7ebc7116fe00322936aabbf084c772ec3bf40f1760a3",
+    "Models/GLTF format/terrain_sideEnd.glb": "beb6c686f265afc7df892751a16f91e97ee850d06de817343365433c689ec097",
+    "Models/OBJ format/terrain_sideEnd.obj": "cc5e121e1e75a9716f54464d551f3e0c3a430b3f8508b445cb97d3c7a74d71f3",
+    "Models/OBJ format/terrain_sideEnd.mtl": "6fc60dec2ae36e2f0f0472ba3e4b2cc7817c7fa435daaf4f8502de241fd15950"
+  },
+  "files": {
+    "FBX format/terrain_sideEnd.fbx": "70dab00d4f1b7ba05aba7ebc7116fe00322936aabbf084c772ec3bf40f1760a3",
+    "GLB format/terrain_sideEnd.glb": "beb6c686f265afc7df892751a16f91e97ee850d06de817343365433c689ec097",
+    "OBJ format/terrain_sideEnd.mtl": "6fc60dec2ae36e2f0f0472ba3e4b2cc7817c7fa435daaf4f8502de241fd15950",
+    "OBJ format/terrain_sideEnd.obj": "f458bb52b2cba8199858f1e5cc17ce1eacf5dfd220636d49cf3b874c429c07b7"
+  },
+  "license": "../License.txt"
+}

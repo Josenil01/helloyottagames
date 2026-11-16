@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "soda-can-crushed",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/soda-can-crushed.fbx": "41d060c99c319d9ef809c20d32c91502edc1bfb92818c22f42eb3ad3d3a7557a",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/soda-can-crushed.glb": "6c052d69d4ec25083f05619bd48086d1666b0ddc9ddec5f6859fcd1f847be554",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/soda-can-crushed.obj": "b052e6b6554fb7ecdd49ee5cc34f62ca7768b3b83691c65363cc89fd62c8bc98",
+    "Models/OBJ format/soda-can-crushed.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/soda-can-crushed.png": "c9730a9f0eb2bd6fe5ac2282c227230607022c89b3bed8b28a4ad3b3a9916c81"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/soda-can-crushed.fbx": "41d060c99c319d9ef809c20d32c91502edc1bfb92818c22f42eb3ad3d3a7557a",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/soda-can-crushed.glb": "6c052d69d4ec25083f05619bd48086d1666b0ddc9ddec5f6859fcd1f847be554",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/soda-can-crushed.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/soda-can-crushed.obj": "23c51234dd01c43e397f349afa40283a6ce97d5918137051234b04abff3670e4",
+    "Preview.png": "c9730a9f0eb2bd6fe5ac2282c227230607022c89b3bed8b28a4ad3b3a9916c81"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "railroad-damaged-curve",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/railroad-damaged-curve.fbx": "9355403854cb6d475a2e51efbc969dc7278c5471820adf3d822c06b5eaca5777",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/railroad-damaged-curve.glb": "11b6636484fc6370c901e0f8b031a61181ef0df257369bf39aff843539cff06d",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/railroad-damaged-curve.obj": "62554bb22d4de8a91a84453d6085d3bba777a78d369dee33e910ea08d6d4873d",
+    "Models/OBJ format/railroad-damaged-curve.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/railroad-damaged-curve.png": "68390e138aeed94cd3e266f98e41fae010833d2a2eaf7d259d5e1f4da586f59d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/railroad-damaged-curve.fbx": "9355403854cb6d475a2e51efbc969dc7278c5471820adf3d822c06b5eaca5777",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/railroad-damaged-curve.glb": "11b6636484fc6370c901e0f8b031a61181ef0df257369bf39aff843539cff06d",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/railroad-damaged-curve.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/railroad-damaged-curve.obj": "988c3e23a593579571af800df76b7927e7ce445c8e14a0cb587cb4b43017442d",
+    "Preview.png": "68390e138aeed94cd3e266f98e41fae010833d2a2eaf7d259d5e1f4da586f59d"
+  },
+  "license": "../License.txt"
+}

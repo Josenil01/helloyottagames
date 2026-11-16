@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wheel-tractor-front",
+  "pack": "kenney_car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/FBX format/wheel-tractor-front.fbx": "8b034e33d0678b69fc6a7564af6a83716fc7b418651ce65eb89b9c33e560343f",
+    "Models/GLB format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/GLB format/wheel-tractor-front.glb": "427a632a5b930cdda9d55a63fba94f01f0c77e86face3878ce9fbc63e9879b2f",
+    "Models/OBJ format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/OBJ format/wheel-tractor-front.obj": "e856368e4a3de53ba80e79ca9ee88a18e8e2aaebf6a50ca2c0d4adbacc46e378",
+    "Models/OBJ format/wheel-tractor-front.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wheel-tractor-front.png": "4b269bb0cafde50331127ecb34a7f45caba3719ec797359b88078173d69f37b1"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "FBX format/wheel-tractor-front.fbx": "8b034e33d0678b69fc6a7564af6a83716fc7b418651ce65eb89b9c33e560343f",
+    "Textures/GLB/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "GLB format/wheel-tractor-front.glb": "427a632a5b930cdda9d55a63fba94f01f0c77e86face3878ce9fbc63e9879b2f",
+    "Textures/OBJ/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "OBJ format/wheel-tractor-front.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wheel-tractor-front.obj": "3482bd02c2335d828b8d6c89c1f3a2857ad679db3f31de83cd7c1f0c9d941c5f",
+    "Preview.png": "4b269bb0cafde50331127ecb34a7f45caba3719ec797359b88078173d69f37b1"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "grenade-a",
+  "pack": "kenney_blaster-kit_2.1",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Models/Textures/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "Models/FBX format/grenade-a.fbx": "f9eb088f5e81c55b051a61c13c94156756bda55533a4b6485af25282bd916484",
+    "Models/GLB format/Textures/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Models/GLB format/grenade-a.glb": "8b67f9500005efee816f3fe72eb00bcded0282f7a9916f4436bf923877d8a89f",
+    "Models/OBJ format/Textures/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Models/OBJ format/grenade-a.obj": "5190d12d1adf8ec2ec96f0e44d934c7f339f90104af4c36a64b5f64094acc84f",
+    "Models/OBJ format/grenade-a.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/grenade-a.png": "5ada35f752669e4de43d19f54929b143c36854df99365825b9c50fbf21ac2c3d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Textures/FBX/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "FBX format/grenade-a.fbx": "f9eb088f5e81c55b051a61c13c94156756bda55533a4b6485af25282bd916484",
+    "Textures/GLB/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Textures/GLB/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "GLB format/grenade-a.glb": "8b67f9500005efee816f3fe72eb00bcded0282f7a9916f4436bf923877d8a89f",
+    "Textures/OBJ/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Textures/OBJ/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "OBJ format/grenade-a.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/grenade-a.obj": "68c8fda69f54f4eb9994e7bff34573da1569a350f62a81e36f466a884bcbc36b",
+    "Preview.png": "5ada35f752669e4de43d19f54929b143c36854df99365825b9c50fbf21ac2c3d"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "fountain-round",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/fountain-round.fbx": "b1af206e34e8324737df6589a27b515c9ae0cbf705c2d54406203c4362cfd473",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/fountain-round.glb": "8d19741e2cca6cbdce114b950b4aa12af625979bbc17b2910ef2366834af5565",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/fountain-round.obj": "229985e865f3d5184e8175bdc6f43178e69eb14aedf98eb236189be88e8d2a14",
+    "Models/OBJ format/fountain-round.mtl": "dfb8d91b6e73e7057517d31492fb6c1bcfff48e79e0c452b2d307cbb4f1367d3",
+    "Previews/fountain-round.png": "7fba73ea698b5ff160d7bc2b97b928aa2ce9a6933fa0fe8602a63327f35ea7fd"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/fountain-round.fbx": "b1af206e34e8324737df6589a27b515c9ae0cbf705c2d54406203c4362cfd473",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/fountain-round.glb": "8d19741e2cca6cbdce114b950b4aa12af625979bbc17b2910ef2366834af5565",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/fountain-round.mtl": "0388a4cd0dfed1b2233210415efb76a411bcd384c4cf2f26cc0ad3c195bd1671",
+    "OBJ format/fountain-round.obj": "c129a9472f43c63313ab6a2f7e1fa3cfb50105e773242228560e5ad169b66d6e",
+    "Preview.png": "7fba73ea698b5ff160d7bc2b97b928aa2ce9a6933fa0fe8602a63327f35ea7fd"
+  },
+  "license": "../License.txt"
+}

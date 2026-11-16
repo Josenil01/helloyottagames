@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tree-high",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/tree-high.fbx": "dcfe380b5524a95642a3b0fd44610f321ea82728b5995b85bffb653d10c2a9d8",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/tree-high.glb": "2dbb718a81d9c3697c069495f58840f6c2002c8cdd13388be560c2199f6d03e7",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/tree-high.obj": "37025d472e025c8359ca09b198afbfe0e782596d418b417378521c0e4eaf637b",
+    "Models/OBJ format/tree-high.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tree-high.png": "c4fbd3fe8583f1f609176ff4d58bacb6099ac6829e89ac15ec99d991128b9b22"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/tree-high.fbx": "dcfe380b5524a95642a3b0fd44610f321ea82728b5995b85bffb653d10c2a9d8",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/tree-high.glb": "2dbb718a81d9c3697c069495f58840f6c2002c8cdd13388be560c2199f6d03e7",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/tree-high.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tree-high.obj": "c0aa1b72ef7dd7491bd32e7cb5a7f1ec8cff77cec43519f0975fe1f4c5e4a9f6",
+    "Preview.png": "c4fbd3fe8583f1f609176ff4d58bacb6099ac6829e89ac15ec99d991128b9b22"
+  },
+  "license": "../License.txt"
+}

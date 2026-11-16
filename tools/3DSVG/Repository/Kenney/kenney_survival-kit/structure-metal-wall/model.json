@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "structure-metal-wall",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/structure-metal-wall.fbx": "8d572489b71370bb63a5f75b29091f7df86b2a0f8909b04cf0333e8f7c58c4aa",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/structure-metal-wall.glb": "7577a371dde174ba48b59187f3ce0ed2dd9e20c1cca130f38cecafe2d485f5fb",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/structure-metal-wall.obj": "f15a5263da8dd747efed084be9ce855661056460afb607dce5c33f6d74ece8a8",
+    "Models/OBJ format/structure-metal-wall.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/structure-metal-wall.png": "fc77e3047b6f5b93f98ffd41b1a9980949607d627a86105ec78f08d3c3891083"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/structure-metal-wall.fbx": "8d572489b71370bb63a5f75b29091f7df86b2a0f8909b04cf0333e8f7c58c4aa",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/structure-metal-wall.glb": "7577a371dde174ba48b59187f3ce0ed2dd9e20c1cca130f38cecafe2d485f5fb",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/structure-metal-wall.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/structure-metal-wall.obj": "08f8e112a1a8f95660edc3ed5174675bd6199576f4a10f3306891d432a5015d6",
+    "Preview.png": "fc77e3047b6f5b93f98ffd41b1a9980949607d627a86105ec78f08d3c3891083"
+  },
+  "license": "../License.txt"
+}

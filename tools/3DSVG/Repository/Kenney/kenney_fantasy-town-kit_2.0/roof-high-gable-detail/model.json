@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "roof-high-gable-detail",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/roof-high-gable-detail.fbx": "59d414639493b5942b07d9c8964b38bd122be0dba7bbab3af38c80393291647e",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/roof-high-gable-detail.glb": "d0b95f79cca6bc347d9479fa7a80dfc2b65b56f0f1ed00799893a21b0d9b5f68",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/roof-high-gable-detail.obj": "f1156376df431e28eba41fe1dd7e97dd6da2b66595728104f5c49e6aee4a8992",
+    "Models/OBJ format/roof-high-gable-detail.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/roof-high-gable-detail.png": "8c753bec8d817bef393e059584aecc1456bad54947efc4f4b7372dab5bdddf88"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/roof-high-gable-detail.fbx": "59d414639493b5942b07d9c8964b38bd122be0dba7bbab3af38c80393291647e",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/roof-high-gable-detail.glb": "d0b95f79cca6bc347d9479fa7a80dfc2b65b56f0f1ed00799893a21b0d9b5f68",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/roof-high-gable-detail.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/roof-high-gable-detail.obj": "b6b6588fe362fed587bb43a94cb3c8da4f142d425a9578738a9d8c6850a04b7b",
+    "Preview.png": "8c753bec8d817bef393e059584aecc1456bad54947efc4f4b7372dab5bdddf88"
+  },
+  "license": "../License.txt"
+}

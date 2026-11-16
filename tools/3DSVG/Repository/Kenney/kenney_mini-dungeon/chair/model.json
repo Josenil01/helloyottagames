@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "chair",
+  "pack": "kenney_mini-dungeon",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/Textures/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "Models/FBX format/chair.fbx": "87bfe45a973a4e060278ded0caeaf3c550acc2b65323550b2d50b51f2807b885",
+    "Models/GLB format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/GLB format/chair.glb": "caf1bb3daf5287699477a111cce05fad789d6d0228707238df1aff0b98bebce3",
+    "Models/OBJ format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/OBJ format/chair.obj": "7462e51bc3da41eaa5dde9bbaaf0c32f0773c4482f0252565ebb036a6b39e300",
+    "Models/OBJ format/chair.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/chair.png": "1c0ab5f04cc8d70e2080b8346859f3d6e341aeb8136951744aa8ac2ec9843909"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/FBX/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "FBX format/chair.fbx": "87bfe45a973a4e060278ded0caeaf3c550acc2b65323550b2d50b51f2807b885",
+    "Textures/GLB/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/GLB/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "GLB format/chair.glb": "caf1bb3daf5287699477a111cce05fad789d6d0228707238df1aff0b98bebce3",
+    "Textures/OBJ/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/OBJ/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "OBJ format/chair.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/chair.obj": "51e4f63742d789ea67d02b65f383bd3c717f4036fabcca536e53cf4b9e79a3d6",
+    "Preview.png": "1c0ab5f04cc8d70e2080b8346859f3d6e341aeb8136951744aa8ac2ec9843909"
+  },
+  "license": "../License.txt"
+}

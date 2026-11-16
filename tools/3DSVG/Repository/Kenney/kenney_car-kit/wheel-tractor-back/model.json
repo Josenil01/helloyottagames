@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wheel-tractor-back",
+  "pack": "kenney_car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/FBX format/wheel-tractor-back.fbx": "54fc6eaa21d6f45ab947bd93e16ef5fe4b55cd82a7c4fd1e4e49e438fa3c4499",
+    "Models/GLB format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/GLB format/wheel-tractor-back.glb": "818d83067e1196608fe81dbc04d354b0d65af51c2612e683ab755e92c49253b4",
+    "Models/OBJ format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/OBJ format/wheel-tractor-back.obj": "96abba7d7c648332d3d4889651027bdf3f18f6d167b9130476f6cc0fa284cbf3",
+    "Models/OBJ format/wheel-tractor-back.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wheel-tractor-back.png": "5c4a417f5746f1aa15f20715b9f4bd1ac03dc2ec58c3f0db98c60fe3fff374ec"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "FBX format/wheel-tractor-back.fbx": "54fc6eaa21d6f45ab947bd93e16ef5fe4b55cd82a7c4fd1e4e49e438fa3c4499",
+    "Textures/GLB/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "GLB format/wheel-tractor-back.glb": "818d83067e1196608fe81dbc04d354b0d65af51c2612e683ab755e92c49253b4",
+    "Textures/OBJ/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "OBJ format/wheel-tractor-back.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wheel-tractor-back.obj": "084df9f2f851b7fc9a56c5b54f7f0d48b95c89d65ad25b7d29a8308cd8713539",
+    "Preview.png": "5c4a417f5746f1aa15f20715b9f4bd1ac03dc2ec58c3f0db98c60fe3fff374ec"
+  },
+  "license": "../License.txt"
+}

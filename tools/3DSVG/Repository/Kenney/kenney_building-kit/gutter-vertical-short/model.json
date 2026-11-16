@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "gutter-vertical-short",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/gutter-vertical-short.fbx": "96f6a4f5378498f621d379b4d36df3b7f942ffb967581f47213c39b32bb976cc",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/gutter-vertical-short.glb": "2622d66539025e033c9d49aa2f0abd680e7e9336e8a85b867ba587b85464a121",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/gutter-vertical-short.obj": "e64caf998af49c5e1c27dcccfd2faa32d46a110982bc27ffb061f59870d58a99",
+    "Models/OBJ format/gutter-vertical-short.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/gutter-vertical-short.png": "a1691c87363cc55332db85a30a9b30143bccd4669ca08b88a122bba5ca788f4a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/gutter-vertical-short.fbx": "96f6a4f5378498f621d379b4d36df3b7f942ffb967581f47213c39b32bb976cc",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/gutter-vertical-short.glb": "2622d66539025e033c9d49aa2f0abd680e7e9336e8a85b867ba587b85464a121",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/gutter-vertical-short.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/gutter-vertical-short.obj": "2859ff24b7daa95ba3149546bbf34307c907eb5eadc6c12daf7e44f1c89d51e8",
+    "Preview.png": "a1691c87363cc55332db85a30a9b30143bccd4669ca08b88a122bba5ca788f4a"
+  },
+  "license": "../License.txt"
+}

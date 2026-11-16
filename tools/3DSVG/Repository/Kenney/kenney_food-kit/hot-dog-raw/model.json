@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "hot-dog-raw",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/hot-dog-raw.fbx": "e2252ddb7c9989c0113bb0e371cbb85d08b1ba58248c3d8bf1c75f7641c9d35f",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/hot-dog-raw.glb": "388eb584cb204053c48c27ce3f36f6d0a3b5caa8e5e31a5d001c6f32a4ccb041",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/hot-dog-raw.obj": "57f4eea83ea7d45d438dcd9e95e5f9f6e6a3e31ba33115d47dab113d820a21ad",
+    "Models/OBJ format/hot-dog-raw.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/hot-dog-raw.png": "c62ed6fef258719cc085c2a82a141df6a91d0f422d0511e0b8d637304b2b0015"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/hot-dog-raw.fbx": "e2252ddb7c9989c0113bb0e371cbb85d08b1ba58248c3d8bf1c75f7641c9d35f",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/hot-dog-raw.glb": "388eb584cb204053c48c27ce3f36f6d0a3b5caa8e5e31a5d001c6f32a4ccb041",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/hot-dog-raw.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/hot-dog-raw.obj": "1cf0388bdf0ebd89f19bcfd9843f52be588eab2f4da7f8b99e78c168b342ee1e",
+    "Preview.png": "c62ed6fef258719cc085c2a82a141df6a91d0f422d0511e0b8d637304b2b0015"
+  },
+  "license": "../License.txt"
+}

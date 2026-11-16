@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-flume-straight-skew-left",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-flume-straight-skew-left.fbx": "465532c139ea644187d3ab1668f21d28e74d9e0015665a3ca46d87edd867bae5",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-flume-straight-skew-left.glb": "12d0ce451e9b986dd1e17beaf1a8249699733adbc39b33d7a73bb28357a7e587",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-flume-straight-skew-left.obj": "2f6905d80a1198d6c1d8192bfea0f1feae4bc11a83cc457636be2e92e2536833",
+    "Models/OBJ format/coaster-flume-straight-skew-left.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-flume-straight-skew-left.png": "6d1205db7dfdaa847c2ebaec0476f9dadc63e1678f5bf63b7f3a542abd1cd198"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-flume-straight-skew-left.fbx": "465532c139ea644187d3ab1668f21d28e74d9e0015665a3ca46d87edd867bae5",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-flume-straight-skew-left.glb": "12d0ce451e9b986dd1e17beaf1a8249699733adbc39b33d7a73bb28357a7e587",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-flume-straight-skew-left.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-flume-straight-skew-left.obj": "cfd4b2d34f689cde0d4ad3d51a139cbf8d7d58d351a481fb7fa4b7bec2fabd52",
+    "Preview.png": "6d1205db7dfdaa847c2ebaec0476f9dadc63e1678f5bf63b7f3a542abd1cd198"
+  },
+  "license": "../License.txt"
+}

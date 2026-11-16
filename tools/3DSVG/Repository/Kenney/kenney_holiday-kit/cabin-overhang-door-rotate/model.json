@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cabin-overhang-door-rotate",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/cabin-overhang-door-rotate.fbx": "b23ddac434561c8408afdda0766969093af32bb21deb8a82ee5223b39f187804",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/cabin-overhang-door-rotate.glb": "3975b1b858f7632cb90052b1f54a19fb3215d118d981d2c27d8c822606691972",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/cabin-overhang-door-rotate.obj": "4465058955fa96c6201f2ff6f6ca1857e3bb5141c4b49cce43d2036c1005840f",
+    "Models/OBJ format/cabin-overhang-door-rotate.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cabin-overhang-door-rotate.png": "68ab39319df7c12f3153e9069f506b454cae8080e4ef3032a6fb70b2e926d850"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/cabin-overhang-door-rotate.fbx": "b23ddac434561c8408afdda0766969093af32bb21deb8a82ee5223b39f187804",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/cabin-overhang-door-rotate.glb": "3975b1b858f7632cb90052b1f54a19fb3215d118d981d2c27d8c822606691972",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/cabin-overhang-door-rotate.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cabin-overhang-door-rotate.obj": "d1fd180d4177955f5728768d15db7814169580f8f3322489216eee86c056c988",
+    "Preview.png": "68ab39319df7c12f3153e9069f506b454cae8080e4ef3032a6fb70b2e926d850"
+  },
+  "license": "../License.txt"
+}

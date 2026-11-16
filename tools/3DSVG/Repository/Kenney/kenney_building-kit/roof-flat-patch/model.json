@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "roof-flat-patch",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/roof-flat-patch.fbx": "9ce35362eefafa78bfcdeaa518e2568b72295f304c098a7283999cc3d1e7073d",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/roof-flat-patch.glb": "d49f58ab9ee3e0be152a9756c39b397e877bc6a12dbd7ed3d5364bdf0d64752d",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/roof-flat-patch.obj": "cefc636cc449f19699d7bfde717795642143a09193a39b23f36c0ce21a1a6591",
+    "Models/OBJ format/roof-flat-patch.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/roof-flat-patch.png": "e8b785464af1174461684ebbfaa454c82c602c2fd154785babd87e0519a315c2"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/roof-flat-patch.fbx": "9ce35362eefafa78bfcdeaa518e2568b72295f304c098a7283999cc3d1e7073d",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/roof-flat-patch.glb": "d49f58ab9ee3e0be152a9756c39b397e877bc6a12dbd7ed3d5364bdf0d64752d",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/roof-flat-patch.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/roof-flat-patch.obj": "0cf451302ba37673da2613d36b0ae966d93f5de574b703d5c7ef7e6273abd6c0",
+    "Preview.png": "e8b785464af1174461684ebbfaa454c82c602c2fd154785babd87e0519a315c2"
+  },
+  "license": "../License.txt"
+}

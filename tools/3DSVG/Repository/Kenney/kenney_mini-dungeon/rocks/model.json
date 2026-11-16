@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "rocks",
+  "pack": "kenney_mini-dungeon",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/Textures/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "Models/FBX format/rocks.fbx": "135dbf6bd9a31f3850ddbafb3a5597ffa81aac61d92822150dcd9f0aaaa39408",
+    "Models/GLB format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/GLB format/rocks.glb": "ee14136f047ef55fd0a2fc2a71739fd8ff1a8487a6c30cb249de5845a01d01ca",
+    "Models/OBJ format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/OBJ format/rocks.obj": "ce2483f278cffa9ef156b8095d237226f7b1c1dcb2a472638f9633d7249e7548",
+    "Models/OBJ format/rocks.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/rocks.png": "eacae9eb9a774fbaebbc69458d64e4af7abd30326fc42099993d9f73b7a74dc0"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/FBX/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "FBX format/rocks.fbx": "135dbf6bd9a31f3850ddbafb3a5597ffa81aac61d92822150dcd9f0aaaa39408",
+    "Textures/GLB/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/GLB/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "GLB format/rocks.glb": "ee14136f047ef55fd0a2fc2a71739fd8ff1a8487a6c30cb249de5845a01d01ca",
+    "Textures/OBJ/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/OBJ/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "OBJ format/rocks.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/rocks.obj": "d340a97b33458861dd0d1bc9827f9a429137adca05f637bacaab47959dbdd807",
+    "Preview.png": "eacae9eb9a774fbaebbc69458d64e4af7abd30326fc42099993d9f73b7a74dc0"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-corner-round",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/wall-corner-round.fbx": "295009845cccfdde82e7087dbcce02134b9698078110fd9f9f6d5c7ea12e98ce",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/wall-corner-round.glb": "e374557954a754459c4941ea50d1cd9828f99ca863e9a92f2acd98d0a116e906",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/wall-corner-round.obj": "2745b8136c058d5b5412115a160cb7c7dafb27a962389f41b83d9fa80e8084cb",
+    "Models/OBJ format/wall-corner-round.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-corner-round.png": "f95790367769c74c1d3a2ed0ef43a804c59bb4b8948acd1b672ce199dd985949"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/wall-corner-round.fbx": "295009845cccfdde82e7087dbcce02134b9698078110fd9f9f6d5c7ea12e98ce",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/wall-corner-round.glb": "e374557954a754459c4941ea50d1cd9828f99ca863e9a92f2acd98d0a116e906",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/wall-corner-round.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-corner-round.obj": "9a493f024f3cfedf5a0b3150ae40511776748047e2279579a43e0d6d79504b10",
+    "Preview.png": "f95790367769c74c1d3a2ed0ef43a804c59bb4b8948acd1b672ce199dd985949"
+  },
+  "license": "../License.txt"
+}

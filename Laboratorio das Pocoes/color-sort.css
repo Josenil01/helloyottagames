@@ -1,0 +1,30 @@
+/* Regras específicas do Color Sort; o cenário original é mantido. */
+body { overflow: auto !important; }
+.container { min-height: 100dvh; height: auto !important; }
+.screen.active { min-height: calc(100dvh - 40px); height: auto; max-height: none; overflow: visible; }
+.sort-lab { width: 100%; gap: 14px; padding: 48px 0 24px; }
+.sort-lab h2, .sort-lab p { margin: 0; }
+.sort-instructions { max-width: 580px; line-height: 1.4; }
+.sort-lab .potion-shelf { flex-wrap: wrap; justify-content: center; width: 100%; gap: 20px 14px; padding: 28px 12px 18px; }
+.sort-tube { background: transparent; border: 0; color: white; font: inherit; cursor: pointer; padding: 8px; border-radius: 16px; transition: transform .18s; }
+.tube-glass { display: flex; flex-direction: column-reverse; justify-content: flex-start; overflow: hidden; width: 66px; height: 180px; padding-top: 12px; border: 3px solid #a5b4fc; border-top: 6px solid #c7d2fe; border-radius: 9px 9px 25px 25px; background: #ffffff12; box-shadow: inset 6px 0 0 #ffffff18; }
+.potion-layer { flex: 0 0 25%; width: 100%; display: flex; align-items: center; justify-content: center; color: #101827; font-size: 21px; font-weight: 800; border-top: 1px solid #ffffff70; background: var(--potion); }
+.tube-label { display: block; margin-top: 8px; font-size: .9rem; }
+.sort-tube.selected { transform: translateY(-12px); background: #22d3ee20; }
+.sort-tube.selected .tube-glass { border-color: #22d3ee; box-shadow: 0 0 18px #22d3ee65; }
+.sort-tube.complete .tube-glass { border-color: #6ce67d; }
+.sort-tube:focus-visible, .sort-controls button:focus-visible { outline: 3px solid #fbbf24; outline-offset: 4px; }
+#sort-feedback { min-height: 48px; color: #a5f3fc; max-width: 580px; }
+.sort-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px; }
+.sort-controls button { padding: 10px 18px; min-height: 44px; font: inherit; border: 1px solid #a5b4fc; border-radius: 14px; background: #312e81; color: white; cursor: pointer; }
+.sort-controls button:disabled { opacity: .4; cursor: default; }
+@media (max-width: 480px) {
+    .sort-lab .potion-shelf { gap: 14px 4px; padding: 20px 4px 12px; }
+    .sort-tube { padding: 4px; }
+    .tube-glass { width: 52px; height: 144px; }
+    .sort-lab { padding-top: 44px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .sort-tube { transition: none; }
+    .sparkle, .flask { animation: none !important; }
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pipe-large-curve",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/pipe-large-curve.fbx": "31742eb0757cd728ea83644672c27f4a7ded5daec4ff0a4feff38ce64d99cb38",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/pipe-large-curve.glb": "5da8bbe6f74293df2cc57e743eeea0aee3e831531af1841aad0a49d47d1e1638",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/pipe-large-curve.obj": "9a4a7fff3ace37d033ac6855b356de7f7309eb5b1118c9c1ea89d9585415ec1c",
+    "Models/OBJ format/pipe-large-curve.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/pipe-large-curve.png": "383d0553b9942e5864507d5e43708d8fcd4c5d381d185403ce93e9f5ab3be467"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/pipe-large-curve.fbx": "31742eb0757cd728ea83644672c27f4a7ded5daec4ff0a4feff38ce64d99cb38",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/pipe-large-curve.glb": "5da8bbe6f74293df2cc57e743eeea0aee3e831531af1841aad0a49d47d1e1638",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/pipe-large-curve.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/pipe-large-curve.obj": "0854a93ee9c2c488365120a1335551a4077fef906857f3371de4b76acc18f3fe",
+    "Preview.png": "383d0553b9942e5864507d5e43708d8fcd4c5d381d185403ce93e9f5ab3be467"
+  },
+  "license": "../License.txt"
+}

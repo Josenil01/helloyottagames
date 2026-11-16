@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "hanukkah-dreidel",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/hanukkah-dreidel.fbx": "c4d261a2ec9061f21fbe5e4ed2e51d29521f6bc2fc8df4b792a1a0804b8e7660",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/hanukkah-dreidel.glb": "95f8f70252aa2e3da35586453aa3e422b74c365d6ac643de846ea177d6de6f65",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/hanukkah-dreidel.obj": "a28eb0eb5267dbc5b1237eaa47c2efc949cfc65d8f91bb0b7e5b4894f6687576",
+    "Models/OBJ format/hanukkah-dreidel.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/hanukkah-dreidel.png": "d598bfa7b53b97a9be907e057283d38a1c7524c07e8f2644104e73c8703e770a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/hanukkah-dreidel.fbx": "c4d261a2ec9061f21fbe5e4ed2e51d29521f6bc2fc8df4b792a1a0804b8e7660",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/hanukkah-dreidel.glb": "95f8f70252aa2e3da35586453aa3e422b74c365d6ac643de846ea177d6de6f65",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/hanukkah-dreidel.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/hanukkah-dreidel.obj": "014b88f3f273be5a7e1ae8d846056f037ec0381df4b1bf12a5733b51bbbeb278",
+    "Preview.png": "d598bfa7b53b97a9be907e057283d38a1c7524c07e8f2644104e73c8703e770a"
+  },
+  "license": "../License.txt"
+}

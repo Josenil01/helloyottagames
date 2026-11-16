@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-mouse-looping",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-mouse-looping.fbx": "3f23f0b46a8318f05c236e4528bcfc2a690f0f8d90d6631ebc1d6399f7ce48e1",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-mouse-looping.glb": "0e1e1c5ea61235a1d44adc386d44a08e78c43c8cb215a161f83657c9ee0c3a64",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-mouse-looping.obj": "4e71bf7cfba7696bbbe4c7f6237b41f40026fc27120f70b19bf7222b94c14ba4",
+    "Models/OBJ format/coaster-mouse-looping.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-mouse-looping.png": "966b1868aa33298cdfcd5edeb6eee4730f9586a3d891c5b9153c87fb5a491fa2"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-mouse-looping.fbx": "3f23f0b46a8318f05c236e4528bcfc2a690f0f8d90d6631ebc1d6399f7ce48e1",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-mouse-looping.glb": "0e1e1c5ea61235a1d44adc386d44a08e78c43c8cb215a161f83657c9ee0c3a64",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-mouse-looping.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-mouse-looping.obj": "7ebd9547016a3d154af9e515251309b6e8eca406a2adb1a82304b9422bca858d",
+    "Preview.png": "966b1868aa33298cdfcd5edeb6eee4730f9586a3d891c5b9153c87fb5a491fa2"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-slant-barrier",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-slant-barrier.fbx": "4a36e0c987edfed5b2bbe8be79e9cb82ff010c1ae1508eeb516683bdbc54c475",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-slant-barrier.glb": "c620119f0a3b23c8e883d4f8089a2449432846a4908b7611ef9a22091d72bd2c",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-slant-barrier.obj": "c751bbab424fa9f16f64f078bbd9fc09d0e65662b598d5bc47f007f99baba5b9",
+    "Models/OBJ format/road-slant-barrier.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-slant-barrier.png": "663472e0e5561dc9233d76052123084528a1947426b182532bc3dda4f09468c2"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-slant-barrier.fbx": "4a36e0c987edfed5b2bbe8be79e9cb82ff010c1ae1508eeb516683bdbc54c475",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-slant-barrier.glb": "c620119f0a3b23c8e883d4f8089a2449432846a4908b7611ef9a22091d72bd2c",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-slant-barrier.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-slant-barrier.obj": "e434934c646220105585797947dcca510e1d887bb7b195f57511e0a2a8931f93",
+    "Preview.png": "663472e0e5561dc9233d76052123084528a1947426b182532bc3dda4f09468c2"
+  },
+  "license": "../License.txt"
+}

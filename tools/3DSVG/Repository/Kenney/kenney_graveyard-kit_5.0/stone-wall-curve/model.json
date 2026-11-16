@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stone-wall-curve",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/stone-wall-curve.fbx": "7f885dc408c197d5a499fb723f9a00a53e25dd051971957ef584fd550d564975",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/stone-wall-curve.glb": "372966e9a18f37bd4cef6428a6f2ce92d5e4d49aaacbc3747c4b629dde216324",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/stone-wall-curve.obj": "7ee9bc8e3fc55254bbe5ff93f6e336609c9bdc45c497a353fd499fbc8d95f571",
+    "Models/OBJ format/stone-wall-curve.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/stone-wall-curve.png": "2c769845e7af7b11e9dc95a38c90e2295871dc200457f53dc51c6268a91e7445"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/stone-wall-curve.fbx": "7f885dc408c197d5a499fb723f9a00a53e25dd051971957ef584fd550d564975",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/stone-wall-curve.glb": "372966e9a18f37bd4cef6428a6f2ce92d5e4d49aaacbc3747c4b629dde216324",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/stone-wall-curve.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/stone-wall-curve.obj": "6421c18e2f21b757d46747876f74cdc152f4237a9ea12a4e62a2deb9716f6611",
+    "Preview.png": "2c769845e7af7b11e9dc95a38c90e2295871dc200457f53dc51c6268a91e7445"
+  },
+  "license": "../License.txt"
+}

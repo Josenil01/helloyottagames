@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-bend-sidewalk",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-bend-sidewalk.fbx": "fcb45098be6846618327dffa99609e72158fc5e52ee908e589e4246ec8bcc471",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-bend-sidewalk.glb": "4e8f7a4cc6c130d55bd754693d5aaba94e037d8639389656964ad57abefd882d",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-bend-sidewalk.obj": "b7e2a3b0dea38a4a977c391e6d0f4f33893b9a1d2b752c51c37c3fdda68286f0",
+    "Models/OBJ format/road-bend-sidewalk.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-bend-sidewalk.png": "296be325bb89c8331de065c53e80d43e2d2ad7357b7ccae4d43f68f43dcff505"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-bend-sidewalk.fbx": "fcb45098be6846618327dffa99609e72158fc5e52ee908e589e4246ec8bcc471",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-bend-sidewalk.glb": "4e8f7a4cc6c130d55bd754693d5aaba94e037d8639389656964ad57abefd882d",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-bend-sidewalk.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-bend-sidewalk.obj": "37e5f2f4aa11f6f4fdc0f347e41034d917d3d80fd7613bd0602db67b26c2709e",
+    "Preview.png": "296be325bb89c8331de065c53e80d43e2d2ad7357b7ccae4d43f68f43dcff505"
+  },
+  "license": "../License.txt"
+}

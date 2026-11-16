@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "structure-canvas",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/structure-canvas.fbx": "9158150844846ebcde4dc6afdd188d8dd978e0bdca06a85287781e9afa6a3409",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/structure-canvas.glb": "f450f215599f8962b63737825c7d55d7be498742551ba21e5633d6459b194134",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/structure-canvas.obj": "769a762268087af67c94976e71b8310c4adb179afb785c46ca1f073bc7366423",
+    "Models/OBJ format/structure-canvas.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/structure-canvas.png": "9143bb2af2f6c3c0beeece809e9f200a093ba95419e292d863239f7c6f009eb3"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/structure-canvas.fbx": "9158150844846ebcde4dc6afdd188d8dd978e0bdca06a85287781e9afa6a3409",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/structure-canvas.glb": "f450f215599f8962b63737825c7d55d7be498742551ba21e5633d6459b194134",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/structure-canvas.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/structure-canvas.obj": "207c7581374e00a7afea42cdbd1d7fccc36297d1d1345a3be2cd142da91ef106",
+    "Preview.png": "9143bb2af2f6c3c0beeece809e9f200a093ba95419e292d863239f7c6f009eb3"
+  },
+  "license": "../License.txt"
+}

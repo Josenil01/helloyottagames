@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "balcony-rail",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/balcony-rail.fbx": "29de4f7555ebcf87857c480090c565268a2c3e7768cbeb5e77fd02caa00e1682",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/balcony-rail.glb": "8195227936b0b53047c1f813708a10f1ebc82e14b92baa4f47c8b36ec35d1cda",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/balcony-rail.obj": "c2adc48a90c02f4af5a4dd27acc5bc2a5f37a2543640b2c2fbab89f8a6c3575b",
+    "Models/OBJ format/balcony-rail.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/balcony-rail.png": "1bdfa58adff593c7959d651de3c6d655232fe9d48c15a73c119a225438bf98a0"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/balcony-rail.fbx": "29de4f7555ebcf87857c480090c565268a2c3e7768cbeb5e77fd02caa00e1682",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/balcony-rail.glb": "8195227936b0b53047c1f813708a10f1ebc82e14b92baa4f47c8b36ec35d1cda",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/balcony-rail.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/balcony-rail.obj": "31a448b7055191b09683faffb1a86556983c84c77e7dfa231412d99375ae9309",
+    "Preview.png": "1bdfa58adff593c7959d651de3c6d655232fe9d48c15a73c119a225438bf98a0"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "ride-exit",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/ride-exit.fbx": "2a5542f82dc9d90c07f9e1b484f236ff1901ae3b49c7d8465c455a3868245553",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/ride-exit.glb": "322c26ef60d101a7b2f2d398a9ebeb27ce3a40a7b1657d712644a4d0e5576aad",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/ride-exit.obj": "a78ae4212295d1540a33bb5d2e723a6af53e175f6cf7b52b3adeaa406ed56ce5",
+    "Models/OBJ format/ride-exit.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/ride-exit.png": "a24fa736f3aa6ebabf35a88a7b0da39032ca75950eeb50e917e1031dc286dbf6"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/ride-exit.fbx": "2a5542f82dc9d90c07f9e1b484f236ff1901ae3b49c7d8465c455a3868245553",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/ride-exit.glb": "322c26ef60d101a7b2f2d398a9ebeb27ce3a40a7b1657d712644a4d0e5576aad",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/ride-exit.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/ride-exit.obj": "0363920c4f7f18814474f0878deae6039173f19a03162ef333fa9c26efb381aa",
+    "Preview.png": "a24fa736f3aa6ebabf35a88a7b0da39032ca75950eeb50e917e1031dc286dbf6"
+  },
+  "license": "../License.txt"
+}

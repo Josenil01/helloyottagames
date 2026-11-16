@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bowl-corner-inner",
+  "pack": "kenney_mini-skate",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "806ff16fd46a2a259485672edfdc71c3d1bce255db71c01abda9a095b5e661d2",
+    "Models/Textures/variation-a.png": "8ef3f98395dc6c687a374511be39a9c3217b1c1fe7999054a2dcf54dadb3ec28",
+    "Models/FBX format/bowl-corner-inner.fbx": "b5a193f45df1c43e9cace33661a3be304cde117e42a8fd361750574ec39b315e",
+    "Models/GLB format/Textures/colormap.png": "806ff16fd46a2a259485672edfdc71c3d1bce255db71c01abda9a095b5e661d2",
+    "Models/GLB format/bowl-corner-inner.glb": "62d068ccb43c58babe468bcb1faf411c1a050be87958e144c756e44d67c90edd",
+    "Models/OBJ format/Textures/colormap.png": "806ff16fd46a2a259485672edfdc71c3d1bce255db71c01abda9a095b5e661d2",
+    "Models/OBJ format/bowl-corner-inner.obj": "d162210c1d03978931538776c82ce763e7a1db27660b95e16d1e2bcedb5b3661",
+    "Models/OBJ format/bowl-corner-inner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/bowl-corner-inner.png": "6aa6802cb2ac6931369e628ad430b5fe34c092e5e559056f04ec6eee063072e9"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "806ff16fd46a2a259485672edfdc71c3d1bce255db71c01abda9a095b5e661d2",
+    "Textures/FBX/variation-a.png": "8ef3f98395dc6c687a374511be39a9c3217b1c1fe7999054a2dcf54dadb3ec28",
+    "FBX format/bowl-corner-inner.fbx": "b5a193f45df1c43e9cace33661a3be304cde117e42a8fd361750574ec39b315e",
+    "Textures/GLB/colormap.png": "806ff16fd46a2a259485672edfdc71c3d1bce255db71c01abda9a095b5e661d2",
+    "Textures/GLB/variation-a.png": "8ef3f98395dc6c687a374511be39a9c3217b1c1fe7999054a2dcf54dadb3ec28",
+    "GLB format/bowl-corner-inner.glb": "62d068ccb43c58babe468bcb1faf411c1a050be87958e144c756e44d67c90edd",
+    "Textures/OBJ/colormap.png": "806ff16fd46a2a259485672edfdc71c3d1bce255db71c01abda9a095b5e661d2",
+    "Textures/OBJ/variation-a.png": "8ef3f98395dc6c687a374511be39a9c3217b1c1fe7999054a2dcf54dadb3ec28",
+    "OBJ format/bowl-corner-inner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/bowl-corner-inner.obj": "407b23bbd971505867be97460e62db2cceaf63a4c6e982906495f2a84285777d",
+    "Preview.png": "6aa6802cb2ac6931369e628ad430b5fe34c092e5e559056f04ec6eee063072e9"
+  },
+  "license": "../License.txt"
+}

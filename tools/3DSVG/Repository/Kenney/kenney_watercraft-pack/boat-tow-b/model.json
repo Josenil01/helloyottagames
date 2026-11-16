@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "boat-tow-b",
+  "pack": "kenney_watercraft-pack",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/FBX format/boat-tow-b.fbx": "ff7749f7fd743be6aaf3c0e4600cb8d4cc784d28e0ca9dbf63801e0fa0386ff4",
+    "Models/GLB format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/GLB format/boat-tow-b.glb": "5de0b6a46e5679d651e673198256e8a369bea4970025c2c4e25da60d15ac85c5",
+    "Models/OBJ format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/OBJ format/boat-tow-b.obj": "73571683d2233cd49843fe60c14889fab31c339b321b46d514617b7cde8d1db6",
+    "Models/OBJ format/boat-tow-b.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/boat-tow-b.png": "22d1f8c46575a2f821bf30d259f66400d214fdd0388b70577e9502db0b3d1c1f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "FBX format/boat-tow-b.fbx": "ff7749f7fd743be6aaf3c0e4600cb8d4cc784d28e0ca9dbf63801e0fa0386ff4",
+    "Textures/GLB/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "GLB format/boat-tow-b.glb": "5de0b6a46e5679d651e673198256e8a369bea4970025c2c4e25da60d15ac85c5",
+    "Textures/OBJ/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "OBJ format/boat-tow-b.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/boat-tow-b.obj": "454e08660260ca15e5f3c51ecdae4b61fb161a24a084204518801bdb3d498bb2",
+    "Preview.png": "22d1f8c46575a2f821bf30d259f66400d214fdd0388b70577e9502db0b3d1c1f"
+  },
+  "license": "../License.txt"
+}

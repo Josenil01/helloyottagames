@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "ladder",
+  "pack": "kenney_mini-forest_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "Models/FBX format/ladder.fbx": "9d5071c4fdb6b7139382dff0eda2c99012191490843a1147649a33d2380dea79",
+    "Models/GLB format/Textures/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "Models/GLB format/ladder.glb": "77a90f50d38139223fd4cbf67d9367730872c27552637b6112b2793e79d29b94",
+    "Models/OBJ format/Textures/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "Models/OBJ format/ladder.obj": "65a86e5188c2ff9c636efd6183a1c2c7094f76dec5773ade196a75a419b13c22",
+    "Models/OBJ format/ladder.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/ladder.png": "b81e8ac06228e669713f74c26521c7e0872753c90d1e18313c8060c8c7c7057f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "FBX format/ladder.fbx": "9d5071c4fdb6b7139382dff0eda2c99012191490843a1147649a33d2380dea79",
+    "Textures/GLB/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "GLB format/ladder.glb": "77a90f50d38139223fd4cbf67d9367730872c27552637b6112b2793e79d29b94",
+    "Textures/OBJ/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "OBJ format/ladder.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/ladder.obj": "4ab32397c0a33e5a2e7f42bee1d3f19aef0c44b8994a7ea73c5d2af993b5b533",
+    "Preview.png": "b81e8ac06228e669713f74c26521c7e0872753c90d1e18313c8060c8c7c7057f"
+  },
+  "license": "../License.txt"
+}

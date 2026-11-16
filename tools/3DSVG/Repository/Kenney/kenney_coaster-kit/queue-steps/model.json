@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "queue-steps",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/queue-steps.fbx": "442229a3e7a9d85e240cb0f7da35895d81230aabe0885f8630242f028a1e4cb7",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/queue-steps.glb": "11027b2c86df69e359b17926581d9ba3df7294d96cf0e671d9d5d080efd4ef0d",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/queue-steps.obj": "437433c4168f07011fa0214ed36927cc68629f5f71a7a7e7ad80fdca7e728af8",
+    "Models/OBJ format/queue-steps.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/queue-steps.png": "b5141f764c7333c9811c17150e400f3b20bf295033b89006e7aee3da71f4b94d"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/queue-steps.fbx": "442229a3e7a9d85e240cb0f7da35895d81230aabe0885f8630242f028a1e4cb7",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/queue-steps.glb": "11027b2c86df69e359b17926581d9ba3df7294d96cf0e671d9d5d080efd4ef0d",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/queue-steps.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/queue-steps.obj": "be112bd46f4b97aa2057beff52ea0a7302c5482930803521c6eb8f4a2ba66c9a",
+    "Preview.png": "b5141f764c7333c9811c17150e400f3b20bf295033b89006e7aee3da71f4b94d"
+  },
+  "license": "../License.txt"
+}

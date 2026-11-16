@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-corner",
+  "pack": "kenney_mini-arena",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/FBX format/wall-corner.fbx": "64b8a77b7f123ad08a857440c43e116f2e82e481ecd01570733960810bbe238f",
+    "Models/GLB format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/GLB format/wall-corner.glb": "556a59221b677a46ce7c91822c951de715c091121069ee4b4902d9b831a92b12",
+    "Models/OBJ format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/OBJ format/wall-corner.obj": "0668a644a525499559843bf36d4fd741e0812e5b55a16f0402538aa65310cd46",
+    "Models/OBJ format/wall-corner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-corner.png": "cc46d04c6eba16bf12761b5ada29af879545d796e74a744747f2a7d22493bbbb"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "FBX format/wall-corner.fbx": "64b8a77b7f123ad08a857440c43e116f2e82e481ecd01570733960810bbe238f",
+    "Textures/GLB/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "GLB format/wall-corner.glb": "556a59221b677a46ce7c91822c951de715c091121069ee4b4902d9b831a92b12",
+    "Textures/OBJ/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "OBJ format/wall-corner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-corner.obj": "cbbc9b8fa33b032560fe05d9cc0ed0b741d02b748defa76527cf0e54adebe49b",
+    "Preview.png": "cc46d04c6eba16bf12761b5ada29af879545d796e74a744747f2a7d22493bbbb"
+  },
+  "license": "../License.txt"
+}

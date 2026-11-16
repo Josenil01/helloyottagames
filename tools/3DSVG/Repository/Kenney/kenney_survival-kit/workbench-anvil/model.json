@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "workbench-anvil",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/workbench-anvil.fbx": "a329adccde45549d49ead01f7aff623c960598d4a27d06536f2693f80ae8d218",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/workbench-anvil.glb": "a6253df726c1eba7cbaddf7e31cd5a4adfac31309894bf647e4b803d9d75c275",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/workbench-anvil.obj": "8a3518eadbe393d2e3eb3548d331052405083f8b53ccec9c9e473872ba52c7bf",
+    "Models/OBJ format/workbench-anvil.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/workbench-anvil.png": "8d40003563126023f795dcbba7ab67bc53230b83c8dbbd183c53ce1d8810284f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/workbench-anvil.fbx": "a329adccde45549d49ead01f7aff623c960598d4a27d06536f2693f80ae8d218",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/workbench-anvil.glb": "a6253df726c1eba7cbaddf7e31cd5a4adfac31309894bf647e4b803d9d75c275",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/workbench-anvil.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/workbench-anvil.obj": "ca96fdff3cea90eddd865d44bf3b671f4a2f6da651aff74346bf0ad5b7b433f3",
+    "Preview.png": "8d40003563126023f795dcbba7ab67bc53230b83c8dbbd183c53ce1d8810284f"
+  },
+  "license": "../License.txt"
+}

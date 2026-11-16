@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "chair",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/chair.fbx": "e7b7be9a7f4220db05a1bddd0cfa595e1d816e7446545223b3b04f6cdc566ca5",
+    "Models/GLTF format/chair.glb": "c8a11eec93e89e31250ba91afc1b8d56c3bec7ae86640fd1239f595ff4180883",
+    "Models/OBJ format/chair.obj": "73b0cc678606b37302bfb66192a007855ce9a7826f8824e04e75f8a413a82f02",
+    "Models/OBJ format/chair.mtl": "eb2bffff6262d9b032d9ae1de51467559b6a03da66cd68ac5ecd34ecd004c0c5"
+  },
+  "files": {
+    "FBX format/chair.fbx": "e7b7be9a7f4220db05a1bddd0cfa595e1d816e7446545223b3b04f6cdc566ca5",
+    "GLB format/chair.glb": "c8a11eec93e89e31250ba91afc1b8d56c3bec7ae86640fd1239f595ff4180883",
+    "OBJ format/chair.mtl": "9e288bee18bb8b6b628dec6d8d8acbaba02d65903f607a1be6681b4207798c0b",
+    "OBJ format/chair.obj": "d477b5e69be8a340a628707a7afd7d2692173a681213c8b66e9cbe339af714f7"
+  },
+  "license": "../License.txt"
+}

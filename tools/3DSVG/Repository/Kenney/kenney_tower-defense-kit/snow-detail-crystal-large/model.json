@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "snow-detail-crystal-large",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/snow-detail-crystal-large.fbx": "21776160e19b46106906fd1c2c4a2f3c06d20d92220dcf9274ffa8d466f3af5b",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/snow-detail-crystal-large.glb": "a00a58f1836d8f80b51fee65a2cc6234b6cb8fa8c5e10e21cb48dff9e02e7aef",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/snow-detail-crystal-large.obj": "ed8294c39a5f97b31b48019f28030d3f7d79a1a8fe0bb4d980707482fc4fef7c",
+    "Models/OBJ format/snow-detail-crystal-large.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/snow-detail-crystal-large.png": "cca130cc22837c098387009d3b1e56dac02c4705d64a3e4895e3ac60bd4c11b3"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/snow-detail-crystal-large.fbx": "21776160e19b46106906fd1c2c4a2f3c06d20d92220dcf9274ffa8d466f3af5b",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/snow-detail-crystal-large.glb": "a00a58f1836d8f80b51fee65a2cc6234b6cb8fa8c5e10e21cb48dff9e02e7aef",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/snow-detail-crystal-large.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/snow-detail-crystal-large.obj": "a7299a4a1a82bef7dfb7b86b650e567fd06c140e4df3bdef8de051f7a615b891",
+    "Preview.png": "cca130cc22837c098387009d3b1e56dac02c4705d64a3e4895e3ac60bd4c11b3"
+  },
+  "license": "../License.txt"
+}

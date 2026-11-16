@@ -1,0 +1,24 @@
+{
+  "name": "esfinge-blockie-redemoinho",
+  "pack": "Hello Yotta · Blockie",
+  "status": "ready",
+  "style": "Blockie, cubic volumes, single-segment chamfers, flat faces, matte palette",
+  "mood": "sucking",
+  "author": "Hello Yotta / authored locally with Blender",
+  "statistics": {
+    "vertices": 1104,
+    "triangles": 2024,
+    "dimensions": [
+      2.3499999046325684,
+      3.319999933242798,
+      2.609999895095825
+    ]
+  },
+  "front": "Blender -Y / 3DSVG +Z",
+  "formats": [
+    "blend",
+    "fbx",
+    "glb",
+    "obj"
+  ]
+}

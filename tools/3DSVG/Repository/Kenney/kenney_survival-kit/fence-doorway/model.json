@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "fence-doorway",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/fence-doorway.fbx": "3ede7066b56de0fb0a60e9254b9dcf3dc66291c0696203296956b496463b1c96",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/fence-doorway.glb": "f52756aa5150704dba49ef4d4d179a20dfd333e4ce9a914a5e9b0088cf2db933",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/fence-doorway.obj": "9b310b9d21042cc8801ab931ee06ff9849d1a885ee71293e4b64724680633873",
+    "Models/OBJ format/fence-doorway.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/fence-doorway.png": "1fa6769dff7d8eff3bf8805a8354ec6fcbaa61f4ba32b43a1d640523481ccd61"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/fence-doorway.fbx": "3ede7066b56de0fb0a60e9254b9dcf3dc66291c0696203296956b496463b1c96",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/fence-doorway.glb": "f52756aa5150704dba49ef4d4d179a20dfd333e4ce9a914a5e9b0088cf2db933",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/fence-doorway.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/fence-doorway.obj": "78139a9007887667dd81d149832e38a915007a22e2ca49692769074546e9c446",
+    "Preview.png": "1fa6769dff7d8eff3bf8805a8354ec6fcbaa61f4ba32b43a1d640523481ccd61"
+  },
+  "license": "../License.txt"
+}

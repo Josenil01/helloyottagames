@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-mouse-straight-bump-down",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-mouse-straight-bump-down.fbx": "9991f68c1796d92858ea1bb3e4fe545ab5ea905f99075d8fe96c4736f81f1465",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-mouse-straight-bump-down.glb": "a9c48b6ca37c7fd580493fdc5a51dcd7935ff59709ec2b0cf05bd907457418e6",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-mouse-straight-bump-down.obj": "788234401b115622673eb0b62c494d3834485f177e1b09e0cbb18873e10a966b",
+    "Models/OBJ format/coaster-mouse-straight-bump-down.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-mouse-straight-bump-down.png": "1bae57f8ec6515fe6fd8342ddd551eebe3bc961cf849d7a38dc038c9ee6d58ca"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-mouse-straight-bump-down.fbx": "9991f68c1796d92858ea1bb3e4fe545ab5ea905f99075d8fe96c4736f81f1465",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-mouse-straight-bump-down.glb": "a9c48b6ca37c7fd580493fdc5a51dcd7935ff59709ec2b0cf05bd907457418e6",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-mouse-straight-bump-down.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-mouse-straight-bump-down.obj": "43f936d5fee8a7414e67607855533cdac015a69588bcbee62fbc3a855d9dcf4c",
+    "Preview.png": "1bae57f8ec6515fe6fd8342ddd551eebe3bc961cf849d7a38dc038c9ee6d58ca"
+  },
+  "license": "../License.txt"
+}

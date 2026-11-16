@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cargo-container-a",
+  "pack": "kenney_watercraft-pack",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/FBX format/cargo-container-a.fbx": "ab19d66bd2807a0e6a993e781be9092d998e590204f88f0505d01ce698882e63",
+    "Models/GLB format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/GLB format/cargo-container-a.glb": "d45502f2ca3af2a9885d3082de62f89c37f2aad12e8447d35f7eca656e7cbee0",
+    "Models/OBJ format/Textures/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "Models/OBJ format/cargo-container-a.obj": "a7339b0d9f7e3303df59a5b8826ab8d27c8d6b1c97579d29a2eb26c52b778877",
+    "Models/OBJ format/cargo-container-a.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cargo-container-a.png": "c7c8f9d818b4916217e20851b12ad38fe95171f218bc5216ba1ee065c5421c37"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "FBX format/cargo-container-a.fbx": "ab19d66bd2807a0e6a993e781be9092d998e590204f88f0505d01ce698882e63",
+    "Textures/GLB/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "GLB format/cargo-container-a.glb": "d45502f2ca3af2a9885d3082de62f89c37f2aad12e8447d35f7eca656e7cbee0",
+    "Textures/OBJ/colormap.png": "311138350e74e35c5497a1bd8076a01740b7c302bed11027639fa553459a68de",
+    "OBJ format/cargo-container-a.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cargo-container-a.obj": "c71a075c9e42707c1348e5acd43b747373052708b61feade86238c6d8b70f0fc",
+    "Preview.png": "c7c8f9d818b4916217e20851b12ad38fe95171f218bc5216ba1ee065c5421c37"
+  },
+  "license": "../License.txt"
+}

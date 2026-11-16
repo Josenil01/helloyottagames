@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "structure-platform-dock",
+  "pack": "kenney_pirate-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/FBX format/structure-platform-dock.fbx": "9a10395ef022f046e7c86a24cf44ffbbdaf049ff73932bab0b4860267255d4d6",
+    "Models/GLB format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/GLB format/structure-platform-dock.glb": "bf64343d37b5570cb78cf0918e3eeb98f96f9b2c69b3f16d103c61ebc8f063f7",
+    "Models/OBJ format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/OBJ format/structure-platform-dock.obj": "473566397e8a0691a06333d6123d1d4ac05070c4c815481a8adcc72b30103f80",
+    "Models/OBJ format/structure-platform-dock.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/structure-platform-dock.png": "cafbfd7372eb33212fa47ed74c0d6bbc78bfcb964a13d8bc785070ad687b0117"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "FBX format/structure-platform-dock.fbx": "9a10395ef022f046e7c86a24cf44ffbbdaf049ff73932bab0b4860267255d4d6",
+    "Textures/GLB/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "GLB format/structure-platform-dock.glb": "bf64343d37b5570cb78cf0918e3eeb98f96f9b2c69b3f16d103c61ebc8f063f7",
+    "Textures/OBJ/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "OBJ format/structure-platform-dock.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/structure-platform-dock.obj": "63813d01b2a545475ff7baa13e883a1f6c396b28b3657ddae0a476a3ad11adf7",
+    "Preview.png": "cafbfd7372eb33212fa47ed74c0d6bbc78bfcb964a13d8bc785070ad687b0117"
+  },
+  "license": "../License.txt"
+}

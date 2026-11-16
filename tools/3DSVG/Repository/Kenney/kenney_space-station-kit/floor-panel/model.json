@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "floor-panel",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/floor-panel.fbx": "45aab8752b91249905990b81c0698745c08b4fdc2602db4248d7d3b9d7b6c2f0",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/floor-panel.glb": "5b9f1689347a1c490b8ddbf79f8741a6fcab1140ebcf62eb5853b36fbbdab53e",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/floor-panel.obj": "d754706d10ac756b84de49735e48c7218b26efbfd07179e71204f49167ada95e",
+    "Models/OBJ format/floor-panel.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/floor-panel.png": "da076baf1092346c69670fec316660c188ab183cbae6eb832c73f4ba84fccb8b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/floor-panel.fbx": "45aab8752b91249905990b81c0698745c08b4fdc2602db4248d7d3b9d7b6c2f0",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/floor-panel.glb": "5b9f1689347a1c490b8ddbf79f8741a6fcab1140ebcf62eb5853b36fbbdab53e",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/floor-panel.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/floor-panel.obj": "05470bbf77a52fe8a00807cd93c3e0d8ee4bf4af9624f95906848ff3d09730f8",
+    "Preview.png": "da076baf1092346c69670fec316660c188ab183cbae6eb832c73f4ba84fccb8b"
+  },
+  "license": "../License.txt"
+}

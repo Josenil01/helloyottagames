@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "snow-tile-river-slope",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/snow-tile-river-slope.fbx": "eede3bb7a60f8bee37a045b7b2224b5d1417f7f53727392aba38f93af83a69c8",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/snow-tile-river-slope.glb": "877ac5b979907428427b4e324637af93b831244bb0d05e899e9f585b7f5cdb15",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/snow-tile-river-slope.obj": "a626b83148d0774a3b8965fd4c500bedb15c98c5b3f40b9902277782413aacf5",
+    "Models/OBJ format/snow-tile-river-slope.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/snow-tile-river-slope.png": "31d81ada81beb42f98b374e874527caf775bfc9afaea133b48a85d2218ceacf0"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/snow-tile-river-slope.fbx": "eede3bb7a60f8bee37a045b7b2224b5d1417f7f53727392aba38f93af83a69c8",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/snow-tile-river-slope.glb": "877ac5b979907428427b4e324637af93b831244bb0d05e899e9f585b7f5cdb15",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/snow-tile-river-slope.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/snow-tile-river-slope.obj": "918b42ceec76aae5bff80378ce4a7814b1d3741a6529ca559f947dd5396a0d2b",
+    "Preview.png": "31d81ada81beb42f98b374e874527caf775bfc9afaea133b48a85d2218ceacf0"
+  },
+  "license": "../License.txt"
+}

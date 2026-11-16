@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "block-grass-large-tall",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/block-grass-large-tall.fbx": "e010f3eb369400d73eca5d68a42f626a02f3cccdee59ce8b11cd772e4f574f52",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/block-grass-large-tall.glb": "61c9aaaf8c8ea071731dc27b0def1711c482d67768a2f456fc03a746ae29a80a",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/block-grass-large-tall.obj": "155e34e4bd1ecd5a4fa737a1409d750053b3836a96d89e711a1ad3310ba5a8bb",
+    "Models/OBJ format/block-grass-large-tall.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/block-grass-large-tall.png": "a59b471f44d606eb4a0d7e69238622814aa6dca8a1ad01908e4b66f09ab7aa6c"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/block-grass-large-tall.fbx": "e010f3eb369400d73eca5d68a42f626a02f3cccdee59ce8b11cd772e4f574f52",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/block-grass-large-tall.glb": "61c9aaaf8c8ea071731dc27b0def1711c482d67768a2f456fc03a746ae29a80a",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/block-grass-large-tall.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/block-grass-large-tall.obj": "f762a55daa71ba780ad64aa167bc763b5bbcd386e1aa5445c92c0490b74b96e9",
+    "Preview.png": "a59b471f44d606eb4a0d7e69238622814aa6dca8a1ad01908e4b66f09ab7aa6c"
+  },
+  "license": "../License.txt"
+}

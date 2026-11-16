@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "donut-chocolate",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/donut-chocolate.fbx": "964dda41a89a76fe70b6a428d641cf3fbf601b8b1670220703639c21dfadfc44",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/donut-chocolate.glb": "857b6c73117598668db118378f6c801df9bb378af7292ff0b2ba919a4faa396c",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/donut-chocolate.obj": "8bd3b60a2a230c7fee685bd155d5c08721d333a1f2d28e6d2f394500794876bb",
+    "Models/OBJ format/donut-chocolate.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/donut-chocolate.png": "3f569a32e2ed1be3fc72bc554b23c71e855675f0d0791290284ddfc2d37eea07"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/donut-chocolate.fbx": "964dda41a89a76fe70b6a428d641cf3fbf601b8b1670220703639c21dfadfc44",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/donut-chocolate.glb": "857b6c73117598668db118378f6c801df9bb378af7292ff0b2ba919a4faa396c",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/donut-chocolate.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/donut-chocolate.obj": "5b5959b4eb80ba67d0e60fcd3260726f4b0d12fd96c5c665f575af5ddf47dd19",
+    "Preview.png": "3f569a32e2ed1be3fc72bc554b23c71e855675f0d0791290284ddfc2d37eea07"
+  },
+  "license": "../License.txt"
+}

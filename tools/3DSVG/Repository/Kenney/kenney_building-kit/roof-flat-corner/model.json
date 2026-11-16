@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "roof-flat-corner",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/roof-flat-corner.fbx": "32d2a1c9d000c9d7feafb9ad1c5d086d35d616c76b7638ae7aefb6c8e9d31006",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/roof-flat-corner.glb": "63172494beada870666874be756316c0937dec15286b7acc44fbf6f42ae17709",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/roof-flat-corner.obj": "809418f56ea33cf33fea4b31b0614b9e8e9845bd9aa660493129544ea4806e26",
+    "Models/OBJ format/roof-flat-corner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/roof-flat-corner.png": "5293b64c49729a3dcee37e1badb8a98e4ad2c19d98aafee62a05d823061c73cd"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/roof-flat-corner.fbx": "32d2a1c9d000c9d7feafb9ad1c5d086d35d616c76b7638ae7aefb6c8e9d31006",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/roof-flat-corner.glb": "63172494beada870666874be756316c0937dec15286b7acc44fbf6f42ae17709",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/roof-flat-corner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/roof-flat-corner.obj": "005b2d9013fa86b91e7e33fe754c3bb8a0700554a98b668169ae86f90b8cd1aa",
+    "Preview.png": "5293b64c49729a3dcee37e1badb8a98e4ad2c19d98aafee62a05d823061c73cd"
+  },
+  "license": "../License.txt"
+}

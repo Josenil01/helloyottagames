@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "altar-wood",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/altar-wood.fbx": "72031f8621854e5cf6e32de702172c60078b0a165eae445f42767d94d669b797",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/altar-wood.glb": "f1702fc2cbbbb417670ef96bd543209ac5764afdb4e43dbdf267328b62f75968",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/altar-wood.obj": "974bce7bb1ff6a878e3bf85daafa4bca6b08995bd66158e9e618b4bbf185977f",
+    "Models/OBJ format/altar-wood.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/altar-wood.png": "d0c2308b1f82bfdb0787aef1feb19286a9e06d823908c49f3742e4f87d2f6662"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/altar-wood.fbx": "72031f8621854e5cf6e32de702172c60078b0a165eae445f42767d94d669b797",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/altar-wood.glb": "f1702fc2cbbbb417670ef96bd543209ac5764afdb4e43dbdf267328b62f75968",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/altar-wood.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/altar-wood.obj": "23ff853ea6d3e7adedb483375b5ac682c9b1719de93fa79d0c02f71f52f2fa3b",
+    "Preview.png": "d0c2308b1f82bfdb0787aef1feb19286a9e06d823908c49f3742e4f87d2f6662"
+  },
+  "license": "../License.txt"
+}

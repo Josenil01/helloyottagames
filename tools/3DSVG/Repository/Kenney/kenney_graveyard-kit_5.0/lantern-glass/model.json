@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "lantern-glass",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/lantern-glass.fbx": "e34439e35208e5fc2ddc5a774a7d8da60fcf2cba854977b7ffc382b446eb7b83",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/lantern-glass.glb": "7abd3637f191da06255cc9215c7801e7f4a4ed7a88dcce0f63dbc2bff1e6f5e5",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/lantern-glass.obj": "3135a1dcaea2c91b79aca1e38cdce9a895fb28a0abc45c94350c6e13dbd7906c",
+    "Models/OBJ format/lantern-glass.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/lantern-glass.png": "1190f18e116ba8bc9b3970aeebfaf1d0efd068b49122c14313c8af1383f4e356"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/lantern-glass.fbx": "e34439e35208e5fc2ddc5a774a7d8da60fcf2cba854977b7ffc382b446eb7b83",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/lantern-glass.glb": "7abd3637f191da06255cc9215c7801e7f4a4ed7a88dcce0f63dbc2bff1e6f5e5",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/lantern-glass.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/lantern-glass.obj": "8af88ce586c2f076696dd6c0b8992843276ab94d453803235ebdc52f5c8c7fd5",
+    "Preview.png": "1190f18e116ba8bc9b3970aeebfaf1d0efd068b49122c14313c8af1383f4e356"
+  },
+  "license": "../License.txt"
+}

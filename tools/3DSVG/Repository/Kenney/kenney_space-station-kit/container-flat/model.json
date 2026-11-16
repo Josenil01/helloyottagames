@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "container-flat",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/container-flat.fbx": "718a5918774ae532efad996bd2922cfa681e758e76f9782da3cc86849190beb3",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/container-flat.glb": "f76bdebf96ad858dd8a6be5cb71694616a63488cbac3f61d01485dccde99fd0c",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/container-flat.obj": "e5e1c6493690473538217f4efaf911b47b755435be3db059bc7f72b92cb2770f",
+    "Models/OBJ format/container-flat.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/container-flat.png": "72e15a35b422a10e7a7fc9e32d2bafd2ce1f72cb14958fddbe5770c2d55f9601"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/container-flat.fbx": "718a5918774ae532efad996bd2922cfa681e758e76f9782da3cc86849190beb3",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/container-flat.glb": "f76bdebf96ad858dd8a6be5cb71694616a63488cbac3f61d01485dccde99fd0c",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/container-flat.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/container-flat.obj": "9dd71d656258ac4912f544f0067ee39f9e59c81e27327b2703635c212036964d",
+    "Preview.png": "72e15a35b422a10e7a7fc9e32d2bafd2ce1f72cb14958fddbe5770c2d55f9601"
+  },
+  "license": "../License.txt"
+}

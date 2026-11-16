@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cabbage",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/cabbage.fbx": "904da04b8dcaabcc650cd8373b68879844de46e6d1e4a90c53123fa058147f74",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/cabbage.glb": "6ec1db20d0d1900ed72ff66cb836fe0b0b6bcf63387fb0ff1c15ff80b7647a5c",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/cabbage.obj": "2315f8aef134334a4195e7021364b14949839a0dd831700bdf4422e4863b2b4b",
+    "Models/OBJ format/cabbage.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cabbage.png": "b582d3018fa03af3a854a3930a9b34e036f172fd33cb7ac7895c4883197d3613"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/cabbage.fbx": "904da04b8dcaabcc650cd8373b68879844de46e6d1e4a90c53123fa058147f74",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/cabbage.glb": "6ec1db20d0d1900ed72ff66cb836fe0b0b6bcf63387fb0ff1c15ff80b7647a5c",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/cabbage.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cabbage.obj": "cb4a0a98513a4df5a963a5780a5ffefec9e3779a5336b9415cb744a1a29682ef",
+    "Preview.png": "b582d3018fa03af3a854a3930a9b34e036f172fd33cb7ac7895c4883197d3613"
+  },
+  "license": "../License.txt"
+}

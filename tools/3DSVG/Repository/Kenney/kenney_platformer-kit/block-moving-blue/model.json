@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "block-moving-blue",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/block-moving-blue.fbx": "104e74f2db44f9b4bfa833a534428e413c4e0d7c1831d36cdffa3be380d2e49b",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/block-moving-blue.glb": "4d6d946e31bcda0f4644ca7c1f2d7325c05db835c3ee072153380b37035bfaf7",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/block-moving-blue.obj": "24b241c4f3fe5e5318485a07342ece391de3a316c23b2944951b40ab8a798cab",
+    "Models/OBJ format/block-moving-blue.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/block-moving-blue.png": "7f9a59b7321b8ad2d3cd02563ed9ee77aad56f6fd2ed036f1cbc1e276345363f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/block-moving-blue.fbx": "104e74f2db44f9b4bfa833a534428e413c4e0d7c1831d36cdffa3be380d2e49b",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/block-moving-blue.glb": "4d6d946e31bcda0f4644ca7c1f2d7325c05db835c3ee072153380b37035bfaf7",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/block-moving-blue.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/block-moving-blue.obj": "7f1d3f54cb6db4492c189c45c9806eb7131fbbe9df335e8aad4ae755035d855e",
+    "Preview.png": "7f9a59b7321b8ad2d3cd02563ed9ee77aad56f6fd2ed036f1cbc1e276345363f"
+  },
+  "license": "../License.txt"
+}

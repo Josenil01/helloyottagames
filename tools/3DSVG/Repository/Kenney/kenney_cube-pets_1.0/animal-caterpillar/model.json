@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "animal-caterpillar",
+  "pack": "kenney_cube-pets_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/FBX format/animal-caterpillar.fbx": "c09ca03017283be3f96b21a90494d1dcb3548130681ac0b9ee9df20bb3630119",
+    "Models/GLB format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/GLB format/animal-caterpillar.glb": "470d2481ba246ff957da0164707326e805c54dde553468a104e83ad9c7281723",
+    "Models/OBJ format/Textures/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "Models/OBJ format/animal-caterpillar.obj": "44311ac3a6cc0685d02f0947dd8f365e1921e639d50481d3e1334a8cf606d67c",
+    "Models/OBJ format/animal-caterpillar.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/animal-caterpillar.png": "7621b355b21b1a170971cdc859afd64e37cdd51aae6ba6c50d3f357774cb4b57"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "FBX format/animal-caterpillar.fbx": "c09ca03017283be3f96b21a90494d1dcb3548130681ac0b9ee9df20bb3630119",
+    "Textures/GLB/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "GLB format/animal-caterpillar.glb": "470d2481ba246ff957da0164707326e805c54dde553468a104e83ad9c7281723",
+    "Textures/OBJ/colormap.png": "2f6d0032e51c2d49b13b8e689d59eb39aa3ee6c32f2a1851213e11fc7593177d",
+    "OBJ format/animal-caterpillar.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/animal-caterpillar.obj": "a328f4e7c36db8d3f2cd286fc48ac338ff35cdd784fd797f820b46569f25e02e",
+    "Preview.png": "7621b355b21b1a170971cdc859afd64e37cdd51aae6ba6c50d3f357774cb4b57"
+  },
+  "license": "../License.txt"
+}

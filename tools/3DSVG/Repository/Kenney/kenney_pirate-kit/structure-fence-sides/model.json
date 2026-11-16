@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "structure-fence-sides",
+  "pack": "kenney_pirate-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/FBX format/structure-fence-sides.fbx": "b6ec109211afbb0c1035c8100b60d9c11e149937783c055bc8b2de7e0c227f26",
+    "Models/GLB format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/GLB format/structure-fence-sides.glb": "8c11f8e0bc274cd287f7d6f9b8abe054aa5ee3b2bb9b60d53bee4c1266004031",
+    "Models/OBJ format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/OBJ format/structure-fence-sides.obj": "2ce2089a027a92a86c898573e52921b3a4bb6ac1ada9897049a6fe9ac289d35b",
+    "Models/OBJ format/structure-fence-sides.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/structure-fence-sides.png": "501839168ecac317136fd5f6853d66fdb261d3718113c8eb1201bb6dba128264"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "FBX format/structure-fence-sides.fbx": "b6ec109211afbb0c1035c8100b60d9c11e149937783c055bc8b2de7e0c227f26",
+    "Textures/GLB/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "GLB format/structure-fence-sides.glb": "8c11f8e0bc274cd287f7d6f9b8abe054aa5ee3b2bb9b60d53bee4c1266004031",
+    "Textures/OBJ/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "OBJ format/structure-fence-sides.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/structure-fence-sides.obj": "a92eceb2234d1ddbe192541728c8e3b60c76f6bf4e876bf66b49b183b437044f",
+    "Preview.png": "501839168ecac317136fd5f6853d66fdb261d3718113c8eb1201bb6dba128264"
+  },
+  "license": "../License.txt"
+}

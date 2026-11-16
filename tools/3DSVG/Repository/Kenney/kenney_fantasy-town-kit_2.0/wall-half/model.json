@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-half",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/wall-half.fbx": "aaddab5537bd1181c6bc2b9016eb5e15fb4f48ea5c3a11550d29e8f4bdfdaa95",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/wall-half.glb": "b64b5d8a8d3aa472162e3c00197fc24253a791a6100b8b63590d42eb2fb62eb4",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/wall-half.obj": "88852644aa37d077fa3aeb76479ecfe57d7b984de32389d6bea14ec6b4baa434",
+    "Models/OBJ format/wall-half.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-half.png": "9c373f688529bbc531e806758eb4e298160abc983553e2652caa9c77b86c51aa"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/wall-half.fbx": "aaddab5537bd1181c6bc2b9016eb5e15fb4f48ea5c3a11550d29e8f4bdfdaa95",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/wall-half.glb": "b64b5d8a8d3aa472162e3c00197fc24253a791a6100b8b63590d42eb2fb62eb4",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/wall-half.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-half.obj": "b39390fedad99f3e6d392b1d6dc0be8885ddec05b17080679553ba9a85b56c58",
+    "Preview.png": "9c373f688529bbc531e806758eb4e298160abc983553e2652caa9c77b86c51aa"
+  },
+  "license": "../License.txt"
+}

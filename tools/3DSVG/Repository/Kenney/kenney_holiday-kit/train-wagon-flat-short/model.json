@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "train-wagon-flat-short",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/train-wagon-flat-short.fbx": "3ab9646b5c8919df1a7661e8e2a5066c641eb59e80d897f85019b539fda7486d",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/train-wagon-flat-short.glb": "0430567fc638f3aa30607eb79467669f2e002927620b6c1a54aa82e97922fb7f",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/train-wagon-flat-short.obj": "eeb0830660ca48023090046a19b942112591b20b98dc9f9556aceb0fe94083f9",
+    "Models/OBJ format/train-wagon-flat-short.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/train-wagon-flat-short.png": "7eb4c01469ae3fdf5b0e528b80e0095c5fc2f851d3e77f9be9c108ee6c383d7a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/train-wagon-flat-short.fbx": "3ab9646b5c8919df1a7661e8e2a5066c641eb59e80d897f85019b539fda7486d",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/train-wagon-flat-short.glb": "0430567fc638f3aa30607eb79467669f2e002927620b6c1a54aa82e97922fb7f",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/train-wagon-flat-short.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/train-wagon-flat-short.obj": "dce0024762f50da011b9dcf4567aadaa671812e1c3072b44c3d6bc7296e44591",
+    "Preview.png": "7eb4c01469ae3fdf5b0e528b80e0095c5fc2f851d3e77f9be9c108ee6c383d7a"
+  },
+  "license": "../License.txt"
+}

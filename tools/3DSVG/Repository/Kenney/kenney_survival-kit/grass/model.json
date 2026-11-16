@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "grass",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/grass.fbx": "1c2c821bbe4fe1cad420dc6d670cc590167971220155dad68d33f42fed8b4ab3",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/grass.glb": "f9430602f076fad8f67b396008ba412fc0c073a93eb8c863ec0944564cbda93d",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/grass.obj": "e247dc5f15488365296b3691ac677d8d97fdefd3b85efa55f20f72d975da8fc5",
+    "Models/OBJ format/grass.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/grass.png": "cbf6ae1a81dfcb16de5e5e851cd48b2c18325d4dcf7141bcddebba000a3a3ce5"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/grass.fbx": "1c2c821bbe4fe1cad420dc6d670cc590167971220155dad68d33f42fed8b4ab3",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/grass.glb": "f9430602f076fad8f67b396008ba412fc0c073a93eb8c863ec0944564cbda93d",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/grass.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/grass.obj": "5811b5f8926ee463b128cbdfbf745544ffbc0c79b070e4b78388f1b2517e9864",
+    "Preview.png": "cbf6ae1a81dfcb16de5e5e851cd48b2c18325d4dcf7141bcddebba000a3a3ce5"
+  },
+  "license": "../License.txt"
+}

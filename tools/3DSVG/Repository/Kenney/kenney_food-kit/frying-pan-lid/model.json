@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "frying-pan-lid",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/frying-pan-lid.fbx": "4f813d548225f3f2e7a15f8b16f13cd9705b3f9fec827dae664b2c265a24b02c",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/frying-pan-lid.glb": "0ef3b50b783fdd86fb75f141b194c70d8d98a7f97dd7fd00c5c31b643b3d7af2",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/frying-pan-lid.obj": "171dfa8d87e66d1b0a45b2595531200f9394f636e1e8fc384d437ea74eb55769",
+    "Models/OBJ format/frying-pan-lid.mtl": "ed29173626ee1757041a294720602d8d8b03ff0cc15a859b81b3adb6462ff3e3",
+    "Previews/frying-pan-lid.png": "5de413a81a8bcf059c384818be95c83d8fb319a13f82581a93313736358c99bf"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/frying-pan-lid.fbx": "4f813d548225f3f2e7a15f8b16f13cd9705b3f9fec827dae664b2c265a24b02c",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/frying-pan-lid.glb": "0ef3b50b783fdd86fb75f141b194c70d8d98a7f97dd7fd00c5c31b643b3d7af2",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/frying-pan-lid.mtl": "cdbf20d4e918666a4bb7d8e870590df31ff9e95575ef754ab0703a3b7bd58aff",
+    "OBJ format/frying-pan-lid.obj": "25621d4f20a74c1b71130af9da6bc41ea40721e5e7c3a85ae8ffa28a89013cc4",
+    "Preview.png": "5de413a81a8bcf059c384818be95c83d8fb319a13f82581a93313736358c99bf"
+  },
+  "license": "../License.txt"
+}

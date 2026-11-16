@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pillow",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/pillow.fbx": "cecb6e0a964671081afb1553182cd713d1b95e9277f0b5a05038ad31da2a7282",
+    "Models/GLTF format/pillow.glb": "6fae7c190d0b676ef3efd35e5178cef21dffb5c80e1257d8b537ad424da0e5f6",
+    "Models/OBJ format/pillow.obj": "58d7f8896d23db772280bf433f8a2dbfcd23b7b117ba9ff016299660eb5b0eaa",
+    "Models/OBJ format/pillow.mtl": "3e6f3744b0011c35dbf4da0a92bbbb26ccdee052501c2e3da216e58c961e4d80"
+  },
+  "files": {
+    "FBX format/pillow.fbx": "cecb6e0a964671081afb1553182cd713d1b95e9277f0b5a05038ad31da2a7282",
+    "GLB format/pillow.glb": "6fae7c190d0b676ef3efd35e5178cef21dffb5c80e1257d8b537ad424da0e5f6",
+    "OBJ format/pillow.mtl": "5c315e057755e537da430dc164c72e0211b11ee72b2facf49bca0de0ac63c74e",
+    "OBJ format/pillow.obj": "9415ea44980b5b71bc038ec847439c98707503667fb243cbd1ef4d825f9ee4e3"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "floor-hole",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/floor-hole.fbx": "f635c32e25a2af068835de7a278c62dae0a641712a995e104d8eebee6a016d0c",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/floor-hole.glb": "2969344bdaef5b481d91a656064a61a7819d12859278ec7d62c21f075582eef4",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/floor-hole.obj": "4eb8b0f1cde537305ba52278501d9f3269c1df7c9b064de7e5832406859041c2",
+    "Models/OBJ format/floor-hole.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/floor-hole.png": "8a38bf67a767d4d96cb27a1f96bd5e9bfb4bf75496c8380760d3aafdb2b995b4"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/floor-hole.fbx": "f635c32e25a2af068835de7a278c62dae0a641712a995e104d8eebee6a016d0c",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/floor-hole.glb": "2969344bdaef5b481d91a656064a61a7819d12859278ec7d62c21f075582eef4",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/floor-hole.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/floor-hole.obj": "e1a049466270fa15af5ba2198b68af5fc14ec45962065dd2f1405b5864e85d3e",
+    "Preview.png": "8a38bf67a767d4d96cb27a1f96bd5e9bfb4bf75496c8380760d3aafdb2b995b4"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pipe-large-junction",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/pipe-large-junction.fbx": "a35100d1ba4fda90ae22fa783a7353e0528763f04c935385bc1b58258a592132",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/pipe-large-junction.glb": "2bfd53a752b418c9307f9c171fbe1ddea41116521a7188eee0697353e29695ec",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/pipe-large-junction.obj": "2131fc49a6c43d43f3d5718d07277f4170919054f7977196c8f771a3717697b5",
+    "Models/OBJ format/pipe-large-junction.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/pipe-large-junction.png": "f4988041b9425d4296770bba164a34967b498a26de8cd6f98eb1c6e2f8eb5392"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/pipe-large-junction.fbx": "a35100d1ba4fda90ae22fa783a7353e0528763f04c935385bc1b58258a592132",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/pipe-large-junction.glb": "2bfd53a752b418c9307f9c171fbe1ddea41116521a7188eee0697353e29695ec",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/pipe-large-junction.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/pipe-large-junction.obj": "66d88f2172aa5ffddde096ec13e5be47e88a53213e3afa3aeeb754594cc869a8",
+    "Preview.png": "f4988041b9425d4296770bba164a34967b498a26de8cd6f98eb1c6e2f8eb5392"
+  },
+  "license": "../License.txt"
+}

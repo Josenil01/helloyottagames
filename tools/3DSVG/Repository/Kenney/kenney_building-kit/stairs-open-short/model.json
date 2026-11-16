@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stairs-open-short",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/stairs-open-short.fbx": "37cad892fecd9ed7f586ab34630291d31709adfbf95eafa9166c299d3d0e80a4",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/stairs-open-short.glb": "1f44e89733a58321c28261bf7f1f78aa36f54e366b2d071a597de0b0d2a947a9",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/stairs-open-short.obj": "40201b41176b682bee8a81b3758dd60abf7dce2db02ed992f8a136844c05abd0",
+    "Models/OBJ format/stairs-open-short.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/stairs-open-short.png": "10d572a949fb25e8ab72fc03b0b2a180cad8d4c2807051bfef31b73a6d06ac44"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/stairs-open-short.fbx": "37cad892fecd9ed7f586ab34630291d31709adfbf95eafa9166c299d3d0e80a4",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/stairs-open-short.glb": "1f44e89733a58321c28261bf7f1f78aa36f54e366b2d071a597de0b0d2a947a9",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/stairs-open-short.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/stairs-open-short.obj": "7518f3165f5680a55e83cfa7a8582b82fdb6d69ba0be3b8e6cef24bb5426f372",
+    "Preview.png": "10d572a949fb25e8ab72fc03b0b2a180cad8d4c2807051bfef31b73a6d06ac44"
+  },
+  "license": "../License.txt"
+}

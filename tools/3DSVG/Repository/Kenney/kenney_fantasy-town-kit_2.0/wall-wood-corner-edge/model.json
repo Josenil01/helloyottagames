@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-wood-corner-edge",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/wall-wood-corner-edge.fbx": "e8c6da17d2aafc3c81d555235c2030d1e04da77b01f8a233d3f465135369155d",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/wall-wood-corner-edge.glb": "f70b92efea5af19f4ac9c0c19af7727e8105f28a4c415313e8878fc4bde9d326",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/wall-wood-corner-edge.obj": "79ca6d5e3bd3d98060cbac40a3503a8474cd30fe2c8d90592b6bcea0a2bf415c",
+    "Models/OBJ format/wall-wood-corner-edge.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-wood-corner-edge.png": "b277ffb23b7999af68cd86c959dfe6d5a6a147832056e0b4730d65d3255a30b9"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/wall-wood-corner-edge.fbx": "e8c6da17d2aafc3c81d555235c2030d1e04da77b01f8a233d3f465135369155d",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/wall-wood-corner-edge.glb": "f70b92efea5af19f4ac9c0c19af7727e8105f28a4c415313e8878fc4bde9d326",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/wall-wood-corner-edge.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-wood-corner-edge.obj": "463f58b82441b49f0f497a6228f192cc38679f950aa853f00805595ab1b04f92",
+    "Preview.png": "b277ffb23b7999af68cd86c959dfe6d5a6a147832056e0b4730d65d3255a30b9"
+  },
+  "license": "../License.txt"
+}

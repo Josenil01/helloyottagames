@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "structure-platform-dock-small",
+  "pack": "kenney_pirate-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/FBX format/structure-platform-dock-small.fbx": "2de853c0371b6a8761ecf1239f0ff861088f2df6ea7d958fd5390824190e32b3",
+    "Models/GLB format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/GLB format/structure-platform-dock-small.glb": "63fb708c20db73860da2380ba6c13e4725930c07535bb2ed5958a2f30eeea36c",
+    "Models/OBJ format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/OBJ format/structure-platform-dock-small.obj": "db25ae9154d3abd420b9790d3a6c73927152411446c52ba9d658a3205bcb8909",
+    "Models/OBJ format/structure-platform-dock-small.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/structure-platform-dock-small.png": "f7fc60c370f5e1f42fcdd601902d0572442ab14002bf5d1626b8d1ffb9ad90bd"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "FBX format/structure-platform-dock-small.fbx": "2de853c0371b6a8761ecf1239f0ff861088f2df6ea7d958fd5390824190e32b3",
+    "Textures/GLB/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "GLB format/structure-platform-dock-small.glb": "63fb708c20db73860da2380ba6c13e4725930c07535bb2ed5958a2f30eeea36c",
+    "Textures/OBJ/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "OBJ format/structure-platform-dock-small.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/structure-platform-dock-small.obj": "d51d2e75072f4496ffede66a8444e8a1b4eac19d5dc262a72a720bdb6b7afa53",
+    "Preview.png": "f7fc60c370f5e1f42fcdd601902d0572442ab14002bf5d1626b8d1ffb9ad90bd"
+  },
+  "license": "../License.txt"
+}

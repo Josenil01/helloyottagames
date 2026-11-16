@@ -1,0 +1,78 @@
+{
+  "models": 3,
+  "loads": 12,
+  "checks": [
+    {
+      "model": "esfinge-blockie",
+      "format": "glb",
+      "triangles": 2112,
+      "materialsAndTextures": true
+    },
+    {
+      "model": "esfinge-blockie",
+      "format": "fbx",
+      "triangles": 2112,
+      "materialsAndTextures": true
+    },
+    {
+      "model": "esfinge-blockie",
+      "format": "obj",
+      "triangles": 2112,
+      "materialsAndTextures": true
+    },
+    {
+      "model": "esfinge-blockie",
+      "format": "blend",
+      "triangles": 2112,
+      "materialsAndTextures": true
+    },
+    {
+      "model": "esfinge-blockie-feliz",
+      "format": "glb",
+      "triangles": 2244,
+      "materialsAndTextures": true
+    },
+    {
+      "model": "esfinge-blockie-feliz",
+      "format": "fbx",
+      "triangles": 2244,
+      "materialsAndTextures": true
+    },
+    {
+      "model": "esfinge-blockie-feliz",
+      "format": "obj",
+      "triangles": 2244,
+      "materialsAndTextures": true
+    },
+    {
+      "model": "esfinge-blockie-feliz",
+      "format": "blend",
+      "triangles": 2244,
+      "materialsAndTextures": true
+    },
+    {
+      "model": "esfinge-blockie-redemoinho",
+      "format": "glb",
+      "triangles": 2024,
+      "materialsAndTextures": true
+    },
+    {
+      "model": "esfinge-blockie-redemoinho",
+      "format": "fbx",
+      "triangles": 2024,
+      "materialsAndTextures": true
+    },
+    {
+      "model": "esfinge-blockie-redemoinho",
+      "format": "obj",
+      "triangles": 2024,
+      "materialsAndTextures": true
+    },
+    {
+      "model": "esfinge-blockie-redemoinho",
+      "format": "blend",
+      "triangles": 2024,
+      "materialsAndTextures": true
+    }
+  ]
+}

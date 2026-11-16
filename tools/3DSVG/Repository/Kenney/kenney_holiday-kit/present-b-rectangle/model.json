@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "present-b-rectangle",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/present-b-rectangle.fbx": "693e74e2f90686edfbff2989e0dd2f48add87ec2d60aceba15b3b5261a9b65ea",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/present-b-rectangle.glb": "7fa400150869b4706bfbb3da15453b34349b53ad667024c37a8d86e6ec6309ae",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/present-b-rectangle.obj": "0656914d2435060928771c3d01fae08ee64a367e28c26792aeaf460dd2bbdebd",
+    "Models/OBJ format/present-b-rectangle.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/present-b-rectangle.png": "7eee83a32aea6c702624208366bdd242af73397df143c8ad3bcbaf013269fe2f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/present-b-rectangle.fbx": "693e74e2f90686edfbff2989e0dd2f48add87ec2d60aceba15b3b5261a9b65ea",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/present-b-rectangle.glb": "7fa400150869b4706bfbb3da15453b34349b53ad667024c37a8d86e6ec6309ae",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/present-b-rectangle.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/present-b-rectangle.obj": "ee7625838cc248019945b26ca45d8b5fe1c7d91bf9290b2f3ca62ee10e0d565f",
+    "Preview.png": "7eee83a32aea6c702624208366bdd242af73397df143c8ad3bcbaf013269fe2f"
+  },
+  "license": "../License.txt"
+}

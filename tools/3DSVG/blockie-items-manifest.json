@@ -1,0 +1,52 @@
+{
+  "created": "2026-10-29",
+  "blender": "5.2.3 LTS",
+  "generator": "build-gpt-blockie-items.py",
+  "assets": [
+    {
+      "asset": "cano-blockie",
+      "statistics": {
+        "vertices": 80,
+        "polygons": 74,
+        "triangles": 156,
+        "materials": 1,
+        "dimensions_m": [
+          1.6799999475479126,
+          1.6799999475479126,
+          1.4800000190734863
+        ]
+      },
+      "texture": "Models/Textures/blockie-items-palette.png"
+    },
+    {
+      "asset": "moeda-blockie",
+      "statistics": {
+        "vertices": 192,
+        "polygons": 146,
+        "triangles": 356,
+        "materials": 1,
+        "dimensions_m": [
+          1.6399999856948853,
+          0.36000001430511475,
+          1.6399999856948853
+        ]
+      },
+      "texture": "Models/Textures/blockie-items-palette.png"
+    },
+    {
+      "asset": "bloco-blockie",
+      "statistics": {
+        "vertices": 472,
+        "polygons": 442,
+        "triangles": 796,
+        "materials": 1,
+        "dimensions_m": [
+          1.5394999980926514,
+          1.5394999980926514,
+          1.5
+        ]
+      },
+      "texture": "Models/Textures/blockie-items-palette.png"
+    }
+  ]
+}

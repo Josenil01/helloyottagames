@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "watermill-wide",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/watermill-wide.fbx": "dbb6e7d17bb36a3bb7287e4e0c514fc19a33f6b65a6cda1007fa795d12d8d623",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/watermill-wide.glb": "3644d4092799f5ff672a5b07ff124f68259c8c9bd45d37f9659eea4426534b7d",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/watermill-wide.obj": "8483a3b31f17b04a0456c2afcd039eb3b1696f42cacd06285fbf02ed217cce75",
+    "Models/OBJ format/watermill-wide.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/watermill-wide.png": "3af1503d87b5d0c264f4d240531d05bd13f1e4bf4409da32439d086bccb3a661"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/watermill-wide.fbx": "dbb6e7d17bb36a3bb7287e4e0c514fc19a33f6b65a6cda1007fa795d12d8d623",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/watermill-wide.glb": "3644d4092799f5ff672a5b07ff124f68259c8c9bd45d37f9659eea4426534b7d",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/watermill-wide.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/watermill-wide.obj": "95650a50cbfe29afeff44a3800e752c14ff09593c29b747fc8e8484b6edf553f",
+    "Preview.png": "3af1503d87b5d0c264f4d240531d05bd13f1e4bf4409da32439d086bccb3a661"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "platform",
+  "pack": "kenney_mini-forest_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "Models/FBX format/platform.fbx": "c3082bc318f650ce7476d902a67a7b6a55575915e36d2b77ccc8ca438d4130a0",
+    "Models/GLB format/Textures/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "Models/GLB format/platform.glb": "72e893bd37b34311437912677881eebe73732d8ff0246c4d05548a35aebc6cb5",
+    "Models/OBJ format/Textures/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "Models/OBJ format/platform.obj": "ea76ea17abcacb955dff45d2062873b92c0c863b8619159512fc1d9e9a097451",
+    "Models/OBJ format/platform.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/platform.png": "2a6a56e46b9e030661e446c08c9b3a4c48aa83e131058cc4a7d17a2a2db883f7"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "FBX format/platform.fbx": "c3082bc318f650ce7476d902a67a7b6a55575915e36d2b77ccc8ca438d4130a0",
+    "Textures/GLB/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "GLB format/platform.glb": "72e893bd37b34311437912677881eebe73732d8ff0246c4d05548a35aebc6cb5",
+    "Textures/OBJ/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "OBJ format/platform.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/platform.obj": "942dfb7284514d9f65b61ab063e6e90f9d82b60229946e4d27e85692025a8966",
+    "Preview.png": "2a6a56e46b9e030661e446c08c9b3a4c48aa83e131058cc4a7d17a2a2db883f7"
+  },
+  "license": "../License.txt"
+}

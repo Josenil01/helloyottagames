@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "speaker",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/speaker.fbx": "219bd63e14aa3aec9fda74a4a69a8b918e7d499188c6f5e974923f661f0f7bec",
+    "Models/GLTF format/speaker.glb": "78230b9fb382a937cb19e4bf7556ee9402d33ac80b1baaee2d2eb89493cfa1fc",
+    "Models/OBJ format/speaker.obj": "ead1a754cf6b5838f94da3457577f5e63e45f363928dd3bcfa1027eff424f120",
+    "Models/OBJ format/speaker.mtl": "3227895804cf0f3f041a6ac738a032948947bd7ee6cf37179c88c114119040c1"
+  },
+  "files": {
+    "FBX format/speaker.fbx": "219bd63e14aa3aec9fda74a4a69a8b918e7d499188c6f5e974923f661f0f7bec",
+    "GLB format/speaker.glb": "78230b9fb382a937cb19e4bf7556ee9402d33ac80b1baaee2d2eb89493cfa1fc",
+    "OBJ format/speaker.mtl": "613fadc253433a676c77b1de16723d64e78e281ec241d22dbfdd0d8c694d2792",
+    "OBJ format/speaker.obj": "050a6e7aec6922060aa5ea1bd7441cbcab3e9e38b1146efbfa1307a1901b1731"
+  },
+  "license": "../License.txt"
+}

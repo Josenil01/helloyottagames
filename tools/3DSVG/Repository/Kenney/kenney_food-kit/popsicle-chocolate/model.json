@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "popsicle-chocolate",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/popsicle-chocolate.fbx": "8243e77ffc7a95da4b052de1843eb45ecea328beb3f41f070c0d7f72c8b2e2ba",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/popsicle-chocolate.glb": "9a45167a87be0d60f12719f1f95c1a19dd44ba9bb849f1e5c76c45d99c8bf1d6",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/popsicle-chocolate.obj": "dad0faa5af86e802593d14b356e926091bc28ea57205ae0e2849bb5f164e1c7a",
+    "Models/OBJ format/popsicle-chocolate.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/popsicle-chocolate.png": "dd4a499e98ca1e72af72465bcb668b9e3f7063ed0afbeb15714c0075f78b3027"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/popsicle-chocolate.fbx": "8243e77ffc7a95da4b052de1843eb45ecea328beb3f41f070c0d7f72c8b2e2ba",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/popsicle-chocolate.glb": "9a45167a87be0d60f12719f1f95c1a19dd44ba9bb849f1e5c76c45d99c8bf1d6",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/popsicle-chocolate.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/popsicle-chocolate.obj": "6c9207c7eb0c0b094e0a1862033f94bb837ce126951533973fcc99855a75821d",
+    "Preview.png": "dd4a499e98ca1e72af72465bcb668b9e3f7063ed0afbeb15714c0075f78b3027"
+  },
+  "license": "../License.txt"
+}

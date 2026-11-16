@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tower-middle-windows",
+  "pack": "kenney_pirate-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/FBX format/tower-middle-windows.fbx": "987d7d3ec8ddb584b3744d48044ac9e507508f1a7d9bed64296d669a9a3ebd2f",
+    "Models/GLB format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/GLB format/tower-middle-windows.glb": "69d866461a2b2a48639596145b5befacd398a566fb0bf4c9059b2e1f8f456e58",
+    "Models/OBJ format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/OBJ format/tower-middle-windows.obj": "faad47e4ffd9e79e76fc16a8adc1b8257425dafdca77db0081b6aa621c90c18f",
+    "Models/OBJ format/tower-middle-windows.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tower-middle-windows.png": "a9ff9eaeb8f81dc18834297962e683c5f5a24bfe33108e7e21f73857ff9ff12b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "FBX format/tower-middle-windows.fbx": "987d7d3ec8ddb584b3744d48044ac9e507508f1a7d9bed64296d669a9a3ebd2f",
+    "Textures/GLB/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "GLB format/tower-middle-windows.glb": "69d866461a2b2a48639596145b5befacd398a566fb0bf4c9059b2e1f8f456e58",
+    "Textures/OBJ/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "OBJ format/tower-middle-windows.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tower-middle-windows.obj": "81c85013e11eb478ecc9aa22ed3e996ef8fed82e7475020b2ac3c82e65702b0b",
+    "Preview.png": "a9ff9eaeb8f81dc18834297962e683c5f5a24bfe33108e7e21f73857ff9ff12b"
+  },
+  "license": "../License.txt"
+}

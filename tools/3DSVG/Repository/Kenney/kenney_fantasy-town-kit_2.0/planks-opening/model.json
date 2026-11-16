@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "planks-opening",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/planks-opening.fbx": "d3a12cf2caf416056e3ee082c123098b53f35b07824dbd2fa8cadf4377809401",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/planks-opening.glb": "20540c1d80f8b4af816e139a31f6a385f436dbf2d03314176ab99ca35452e11c",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/planks-opening.obj": "af711a08b5433b3e24ec62d65c7bb9f4e809c34049764741f73a79fc26ccf2c7",
+    "Models/OBJ format/planks-opening.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/planks-opening.png": "233a2513f9d3b7c347171c016507a1956015b4f03da6543791ef0f10bdeadbf9"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/planks-opening.fbx": "d3a12cf2caf416056e3ee082c123098b53f35b07824dbd2fa8cadf4377809401",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/planks-opening.glb": "20540c1d80f8b4af816e139a31f6a385f436dbf2d03314176ab99ca35452e11c",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/planks-opening.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/planks-opening.obj": "327096af5baa208325a5b36b3d6898f15217e02ae9eda66c2a773a05602da7f4",
+    "Preview.png": "233a2513f9d3b7c347171c016507a1956015b4f03da6543791ef0f10bdeadbf9"
+  },
+  "license": "../License.txt"
+}

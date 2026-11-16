@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "taxi",
+  "pack": "kenney_car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/FBX format/taxi.fbx": "084415c990ed48a6e05ce02da4de829b10ad0228fbe2068dfff5f4346d643a65",
+    "Models/GLB format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/GLB format/taxi.glb": "3803539718ffd3b84b515dbce8ed6b489f1ff5be58edb1903d2c5db5c584bdc7",
+    "Models/OBJ format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/OBJ format/taxi.obj": "097de886a4e0cf40180329fcaaf08994051177e0ada3882d4b573335b92a9514",
+    "Models/OBJ format/taxi.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/taxi.png": "81b31832b68ccdc11b17a7cdecd18b9c75d868ac14e26986af73283b1436b430"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "FBX format/taxi.fbx": "084415c990ed48a6e05ce02da4de829b10ad0228fbe2068dfff5f4346d643a65",
+    "Textures/GLB/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "GLB format/taxi.glb": "3803539718ffd3b84b515dbce8ed6b489f1ff5be58edb1903d2c5db5c584bdc7",
+    "Textures/OBJ/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "OBJ format/taxi.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/taxi.obj": "a1b79c685935d75fe08c4055c8fd6526fc3dee6f51bdbf0a7041b9cd571ce4bf",
+    "Preview.png": "81b31832b68ccdc11b17a7cdecd18b9c75d868ac14e26986af73283b1436b430"
+  },
+  "license": "../License.txt"
+}

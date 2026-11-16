@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-monorail-straight-hill-complete-half",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-monorail-straight-hill-complete-half.fbx": "463f440b744130c6efb37b63885f73aa3b9e25f179aac3787737a23a62abe0b1",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-monorail-straight-hill-complete-half.glb": "844c10fc0ee7544ee9225546d7572f1ec57646bf318adc711538350f03b29299",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-monorail-straight-hill-complete-half.obj": "ea5264427e8e6fad61bb25d810200db931c3e8d1f34cac97d2c8a96a436b0a53",
+    "Models/OBJ format/coaster-monorail-straight-hill-complete-half.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-monorail-straight-hill-complete-half.png": "bb517176be2a5e85af13b2908076e37bd7fa05e3b2690ae3140fd2255ef28898"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-monorail-straight-hill-complete-half.fbx": "463f440b744130c6efb37b63885f73aa3b9e25f179aac3787737a23a62abe0b1",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-monorail-straight-hill-complete-half.glb": "844c10fc0ee7544ee9225546d7572f1ec57646bf318adc711538350f03b29299",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-monorail-straight-hill-complete-half.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-monorail-straight-hill-complete-half.obj": "7b06b847d153b85662d94f95f66caa68716a478c89db3a82da2cdde1b88adcd2",
+    "Preview.png": "bb517176be2a5e85af13b2908076e37bd7fa05e3b2690ae3140fd2255ef28898"
+  },
+  "license": "../License.txt"
+}

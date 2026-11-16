@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "railroad-damaged-corner-small-ramp",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/railroad-damaged-corner-small-ramp.fbx": "6da0eb9a1a874ecd8240e2115cbe945994686883ac6cb15f6aaa28d48fc3a2a0",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/railroad-damaged-corner-small-ramp.glb": "dc8f3437ebeea8e3af451998c898b9987ed759fed56fad7f60eff37e02767972",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/railroad-damaged-corner-small-ramp.obj": "e9de5ba1988d758b8e57a786a4fbe9901ef46935ee3b216f25105e22ffa8ee9b",
+    "Models/OBJ format/railroad-damaged-corner-small-ramp.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/railroad-damaged-corner-small-ramp.png": "9ad8bb10e0f49e8464e76907e0d60a4741070d46a5cce874b96bcaeabb757562"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/railroad-damaged-corner-small-ramp.fbx": "6da0eb9a1a874ecd8240e2115cbe945994686883ac6cb15f6aaa28d48fc3a2a0",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/railroad-damaged-corner-small-ramp.glb": "dc8f3437ebeea8e3af451998c898b9987ed759fed56fad7f60eff37e02767972",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/railroad-damaged-corner-small-ramp.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/railroad-damaged-corner-small-ramp.obj": "de87730902b2ac8c2995a7ecf9117d2c13dc1c949b77ed8e1fb552e736e3b07e",
+    "Preview.png": "9ad8bb10e0f49e8464e76907e0d60a4741070d46a5cce874b96bcaeabb757562"
+  },
+  "license": "../License.txt"
+}

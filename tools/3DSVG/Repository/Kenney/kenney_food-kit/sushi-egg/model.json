@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "sushi-egg",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/sushi-egg.fbx": "3a000142cb624b34bc6535f46f5ead2124141d2adf161fa6c330723199a2690c",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/sushi-egg.glb": "aa0a51a5e5b826e6712f256eabaf391f6c4f59db7c321567373be0fc3cc6a478",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/sushi-egg.obj": "875471079955092c62f9ed3519497a8422d179a0c46b3455b89dd629865b63b7",
+    "Models/OBJ format/sushi-egg.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/sushi-egg.png": "846e12784f555d98d1e965d5e9c04332f2c2b64e8e7df68da4d0f2a6a84e429a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/sushi-egg.fbx": "3a000142cb624b34bc6535f46f5ead2124141d2adf161fa6c330723199a2690c",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/sushi-egg.glb": "aa0a51a5e5b826e6712f256eabaf391f6c4f59db7c321567373be0fc3cc6a478",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/sushi-egg.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/sushi-egg.obj": "28801ae75f5022f7abeab6d21b7c4001fbe44980dba2dc495da3f3d871dc1259",
+    "Preview.png": "846e12784f555d98d1e965d5e9c04332f2c2b64e8e7df68da4d0f2a6a84e429a"
+  },
+  "license": "../License.txt"
+}

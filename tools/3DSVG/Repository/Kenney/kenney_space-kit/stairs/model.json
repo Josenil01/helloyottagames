@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stairs",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/stairs.fbx": "6f17a9acebcc6f8de434b5bd8b84298db339550eeee244cc2d5f857fd66449c6",
+    "Models/GLTF format/stairs.glb": "882aa6dfcef829638863f232181d82fda48c800cf508265314a6aade7f53f429",
+    "Models/OBJ format/stairs.obj": "784bda5340586dfb61f2af60cf045e9f7bf526f05dc142aa87e23a06a399cd96",
+    "Models/OBJ format/stairs.mtl": "0259da860639fb9a62b659d37a691abe8487aa77545004f39b7fe33a4770b6c4"
+  },
+  "files": {
+    "FBX format/stairs.fbx": "6f17a9acebcc6f8de434b5bd8b84298db339550eeee244cc2d5f857fd66449c6",
+    "GLB format/stairs.glb": "882aa6dfcef829638863f232181d82fda48c800cf508265314a6aade7f53f429",
+    "OBJ format/stairs.mtl": "0259da860639fb9a62b659d37a691abe8487aa77545004f39b7fe33a4770b6c4",
+    "OBJ format/stairs.obj": "e8451ba37752dc63c832e026f93df61b23824db4873879f5de91ce2b6f3b71ae"
+  },
+  "license": "../License.txt"
+}

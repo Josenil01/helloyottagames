@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "machine_barrel",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/machine_barrel.fbx": "8cd516972d1467de5ca53b57fc6325415fa7b9e2abc03f4aca868e18a34bf212",
+    "Models/GLTF format/machine_barrel.glb": "ecd46823928292bbb01718966bd4602a71e37a09320f3ba232d9044e909ce4ed",
+    "Models/OBJ format/machine_barrel.obj": "03f824bee5d0519cfd3877dd145c950ed0536afeb6cce1a2171d90c9175bc413",
+    "Models/OBJ format/machine_barrel.mtl": "ab77aeb3a6791cd59e2c082018c32d0ff371aba0152cf456ba71c14a56576230"
+  },
+  "files": {
+    "FBX format/machine_barrel.fbx": "8cd516972d1467de5ca53b57fc6325415fa7b9e2abc03f4aca868e18a34bf212",
+    "GLB format/machine_barrel.glb": "ecd46823928292bbb01718966bd4602a71e37a09320f3ba232d9044e909ce4ed",
+    "OBJ format/machine_barrel.mtl": "ab77aeb3a6791cd59e2c082018c32d0ff371aba0152cf456ba71c14a56576230",
+    "OBJ format/machine_barrel.obj": "a51555c726f0d5e49737a902ed56080c1230d0e6366a26806cd63a4df46253c2"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-crossing",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-crossing.fbx": "429fd0307b7713de16809b2d447ba21d901a4af561d590d519e1f7362984000c",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-crossing.glb": "eb8575335f77da513add4a5277a7b60cad4886c07966f024b15cf55e5966cde3",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-crossing.obj": "9f0506ed9147f4ad601278b2f57b236f4e76bef5317f0a408234fc0eda300ce8",
+    "Models/OBJ format/road-crossing.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-crossing.png": "c6634e5a3f25dd90690ae3c94c395ff4e4b576581c721649e016e3e62ae45401"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-crossing.fbx": "429fd0307b7713de16809b2d447ba21d901a4af561d590d519e1f7362984000c",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-crossing.glb": "eb8575335f77da513add4a5277a7b60cad4886c07966f024b15cf55e5966cde3",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-crossing.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-crossing.obj": "3411875805864b05eaf2f3cb40e943d8d9e45838ea54a5a835f7103578fe682f",
+    "Preview.png": "c6634e5a3f25dd90690ae3c94c395ff4e4b576581c721649e016e3e62ae45401"
+  },
+  "license": "../License.txt"
+}

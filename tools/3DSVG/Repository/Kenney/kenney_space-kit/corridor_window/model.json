@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "corridor_window",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/corridor_window.fbx": "22b77b1aeec8546403c0e7971cc078db3a3542f53551d2b0e8d22660cc93707c",
+    "Models/GLTF format/corridor_window.glb": "53a97fe47cd6c04436531ce1046cd97464c3ed4fe8936d7c73ac09f7f0cdb221",
+    "Models/OBJ format/corridor_window.obj": "91bc77ac67d3fe6b6cd1ee38df73e0a08baf597deb5427088ff85450ef27f42f",
+    "Models/OBJ format/corridor_window.mtl": "7d1e16e3763c4eb9aefa20ce036f8f84db3969794a88a42f5f814f557e6c3044"
+  },
+  "files": {
+    "FBX format/corridor_window.fbx": "22b77b1aeec8546403c0e7971cc078db3a3542f53551d2b0e8d22660cc93707c",
+    "GLB format/corridor_window.glb": "53a97fe47cd6c04436531ce1046cd97464c3ed4fe8936d7c73ac09f7f0cdb221",
+    "OBJ format/corridor_window.mtl": "7d1e16e3763c4eb9aefa20ce036f8f84db3969794a88a42f5f814f557e6c3044",
+    "OBJ format/corridor_window.obj": "710afbf6ac252073b1afdbb1472dfd5a2ac25b750bf1988a63a4300815f33bfa"
+  },
+  "license": "../License.txt"
+}

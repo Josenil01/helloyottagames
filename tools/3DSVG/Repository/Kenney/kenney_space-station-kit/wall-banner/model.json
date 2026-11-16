@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-banner",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/wall-banner.fbx": "eaae92ac491c35a58ce31402b2316a335a67394286bd6010c5ef1d3519581565",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/wall-banner.glb": "8fbaa4721ebf83124e7e413b30a315df40a72e2c160ace346ecfaaa739bd0011",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/wall-banner.obj": "ba22f54a515a3bd71fbd9653aa8e7ee78b0e74dd178099ebcb4d2cd583d45e7a",
+    "Models/OBJ format/wall-banner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-banner.png": "8f0fc8827c13f4baa78c3d826120cb65e053efb459d06d59fd4e380ce1c48508"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/wall-banner.fbx": "eaae92ac491c35a58ce31402b2316a335a67394286bd6010c5ef1d3519581565",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/wall-banner.glb": "8fbaa4721ebf83124e7e413b30a315df40a72e2c160ace346ecfaaa739bd0011",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/wall-banner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-banner.obj": "8ee5fc71cd6cb5d510d11a66f5de55ca36c874f234785c99c35db860bf4a1878",
+    "Preview.png": "8f0fc8827c13f4baa78c3d826120cb65e053efb459d06d59fd4e380ce1c48508"
+  },
+  "license": "../License.txt"
+}

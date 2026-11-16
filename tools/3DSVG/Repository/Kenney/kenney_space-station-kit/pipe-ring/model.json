@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pipe-ring",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/pipe-ring.fbx": "679505a35fc116444b38cb859a9e312f088e93c40ba7c750e9d31a683b33210b",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/pipe-ring.glb": "5e5821b9e9579c60c1200414eece3d8ad3c5ffaa3488e9c3a172eb49700f64f8",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/pipe-ring.obj": "54b021acb254bb17d72c7d0a19b926ff1fca1773469fcfa4a290121ae4ae1566",
+    "Models/OBJ format/pipe-ring.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/pipe-ring.png": "e55b8f5376302ed704e11f33376ef330cfa6b119ad49a37b46a1a12ae6225022"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/pipe-ring.fbx": "679505a35fc116444b38cb859a9e312f088e93c40ba7c750e9d31a683b33210b",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/pipe-ring.glb": "5e5821b9e9579c60c1200414eece3d8ad3c5ffaa3488e9c3a172eb49700f64f8",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/pipe-ring.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/pipe-ring.obj": "bcd0ac6a6a8fbd0ba28ba756d69988d6d451ed11dbeef3c4f9c8afa17895ee91",
+    "Preview.png": "e55b8f5376302ed704e11f33376ef330cfa6b119ad49a37b46a1a12ae6225022"
+  },
+  "license": "../License.txt"
+}

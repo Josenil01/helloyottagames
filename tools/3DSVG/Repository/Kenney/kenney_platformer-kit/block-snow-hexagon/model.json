@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "block-snow-hexagon",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/block-snow-hexagon.fbx": "bbabcb0fc84c6821302bf9e55ca21da6893f6d4c73dff59140dfa0c1aa40d8ec",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/block-snow-hexagon.glb": "9ffd69efb0462e99418f17682fb4ae4cb26cb0206c1379b4524d4d8e1b5b55da",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/block-snow-hexagon.obj": "60f646f91dd8d9842d13bb614ac4f8283416669b97d09649b16b1469db21847c",
+    "Models/OBJ format/block-snow-hexagon.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/block-snow-hexagon.png": "d2f6be8ea473cfd978aeda86e12c6c855fec8457e78b626e3265529a7fad95e1"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/block-snow-hexagon.fbx": "bbabcb0fc84c6821302bf9e55ca21da6893f6d4c73dff59140dfa0c1aa40d8ec",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/block-snow-hexagon.glb": "9ffd69efb0462e99418f17682fb4ae4cb26cb0206c1379b4524d4d8e1b5b55da",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/block-snow-hexagon.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/block-snow-hexagon.obj": "91d5302baf79a33555e601449c2f2ff81efe871b8069aeb90cb03efa5120eb16",
+    "Preview.png": "d2f6be8ea473cfd978aeda86e12c6c855fec8457e78b626e3265529a7fad95e1"
+  },
+  "license": "../License.txt"
+}

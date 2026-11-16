@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "weapon-rack",
+  "pack": "kenney_mini-arena",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/FBX format/weapon-rack.fbx": "a020188649c32bc6219f041ee03c4c788e85c857987d7ce35ab82db43a12ee3b",
+    "Models/GLB format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/GLB format/weapon-rack.glb": "315d16126396f720152e7d7878747a8887ca3d80e78ffa5e3364aeb9cf6dba9b",
+    "Models/OBJ format/Textures/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "Models/OBJ format/weapon-rack.obj": "1c492d7a19223547764deb6ad3792110727d8629f15aee30c373fafa5ab0e89c",
+    "Models/OBJ format/weapon-rack.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/weapon-rack.png": "f91ae7c448fef4efda6d2750b974823dac3d97c7f6a20879ffd72cc273587cb0"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "FBX format/weapon-rack.fbx": "a020188649c32bc6219f041ee03c4c788e85c857987d7ce35ab82db43a12ee3b",
+    "Textures/GLB/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "GLB format/weapon-rack.glb": "315d16126396f720152e7d7878747a8887ca3d80e78ffa5e3364aeb9cf6dba9b",
+    "Textures/OBJ/colormap.png": "96d350eebb783edba72caeab2c7778f67ee4b702b5357cdecb3fc34d52824658",
+    "OBJ format/weapon-rack.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/weapon-rack.obj": "1a69c3fcb85aa3329dcf4bcc74e79460b004e6dba6dc88267111a29e4d04f023",
+    "Preview.png": "f91ae7c448fef4efda6d2750b974823dac3d97c7f6a20879ffd72cc273587cb0"
+  },
+  "license": "../License.txt"
+}

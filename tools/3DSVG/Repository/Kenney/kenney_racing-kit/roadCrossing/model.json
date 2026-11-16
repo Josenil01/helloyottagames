@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "roadCrossing",
+  "pack": "kenney_racing-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/checkers.png": "8eb3d9d77c1165cf2b1c68a07f808d83d6565ce3db9e930ca500cbd7296f4c4d",
+    "Models/FBX format/Textures/net.png": "c8e5d6fc69bafe6c3df797ae3175d9f1bf606bc1a9df5e12463a74087a4ea3fc",
+    "Models/FBX format/Textures/tankco.png": "5355b8f2c0155034d2bc2170517ae815ad0fe659cd2fb5e195245b7c9165d9f5",
+    "Models/FBX format/roadCrossing.fbx": "ae3c4673f6cf928bb83165b908a14b1442e822a61230ca9da5302ac1b1f42ae4",
+    "Models/GLTF format/roadCrossing.glb": "74c0e3b66606e9b6c0b64fc96f1a73c76163bfa712b3f07930776f4976c21df0",
+    "Models/OBJ format/Textures/checkers.png": "8eb3d9d77c1165cf2b1c68a07f808d83d6565ce3db9e930ca500cbd7296f4c4d",
+    "Models/OBJ format/Textures/net.png": "c8e5d6fc69bafe6c3df797ae3175d9f1bf606bc1a9df5e12463a74087a4ea3fc",
+    "Models/OBJ format/Textures/tankco.png": "5355b8f2c0155034d2bc2170517ae815ad0fe659cd2fb5e195245b7c9165d9f5",
+    "Models/OBJ format/roadCrossing.obj": "6f198dc1c8fb0c6ce8dfc776cc446d1a33740d33b6e545a829f90c9cf99f7b83",
+    "Models/OBJ format/roadCrossing.mtl": "f6cfdd180117ba30f258bfcbbf73848f9af74a4d680ed33f0cf3f3bdfa5f0384"
+  },
+  "files": {
+    "Textures/FBX/checkers.png": "8eb3d9d77c1165cf2b1c68a07f808d83d6565ce3db9e930ca500cbd7296f4c4d",
+    "Textures/FBX/net.png": "c8e5d6fc69bafe6c3df797ae3175d9f1bf606bc1a9df5e12463a74087a4ea3fc",
+    "Textures/FBX/tankco.png": "5355b8f2c0155034d2bc2170517ae815ad0fe659cd2fb5e195245b7c9165d9f5",
+    "FBX format/roadCrossing.fbx": "ae3c4673f6cf928bb83165b908a14b1442e822a61230ca9da5302ac1b1f42ae4",
+    "GLB format/roadCrossing.glb": "74c0e3b66606e9b6c0b64fc96f1a73c76163bfa712b3f07930776f4976c21df0",
+    "Textures/OBJ/checkers.png": "8eb3d9d77c1165cf2b1c68a07f808d83d6565ce3db9e930ca500cbd7296f4c4d",
+    "Textures/OBJ/net.png": "c8e5d6fc69bafe6c3df797ae3175d9f1bf606bc1a9df5e12463a74087a4ea3fc",
+    "Textures/OBJ/tankco.png": "5355b8f2c0155034d2bc2170517ae815ad0fe659cd2fb5e195245b7c9165d9f5",
+    "OBJ format/roadCrossing.mtl": "519358fd0edce661aef9f2398071f5c940350a806ef71d03dbdff8057107daf4",
+    "OBJ format/roadCrossing.obj": "27a97b7157781884ad711c4b21cd6d9437a905a2edf92c88bd778ad2180fe41c"
+  },
+  "license": "../License.txt"
+}

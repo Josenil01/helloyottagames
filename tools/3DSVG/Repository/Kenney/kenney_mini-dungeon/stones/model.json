@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stones",
+  "pack": "kenney_mini-dungeon",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/Textures/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "Models/FBX format/stones.fbx": "2af5093a1724c929216c6e28266096ed40a1f5b7562a2eb6045e2c0cecb00be0",
+    "Models/GLB format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/GLB format/stones.glb": "69ba9c42733488f5172c5e39e3bcfe92da5fda36cbada3343dd64415bb04ed30",
+    "Models/OBJ format/Textures/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Models/OBJ format/stones.obj": "1ddc5505279b887326ca546001168ce8f38f9b8a2a23646a6811e5954c035be1",
+    "Models/OBJ format/stones.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/stones.png": "698f833183c38e7bd47bfeccf913c7a187f47de0a4059dfec780744dee48696b"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/FBX/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "FBX format/stones.fbx": "2af5093a1724c929216c6e28266096ed40a1f5b7562a2eb6045e2c0cecb00be0",
+    "Textures/GLB/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/GLB/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "GLB format/stones.glb": "69ba9c42733488f5172c5e39e3bcfe92da5fda36cbada3343dd64415bb04ed30",
+    "Textures/OBJ/colormap.png": "bc492d755caf9e64924447f065681be0d5438a33cd0acddc72f3d00fd75893be",
+    "Textures/OBJ/variation-a.png": "c0b958992f6b40c974a1583a878711d1c13d4f0ea20a0cb02b5982cb44362f41",
+    "OBJ format/stones.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/stones.obj": "2bb72ef68acc9f37e605da2f5d0b3e280038a3b5c770ffab79ab2aaaf3e19ce4",
+    "Preview.png": "698f833183c38e7bd47bfeccf913c7a187f47de0a4059dfec780744dee48696b"
+  },
+  "license": "../License.txt"
+}

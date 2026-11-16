@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "stairs-handrail-single",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/stairs-handrail-single.fbx": "8858188c0629845b270960556e4e67225f7f5f7be2b2dcf180c2251243f5dc03",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/stairs-handrail-single.glb": "0aba72c06dca971fff539a098451921d1b1649a7557f9539520061ae138ce87c",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/stairs-handrail-single.obj": "482ffcae783ffe35d48da0336014765c429702d3861bf299e3f6355b22535812",
+    "Models/OBJ format/stairs-handrail-single.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/stairs-handrail-single.png": "aebafe3b69b4ffc9f8444680cb124284ac0052b1d328c6c8984c0814397165a7"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/stairs-handrail-single.fbx": "8858188c0629845b270960556e4e67225f7f5f7be2b2dcf180c2251243f5dc03",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/stairs-handrail-single.glb": "0aba72c06dca971fff539a098451921d1b1649a7557f9539520061ae138ce87c",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/stairs-handrail-single.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/stairs-handrail-single.obj": "c4845eeabcf4b6ec6e8c3fdabc13da2cb486cb2b945e1f1f439a254f1164fd97",
+    "Preview.png": "aebafe3b69b4ffc9f8444680cb124284ac0052b1d328c6c8984c0814397165a7"
+  },
+  "license": "../License.txt"
+}

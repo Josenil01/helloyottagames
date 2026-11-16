@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "train-locomotive-passenger-a",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/train-locomotive-passenger-a.fbx": "73646887c762f31e07def66f162140fcb9b88467bd1895a63496790410c9313f",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/train-locomotive-passenger-a.glb": "fc4eddc8056dd838747fa5cc4a2aae7f94379c00d202d2048461573887e371f3",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/train-locomotive-passenger-a.obj": "1ed38adb59d03f61a06a2c7cc50433eef629a0bd1c374ef021b4339a04101557",
+    "Models/OBJ format/train-locomotive-passenger-a.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/train-locomotive-passenger-a.png": "9e8efe53533901f4cb0ba49bf1e4506a428b7a820a21eb27f5ca4e0d6b056802"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/train-locomotive-passenger-a.fbx": "73646887c762f31e07def66f162140fcb9b88467bd1895a63496790410c9313f",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/train-locomotive-passenger-a.glb": "fc4eddc8056dd838747fa5cc4a2aae7f94379c00d202d2048461573887e371f3",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/train-locomotive-passenger-a.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/train-locomotive-passenger-a.obj": "c0a4f89c33df3b84df6ce5f65d5a139272272aa0d7b8c5901b52a240cb998680",
+    "Preview.png": "9e8efe53533901f4cb0ba49bf1e4506a428b7a820a21eb27f5ca4e0d6b056802"
+  },
+  "license": "../License.txt"
+}

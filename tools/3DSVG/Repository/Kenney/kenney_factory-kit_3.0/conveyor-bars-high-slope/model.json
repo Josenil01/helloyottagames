@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "conveyor-bars-high-slope",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/conveyor-bars-high-slope.fbx": "e3caa2e51c9dbdf3c16aec04e954b69f3590e94e1093118fa5f6e7209020d3a9",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/conveyor-bars-high-slope.glb": "6693f9765f1c2d52bdd14bc74efe61f797657fcd320af4ae22467717b12b1d3f",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/conveyor-bars-high-slope.obj": "6e47929adcf2a088a935fd10ed0b11a1c720e2d8dcb0318c0ef549156979e8e3",
+    "Models/OBJ format/conveyor-bars-high-slope.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/conveyor-bars-high-slope.png": "d7dda9d71bc9ecd70fc59cf03a86ee04e75fa75030cc40a9b0f94481fd60d7f2"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/conveyor-bars-high-slope.fbx": "e3caa2e51c9dbdf3c16aec04e954b69f3590e94e1093118fa5f6e7209020d3a9",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/conveyor-bars-high-slope.glb": "6693f9765f1c2d52bdd14bc74efe61f797657fcd320af4ae22467717b12b1d3f",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/conveyor-bars-high-slope.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/conveyor-bars-high-slope.obj": "42e219840bf97436a4a8b76fdab511edbcc8d44fc6b381b0404690ad42784d67",
+    "Preview.png": "d7dda9d71bc9ecd70fc59cf03a86ee04e75fa75030cc40a9b0f94481fd60d7f2"
+  },
+  "license": "../License.txt"
+}

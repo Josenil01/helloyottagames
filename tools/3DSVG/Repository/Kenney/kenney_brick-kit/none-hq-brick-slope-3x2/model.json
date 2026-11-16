@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "none-hq-brick-slope-3x2",
+  "pack": "kenney_brick-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/FBX format/none-hq-brick-slope-3x2.fbx": "43bc0da93c099d27831c70ab3515ae9b53a71eef520f01c8927c7f14577b41f4",
+    "Models/GLB format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/GLB format/none-hq-brick-slope-3x2.glb": "1a9f9bf1ac66888dbddd1d269c84f1450919e285f3ab33b8add5fd2acbaad02c",
+    "Models/OBJ format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/OBJ format/none-hq-brick-slope-3x2.obj": "b93a96e686861bf3229d05cbe21c9ea8f5920bdea730038b1bea2cb240900161",
+    "Models/OBJ format/none-hq-brick-slope-3x2.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/none-hq-brick-slope-3x2.png": "dd0868ce6c521e374c51b5e4509730253d1c3de1db4f5e959c095d4fd8db23b8"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "FBX format/none-hq-brick-slope-3x2.fbx": "43bc0da93c099d27831c70ab3515ae9b53a71eef520f01c8927c7f14577b41f4",
+    "Textures/GLB/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "GLB format/none-hq-brick-slope-3x2.glb": "1a9f9bf1ac66888dbddd1d269c84f1450919e285f3ab33b8add5fd2acbaad02c",
+    "Textures/OBJ/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "OBJ format/none-hq-brick-slope-3x2.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/none-hq-brick-slope-3x2.obj": "4e2c89afa751ddd2956ceba14c01c9a989d5c5febe3ba08c885c30170a0ad6db",
+    "Preview.png": "dd0868ce6c521e374c51b5e4509730253d1c3de1db4f5e959c095d4fd8db23b8"
+  },
+  "license": "../License.txt"
+}

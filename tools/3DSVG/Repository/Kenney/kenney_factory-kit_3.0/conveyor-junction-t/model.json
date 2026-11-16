@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "conveyor-junction-t",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/conveyor-junction-t.fbx": "a0a387b30d20d6db38e2065b253e74599f29d142b040395df51dfb708adb4b78",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/conveyor-junction-t.glb": "a640c87707f17ddf49179f7dc00fc3621f84bb751bf0bfea90e537c153606ed3",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/conveyor-junction-t.obj": "8293ebac84ee7515be837e458070ed5f8d959b0f13eee06111585ed6293dd9b2",
+    "Models/OBJ format/conveyor-junction-t.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/conveyor-junction-t.png": "be5fbba42fd71ff586ca5ad448f801dc9c2988cf77b830a4cf1950d4a4246c7f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/conveyor-junction-t.fbx": "a0a387b30d20d6db38e2065b253e74599f29d142b040395df51dfb708adb4b78",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/conveyor-junction-t.glb": "a640c87707f17ddf49179f7dc00fc3621f84bb751bf0bfea90e537c153606ed3",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/conveyor-junction-t.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/conveyor-junction-t.obj": "469ec445072ed5747b7ec831ffc94a3f111e0de06bdfdf3529a964bb91e74692",
+    "Preview.png": "be5fbba42fd71ff586ca5ad448f801dc9c2988cf77b830a4cf1950d4a4246c7f"
+  },
+  "license": "../License.txt"
+}

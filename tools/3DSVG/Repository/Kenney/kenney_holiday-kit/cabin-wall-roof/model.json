@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cabin-wall-roof",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/cabin-wall-roof.fbx": "0bc1a5c7a219db2bc9de2ab84835892df693791473bd6592aa8e5db95d0e44c2",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/cabin-wall-roof.glb": "a4207827898e393a80858303bc4f712ac5aa900c135e421b4dab2b5d16145648",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/cabin-wall-roof.obj": "dadf5c438dd9f87bbcd565755e909fe3ca50ef7e279bffc6f5c0429f29b20808",
+    "Models/OBJ format/cabin-wall-roof.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cabin-wall-roof.png": "dda61cbb560a327a81a47c69513f718b9cc59925f217ccdee5ee4194be3a4e94"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/cabin-wall-roof.fbx": "0bc1a5c7a219db2bc9de2ab84835892df693791473bd6592aa8e5db95d0e44c2",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/cabin-wall-roof.glb": "a4207827898e393a80858303bc4f712ac5aa900c135e421b4dab2b5d16145648",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/cabin-wall-roof.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cabin-wall-roof.obj": "1a83875174bb7cae4ea601cd1d17ac7f80ae9d80ef74d3bfdf7f6693a28c2793",
+    "Preview.png": "dda61cbb560a327a81a47c69513f718b9cc59925f217ccdee5ee4194be3a4e94"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cake-birthday",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/cake-birthday.fbx": "e7e792b52a3aae31469bfee8a6a9e492b2d7f5d8ad6c8d5ce2fa623400f41190",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/cake-birthday.glb": "3102379c244fa77cdd4818c316037f576f3fb172d28f161ae9e8deead55dac69",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/cake-birthday.obj": "b57526b1e20ca3136acf1f97b765b36a5c44fb58fc1cafbd2d54c3f3d3b6259a",
+    "Models/OBJ format/cake-birthday.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cake-birthday.png": "025651ba0e27f9faf446c9dd7e65ae95831d4146b055b40ccc490eb909b253ac"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/cake-birthday.fbx": "e7e792b52a3aae31469bfee8a6a9e492b2d7f5d8ad6c8d5ce2fa623400f41190",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/cake-birthday.glb": "3102379c244fa77cdd4818c316037f576f3fb172d28f161ae9e8deead55dac69",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/cake-birthday.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cake-birthday.obj": "c68ebdac30f458659c75f23d10b4b3760dccaa65a11125729a6d44887d7ca8d5",
+    "Preview.png": "025651ba0e27f9faf446c9dd7e65ae95831d4146b055b40ccc490eb909b253ac"
+  },
+  "license": "../License.txt"
+}

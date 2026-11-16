@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "piston-square",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/piston-square.fbx": "eba6b83f440aa21ec333a2852c3633df3c2714f61ff4649a6dcbdc6514d3342b",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/piston-square.glb": "21b5e5dd9bfe39ddc2e77ff432f89f4dc20cabf31bd37a630ce260dcb93280dc",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/piston-square.obj": "5ffc6e305d127a2eeb0bd4eab0bb46462d80f15f7c73c8b7f6a0573948273f37",
+    "Models/OBJ format/piston-square.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/piston-square.png": "d8aad4b6f9157b63525178c4d31dec09ee82ef14c102c1b2d83bf70627125745"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/piston-square.fbx": "eba6b83f440aa21ec333a2852c3633df3c2714f61ff4649a6dcbdc6514d3342b",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/piston-square.glb": "21b5e5dd9bfe39ddc2e77ff432f89f4dc20cabf31bd37a630ce260dcb93280dc",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/piston-square.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/piston-square.obj": "352baa59f78ea6ed7b8434ed582d8679410b9f7ebbb215d63fad92378fecd57f",
+    "Preview.png": "d8aad4b6f9157b63525178c4d31dec09ee82ef14c102c1b2d83bf70627125745"
+  },
+  "license": "../License.txt"
+}

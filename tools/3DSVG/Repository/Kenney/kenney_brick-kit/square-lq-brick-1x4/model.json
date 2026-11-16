@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "square-lq-brick-1x4",
+  "pack": "kenney_brick-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/FBX format/square-lq-brick-1x4.fbx": "c2af9ebbee541b164a52eb5467ede7389d6d0b48eca8a95da6165fff7ad4d822",
+    "Models/GLB format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/GLB format/square-lq-brick-1x4.glb": "ea24b20648862a6239ff5fee6ebcccc2ca1378eb4f37b4db690b190d339addf3",
+    "Models/OBJ format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/OBJ format/square-lq-brick-1x4.obj": "30a5082b0e7e4986401b26544547e876b8959ac90a0e9c35a501532483a3711e",
+    "Models/OBJ format/square-lq-brick-1x4.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/square-lq-brick-1x4.png": "47cb412b0f37ec037acee084d43f1272c058171cb8bbaeefd7473959149fff70"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "FBX format/square-lq-brick-1x4.fbx": "c2af9ebbee541b164a52eb5467ede7389d6d0b48eca8a95da6165fff7ad4d822",
+    "Textures/GLB/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "GLB format/square-lq-brick-1x4.glb": "ea24b20648862a6239ff5fee6ebcccc2ca1378eb4f37b4db690b190d339addf3",
+    "Textures/OBJ/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "OBJ format/square-lq-brick-1x4.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/square-lq-brick-1x4.obj": "33e6d7f0db9150708033b6dff694525590b21f0092269045598de1abd1d3b746",
+    "Preview.png": "47cb412b0f37ec037acee084d43f1272c058171cb8bbaeefd7473959149fff70"
+  },
+  "license": "../License.txt"
+}

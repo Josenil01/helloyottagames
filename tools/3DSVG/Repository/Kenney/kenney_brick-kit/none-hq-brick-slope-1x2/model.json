@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "none-hq-brick-slope-1x2",
+  "pack": "kenney_brick-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/FBX format/none-hq-brick-slope-1x2.fbx": "c9c0b57eeb0b8db0dec352280cbaa88602c4b00e7f7f3c9c089116be4f1fb04c",
+    "Models/GLB format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/GLB format/none-hq-brick-slope-1x2.glb": "bd7fc7febe89cef725a9a2a456518ca9f67b4c888c20c44f0558a346603b7183",
+    "Models/OBJ format/Textures/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "Models/OBJ format/none-hq-brick-slope-1x2.obj": "80867365be02f7fcdd930169caecad6f5a1982f718920e5ee24d275668735f13",
+    "Models/OBJ format/none-hq-brick-slope-1x2.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/none-hq-brick-slope-1x2.png": "4f9ea151df431ede626fa479a9780692700e475e83b26e232820bafcf50673f2"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "FBX format/none-hq-brick-slope-1x2.fbx": "c9c0b57eeb0b8db0dec352280cbaa88602c4b00e7f7f3c9c089116be4f1fb04c",
+    "Textures/GLB/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "GLB format/none-hq-brick-slope-1x2.glb": "bd7fc7febe89cef725a9a2a456518ca9f67b4c888c20c44f0558a346603b7183",
+    "Textures/OBJ/colormap.png": "a802b8c02c0b0cc07654cd8edca30439a9e9d505b10088502169ab3b9cf5e94f",
+    "OBJ format/none-hq-brick-slope-1x2.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/none-hq-brick-slope-1x2.obj": "d451c1ec110a220835bb29e7826b61e5c1e77d834a7d1034fdaa59d7dad1ed5f",
+    "Preview.png": "4f9ea151df431ede626fa479a9780692700e475e83b26e232820bafcf50673f2"
+  },
+  "license": "../License.txt"
+}

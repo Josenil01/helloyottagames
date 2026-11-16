@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "patch-sand-foliage",
+  "pack": "kenney_pirate-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/FBX format/patch-sand-foliage.fbx": "3a3b97f41f03e59e4ed2d779e7aa6d06e0f042efe6738efb2446b21b2bd40838",
+    "Models/GLB format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/GLB format/patch-sand-foliage.glb": "35eea1e7ad6ef7c2349aa69f67824e4698ec1320f19b42bf1870013106e51680",
+    "Models/OBJ format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/OBJ format/patch-sand-foliage.obj": "dde86f7ee122f2bd346d56c79be5ca6032d702457a819d1ccab1a574cf87a452",
+    "Models/OBJ format/patch-sand-foliage.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/patch-sand-foliage.png": "c7bdfb9340fad72937896b8b7a2d40ebac7ce11dac173db7cf734dcb5b2bb454"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "FBX format/patch-sand-foliage.fbx": "3a3b97f41f03e59e4ed2d779e7aa6d06e0f042efe6738efb2446b21b2bd40838",
+    "Textures/GLB/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "GLB format/patch-sand-foliage.glb": "35eea1e7ad6ef7c2349aa69f67824e4698ec1320f19b42bf1870013106e51680",
+    "Textures/OBJ/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "OBJ format/patch-sand-foliage.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/patch-sand-foliage.obj": "05ac22de7132c87f070b856884759b54e7c2602865dc9897524903f44c30b787",
+    "Preview.png": "c7bdfb9340fad72937896b8b7a2d40ebac7ce11dac173db7cf734dcb5b2bb454"
+  },
+  "license": "../License.txt"
+}

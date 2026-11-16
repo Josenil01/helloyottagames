@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "snow-tile-end-round",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/snow-tile-end-round.fbx": "641abd75762f6eda8de1a91eecd0deff6439d726740b288b0fb1eeeda434565f",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/snow-tile-end-round.glb": "924a6b6a03f69e89d49db65b0786fb4420a2bdbd5a334808c3a1880d791955a9",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/snow-tile-end-round.obj": "7436c6d7d325880d2b0c8043363f29969bb88ab17b6dfb989c8e66bd706eec8b",
+    "Models/OBJ format/snow-tile-end-round.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/snow-tile-end-round.png": "578a4a5c88fee588e6620e05f66bc6bf29c8eb9d2833eb1ead72acd3c4cc9e18"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/snow-tile-end-round.fbx": "641abd75762f6eda8de1a91eecd0deff6439d726740b288b0fb1eeeda434565f",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/snow-tile-end-round.glb": "924a6b6a03f69e89d49db65b0786fb4420a2bdbd5a334808c3a1880d791955a9",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/snow-tile-end-round.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/snow-tile-end-round.obj": "6fc8959f4cc319893c1f7748763bf89fa47f3fae24c1f3f968c55986c4aff516",
+    "Preview.png": "578a4a5c88fee588e6620e05f66bc6bf29c8eb9d2833eb1ead72acd3c4cc9e18"
+  },
+  "license": "../License.txt"
+}

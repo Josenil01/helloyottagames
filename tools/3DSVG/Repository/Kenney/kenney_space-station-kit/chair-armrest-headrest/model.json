@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "chair-armrest-headrest",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/chair-armrest-headrest.fbx": "f9d0046f2b0df87a33546cea360b85a7634f574d7e032e79b4cda1efc6294d84",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/chair-armrest-headrest.glb": "5f177776c26aac0cad6f90a128332e190f23958159ea6f62f78cdac54e4acd84",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/chair-armrest-headrest.obj": "adf844554ec63afd9374b243e965156c165d4ecf4ff3dd0aaffc1f103867b645",
+    "Models/OBJ format/chair-armrest-headrest.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/chair-armrest-headrest.png": "9b558baef0c5d28fb1e1bddbe6c32d02d004a6f3d08e3a473a1f7396a593ef37"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/chair-armrest-headrest.fbx": "f9d0046f2b0df87a33546cea360b85a7634f574d7e032e79b4cda1efc6294d84",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/chair-armrest-headrest.glb": "5f177776c26aac0cad6f90a128332e190f23958159ea6f62f78cdac54e4acd84",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/chair-armrest-headrest.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/chair-armrest-headrest.obj": "d835f2d64fa35e8e7631ee46dff060c125e9b622a9fda055e64ec3e508840261",
+    "Preview.png": "9b558baef0c5d28fb1e1bddbe6c32d02d004a6f3d08e3a473a1f7396a593ef37"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-sign-empty-hanging",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-sign-empty-hanging.fbx": "4085960bd8a6b304c2e35a62b6768cb167f2c7351db4a32147a02c614117a197",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-sign-empty-hanging.glb": "41021007cd856fada1f372a1f8ed93c229461cfac85ad888e16549e559455b23",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-sign-empty-hanging.obj": "7f6cc799852205559b52afa7ccbfa62f9888789617c8c585825b172a47f64ea8",
+    "Models/OBJ format/road-sign-empty-hanging.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-sign-empty-hanging.png": "b1cb485d53841d8858225f0dade030efb349d771d51669140ea4851f017da350"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-sign-empty-hanging.fbx": "4085960bd8a6b304c2e35a62b6768cb167f2c7351db4a32147a02c614117a197",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-sign-empty-hanging.glb": "41021007cd856fada1f372a1f8ed93c229461cfac85ad888e16549e559455b23",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-sign-empty-hanging.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-sign-empty-hanging.obj": "21879c0df79227cf978d9eed5fd1b2d9ed32c53c4da56b129ff1aefef21be5c6",
+    "Preview.png": "b1cb485d53841d8858225f0dade030efb349d771d51669140ea4851f017da350"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "detail-rocks-large",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/detail-rocks-large.fbx": "55ea33847249d1c945ac62991263dc08d383b67d14a9d6bc7282c54232b78bf0",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/detail-rocks-large.glb": "cbc7ff7173a52e349eaf00dd1d9398298b656648f106331df2ad49d6da32fe37",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/detail-rocks-large.obj": "39aa2917dd1c56aa867c3163f79aefb66021a80b44c6879c9f3f3fa35f724434",
+    "Models/OBJ format/detail-rocks-large.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/detail-rocks-large.png": "3f1fb8a4cf65ca127cdca6e6582d642e18321c8d50b22a6b2746076e80df2505"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/detail-rocks-large.fbx": "55ea33847249d1c945ac62991263dc08d383b67d14a9d6bc7282c54232b78bf0",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/detail-rocks-large.glb": "cbc7ff7173a52e349eaf00dd1d9398298b656648f106331df2ad49d6da32fe37",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/detail-rocks-large.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/detail-rocks-large.obj": "ab5c6bd90bc93e4a3d87f71ba3a42ed016ebecd4d7214ed1941e5e9b094765bc",
+    "Preview.png": "3f1fb8a4cf65ca127cdca6e6582d642e18321c8d50b22a6b2746076e80df2505"
+  },
+  "license": "../License.txt"
+}

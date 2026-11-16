@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "lampWall",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/lampWall.fbx": "81b0164da1672cd3729b5bd53ab23b8fa76aaef91a830eb46f22dc8b8fc14bfa",
+    "Models/GLTF format/lampWall.glb": "a9679ecd3be05731846f22ade97c37069598ca7a06dd9319f50230e63a1ea83c",
+    "Models/OBJ format/lampWall.obj": "1d71515bf26e866ef6bf1bd79dabe2705f5e96d60819c6a3983f3f75322b6046",
+    "Models/OBJ format/lampWall.mtl": "21b423cdc4acadf5e6b60e31105c2da6e2bded3c02f0ae94a62c389c91a9fb88"
+  },
+  "files": {
+    "FBX format/lampWall.fbx": "81b0164da1672cd3729b5bd53ab23b8fa76aaef91a830eb46f22dc8b8fc14bfa",
+    "GLB format/lampWall.glb": "a9679ecd3be05731846f22ade97c37069598ca7a06dd9319f50230e63a1ea83c",
+    "OBJ format/lampWall.mtl": "cb39439009258a877019be2ef8b9c876ca5477c8ad300eaaf4639371ed0343fb",
+    "OBJ format/lampWall.obj": "02d53e7c91e8868a6b5d30bd1b41000157553d23deac415f64a22c13dd55e487"
+  },
+  "license": "../License.txt"
+}

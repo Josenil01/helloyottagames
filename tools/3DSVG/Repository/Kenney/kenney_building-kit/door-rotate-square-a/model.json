@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "door-rotate-square-a",
+  "pack": "kenney_building-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/Textures/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "Models/FBX format/door-rotate-square-a.fbx": "2d85e618a834f0b852882eee6cf93c2e86d3d6912f79af99034c1e6f4d411f2e",
+    "Models/GLB format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/GLB format/door-rotate-square-a.glb": "12675fba53441fb556772f8dadbfcb88bb2deb8c6d0e3d47f0c86bc364721918",
+    "Models/OBJ format/Textures/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Models/OBJ format/door-rotate-square-a.obj": "3c796d6006edc4641b5f8f536d5c656c8c219a965f997b2fcba38bba411c3062",
+    "Models/OBJ format/door-rotate-square-a.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/door-rotate-square-a.png": "97f35908bfdd85a25d339775d8e4bc1489772542a33d9e2f2e0aa2d7650f9fe5"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/FBX/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "FBX format/door-rotate-square-a.fbx": "2d85e618a834f0b852882eee6cf93c2e86d3d6912f79af99034c1e6f4d411f2e",
+    "Textures/GLB/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/GLB/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "GLB format/door-rotate-square-a.glb": "12675fba53441fb556772f8dadbfcb88bb2deb8c6d0e3d47f0c86bc364721918",
+    "Textures/OBJ/colormap.png": "01741a46a279bef667de3143ee653d0073ed7cae925d88341281391d9220092b",
+    "Textures/OBJ/variation-a.png": "49119956a9ac8daf564a1498e23ec2826c3f83b0afd0b58e26f8af76a76bc2a7",
+    "OBJ format/door-rotate-square-a.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/door-rotate-square-a.obj": "8eb545a4b0e32bb20683e2b40b399ea20af31917363f39fc1893c8408e9dfbd0",
+    "Preview.png": "97f35908bfdd85a25d339775d8e4bc1489772542a33d9e2f2e0aa2d7650f9fe5"
+  },
+  "license": "../License.txt"
+}

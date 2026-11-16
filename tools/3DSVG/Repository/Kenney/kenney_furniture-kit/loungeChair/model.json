@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "loungeChair",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/loungeChair.fbx": "2aefe16eeb4d5b8905d4e09a32ab9941a2557bf9ea9d23961832043cc9580a1e",
+    "Models/GLTF format/loungeChair.glb": "ddfe6bc4b3451bca61666d7b614552d6ed2a03d82fc76244b72ae3155874dc6c",
+    "Models/OBJ format/loungeChair.obj": "45bddc6646c1c5f48e7fd2abe609c9c846972008f930951249bf669c3ea180b9",
+    "Models/OBJ format/loungeChair.mtl": "d35120ba4fb73995c313b4aaa205858e864530f1525bf44dced062e41662e66a"
+  },
+  "files": {
+    "FBX format/loungeChair.fbx": "2aefe16eeb4d5b8905d4e09a32ab9941a2557bf9ea9d23961832043cc9580a1e",
+    "GLB format/loungeChair.glb": "ddfe6bc4b3451bca61666d7b614552d6ed2a03d82fc76244b72ae3155874dc6c",
+    "OBJ format/loungeChair.mtl": "27993a17dc851296b6c830d9994fd8a0b153501c9a80c03696347d7d73a13fae",
+    "OBJ format/loungeChair.obj": "b23490a1e85fd75c5a3af7a2ed34e1091cae6d9eb5db2007de8ba41cb2ca2aed"
+  },
+  "license": "../License.txt"
+}

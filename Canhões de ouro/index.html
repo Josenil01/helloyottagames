@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Canhões de Ouro - Matemática!</title>
+  <title>Enigmas da Esfinge — Português e Raciocínio Lógico</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../styles/game-viewport.css">
@@ -19,7 +19,10 @@
     <script src="../utils/stars.js"></script>
     <script src="../utils/shuffle.js"></script>
     <script src="../utils/rand.js"></script>
+    <script src="riddles.js"></script>
+    <link rel="stylesheet" href="sphinx.css?v=blockie-visitors-1">
     <script src="../vendor/babel@7.26.10.min.js"></script>
+    <script type="text/babel" src="sphinx.js?v=blockie-visitors-1"></script>
 
   <style>
     body { font-family: 'Fredoka', sans-serif; user-select: none; }
@@ -58,8 +61,13 @@
     .custom-scroll::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); border-radius: 10px; }
     .custom-scroll::-webkit-scrollbar-thumb { background: #312e81; border-radius: 10px; }
   </style>
+
+  <!-- Visual library: high-resolution CC0 assets; original game logic preserved. -->
+  <link rel="stylesheet" href="../styles/visual-assets.css">
+  <script defer src="../utils/visual-manifest.js"></script>
+  <script defer src="../utils/visual-assets.js"></script>
 </head>
-<body class="hy-brand bg-sky-200 overflow-hidden">
+<body class="sphinx-body">
   <div id="root"></div>
 
   <script type="text/babel" src="main.js"></script>

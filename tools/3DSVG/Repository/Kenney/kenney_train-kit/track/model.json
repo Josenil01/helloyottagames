@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "track",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/track.fbx": "3d7cf38a7e72a3b23ab8760f2c9dd54318d86ef44b1f1e5e6f25e0a9aff03d23",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/track.glb": "a288815a2d74cea1e06c66e8cd9d7006fbe14c62d991cd25096306ec7681ed2b",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/track.obj": "2d507c4c488836b5ba14023168e2deb2532cc8c29e6a94a8774e4c5274247e0c",
+    "Models/OBJ format/track.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/track.png": "cadb1023a0cb616fc722b7ecb82ca62daf0df3aa5d3ccac0dd3cfc4c4de30e4c"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/track.fbx": "3d7cf38a7e72a3b23ab8760f2c9dd54318d86ef44b1f1e5e6f25e0a9aff03d23",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/track.glb": "a288815a2d74cea1e06c66e8cd9d7006fbe14c62d991cd25096306ec7681ed2b",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/track.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/track.obj": "69e9ab63edbcadbfb371d0d2804ba46bd220944db066263fbfa35f2a248e01e3",
+    "Preview.png": "cadb1023a0cb616fc722b7ecb82ca62daf0df3aa5d3ccac0dd3cfc4c4de30e4c"
+  },
+  "license": "../License.txt"
+}

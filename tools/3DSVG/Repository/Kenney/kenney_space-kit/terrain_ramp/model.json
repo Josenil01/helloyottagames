@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "terrain_ramp",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/terrain_ramp.fbx": "eeb51173cf76fd224f143f64b91d119717568598d1be79a0a456d0dc5d1d5208",
+    "Models/GLTF format/terrain_ramp.glb": "9171061212ee5aa9a74393c9f657a89a5b19d675766a43c88d5d91df6e507dea",
+    "Models/OBJ format/terrain_ramp.obj": "ca621a5b46385ec843c2fa16bf4d032d92b61646dac179eb8302bb144654a614",
+    "Models/OBJ format/terrain_ramp.mtl": "3f5b98315cc38f85580e92d4ac82f2693534ac142098fd1dbe76cc07b962c02d"
+  },
+  "files": {
+    "FBX format/terrain_ramp.fbx": "eeb51173cf76fd224f143f64b91d119717568598d1be79a0a456d0dc5d1d5208",
+    "GLB format/terrain_ramp.glb": "9171061212ee5aa9a74393c9f657a89a5b19d675766a43c88d5d91df6e507dea",
+    "OBJ format/terrain_ramp.mtl": "3f5b98315cc38f85580e92d4ac82f2693534ac142098fd1dbe76cc07b962c02d",
+    "OBJ format/terrain_ramp.obj": "7aedae7f107ad693fc88c8c6624d0a243edfddae75d020fe86c94e7b1fef23e7"
+  },
+  "license": "../License.txt"
+}

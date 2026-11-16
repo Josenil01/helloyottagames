@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "railroad-rail-curve",
+  "pack": "kenney_train-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/FBX format/railroad-rail-curve.fbx": "d297dce6c2d2d0da3f1f8d091e69fe4489615ece3523440ba6812e7e5138869a",
+    "Models/GLB format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/GLB format/railroad-rail-curve.glb": "70d874679e7ac8f1909e02a66875f7dc11874302c9012cbcd35a8195d594d051",
+    "Models/OBJ format/Textures/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "Models/OBJ format/railroad-rail-curve.obj": "247ebf1c53978b997f8f718e3b8112437d7bb190c317362f339381888d1b2242",
+    "Models/OBJ format/railroad-rail-curve.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/railroad-rail-curve.png": "2946bc3fd265584aa78cefcc54e2d8dffd20a3ce06048528ea880716f079f7bd"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "FBX format/railroad-rail-curve.fbx": "d297dce6c2d2d0da3f1f8d091e69fe4489615ece3523440ba6812e7e5138869a",
+    "Textures/GLB/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "GLB format/railroad-rail-curve.glb": "70d874679e7ac8f1909e02a66875f7dc11874302c9012cbcd35a8195d594d051",
+    "Textures/OBJ/colormap.png": "e264660f3fc9ecbd642bdb7fb7b7dc10755a061560a66651baf48274c729af09",
+    "OBJ format/railroad-rail-curve.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/railroad-rail-curve.obj": "2770bcdce22c8cc482bb9516d027a71a909c158d0492cfa489621bbaedc109e9",
+    "Preview.png": "2946bc3fd265584aa78cefcc54e2d8dffd20a3ce06048528ea880716f079f7bd"
+  },
+  "license": "../License.txt"
+}

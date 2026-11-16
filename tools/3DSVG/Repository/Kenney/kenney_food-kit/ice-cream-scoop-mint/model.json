@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "ice-cream-scoop-mint",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/ice-cream-scoop-mint.fbx": "71a33a5d441d2f35362b3419ab74438d6593def01b4f5d567135f3079f41090d",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/ice-cream-scoop-mint.glb": "3b2f31984185c667ee680c99c6db521d90cec6ca80d00d420ec4c77a2f2bd18d",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/ice-cream-scoop-mint.obj": "476d3976ff000654b8147b66ae31e5faffe55a5fa7601a8726147b2ae9bc1bb2",
+    "Models/OBJ format/ice-cream-scoop-mint.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/ice-cream-scoop-mint.png": "023379393eca9f27e81ab19949fabaaf6202470bf9fa2b84b2ffc48ebe51783e"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/ice-cream-scoop-mint.fbx": "71a33a5d441d2f35362b3419ab74438d6593def01b4f5d567135f3079f41090d",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/ice-cream-scoop-mint.glb": "3b2f31984185c667ee680c99c6db521d90cec6ca80d00d420ec4c77a2f2bd18d",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/ice-cream-scoop-mint.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/ice-cream-scoop-mint.obj": "c9dd6e4aed047e2394a0dd71315c849e5807551d6456b6d7cecb1589b514b86a",
+    "Preview.png": "023379393eca9f27e81ab19949fabaaf6202470bf9fa2b84b2ffc48ebe51783e"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bedBunk",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/bedBunk.fbx": "b9427191e3a33f8cc93c57b353700f47f58bc4e4de8273978e34ec1eeec0ad8d",
+    "Models/GLTF format/bedBunk.glb": "a3eccbc4a04340dd84878d959e15eede76f517fb8d4de6862ca46877c88d764e",
+    "Models/OBJ format/bedBunk.obj": "2d31e678182f5a43b096273b0dc675f47d626591597cf1a9353d26152aaa21d5",
+    "Models/OBJ format/bedBunk.mtl": "21827545b7c97d4fc715fd6f97fde602747ba94016145cd1a323f7da2d02597b"
+  },
+  "files": {
+    "FBX format/bedBunk.fbx": "b9427191e3a33f8cc93c57b353700f47f58bc4e4de8273978e34ec1eeec0ad8d",
+    "GLB format/bedBunk.glb": "a3eccbc4a04340dd84878d959e15eede76f517fb8d4de6862ca46877c88d764e",
+    "OBJ format/bedBunk.mtl": "34b16600ebdc069d84dadf8c0657e879411e2b4011c91a70f16bcb4cfc8eb7fc",
+    "OBJ format/bedBunk.obj": "e9e0db57b73187608e9ca3c469f5de22ec59bbc07cad5511bd30788fdf84fd5f"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "banner-red",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/banner-red.fbx": "e5d28fda4f8ccbd1773fe924b6b29c57949886a6ab031e74cd40407b00719687",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/banner-red.glb": "4e4a83de16e5979d2b34bb206d3bf3703a9039711bc658b37e3738d43090703d",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/banner-red.obj": "1991c196bf0cee651954d631b1745631c2ff940709dd3edca5a8346fd57c14f8",
+    "Models/OBJ format/banner-red.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/banner-red.png": "71490fd230ca984b1c2cea6767e1330c40fdbbf3d8633374d1cf14d85e812015"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/banner-red.fbx": "e5d28fda4f8ccbd1773fe924b6b29c57949886a6ab031e74cd40407b00719687",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/banner-red.glb": "4e4a83de16e5979d2b34bb206d3bf3703a9039711bc658b37e3738d43090703d",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/banner-red.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/banner-red.obj": "82faa18f955db4d059645a7c3e92e152bb9102a0b5417ca6917efd1c80e59541",
+    "Preview.png": "71490fd230ca984b1c2cea6767e1330c40fdbbf3d8633374d1cf14d85e812015"
+  },
+  "license": "../License.txt"
+}

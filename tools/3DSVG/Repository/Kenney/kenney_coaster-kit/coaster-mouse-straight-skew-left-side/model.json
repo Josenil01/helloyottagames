@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-mouse-straight-skew-left-side",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-mouse-straight-skew-left-side.fbx": "f05b5bd8ad2c701e09aa010f84957f41cdffb551bb6cbd5d34f45e288d5b4853",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-mouse-straight-skew-left-side.glb": "16a3850382b8df4f4dd010d9f5d82ca4519db97c5cac3f6a297ab8b1a0b8d978",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-mouse-straight-skew-left-side.obj": "68ccd03bfdc9e3313245c8cbba9ec38fd11be9da808907f6504e849115185d02",
+    "Models/OBJ format/coaster-mouse-straight-skew-left-side.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-mouse-straight-skew-left-side.png": "8df159652c1ef0fae6c029223ed03a7dd45059346c0c022384953dee11ea76cf"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-mouse-straight-skew-left-side.fbx": "f05b5bd8ad2c701e09aa010f84957f41cdffb551bb6cbd5d34f45e288d5b4853",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-mouse-straight-skew-left-side.glb": "16a3850382b8df4f4dd010d9f5d82ca4519db97c5cac3f6a297ab8b1a0b8d978",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-mouse-straight-skew-left-side.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-mouse-straight-skew-left-side.obj": "2b523a6600e77e357a7a9c4a89858f27f0d72a2cd38daa64c3afc928f843f31e",
+    "Preview.png": "8df159652c1ef0fae6c029223ed03a7dd45059346c0c022384953dee11ea76cf"
+  },
+  "license": "../License.txt"
+}

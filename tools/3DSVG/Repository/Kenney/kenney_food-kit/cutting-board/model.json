@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cutting-board",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/cutting-board.fbx": "afa07f76f9e002495672d1bd407f7d2348d17198798cf8b08ef33775ff7e1cca",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/cutting-board.glb": "067f8a9331d16c65487a748747de2cddab2a77826f23bd7379e4f5da186c78ea",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/cutting-board.obj": "04c2d409a2680741596b77469688e4b1a6a740af95057b0c00b19ccb49bab489",
+    "Models/OBJ format/cutting-board.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cutting-board.png": "344877d60366130d4e0a317e7a91da9254a655ad05e636907090d29e25a954be"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/cutting-board.fbx": "afa07f76f9e002495672d1bd407f7d2348d17198798cf8b08ef33775ff7e1cca",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/cutting-board.glb": "067f8a9331d16c65487a748747de2cddab2a77826f23bd7379e4f5da186c78ea",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/cutting-board.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cutting-board.obj": "e062abe78781c943246289e30ba79389c571fe80302d1b57ebc646445c9dfc7e",
+    "Preview.png": "344877d60366130d4e0a317e7a91da9254a655ad05e636907090d29e25a954be"
+  },
+  "license": "../License.txt"
+}

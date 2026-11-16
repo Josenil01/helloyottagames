@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "electricity-pole-wide",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/electricity-pole-wide.fbx": "9dceb5cd31986695c977fc505f899883df0e5318625177bf2d11162bc71d10b4",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/electricity-pole-wide.glb": "85ec58e9e0e29465eed4f96f380b0f540404f097e90f7b6997ef0a3d212e900c",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/electricity-pole-wide.obj": "feec2424d32f2deed053d379fccfe46b81da1bd59ba776bd9b69b68efbc4a6b2",
+    "Models/OBJ format/electricity-pole-wide.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/electricity-pole-wide.png": "052db943bd6eb3b5e41df2fffe68ccc791536ec2b49ec89cb881d3197171b861"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/electricity-pole-wide.fbx": "9dceb5cd31986695c977fc505f899883df0e5318625177bf2d11162bc71d10b4",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/electricity-pole-wide.glb": "85ec58e9e0e29465eed4f96f380b0f540404f097e90f7b6997ef0a3d212e900c",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/electricity-pole-wide.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/electricity-pole-wide.obj": "24d03b70b68e6f8ac4db5595e70502fa4867eadc05a0a537b29f441718d64a51",
+    "Preview.png": "052db943bd6eb3b5e41df2fffe68ccc791536ec2b49ec89cb881d3197171b861"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "ladder",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/ladder.fbx": "1273d5fa7189e424b100780103540fa22416c75ed9a1a87c6851d5866aca6d5b",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/ladder.glb": "64620d7fc0fb770bda241a1aa7f64c583c2ee10a31cf0b81231e8ac97e34305d",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/ladder.obj": "be40e0016ca03ebd4243202a3bad9ef7d778f79754e5144a6f077bd21d74a569",
+    "Models/OBJ format/ladder.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/ladder.png": "837addb101350586f43c970786a5f810d5895456901b0a0ae4b52de1a4684501"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/ladder.fbx": "1273d5fa7189e424b100780103540fa22416c75ed9a1a87c6851d5866aca6d5b",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/ladder.glb": "64620d7fc0fb770bda241a1aa7f64c583c2ee10a31cf0b81231e8ac97e34305d",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/ladder.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/ladder.obj": "b76b9133dcd8c2ee56bc5a322369fab3f59010322b3dac6fb63bb747dff4a5e5",
+    "Preview.png": "837addb101350586f43c970786a5f810d5895456901b0a0ae4b52de1a4684501"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tile-wide-straight",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/tile-wide-straight.fbx": "fcc0dfc4b34c3047f6607f3ba490cb6b7e58afcab960d020a0901304e1976d5f",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/tile-wide-straight.glb": "fecf84b1c9e085a8038cfdfdf460c110b7dc8a45b4dad318a97c615bb0bdd29c",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/tile-wide-straight.obj": "63b234fbc95d540a9c43e7570190211e2bcc7c0f3a33f3626ac30fc18a1fbb0b",
+    "Models/OBJ format/tile-wide-straight.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tile-wide-straight.png": "3d3aed4412cf61b67757c849496f4c4e5e3455e4e345ea0f80289a1e6d17e2ae"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/tile-wide-straight.fbx": "fcc0dfc4b34c3047f6607f3ba490cb6b7e58afcab960d020a0901304e1976d5f",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/tile-wide-straight.glb": "fecf84b1c9e085a8038cfdfdf460c110b7dc8a45b4dad318a97c615bb0bdd29c",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/tile-wide-straight.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tile-wide-straight.obj": "8f9e08c7669f017b983198e5ee350bcbb1c58b3d5a9c3c83f324a61e7029ca20",
+    "Preview.png": "3d3aed4412cf61b67757c849496f4c4e5e3455e4e345ea0f80289a1e6d17e2ae"
+  },
+  "license": "../License.txt"
+}

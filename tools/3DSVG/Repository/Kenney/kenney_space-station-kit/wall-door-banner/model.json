@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wall-door-banner",
+  "pack": "kenney_space-station-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "Models/FBX format/wall-door-banner.fbx": "9cf1e6360a738da95c6dc92f3fbd7f07b6194da3a905f683cf955d820feb4556",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/wall-door-banner.glb": "9c16bfcb9496edb0986ab4c35b435b0393e616876fa9301a5a8a7fab613c2e3d",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/wall-door-banner.obj": "caca157040657cc1b6e8695aa4b50c85e1f8990f4196f369660787bdf45cf9f4",
+    "Models/OBJ format/wall-door-banner.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wall-door-banner.png": "1f4d9ebb55a6ff931f4d12578aa99071635796652c739e38a0488901dcc0c4bc"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "FBX format/wall-door-banner.fbx": "9cf1e6360a738da95c6dc92f3fbd7f07b6194da3a905f683cf955d820feb4556",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "GLB format/wall-door-banner.glb": "9c16bfcb9496edb0986ab4c35b435b0393e616876fa9301a5a8a7fab613c2e3d",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "bd9e89d54c5a7f92e7f66c105e3b9f7f4178adceba20c8990ec9cbf0d7815f46",
+    "OBJ format/wall-door-banner.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wall-door-banner.obj": "96a8a5897e8b0b234e4a359b9d25c752d9311fab4ec2475efa4a15ec3a8ba845",
+    "Preview.png": "1f4d9ebb55a6ff931f4d12578aa99071635796652c739e38a0488901dcc0c4bc"
+  },
+  "license": "../License.txt"
+}

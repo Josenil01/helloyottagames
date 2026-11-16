@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "patch-grass-foliage",
+  "pack": "kenney_pirate-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/FBX format/patch-grass-foliage.fbx": "44bff6f41b115443a12d3a852ad4cd1e7d8a7c53ef96fe5af1a9ae3a67285625",
+    "Models/GLB format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/GLB format/patch-grass-foliage.glb": "b6915f81ab6ddb19b1e552b27f5a16a02e9650d7250e70b9e6e3147b47c680f4",
+    "Models/OBJ format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/OBJ format/patch-grass-foliage.obj": "8d779957fceb0d11f3debebdbe3ddf773f7d0d3841a0394fdda4d78892b4de8d",
+    "Models/OBJ format/patch-grass-foliage.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/patch-grass-foliage.png": "8971f8f5d72c73f41e5d2414d2de4e6133540ea1e86f8b0d3b840ed207511965"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "FBX format/patch-grass-foliage.fbx": "44bff6f41b115443a12d3a852ad4cd1e7d8a7c53ef96fe5af1a9ae3a67285625",
+    "Textures/GLB/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "GLB format/patch-grass-foliage.glb": "b6915f81ab6ddb19b1e552b27f5a16a02e9650d7250e70b9e6e3147b47c680f4",
+    "Textures/OBJ/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "OBJ format/patch-grass-foliage.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/patch-grass-foliage.obj": "a77b82d9dcc7a0f612e6a6c48da8851656ceec1c1d8beb74d3ebb938f0563431",
+    "Preview.png": "8971f8f5d72c73f41e5d2414d2de4e6133540ea1e86f8b0d3b840ed207511965"
+  },
+  "license": "../License.txt"
+}

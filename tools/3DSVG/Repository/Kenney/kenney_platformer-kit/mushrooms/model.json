@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "mushrooms",
+  "pack": "kenney_platformer-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/Textures/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "Models/FBX format/mushrooms.fbx": "b20d7d04a9e3621ef061a7d7da06f6e398b385e2306a4703f3fb32174500267b",
+    "Models/GLB format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/GLB format/mushrooms.glb": "81971dad14f9947d70897f1f76d7b3e723b7ee3737a32274ed8cc0355ea55c66",
+    "Models/OBJ format/Textures/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Models/OBJ format/mushrooms.obj": "2f2a13648f61dd3120444fd3b7d714ad8e18ee26d36887624eb053f3f4ae2bff",
+    "Models/OBJ format/mushrooms.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/mushrooms.png": "86c6b4b16c62979aef730cc9a284a310c51609a720f9f694045458347ce764ce"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/FBX/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "FBX format/mushrooms.fbx": "b20d7d04a9e3621ef061a7d7da06f6e398b385e2306a4703f3fb32174500267b",
+    "Textures/GLB/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/GLB/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "GLB format/mushrooms.glb": "81971dad14f9947d70897f1f76d7b3e723b7ee3737a32274ed8cc0355ea55c66",
+    "Textures/OBJ/colormap.png": "439dfcac935cfd75dc16f28333a4c8284fffcc4b24f857c61cfb4c8a964a15bd",
+    "Textures/OBJ/variation-a.png": "f6d236fbf5aba4d681a3092b456cfb27b9d63246a36e91ab458a6d1eb5d997c4",
+    "OBJ format/mushrooms.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/mushrooms.obj": "4d2e74febf603ea5a4d858ff5577c7bf92c17f4b7b51eee8fc00db12e81d0295",
+    "Preview.png": "86c6b4b16c62979aef730cc9a284a310c51609a720f9f694045458347ce764ce"
+  },
+  "license": "../License.txt"
+}

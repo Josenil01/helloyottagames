@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "structure_diagonal",
+  "pack": "kenney_space-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/structure_diagonal.fbx": "dd559f49ca756a810a9bd52cf478dd133961eaf08f30040b9740b0bdd2a2775b",
+    "Models/GLTF format/structure_diagonal.glb": "f2770ef772687d364291c185c9a54adcf0b3396b2b2429d6c7061adfcf3ffa9a",
+    "Models/OBJ format/structure_diagonal.obj": "836eb5339bf2ffd512988d0c728b684067495908f54a1cf2a357def17ec7ec1c",
+    "Models/OBJ format/structure_diagonal.mtl": "f2dc384b26d60fe7f4b645f35d963f410b0d85b2d738aaa4d63049f43b06f559"
+  },
+  "files": {
+    "FBX format/structure_diagonal.fbx": "dd559f49ca756a810a9bd52cf478dd133961eaf08f30040b9740b0bdd2a2775b",
+    "GLB format/structure_diagonal.glb": "f2770ef772687d364291c185c9a54adcf0b3396b2b2429d6c7061adfcf3ffa9a",
+    "OBJ format/structure_diagonal.mtl": "f2dc384b26d60fe7f4b645f35d963f410b0d85b2d738aaa4d63049f43b06f559",
+    "OBJ format/structure_diagonal.obj": "30f6c1d9127fcbb1799278b292e2425b523a91f2d30140e4a5e0823fb11630d3"
+  },
+  "license": "../License.txt"
+}

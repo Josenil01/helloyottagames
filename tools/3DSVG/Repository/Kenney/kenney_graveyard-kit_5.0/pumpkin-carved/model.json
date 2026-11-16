@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pumpkin-carved",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/pumpkin-carved.fbx": "b17536f2901a492ac0dd3bcbec05faf3fdd452ebe3e9f5229543b0050fb1cc50",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/pumpkin-carved.glb": "391f55e283d8b1e8e02425a865238c285636909ef6e8bb32794136d13f881e18",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/pumpkin-carved.obj": "ac456f7284dec1e9abfc9bb8c8d14ada122334f275287787997a9379996314f6",
+    "Models/OBJ format/pumpkin-carved.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/pumpkin-carved.png": "2d46c406e833b55115be1019620375f172d71b14133d27e7d6ea760642180690"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/pumpkin-carved.fbx": "b17536f2901a492ac0dd3bcbec05faf3fdd452ebe3e9f5229543b0050fb1cc50",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/pumpkin-carved.glb": "391f55e283d8b1e8e02425a865238c285636909ef6e8bb32794136d13f881e18",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/pumpkin-carved.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/pumpkin-carved.obj": "ac8f627f4841e8d01e94bf31921e69484a59f24bca5319e61ce8e3bf3c9707f8",
+    "Preview.png": "2d46c406e833b55115be1019620375f172d71b14133d27e7d6ea760642180690"
+  },
+  "license": "../License.txt"
+}

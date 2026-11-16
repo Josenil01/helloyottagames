@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cross-wood",
+  "pack": "kenney_graveyard-kit_5.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/FBX format/cross-wood.fbx": "dab9d16dc5b372d0661c5b141118c6ac601db59cc115ba03fb6784c9f288f6f8",
+    "Models/GLB format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/GLB format/cross-wood.glb": "8c84436cf5d058276e5b83af9638220c94d265f1f042a6f021307303e1b929a0",
+    "Models/OBJ format/Textures/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "Models/OBJ format/cross-wood.obj": "63dc6f04e829ea149e66176c5541447facc1bd52d06e8158f309cb8131afbfda",
+    "Models/OBJ format/cross-wood.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cross-wood.png": "399c70ef90cd3d19973fb5449ab7cee198262cbd1b5e9ecd8205378fad4f9d88"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "FBX format/cross-wood.fbx": "dab9d16dc5b372d0661c5b141118c6ac601db59cc115ba03fb6784c9f288f6f8",
+    "Textures/GLB/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "GLB format/cross-wood.glb": "8c84436cf5d058276e5b83af9638220c94d265f1f042a6f021307303e1b929a0",
+    "Textures/OBJ/colormap.png": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+    "OBJ format/cross-wood.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cross-wood.obj": "95d630605c760c9b13717f0defdc31bdfafe2bcbb91396348455365220db1afe",
+    "Preview.png": "399c70ef90cd3d19973fb5449ab7cee198262cbd1b5e9ecd8205378fad4f9d88"
+  },
+  "license": "../License.txt"
+}

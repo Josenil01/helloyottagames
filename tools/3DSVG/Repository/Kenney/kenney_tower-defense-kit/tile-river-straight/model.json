@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tile-river-straight",
+  "pack": "kenney_tower-defense-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/Textures/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "Models/FBX format/tile-river-straight.fbx": "743d2570144952ae756b811d6c9c81e578261e43edd467e8371126d41831196e",
+    "Models/GLB format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/GLB format/tile-river-straight.glb": "64c840c16cf4a55b50b596672b57298f528e6e701338be0bdd8ff6d6d61ff7de",
+    "Models/OBJ format/Textures/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Models/OBJ format/tile-river-straight.obj": "7d10db0ddbc8af986d9f0b574b6541f2ff6c13e7394d2bf3f3e02516fb9a66ef",
+    "Models/OBJ format/tile-river-straight.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tile-river-straight.png": "570a2908c59f3a3e30203a3521d35be01c511e8dd47eb4646ce58091156ab238"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/FBX/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "FBX format/tile-river-straight.fbx": "743d2570144952ae756b811d6c9c81e578261e43edd467e8371126d41831196e",
+    "Textures/GLB/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/GLB/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "GLB format/tile-river-straight.glb": "64c840c16cf4a55b50b596672b57298f528e6e701338be0bdd8ff6d6d61ff7de",
+    "Textures/OBJ/colormap.png": "cbd2f95976ed3f18070769ce32a819527d9bc00d74253844e3882f747b5d76b6",
+    "Textures/OBJ/variation-a.png": "652157e87c58be16cc45100ff5b6bc90e678b8a677406eb273c76c96c2371d7e",
+    "OBJ format/tile-river-straight.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tile-river-straight.obj": "947cc01c2cb97ae5cb751e22d9b67d4833e19654ab11505e42f1f515cfe823f1",
+    "Preview.png": "570a2908c59f3a3e30203a3521d35be01c511e8dd47eb4646ce58091156ab238"
+  },
+  "license": "../License.txt"
+}

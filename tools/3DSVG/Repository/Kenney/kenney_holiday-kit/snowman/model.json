@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "snowman",
+  "pack": "kenney_holiday-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/FBX format/snowman.fbx": "652d331c8f029e9681d27892343bbc104a8b3a1e26e5158832d5f54a59768eb8",
+    "Models/GLB format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/GLB format/snowman.glb": "9124463abc03ec477f35b478692ba06cf15c17420a86321a6e4deb72deac4ef4",
+    "Models/OBJ format/Textures/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "Models/OBJ format/snowman.obj": "83e6f67bf87c5df350137d7a45d20f763247a1c970aba99b89d18ce4dcd1615c",
+    "Models/OBJ format/snowman.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/snowman.png": "7cf8e2cb56dad0efc34e6b11e5b3208f736cd5ba9c4888357f1c9336cd41b7fd"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "FBX format/snowman.fbx": "652d331c8f029e9681d27892343bbc104a8b3a1e26e5158832d5f54a59768eb8",
+    "Textures/GLB/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "GLB format/snowman.glb": "9124463abc03ec477f35b478692ba06cf15c17420a86321a6e4deb72deac4ef4",
+    "Textures/OBJ/colormap.png": "015fcc1664be7576f468a98bc4f5f329ef8b3c9caef0d85b2a4dc0ca69516863",
+    "OBJ format/snowman.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/snowman.obj": "79f3292b7ed584ed93c90db47071bd92f40c7c28340a32eeae92ad7360933577",
+    "Preview.png": "7cf8e2cb56dad0efc34e6b11e5b3208f736cd5ba9c4888357f1c9336cd41b7fd"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cone",
+  "pack": "kenney_factory-kit_3.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/Textures/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "Models/FBX format/cone.fbx": "dbdb335f79a0108da4968e675ae2a2f4356d70b9f4bdf3f23b185e977d35a797",
+    "Models/GLB format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/GLB format/cone.glb": "deb6ea20fe61bc094f0e64a3d6891b029ff552c5ab00bf57b763798624228e41",
+    "Models/OBJ format/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Models/OBJ format/cone.obj": "8832043a76f29c41e03df949eeb46a1375b1a6f3e6881e80a80f3ae9faa10368",
+    "Models/OBJ format/cone.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cone.png": "474535d039f3e4d86467fb837ac145fdd73ccea1d354270461f14dba57379bfc"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/FBX/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "FBX format/cone.fbx": "dbdb335f79a0108da4968e675ae2a2f4356d70b9f4bdf3f23b185e977d35a797",
+    "Textures/GLB/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/GLB/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "GLB format/cone.glb": "deb6ea20fe61bc094f0e64a3d6891b029ff552c5ab00bf57b763798624228e41",
+    "Textures/OBJ/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+    "Textures/OBJ/variation-a.png": "fd3ce1750733ad0ba62829862b3cbccf8d3f45a7aab41920a2c9af9d1d8a2872",
+    "OBJ format/cone.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cone.obj": "875ab7799f7599b8b5bf55ff189bdf4eefe2f1637a76013e5c4245c7433bbbb9",
+    "Preview.png": "474535d039f3e4d86467fb837ac145fdd73ccea1d354270461f14dba57379bfc"
+  },
+  "license": "../License.txt"
+}

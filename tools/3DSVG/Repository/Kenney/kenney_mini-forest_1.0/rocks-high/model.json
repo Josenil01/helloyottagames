@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "rocks-high",
+  "pack": "kenney_mini-forest_1.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "Models/FBX format/rocks-high.fbx": "a6c9ac76606526abdb19a1b08ec86b78f5d76d72173a432c0e5f482fb917043f",
+    "Models/GLB format/Textures/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "Models/GLB format/rocks-high.glb": "226728a03989a1ce52ea64b55e3d9e2ff89004f7eaca9f74c2fafda7c84bbe49",
+    "Models/OBJ format/Textures/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "Models/OBJ format/rocks-high.obj": "ab3c3095a19fd990286e449e653907b3add5714a57d6a1a338d40bdc4cec25e8",
+    "Models/OBJ format/rocks-high.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/rocks-high.png": "6d51ff712965ec5dbc65e9219e6197143a72c64877d9f71fd850083f99ee6043"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "FBX format/rocks-high.fbx": "a6c9ac76606526abdb19a1b08ec86b78f5d76d72173a432c0e5f482fb917043f",
+    "Textures/GLB/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "GLB format/rocks-high.glb": "226728a03989a1ce52ea64b55e3d9e2ff89004f7eaca9f74c2fafda7c84bbe49",
+    "Textures/OBJ/colormap.png": "319f1087d8ed50a8794f9a8179f64671d5595f2365fdf3e47ec2d4eb74dba20f",
+    "OBJ format/rocks-high.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/rocks-high.obj": "daf35cfd63c61efaa488f5a6092bdd0f49a71cbe9ffc30ee0142d117b9efbe31",
+    "Preview.png": "6d51ff712965ec5dbc65e9219e6197143a72c64877d9f71fd850083f99ee6043"
+  },
+  "license": "../License.txt"
+}

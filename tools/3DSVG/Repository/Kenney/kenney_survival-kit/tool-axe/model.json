@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "tool-axe",
+  "pack": "kenney_survival-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/Textures/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "Models/FBX format/tool-axe.fbx": "2eae3b0e72b2d715fba271cd4f1eabd16dbc0071094ef82e5f1314c78150df57",
+    "Models/GLB format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/GLB format/tool-axe.glb": "de5c6cc51cdb5bcfad8bd7128b7ff0e37a34e6f4f8deddec82bb8634c25cc20d",
+    "Models/OBJ format/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Models/OBJ format/tool-axe.obj": "3179854d07641ada9c56624557e6141342e6903efd008d4d71315d4af48122c0",
+    "Models/OBJ format/tool-axe.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/tool-axe.png": "408bb0332e29eb60062451e96754fccbeae5608c1f1938c7544c5304bd037e02"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/FBX/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "FBX format/tool-axe.fbx": "2eae3b0e72b2d715fba271cd4f1eabd16dbc0071094ef82e5f1314c78150df57",
+    "Textures/GLB/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/GLB/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "GLB format/tool-axe.glb": "de5c6cc51cdb5bcfad8bd7128b7ff0e37a34e6f4f8deddec82bb8634c25cc20d",
+    "Textures/OBJ/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+    "Textures/OBJ/variation-a.png": "6e3c7895ded6f21d6f628a8f088d88765f73f39eb18f4cd3d3e8bc4496d7cf0b",
+    "OBJ format/tool-axe.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/tool-axe.obj": "5b574958d872d679cf1e2f92e5503b858c75c3d4e0bcfd3cfc96919e773b818a",
+    "Preview.png": "408bb0332e29eb60062451e96754fccbeae5608c1f1938c7544c5304bd037e02"
+  },
+  "license": "../License.txt"
+}

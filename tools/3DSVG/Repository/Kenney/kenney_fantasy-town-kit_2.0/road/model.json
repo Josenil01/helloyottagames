@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road",
+  "pack": "kenney_fantasy-town-kit_2.0",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/Textures/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "Models/FBX format/road.fbx": "1ff68bdf18c1e505d43f8d328a0279cd8ab62053d2abb423e3eb32f765d93464",
+    "Models/GLB format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/GLB format/road.glb": "85630c89588bdc19285a7b5e894c1ddac69d7ce2b069966453800519e446f900",
+    "Models/OBJ format/Textures/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Models/OBJ format/road.obj": "f482cc35d699a650092f1dc379019ea830c408e6475982ac9a765a9f723d41a2",
+    "Models/OBJ format/road.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road.png": "f785eda48f4bd289dd72ed8970135543bf504f7ee71bbb6fb044b85ddf7e5b75"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/FBX/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "FBX format/road.fbx": "1ff68bdf18c1e505d43f8d328a0279cd8ab62053d2abb423e3eb32f765d93464",
+    "Textures/GLB/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/GLB/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "GLB format/road.glb": "85630c89588bdc19285a7b5e894c1ddac69d7ce2b069966453800519e446f900",
+    "Textures/OBJ/colormap.png": "4aac939dc33195e35caf8c382ee3cb170054da763577f22d3c22692ec6afccdf",
+    "Textures/OBJ/variation-a.png": "d644fc35249e78f4436101d9e59795e42ecf4628a887e3cea5d2237317d51aff",
+    "OBJ format/road.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road.obj": "df297a215feaff147e929afb751868338f77a419a19ffcbadd047e0b6ba8e60d",
+    "Preview.png": "f785eda48f4bd289dd72ed8970135543bf504f7ee71bbb6fb044b85ddf7e5b75"
+  },
+  "license": "../License.txt"
+}

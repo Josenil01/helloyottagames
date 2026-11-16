@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "silencer-small",
+  "pack": "kenney_blaster-kit_2.1",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Models/Textures/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "Models/FBX format/silencer-small.fbx": "ae3cb89bd754ca85e1a0955cc4c7578e0540011097c1912f550d4d52f55e4c0f",
+    "Models/GLB format/Textures/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Models/GLB format/silencer-small.glb": "ebfc350c024eda0e8a26f79bccea4d7a12fba792d008496739f5a693dbbf15db",
+    "Models/OBJ format/Textures/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Models/OBJ format/silencer-small.obj": "dc1e7d007ec2cda1775be703322ed0bcee50f9b43f87185d89a3f42a041400bb",
+    "Models/OBJ format/silencer-small.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/silencer-small.png": "442945fd9ff3eadfff93a9589fe0a3f0040fb91661896d36236521358fe55fd6"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Textures/FBX/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "FBX format/silencer-small.fbx": "ae3cb89bd754ca85e1a0955cc4c7578e0540011097c1912f550d4d52f55e4c0f",
+    "Textures/GLB/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Textures/GLB/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "GLB format/silencer-small.glb": "ebfc350c024eda0e8a26f79bccea4d7a12fba792d008496739f5a693dbbf15db",
+    "Textures/OBJ/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Textures/OBJ/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "OBJ format/silencer-small.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/silencer-small.obj": "da4f62dd10fecdd1441df4f6af5d4c56f86f8df68cc153c0d5b6704816e7f0fc",
+    "Preview.png": "442945fd9ff3eadfff93a9589fe0a3f0040fb91661896d36236521358fe55fd6"
+  },
+  "license": "../License.txt"
+}

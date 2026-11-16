@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "flag-pennant",
+  "pack": "kenney_pirate-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/FBX format/flag-pennant.fbx": "5536f6f0a0f4822da722ca85d93dd0b5222f96984027822e18aa61cd737d5215",
+    "Models/GLB format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/GLB format/flag-pennant.glb": "05956b9389135492e0644bd7d49711d1e4f865cd67808f7da5709a23e02d7d6f",
+    "Models/OBJ format/Textures/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "Models/OBJ format/flag-pennant.obj": "101c54db616800c8a50f9f29687ef5ff3abe059635631ffa319bcebc1a7a47e3",
+    "Models/OBJ format/flag-pennant.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/flag-pennant.png": "f65273c39b8996005f2be3afb738d24a068dca162f885f2c55e3c3598559d7dc"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "FBX format/flag-pennant.fbx": "5536f6f0a0f4822da722ca85d93dd0b5222f96984027822e18aa61cd737d5215",
+    "Textures/GLB/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "GLB format/flag-pennant.glb": "05956b9389135492e0644bd7d49711d1e4f865cd67808f7da5709a23e02d7d6f",
+    "Textures/OBJ/colormap.png": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+    "OBJ format/flag-pennant.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/flag-pennant.obj": "8b1586ff6a2564463b81a06318800c66844606f69f29bbd5774988352f50e600",
+    "Preview.png": "f65273c39b8996005f2be3afb738d24a068dca162f885f2c55e3c3598559d7dc"
+  },
+  "license": "../License.txt"
+}

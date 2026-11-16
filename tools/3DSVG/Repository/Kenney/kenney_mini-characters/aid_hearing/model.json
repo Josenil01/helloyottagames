@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "aid_hearing",
+  "pack": "kenney_mini-characters",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/aid_hearing.fbx": "38d64093c673d16415564da5499c19d5b3ec93a15667d9b4bc411bf97ef7ee67",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/aid_hearing.glb": "4e7579b5ec8d8b3f2c3d88f448e54a79683f4f824755247ddc27f6c6d7ea7c01",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/aid_hearing.obj": "64358e33244ec17626e41b13b33889ce8098c583bf9103c531c4bc19c945f89d",
+    "Models/OBJ format/aid_hearing.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/aid_hearing.png": "1a94bef8a7183c3c280783f1509f5766adf33fe755bea38d4756847ea5b9f475"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/aid_hearing.fbx": "38d64093c673d16415564da5499c19d5b3ec93a15667d9b4bc411bf97ef7ee67",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/aid_hearing.glb": "4e7579b5ec8d8b3f2c3d88f448e54a79683f4f824755247ddc27f6c6d7ea7c01",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/aid_hearing.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/aid_hearing.obj": "e380daf867d846db72ca1cdb2e67104fa3be00d31ebd49d7adff403466293018",
+    "Preview.png": "1a94bef8a7183c3c280783f1509f5766adf33fe755bea38d4756847ea5b9f475"
+  },
+  "license": "../License.txt"
+}

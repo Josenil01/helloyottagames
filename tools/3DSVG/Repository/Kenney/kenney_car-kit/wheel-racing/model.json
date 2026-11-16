@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wheel-racing",
+  "pack": "kenney_car-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/FBX format/wheel-racing.fbx": "c779dba6ca48b46df4ed1244a026132eb84ba426370d945a3c1b8eef76b41dbe",
+    "Models/GLB format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/GLB format/wheel-racing.glb": "5d8dbff9da004a2aabc471a12be0a4b70725c49463ec36ec3465b15c0cf64571",
+    "Models/OBJ format/Textures/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "Models/OBJ format/wheel-racing.obj": "e1503a4fc760b9dd3f271163318f32984bea8a8862a29a930001247706e3c4e9",
+    "Models/OBJ format/wheel-racing.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/wheel-racing.png": "b8e9d8f54248fbb45d7af49162f13676bb937ba52f1b746179c590dba2fc601a"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "FBX format/wheel-racing.fbx": "c779dba6ca48b46df4ed1244a026132eb84ba426370d945a3c1b8eef76b41dbe",
+    "Textures/GLB/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "GLB format/wheel-racing.glb": "5d8dbff9da004a2aabc471a12be0a4b70725c49463ec36ec3465b15c0cf64571",
+    "Textures/OBJ/colormap.png": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+    "OBJ format/wheel-racing.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/wheel-racing.obj": "81465f010c32361d31c8df49637417d932279db4903d2318654d96a274b58acc",
+    "Preview.png": "b8e9d8f54248fbb45d7af49162f13676bb937ba52f1b746179c590dba2fc601a"
+  },
+  "license": "../License.txt"
+}

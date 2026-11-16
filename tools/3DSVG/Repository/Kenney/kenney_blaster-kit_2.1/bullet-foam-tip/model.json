@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "bullet-foam-tip",
+  "pack": "kenney_blaster-kit_2.1",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Models/Textures/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "Models/FBX format/bullet-foam-tip.fbx": "5bd6c7d435257dc0333082063983ac7efec4484dc602453d71e9092fd4431976",
+    "Models/GLB format/Textures/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Models/GLB format/bullet-foam-tip.glb": "e3f99099d6ec946f053c23cba0f83f6d5b674f217e4f46325659f4dfa6747d3a",
+    "Models/OBJ format/Textures/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Models/OBJ format/bullet-foam-tip.obj": "8d4186b2082c0cf8921829433181819ea58b110da18d6dc2cc55d426e6193146",
+    "Models/OBJ format/bullet-foam-tip.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/bullet-foam-tip.png": "39dc6ac14c00fedf8dfd518af1f7726de33e14c800705456afb4c55eee3b676c"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Textures/FBX/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "FBX format/bullet-foam-tip.fbx": "5bd6c7d435257dc0333082063983ac7efec4484dc602453d71e9092fd4431976",
+    "Textures/GLB/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Textures/GLB/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "GLB format/bullet-foam-tip.glb": "e3f99099d6ec946f053c23cba0f83f6d5b674f217e4f46325659f4dfa6747d3a",
+    "Textures/OBJ/colormap.png": "4d0867c3c3c8c539106f91fbc0987d0e1b7d2811362d1daed593169c7d3b0fdc",
+    "Textures/OBJ/variation-a.png": "da6ebfad462005d205054e2a4a9b3f0b5077497744f12a75bbc22581e4924ec0",
+    "OBJ format/bullet-foam-tip.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/bullet-foam-tip.obj": "879ae852b5940c21dd567e1ccc7808ac2c4664b2c0905ae31dd94ad7f262572a",
+    "Preview.png": "39dc6ac14c00fedf8dfd518af1f7726de33e14c800705456afb4c55eee3b676c"
+  },
+  "license": "../License.txt"
+}

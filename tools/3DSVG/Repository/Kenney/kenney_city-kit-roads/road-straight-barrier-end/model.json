@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-straight-barrier-end",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-straight-barrier-end.fbx": "9022cd8425e417029d77da256fe42e844a0d90093b8407f287f0e663abb23615",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-straight-barrier-end.glb": "d8df21f1a931fc618d28440b5cbcbfaaa13c422dd5a240666bdc83cb8988f889",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-straight-barrier-end.obj": "4305759e0f628bf89f287610a2ae5f93af5d5ab6b93c7fc8d69251e990c4bc93",
+    "Models/OBJ format/road-straight-barrier-end.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-straight-barrier-end.png": "f55d05e838a18421cdd8c2ef5a0a5de56d84c762b87acd8feee0709052fdab7f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-straight-barrier-end.fbx": "9022cd8425e417029d77da256fe42e844a0d90093b8407f287f0e663abb23615",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-straight-barrier-end.glb": "d8df21f1a931fc618d28440b5cbcbfaaa13c422dd5a240666bdc83cb8988f889",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-straight-barrier-end.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-straight-barrier-end.obj": "8b2685e0f7e394f4e2933d884398569b2162c881a11e7c62243577e5c81efa55",
+    "Preview.png": "f55d05e838a18421cdd8c2ef5a0a5de56d84c762b87acd8feee0709052fdab7f"
+  },
+  "license": "../License.txt"
+}

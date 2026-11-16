@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "pottedPlant",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/pottedPlant.fbx": "61e963d81fbf4e0772b5b8d542a44dbb0c794affa9994b6d5715f425d71fc97d",
+    "Models/GLTF format/pottedPlant.glb": "5b760eda2766f75fda36b2c5df652a1662f82981ef64cd8fa7fe7bcd386b3a15",
+    "Models/OBJ format/pottedPlant.obj": "839e75290814756dee97e479fa462a7477cecda06db0707a520dc0f29130fc02",
+    "Models/OBJ format/pottedPlant.mtl": "a0b3de40d67b0a085f9fd94d45ae357ba6196f84e48fe08a67fdc43b64319211"
+  },
+  "files": {
+    "FBX format/pottedPlant.fbx": "61e963d81fbf4e0772b5b8d542a44dbb0c794affa9994b6d5715f425d71fc97d",
+    "GLB format/pottedPlant.glb": "5b760eda2766f75fda36b2c5df652a1662f82981ef64cd8fa7fe7bcd386b3a15",
+    "OBJ format/pottedPlant.mtl": "c0ac87c7a042fbd5e5603880ddfb96a3a79e5f4d72a7a057b20ca26655c5feed",
+    "OBJ format/pottedPlant.obj": "b935850f8839187b837ce1058edd83ddc3501cf6048c98e965a5bdb1169ff20c"
+  },
+  "license": "../License.txt"
+}

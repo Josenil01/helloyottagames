@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-driveway-double-barrier",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-driveway-double-barrier.fbx": "2c94c2a6005249bb0aa1d6bf3121869107a56ecc9b0c95b45d85d6421d047d96",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-driveway-double-barrier.glb": "057ef29517e70a02dabda572779ae664f55beb3bfad92523e8f78e6cd9d2b287",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-driveway-double-barrier.obj": "ae1ac9406146aa660202d4027c626fa3cb49f1d44cc811e2bf80c7e2011eae1f",
+    "Models/OBJ format/road-driveway-double-barrier.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-driveway-double-barrier.png": "cf9d67d977a317c6d808746ea077d3401c793c2cda2f2bbd7c5404419bb945fb"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-driveway-double-barrier.fbx": "2c94c2a6005249bb0aa1d6bf3121869107a56ecc9b0c95b45d85d6421d047d96",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-driveway-double-barrier.glb": "057ef29517e70a02dabda572779ae664f55beb3bfad92523e8f78e6cd9d2b287",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-driveway-double-barrier.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-driveway-double-barrier.obj": "5b14fcc1dccc4ddc5abf3fc3310ca3a99747c1e69f72cce92d943f3c377e4ffe",
+    "Preview.png": "cf9d67d977a317c6d808746ea077d3401c793c2cda2f2bbd7c5404419bb945fb"
+  },
+  "license": "../License.txt"
+}

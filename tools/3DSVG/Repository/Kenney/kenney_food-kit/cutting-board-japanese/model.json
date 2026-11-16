@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "cutting-board-japanese",
+  "pack": "kenney_food-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/FBX format/cutting-board-japanese.fbx": "33800a008fb8e32463a4b70859f00c5a17938e24e7357c0577ed4615234f5be9",
+    "Models/GLB format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/GLB format/cutting-board-japanese.glb": "109f169c92c83869defb3e20108c26908d853927f373f39cac20dc37a1d9db5f",
+    "Models/OBJ format/Textures/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "Models/OBJ format/cutting-board-japanese.obj": "8c6efc12411ffa5cb4108f7e3ca219b61fd66736573283cebd27d2283037126b",
+    "Models/OBJ format/cutting-board-japanese.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/cutting-board-japanese.png": "6a888ac998511d359a7809cc4e6e91fb859812a5ee982289bdbf5fe49d5896e5"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "FBX format/cutting-board-japanese.fbx": "33800a008fb8e32463a4b70859f00c5a17938e24e7357c0577ed4615234f5be9",
+    "Textures/GLB/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "GLB format/cutting-board-japanese.glb": "109f169c92c83869defb3e20108c26908d853927f373f39cac20dc37a1d9db5f",
+    "Textures/OBJ/colormap.png": "75baf74d9483a0fc56ac21ceba346fbe16fc24a2a1bf0524c53e6bbe802e1153",
+    "OBJ format/cutting-board-japanese.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/cutting-board-japanese.obj": "91730e303862aff9618322b420eb5527fdeca59f70aaed78b74cd8694f783245",
+    "Preview.png": "6a888ac998511d359a7809cc4e6e91fb859812a5ee982289bdbf5fe49d5896e5"
+  },
+  "license": "../License.txt"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "coaster-monorail-straight-hill-complete",
+  "pack": "kenney_coaster-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/FBX format/coaster-monorail-straight-hill-complete.fbx": "4921112768c87d066320fc87af3f72fcb86162d5567b315287cd3683dd9246b6",
+    "Models/GLB format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/GLB format/coaster-monorail-straight-hill-complete.glb": "eaec6cfc4c3b5b120d7572b9401ccb0c779050b4df775225fd922e575bedac16",
+    "Models/OBJ format/Textures/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "Models/OBJ format/coaster-monorail-straight-hill-complete.obj": "f25a2cbfae5451f2452ed03ff7012c3f6848528ede6feb4d6c03152699f01255",
+    "Models/OBJ format/coaster-monorail-straight-hill-complete.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/coaster-monorail-straight-hill-complete.png": "e90f1b4711fc6025a663a6ca76d18ed5eae934e9815b0e524a6e039fdc0a737f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "FBX format/coaster-monorail-straight-hill-complete.fbx": "4921112768c87d066320fc87af3f72fcb86162d5567b315287cd3683dd9246b6",
+    "Textures/GLB/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "GLB format/coaster-monorail-straight-hill-complete.glb": "eaec6cfc4c3b5b120d7572b9401ccb0c779050b4df775225fd922e575bedac16",
+    "Textures/OBJ/colormap.png": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+    "OBJ format/coaster-monorail-straight-hill-complete.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/coaster-monorail-straight-hill-complete.obj": "cc2c210f24ae06404cba2e8cce59a38c72ca7d6d9816d8f69375ffeff8a57db5",
+    "Preview.png": "e90f1b4711fc6025a663a6ca76d18ed5eae934e9815b0e524a6e039fdc0a737f"
+  },
+  "license": "../License.txt"
+}

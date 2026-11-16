@@ -1,0 +1,24 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "wallWindow",
+  "pack": "kenney_furniture-kit",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/wallWindow.fbx": "715dd0444cef6e80da1488cdc74cf8a8e17985516c3e9c0762b4a4d970ef0c48",
+    "Models/GLTF format/wallWindow.glb": "166a10fddb8a78d942bc2791186913f7015dfee8501d20efd7a7b8f196fc5c3e",
+    "Models/OBJ format/wallWindow.obj": "a36ec164158c63df3d0250a57fc6a94472e7137d7f4cc428eb24e7641e553977",
+    "Models/OBJ format/wallWindow.mtl": "6d0557a8be7dd9d13f888b746c5a9e37031af128cf45e0ef428dfcd1789867f9"
+  },
+  "files": {
+    "FBX format/wallWindow.fbx": "715dd0444cef6e80da1488cdc74cf8a8e17985516c3e9c0762b4a4d970ef0c48",
+    "GLB format/wallWindow.glb": "166a10fddb8a78d942bc2791186913f7015dfee8501d20efd7a7b8f196fc5c3e",
+    "OBJ format/wallWindow.mtl": "95d07bdd0bf2312260cda6731eb7640a7f2a7279652592e81b70847b18b1d7f2",
+    "OBJ format/wallWindow.obj": "e5a8f020a9ddf7cd300267cd8b1f8998bc707eafe8937eb29b890e9d6158ef02"
+  },
+  "license": "../License.txt"
+}

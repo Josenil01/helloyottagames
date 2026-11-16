@@ -1,0 +1,36 @@
+{
+  "generatedBy": "3DSVG Kenney organizer v1",
+  "status": "ready",
+  "name": "road-roundabout-barrier",
+  "pack": "kenney_city-kit-roads",
+  "formats": [
+    "fbx",
+    "glb",
+    "obj"
+  ],
+  "sourceFiles": {
+    "Models/FBX format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/Textures/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "Models/FBX format/road-roundabout-barrier.fbx": "2bad52b749a1ade19aa16cd2d621ec8a9024698f8766ac7f3d18107d9138f10f",
+    "Models/GLB format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/GLB format/road-roundabout-barrier.glb": "fc65f8b3f445146bed071c372e06fe3329c94f327f418c801f66c739955e2531",
+    "Models/OBJ format/Textures/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Models/OBJ format/road-roundabout-barrier.obj": "b0c8aa45d822a4dc52536a32c2cb8bb82bc636c3115b57a50e51c28e0a4c3203",
+    "Models/OBJ format/road-roundabout-barrier.mtl": "45a6736aa344a0c7e286b9c43c6a48f25b6a2f78d8c5949e430c3b4a93b4e060",
+    "Previews/road-roundabout-barrier.png": "e4506c6ea63208b335f687cdc7d8b46ee116728db72e11ec575911cd4426671f"
+  },
+  "files": {
+    "Textures/FBX/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/FBX/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "FBX format/road-roundabout-barrier.fbx": "2bad52b749a1ade19aa16cd2d621ec8a9024698f8766ac7f3d18107d9138f10f",
+    "Textures/GLB/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/GLB/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "GLB format/road-roundabout-barrier.glb": "fc65f8b3f445146bed071c372e06fe3329c94f327f418c801f66c739955e2531",
+    "Textures/OBJ/colormap.png": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185",
+    "Textures/OBJ/variation-a.png": "e872d12fb1adcdda87e12598d00661da0abce8a24b51a0ce3d18b50f53a3635c",
+    "OBJ format/road-roundabout-barrier.mtl": "0ba724daf788d05740805056021d1cb4ef4d9348f18f0d25e29bc70fea9bc2a2",
+    "OBJ format/road-roundabout-barrier.obj": "00be66c1ebb2aa03e24ef27001f6e38413316f7921fc008281ec31c33e8502d3",
+    "Preview.png": "e4506c6ea63208b335f687cdc7d8b46ee116728db72e11ec575911cd4426671f"
+  },
+  "license": "../License.txt"
+}
